@@ -1,6 +1,5 @@
 -- ====================================================================
--- SEED DATA: 1.000 SOAL PRIORITAS CERDAS CERMAT MIPAS (SUPABASE POSTGRESQL)
--- Modul Materi Prioritas Kelas IV-VI (Matematika, IPA, IPS)
+-- SEED DATA: 234 SOAL CERDAS CERMAT MIPAS (SUPABASE POSTGRESQL)
 -- ====================================================================
 
 INSERT INTO cc_questions (id, mapel, kelas, topik, babak, level, tipe, pertanyaan, opsi_a, opsi_b, opsi_c, opsi_d, kunci, pembahasan, status)

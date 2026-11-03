@@ -237,6 +237,16 @@
     .warning-box-title{font-size:11.5px;font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:6px}
     .warning-box ul{margin:0;padding-left:18px;font-size:12px;line-height:1.55}
 
+    /* Ilustrasi SVG Edukatif pada Rangkuman */
+    .summary-illustration{background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:14px;padding:14px;margin-bottom:14px;text-align:center;overflow:hidden}
+    .summary-illustration svg{max-width:100%;height:auto;display:block;margin:0 auto}
+    .illustration-caption{font-size:11px;color:#64748b;margin-top:8px;font-style:italic;text-align:center}
+
+    /* Stimulus Gambar SVG pada Soal */
+    .stimulus-svg-box{background:#f0f9ff;border:1.5px solid #bae6fd;border-left:5px solid #0ea5e9;border-radius:12px;padding:14px 16px;margin-bottom:14px;text-align:center}
+    .stimulus-svg-box svg{max-width:100%;height:auto;display:block;margin:0 auto}
+    .stimulus-svg-badge{display:inline-flex;align-items:center;gap:6px;background:#e0f2fe;color:#0369a1;font-size:11px;font-weight:800;letter-spacing:.5px;padding:3px 10px;border-radius:99px;margin-bottom:8px;border:1px solid #bae6fd}
+
     /* Stimulus Soal Styles */
     .stimulus-card{background:#f0fdf4;border:1.5px solid #86efac;border-left:5px solid #16a34a;border-radius:12px;padding:14px 16px;margin-bottom:14px;box-shadow:0 2px 5px rgba(0,0,0,.03)}
     .stimulus-badge{display:inline-flex;align-items:center;gap:6px;background:#dcfce7;color:#15803d;font-size:11px;font-weight:800;letter-spacing:.5px;padding:3px 10px;border-radius:99px;margin-bottom:8px;border:1px solid #bbf7d0}
@@ -368,13 +378,23 @@
         : `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
     };
 
-    function formatQuestionText(text) {
+    function formatQuestionText(text, svgStimulus) {
       if (!text) return '';
+      let svgBlock = '';
+      if (svgStimulus) {
+        svgBlock = `
+          <div class="stimulus-svg-box">
+            <div class="stimulus-svg-badge">🖼️ GAMBAR STIMULUS</div>
+            ${svgStimulus}
+          </div>
+        `;
+      }
       if (text.includes('[STIMULUS]')) {
         const parts = text.split(/\[PERTANYAAN\]/i);
         const stimulusPart = parts[0].replace(/\[STIMULUS\]/i, '').trim();
         const questionPart = (parts[1] || '').trim();
         return `
+          ${svgBlock}
           <div class="stimulus-card">
             <div class="stimulus-badge">📋 BACAAN STIMULUS / KASUS SOAL</div>
             <div class="stimulus-content">${esc(stimulusPart).replace(/\n/g, '<br>')}</div>
@@ -384,7 +404,7 @@
           </div>
         `;
       }
-      return `<div class="standard-question-body">${esc(text).replace(/\n/g, '<br>')}</div>`;
+      return `${svgBlock}<div class="standard-question-body">${esc(text).replace(/\n/g, '<br>')}</div>`;
     }
 
     function detectErrorCategory(q) {
@@ -659,7 +679,8 @@
         tipe: q.TIPE || 'PG',
         text: q.PERTANYAAN,
         options: [q.OPSI_A, q.OPSI_B, q.OPSI_C, q.OPSI_D].filter(Boolean),
-        diagnosa: q.DIAGNOSA || ''
+        diagnosa: q.DIAGNOSA || '',
+        svgStimulus: q.STIMULUS_GAMBAR || null
       };
     }
 
@@ -1492,6 +1513,13 @@
             </div>
           ` : ''}
 
+          ${item.svgIllustration ? `
+            <div class="summary-illustration">
+              ${item.svgIllustration}
+              ${item.captionGambar ? `<div class="illustration-caption">${esc(item.captionGambar)}</div>` : ''}
+            </div>
+          ` : ''}
+
           ${item.contohSoal ? `
             <div class="example-box">
               <div class="example-q">❓ Contoh Uji Pemahaman:</div>
@@ -1641,7 +1669,7 @@
                 <span class="pill ${q.mapel === 'MATEMATIKA' ? 'blue' : 'green'}">${esc(q.mapel)} • Kelas ${q.kelas}</span>
                 <span class="subtle">${esc(q.topik)}</span>
               </div>
-              <div class="question-text">${formatQuestionText(q.text)}</div>
+              <div class="question-text">${formatQuestionText(q.text, q.svgStimulus)}</div>
               ${q.options.map((opt, i) => {
                 const letter = 'ABCD'[i];
                 return `
@@ -1728,7 +1756,7 @@
                 <span class="pill ${q.correct ? 'green' : 'red'}">${q.correct ? '✓ Jawaban Tepat (+4)' : '✗ Belum Tepat (0)'}</span>
               </div>
 
-              ${formatQuestionText(q.text)}
+              ${formatQuestionText(q.text, q.svgStimulus)}
 
               <div class="result-comparison" style="margin:12px 0;padding:10px 14px;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;font-size:13px">
                 <div style="display:flex;flex-wrap:wrap;gap:18px">
@@ -1843,7 +1871,7 @@
               ? `<span class="pill gold">Giliran Wajib: ${esc(f.teams[f.mandatoryTeam]?.name || '')}</span>`
               : `<span class="pill">${S.buzzTeam === null ? 'Menunggu Bel Buzzer' : 'Pemenang Buzzer: ' + esc(f.teams[S.buzzTeam]?.name)}</span>`}
           </div>
-          <div class="question-text">${formatQuestionText(q?.text || 'Soal tidak ditemukan')}</div>
+          <div class="question-text">${formatQuestionText(q?.text || 'Soal tidak ditemukan', q?.svgStimulus)}</div>
           
           <div class="btn-row">
             <button class="btn secondary" data-action="startFinalTimer">▶ Mulai Hitung Mundur / Bacakan Soal</button>
