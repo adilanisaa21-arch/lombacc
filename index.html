@@ -1,0 +1,2688 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Arena Cerdas Cermat MIPAS 2026 - Latihan Olimpiade & ANBK SD Kelas 4, 5, 6 dengan Supabase dan Vercel">
+  <title>Arena Cerdas Cermat MIPAS 2026</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
+  <style>
+    :root{
+      --navy:#0f172a;--royal:#2563eb;--royal-dark:#1d4ed8;--sky:#38bdf8;
+      --violet:#7c3aed;--gold:#f59e0b;--gold-light:#fef3c7;--mint:#10b981;
+      --mint-light:#d1fae5;--red:#ef4444;--red-light:#fee2e2;--ink:#1e293b;
+      --muted:#64748b;--line:#e2e8f0;--canvas:#f8fafc;--card:#ffffff;
+      --radius:18px;--shadow:0 10px 25px -5px rgba(15,23,42,.08),0 8px 10px -6px rgba(15,23,42,.04);
+      --font-main:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;min-width:320px;font-family:var(--font-main);background:var(--canvas);color:var(--ink);line-height:1.5}
+    button,input,textarea,select{font:inherit}
+    button{cursor:pointer}
+    button:disabled{cursor:not-allowed;opacity:.55}
+    input,select,textarea{width:100%;border:1px solid #cbd5e1;border-radius:12px;padding:12px 14px;background:#fff;color:var(--ink);outline:none;transition:border-color .2s,box-shadow .2s}
+    input:focus,select:focus,textarea:focus{border-color:var(--royal);box-shadow:0 0 0 3px rgba(37,99,235,.15)}
+    textarea{resize:vertical;min-height:84px}
+    .hide{display:none!important}
+
+    /* Shell Layout */
+    .shell{min-height:100vh;display:grid;grid-template-columns:260px minmax(0,1fr)}
+    .sidebar{background:linear-gradient(180deg,#0f172a 0%,#1e293b 100%);color:#fff;padding:24px 16px;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column}
+    .logo{display:flex;gap:12px;align-items:center;padding:8px 8px 24px}
+    .logo-emblem{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,#f59e0b,#ea580c);display:grid;place-items:center;color:#fff;font-size:24px;box-shadow:0 8px 16px rgba(245,158,11,.3);flex-shrink:0}
+    .logo strong{font-size:15px;display:block;letter-spacing:.3px;font-weight:800}
+    .logo small{display:block;color:#94a3b8;font-size:11px;margin-top:2px}
+    .nav-caption{font-size:11px;color:#64748b;letter-spacing:1.5px;font-weight:700;text-transform:uppercase;padding:14px 10px 6px}
+    .nav-button{width:100%;border:0;background:transparent;color:#cbd5e1;text-align:left;padding:11px 14px;border-radius:12px;display:flex;align-items:center;gap:12px;font-size:13.5px;font-weight:600;margin:3px 0;transition:background .15s,color .15s}
+    .nav-button:hover{background:rgba(255,255,255,.08);color:#fff}
+    .nav-button.active{background:rgba(37,99,235,.2);color:#60a5fa;box-shadow:inset 3px 0 #3b82f6}
+    .nav-ico{font-size:19px;width:24px;text-align:center;flex-shrink:0}
+    .side-foot{margin-top:auto;padding:16px 10px 4px;border-top:1px solid rgba(255,255,255,.1);color:#94a3b8;font-size:11px;line-height:1.6}
+    .side-cloud-badge{display:inline-flex;align-items:center;gap:6px;padding:4px 9px;border-radius:99px;font-size:10.5px;font-weight:700;margin-top:8px}
+    .side-cloud-badge.online{background:rgba(16,185,129,.15);color:#34d399}
+    .side-cloud-badge.offline{background:rgba(245,158,11,.15);color:#fbbf24}
+
+    /* Main Area */
+    .main{min-width:0;display:flex;flex-direction:column}
+    .topbar{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 32px;gap:16px;position:sticky;top:0;z-index:40}
+    .topbar-title{font-size:17px;font-weight:800;color:var(--navy)}
+    .topbar-sub{font-size:12px;color:var(--muted);margin-top:2px}
+    .topbar-badges{display:flex;align-items:center;gap:10px}
+    .badge{display:inline-flex;gap:6px;align-items:center;padding:7px 12px;border-radius:99px;font-size:11.5px;font-weight:700}
+    .badge.royal{background:#eff6ff;color:#2563eb;border:1px solid #bfdbfe}
+    .badge.green{background:var(--mint-light);color:#065f46;border:1px solid #a7f3d0}
+    .badge.gold{background:var(--gold-light);color:#92400e;border:1px solid #fde68a}
+    .content{max-width:1400px;width:100%;margin:0 auto;padding:28px 32px 64px}
+
+    /* Hero Banner */
+    .hero{background:linear-gradient(130deg,#1e3a8a 0%,#2563eb 55%,#7c3aed 100%);color:#fff;border-radius:24px;padding:36px 40px;position:relative;overflow:hidden;box-shadow:0 16px 36px rgba(37,99,235,.25);display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .hero:after{content:"";position:absolute;width:380px;height:380px;border-radius:50%;right:-80px;top:-160px;background:rgba(255,255,255,.08);box-shadow:0 0 0 60px rgba(255,255,255,.04)}
+    .hero h1{margin:6px 0 10px;font-size:clamp(24px,2.8vw,36px);line-height:1.2;font-weight:900;letter-spacing:-.5px}
+    .hero p{font-size:14px;color:#e0e7ff;margin:0 0 18px;max-width:620px;line-height:1.6}
+    .hero-art{font-size:86px;filter:drop-shadow(0 10px 14px rgba(0,0,0,.25));z-index:1;user-select:none}
+    .eyebrow{text-transform:uppercase;letter-spacing:1.8px;font-size:11px;font-weight:800;color:#fcd34d}
+
+    /* Typography & Layout Grids */
+    .heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:28px 0 16px}
+    .heading h2{font-size:19px;font-weight:800;letter-spacing:-.3px;margin:0;color:var(--navy)}
+    .heading p{font-size:12.5px;color:var(--muted);margin:3px 0 0}
+    .grid{display:grid;gap:18px}
+    .cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .card{background:var(--card);border:1px solid #e2e8f0;border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;min-width:0}
+
+    /* Stats & Mode Cards */
+    .stat{display:flex;gap:16px;align-items:center}
+    .stat-icon{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;font-size:24px;background:#f1f5f9;flex-shrink:0}
+    .stat small{color:var(--muted);font-size:12px;font-weight:600}
+    .stat strong{font-size:26px;display:block;margin-top:2px;font-weight:800;color:var(--navy)}
+    .mode-card{border:1px solid #e2e8f0;border-radius:20px;background:#fff;padding:22px;display:flex;flex-direction:column;align-items:flex-start;box-shadow:var(--shadow);transition:transform .15s,border-color .15s}
+    .mode-card:hover{transform:translateY(-2px);border-color:#cbd5e1}
+    .mode-icon{width:52px;height:52px;border-radius:16px;background:#f8fafc;display:grid;place-items:center;font-size:26px;margin-bottom:14px;box-shadow:inset 0 0 0 1px #e2e8f0}
+    .mode-card h3{margin:0 0 6px;font-size:16.5px;font-weight:800;color:var(--navy)}
+    .mode-card p{margin:0 0 18px;font-size:12.5px;color:var(--muted);line-height:1.5;flex:1}
+    .mode-card button{width:100%}
+
+    /* Buttons */
+    .btn{appearance:none;border:0;border-radius:12px;padding:12px 18px;font-weight:700;font-size:13px;background:var(--royal);color:#fff;box-shadow:0 4px 10px rgba(37,99,235,.2);display:inline-flex;align-items:center;justify-content:center;gap:8px;transition:filter .15s,transform .1s}
+    .btn:hover{filter:brightness(1.08)}
+    .btn:active{transform:scale(.98)}
+    .btn.secondary{color:var(--royal);background:#eff6ff;box-shadow:none;border:1px solid #bfdbfe}
+    .btn.ghost{color:var(--ink);background:#f1f5f9;box-shadow:none;border:1px solid #e2e8f0}
+    .btn.good{background:var(--mint);box-shadow:0 4px 10px rgba(16,185,129,.2)}
+    .btn.danger{background:var(--red);box-shadow:0 4px 10px rgba(239,68,68,.2)}
+    .btn.gold{background:var(--gold);color:#fff;box-shadow:0 4px 10px rgba(245,158,11,.2)}
+    .btn.sm{padding:8px 13px;font-size:12px;border-radius:9px}
+    .btn.full{width:100%}
+    .btn-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+
+    /* Forms & Inputs */
+    .field{min-width:0}
+    .field label{font-size:12px;color:#475569;font-weight:700;display:block;margin-bottom:6px}
+    .form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+    .form-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .form-grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+    .separator{border:0;border-top:1px solid var(--line);margin:20px 0}
+    .subtle{color:var(--muted);font-size:12.5px;line-height:1.55}
+
+    /* Notices & Alerts */
+    .notice{border-radius:14px;padding:14px 18px;background:#eff6ff;color:#1e40af;font-size:13px;line-height:1.6;border:1px solid #bfdbfe}
+    .notice.warning{background:#fffbeb;color:#92400e;border-color:#fde68a}
+    .notice.success{background:#ecfdf5;color:#065f46;border-color:#a7f3d0}
+    .pill{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:99px;font-size:11px;font-weight:700;background:#f1f5f9;color:#334155}
+    .pill.blue{background:#eff6ff;color:#1d4ed8}
+    .pill.green{background:#ecfdf5;color:#047857}
+    .pill.red{background:#fef2f2;color:#b91c1c}
+    .pill.gold{background:#fffbeb;color:#b45309}
+    .pill.purple{background:#f5f3ff;color:#6d28d9}
+
+    /* Quiz Layout */
+    .quiz-top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    .timer{display:flex;align-items:center;gap:10px;padding:8px 16px;background:#eff6ff;border-radius:14px;color:#1e40af;font-size:22px;font-weight:900;font-variant-numeric:tabular-nums;border:1px solid #bfdbfe}
+    .timer.urgent{background:#fef2f2;color:#b91c1c;border-color:#fecaca;animation:pulse 1s infinite}
+    @keyframes pulse{50%{opacity:.65}}
+    .progress{height:8px;background:#e2e8f0;overflow:hidden;border-radius:100px;margin:16px 0 20px}
+    .progress>div{height:100%;background:linear-gradient(90deg,#2563eb,#7c3aed);transition:width .2s}
+    .question-text{font-size:clamp(19px,2vw,27px);font-weight:800;line-height:1.45;white-space:pre-wrap;margin:16px 0 24px;color:var(--navy)}
+    .option{display:flex;align-items:center;gap:14px;width:100%;text-align:left;border:2px solid #e2e8f0;background:#fff;padding:16px 18px;border-radius:14px;margin:10px 0;color:var(--ink);font-size:15.5px;line-height:1.4;transition:border-color .15s,background .15s}
+    .option:hover{border-color:#93c5fd;background:#f8fafc}
+    .option.selected{border-color:#2563eb;background:#eff6ff}
+    .option-letter{display:grid;place-items:center;width:34px;height:34px;flex:0 0 34px;background:#f1f5f9;border-radius:10px;font-weight:800;color:#475569}
+    .option.selected .option-letter{background:#2563eb;color:#fff}
+    .number-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+    .number-grid button{padding:10px 0;border-radius:10px;border:1px solid #cbd5e1;background:#f8fafc;color:#475569;font-weight:800;font-size:13px}
+    .number-grid button.done{background:#d1fae5;color:#065f46;border-color:#a7f3d0}
+    .number-grid button.current{background:#2563eb;color:#fff;border-color:#1d4ed8}
+    .quiz-layout{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(240px,1fr);gap:18px}
+    .question-control{display:flex;justify-content:space-between;gap:10px;margin-top:24px}
+
+    /* Result View */
+    .result-score{font-size:clamp(48px,6vw,80px);font-weight:900;color:#2563eb;letter-spacing:-4px;margin:4px 0}
+    .result-answer{border:1px solid #e2e8f0;border-radius:14px;padding:16px;margin-bottom:12px;background:#fff}
+    .result-answer.correct{border-left:5px solid var(--mint)}
+    .result-answer.wrong{border-left:5px solid var(--red)}
+    .result-answer strong{display:block;margin-bottom:5px;color:var(--navy)}
+    .result-answer p{margin:6px 0;font-size:12.5px;line-height:1.6;color:#475569}
+
+    /* Final & Buzzer */
+    .final-scores{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:20px 0}
+    .team-score{background:#fff;border:2px solid #e2e8f0;border-radius:18px;padding:20px;text-align:center;box-shadow:var(--shadow)}
+    .team-score:nth-child(1){border-top:6px solid #ef4444}
+    .team-score:nth-child(2){border-top:6px solid #3b82f6}
+    .team-score:nth-child(3){border-top:6px solid #10b981}
+    .team-score h3{font-size:15px;margin:0 0 8px}
+    .team-score strong{font-size:clamp(32px,3.8vw,54px);font-variant-numeric:tabular-nums;display:block;color:var(--navy);font-weight:900}
+    .team-score.active{box-shadow:0 0 0 4px rgba(245,158,11,.35)}
+    .buzzer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0}
+    .buzzer{border:0;border-radius:18px;padding:28px 10px;color:#fff;font-weight:900;font-size:clamp(15px,1.8vw,23px);box-shadow:inset 0 -8px 0 rgba(0,0,0,.2),0 10px 20px rgba(0,0,0,.15);touch-action:manipulation;user-select:none}
+    .buzzer:nth-child(1){background:#ef4444}
+    .buzzer:nth-child(2){background:#2563eb}
+    .buzzer:nth-child(3){background:#10b981}
+    .buzzer.winner{outline:6px solid var(--gold);outline-offset:2px}
+    .buzzer:disabled{filter:grayscale(.7);opacity:.45}
+    .score-action{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:18px 0}
+    .podium{display:flex;justify-content:center;align-items:flex-end;gap:14px;padding:24px 0}
+    .podium .place{width:30%;text-align:center;background:#eff6ff;border-radius:16px 16px 0 0;padding:16px 6px}
+    .podium .place:nth-child(1){height:140px;order:2;background:#fef3c7}
+    .podium .place:nth-child(2){height:115px;order:1}
+    .podium .place:nth-child(3){height:95px;order:3}
+    .podium strong{display:block;font-size:15px;margin:6px 0;color:var(--navy)}
+    .podium span{font-size:32px}
+
+    /* Data Table */
+    .data-table{width:100%;border-collapse:collapse;font-size:12.5px}
+    .data-table th{text-align:left;color:#475569;background:#f8fafc;padding:12px 10px;white-space:nowrap;font-weight:700}
+    .data-table td{padding:12px 10px;border-bottom:1px solid #f1f5f9;vertical-align:top}
+    .data-table td.question-cell{min-width:280px;max-width:540px}
+    .scroll-x{overflow-x:auto}
+    .top-spacer{height:14px}
+    .load{display:inline-block;width:18px;height:18px;border:3px solid #cbd5e1;border-top-color:#2563eb;border-radius:50%;animation:spin .7s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .toast{position:fixed;bottom:24px;right:24px;z-index:1000;max-width:420px;background:#0f172a;color:#fff;box-shadow:0 18px 40px rgba(0,0,0,.3);border-radius:14px;padding:14px 18px;font-size:13px;line-height:1.5;animation:slideUp .25s ease}
+    @keyframes slideUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    .toast.error{background:#991b1b}
+    .question-actions{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+    .small-note{font-size:11px;color:#64748b;margin-top:6px}
+    .loading-overlay{position:fixed;inset:0;background:rgba(15,23,42,.65);display:grid;place-items:center;z-index:900;backdrop-filter:blur(2px)}
+    .loading-overlay>div{background:#fff;border-radius:20px;padding:24px 36px;text-align:center;color:var(--navy);font-weight:700;box-shadow:var(--shadow)}
+    .bar{height:10px;background:#e2e8f0;border-radius:90px;overflow:hidden;margin:6px 0}
+    .bar i{display:block;height:100%;background:linear-gradient(90deg,#2563eb,#7c3aed)}
+    .empty{text-align:center;padding:45px 20px;color:#64748b}
+    .empty strong{display:block;color:var(--navy);margin:8px 0;font-size:16px}
+    .mobile-nav{display:none}
+
+    /* =========================================================================
+       HALAMAN RANGKUMAN MATERI (BARU)
+       ========================================================================= */
+    .summary-filter-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:20px}
+    .filter-pills{display:flex;gap:8px;flex-wrap:wrap}
+    .filter-btn{padding:7px 14px;border-radius:99px;border:1px solid #cbd5e1;background:#fff;color:#475569;font-size:12px;font-weight:700;transition:all .15s}
+    .filter-btn:hover{background:#f8fafc;border-color:#94a3b8}
+    .filter-btn.active{background:#2563eb;color:#fff;border-color:#2563eb;box-shadow:0 3px 8px rgba(37,99,235,.25)}
+    .search-box{position:relative;flex:1;max-width:380px;min-width:240px}
+    .search-box input{padding-left:36px;border-radius:99px;font-size:13px}
+    .search-icon{position:absolute;left:13px;top:50%;transform:translateY(-50%);font-size:14px;color:#94a3b8}
+
+    .summary-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:20px}
+    .summary-card{background:#fff;border:1px solid #e2e8f0;border-radius:18px;padding:22px;box-shadow:var(--shadow);display:flex;flex-direction:column;position:relative;transition:transform .15s,box-shadow .15s}
+    .summary-card:hover{transform:translateY(-2px);box-shadow:0 14px 28px -4px rgba(15,23,42,.1)}
+    .summary-card-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:12px}
+    .summary-card-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:24px;flex-shrink:0}
+    .summary-card.mtk .summary-card-icon{background:#eff6ff}
+    .summary-card.ipas .summary-card-icon{background:#ecfdf5}
+    .summary-card h3{margin:0;font-size:16.5px;font-weight:800;color:var(--navy);line-height:1.35}
+    .summary-category{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+    .summary-ringkasan{font-size:13px;color:#334155;line-height:1.6;margin-bottom:14px}
+    
+    .summary-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;margin-bottom:12px}
+    .summary-box-title{font-size:11.5px;font-weight:800;color:#475569;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+    .summary-box ul{margin:0;padding-left:18px;font-size:12.5px;color:#334155;line-height:1.6}
+    .summary-box li{margin-bottom:4px}
+    .summary-box li:last-child{margin-bottom:0}
+
+    .formula-box{background:linear-gradient(135deg,#fffbeb 0%,#fef3c7 100%);border:1px solid #fde68a;border-radius:12px;padding:12px 14px;margin-bottom:12px;color:#92400e}
+    .formula-box-title{font-size:11.5px;font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+    .formula-box code{display:block;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:12px;background:rgba(255,255,255,.7);padding:6px 9px;border-radius:6px;margin:4px 0;line-height:1.4;color:#78350f}
+
+    .example-box{border:1px dashed #cbd5e1;border-radius:12px;padding:12px 14px;background:#fbfcfe;margin-bottom:16px}
+    .example-q{font-size:12.5px;font-weight:700;color:var(--navy);margin-bottom:6px}
+    .example-toggle{font-size:11.5px;color:#2563eb;cursor:pointer;font-weight:700;border:0;background:transparent;padding:0;text-decoration:underline}
+    .example-ans{font-size:12px;color:#047857;margin-top:6px;padding-top:6px;border-top:1px dashed #cbd5e1;line-height:1.5}
+
+    .summary-card-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid #f1f5f9;gap:10px}
+
+    /* Responsive */
+    @media(max-width:1050px){
+      .shell{grid-template-columns:72px 1fr}
+      .sidebar{padding:20px 8px}
+      .logo{justify-content:center;padding:8px 0 20px}
+      .logo>div:last-child,.nav-caption,.nav-button span:last-child,.side-foot{display:none}
+      .nav-button{justify-content:center;padding:12px 4px}
+      .nav-ico{font-size:23px}
+      .content{padding:22px}
+      .cols-4{grid-template-columns:repeat(2,1fr)}
+      .summary-grid{grid-template-columns:1fr}
+    }
+    @media(max-width:720px){
+      .shell{display:block}
+      .sidebar{display:none}
+      .topbar{height:68px;padding:0 16px}
+      .topbar-title{font-size:14px}
+      .topbar-sub{display:none}
+      .content{padding:16px 14px 96px}
+      .hero{padding:24px 20px;border-radius:18px}
+      .hero-art{display:none}
+      .cols-2,.cols-3,.cols-4,.form-grid,.form-grid.three,.form-grid.four,.quiz-layout{grid-template-columns:1fr}
+      .final-scores{gap:8px}
+      .team-score{padding:12px 4px}
+      .team-score strong{font-size:28px}
+      .buzzer-grid{gap:8px}
+      .buzzer{padding:20px 4px;font-size:13px}
+      .number-grid{grid-template-columns:repeat(6,1fr)}
+      .mobile-nav{position:fixed;bottom:0;left:0;right:0;background:#0f172a;display:flex;justify-content:space-around;z-index:300;padding:6px 2px env(safe-area-inset-bottom);box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+      .mobile-nav button{background:transparent;color:#94a3b8;border:0;padding:6px;font-size:10px;font-weight:600;min-width:48px}
+      .mobile-nav button.active{color:#60a5fa}
+      .mobile-nav span{display:block;font-size:20px;margin-bottom:2px}
+      .summary-grid{grid-template-columns:1fr}
+    }
+    @media print{
+      body{background:#fff}
+      .shell{display:block}
+      .sidebar,.topbar,.mobile-nav,.btn-row,.question-control,.summary-filter-bar,.summary-card-foot{display:none!important}
+      .content{padding:0;max-width:none}
+      .card,.summary-card,.result-answer{box-shadow:none;border:1px solid #ccc;break-inside:avoid;margin-bottom:16px}
+    }
+  </style>
+  <!-- Supabase JS Client (Loaded from CDN with safe fallback) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <!-- Data Soal Offline-First & Seed -->
+  <script src="data_questions.js"></script>
+  <!-- Data Rangkuman Materi Lengkap MTK & IPAS Kelas 4 - 6 -->
+  <script src="data_rangkuman.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="loading-overlay">
+      <div>
+        <span class="load"></span>
+        <p style="margin-top:12px">Memuat Arena Cerdas Cermat...</p>
+      </div>
+    </div>
+  </div>
+  <div id="toast-container" aria-live="polite"></div>
+
+  <script>
+    'use strict';
+    const APP_VERSION = '2.0.0';
+
+    // State Aplikasi Global
+    const S = {
+      page: 'dashboard',
+      boot: null,
+      token: sessionStorage.getItem('ccAdminToken') || '',
+      busy: false,
+      clockOffset: 0,
+      sound: localStorage.getItem('ccSound') !== 'false',
+      
+      // Supabase State
+      supabase: null,
+      supabaseConnected: false,
+      supabaseUrl: localStorage.getItem('ccSupabaseUrl') || '',
+      supabaseKey: localStorage.getItem('ccSupabaseKey') || '',
+
+      // Sesi Latihan & Ujian
+      session: null,
+      questionIndex: 0,
+      answers: {},
+      review: null,
+      reviewOnlyWrong: false,
+
+      // Bank Soal
+      bank: null,
+      bankFilter: { page: 0, search: '', mapel: '', kelas: '' },
+      editing: null,
+
+      // Evaluasi & Statistik
+      stats: null,
+      ranking: null,
+
+      // Final & Buzzer
+      final: null,
+      buzzTeam: null,
+      finalDeadline: null,
+      finalExpired: false,
+      showFinalAnswer: false,
+
+      // Halaman Rangkuman
+      summaryFilter: { mapel: '', kelas: '', search: '' },
+      summaryOpenAnswers: {}
+    };
+
+    const $ = sel => document.querySelector(sel);
+    const esc = x => String(x === null || x === undefined ? '' : x).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const fmtDate = ms => new Date(Number(ms)).toLocaleString('id-ID', { dateStyle: 'medium', timeStyle: 'short' });
+    const clock = seconds => {
+      const s = Math.max(0, Math.floor(seconds));
+      return Math.floor(s / 3600)
+        ? `${String(Math.floor(s / 3600)).padStart(2, '0')}:${String(Math.floor(s / 60) % 60).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`
+        : `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
+    };
+
+    function toast(message, error = false) {
+      const el = document.createElement('div');
+      el.className = 'toast' + (error ? ' error' : '');
+      el.textContent = message;
+      $('#toast-container').appendChild(el);
+      setTimeout(() => el.remove(), 4600);
+    }
+
+    function busy(on) {
+      S.busy = on;
+      let el = $('#loader');
+      if (on && !el) {
+        document.body.insertAdjacentHTML('beforeend', '<div class="loading-overlay" id="loader"><div><span class="load"></span><p style="margin-top:12px">Memproses data...</p></div></div>');
+      } else if (!on && el) {
+        el.remove();
+      }
+    }
+
+    async function run(call) {
+      busy(true);
+      try {
+        return await call();
+      } catch (e) {
+        const message = e.message || String(e);
+        toast(message, true);
+        if (/Sesi guru kedaluwarsa/i.test(message)) {
+          S.token = '';
+          sessionStorage.removeItem('ccAdminToken');
+          render();
+        }
+        throw e;
+      } finally {
+        busy(false);
+      }
+    }
+
+    // =========================================================================
+    // LAYER PENYIMPANAN & KONEKSI SUPABASE DENGAN FALLBACK LOKAL
+    // =========================================================================
+    
+    // Inisialisasi Supabase Client jika URL dan Key tersedia
+    async function initSupabase(url, key) {
+      if (!url || !key) {
+        S.supabase = null;
+        S.supabaseConnected = false;
+        return false;
+      }
+      try {
+        if (!window.supabase || typeof window.supabase.createClient !== 'function') {
+          console.warn('Supabase JS library belum terpasang dari CDN. Menggunakan local storage.');
+          return false;
+        }
+        const client = window.supabase.createClient(url.trim(), key.trim());
+        // Tes query ringan ke cc_settings atau cc_questions
+        const { data, error } = await client.from('cc_settings').select('key').limit(1);
+        if (error && error.code !== 'PGRST116') {
+          console.warn('Uji koneksi Supabase gagal:', error.message);
+          S.supabase = client; // tetap simpan barangkali tabel belum di-create
+          S.supabaseConnected = false;
+          return false;
+        }
+        S.supabase = client;
+        S.supabaseConnected = true;
+        return true;
+      } catch (err) {
+        console.error('Inisialisasi Supabase gagal:', err);
+        S.supabaseConnected = false;
+        return false;
+      }
+    }
+
+    // Mengambil semua soal aktif (dari Supabase atau data lokal)
+    async function dbGetQuestions() {
+      if (S.supabaseConnected && S.supabase) {
+        try {
+          const { data, error } = await S.supabase.from('cc_questions').select('*').order('id');
+          if (!error && Array.isArray(data) && data.length > 0) {
+            return data.map(q => ({
+              ID_SOAL: q.id,
+              MAPEL: q.mapel,
+              KELAS: q.kelas,
+              TOPIK: q.topik,
+              BABAK: q.babak,
+              LEVEL: q.level,
+              TIPE: q.tipe,
+              PERTANYAAN: q.pertanyaan,
+              OPSI_A: q.opsi_a || '',
+              OPSI_B: q.opsi_b || '',
+              OPSI_C: q.opsi_c || '',
+              OPSI_D: q.opsi_d || '',
+              KUNCI: q.kunci,
+              PEMBAHASAN: q.pembahasan || '',
+              STATUS: q.status || 'AKTIF'
+            }));
+          }
+        } catch (e) {
+          console.warn('Gagal memuat soal dari Supabase, beralih ke cache lokal:', e);
+        }
+      }
+      // Fallback: Local Storage atau Seed
+      const cached = localStorage.getItem('cc_questions_data');
+      if (cached) {
+        try {
+          return JSON.parse(cached);
+        } catch (e) {}
+      }
+      return typeof QUESTIONS_SEED !== 'undefined' ? QUESTIONS_SEED : [];
+    }
+
+    // Simpan data soal ke penyimpanan lokal
+    function dbSaveLocalQuestions(questions) {
+      try {
+        localStorage.setItem('cc_questions_data', JSON.stringify(questions));
+      } catch (e) {}
+    }
+
+    // Mengambil Pengaturan Aplikasi
+    async function dbGetSettings() {
+      const defaults = {
+        NAMA_SEKOLAH: 'UPTD SPF SD Inpres Tangkala II',
+        NAMA_PEMBINA: 'Budianto, S.Pd., Gr.',
+        JUDUL: 'ARENA CERDAS CERMAT MIPAS 2026',
+        PIN_GURU: '123456'
+      };
+      if (S.supabaseConnected && S.supabase) {
+        try {
+          const { data, error } = await S.supabase.from('cc_settings').select('*');
+          if (!error && Array.isArray(data)) {
+            const out = { ...defaults };
+            data.forEach(r => { out[r.key] = r.value; });
+            return out;
+          }
+        } catch (e) {}
+      }
+      const local = localStorage.getItem('cc_settings_data');
+      return local ? { ...defaults, ...JSON.parse(local) } : defaults;
+    }
+
+    // Simpan Pengaturan Aplikasi
+    async function dbSaveSettings(pairs) {
+      if (S.supabaseConnected && S.supabase) {
+        try {
+          const upserts = Object.keys(pairs).map(k => ({ key: k, value: pairs[k], updated_at: new Date().toISOString() }));
+          await S.supabase.from('cc_settings').upsert(upserts);
+        } catch (e) {
+          console.warn('Gagal menyimpan settings ke Supabase:', e);
+        }
+      }
+      const current = await dbGetSettings();
+      const updated = { ...current, ...pairs };
+      localStorage.setItem('cc_settings_data', JSON.stringify(updated));
+      return updated;
+    }
+
+    // Simpan sesi pengerjaan ke database
+    async function dbSaveSession(sessionData) {
+      if (S.supabaseConnected && S.supabase) {
+        try {
+          await S.supabase.from('cc_sessions').upsert({
+            id: sessionData.id,
+            id_tim: sessionData.idTim || '',
+            nama_tim: sessionData.teamName || 'Tim Latihan',
+            mode: sessionData.mode,
+            mulai_ms: sessionData.startedAt,
+            batas_ms: sessionData.deadline || 0,
+            selesai_ms: sessionData.finishedAt || null,
+            skor: sessionData.score !== undefined ? sessionData.score : null,
+            maks_skor: sessionData.maximum !== undefined ? sessionData.maximum : null,
+            status: sessionData.finished ? 'SELESAI' : 'BERJALAN',
+            soal_ids: sessionData.soalIds || [],
+            jawaban: sessionData.answers || {}
+          });
+        } catch (e) {
+          console.warn('Gagal sinkron sesi ke Supabase:', e);
+        }
+      }
+      // Simpan lokal
+      const list = JSON.parse(localStorage.getItem('cc_sessions_list') || '[]');
+      const idx = list.findIndex(s => s.id === sessionData.id);
+      if (idx >= 0) list[idx] = sessionData;
+      else list.unshift(sessionData);
+      localStorage.setItem('cc_sessions_list', JSON.stringify(list.slice(0, 100)));
+    }
+
+    // Mengambil riwayat sesi selesai
+    async function dbGetCompletedSessions() {
+      if (S.supabaseConnected && S.supabase) {
+        try {
+          const { data, error } = await S.supabase
+            .from('cc_sessions')
+            .select('*')
+            .eq('status', 'SELESAI')
+            .order('selesai_ms', { ascending: false })
+            .limit(100);
+          if (!error && Array.isArray(data)) {
+            return data.map(r => ({
+              id: r.id,
+              team: r.nama_tim,
+              mode: r.mode,
+              score: Number(r.skor) || 0,
+              max: Number(r.maks_skor) || 0,
+              finished: Number(r.selesai_ms) || Date.now(),
+              duration: Math.max(0, Math.round(((Number(r.selesai_ms) || 0) - (Number(r.mulai_ms) || 0)) / 1000)),
+              answers: r.jawaban || {},
+              soalIds: r.soal_ids || []
+            }));
+          }
+        } catch (e) {}
+      }
+      const list = JSON.parse(localStorage.getItem('cc_sessions_list') || '[]');
+      return list.filter(s => s.finished).map(s => ({
+        id: s.id,
+        team: s.teamName,
+        mode: s.mode,
+        score: s.score || 0,
+        max: s.maximum || 0,
+        finished: s.finishedAt || Date.now(),
+        duration: Math.max(0, Math.round((s.finishedAt - s.startedAt) / 1000)),
+        answers: s.answers || {},
+        soalIds: s.soalIds || []
+      }));
+    }
+
+    // =========================================================================
+    // API SERVICE & LOGIKA PERMAINAN
+    // =========================================================================
+
+    function publicQuestion(q) {
+      return {
+        id: q.ID_SOAL,
+        mapel: q.MAPEL,
+        kelas: Number(q.KELAS),
+        topik: q.TOPIK,
+        babak: q.BABAK,
+        level: q.LEVEL,
+        tipe: q.TIPE || 'PG',
+        text: q.PERTANYAAN,
+        options: [q.OPSI_A, q.OPSI_B, q.OPSI_C, q.OPSI_D].filter(Boolean)
+      };
+    }
+
+    function shuffle(arr) {
+      const a = arr.slice();
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
+
+    const api = {
+      async getBootstrap() {
+        const settings = await dbGetSettings();
+        const questions = await dbGetQuestions();
+        const active = questions.filter(q => q.STATUS === 'AKTIF');
+        const counts = { MATEMATIKA: 0, IPA: 0, IPS: 0 };
+        active.forEach(q => { if (counts[q.MAPEL] !== undefined) counts[q.MAPEL]++; });
+        return {
+          version: APP_VERSION,
+          settings,
+          serverNow: Date.now(),
+          counts,
+          totalQuestions: active.length,
+          supabaseConnected: S.supabaseConnected
+        };
+      },
+
+      async loginAdmin(pin) {
+        const settings = await dbGetSettings();
+        const currentPin = (settings.PIN_GURU || '123456').trim();
+        if (pin.trim() !== currentPin) {
+          throw new Error('PIN Guru tidak sesuai.');
+        }
+        const token = 'token-' + Math.random().toString(36).substr(2, 10);
+        return { token };
+      },
+
+      async createSession(payload) {
+        const all = (await dbGetQuestions()).filter(q => q.STATUS === 'AKTIF');
+        const mode = (payload.mode || 'LATIHAN').toUpperCase();
+        const teamName = (payload.teamName || 'Tim Cerdas').trim();
+        let selected = [], seconds = 0;
+
+        if (mode === 'PENYISIHAN' || mode === 'SEMIFINAL') {
+          // 10 Matematika, 10 IPA, 10 IPS
+          ['MATEMATIKA', 'IPA', 'IPS'].forEach(m => {
+            const pool = all.filter(q => q.MAPEL === m && q.TIPE === 'PG');
+            selected.push(...shuffle(pool).slice(0, 10));
+          });
+          selected = shuffle(selected);
+          seconds = 2700; // 45 menit
+        } else {
+          // Latihan Mandiri / Cepat
+          const count = Math.min(50, Math.max(5, Number(payload.count) || 10));
+          let pool = all.filter(q => q.TIPE === 'PG');
+          if (payload.mapel) pool = pool.filter(q => q.MAPEL === payload.mapel);
+          if (payload.kelas) pool = pool.filter(q => Number(q.KELAS) === Number(payload.kelas));
+          if (payload.level) pool = pool.filter(q => q.LEVEL === payload.level);
+          
+          selected = shuffle(pool).slice(0, count);
+          if (selected.length < count) {
+            // fallback jika filter terlalu ketat
+            const fallback = shuffle(all.filter(q => !selected.includes(q)));
+            selected.push(...fallback.slice(0, count - selected.length));
+          }
+          seconds = mode === 'CEPAT'
+            ? selected.length * Math.min(30, Math.max(10, Number(payload.fastSeconds) || 15))
+            : (payload.timed ? selected.length * 60 : 0);
+        }
+
+        const now = Date.now();
+        const id = 'SESI-' + Math.random().toString(36).substr(2, 9).toUpperCase();
+        const sessionObj = {
+          id,
+          idTim: 'TIM-' + Math.random().toString(36).substr(2, 6).toUpperCase(),
+          mode,
+          teamName,
+          startedAt: now,
+          deadline: seconds ? now + seconds * 1000 : null,
+          questions: selected.map(publicQuestion),
+          soalIds: selected.map(q => q.ID_SOAL),
+          answers: {},
+          finished: false
+        };
+
+        await dbSaveSession(sessionObj);
+        return sessionObj;
+      },
+
+      async saveAnswers(id, answers) {
+        const session = S.session;
+        if (session && session.id === id) {
+          session.answers = answers;
+          await dbSaveSession({ ...session, answers });
+        }
+        return { saved: true };
+      },
+
+      async submitSession(id, answers) {
+        const allQuestions = await dbGetQuestions();
+        const qMap = new Map(allQuestions.map(q => [q.ID_SOAL, q]));
+        const session = S.session;
+        if (!session || session.id !== id) throw new Error('Sesi tidak ditemukan.');
+
+        const pts = (session.mode === 'PENYISIHAN' || session.mode === 'SEMIFINAL') ? 4 : 1;
+        const items = session.questions.map(pq => {
+          const raw = qMap.get(pq.id);
+          const chosen = answers[pq.id] || '';
+          const correct = chosen && raw && chosen.toUpperCase() === raw.KUNCI.trim().toUpperCase();
+          return {
+            ...pq,
+            chosen,
+            correct: !!correct,
+            answer: raw ? raw.KUNCI : '',
+            explanation: raw ? raw.PEMBAHASAN : '',
+            points: correct ? pts : 0
+          };
+        });
+
+        const score = items.reduce((s, it) => s + it.points, 0);
+        const maximum = session.questions.length * pts;
+        const correctCount = items.filter(it => it.correct).length;
+        const finishedAt = Date.now();
+
+        const review = {
+          score,
+          maximum,
+          correct: correctCount,
+          total: session.questions.length,
+          items,
+          finishedAt
+        };
+
+        session.finished = true;
+        session.finishedAt = finishedAt;
+        session.score = score;
+        session.maximum = maximum;
+        session.review = review;
+        await dbSaveSession(session);
+
+        return review;
+      },
+
+      async listQuestions(token, filter) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        const all = await dbGetQuestions();
+        let filtered = all;
+        if (filter.mapel) filtered = filtered.filter(q => q.MAPEL === filter.mapel);
+        if (filter.kelas) filtered = filtered.filter(q => Number(q.KELAS) === Number(filter.kelas));
+        if (filter.search) {
+          const s = filter.search.toLowerCase();
+          filtered = filtered.filter(q =>
+            q.PERTANYAAN.toLowerCase().includes(s) ||
+            q.TOPIK.toLowerCase().includes(s) ||
+            q.ID_SOAL.toLowerCase().includes(s)
+          );
+        }
+        const page = filter.page || 0;
+        const pageSize = 30;
+        const paged = filtered.slice(page * pageSize, (page + 1) * pageSize);
+        return {
+          total: filtered.length,
+          page,
+          items: paged.map(q => ({
+            id: q.ID_SOAL,
+            mapel: q.MAPEL,
+            kelas: q.KELAS,
+            topik: q.TOPIK,
+            babak: q.BABAK,
+            level: q.LEVEL,
+            tipe: q.TIPE,
+            text: q.PERTANYAAN,
+            options: [q.OPSI_A, q.OPSI_B, q.OPSI_C, q.OPSI_D],
+            answer: q.KUNCI,
+            explanation: q.PEMBAHASAN,
+            active: q.STATUS === 'AKTIF'
+          }))
+        };
+      },
+
+      async saveQuestion(token, qData) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        const questions = await dbGetQuestions();
+        const id = qData.id || ('Q-' + Date.now().toString(36).toUpperCase());
+        const formatted = {
+          ID_SOAL: id,
+          MAPEL: qData.mapel,
+          KELAS: Number(qData.kelas),
+          TOPIK: qData.topik,
+          BABAK: qData.babak || 'UMUM',
+          LEVEL: qData.level || 'SEDANG',
+          TIPE: qData.tipe || 'PG',
+          PERTANYAAN: qData.text,
+          OPSI_A: (qData.options || [])[0] || '',
+          OPSI_B: (qData.options || [])[1] || '',
+          OPSI_C: (qData.options || [])[2] || '',
+          OPSI_D: (qData.options || [])[3] || '',
+          KUNCI: qData.answer,
+          PEMBAHASAN: qData.explanation || '',
+          STATUS: qData.active ? 'AKTIF' : 'NONAKTIF'
+        };
+
+        if (S.supabaseConnected && S.supabase) {
+          try {
+            await S.supabase.from('cc_questions').upsert({
+              id: formatted.ID_SOAL,
+              mapel: formatted.MAPEL,
+              kelas: formatted.KELAS,
+              topik: formatted.TOPIK,
+              babak: formatted.BABAK,
+              level: formatted.LEVEL,
+              tipe: formatted.TIPE,
+              pertanyaan: formatted.PERTANYAAN,
+              opsi_a: formatted.OPSI_A,
+              opsi_b: formatted.OPSI_B,
+              opsi_c: formatted.OPSI_C,
+              opsi_d: formatted.OPSI_D,
+              kunci: formatted.KUNCI,
+              pembahasan: formatted.PEMBAHASAN,
+              status: formatted.STATUS,
+              updated_at: new Date().toISOString()
+            });
+          } catch (e) {
+            console.warn('Gagal menyimpan soal ke Supabase:', e);
+          }
+        }
+
+        const idx = questions.findIndex(q => q.ID_SOAL === id);
+        if (idx >= 0) questions[idx] = formatted;
+        else questions.unshift(formatted);
+        dbSaveLocalQuestions(questions);
+        return { success: true };
+      },
+
+      async disableQuestion(token, id) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        const questions = await dbGetQuestions();
+        const q = questions.find(item => item.ID_SOAL === id);
+        if (q) {
+          q.STATUS = 'NONAKTIF';
+          if (S.supabaseConnected && S.supabase) {
+            try {
+              await S.supabase.from('cc_questions').update({ status: 'NONAKTIF' }).eq('id', id);
+            } catch (e) {}
+          }
+          dbSaveLocalQuestions(questions);
+        }
+        return { success: true };
+      },
+
+      async exportQuestions(token) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        return await dbGetQuestions();
+      },
+
+      async importQuestions(token, inputs) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        const questions = await dbGetQuestions();
+        let imported = 0, skipped = 0;
+        const upsertList = [];
+
+        inputs.forEach(item => {
+          if (!item.text || !item.answer) {
+            skipped++;
+            return;
+          }
+          const id = item.id || ('IMP-' + Math.random().toString(36).substr(2, 7).toUpperCase());
+          const q = {
+            ID_SOAL: id,
+            MAPEL: (item.mapel || 'MATEMATIKA').toUpperCase(),
+            KELAS: Number(item.kelas) || 4,
+            TOPIK: item.topik || 'Umum',
+            BABAK: item.babak || 'UMUM',
+            LEVEL: item.level || 'SEDANG',
+            TIPE: item.tipe || 'PG',
+            PERTANYAAN: item.text,
+            OPSI_A: (item.options || [])[0] || '',
+            OPSI_B: (item.options || [])[1] || '',
+            OPSI_C: (item.options || [])[2] || '',
+            OPSI_D: (item.options || [])[3] || '',
+            KUNCI: item.answer,
+            PEMBAHASAN: item.explanation || '',
+            STATUS: item.active !== false ? 'AKTIF' : 'NONAKTIF'
+          };
+          upsertList.push(q);
+          const existing = questions.findIndex(x => x.ID_SOAL === id);
+          if (existing >= 0) questions[existing] = q;
+          else questions.push(q);
+          imported++;
+        });
+
+        if (S.supabaseConnected && S.supabase && upsertList.length > 0) {
+          try {
+            const rows = upsertList.map(q => ({
+              id: q.ID_SOAL,
+              mapel: q.MAPEL,
+              kelas: q.KELAS,
+              topik: q.TOPIK,
+              babak: q.BABAK,
+              level: q.LEVEL,
+              tipe: q.TIPE,
+              pertanyaan: q.PERTANYAAN,
+              opsi_a: q.OPSI_A,
+              opsi_b: q.OPSI_B,
+              opsi_c: q.OPSI_C,
+              opsi_d: q.OPSI_D,
+              kunci: q.KUNCI,
+              pembahasan: q.PEMBAHASAN,
+              status: q.STATUS
+            }));
+            await S.supabase.from('cc_questions').upsert(rows);
+          } catch (e) {
+            console.warn('Gagal import ke Supabase:', e);
+          }
+        }
+
+        dbSaveLocalQuestions(questions);
+        return { imported, skipped };
+      },
+
+      async getStatistics(token) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        const sessions = await dbGetCompletedSessions();
+        const allQuestions = await dbGetQuestions();
+        const qMap = new Map(allQuestions.map(q => [q.ID_SOAL, q]));
+
+        const totalSesi = sessions.length;
+        const avgAcc = totalSesi
+          ? Math.round(sessions.reduce((s, it) => s + (it.score / Math.max(1, it.max)) * 100, 0) / totalSesi)
+          : 0;
+
+        const subjectStats = { MATEMATIKA: { correct: 0, total: 0 }, IPA: { correct: 0, total: 0 }, IPS: { correct: 0, total: 0 } };
+        const topicStats = {};
+
+        sessions.slice(0, 50).forEach(s => {
+          const ans = s.answers || {};
+          (s.soalIds || []).forEach(qid => {
+            const q = qMap.get(qid);
+            if (!q) return;
+            const chosen = ans[qid];
+            const isCorrect = chosen && chosen.toUpperCase() === q.KUNCI.trim().toUpperCase();
+            
+            if (subjectStats[q.MAPEL]) {
+              subjectStats[q.MAPEL].total++;
+              if (isCorrect) subjectStats[q.MAPEL].correct++;
+            }
+
+            if (!topicStats[q.TOPIK]) topicStats[q.TOPIK] = { topic: q.TOPIK, correct: 0, total: 0 };
+            topicStats[q.TOPIK].total++;
+            if (isCorrect) topicStats[q.TOPIK].correct++;
+          });
+        });
+
+        const weakTopics = Object.values(topicStats)
+          .filter(t => t.total >= 3)
+          .sort((a, b) => (a.correct / a.total) - (b.correct / b.total))
+          .slice(0, 5);
+
+        return {
+          sessions: totalSesi,
+          average: avgAcc,
+          recent: sessions.slice(0, 50),
+          subjectStats,
+          weakTopics
+        };
+      },
+
+      async leaderboard(token, mode) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        const sessions = await dbGetCompletedSessions();
+        const filtered = sessions.filter(s => s.mode === mode);
+        const bestByTeam = new Map();
+
+        filtered.forEach(s => {
+          const prev = bestByTeam.get(s.team);
+          if (!prev || s.score > prev.score || (s.score === prev.score && s.duration < prev.duration)) {
+            bestByTeam.set(s.team, s);
+          }
+        });
+
+        const sorted = Array.from(bestByTeam.values()).sort((a, b) => b.score - a.score || a.duration - b.duration);
+        return sorted.map((s, idx) => ({
+          rank: idx + 1,
+          team: s.team,
+          score: s.score,
+          seconds: s.duration,
+          qualified: idx < (mode === 'PENYISIHAN' ? 8 : 3)
+        }));
+      },
+
+      // Pertandingan Final & Buzzer
+      async createFinalMatch(token, teamNames) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        const all = (await dbGetQuestions()).filter(q => q.STATUS === 'AKTIF');
+        const used = new Set();
+
+        const mandatory = [];
+        for (let round = 0; round < 2; round++) {
+          for (let team = 0; team < 3; team++) {
+            ['MATEMATIKA', 'IPA', 'IPS'].forEach(subject => {
+              const cand = all.filter(q => q.MAPEL === subject && !used.has(q.ID_SOAL));
+              if (cand.length) {
+                const picked = cand[0];
+                used.add(picked.ID_SOAL);
+                mandatory.push({ team, id: picked.ID_SOAL });
+              }
+            });
+          }
+        }
+
+        const rebutan = [];
+        ['MATEMATIKA', 'IPA', 'IPS'].forEach(subject => {
+          const cand = all.filter(q => q.MAPEL === subject && !used.has(q.ID_SOAL)).slice(0, 5);
+          cand.forEach(q => { used.add(q.ID_SOAL); rebutan.push(q.ID_SOAL); });
+        });
+
+        const extra = all.filter(q => !used.has(q.ID_SOAL)).map(q => q.ID_SOAL);
+
+        const match = {
+          id: 'FINAL-' + Date.now().toString(36).toUpperCase(),
+          teams: teamNames.map((name, i) => ({ id: 'T' + (i + 1), name, score: 0 })),
+          phase: 'WAJIB',
+          wajib: mandatory,
+          wajibIndex: 0,
+          rebutan: shuffle(rebutan),
+          rebutanIndex: 0,
+          extra: shuffle(extra),
+          extraIndex: 0,
+          blockedTeams: [],
+          logs: []
+        };
+
+        if (S.supabaseConnected && S.supabase) {
+          try {
+            await S.supabase.from('cc_final_matches').upsert({ id: match.id, state: match });
+          } catch (e) {}
+        }
+        localStorage.setItem('cc_final_current', JSON.stringify(match));
+        return api.matchView(match, all);
+      },
+
+      matchView(match, allQuestions) {
+        let currentId = null, mandatoryTeam = null;
+        if (match.phase === 'WAJIB') {
+          const item = match.wajib[match.wajibIndex];
+          if (item) { currentId = item.id; mandatoryTeam = item.team; }
+        } else if (match.phase === 'REBUTAN') {
+          currentId = match.rebutan[match.rebutanIndex];
+        } else if (match.phase === 'TAMBAHAN') {
+          currentId = match.extra[match.extraIndex];
+        }
+
+        const q = currentId ? allQuestions.find(it => it.ID_SOAL === currentId) : null;
+        const total = match.phase === 'WAJIB' ? match.wajib.length : match.phase === 'REBUTAN' ? match.rebutan.length : null;
+        const index = match.phase === 'WAJIB' ? match.wajibIndex : match.phase === 'REBUTAN' ? match.rebutanIndex : match.extraIndex;
+
+        return {
+          id: match.id,
+          teams: match.teams,
+          phase: match.phase,
+          index,
+          total,
+          mandatoryTeam,
+          eligible: [0, 1, 2].filter(t => !match.blockedTeams.includes(t)),
+          question: q ? {
+            ...publicQuestion(q),
+            answer: q.KUNCI,
+            answerText: ['A', 'B', 'C', 'D'].includes(q.KUNCI) ? q['OPSI_' + q.KUNCI] : q.KUNCI,
+            explanation: q.PEMBAHASAN
+          } : null,
+          logs: match.logs.slice(-10)
+        };
+      },
+
+      async getFinalMatch(token, id) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        const all = await dbGetQuestions();
+        const raw = localStorage.getItem('cc_final_current');
+        if (!raw) throw new Error('Pertandingan final tidak ditemukan.');
+        return api.matchView(JSON.parse(raw), all);
+      },
+
+      async adjudicateFinal(token, matchId, teamIndex, action) {
+        if (!token) throw new Error('Sesi guru diperlukan.');
+        const all = await dbGetQuestions();
+        const raw = localStorage.getItem('cc_final_current');
+        if (!raw) throw new Error('Pertandingan tidak ditemukan.');
+        const match = JSON.parse(raw);
+
+        const change = action === 'BENAR' ? 10 : action === 'SALAH' && match.phase !== 'WAJIB' ? -5 : 0;
+        match.teams[teamIndex].score += change;
+        match.logs.push({
+          phase: match.phase,
+          team: teamIndex,
+          action,
+          change,
+          at: Date.now()
+        });
+
+        if (action === 'LEMPAR') {
+          match.blockedTeams.push(teamIndex);
+          if (match.blockedTeams.length >= 3) action = 'KOSONG';
+        }
+
+        if (action !== 'LEMPAR') {
+          match.blockedTeams = [];
+          if (match.phase === 'WAJIB') {
+            match.wajibIndex++;
+            if (match.wajibIndex >= match.wajib.length) match.phase = 'REBUTAN';
+          } else if (match.phase === 'REBUTAN') {
+            match.rebutanIndex++;
+            if (match.rebutanIndex >= match.rebutan.length) {
+              // Cek seri
+              const scores = match.teams.map(t => t.score);
+              const maxScore = Math.max(...scores);
+              const tied = match.teams.filter(t => t.score === maxScore);
+              match.phase = tied.length > 1 ? 'TAMBAHAN' : 'SELESAI';
+            }
+          } else if (match.phase === 'TAMBAHAN') {
+            match.extraIndex++;
+            const scores = match.teams.map(t => t.score);
+            const maxScore = Math.max(...scores);
+            const tied = match.teams.filter(t => t.score === maxScore);
+            if (tied.length <= 1 || match.extraIndex >= match.extra.length) {
+              match.phase = 'SELESAI';
+            }
+          }
+        }
+
+        if (S.supabaseConnected && S.supabase) {
+          try {
+            await S.supabase.from('cc_final_matches').upsert({ id: match.id, state: match });
+          } catch (e) {}
+        }
+        localStorage.setItem('cc_final_current', JSON.stringify(match));
+        return api.matchView(match, all);
+      }
+    };
+
+    // =========================================================================
+    // AUDIO SOUND EFFECTS
+    // =========================================================================
+    function sound(freq = 660) {
+      if (!S.sound) return;
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        const ctx = new AudioContext();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'sine';
+        osc.frequency.value = freq;
+        gain.gain.value = 0.08;
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start();
+        setTimeout(() => { osc.stop(); ctx.close(); }, 160);
+      } catch (e) {}
+    }
+
+    // =========================================================================
+    // NAVIGASI & LAYOUT
+    // =========================================================================
+    const menu = [
+      ['dashboard', '🏠', 'Dashboard'],
+      ['summary', '📖', 'Rangkuman Materi'],
+      ['practice', '🧠', 'Latihan Mandiri'],
+      ['exam', '🏆', 'Simulasi Lomba'],
+      ['final', '⚡', 'Final & Buzzer'],
+      ['bank', '📚', 'Bank Soal Guru'],
+      ['stats', '📊', 'Evaluasi'],
+      ['settings', '⚙️', 'Pengaturan']
+    ];
+
+    function navHtml() {
+      return menu.map(([id, icon, label]) => `
+        <button type="button" class="nav-button ${S.page === id ? 'active' : ''}" data-action="navigate" data-page="${id}">
+          <span class="nav-ico">${icon}</span>
+          <span>${label}</span>
+        </button>
+      `).join('');
+    }
+
+    function layout(content) {
+      const title = esc(S.boot?.settings?.JUDUL || 'ARENA CERDAS CERMAT MIPAS 2026');
+      const school = esc(S.boot?.settings?.NAMA_SEKOLAH || 'UPTD SPF SD Inpres Tangkala II');
+      const connBadge = S.supabaseConnected
+        ? '<span class="side-cloud-badge online">🟢 Supabase Terhubung</span>'
+        : '<span class="side-cloud-badge offline">🟡 Mode Mandiri (Lokal)</span>';
+
+      return `
+        <div class="shell">
+          <aside class="sidebar">
+            <div class="logo">
+              <div class="logo-emblem">🏆</div>
+              <div>
+                <strong>ARENA MIPAS</strong>
+                <small>Olimpiade & ANBK 2026</small>
+              </div>
+            </div>
+            <div class="nav-caption">Menu Utama</div>
+            ${navHtml()}
+            <div class="side-foot">
+              ${connBadge}<br>
+              <strong>${school}</strong><br>
+              Versi ${APP_VERSION} (Vercel & Supabase)
+            </div>
+          </aside>
+          <main class="main">
+            <header class="topbar">
+              <div>
+                <div class="topbar-title">${title}</div>
+                <div class="topbar-sub">${school} · SD Kelas 4, 5, 6</div>
+              </div>
+              <div class="topbar-badges">
+                ${S.supabaseConnected
+                  ? '<div class="badge green">☁️ Supabase Cloud</div>'
+                  : '<div class="badge gold" data-action="navigate" data-page="settings" style="cursor:pointer" title="Klik untuk sambungkan Supabase">⚡ Mode Mandiri</div>'}
+                <div class="badge ${S.token ? 'royal' : 'gold'}">${S.token ? '🔓 Mode Guru' : '✨ Mode Murid'}</div>
+              </div>
+            </header>
+            <div class="content">${content}</div>
+          </main>
+        </div>
+        <nav class="mobile-nav">
+          ${[
+            ['dashboard', '🏠', 'Beranda'],
+            ['summary', '📖', 'Materi'],
+            ['practice', '🧠', 'Latihan'],
+            ['exam', '🏆', 'Lomba'],
+            ['final', '⚡', 'Final']
+          ].map(([id, ico, label]) => `
+            <button data-action="navigate" data-page="${id}" class="${S.page === id ? 'active' : ''}">
+              <span>${ico}</span>${label}
+            </button>
+          `).join('')}
+        </nav>
+      `;
+    }
+
+    const heading = (name, desc = '') => `
+      <div class="heading">
+        <div>
+          <h2>${esc(name)}</h2>
+          ${desc ? `<p>${esc(desc)}</p>` : ''}
+        </div>
+      </div>
+    `;
+
+    const card = (content, css = '') => `<div class="card ${css}">${content}</div>`;
+    const input = (label, id, value = '', type = 'text', placeholder = '') => `
+      <div class="field">
+        <label for="${id}">${esc(label)}</label>
+        <input id="${id}" type="${type}" value="${esc(value)}" placeholder="${esc(placeholder)}">
+      </div>
+    `;
+    const select = (label, id, options, value = '') => `
+      <div class="field">
+        <label for="${id}">${esc(label)}</label>
+        <select id="${id}">
+          ${options.map(([v, l]) => `<option value="${esc(v)}" ${String(v) === String(value) ? 'selected' : ''}>${esc(l)}</option>`).join('')}
+        </select>
+      </div>
+    `;
+
+    const subjOpts = [['', 'Campuran MIPAS'], ['MATEMATIKA', 'Matematika'], ['IPA', 'IPA'], ['IPS', 'IPS']];
+    const levelOpts = [['', 'Semua kesulitan'], ['MUDAH', 'Mudah'], ['SEDANG', 'Sedang'], ['SULIT', 'Sulit'], ['HOTS', 'HOTS']];
+    const clsOpts = [['', 'Semua kelas (IV–VI)'], ['4', 'Kelas IV'], ['5', 'Kelas V'], ['6', 'Kelas VI']];
+
+    // =========================================================================
+    // VIEW: DASHBOARD
+    // =========================================================================
+    function dashboardView() {
+      const c = S.boot?.counts || {};
+      return `
+        <section class="hero">
+          <div>
+            <div class="eyebrow">Selamat datang, Pejuang Olimpiade MIPAS!</div>
+            <h1>Berpikir Cepat.<br>Menjawab Tepat. Jadi Juara!</h1>
+            <p>Platform latihan Matematika dan IPAS (IPA & IPS) interaktif SD Kelas 4–6, kini bertenaga Vercel & Supabase Cloud.</p>
+            <div class="btn-row">
+              <button class="btn gold" data-action="navigate" data-page="summary">📖 Buka Rangkuman Materi</button>
+              <button class="btn secondary" data-action="navigate" data-page="practice" style="background:rgba(255,255,255,.2);color:#fff;border-color:rgba(255,255,255,.3)">🚀 Mulai Latihan</button>
+            </div>
+          </div>
+          <div class="hero-art">🏆</div>
+        </section>
+
+        ${heading('Bank Soal Terintegrasi Cloud', 'Soal terhubung ke Supabase Database dan dapat diperbarui oleh guru secara real-time.')}
+        <div class="grid cols-4">
+          ${[
+            ['📚', 'Total Soal Aktif', S.boot?.totalQuestions || 0],
+            ['🔢', 'Matematika (MTK)', c.MATEMATIKA || 0],
+            ['🌿', 'IPA', c.IPA || 0],
+            ['🌏', 'IPS', c.IPS || 0]
+          ].map(([ico, t, n]) => card(`
+            <div class="stat">
+              <div class="stat-icon">${ico}</div>
+              <div><small>${t}</small><strong>${n}</strong></div>
+            </div>
+          `)).join('')}
+        </div>
+
+        ${heading('Pilih Arena Pembelajaran', 'Bersiap menghadapi latihan mandiri, olimpiade beregu, hingga babak final ber-buzzer.')}
+        <div class="grid cols-4">
+          ${modeCard('📖', 'Rangkuman Materi', 'Kumpulan materi MTK & IPAS lengkap Kelas 4–6 dengan rumus cepat dan konsep penting.', 'summary')}
+          ${modeCard('🧠', 'Latihan Mandiri', 'Latihan terfokus per mata pelajaran, kelas, dan tingkat kesulitan.', 'practice')}
+          ${modeCard('🏆', 'Simulasi Lomba', 'Babak 30 soal, 45 menit, 10 MTK + 10 IPA + 10 IPS standar olimpiade.', 'exam')}
+          ${modeCard('⚡', 'Final & Buzzer', 'Pertandingan 3 tim dengan sesi wajib 30 detik & sesi rebutan buzzer.', 'final')}
+        </div>
+
+        <div class="top-spacer"></div>
+        <div class="notice">
+          📌 <strong>Kurikulum Terpadu:</strong> Materi dan soal mencakup kurikulum Matematika & IPAS (Ilmu Pengetahuan Alam dan Sosial) untuk Kelas 4, 5, dan 6 sesuai silabus Olimpiade Sains & ANBK Nasional.
+        </div>
+      `;
+    }
+
+    function modeCard(ico, title, desc, page) {
+      return `
+        <div class="mode-card">
+          <div class="mode-icon">${ico}</div>
+          <h3>${esc(title)}</h3>
+          <p>${esc(desc)}</p>
+          <button class="btn secondary sm" data-action="navigate" data-page="${page}">Buka Modul →</button>
+        </div>
+      `;
+    }
+
+    // =========================================================================
+    // VIEW: HALAMAN RANGKUMAN MATERI MTK & IPAS (KELAS 4 - 6) [BARU]
+    // =========================================================================
+    function summaryView() {
+      const data = typeof RANGKUMAN_DATA !== 'undefined' ? RANGKUMAN_DATA : [];
+      const filter = S.summaryFilter;
+      
+      let filtered = data.filter(item => {
+        if (filter.mapel && item.mapel !== filter.mapel) return false;
+        if (filter.kelas && Number(item.kelas) !== Number(filter.kelas)) return false;
+        if (filter.search) {
+          const s = filter.search.toLowerCase();
+          const matchTitle = item.judul.toLowerCase().includes(s);
+          const matchRingkasan = item.ringkasan.toLowerCase().includes(s);
+          const matchCategory = item.kategori.toLowerCase().includes(s);
+          const matchTags = (item.tags || []).some(t => t.toLowerCase().includes(s));
+          const matchFormula = (item.rumus || []).some(r => r.toLowerCase().includes(s));
+          if (!matchTitle && !matchRingkasan && !matchCategory && !matchTags && !matchFormula) return false;
+        }
+        return true;
+      });
+
+      return `
+        ${heading('Rangkuman Materi Terpadu MTK & IPAS', 'Ringkasan komprehensif konsep inti, rumus emas, poin hafalan, dan contoh soal untuk SD Kelas 4, 5, dan 6.')}
+        
+        <div class="card" style="margin-bottom:24px">
+          <div class="summary-filter-bar">
+            <div class="filter-pills">
+              <span class="subtle" style="display:flex;align-items:center;margin-right:4px"><b>Mapel:</b></span>
+              <button class="filter-btn ${!filter.mapel ? 'active' : ''}" data-action="setSummaryMapel" data-val="">Semua Mapel</button>
+              <button class="filter-btn ${filter.mapel === 'MATEMATIKA' ? 'active' : ''}" data-action="setSummaryMapel" data-val="MATEMATIKA">🔢 Matematika (MTK)</button>
+              <button class="filter-btn ${filter.mapel === 'IPAS' ? 'active' : ''}" data-action="setSummaryMapel" data-val="IPAS">🌿 IPAS (IPA & IPS)</button>
+            </div>
+            <div class="filter-pills">
+              <span class="subtle" style="display:flex;align-items:center;margin-right:4px"><b>Tingkat:</b></span>
+              <button class="filter-btn ${!filter.kelas ? 'active' : ''}" data-action="setSummaryKelas" data-val="">Semua Kelas</button>
+              <button class="filter-btn ${filter.kelas === '4' ? 'active' : ''}" data-action="setSummaryKelas" data-val="4">Kelas IV</button>
+              <button class="filter-btn ${filter.kelas === '5' ? 'active' : ''}" data-action="setSummaryKelas" data-val="5">Kelas V</button>
+              <button class="filter-btn ${filter.kelas === '6' ? 'active' : ''}" data-action="setSummaryKelas" data-val="6">Kelas VI</button>
+            </div>
+            <div class="search-box">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="summarySearch" placeholder="Cari topik, rumus, kata kunci..." value="${esc(filter.search)}">
+            </div>
+          </div>
+          <div class="btn-row" style="justify-content:space-between">
+            <span class="subtle">Menampilkan <b>${filtered.length}</b> bab materi pembelajaran</span>
+            <button class="btn ghost sm" data-action="print">🖨️ Cetak Lembar Rangkuman</button>
+          </div>
+        </div>
+
+        ${filtered.length === 0 ? `
+          <div class="card empty">
+            <div style="font-size:44px">🔍</div>
+            <strong>Topik Tidak Ditemukan</strong>
+            <p>Tidak ada materi yang cocok dengan kata kunci "<b>${esc(filter.search)}</b>". Coba gunakan kata kunci lain atau bersihkan filter.</p>
+            <button class="btn secondary sm" data-action="clearSummaryFilter">Reset Filter Pencarian</button>
+          </div>
+        ` : `
+          <div class="summary-grid">
+            ${filtered.map(item => summaryCardHtml(item)).join('')}
+          </div>
+        `}
+      `;
+    }
+
+    function summaryCardHtml(item) {
+      const isMtk = item.mapel === 'MATEMATIKA';
+      const showAnswer = !!S.summaryOpenAnswers[item.id];
+
+      return `
+        <article class="summary-card ${isMtk ? 'mtk' : 'ipas'}">
+          <div class="summary-card-header">
+            <div class="summary-card-icon">${item.icon || (isMtk ? '🔢' : '🌿')}</div>
+            <div style="flex:1">
+              <div class="summary-category">${esc(item.kategori)}</div>
+              <h3>${esc(item.judul)}</h3>
+              <div style="margin-top:5px;display:flex;gap:6px;flex-wrap:wrap">
+                <span class="pill ${isMtk ? 'blue' : 'green'}">${esc(item.mapel)}</span>
+                <span class="pill gold">Kelas ${item.kelas}</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="summary-ringkasan">${esc(item.ringkasan)}</p>
+
+          <div class="summary-box">
+            <div class="summary-box-title">💡 Poin-Poin Konsep Kunci</div>
+            <ul>
+              ${item.poinPenting.map(pt => `<li>${esc(pt)}</li>`).join('')}
+            </ul>
+          </div>
+
+          ${item.rumus && item.rumus.length ? `
+            <div class="formula-box">
+              <div class="formula-box-title">📐 Kaidah / Rumus Emas</div>
+              ${item.rumus.map(r => `<code>${esc(r)}</code>`).join('')}
+            </div>
+          ` : ''}
+
+          ${item.contohSoal ? `
+            <div class="example-box">
+              <div class="example-q">❓ Contoh Uji Pemahaman:</div>
+              <div style="font-size:12.5px;color:#334155;margin-bottom:6px">${esc(item.contohSoal.tanya)}</div>
+              <button class="example-toggle" data-action="toggleSummaryAnswer" data-id="${item.id}">
+                ${showAnswer ? '▲ Sembunyikan Pembahasan' : '▼ Lihat Kunci & Pembahasan'}
+              </button>
+              ${showAnswer ? `
+                <div class="example-ans">
+                  <b>Kunci:</b> ${esc(item.contohSoal.kunci)}<br>
+                  <b>💡 Pembahasan:</b> ${esc(item.contohSoal.bahas)}
+                </div>
+              ` : ''}
+            </div>
+          ` : ''}
+
+          <div class="summary-card-foot">
+            <span class="subtle" style="font-size:11.5px">SD Kelas ${item.kelas}</span>
+            <button class="btn secondary sm" data-action="practiceFromSummary" data-mapel="${item.mapel === 'IPAS' ? 'IPA' : 'MATEMATIKA'}" data-kelas="${item.kelas}">
+              🎯 Latih Soal Terkait →
+            </button>
+          </div>
+        </article>
+      `;
+    }
+
+    // =========================================================================
+    // VIEW: LATIHAN MANDIRI & SIMULASI UJIAN
+    // =========================================================================
+    function practiceView() {
+      return `
+        ${heading('Latihan Mandiri & Cepat', 'Kustomisasi sesi latihan sesuai mata pelajaran, kelas, dan tingkat kesulitan murid.')}
+        ${card(`
+          <div class="grid form-grid three">
+            ${input('Nama Murid / Tim', 'trainTeamName', '', 'text', 'Contoh: Tim Elang')}
+            ${select('Jenis Latihan', 'trainMode', [['LATIHAN', 'Latihan Mandiri Standar'], ['CEPAT', 'Latihan Cepat (Fast-Quiz)']])}
+            ${select('Mata Pelajaran', 'trainMapel', subjOpts)}
+            ${select('Kelas', 'trainKelas', clsOpts)}
+            ${select('Tingkat Kesulitan', 'trainLevel', levelOpts)}
+            ${select('Jumlah Soal', 'trainCount', [['10', '10 Soal'], ['20', '20 Soal'], ['30', '30 Soal'], ['50', '50 Soal']])}
+            ${select('Batas Waktu', 'trainTimed', [['false', 'Tanpa Batas Waktu'], ['true', '1 Menit per Soal']])}
+            ${select('Timer per Soal (Mode Cepat)', 'trainFastSeconds', [['10', '10 Detik'], ['15', '15 Detik'], ['20', '20 Detik'], ['30', '30 Detik']])}
+          </div>
+          <div class="top-spacer"></div>
+          <button class="btn gold" data-action="startPractice">▶ Mulai Sesi Latihan</button>
+        `)}
+        <div class="top-spacer"></div>
+        <div class="notice">
+          💡 Soal diacak secara otomatis dari bank soal cloud Supabase. Kunci jawaban dan pembahasan mendalam akan tampil seketika setelah hasil dikumpulkan.
+        </div>
+      `;
+    }
+
+    function examView() {
+      return `
+        ${heading('Simulasi Cerdas Cermat Beregu', 'Format resmi babak tertulis beregu yang dikerjakan bersama oleh tiga anggota tim.')}
+        ${card(`
+          <div class="notice warning">
+            ⏱️ <b>Format Resmi Lomba:</b> Waktu pengerjaan 45 menit · 30 soal pilihan ganda (10 Matematika + 10 IPA + 10 IPS) · Jawaban benar +4 · Jawaban salah atau kosong 0 · Skor maksimal 120.
+          </div>
+          <div class="top-spacer"></div>
+          <div class="grid form-grid">
+            ${select('Pilih Babak Simulasi', 'examMode', [['PENYISIHAN', 'Babak Penyisihan (30 Soal / 45 Menit)'], ['SEMIFINAL', 'Babak Semifinal (30 Soal / 45 Menit)']])}
+            ${input('Nama Tim', 'examTeam', '', 'text', 'Contoh: Tim Garuda')}
+            ${input('Anggota 1 (Juru Bicara)', 'member1', '', 'text', 'Nama murid pertama')}
+            ${input('Anggota 2', 'member2', '', 'text', 'Nama murid kedua')}
+            ${input('Anggota 3', 'member3', '', 'text', 'Nama murid ketiga')}
+          </div>
+          <div class="top-spacer"></div>
+          <button class="btn" data-action="startExam">🏁 Mulai Simulasi 45 Menit</button>
+        `)}
+        ${S.token ? `
+          <div class="top-spacer"></div>
+          <div class="btn-row">
+            <button class="btn secondary" data-action="loadRanking" data-mode="PENYISIHAN">Klasemen Penyisihan</button>
+            <button class="btn secondary" data-action="loadRanking" data-mode="SEMIFINAL">Klasemen Semifinal</button>
+          </div>
+          ${S.ranking ? renderRanking() : ''}
+        ` : ''}
+      `;
+    }
+
+    function renderRanking() {
+      return card(`
+        <h3>Klasemen Babak ${esc(S.ranking.mode)}</h3>
+        <div class="scroll-x">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Peringkat</th>
+                <th>Nama Tim</th>
+                <th>Skor Akhir</th>
+                <th>Durasi</th>
+                <th>Status Kelolosan</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${S.ranking.items.map(r => `
+                <tr>
+                  <td><b>#${r.rank}</b></td>
+                  <td>${esc(r.team)}</td>
+                  <td><strong style="color:#2563eb;font-size:14px">${r.score}</strong></td>
+                  <td>${clock(r.seconds)}</td>
+                  <td>${r.qualified ? '<span class="pill green">Zona Lolos</span>' : '<span class="pill">Cadangan</span>'}</td>
+                </tr>
+              `).join('')}
+            </tbody>
+          </table>
+        </div>
+      `);
+    }
+
+    // =========================================================================
+    // VIEW: QUIZ & PENGERJAAN SOAL
+    // =========================================================================
+    function quizView() {
+      const session = S.session;
+      if (!session) return dashboardView();
+      const qs = session.questions, idx = S.questionIndex, q = qs[idx];
+      const count = Object.keys(S.answers).filter(k => S.answers[k]).length;
+      const fraction = Math.round((count / qs.length) * 100);
+      const deadline = Number(session.deadline);
+
+      return `
+        <div class="quiz-top">
+          <div>
+            <div class="pill blue">${esc(session.mode)} • ${esc(session.teamName)}</div>
+            <h2 style="margin:8px 0 0">Soal Nomor ${idx + 1} dari ${qs.length}</h2>
+          </div>
+          <div class="timer" id="quizTimer">${deadline ? '--:--' : '⏱ Tanpa Batas'}</div>
+        </div>
+        <div class="progress"><div style="width:${fraction}%"></div></div>
+
+        <div class="quiz-layout">
+          <div>
+            ${card(`
+              <div class="question-actions">
+                <span class="pill ${q.mapel === 'MATEMATIKA' ? 'blue' : 'green'}">${esc(q.mapel)} • Kelas ${q.kelas}</span>
+                <span class="subtle">${esc(q.topik)}</span>
+              </div>
+              <div class="question-text">${esc(q.text)}</div>
+              ${q.options.map((opt, i) => {
+                const letter = 'ABCD'[i];
+                return `
+                  <button class="option ${S.answers[q.id] === letter ? 'selected' : ''}" data-action="answer" data-key="${letter}">
+                    <span class="option-letter">${letter}</span>
+                    <span>${esc(opt)}</span>
+                  </button>
+                `;
+              }).join('')}
+              <div class="question-control">
+                <button class="btn secondary" data-action="previous" ${idx === 0 ? 'disabled' : ''}>← Sebelumnya</button>
+                ${idx < qs.length - 1
+                  ? `<button class="btn" data-action="next">Berikutnya →</button>`
+                  : `<button class="btn good" data-action="submitQuiz">Kumpulkan Jawaban ✓</button>`}
+              </div>
+            `)}
+          </div>
+          <div>
+            ${card(`
+              <h3 style="margin:0 0 4px">Navigasi Lembar Soal</h3>
+              <p class="subtle">${count} dari ${qs.length} soal sudah dijawab</p>
+              <div class="number-grid">
+                ${qs.map((item, i) => `
+                  <button data-action="jump" data-index="${i}" class="${i === idx ? 'current' : (S.answers[item.id] ? 'done' : '')}">
+                    ${i + 1}
+                  </button>
+                `).join('')}
+              </div>
+              <hr class="separator">
+              <button class="btn good full" data-action="submitQuiz">✓ Kumpulkan Sekarang</button>
+            `)}
+          </div>
+        </div>
+      `;
+    }
+
+    // =========================================================================
+    // VIEW: HASIL & PEMBAHASAN
+    // =========================================================================
+    function resultView() {
+      const r = S.review;
+      if (!r) return dashboardView();
+      const pct = Math.round((100 * r.score) / Math.max(1, r.maximum));
+      const entries = S.reviewOnlyWrong ? r.items.filter(x => !x.correct) : r.items;
+
+      return `
+        ${card(`
+          <div style="text-align:center;padding:10px 0">
+            <div style="font-size:52px">${pct >= 80 ? '🏆' : (pct >= 60 ? '🌟' : '📚')}</div>
+            <div class="eyebrow" style="color:#64748b">HASIL PENGERJAAN LATIHAN</div>
+            <div class="result-score">${r.score}<span style="font-size:24px;color:#94a3b8"> / ${r.maximum}</span></div>
+            <h2>${pct}% Ketepatan</h2>
+            <p class="subtle">${r.correct} dari ${r.total} soal dijawab dengan benar</p>
+            <div class="btn-row" style="justify-content:center;margin-top:16px">
+              <button class="btn" data-action="navigate" data-page="practice">Ulangi Latihan</button>
+              <button class="btn secondary" data-action="toggleWrong">${S.reviewOnlyWrong ? 'Tampilkan Semua Soal' : 'Lihat Yang Salah Saja'}</button>
+              <button class="btn ghost" data-action="print">Cetak Hasil Evaluasi</button>
+            </div>
+          </div>
+        `)}
+        
+        ${heading('Kunci Jawaban & Pembahasan Lengkap', 'Pelajari pembahasan materi untuk soal yang belum dikuasai.')}
+        ${entries.map(q => `
+          <div class="result-answer ${q.correct ? 'correct' : 'wrong'}">
+            <div class="question-actions" style="margin-bottom:6px">
+              <strong>${esc(q.mapel)} • Kelas ${q.kelas} • ${esc(q.topik)}</strong>
+              <span class="pill ${q.correct ? 'green' : 'red'}">${q.correct ? 'Benar (+4)' : 'Belum Tepat (0)'}</span>
+            </div>
+            <div>${esc(q.text)}</div>
+            <p>
+              Jawabanmu: <b>${esc(q.chosen || 'Tidak dijawab')}</b> &nbsp;|&nbsp;
+              Kunci: <b>${esc(q.answer)}</b> — ${esc(q.options['ABCD'.indexOf(q.answer)] || '')}
+            </p>
+            <p>💡 <b>Pembahasan:</b> ${esc(q.explanation || 'Pembahasan belum tersedia.')}</p>
+          </div>
+        `).join('') || card('<div class="empty">Hebat sekali! Tidak ada jawaban yang salah 🎉</div>')}
+      `;
+    }
+
+    // =========================================================================
+    // VIEW: FINAL & BUZZER 3 TIM
+    // =========================================================================
+    function finalView() {
+      if (!S.token) return loginRequired('Simulasi Babak Final & Buzzer');
+      if (!S.final) {
+        return `
+          ${heading('Arena Final & Buzzer 3 Tim', 'Pertandingan final seru dengan soal wajib per tim dan soal rebutan dengan buzzer interaktif.')}
+          ${card(`
+            <div class="notice">
+              Sesi I terdiri dari 6 soal wajib per tim (30 detik per soal). Sesi II terdiri dari 15 soal rebutan menggunakan bel/buzzer (benar +10, salah −5).
+            </div>
+            <div class="top-spacer"></div>
+            <div class="grid form-grid three">
+              ${input('Nama Tim Merah (Kiri)', 'finalTeam1', 'Tim Merah')}
+              ${input('Nama Tim Biru (Tengah)', 'finalTeam2', 'Tim Biru')}
+              ${input('Nama Tim Hijau (Kanan)', 'finalTeam3', 'Tim Hijau')}
+            </div>
+            <div class="top-spacer"></div>
+            <button class="btn gold" data-action="newFinal">🏆 Mulai Pertandingan Final</button>
+            <hr class="separator">
+            <h3>Lanjutkan Pertandingan Terakhir</h3>
+            <p class="subtle">Jika koneksi terputus atau halaman tidak sengaja tertutup, status pertandingan dapat dipulihkan.</p>
+            <button class="btn secondary" data-action="resumeFinal">↻ Muat Sesi Final Terakhir</button>
+          `)}
+        `;
+      }
+
+      const f = S.final, q = f.question;
+      const phaseNames = { WAJIB: 'SESI I • SOAL WAJIB', REBUTAN: 'SESI II • SOAL REBUTAN', TAMBAHAN: 'BABAK TAMBAHAN', SELESAI: 'PERTANDINGAN SELESAI' };
+      const players = f.teams.map((t, i) => `
+        <div class="team-score ${f.mandatoryTeam === i || S.buzzTeam === i ? 'active' : ''}">
+          <h3>${['🔴', '🔵', '🟢'][i]} ${esc(t.name)}</h3>
+          <strong>${t.score}</strong>
+          <span class="subtle">poin</span>
+        </div>
+      `).join('');
+
+      if (f.phase === 'SELESAI') {
+        const ranking = f.teams.slice().sort((a, b) => b.score - a.score);
+        return `
+          ${heading('Hasil Akhir Pertandingan Final', 'Selamat kepada tim juara cerdas cermat MIPAS 2026!')}
+          <div class="notice success">🏆 Pertandingan telah selesai secara resmi.</div>
+          <div class="final-scores">${players}</div>
+          <div class="podium">
+            <div class="place"><span>🥈</span><strong>${esc(ranking[1]?.name || 'Juara 2')}</strong><small>${ranking[1]?.score || 0} poin</small></div>
+            <div class="place"><span>🥇</span><strong>${esc(ranking[0]?.name || 'Juara 1')}</strong><small>${ranking[0]?.score || 0} poin</small></div>
+            <div class="place"><span>🥉</span><strong>${esc(ranking[2]?.name || 'Juara 3')}</strong><small>${ranking[2]?.score || 0} poin</small></div>
+          </div>
+          <button class="btn" data-action="resetFinal">Buat Pertandingan Baru</button>
+        `;
+      }
+
+      const required = f.phase === 'WAJIB';
+      const canBuzz = !required && !S.finalExpired;
+
+      return `
+        <div class="quiz-top">
+          <div>
+            <div class="pill gold">${esc(phaseNames[f.phase] || f.phase)}</div>
+            <h2 style="margin:6px 0">${f.total ? `Soal ${f.index + 1} / ${f.total}` : `Soal Tambahan ${f.index + 1}`}</h2>
+          </div>
+          <div class="timer" id="finalTimer">${S.finalDeadline ? '--:--' : '⏱ ' + (required ? '00:30' : '03:00')}</div>
+        </div>
+        <div class="final-scores">${players}</div>
+
+        ${card(`
+          <div class="question-actions">
+            <span class="pill ${q?.mapel === 'MATEMATIKA' ? 'blue' : 'green'}">${esc(q?.mapel || '')} • Kelas ${esc(q?.kelas || '')}</span>
+            ${required
+              ? `<span class="pill gold">Giliran Wajib: ${esc(f.teams[f.mandatoryTeam]?.name || '')}</span>`
+              : `<span class="pill">${S.buzzTeam === null ? 'Menunggu Bel Buzzer' : 'Pemenang Buzzer: ' + esc(f.teams[S.buzzTeam]?.name)}</span>`}
+          </div>
+          <div class="question-text">${esc(q?.text || 'Soal tidak ditemukan')}</div>
+          
+          <div class="btn-row">
+            <button class="btn secondary" data-action="startFinalTimer">▶ Mulai Hitung Mundur / Bacakan Soal</button>
+            <button class="btn ghost" data-action="toggleFinalAnswer">${S.showFinalAnswer ? 'Sembunyikan Kunci' : '👁️ Tampilkan Kunci Jawaban'}</button>
+          </div>
+
+          ${S.showFinalAnswer ? `
+            <div class="notice success" style="margin-top:14px">
+              <strong>Kunci: ${esc(q?.answerText || q?.answer || '')}</strong>
+              <div>${esc(q?.explanation || '')}</div>
+            </div>
+          ` : ''}
+
+          ${required ? `
+            <div class="score-action">
+              <button class="btn good" data-action="judge" data-team="${f.mandatoryTeam}" data-result="BENAR">✓ Benar (+10)</button>
+              <button class="btn danger" data-action="judge" data-team="${f.mandatoryTeam}" data-result="SALAH">✕ Salah (0)</button>
+              <button class="btn ghost" data-action="judge" data-team="${f.mandatoryTeam}" data-result="KOSONG">Lewat / Waktu Habis (0)</button>
+            </div>
+          ` : `
+            <h3 style="margin:20px 0 6px">Tekan Bel Buzzer Tim untuk Merebut Kesempatan Menjawab:</h3>
+            <div class="buzzer-grid">
+              ${f.teams.map((t, i) => `
+                <button class="buzzer ${S.buzzTeam === i ? 'winner' : ''}" data-action="buzz" data-team="${i}" ${!canBuzz || S.buzzTeam !== null || !f.eligible.includes(i) ? 'disabled' : ''}>
+                  🔔<br>${esc(t.name)}
+                </button>
+              `).join('')}
+            </div>
+            ${S.buzzTeam !== null ? `
+              <div class="notice" style="margin:14px 0">
+                🎙️ Hak menjawab diberikan kepada: <b>${esc(f.teams[S.buzzTeam].name)}</b>
+              </div>
+              <div class="score-action">
+                <button class="btn good" data-action="judge" data-team="${S.buzzTeam}" data-result="BENAR">✓ Benar (+10)</button>
+                <button class="btn danger" data-action="judge" data-team="${S.buzzTeam}" data-result="SALAH">✕ Salah (−5)</button>
+                <button class="btn secondary" data-action="passFinal" data-team="${S.buzzTeam}">↪ Lempar Soal (Hening 3 Detik)</button>
+              </div>
+            ` : ''}
+            <div class="btn-row" style="margin-top:14px">
+              <button class="btn ghost sm" data-action="finalExpire">Soal Hangus / Tidak Terjawab</button>
+            </div>
+          `}
+        `)}
+
+        <div class="top-spacer"></div>
+        <div class="question-actions">
+          <button class="btn ghost sm" data-action="resetFinal">Akhiri Pertandingan</button>
+        </div>
+      `;
+    }
+
+    // =========================================================================
+    // VIEW: BANK SOAL GURU
+    // =========================================================================
+    function bankView() {
+      if (!S.token) return loginRequired('Bank Soal Guru');
+      const b = S.bank;
+
+      return `
+        ${heading('Bank Soal Guru (Supabase Cloud)', 'Kelola soal olimpiade dan ANBK dengan sinkronisasi database cloud.')}
+        <div class="btn-row" style="margin-bottom:18px">
+          <button class="btn" data-action="newQuestion">＋ Tambah Soal Baru</button>
+          <button class="btn secondary" data-action="importCsv">⬆ Impor CSV</button>
+          <button class="btn secondary" data-action="exportCsv">⬇ Ekspor CSV</button>
+          <button class="btn ghost" data-action="templateCsv">Unduh Template CSV</button>
+          <button class="btn ghost" data-action="loadBank">↻ Muat Ulang</button>
+        </div>
+        <input type="file" accept=".csv,text/csv" id="csvFile" class="hide">
+
+        ${S.editing ? questionEditor() : ''}
+
+        ${card(`
+          <div class="grid form-grid three">
+            ${input('Cari Soal / Topik', 'filterSearch', S.bankFilter.search, 'text', 'Kata kunci...')}
+            ${select('Mata Pelajaran', 'filterSubject', subjOpts, S.bankFilter.mapel)}
+            ${select('Kelas', 'filterGrade', clsOpts, S.bankFilter.kelas)}
+          </div>
+          <div class="top-spacer"></div>
+          <button class="btn secondary sm" data-action="applyBankFilter">🔎 Terapkan Filter</button>
+          <div class="top-spacer"></div>
+
+          ${!b ? '<div class="empty"><span class="load"></span><strong>Mengambil bank soal...</strong></div>' : `
+            <div class="subtle" style="margin-bottom:12px">Total <b>${b.total}</b> soal ditemukan. Halaman ${b.page + 1} dari ${Math.max(1, Math.ceil(b.total / 30))}.</div>
+            <div class="scroll-x">
+              <table class="data-table">
+                <thead>
+                  <tr>
+                    <th>ID Soal</th>
+                    <th>Mapel / Tingkat</th>
+                    <th>Babak / Level</th>
+                    <th>Pertanyaan</th>
+                    <th>Status</th>
+                    <th>Aksi</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  ${b.items.map(q => `
+                    <tr>
+                      <td><code>${esc(q.id)}</code></td>
+                      <td><b>${esc(q.mapel)}</b><br><small>Kelas ${q.kelas}</small></td>
+                      <td>${esc(q.babak)}<br><small>${esc(q.level)}</small></td>
+                      <td class="question-cell">${esc(q.text)}</td>
+                      <td><span class="pill ${q.active ? 'green' : 'red'}">${q.active ? 'Aktif' : 'Nonaktif'}</span></td>
+                      <td>
+                        <div class="btn-row">
+                          <button class="btn secondary sm" data-action="editQuestion" data-id="${esc(q.id)}">Edit</button>
+                          <button class="btn ghost sm" data-action="disableQuestion" data-id="${esc(q.id)}">Nonaktifkan</button>
+                        </div>
+                      </td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+            <div class="btn-row" style="justify-content:flex-end;margin-top:14px">
+              <button class="btn secondary sm" data-action="bankPrevious" ${b.page === 0 ? 'disabled' : ''}>← Sebelumnya</button>
+              <button class="btn secondary sm" data-action="bankNext" ${(b.page + 1) * 30 >= b.total ? 'disabled' : ''}>Berikutnya →</button>
+            </div>
+          `}
+        `)}
+      `;
+    }
+
+    function questionEditor() {
+      const q = S.editing;
+      return `
+        <div class="card" style="margin-bottom:20px;border-color:#93c5fd">
+          <div class="question-actions">
+            <h3>${q.id ? 'Edit Soal: ' + esc(q.id) : 'Tambah Soal Baru'}</h3>
+            <button class="btn ghost sm" data-action="cancelEditor">Tutup ✕</button>
+          </div>
+          <div class="top-spacer"></div>
+          <div class="grid form-grid three">
+            ${select('Mata Pelajaran', 'qMapel', subjOpts.slice(1), q.mapel || 'MATEMATIKA')}
+            ${select('Kelas', 'qKelas', clsOpts.slice(1), q.kelas || 4)}
+            ${input('Topik / Materi', 'qTopik', q.topik || '', 'text', 'Contoh: Pecahan Senilai')}
+            ${select('Babak Lomba', 'qBabak', [['UMUM', 'Umum'], ['PENYISIHAN', 'Penyisihan'], ['SEMIFINAL', 'Semifinal'], ['FINAL_WAJIB', 'Final Wajib'], ['FINAL_REBUTAN', 'Final Rebutan']], q.babak || 'UMUM')}
+            ${select('Tingkat Kesulitan', 'qLevel', levelOpts.slice(1), q.level || 'SEDANG')}
+            ${select('Tipe Soal', 'qTipe', [['PG', 'Pilihan Ganda'], ['LISAN', 'Lisan']], q.tipe || 'PG')}
+          </div>
+          <div class="top-spacer"></div>
+          <div class="field">
+            <label for="qText">Teks Pertanyaan</label>
+            <textarea id="qText" rows="3">${esc(q.text || '')}</textarea>
+          </div>
+          <div class="top-spacer"></div>
+          <div class="grid form-grid">
+            ${input('Opsi A', 'qA', (q.options || [])[0] || '')}
+            ${input('Opsi B', 'qB', (q.options || [])[1] || '')}
+            ${input('Opsi C', 'qC', (q.options || [])[2] || '')}
+            ${input('Opsi D', 'qD', (q.options || [])[3] || '')}
+          </div>
+          <div class="top-spacer"></div>
+          <div class="grid form-grid">
+            ${input('Kunci Jawaban (A / B / C / D)', 'qAnswer', q.answer || 'A')}
+            ${select('Status Soal', 'qActive', [['true', 'Aktif'], ['false', 'Nonaktif']], q.active === false ? 'false' : 'true')}
+          </div>
+          <div class="top-spacer"></div>
+          <div class="field">
+            <label for="qExplanation">Pembahasan Lengkap</label>
+            <textarea id="qExplanation" rows="3">${esc(q.explanation || '')}</textarea>
+          </div>
+          <div class="top-spacer"></div>
+          <button class="btn good" data-action="saveQuestion">💾 Simpan ke Database</button>
+        </div>
+      `;
+    }
+
+    // =========================================================================
+    // VIEW: STATISTIK & EVALUASI
+    // =========================================================================
+    function statsView() {
+      if (!S.token) return loginRequired('Statistik & Evaluasi Belajar');
+      const t = S.stats;
+      if (!t) return heading('Statistik & Evaluasi Belajar') + card('<div class="empty"><span class="load"></span><p>Memuat data analitik...</p></div>');
+
+      return `
+        ${heading('Statistik & Evaluasi Belajar', 'Pantau kemajuan pemahaman konsep murid berdasarkan seluruh sesi pengerjaan.')}
+        <div class="grid cols-3">
+          ${card(`<div class="stat"><div class="stat-icon">📊</div><div><small>Total Sesi Diselesaikan</small><strong>${t.sessions}</strong></div></div>`)}
+          ${card(`<div class="stat"><div class="stat-icon">🎯</div><div><small>Rata-rata Ketepatan</small><strong>${t.average}%</strong></div></div>`)}
+          ${card(`<div class="stat"><div class="stat-icon">📈</div><div><small>Riwayat Tersimpan</small><strong>${t.recent.length}</strong></div></div>`)}
+        </div>
+
+        ${heading('Ketepatan per Mata Pelajaran', 'Persentase keberhasilan murid dalam menjawab soal per mapel.')}
+        ${card(`
+          <div class="grid cols-3">
+            ${['MATEMATIKA', 'IPA', 'IPS'].map(m => {
+              const v = t.subjectStats?.[m] || { correct: 0, total: 0 };
+              const pct = v.total ? Math.round((100 * v.correct) / v.total) : 0;
+              return `
+                <div>
+                  <strong>${esc(m)}</strong>
+                  <p class="subtle">${v.correct} / ${v.total} Benar · ${pct}%</p>
+                  <div class="bar"><i style="width:${pct}%"></i></div>
+                </div>
+              `;
+            }).join('')}
+          </div>
+        `)}
+
+        ${t.weakTopics?.length ? `
+          ${heading('Materi Yang Perlu Pendalaman Lebih Lanjut', 'Topik dengan persentase jawaban benar paling rendah.')}
+          ${card(t.weakTopics.map(v => {
+            const pct = Math.round((100 * v.correct) / v.total);
+            return `
+              <div style="margin-bottom:14px">
+                <div class="question-actions">
+                  <strong>${esc(v.topic)}</strong>
+                  <span class="subtle">${v.correct}/${v.total} Benar (${pct}%)</span>
+                </div>
+                <div class="bar"><i style="width:${pct}%;background:linear-gradient(90deg,#ef4444,#f59e0b)"></i></div>
+              </div>
+            `;
+          }).join(''))}
+        ` : ''}
+
+        ${heading('Riwayat Sesi Terakhir')}
+        ${card(`
+          <div class="scroll-x">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Nama Tim / Murid</th>
+                  <th>Mode Latihan</th>
+                  <th>Nilai</th>
+                  <th>Ketepatan</th>
+                  <th>Durasi</th>
+                  <th>Waktu Selesai</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${t.recent.map(r => `
+                  <tr>
+                    <td><b>${esc(r.team)}</b></td>
+                    <td><span class="pill">${esc(r.mode)}</span></td>
+                    <td><b>${r.score}</b> / ${r.max}</td>
+                    <td>${Math.round((100 * r.score) / Math.max(1, r.max))}%</td>
+                    <td>${clock(r.duration)}</td>
+                    <td>${fmtDate(r.finished)}</td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        `)}
+      `;
+    }
+
+    // =========================================================================
+    // VIEW: PENGATURAN & KONEKSI SUPABASE
+    // =========================================================================
+    function settingsView() {
+      if (!S.token) return loginRequired('Pengaturan Sistem');
+      const s = S.boot?.settings || {};
+
+      return `
+        ${heading('Pengaturan Sistem & Database', 'Konfigurasi identitas sekolah dan integrasi Supabase Cloud Database.')}
+        
+        <div class="card" style="margin-bottom:20px;border-color:#38bdf8">
+          <div class="question-actions">
+            <div>
+              <h3 style="margin:0 0 4px">Koneksi Supabase Cloud Database</h3>
+              <p class="subtle" style="margin:0">Hubungkan aplikasi ke Supabase untuk menyimpan soal dan sesi lomba secara online.</p>
+            </div>
+            <span class="badge ${S.supabaseConnected ? 'green' : 'gold'}">
+              ${S.supabaseConnected ? '🟢 Terhubung ke Cloud' : '🟡 Mode Mandiri (Offline-Ready)'}
+            </span>
+          </div>
+          <div class="top-spacer"></div>
+          <div class="grid form-grid">
+            ${input('Supabase Project URL', 'cfgSupabaseUrl', S.supabaseUrl, 'text', 'https://xxxxxxxx.supabase.co')}
+            ${input('Supabase Anon / Public API Key', 'cfgSupabaseKey', S.supabaseKey, 'password', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...')}
+          </div>
+          <div class="top-spacer"></div>
+          <div class="btn-row">
+            <button class="btn" data-action="saveSupabaseConfig">🔌 Sambungkan & Simpan</button>
+            <button class="btn secondary" data-action="syncSeedToCloud">🚀 Sinkronkan 234 Soal Awal ke Supabase</button>
+            <button class="btn ghost" data-action="resetSupabaseConfig">Putuskan / Mode Lokal</button>
+          </div>
+          <p class="small-note">
+            Panduan lengkap konfigurasi tabel Supabase tersedia di file <code>PANDUAN_VERCEL_SUPABASE.md</code> di dalam proyek.
+          </p>
+        </div>
+
+        ${card(`
+          <h3>Identitas Sekolah & Aplikasi</h3>
+          <div class="top-spacer"></div>
+          <div class="grid form-grid three">
+            ${input('Nama Sekolah', 'setSchool', s.NAMA_SEKOLAH || '')}
+            ${input('Nama Pembina', 'setTeacher', s.NAMA_PEMBINA || '')}
+            ${input('Judul Aplikasi', 'setTitle', s.JUDUL || '')}
+          </div>
+          <div class="top-spacer"></div>
+          ${input('PIN Guru Baru (6–32 Karakter)', 'setPin', s.PIN_GURU || '', 'text')}
+          <div class="top-spacer"></div>
+          <button class="btn good" data-action="saveSettings">💾 Simpan Identitas</button>
+          <hr class="separator">
+          <div class="btn-row">
+            <button class="btn secondary" data-action="toggleSound">${S.sound ? '🔊 Suara: Aktif' : '🔇 Suara: Hening'}</button>
+            <button class="btn secondary" data-action="fullscreen">⛶ Layar Penuh</button>
+            <button class="btn danger" data-action="logout">Keluar Mode Guru</button>
+          </div>
+        `)}
+      `;
+    }
+
+    function loginRequired(title) {
+      return `
+        ${heading(title, 'Fitur ini memerlukan akses otentikasi pembina/guru.')}
+        ${card(`
+          <div style="max-width:440px;margin:20px auto;text-align:center">
+            <div style="font-size:48px">🔐</div>
+            <h3>Masuk Mode Guru</h3>
+            <p class="subtle">Masukkan PIN Guru untuk mengelola bank soal, memimpin babak final, atau mengakses evaluasi.</p>
+            <div style="text-align:left;margin-top:16px">
+              ${input('PIN Guru', 'pinInput', '', 'password', 'PIN default: 123456')}
+            </div>
+            <div class="top-spacer"></div>
+            <button class="btn full" data-action="login">Masuk Sebagai Guru</button>
+          </div>
+        `)}
+      `;
+    }
+
+    // =========================================================================
+    // RENDER UTAMA & EVENT ROUTING
+    // =========================================================================
+    function render() {
+      let html = '';
+      if (S.page === 'dashboard') html = dashboardView();
+      else if (S.page === 'summary') html = summaryView();
+      else if (S.page === 'practice') html = practiceView();
+      else if (S.page === 'exam') html = examView();
+      else if (S.page === 'quiz') html = quizView();
+      else if (S.page === 'result') html = resultView();
+      else if (S.page === 'final') html = finalView();
+      else if (S.page === 'bank') html = bankView();
+      else if (S.page === 'stats') html = statsView();
+      else if (S.page === 'settings') html = settingsView();
+      else html = dashboardView();
+
+      $('#app').innerHTML = layout(html);
+      updateClocks();
+    }
+
+    function updateClocks() {
+      if (S.page === 'quiz' && S.session?.deadline) {
+        const left = Math.ceil((S.session.deadline - Date.now()) / 1000);
+        const el = $('#quizTimer');
+        if (el) {
+          el.textContent = clock(left);
+          el.classList.toggle('urgent', left <= 60);
+        }
+        if (left <= 0 && !S.busy && !S.submitting) {
+          submitQuiz(true);
+        }
+      }
+      if (S.page === 'final' && S.finalDeadline && S.final?.phase !== 'SELESAI') {
+        const left = Math.ceil((S.finalDeadline - Date.now()) / 1000);
+        const el = $('#finalTimer');
+        if (el) {
+          el.textContent = clock(left);
+          el.classList.toggle('urgent', left <= 10);
+        }
+        if (left <= 0 && !S.finalExpired) {
+          S.finalExpired = true;
+          S.finalDeadline = null;
+          toast('Waktu menjawab habis.');
+          const team = S.final.mandatoryTeam !== null ? S.final.mandatoryTeam : (S.buzzTeam !== null ? S.buzzTeam : 0);
+          judgeFinal(team, 'KOSONG');
+        }
+      }
+    }
+
+    function value(id) {
+      return document.getElementById(id)?.value || '';
+    }
+
+    async function navigate(page) {
+      S.page = page;
+      render();
+      if (page === 'bank' && S.token) {
+        try { await reloadBank(); } catch (e) {}
+      }
+      if (page === 'stats' && S.token) {
+        try { await reloadStats(); } catch (e) {}
+      }
+    }
+
+    async function reloadBank() {
+      S.bank = await run(() => api.listQuestions(S.token, S.bankFilter));
+      render();
+    }
+
+    async function reloadStats() {
+      S.stats = await run(() => api.getStatistics(S.token));
+      render();
+    }
+
+    async function submitQuiz(auto = false) {
+      if (S.submitting || !S.session) return;
+      if (!auto && !confirm('Kumpulkan jawaban sekarang? Jawaban tidak dapat diubah setelah dikumpulkan.')) return;
+      S.submitting = true;
+      try {
+        const res = await run(() => api.submitSession(S.session.id, S.answers));
+        S.review = res;
+        S.reviewOnlyWrong = false;
+        S.page = 'result';
+        S.session = null;
+        sessionStorage.removeItem('ccActiveSession');
+        sound(880);
+        render();
+      } catch (e) {
+        toast(e.message || String(e), true);
+      } finally {
+        S.submitting = false;
+      }
+    }
+
+    async function judgeFinal(team, result) {
+      if (!S.final?.id) return;
+      try {
+        const f = await run(() => api.adjudicateFinal(S.token, S.final.id, team, result));
+        S.final = f;
+        S.finalDeadline = null;
+        S.finalExpired = false;
+        S.buzzTeam = null;
+        S.showFinalAnswer = false;
+        sound(result === 'BENAR' ? 880 : (result === 'SALAH' ? 220 : 440));
+        render();
+      } catch (e) {
+        toast(e.message || String(e), true);
+      }
+    }
+
+    function csvDownload(filename, rows) {
+      const escape = v => {
+        const s = String(v ?? '');
+        return /[",\r\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+      };
+      const body = '\ufeff' + rows.map(r => r.map(escape).join(',')).join('\r\n');
+      const blob = new Blob([body], { type: 'text/csv;charset=utf-8' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 2000);
+    }
+
+    const csvHead = ['id', 'mapel', 'kelas', 'topik', 'babak', 'level', 'tipe', 'text', 'A', 'B', 'C', 'D', 'answer', 'explanation', 'active'];
+
+    // Handler Aksi Interaktif
+    async function handleAction(action, el) {
+      switch (action) {
+        case 'navigate':
+          await navigate(el.dataset.page);
+          break;
+
+        case 'setSummaryMapel':
+          S.summaryFilter.mapel = el.dataset.val;
+          render();
+          break;
+
+        case 'setSummaryKelas':
+          S.summaryFilter.kelas = el.dataset.val;
+          render();
+          break;
+
+        case 'clearSummaryFilter':
+          S.summaryFilter = { mapel: '', kelas: '', search: '' };
+          render();
+          break;
+
+        case 'toggleSummaryAnswer': {
+          const id = el.dataset.id;
+          S.summaryOpenAnswers[id] = !S.summaryOpenAnswers[id];
+          render();
+          break;
+        }
+
+        case 'practiceFromSummary': {
+          const mapel = el.dataset.mapel;
+          const kelas = el.dataset.kelas;
+          await navigate('practice');
+          setTimeout(() => {
+            const mEl = document.getElementById('trainMapel');
+            const kEl = document.getElementById('trainKelas');
+            if (mEl) mEl.value = mapel;
+            if (kEl) kEl.value = kelas;
+          }, 50);
+          break;
+        }
+
+        case 'startPractice': {
+          const mode = value('trainMode');
+          const name = value('trainTeamName').trim() || 'Murid Hebat';
+          const sess = await run(() => api.createSession({
+            mode,
+            teamName: name,
+            mapel: value('trainMapel'),
+            kelas: value('trainKelas'),
+            level: value('trainLevel'),
+            count: Number(value('trainCount') || 10),
+            timed: value('trainTimed') === 'true',
+            fastSeconds: Number(value('trainFastSeconds') || 15)
+          }));
+          S.session = sess;
+          S.questionIndex = 0;
+          S.answers = {};
+          S.page = 'quiz';
+          sessionStorage.setItem('ccActiveSession', sess.id);
+          render();
+          break;
+        }
+
+        case 'startExam': {
+          const name = value('examTeam').trim();
+          if (!name) { toast('Isi nama tim terlebih dahulu.', true); return; }
+          const members = [value('member1'), value('member2'), value('member3')];
+          if (members.some(m => !m.trim())) { toast('Isi nama ketiga anggota tim.', true); return; }
+          const sess = await run(() => api.createSession({
+            mode: value('examMode'),
+            teamName: name,
+            members
+          }));
+          S.session = sess;
+          S.questionIndex = 0;
+          S.answers = {};
+          S.page = 'quiz';
+          sessionStorage.setItem('ccActiveSession', sess.id);
+          render();
+          break;
+        }
+
+        case 'answer': {
+          if (!S.session) return;
+          const q = S.session.questions[S.questionIndex];
+          S.answers[q.id] = el.dataset.key;
+          api.saveAnswers(S.session.id, S.answers).catch(() => {});
+          render();
+          break;
+        }
+
+        case 'previous':
+          S.questionIndex = Math.max(0, S.questionIndex - 1);
+          render();
+          break;
+
+        case 'next':
+          S.questionIndex = Math.min(S.session.questions.length - 1, S.questionIndex + 1);
+          render();
+          break;
+
+        case 'jump':
+          S.questionIndex = Number(el.dataset.index);
+          render();
+          break;
+
+        case 'submitQuiz':
+          await submitQuiz();
+          break;
+
+        case 'toggleWrong':
+          S.reviewOnlyWrong = !S.reviewOnlyWrong;
+          render();
+          break;
+
+        case 'print':
+          window.print();
+          break;
+
+        case 'login': {
+          const pin = value('pinInput');
+          if (!pin) { toast('Masukkan PIN guru.', true); return; }
+          const res = await run(() => api.loginAdmin(pin));
+          S.token = res.token;
+          sessionStorage.setItem('ccAdminToken', res.token);
+          toast('Berhasil masuk sebagai Guru.');
+          if (S.page === 'bank') await reloadBank();
+          else if (S.page === 'stats') await reloadStats();
+          else render();
+          break;
+        }
+
+        case 'logout':
+          S.token = '';
+          sessionStorage.removeItem('ccAdminToken');
+          S.bank = null;
+          S.stats = null;
+          S.final = null;
+          toast('Berhasil keluar dari mode guru.');
+          render();
+          break;
+
+        case 'toggleSound':
+          S.sound = !S.sound;
+          localStorage.setItem('ccSound', S.sound);
+          render();
+          break;
+
+        case 'fullscreen': {
+          const root = document.documentElement;
+          if (!document.fullscreenElement && root.requestFullscreen) await root.requestFullscreen();
+          else if (document.exitFullscreen) await document.exitFullscreen();
+          break;
+        }
+
+        case 'saveSettings': {
+          const school = value('setSchool');
+          const teacher = value('setTeacher');
+          const title = value('setTitle');
+          const pin = value('setPin');
+          const updated = await run(() => dbSaveSettings({
+            NAMA_SEKOLAH: school,
+            NAMA_PEMBINA: teacher,
+            JUDUL: title,
+            PIN_GURU: pin || '123456'
+          }));
+          S.boot.settings = updated;
+          toast('Pengaturan berhasil disimpan.');
+          render();
+          break;
+        }
+
+        case 'saveSupabaseConfig': {
+          const url = value('cfgSupabaseUrl').trim();
+          const key = value('cfgSupabaseKey').trim();
+          if (!url || !key) {
+            toast('Harap isi URL dan Anon Key Supabase.', true);
+            return;
+          }
+          localStorage.setItem('ccSupabaseUrl', url);
+          localStorage.setItem('ccSupabaseKey', key);
+          S.supabaseUrl = url;
+          S.supabaseKey = key;
+          const ok = await run(() => initSupabase(url, key));
+          if (ok) {
+            toast('Berhasil terhubung ke Supabase Cloud! 🎉');
+            S.boot = await api.getBootstrap();
+          } else {
+            toast('Koneksi Supabase belum berhasil. Pastikan URL & Key benar dan Skema SQL sudah dijalankan di Supabase Editor.', true);
+          }
+          render();
+          break;
+        }
+
+        case 'resetSupabaseConfig':
+          localStorage.removeItem('ccSupabaseUrl');
+          localStorage.removeItem('ccSupabaseKey');
+          S.supabaseUrl = '';
+          S.supabaseKey = '';
+          S.supabase = null;
+          S.supabaseConnected = false;
+          toast('Koneksi Supabase diputuskan. Menggunakan mode lokal.');
+          S.boot = await api.getBootstrap();
+          render();
+          break;
+
+        case 'syncSeedToCloud': {
+          if (!S.supabaseConnected || !S.supabase) {
+            toast('Hubungkan Supabase terlebih dahulu sebelum sinkronisasi.', true);
+            return;
+          }
+          if (!confirm('Unggah seluruh 234 bank soal awal ke Supabase database?')) return;
+          const questions = typeof QUESTIONS_SEED !== 'undefined' ? QUESTIONS_SEED : [];
+          await run(async () => {
+            const batchSize = 50;
+            for (let i = 0; i < questions.length; i += batchSize) {
+              const batch = questions.slice(i, i + batchSize).map(q => ({
+                id: q.ID_SOAL,
+                mapel: q.MAPEL,
+                kelas: q.KELAS,
+                topik: q.TOPIK,
+                babak: q.BABAK,
+                level: q.LEVEL,
+                tipe: q.TIPE,
+                pertanyaan: q.PERTANYAAN,
+                opsi_a: q.OPSI_A,
+                opsi_b: q.OPSI_B,
+                opsi_c: q.OPSI_C,
+                opsi_d: q.OPSI_D,
+                kunci: q.KUNCI,
+                pembahasan: q.PEMBAHASAN,
+                status: q.STATUS
+              }));
+              const { error } = await S.supabase.from('cc_questions').upsert(batch);
+              if (error) throw new Error('Gagal sinkron batch ' + i + ': ' + error.message);
+            }
+          });
+          toast(`Berhasil mengunggah ${questions.length} soal ke Supabase!`);
+          S.boot = await api.getBootstrap();
+          render();
+          break;
+        }
+
+        case 'loadRanking': {
+          const mode = el.dataset.mode;
+          S.ranking = { mode, items: await run(() => api.leaderboard(S.token, mode)) };
+          render();
+          break;
+        }
+
+        case 'newFinal': {
+          const names = [value('finalTeam1'), value('finalTeam2'), value('finalTeam3')].map(s => s.trim());
+          if (names.some(n => !n)) { toast('Isi nama ketiga tim finalis.', true); return; }
+          const res = await run(() => api.createFinalMatch(S.token, names));
+          S.final = res;
+          S.finalDeadline = null;
+          S.finalExpired = false;
+          S.buzzTeam = null;
+          render();
+          break;
+        }
+
+        case 'resumeFinal': {
+          const res = await run(() => api.getFinalMatch(S.token, 'current'));
+          S.final = res;
+          render();
+          break;
+        }
+
+        case 'startFinalTimer': {
+          if (!S.finalDeadline && !S.finalExpired) {
+            S.finalDeadline = Date.now() + ((S.final.phase === 'WAJIB' ? 30 : 180) * 1000);
+            updateClocks();
+            sound(740);
+          }
+          break;
+        }
+
+        case 'toggleFinalAnswer':
+          S.showFinalAnswer = !S.showFinalAnswer;
+          render();
+          break;
+
+        case 'judge':
+          await judgeFinal(Number(el.dataset.team), el.dataset.result);
+          break;
+
+        case 'passFinal': {
+          if (!confirm('Lempar soal ke tim lain setelah hening 3 detik?')) return;
+          const team = Number(el.dataset.team);
+          await judgeFinal(team, 'LEMPAR');
+          break;
+        }
+
+        case 'finalExpire': {
+          const team = S.final.mandatoryTeam !== null ? S.final.mandatoryTeam : (S.buzzTeam !== null ? S.buzzTeam : 0);
+          await judgeFinal(team, 'KOSONG');
+          break;
+        }
+
+        case 'resetFinal':
+          S.final = null;
+          render();
+          break;
+
+        case 'loadBank':
+          await reloadBank();
+          break;
+
+        case 'newQuestion':
+          S.editing = { mapel: 'MATEMATIKA', kelas: 4, babak: 'UMUM', level: 'SEDANG', tipe: 'PG', options: ['', '', '', ''], answer: 'A', active: true };
+          render();
+          break;
+
+        case 'cancelEditor':
+          S.editing = null;
+          render();
+          break;
+
+        case 'editQuestion':
+          S.editing = S.bank?.items?.find(q => q.id === el.dataset.id) || null;
+          render();
+          window.scrollTo({ top: 120, behavior: 'smooth' });
+          break;
+
+        case 'saveQuestion': {
+          const q = {
+            id: S.editing.id || '',
+            mapel: value('qMapel'),
+            kelas: Number(value('qKelas')),
+            topik: value('qTopik'),
+            babak: value('qBabak'),
+            level: value('qLevel'),
+            tipe: value('qTipe'),
+            text: value('qText'),
+            options: [value('qA'), value('qB'), value('qC'), value('qD')],
+            answer: value('qAnswer'),
+            explanation: value('qExplanation'),
+            active: value('qActive') === 'true'
+          };
+          await run(() => api.saveQuestion(S.token, q));
+          S.editing = null;
+          toast('Soal berhasil disimpan.');
+          await reloadBank();
+          break;
+        }
+
+        case 'disableQuestion': {
+          if (!confirm('Nonaktifkan soal ini?')) return;
+          await run(() => api.disableQuestion(S.token, el.dataset.id));
+          toast('Soal dinonaktifkan.');
+          await reloadBank();
+          break;
+        }
+
+        case 'applyBankFilter':
+          S.bankFilter = { page: 0, search: value('filterSearch'), mapel: value('filterSubject'), kelas: value('filterGrade') };
+          await reloadBank();
+          break;
+
+        case 'bankNext':
+          S.bankFilter.page++;
+          await reloadBank();
+          break;
+
+        case 'bankPrevious':
+          S.bankFilter.page = Math.max(0, S.bankFilter.page - 1);
+          await reloadBank();
+          break;
+
+        case 'importCsv':
+          $('#csvFile').click();
+          break;
+
+        case 'templateCsv':
+          csvDownload('template_soal_mipas.csv', [
+            csvHead,
+            ['', 'MATEMATIKA', '4', 'Pecahan', 'UMUM', 'SEDANG', 'PG', 'Berapa 1/2 + 1/2?', '1', '2', '1/2', '1/4', 'A', 'Penyebut sama, jumlahkan pembilang.', 'true']
+          ]);
+          break;
+
+        case 'exportCsv': {
+          const qs = await run(() => api.exportQuestions(S.token));
+          const rows = [csvHead, ...qs.map(q => [q.ID_SOAL, q.MAPEL, q.KELAS, q.TOPIK, q.BABAK, q.LEVEL, q.TIPE, q.PERTANYAAN, q.OPSI_A, q.OPSI_B, q.OPSI_C, q.OPSI_D, q.KUNCI, q.PEMBAHASAN, q.STATUS === 'AKTIF'])];
+          csvDownload('bank_soal_mipas.csv', rows);
+          toast(`${qs.length} soal berhasil diekspor.`);
+          break;
+        }
+
+        default:
+          break;
+      }
+    }
+
+    // Parser & Handler Impor CSV
+    function parseCsv(text) {
+      const rows = [];
+      let row = [], field = '', quote = false;
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+        if (quote) {
+          if (c === '"' && text[i + 1] === '"') { field += '"'; i++; }
+          else if (c === '"') quote = false;
+          else field += c;
+        } else if (c === '"') quote = true;
+        else if (c === ',') { row.push(field); field = ''; }
+        else if (c === '\n' || c === '\r') {
+          if (c === '\r' && text[i + 1] === '\n') i++;
+          row.push(field);
+          if (row.some(x => x.trim())) rows.push(row);
+          row = []; field = '';
+        } else field += c;
+      }
+      row.push(field);
+      if (row.some(x => x.trim())) rows.push(row);
+      if (quote) throw new Error('File CSV memiliki tanda petik yang tidak tertutup.');
+      return rows;
+    }
+
+    async function handleCsvUpload(file) {
+      if (!file) return;
+      const text = await file.text();
+      const rows = parseCsv(text.replace(/^\ufeff/, ''));
+      if (!rows.length) throw new Error('File CSV kosong.');
+      const headers = rows.shift().map(s => s.trim());
+      const data = rows.map(row => {
+        const o = {};
+        headers.forEach((h, i) => o[h] = row[i] || '');
+        return {
+          id: o.id,
+          mapel: o.mapel,
+          kelas: o.kelas,
+          topik: o.topik,
+          babak: o.babak,
+          level: o.level,
+          tipe: o.tipe,
+          text: o.text,
+          options: [o.A, o.B, o.C, o.D],
+          answer: o.answer,
+          explanation: o.explanation,
+          active: String(o.active).toLowerCase() !== 'false'
+        };
+      });
+      const res = await run(() => api.importQuestions(S.token, data));
+      toast(`Impor selesai: ${res.imported} soal berhasil ditambahkan (${res.skipped} dilewati).`);
+      S.bankFilter.page = 0;
+      await reloadBank();
+    }
+
+    // Event Listener Klik
+    document.addEventListener('click', ev => {
+      const el = ev.target.closest('[data-action]');
+      if (!el || el.disabled || el.dataset.action === 'buzz') return;
+      ev.preventDefault();
+      handleAction(el.dataset.action, el).catch(err => toast(err.message || String(err), true));
+    });
+
+    // Event Listener Buzzer (Touch & Click cepat)
+    document.addEventListener('pointerdown', ev => {
+      const el = ev.target.closest('[data-action="buzz"]');
+      if (!el || el.disabled || !S.final || S.final.phase === 'WAJIB' || S.buzzTeam !== null || S.finalExpired) return;
+      const team = Number(el.dataset.team);
+      if (!S.final.eligible.includes(team)) return;
+      ev.preventDefault();
+      S.buzzTeam = team;
+      sound([520, 680, 840][team]);
+      render();
+    }, { passive: false });
+
+    // Event Listener Pencarian Rangkuman
+    document.addEventListener('input', ev => {
+      if (ev.target.id === 'summarySearch') {
+        S.summaryFilter.search = ev.target.value;
+        const container = $('.summary-grid');
+        const emptyEl = $('.card.empty');
+        // Render cepat ulang hanya summary
+        if (S.page === 'summary') {
+          clearTimeout(window._searchTimer);
+          window._searchTimer = setTimeout(render, 150);
+        }
+      }
+    });
+
+    // Event Listener Berkas CSV
+    document.addEventListener('change', ev => {
+      if (ev.target.id === 'csvFile' && ev.target.files?.[0]) {
+        handleCsvUpload(ev.target.files[0]).catch(e => toast(e.message, true));
+        ev.target.value = '';
+      }
+    });
+
+    // Inisialisasi Aplikasi
+    async function init() {
+      try {
+        if (S.supabaseUrl && S.supabaseKey) {
+          await initSupabase(S.supabaseUrl, S.supabaseKey);
+        }
+        S.boot = await api.getBootstrap();
+        render();
+        setInterval(updateClocks, 1000);
+      } catch (e) {
+        console.error('Inisialisasi aplikasi gagal:', e);
+        $('#app').innerHTML = `
+          <main style="max-width:640px;margin:12vh auto;padding:24px">
+            <div class="card" style="text-align:center">
+              <h2>⚠️ Gagal Memuat Aplikasi</h2>
+              <p>${esc(e.message || String(e))}</p>
+              <button class="btn" onclick="location.reload()">Muat Ulang</button>
+            </div>
+          </main>
+        `;
+      }
+    }
+
+    init();
+  </script>
+</body>
+</html>

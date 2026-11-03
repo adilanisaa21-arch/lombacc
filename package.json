@@ -1,0 +1,13 @@
+{
+  "name": "arena-cerdas-cermat-mipas",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Arena Cerdas Cermat MIPAS 2026 - Aplikasi Latihan Olimpiade & ANBK SD Kelas 4-6 dengan Supabase dan Vercel",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": ["cerdas-cermat", "mipas", "ipas", "matematika", "supabase", "vercel"],
+  "author": "Budianto, S.Pd., Gr.",
+  "license": "MIT"
+}
