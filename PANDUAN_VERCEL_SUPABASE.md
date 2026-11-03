@@ -8,11 +8,12 @@ Panduan ini memandu Anda memindahkan aplikasi dari Google Spreadsheet + Google A
 ## 📑 DAFTAR ISI
 1. [Mengapa Vercel & Supabase?](#1-mengapa-vercel--supabase)
 2. [Langkah 1: Setup Database Supabase](#langkah-1-setup-database-supabase)
-3. [Langkah 2: Menjalankan Skrip Schema & Seed (234 Soal)](#langkah-2-menjalankan-skrip-schema--seed-234-soal)
+3. [Langkah 2: Menjalankan Skrip Schema & Seed (1.000 Soal Prioritas)](#langkah-2-menjalankan-skrip-schema--seed-1000-soal-prioritas)
 4. [Langkah 3: Mengambil URL & API Key Supabase](#langkah-3-mengambil-url--api-key-supabase)
 5. [Langkah 4: Deploy Aplikasi ke Vercel](#langkah-4-deploy-aplikasi-ke-vercel)
 6. [Langkah 5: Menghubungkan Supabase di Web App](#langkah-5-menghubungkan-supabase-di-web-app)
-7. [Fitur Baru: Halaman Rangkuman Materi MTK & IPAS](#fitur-baru-halaman-rangkuman-materi-mtk--ipas)
+7. [Fitur Baru: 1.000 Soal Prioritas, Stimulus Kasus & Diagnosa Jawaban Salah](#7-fitur-baru-1000-soal-prioritas-stimulus-kasus--diagnosa-jawaban-salah)
+8. [Fitur Baru: Rangkuman Materi Lengkap, Rumus Emas & Peringatan Jebakan](#8-fitur-baru-rangkuman-materi-lengkap-rumus-emas--peringatan-jebakan)
 
 ---
 
@@ -42,7 +43,7 @@ Panduan ini memandu Anda memindahkan aplikasi dari Google Spreadsheet + Google A
 
 ---
 
-## 3. Langkah 2: Menjalankan Skrip Schema & Seed (234 Soal)
+## 3. Langkah 2: Menjalankan Skrip Schema & Seed (1.000 Soal Prioritas)
 
 Proyek ini telah menyediakan dua skrip SQL siap pakai di dalam folder `supabase/`:
 
@@ -53,11 +54,12 @@ Proyek ini telah menyediakan dua skrip SQL siap pakai di dalam folder `supabase/
 4. Klik tombol **"Run"** (atau tekan `Ctrl + Enter`).
 5. Akan muncul pesan `Success. No rows returned`. Tabel `cc_questions`, `cc_sessions`, `cc_teams`, `cc_final_matches`, dan `cc_settings` berhasil dibuat beserta aturan keamanannya (RLS).
 
-### B. Memasukkan 234 Bank Soal Olimpiade (`supabase/seed.sql`)
+### B. Memasukkan 1.000 Bank Soal Olimpiade Prioritas (`supabase/seed.sql`)
 1. Di SQL Editor Supabase, klik **"New query"** lagi.
-2. Buka file `supabase/seed.sql` pada proyek ini, salin seluruh isinya (berisi 234 soal lengkap beserta opsi, kunci, dan pembahasan edukatif).
+2. Buka file `supabase/seed.sql` pada proyek ini, salin seluruh isinya (berisi 1.000 soal prioritas Matematika, IPA, dan IPS lengkap dengan stimulus soal, opsi, kunci, pembahasan mendalam, dan diagnosa kesalahan).
 3. Tempel ke SQL Editor Supabase dan klik **"Run"**.
-4. Tunggu beberapa detik hingga proses selesai. Anda dapat memeriksa tabel `cc_questions` pada menu **Table Editor** untuk melihat semua soal sudah tersimpan rapi di cloud!
+4. Tunggu beberapa detik hingga proses selesai. Anda dapat memeriksa tabel `cc_questions` pada menu **Table Editor** untuk melihat seluruh 1.000 soal sudah tersimpan rapi di cloud!
+   *(Catatan: Anda juga dapat menggunakan tombol **"🚀 Sinkronkan 1.000 Soal ke Supabase"** langsung dari menu Pengaturan di dalam web app).*
 
 ---
 
@@ -126,54 +128,83 @@ Selain melalui Environment Variables di Vercel, Anda dapat menghubungkan Supabas
    - Masukkan **Supabase Anon / Public API Key**.
    - Klik **"🔌 Sambungkan & Simpan"**.
 5. Indikator di pojok kanan atas akan berubah menjadi **🟢 Supabase Cloud Terhubung**!
-6. Jika database Supabase Anda masih kosong, cukup klik tombol **"🚀 Sinkronkan 234 Soal Awal ke Supabase"** untuk mengunggah seluruh bank soal secara otomatis.
+6. Jika database Supabase Anda masih kosong, cukup klik tombol **"🚀 Sinkronkan 1.000 Soal ke Supabase"** untuk mengunggah seluruh bank soal secara otomatis.
 
 ---
 
-## 7. Fitur Baru: Halaman Rangkuman Materi MTK & IPAS
+## 7. Fitur Baru: 1.000 Soal Prioritas, Stimulus Kasus & Diagnosa Jawaban Salah
 
-Sesuai kebutuhan belajar murid menghadapi kompetisi sains dan ujian sekolah, kini tersedia menu **"📖 Rangkuman Materi"**:
+Sesuai arahan materi modul prioritas olimpiade MIPAS (*Buku Belajar Cerdas Cermat MIPAS 2026, UPTD SPF SD Inpres Tangkala II*), kini telah disematkan pembaruan besar:
+
+### A. 1.000 Soal Siap Lomba dengan Stimulus Kontekstual
+- **Total 1.000 Soal**: Terdiri dari 350 soal Matematika, 350 soal IPA, dan 300 soal IPS dari jenjang Kelas 4, 5, dan 6.
+- **Stimulus Kasus Nyata (275+ Soal Berstimulus)**: Menampilkan kotak bacaan kasus naratif, cerita kontekstual, data eksperimen, dan tabel informasi dengan kartu visual hijau khusus (`📋 BACAAN STIMULUS / KASUS SOAL`) agar siswa terbiasa dengan model soal asesmen nasional dan olimpiade modern.
+
+### B. Diagnosa & Penjelasan Mendalam untuk Soal yang Salah
+Ketika murid menyelesaikan kuis atau latihan mandiri:
+1. **Tombol Khusus "🔍 Evaluasi Soal yang Salah"**: Memfilter langsung hanya soal-soal yang belum tepat agar murid dapat fokus mengevaluasi kelemahannya.
+2. **Kategori Diagnosa Kesalahan Otomatis**:
+   - 🧮 **Ketelitian Hitung / Aturan Kabataku**: Menganalisis jika murid salah pada urutan pengerjaan kurung/kali-bagi atau penjumlahan pecahan beda penyebut.
+   - 📐 **Pemahaman Konsep & Rumus**: Menganalisis jika murid tertukar antara rumus keliling dan luas, KPK dan FPB, atau konsep bangun ruang.
+   - 🔍 **Membaca Informasi & Stimulus**: Menganalisis ketelitian murid dalam membaca data tabel atau narasi kasus.
+   - 🧬 **Konsep Sains & Kronologi Sejarah**: Menganalisis fakta biologi (metamorfosis, organ alveolus/jantung) dan kronologi kebangsaan.
+3. **Komparasi Visual**: Menampilkan secara berdampingan **Jawaban Siswa** vs **Kunci Jawaban yang Benar**.
+4. **Saran Pencegahan / Rumus Kunci**: Tips khusus agar tidak terjebak lagi pada soal serupa di babak lomba berikutnya.
+
+---
+
+## 8. Fitur Baru: Rangkuman Materi Lengkap, Rumus Emas & Peringatan Jebakan
+
+Kini tersedia **38 Bab Rangkuman Materi Terpadu** yang memuat seluruh teori prioritas, rumus-rumus emas, dan peringatan kesalahan umum (`⚠️ PERHATIKAN`):
 
 ### Apa saja isinya?
-- **31 Bab Materi Lengkap** mencakup:
-  - **Matematika (MTK) Kelas 4, 5, 6**:
-    - Bilangan Cacah Besar, Nilai Tempat & Dekomposisi
-    - Aturan Operasi Campuran (Kabataku)
-    - Kelipatan, Faktor, & Bilangan Prima
-    - Pecahan Senilai, Pecahan Campuran, Desimal & Persen
-    - KPK & FPB (Pohon Faktor & Soal Cerita)
-    - Kecepatan & Debit Air
-    - Perbandingan & Skala Peta
-    - Geometri Datar & Ruang (Persegi, Persegi Panjang, Segitiga, Kubus, Balok, Prisma, Limas, Tabung, Kerucut, Bola)
-    - Lingkaran (Unsur, Keliling, Luas)
-    - Statistika (Mean, Modus, Median, Diagram Lingkaran)
-  - **IPAS (IPA & IPS) Kelas 4, 5, 6**:
-    - Bagian Tubuh Tumbuhan & Fotosintesis
-    - Wujud Zat & 6 Perubahan Wujud Zat
-    - Gaya & Pengaruhnya (Otot, Gesek, Gravitasi, Magnet, Pegas)
-    - Bentuk Energi & Transformasi Energi
-    - Organ Tubuh Manusia (Pernapasan, Pencernaan, Peredaran Darah Besar/Kecil)
-    - Ekosistem, Jaring Makanan, & 3 Simbiosis (Mutualisme, Komensalisme, Parasitisme)
-    - Sifat Gelombang Cahaya & Gelombang Bunyi
-    - Daur Air (Siklus Hidrologi) & Pelestariannya
-    - Perkembangbiakan Tumbuhan (Generatif & Vegetatif) serta Hewan (Ovipar, Vivipar, Ovovivipar)
-    - Pubertas & Kesehatan Reproduksi
-    - Rangkaian Listrik Seri vs Paralel & Energi Terbarukan
-    - Tata Surya (8 Planet), Rotasi & Revolusi Bumi/Bulan, Gerhana
-    - Kenampakan Alam & Peta Indonesia
-    - Keragaman Budaya & Rumah Adat Nusantara
-    - Kegiatan Ekonomi (Produksi, Distribusi, Konsumsi) & Koperasi
-    - Geografi Indonesia & Zona Waktu (WIB, WITA, WIT)
-    - Sejarah Perjuangan Bangsa (Budi Utomo, Sumpah Pemuda, Proklamasi)
-    - ASEAN (5 Tokoh Pendiri, Negara Anggota, Bentuk Kerja Sama) & Globalisasi
+- **Matematika (MTK) Kelas 4, 5, 6**:
+  - Bilangan Cacah Besar, Nilai Tempat & Dekomposisi *(Rumus Nilai Angka = Angka × Nilai Tempat)*
+  - Aturan Operasi Campuran Kabataku *(Kurung >> Kali/Bagi >> Tambah/Kurang)*
+  - Kelipatan, Faktor, FPB, KPK, & Bilangan Prima *(Daftar prima < 30)*
+  - Pecahan Senilai, Bentuk Sederhana, Desimal & Persen *(1/2=0,5=50%, 1/4=0,25=25%, 3/4=0,75=75%, 1/5=0,2=20%)*
+  - Pengukuran Satuan Baku *(km-m-cm, kg-ons-g, ton, kuintal, jam-menit-detik)*
+  - Keliling & Luas Bangun Datar Dasar *(Persegi, Persegi Panjang, Segitiga)*
+  - Operasi Pecahan Berbeda Penyebut & Pecahan Campuran *(Wajib KPK! 2/3 + 1/4 ≠ 3/7)*
+  - Desimal, Persen, Diskon & Aritmetika Sosial *(Diskon = % × Harga Awal, Harga Bayar = Harga Awal - Diskon)*
+  - Soal Cerita KPK vs FPB *(KPK = Waktu bersamaan berulang; FPB = Pembagian paket merata terbanyak)*
+  - Rasio & Skala Peta *(Skala = JP / JS, samakan cm: 1 km = 100.000 cm)*
+  - Kecepatan & Debit *(Segitiga JOKOWI & Segitiga Debit, 1 liter = 1 dm³ = 1.000 cm³)*
+  - Bangun Datar Gabungan *(Jajar Genjang, Trapesium, Layang-layang, Belah Ketupat)*
+  - Bangun Ruang Kubus & Balok *(Volume, Luas Permukaan, Panjang Kerangka 4(p+l+t), Jaring-jaring)*
+  - Bilangan Bulat Negatif *(Suhu, Garis Bilangan, Pengurangan lawan: a - (-b) = a + b)*
+  - **Soal Cerita Pecahan Bertingkat & Konsep "Dari Sisa"** *(Jebakan cerdas cermat: sisa tahap 1 dikali fraksi tahap 2)*
+  - Perbandingan Senilai & Berbalik Nilai *(Pekerja × Waktu)*
+  - Lingkaran Lengkap *(d = 2r, Keliling K = 2πr = πd, Luas L = πr², Busur, Juring)*
+  - Bangun Ruang Lengkap *(Prisma Segitiga, Limas Segiempat, Tabung V=πr²t, Kerucut V=1/3πr²t, Bola V=4/3πr³)*
+  - Statistika *(Mean, Modus, Median, Menentukan Nilai Hilang/Susulan, Diagram Lingkaran Derajat 360° vs Persen 100%)*
+- **IPAS (IPA & IPS) Kelas 4, 5, 6**:
+  - Bagian Tubuh Tumbuhan, Fotosintesis (Reaksi & Klorofil), & Pembuluh Xilem/Floem
+  - Wujud Zat, Perubahan Wujud Kalor, & Perpindahan Panas (Konduksi, Konveksi, Radiasi, Titik Embun Luar Gelas)
+  - Gaya di Sekitar Kita & Transformasi Energi (Kimia -> Listrik -> Cahaya)
+  - Peta, Inset Peta, Legenda, Kenampakan Alam Pesisir/Dataran Tinggi, & Budaya Sulsel (Tongkonan, Perahu Pinisi)
+  - Kegiatan Ekonomi (Produksi, Distribusi, Konsumsi) & Pelaku Usaha
+  - Sistem Organ Tubuh Manusia: Pernapasan (Alveolus), Pencernaan, Peredaran Darah (Bilik Kiri Jantung Paling Tebal)
+  - Ekosistem, Jaring Makanan (Arah Panah Aliran Energi), & 3 Simbiosis
+  - Sifat Gelombang Cahaya (Pembiasan Pensil Bengkok) & Bunyi (Butuh Medium, Tak Merambat di Ruang Hampa)
+  - Daur Air (Evaporasi, Transpirasi, Kondensasi, Presipitasi, Infiltrasi)
+  - Letak Geografis (2 Benua, 2 Samudra) & Astronomis (Khatulistiwa, Iklim Tropis, Pembagian Zona WIB-WITA-WIT)
+  - Ekonomi Pasar (Hukum Permintaan & Penawaran saat Gagal Panen/Kelangkaan) & Koperasi (Moh. Hatta)
+  - Perkembangbiakan Generatif & Vegetatif Tumbuhan/Hewan serta Metamorfosis Sempurna (Pupa) vs Tidak Sempurna
+  - Ciri-ciri Pubertas Remaja (Primer vs Sekunder)
+  - Rangkaian Listrik Seri vs Paralel (Instalasi Rumah), Magnet, & Energi Terbarukan
+  - Tata Surya (8 Planet, Sabuk Asteroid), Rotasi (Siang-Malam 24 Jam) vs Revolusi (Musim 365,25 Hari), Gerhana
+  - **Penyelidikan Ilmiah (Variabel Bebas, Variabel Terikat, Variabel Kontrol)**
+  - ASEAN (Deklarasi Bangkok 8 Agustus 1967, 5 Tokoh Pendiri: Adam Malik, Peran Indonesia, Globalisasi)
+  - **Skala Prioritas Kebutuhan Hidup (Primer, Sekunder, Tersier)**
 
 ### Fitur Interaktif pada Halaman Rangkuman:
-1. **Filter Instan**: Tombol filter Mapel (Semua / MTK / IPAS) dan Kelas (Semua / IV / V / VI).
-2. **Pencarian Cepat (Live Search)**: Ketik istilah apa pun (misal: `fotosintesis`, `kpk`, `lingkaran`, `asean`) dan materi yang cocok akan langsung ditampilkan.
-3. **Kaidah & Rumus Emas**: Kotak rumus terpisah dengan warna kontras untuk mempermudah hafalan cepat.
-4. **Uji Pemahaman Kilat**: Setiap bab dilengkapi contoh soal dan tombol pembahasannya.
-5. **Tombol "🎯 Latih Soal Terkait"**: Sekali klik, murid langsung diarahkan ke sesi latihan mandiri dengan filter mapel dan kelas bab tersebut!
-6. **Cetak Lembar Rangkuman**: Tombol cetak ramah printer (`print-friendly`) untuk membuat rangkuman fisik pegangan di kelas.
+1. **Kotak Peringatan Khusus (`⚠️ PERHATIKAN`)**: Menyoroti jebakan soal yang paling sering mengecoh murid dalam lomba.
+2. **Kaidah & Rumus Emas Terpisah**: Ditampilkan dalam kotak bergaya monospaced yang mudah dihafal.
+3. **Filter Instan & Live Search**: Pencarian kata kunci secepat kilat per mata pelajaran dan jenjang kelas.
+4. **Uji Pemahaman Kilat**: Setiap bab dilengkapi contoh soal dan kunci pembahasan tersembunyi yang dapat dibuka-tutup.
+5. **Tombol "🎯 Latih Soal Terkait"**: Sekali klik langsung membuka latihan soal yang relevan dengan bab materi tersebut.
+6. **Cetak Lembar Rangkuman (`Print-Friendly`)**: Siap dicetak sebagai buku saku fisik pegangan siswa di kelas.
 
 ---
 
