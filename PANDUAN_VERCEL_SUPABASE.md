@@ -116,11 +116,24 @@ Ada dua cara mudah untuk mendeploy aplikasi ini ke Vercel:
 
 ---
 
-## 6. Langkah 5: Menghubungkan Supabase di Web App
+## 6. Langkah 5: Menghubungkan Supabase di Web App (Guru & Seluruh Siswa)
 
-Selain melalui Environment Variables di Vercel, Anda dapat menghubungkan Supabase langsung dari antarmuka aplikasi secara instan:
+Aplikasi menyediakan dua opsi integrasi Supabase:
 
-1. Buka aplikasi web yang sudah ter-deploy di browser.
+### Opsi 1: Otomatis untuk Seluruh Siswa via `supabase_config.js` (Sangat Disarankan)
+Agar **seluruh siswa** di ponsel/tablet/laptop masing-masing otomatis tersambung ke database Supabase sekolah tanpa perlu login guru atau mengisi API Key satu per satu:
+1. Buka file `supabase_config.js` di dalam folder proyek ini.
+2. Masukkan **Project URL** dan **Anon Key** Supabase Anda:
+   ```javascript
+   window.CC_SUPABASE_CONFIG = {
+     URL: "https://xyzcompany.supabase.co",
+     ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+   };
+   ```
+3. Commit dan push ke GitHub (`git add supabase_config.js; git commit -m "config: set supabase cloud credentials"; git push origin main`). Vercel akan otomatis meng-update web Anda. Kini setiap siswa yang membuka link langsung tersambung ke cloud!
+
+### Opsi 2: Menghubungkan Langsung dari Antarmuka Web (Menu Pengaturan)
+1. Buka aplikasi web di browser.
 2. Klik menu **"Pengaturan"** di sidebar.
 3. Masukkan PIN Guru default: `123456`.
 4. Pada kartu **"Koneksi Supabase Cloud Database"**:
@@ -128,7 +141,11 @@ Selain melalui Environment Variables di Vercel, Anda dapat menghubungkan Supabas
    - Masukkan **Supabase Anon / Public API Key**.
    - Klik **"🔌 Sambungkan & Simpan"**.
 5. Indikator di pojok kanan atas akan berubah menjadi **🟢 Supabase Cloud Terhubung**!
-6. Jika database Supabase Anda masih kosong, cukup klik tombol **"🚀 Sinkronkan 1.000 Soal ke Supabase"** untuk mengunggah seluruh bank soal secara otomatis.
+6. Anda juga dapat mengklik tombol **"📥 Unduh supabase_config.js"** untuk mengunduh berkas konfigurasi siap pakai.
+7. Jika sebelumnya ada siswa yang mengerjakan latihan sebelum database terhubung, klik **"☁️ Sinkronkan Sesi Murid ke Cloud"** untuk mengunggah riwayat latihan lokal ke Supabase!
+8. Untuk memeriksa hasil dan lembar jawaban siswa:
+   - Buka menu **📋 Review Hasil Belajar** (bisa diakses murid & guru) dan klik **"👁️ Buka Pembahasan & Jawaban"** pada sesi yang diinginkan.
+   - Atau masuk ke menu **📊 Evaluasi** (khusus Guru) dan klik **"👁️ Periksa Jawaban"** pada tabel riwayat sesi untuk melihat detail lembar ujian murid secara lengkap!
 
 ---
 

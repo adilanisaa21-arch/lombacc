@@ -97,28 +97,25 @@ ALTER TABLE cc_settings ENABLE ROW LEVEL SECURITY;
 
 -- Policy untuk cc_questions: Semua pengunjung bisa membaca soal AKTIF
 DROP POLICY IF EXISTS "Public can view active questions" ON cc_questions;
-CREATE POLICY "Public can view active questions" ON cc_questions
-    FOR SELECT USING (true);
-
 DROP POLICY IF EXISTS "Public can insert or update questions" ON cc_questions;
-CREATE POLICY "Public can insert or update questions" ON cc_questions
-    FOR ALL USING (true);
+CREATE POLICY "Public can access questions" ON cc_questions
+    FOR ALL USING (true) WITH CHECK (true);
 
 -- Policy untuk cc_teams & cc_sessions: Publik bisa membuat sesi & membaca sesi mereka
 DROP POLICY IF EXISTS "Public can access sessions" ON cc_sessions;
 CREATE POLICY "Public can access sessions" ON cc_sessions
-    FOR ALL USING (true);
+    FOR ALL USING (true) WITH CHECK (true);
 
 DROP POLICY IF EXISTS "Public can access teams" ON cc_teams;
 CREATE POLICY "Public can access teams" ON cc_teams
-    FOR ALL USING (true);
+    FOR ALL USING (true) WITH CHECK (true);
 
 -- Policy untuk cc_final_matches: Akses pertandingan
 DROP POLICY IF EXISTS "Public can access final matches" ON cc_final_matches;
 CREATE POLICY "Public can access final matches" ON cc_final_matches
-    FOR ALL USING (true);
+    FOR ALL USING (true) WITH CHECK (true);
 
 -- Policy untuk cc_settings: Publik bisa membaca pengaturan
 DROP POLICY IF EXISTS "Public can access settings" ON cc_settings;
 CREATE POLICY "Public can access settings" ON cc_settings
-    FOR ALL USING (true);
+    FOR ALL USING (true) WITH CHECK (true);
