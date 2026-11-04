@@ -1,11 +1,11 @@
 // supabase_config.js - Konfigurasi Terpusat Supabase Cloud
 // File ini membuat SELURUH murid dan guru yang membuka link Vercel otomatis terhubung ke Supabase.
-// Masukkan Project URL dan Anon Public Key Supabase Anda di bawah ini:
 
 window.CC_SUPABASE_CONFIG = {
-  // Ganti dengan Project URL Supabase Anda (contoh: "https://abcdefghijklm.supabase.co")
-  URL: "",
-
-  // Ganti dengan Anon / Public API Key Supabase Anda (string panjang yang berawalan "eyJhbGciOi...")
-  ANON_KEY: ""
+  URL: "https://lumwnqixpynmommycrjj.supabase.co",
+  ANON_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx1bXducWl4cHlubW9tbXljcmpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTM2NzMyOTQsImV4cCI6MjEwOTI0OTI5NH0.DdfGn5Eu8_8FZdNEBDc7pYKLYlhnAFWRYbyG4by09kU"
 };
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = window.CC_SUPABASE_CONFIG;
+}

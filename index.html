@@ -365,8 +365,8 @@
       // Supabase State
       supabase: null,
       supabaseConnected: false,
-      supabaseUrl: localStorage.getItem('ccSupabaseUrl') || (window.CC_SUPABASE_CONFIG && window.CC_SUPABASE_CONFIG.URL) || '',
-      supabaseKey: localStorage.getItem('ccSupabaseKey') || (window.CC_SUPABASE_CONFIG && window.CC_SUPABASE_CONFIG.ANON_KEY) || '',
+      supabaseUrl: (window.CC_SUPABASE_CONFIG && window.CC_SUPABASE_CONFIG.URL) || localStorage.getItem('ccSupabaseUrl') || '',
+      supabaseKey: (window.CC_SUPABASE_CONFIG && window.CC_SUPABASE_CONFIG.ANON_KEY) || localStorage.getItem('ccSupabaseKey') || '',
 
       // Sesi Latihan & Ujian
       session: null,
