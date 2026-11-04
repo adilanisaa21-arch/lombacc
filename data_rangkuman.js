@@ -1741,6 +1741,62 @@ const RANGKUMAN_DATA = [
     "captionGambar": null
   },
   {
+    "id": "ips-sejarah-kronologi",
+    "kelas": 5,
+    "mapel": "IPS",
+    "kategori": "IPS - Sejarah Kemerdekaan & Linimasa",
+    "judul": "📅 Linimasa Kronologi & Tanggal-Tanggal Penting Bersejarah Indonesia",
+    "icon": "📅",
+    "ringkasan": "Perjalanan sejarah bangsa Indonesia penuh dengan tanggal-tanggal keramat yang mengubah nasib nusantara! Dari kebangkitan kesadaran nasional 1908, ikrar persatuan pemuda 1928, proklamasi kemerdekaan 17 Agustus 1945, hingga perjuangan diplomasi dan kerja sama regional ASEAN.",
+    "poinPenting": [
+      "20 Mei 1908 (Hari Kebangkitan Nasional): Berdirinya organisasi modern pertama Budi Utomo oleh dr. Soetomo dan kawan-kawan atas gagasan dr. Wahidin Sudirohusodo.",
+      "2 Mei (Hari Pendidikan Nasional): Hari lahir Ki Hajar Dewantara (Raden Mas Soewardi Soerjaningrat), bapak pelopor pendidikan Taman Siswa dengan semboyan 'Ing ngarsa sung tuladha, ing madya mangun karsa, tut wuri handayani'.",
+      "28 Oktober 1928 (Hari Sumpah Pemuda): Kongres Pemuda II di Batavia mengikrarkan satu tanah air, satu bangsa, dan menjunjung bahasa persatuan bahasa Indonesia.",
+      "1 Maret 1945: Pembentukan BPUPKI (Badan Penyelidik Usaha-usaha Persiapan Kemerdekaan Indonesia / Dokuritsu Junbi Cosakai) yang diketuai Dr. K.R.T. Radjiman Wedyodiningrat.",
+      "29 Mei - 1 Juni 1945: Sidang I BPUPKI merumuskan dasar negara Indonesia. Pada 1 Juni 1945, Ir. Soekarno menyampaikan pidato konsep 'Pancasila' (diperingati sebagai Hari Lahir Pancasila).",
+      "22 Juni 1945: Panitia Sembilan merumuskan Piagam Jakarta (Jakarta Charter) yang menjadi cikal bakal Pembukaan UUD 1945.",
+      "7 Agustus 1945: Pembentukan PPKI (Panitia Persiapan Kemerdekaan Indonesia / Dokuritsu Junbi Inkai) yang diketuai Ir. Soekarno dan wakil Drs. Moh. Hatta.",
+      "15 Agustus 1945: Kaisar Hirohito mengumumkan Jepang menyerah tanpa syarat kepada Sekutu setelah bom atom di Hiroshima (6 Agustus) dan Nagasaki (9 Agustus). Terjadi 'kekosongan kekuasaan' (vacuum of power).",
+      "16 Agustus 1945 (Peristiwa Rengasdengklok): Golongan muda membawa Soekarno-Hatta ke Karawang agar proklamasi tidak dipengaruhi janji Jepang.",
+      "17 Agustus 1945 (Pukul 10.00 WIB): Pembacaan Teks Proklamasi Kemerdekaan Republik Indonesia oleh Ir. Soekarno di Jl. Pegangsaan Timur No. 56 Jakarta.",
+      "18 Agustus 1945: Sidang I PPKI mengesahkan UUD 1945, memilih Ir. Soekarno sebagai Presiden dan Drs. Moh. Hatta sebagai Wakil Presiden pertama, serta membentuk Komite Nasional Indonesia Pusat (KNIP).",
+      "10 November 1945 (Hari Pahlawan): Puncak pertempuran heroik Arek-Arek Suroboyo yang dipimpin Bung Tomo melawan tentara Sekutu Inggris.",
+      "15 Desember 1945 (Hari Juang Kartika/Infanteri): Kemenangan gemilang TKR dipimpin Kolonel Soedirman dalam Pertempuran Ambarawa.",
+      "23 Maret 1946: Peristiwa Bandung Lautan Api, pembumihangusan kota Bandung selatan oleh para pejuang agar tidak dijadikan markas militer Sekutu.",
+      "1 Maret 1949: Serangan Umum 1 Maret di Yogyakarta membuktikan kepada dunia internasional bahwa TNI dan Republik Indonesia masih kokoh berdiri.",
+      "27 Desember 1949: Pengakuan dan penyerahan kedaulatan Indonesia dari Belanda hasil Konferensi Meja Bundar (KMB) di Den Haag.",
+      "13 Desember 1957 (Hari Nusantara): Deklarasi Djuanda yang menyatakan bahwa batas laut wilayah Indonesia adalah 12 mil dari garis pantai terluar, menyatukan seluruh kepulauan nusantara sebagai satu kesatuan utuh.",
+      "8 Agustus 1967: Deklarasi Bangkok yang menandai berdirinya perhimpunan negara-negara Asia Tenggara (ASEAN) oleh 5 tokoh pendiri, termasuk Adam Malik dari Indonesia."
+    ],
+    "rumus": [
+      "20 Mei = Kebangkitan Nasional | 28 Oktober = Sumpah Pemuda",
+      "1 Juni = Lahir Pancasila | 17 Agustus = Hari Kemerdekaan RI",
+      "10 November = Hari Pahlawan | 13 Desember = Hari Nusantara",
+      "8 Agustus 1967 = Hari Lahir ASEAN (Deklarasi Bangkok)"
+    ],
+    "perhatikan": [
+      "Urutan peristiwa Agustus 1945: 14 Ags (Jepang menyerah) → 16 Ags (Rengasdengklok) → 17 Ags (Proklamasi) → 18 Ags (Pengesahan UUD 1945).",
+      "Sumpah Pemuda lahir dari Kongres Pemuda II, bukan Kongres Pemuda I."
+    ],
+    "contohSoal": {
+      "tanya": "Peristiwa penting yang mendasari diperingatinya tanggal 20 Mei sebagai Hari Kebangkitan Nasional adalah ...",
+      "kunci": "Berdirinya organisasi pemuda modern pertama yaitu Budi Utomo pada 20 Mei 1908",
+      "bahas": "Budi Utomo didirikan oleh dr. Soetomo dan para mahasiswa STOVIA pada 20 Mei 1908, menandai dimulainya babak baru perjuangan yang terorganisasi dan berskala nasional."
+    },
+    "tags": [
+      "sejarah indonesia",
+      "tanggal penting",
+      "linimasa kemerdekaan",
+      "rengasdengklok",
+      "hari pahlawan",
+      "sumpah pemuda",
+      "budi utomo",
+      "asean"
+    ],
+    "svgIllustration": null,
+    "captionGambar": null
+  },
+  {
     "id": "ips-5-5",
     "kelas": 5,
     "mapel": "IPS",

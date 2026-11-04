@@ -420,8 +420,7 @@
       let svgBlock = '';
       if (svgStimulus) {
         svgBlock = `
-          <div class="stimulus-svg-box">
-            <div class="stimulus-svg-badge">🖼️ GAMBAR STIMULUS</div>
+          <div class="stimulus-svg-box" style="margin-bottom:14px;display:flex;justify-content:center;background:#fff;border-radius:10px;padding:8px">
             ${svgStimulus}
           </div>
         `;
@@ -432,16 +431,15 @@
         const questionPart = (parts[1] || '').trim();
         return `
           ${svgBlock}
-          <div class="stimulus-card">
-            <div class="stimulus-badge">📋 BACAAN STIMULUS / KASUS SOAL</div>
-            <div class="stimulus-content">${esc(stimulusPart).replace(/\n/g, '<br>')}</div>
+          <div class="stimulus-card" style="margin-bottom:12px;background:#f8fafc;border-left:4px solid #3b82f6;padding:12px 16px;border-radius:6px;font-size:14.5px;line-height:1.6">
+            ${esc(stimulusPart).replace(/\n/g, '<br>')}
           </div>
-          <div class="stimulus-prompt">
-            <b>❓ Pertanyaan:</b><br>${esc(questionPart).replace(/\n/g, '<br>')}
+          <div class="standard-question-body" style="font-weight:600;font-size:15px;line-height:1.6">
+            ${esc(questionPart).replace(/\n/g, '<br>')}
           </div>
         `;
       }
-      return `${svgBlock}<div class="standard-question-body">${esc(text).replace(/\n/g, '<br>')}</div>`;
+      return `${svgBlock}<div class="standard-question-body" style="font-size:15px;line-height:1.6">${esc(text).replace(/\n/g, '<br>')}</div>`;
     }
 
     function detectErrorCategory(q) {
@@ -558,34 +556,65 @@
 
     // Mengambil semua soal aktif (dari Supabase atau data lokal)
     async function dbGetQuestions() {
+      const seed = typeof QUESTIONS_SEED !== 'undefined' ? QUESTIONS_SEED : [];
       if (S.supabaseConnected && S.supabase) {
         try {
-          const { data, error } = await S.supabase.from('cc_questions').select('*').order('id');
-          if (!error && Array.isArray(data) && data.length > 0) {
-            return data.map(q => ({
-              ID_SOAL: q.id,
-              MAPEL: q.mapel,
-              KELAS: q.kelas,
-              TOPIK: q.topik,
-              BABAK: q.babak,
-              LEVEL: q.level,
-              TIPE: q.tipe,
-              PERTANYAAN: q.pertanyaan,
-              OPSI_A: q.opsi_a || '',
-              OPSI_B: q.opsi_b || '',
-              OPSI_C: q.opsi_c || '',
-              OPSI_D: q.opsi_d || '',
-              KUNCI: q.kunci,
-              PEMBAHASAN: q.pembahasan || '',
-              STATUS: q.status || 'AKTIF'
-            }));
+          const allData = [];
+          let from = 0;
+          const pageSize = 1000;
+          let hasMore = true;
+          while (hasMore) {
+            const { data, error } = await S.supabase
+              .from('cc_questions')
+              .select('*')
+              .order('id')
+              .range(from, from + pageSize - 1);
+            if (error || !data || data.length === 0) {
+              hasMore = false;
+            } else {
+              allData.push(...data);
+              if (data.length < pageSize) hasMore = false;
+              else from += pageSize;
+            }
+          }
+
+          if (allData.length > 0) {
+            const seedMap = new Map(seed.map(q => [q.ID_SOAL, q]));
+            const mapped = allData.map(q => {
+              const sQ = seedMap.get(q.id);
+              return {
+                ID_SOAL: q.id,
+                MAPEL: q.mapel,
+                KELAS: q.kelas,
+                TOPIK: q.topik,
+                BABAK: q.babak,
+                LEVEL: q.level,
+                TIPE: q.tipe,
+                PERTANYAAN: q.pertanyaan,
+                OPSI_A: q.opsi_a || '',
+                OPSI_B: q.opsi_b || '',
+                OPSI_C: q.opsi_c || '',
+                OPSI_D: q.opsi_d || '',
+                KUNCI: q.kunci,
+                PEMBAHASAN: q.pembahasan || (sQ?.PEMBAHASAN || ''),
+                DIAGNOSA: q.diagnosa || (sQ?.DIAGNOSA || ''),
+                STIMULUS_GAMBAR: q.stimulus_gambar || (sQ?.STIMULUS_GAMBAR || null),
+                STATUS: q.status || 'AKTIF'
+              };
+            });
+            if (mapped.length < seed.length) {
+              const mappedIds = new Set(mapped.map(q => q.ID_SOAL));
+              seed.forEach(s => {
+                if (!mappedIds.has(s.ID_SOAL)) mapped.push(s);
+              });
+            }
+            return mapped;
           }
         } catch (e) {
           console.warn('Gagal memuat soal dari Supabase, beralih ke cache lokal:', e);
         }
       }
       // Fallback: Local Storage atau Seed
-      const seed = typeof QUESTIONS_SEED !== 'undefined' ? QUESTIONS_SEED : [];
       const cached = localStorage.getItem('cc_questions_data');
       if (cached) {
         try {
@@ -1381,12 +1410,15 @@
     ];
 
     function navHtml() {
-      return menu.map(([id, icon, label]) => `
-        <button type="button" class="nav-button ${S.page === id ? 'active' : ''}" data-action="navigate" data-page="${id}">
-          <span class="nav-ico">${icon}</span>
-          <span>${label}</span>
-        </button>
-      `).join('');
+      return menu.map(([id, icon, label]) => {
+        const route = PAGE_TO_ROUTE[id] || id;
+        return `
+          <a href="#/${route}" class="nav-button ${S.page === id ? 'active' : ''}" data-action="navigate" data-page="${id}" style="text-decoration:none">
+            <span class="nav-ico">${icon}</span>
+            <span>${label}</span>
+          </a>
+        `;
+      }).join('');
     }
 
     function layout(content) {
@@ -1438,11 +1470,14 @@
             ['reviews', '📋', 'Review'],
             ['exam', '🏆', 'Lomba'],
             ['final', '⚡', 'Final']
-          ].map(([id, ico, label]) => `
-            <button data-action="navigate" data-page="${id}" class="${S.page === id ? 'active' : ''}">
-              <span>${ico}</span>${label}
-            </button>
-          `).join('')}
+          ].map(([id, ico, label]) => {
+            const route = PAGE_TO_ROUTE[id] || id;
+            return `
+              <a href="#/${route}" data-action="navigate" data-page="${id}" class="${S.page === id ? 'active' : ''}" style="text-decoration:none">
+                <span>${ico}</span>${label}
+              </a>
+            `;
+          }).join('')}
         </nav>
       `;
     }
@@ -1561,16 +1596,27 @@
       });
 
       return `
+        ${S.returnToReview ? `
+          <div style="background:#fef3c7;border:1.5px solid #f59e0b;padding:12px 18px;border-radius:10px;margin-bottom:18px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+            <span style="color:#92400e;font-size:13.5px;font-weight:700">
+              🔙 Anda sedang meninjau materi pembelajaran dari lembar review evaluasi soal.
+            </span>
+            <button class="btn sm" data-action="returnToReview" style="background:#d97706;color:#fff;font-weight:bold;padding:6px 14px">
+              ← Kembali ke Review Jawaban
+            </button>
+          </div>
+        ` : ''}
+
         ${heading('Rangkuman Materi Terpadu Matematika, IPA & IPS', 'Ringkasan komprehensif konsep inti, rumus emas, poin hafalan, dan contoh soal untuk SD Kelas 4, 5, dan 6 sesuai Kurikulum Merdeka.')}
         
         <div class="card" style="margin-bottom:24px">
           <div class="summary-filter-bar">
             <div class="filter-pills">
               <span class="subtle" style="display:flex;align-items:center;margin-right:4px"><b>Mapel:</b></span>
-              <button class="filter-btn ${!filter.mapel ? 'active' : ''}" data-action="setSummaryMapel" data-val="">Semua Mapel</button>
-              <button class="filter-btn ${filter.mapel === 'MATEMATIKA' ? 'active' : ''}" data-action="setSummaryMapel" data-val="MATEMATIKA">🔢 Matematika (MTK)</button>
-              <button class="filter-btn ${filter.mapel === 'IPA' ? 'active' : ''}" data-action="setSummaryMapel" data-val="IPA">🔬 IPA (Sains)</button>
-              <button class="filter-btn ${filter.mapel === 'IPS' ? 'active' : ''}" data-action="setSummaryMapel" data-val="IPS">🌏 IPS (Sosial)</button>
+              <a href="#/rangkuman" class="filter-btn ${!filter.mapel ? 'active' : ''}" data-action="setSummaryMapel" data-val="" style="text-decoration:none">Semua Mapel</a>
+              <a href="#/rangkuman/matematika" class="filter-btn ${filter.mapel === 'MATEMATIKA' ? 'active' : ''}" data-action="setSummaryMapel" data-val="MATEMATIKA" style="text-decoration:none">🔢 Matematika (MTK)</a>
+              <a href="#/rangkuman/ipa" class="filter-btn ${filter.mapel === 'IPA' ? 'active' : ''}" data-action="setSummaryMapel" data-val="IPA" style="text-decoration:none">🔬 IPA (Sains)</a>
+              <a href="#/rangkuman/ips" class="filter-btn ${filter.mapel === 'IPS' ? 'active' : ''}" data-action="setSummaryMapel" data-val="IPS" style="text-decoration:none">🌏 IPS (Sosial)</a>
             </div>
             <div class="filter-pills">
               <span class="subtle" style="display:flex;align-items:center;margin-right:4px"><b>Tingkat:</b></span>
@@ -1730,6 +1776,29 @@
         });
       }
 
+      // Deteksi bagian yang sudah selesai dikerjakan dari sesi
+      const allSessions = (S.reviewsList && S.reviewsList.length > 0) ? S.reviewsList : JSON.parse(localStorage.getItem('cc_sessions_list') || '[]').filter(s => s.finished);
+      const completedMap = new Map();
+      allSessions.forEach(s => {
+        if (s.finished) {
+          const match = (s.teamName || s.team || '').match(new RegExp(`${cat} - Bagian (\\d+)`, 'i'));
+          if (match) {
+            const partNum = Number(match[1]);
+            const prev = completedMap.get(partNum);
+            const score = s.score !== undefined ? s.score : (s.review?.score || 0);
+            const max = s.maximum !== undefined ? s.maximum : (s.review?.maximum || 30);
+            const pct = Math.round((100 * score) / Math.max(1, max));
+            if (!prev || pct > prev.pct) {
+              completedMap.set(partNum, { score, max, pct, finishedAt: s.finishedAt || s.finished });
+            }
+          }
+        }
+      });
+
+      const completedCount = parts.filter(p => completedMap.has(p.part)).length;
+      const totalParts = parts.length;
+      const progressPct = totalParts ? Math.round((completedCount / totalParts) * 100) : 0;
+
       return `
         ${heading('Latihan Mandiri Terpadu per Bagian (Paket)', 'Pilih mata pelajaran atau paket campuran, tentukan nomor bagian latihan (30 soal • 45 menit / alokasi 90 detik per soal), dan latih ketangkasanmu.')}
 
@@ -1751,18 +1820,18 @@
 
           <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">2. PILIH MATA PELAJARAN / PAKET:</div>
           <div class="part-category-bar">
-            <button class="part-category-btn ${cat === 'CAMPURAN' ? 'active' : ''}" data-action="setPracticeCategory" data-val="CAMPURAN">
+            <a href="#/latihan/campuran" class="part-category-btn ${cat === 'CAMPURAN' ? 'active' : ''}" data-action="setPracticeCategory" data-val="CAMPURAN" style="text-decoration:none">
               🔀 Campuran MIPAS (10 MTK + 10 IPA + 10 IPS)
-            </button>
-            <button class="part-category-btn ${cat === 'MATEMATIKA' ? 'active' : ''}" data-action="setPracticeCategory" data-val="MATEMATIKA">
+            </a>
+            <a href="#/latihan/matematika" class="part-category-btn ${cat === 'MATEMATIKA' ? 'active' : ''}" data-action="setPracticeCategory" data-val="MATEMATIKA" style="text-decoration:none">
               🔢 Matematika (${countMTK} Soal)
-            </button>
-            <button class="part-category-btn ${cat === 'IPA' ? 'active' : ''}" data-action="setPracticeCategory" data-val="IPA">
+            </a>
+            <a href="#/latihan/ipa" class="part-category-btn ${cat === 'IPA' ? 'active' : ''}" data-action="setPracticeCategory" data-val="IPA" style="text-decoration:none">
               🔬 IPA (${countIPA} Soal)
-            </button>
-            <button class="part-category-btn ${cat === 'IPS' ? 'active' : ''}" data-action="setPracticeCategory" data-val="IPS">
+            </a>
+            <a href="#/latihan/ips" class="part-category-btn ${cat === 'IPS' ? 'active' : ''}" data-action="setPracticeCategory" data-val="IPS" style="text-decoration:none">
               🌏 IPS (${countIPS} Soal)
-            </button>
+            </a>
           </div>
 
           <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">3. MENU SORTIR / URUTAN SOAL:</div>
@@ -1784,30 +1853,54 @@
           </div>
         </div>
 
+        <div style="background:#fff;border:1.5px solid #cbd5e1;padding:12px 18px;border-radius:10px;margin-bottom:18px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+          <div>
+            <div style="font-size:13.5px;font-weight:800;color:#1e293b">
+              📊 Kemajuan Latihan ${cat}: <b>${completedCount}</b> dari <b>${totalParts} Bagian Selesai</b> (${progressPct}%)
+            </div>
+            <div style="font-size:12px;color:#64748b;margin-top:2px">
+              ${completedCount === totalParts ? '🎉 Hebat sekali! Semua bagian latihan pada kategori ini sudah berhasil kamu selesaikan!' : 'Bagian yang sudah selesai ditandai dengan lencana hijau dan nilai terbaikmu.'}
+            </div>
+          </div>
+          <div style="min-width:180px;height:12px;background:#e2e8f0;border-radius:6px;overflow:hidden">
+            <div style="width:${progressPct}%;height:100%;background:linear-gradient(90deg,#22c55e,#16a34a);transition:width .3s"></div>
+          </div>
+        </div>
+
         ${heading(`Pilih Bagian Soal (${parts.length} Bagian Tersedia)`, `Klik tombol bagian di bawah untuk langsung memulai pengerjaan paket 30 soal.`)}
 
         <div class="part-grid">
-          ${parts.map(p => `
-            <div class="part-card">
-              <div>
-                <div class="part-card-header">
-                  <span class="part-card-title">Bagian ${p.part}</span>
-                  <span class="pill ${cat === 'MATEMATIKA' ? 'blue' : (cat === 'IPA' ? 'green' : (cat === 'IPS' ? 'gold' : 'purple'))}">
-                    ${p.count} Soal
-                  </span>
+          ${parts.map(p => {
+            const comp = completedMap.get(p.part);
+            const isDone = !!comp;
+            return `
+              <div class="part-card" style="${isDone ? 'border:2px solid #22c55e;background:#f0fdf4;' : ''}">
+                <div>
+                  <div class="part-card-header">
+                    <span class="part-card-title">Bagian ${p.part}</span>
+                    <div style="display:flex;gap:4px;align-items:center">
+                      ${isDone 
+                        ? `<span class="pill green" style="font-size:11px;font-weight:800">✅ Selesai (${comp.pct}%)</span>` 
+                        : `<span class="pill gray" style="font-size:11px">⏳ Belum</span>`}
+                      <span class="pill ${cat === 'MATEMATIKA' ? 'blue' : (cat === 'IPA' ? 'green' : (cat === 'IPS' ? 'gold' : 'purple'))}">
+                        ${p.count} Soal
+                      </span>
+                    </div>
+                  </div>
+                  <div class="part-card-desc">
+                    ${cat === 'CAMPURAN' 
+                      ? '10 MTK + 10 IPA + 10 IPS' 
+                      : `Rentang Soal No. ${p.start} – ${p.end}`}
+                    <br><small style="color:#0284c7">⏱ 45 Menit (90 dtk/soal)</small>
+                    ${isDone ? `<div style="font-size:12px;color:#16a34a;font-weight:700;margin-top:4px">🎯 Skor: ${comp.score}/${comp.max} (${comp.pct}% Ketepatan)</div>` : ''}
+                  </div>
                 </div>
-                <div class="part-card-desc">
-                  ${cat === 'CAMPURAN' 
-                    ? '10 MTK + 10 IPA + 10 IPS' 
-                    : `Rentang Soal No. ${p.start} – ${p.end}`}
-                  <br><small style="color:#0284c7">⏱ 45 Menit (90 dtk/soal)</small>
-                </div>
+                <button class="btn sm ${isDone ? 'secondary' : ''}" data-action="startPartPractice" data-part="${p.part}" style="width:100%;margin-top:8px;${isDone ? 'border-color:#16a34a;color:#15803d;' : ''}">
+                  ${isDone ? `🔄 Latih Ulang Bagian ${p.part}` : `▶ Kerjakan Bagian ${p.part}`}
+                </button>
               </div>
-              <button class="btn sm" data-action="startPartPractice" data-part="${p.part}" style="width:100%;margin-top:8px">
-                ▶ Kerjakan Bagian ${p.part}
-              </button>
-            </div>
-          `).join('')}
+            `;
+          }).join('')}
         </div>
       `;
     }
@@ -2155,6 +2248,11 @@
                       <b>🎯 Saran Pencegahan / Rumus Kunci:</b> ${esc(q.diagnosa)}
                     </div>
                   ` : ''}
+                  <div style="margin-top:10px;display:flex;justify-content:flex-end">
+                    <button class="btn secondary sm" data-action="viewSummaryFromReview" data-mapel="${esc(q.mapel)}" data-topik="${esc(q.topik)}" style="font-size:12px;border-color:#3b82f6;color:#1d4ed8;background:#eff6ff">
+                      📖 Pelajari Materi Ini di Rangkuman →
+                    </button>
+                  </div>
                 </div>
               ` : `
                 <div class="correct-explanation-box">
@@ -2579,8 +2677,128 @@
     }
 
     // =========================================================================
-    // RENDER UTAMA & EVENT ROUTING
     // =========================================================================
+    // RENDER UTAMA & EVENT ROUTING (SPA HASH & DIRECT URL)
+    // =========================================================================
+    const PAGE_TO_ROUTE = {
+      dashboard: 'dasbord',
+      summary: 'rangkuman',
+      practice: 'latihan',
+      reviews: 'reviewjawaban',
+      exam: 'simulasi',
+      quiz: 'quiz',
+      result: 'hasil',
+      final: 'final',
+      bank: 'banksoal',
+      stats: 'evaluasi',
+      settings: 'pengaturan'
+    };
+
+    const ROUTE_TO_PAGE = {
+      dasbord: 'dashboard',
+      dashboard: 'dashboard',
+      beranda: 'dashboard',
+      rangkuman: 'summary',
+      materi: 'summary',
+      summary: 'summary',
+      latihan: 'practice',
+      latihanmandiri: 'practice',
+      practice: 'practice',
+      reviewjawaban: 'reviews',
+      review: 'reviews',
+      reviews: 'reviews',
+      riwayat: 'reviews',
+      simulasi: 'exam',
+      lomba: 'exam',
+      exam: 'exam',
+      quiz: 'quiz',
+      pengerjaan: 'quiz',
+      soal: 'quiz',
+      hasil: 'result',
+      result: 'result',
+      final: 'final',
+      buzzer: 'final',
+      banksoal: 'bank',
+      bank: 'bank',
+      evaluasi: 'stats',
+      statistik: 'stats',
+      stats: 'stats',
+      pengaturan: 'settings',
+      settings: 'settings'
+    };
+
+    let isNavigatingFromUrl = false;
+
+    function getRouteInfo() {
+      let path = (window.location.hash || '').replace(/^#\/?/, '').trim();
+      if (!path) {
+        const pName = (window.location.pathname || '').replace(/^\/+/, '').trim();
+        if (pName && !pName.endsWith('.html') && !pName.endsWith('.js') && !pName.endsWith('.json')) {
+          path = pName;
+        }
+      }
+      const parts = path.split('/').filter(Boolean).map(s => decodeURIComponent(s).toLowerCase());
+      const main = parts[0] || 'dasbord';
+      const sub = parts[1] || '';
+      return { main, sub, parts };
+    }
+
+    function syncUrl() {
+      if (isNavigatingFromUrl) return;
+      const pageRoute = PAGE_TO_ROUTE[S.page] || S.page;
+      let targetHash = '#/' + pageRoute;
+      if (S.page === 'practice' && S.practiceCategory) {
+        targetHash += '/' + S.practiceCategory.toLowerCase();
+      } else if (S.page === 'summary' && S.summaryFilter?.mapel) {
+        targetHash += '/' + S.summaryFilter.mapel.toLowerCase();
+      }
+      if (window.location.hash !== targetHash) {
+        try {
+          if (window.history && window.history.replaceState) {
+            window.history.replaceState(null, '', targetHash);
+          } else {
+            window.location.hash = targetHash;
+          }
+        } catch (e) {
+          window.location.hash = targetHash;
+        }
+      }
+    }
+
+    async function handleRoute() {
+      const { main, sub } = getRouteInfo();
+      const page = ROUTE_TO_PAGE[main] || 'dashboard';
+
+      isNavigatingFromUrl = true;
+      S.page = page;
+
+      if (page === 'practice') {
+        if (sub === 'matematika') S.practiceCategory = 'MATEMATIKA';
+        else if (sub === 'ipa') S.practiceCategory = 'IPA';
+        else if (sub === 'ips') S.practiceCategory = 'IPS';
+        else if (sub === 'campuran') S.practiceCategory = 'CAMPURAN';
+      } else if (page === 'summary') {
+        if (sub === 'matematika') S.summaryFilter.mapel = 'MATEMATIKA';
+        else if (sub === 'ipa') S.summaryFilter.mapel = 'IPA';
+        else if (sub === 'ips') S.summaryFilter.mapel = 'IPS';
+        else if (sub === 'semua' || !sub) S.summaryFilter.mapel = '';
+      }
+
+      render();
+
+      if (page === 'bank' && S.token) {
+        try { await reloadBank(); } catch (e) {}
+      }
+      if (page === 'stats' && S.token) {
+        try { await reloadStats(); } catch (e) {}
+      }
+      if (page === 'reviews') {
+        try { await reloadReviews(); } catch (e) {}
+      }
+      isNavigatingFromUrl = false;
+      syncUrl();
+    }
+
     function render() {
       let html = '';
       if (S.page === 'dashboard') html = dashboardView();
@@ -2598,6 +2816,7 @@
 
       $('#app').innerHTML = layout(html);
       updateClocks();
+      syncUrl();
     }
 
     function updateClocks() {
@@ -2633,8 +2852,14 @@
       return document.getElementById(id)?.value || '';
     }
 
-    async function navigate(page) {
+    async function navigate(page, sub) {
       S.page = page;
+      if (page === 'practice' && sub) {
+        S.practiceCategory = sub.toUpperCase();
+      } else if (page === 'summary' && sub) {
+        S.summaryFilter.mapel = sub.toUpperCase();
+      }
+      syncUrl();
       render();
       if (page === 'bank' && S.token) {
         try { await reloadBank(); } catch (e) {}
@@ -2766,6 +2991,7 @@
 
         case 'setSummaryMapel':
           S.summaryFilter.mapel = el.dataset.val;
+          syncUrl();
           render();
           break;
 
@@ -2793,8 +3019,29 @@
           break;
         }
 
+        case 'viewSummaryFromReview': {
+          const mapel = el.dataset.mapel;
+          const topik = el.dataset.topik;
+          S.returnToReview = true;
+          S.summaryFilter = {
+            mapel: (mapel === 'MATEMATIKA' || mapel === 'IPA' || mapel === 'IPS') ? mapel : '',
+            kelas: '',
+            search: topik || ''
+          };
+          await navigate('summary');
+          break;
+        }
+
+        case 'returnToReview': {
+          S.returnToReview = false;
+          S.page = 'result';
+          render();
+          break;
+        }
+
         case 'setPracticeCategory':
           S.practiceCategory = el.dataset.val;
+          syncUrl();
           render();
           break;
 
@@ -3507,7 +3754,9 @@
           await initSupabase(S.supabaseUrl, S.supabaseKey);
         }
         S.boot = await api.getBootstrap();
-        render();
+        window.addEventListener('hashchange', handleRoute);
+        window.addEventListener('popstate', handleRoute);
+        await handleRoute();
         setInterval(updateClocks, 1000);
       } catch (e) {
         console.error('Inisialisasi aplikasi gagal:', e);
