@@ -397,6 +397,7 @@
       summaryOpenAnswers: {},
 
       // Latihan Mandiri Bagian & Sortir
+      studentName: localStorage.getItem('cc_student_name') || '',
       practiceCategory: 'CAMPURAN',
       practiceSort: 'ACAK',
 
@@ -652,7 +653,7 @@
           const payload = {
             id: sessionData.id,
             id_tim: null, // Jangan kirim string acak agar tidak melanggar foreign key
-            nama_tim: sessionData.teamName || 'Murid Hebat',
+            nama_tim: sessionData.teamName || sessionData.studentName || 'Murid Hebat',
             mode: sessionData.mode || 'LATIHAN_BAGIAN',
             mulai_ms: Number(sessionData.startedAt) || (Date.now() - 60000),
             batas_ms: sessionData.deadline ? Number(sessionData.deadline) : 0,
@@ -708,6 +709,7 @@
               id: r.id,
               teamName: r.nama_tim,
               team: r.nama_tim,
+              studentName: (r.nama_tim || '').replace(/\s*\([^)]*\)\s*$/, '').trim() || r.nama_tim,
               mode: r.mode,
               score: Number(r.skor) || 0,
               maximum: Number(r.maks_skor) || 0,
@@ -732,7 +734,9 @@
         .filter(s => s.finished)
         .map(s => ({
           ...s,
-          team: s.teamName,
+          team: s.teamName || s.team,
+          teamName: s.teamName || s.team,
+          studentName: s.studentName || (s.teamName || '').replace(/\s*\([^)]*\)\s*$/, '').trim() || s.teamName,
           max: s.maximum || 0,
           finished: s.finishedAt || Date.now(),
           duration: Math.max(0, Math.round(((s.finishedAt || 0) - (s.startedAt || 0)) / 1000)),
@@ -873,6 +877,7 @@
           idTim: 'TIM-' + Math.random().toString(36).substr(2, 6).toUpperCase(),
           mode,
           teamName,
+          studentName: payload.studentName || teamName,
           startedAt: now,
           deadline: seconds ? now + seconds * 1000 : null,
           questions: selected.map(publicQuestion),
@@ -927,7 +932,10 @@
           correct: correctCount,
           total: session.questions.length,
           items,
-          finishedAt
+          finishedAt,
+          teamName: session.teamName,
+          studentName: session.studentName || session.teamName,
+          mode: session.mode
         };
 
         session.finished = true;
@@ -938,7 +946,7 @@
         session.answers = answers;
         const saveStatus = await dbSaveSession(session);
 
-        return { ...review, teamName: session.teamName, mode: session.mode, cloudSaved: saveStatus?.cloudSaved };
+        return { ...review, teamName: session.teamName, studentName: session.studentName || session.teamName, mode: session.mode, cloudSaved: saveStatus?.cloudSaved };
       },
 
       async listQuestions(token, filter) {
@@ -1726,7 +1734,22 @@
         ${heading('Latihan Mandiri Terpadu per Bagian (Paket)', 'Pilih mata pelajaran atau paket campuran, tentukan nomor bagian latihan (30 soal • 45 menit / alokasi 90 detik per soal), dan latih ketangkasanmu.')}
 
         <div class="card" style="margin-bottom:20px">
-          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">1. PILIH MATA PELAJARAN / PAKET:</div>
+          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">
+            1. NAMA SISWA / PESERTA <span style="color:#dc2626">* (Wajib Diisi)</span>:
+          </div>
+          <div style="max-width:440px;margin-bottom:18px">
+            <input type="text" id="trainStudentName" 
+              placeholder="Ketik nama lengkap siswa (Contoh: Budi Santoso)..." 
+              value="${esc(S.studentName || localStorage.getItem('cc_student_name') || '')}" 
+              oninput="S.studentName = this.value; localStorage.setItem('cc_student_name', this.value);"
+              style="width:100%;padding:10px 14px;border:2px solid #3b82f6;border-radius:8px;font-size:14.5px;font-weight:700;color:#0f172a;background:#fff;outline:none"
+            >
+            <div style="font-size:11.5px;color:#64748b;margin-top:6px">
+              📌 <i>Nama ini akan tersimpan permanen di Supabase Cloud serta tampil di Lembar Pembahasan dan Evaluasi Guru.</i>
+            </div>
+          </div>
+
+          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">2. PILIH MATA PELAJARAN / PAKET:</div>
           <div class="part-category-bar">
             <button class="part-category-btn ${cat === 'CAMPURAN' ? 'active' : ''}" data-action="setPracticeCategory" data-val="CAMPURAN">
               🔀 Campuran MIPAS (10 MTK + 10 IPA + 10 IPS)
@@ -1742,7 +1765,7 @@
             </button>
           </div>
 
-          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">2. MENU SORTIR / URUTAN SOAL:</div>
+          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">3. MENU SORTIR / URUTAN SOAL:</div>
           <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px">
             <button class="filter-btn ${sort === 'ACAK' ? 'active' : ''}" data-action="setPracticeSort" data-val="ACAK">
               🔀 Soal Teracak (Rekomendasi)
@@ -1757,7 +1780,7 @@
 
           <div class="notice" style="background:#eff6ff;border:1px solid #bfdbfe;color:#1e40af">
             ⏱️ <b>Format Resmi Latihan:</b> Setiap bagian terdiri dari <b>30 Soal</b> dengan alokasi waktu <b>45 Menit</b> (90 detik per soal).<br>
-            ⚡ <b>Mode Pengerjaan Instan:</b> Tidak perlu isi nama. Cukup klik tombol bagian di bawah untuk mulai. Soal otomatis lanjut saat dijawab dan langsung otomatis dikumpulkan saat soal terakhir selesai.
+            ⚡ <b>Alur Pengerjaan:</b> Pastikan nama siswa terisi di atas, lalu klik salah satu bagian latihan di bawah. Pilihan jawaban langsung lanjut ke nomor berikutnya dan otomatis dikumpulkan seketika di nomor terakhir.
           </div>
         </div>
 
@@ -1873,7 +1896,9 @@
                       <span class="pill ${isCloud ? 'green' : 'gray'}" style="font-size:11px">
                         ${isCloud ? '☁️ Cloud' : '💾 Lokal'}
                       </span>
-                      <span class="review-history-title">${esc(s.teamName || s.team || 'Murid Hebat')}</span>
+                      <span class="review-history-title" style="font-size:15px;font-weight:800;color:#0f172a">
+                        👤 ${esc(s.teamName || s.team || s.studentName || 'Murid Hebat')}
+                      </span>
                     </div>
                     <div class="review-history-sub">
                       <span>📅 ${dateStr}</span>
@@ -2051,7 +2076,14 @@
         ${card(`
           <div style="text-align:center;padding:10px 0">
             <div style="font-size:52px">${pct >= 80 ? '🏆' : (pct >= 60 ? '🌟' : '📚')}</div>
-            <div class="eyebrow" style="color:#64748b">HASIL PENGERJAAN ${r.teamName ? '• ' + esc(r.teamName).toUpperCase() : 'LATIHAN'}</div>
+            <div class="eyebrow" style="color:#64748b">HASIL PENGERJAAN • ${esc(r.mode || 'LATIHAN').toUpperCase()}</div>
+            
+            <div style="margin:10px auto 14px;padding:10px 20px;background:#f8fafc;border:2px solid #e2e8f0;border-radius:12px;max-width:480px;display:inline-block;box-shadow:0 2px 6px rgba(0,0,0,0.04)">
+              <div style="font-size:11.5px;color:#64748b;font-weight:800;letter-spacing:0.5px">NAMA SISWA / PESERTA:</div>
+              <div style="font-size:22px;font-weight:900;color:#1e40af;margin-top:2px">👤 ${esc(r.studentName || r.teamName || 'Murid')}</div>
+              ${r.teamName && r.teamName !== r.studentName ? `<div style="font-size:12px;color:#475569;margin-top:4px">Paket: <b>${esc(r.teamName)}</b></div>` : ''}
+            </div>
+
             <div class="result-score">${r.score}<span style="font-size:24px;color:#94a3b8"> / ${r.maximum}</span></div>
             <h2>${pct}% Ketepatan</h2>
             <p class="subtle">${r.correct} dari ${r.total} soal dijawab dengan benar (${wrongCount} soal perlu dievaluasi)</p>
@@ -2444,7 +2476,7 @@
               <tbody>
                 ${t.recent.map(r => `
                   <tr>
-                    <td><b>${esc(r.team)}</b></td>
+                    <td><b>👤 ${esc(r.team || r.teamName || 'Murid')}</b></td>
                     <td><span class="pill">${esc(r.mode)}</span></td>
                     <td><b>${r.score}</b> / ${r.max}</td>
                     <td>${Math.round((100 * r.score) / Math.max(1, r.max))}%</td>
@@ -2662,6 +2694,7 @@
       if (S.autoSubmitTimer) clearTimeout(S.autoSubmitTimer);
       S.submitting = true;
       try {
+        const studentName = S.session.studentName || S.session.teamName || 'Siswa';
         const res = await run(() => api.submitSession(S.session.id, S.answers));
         S.review = res;
         S.reviewOnlyWrong = false;
@@ -2670,8 +2703,11 @@
         sessionStorage.removeItem('ccActiveSession');
         sound(880);
         
+        // Segarkan data riwayat review di latar belakang agar sesi baru langsung tercatat
+        dbGetCompletedSessions().catch(() => {});
+
         if (res.cloudSaved) {
-          toast('🎉 Jawaban berhasil dikumpulkan & tersimpan di Cloud Supabase!');
+          toast(`🎉 Jawaban ${studentName} berhasil dikumpulkan & tersimpan di Cloud Supabase!`);
         } else if (S.supabaseConnected) {
           toast('⚠️ Jawaban tersimpan di perangkat lokal. Gagal sinkron ke Cloud.', true);
         } else {
@@ -2773,17 +2809,36 @@
           break;
 
         case 'startPartPractice': {
+          const inputEl = document.getElementById('trainStudentName');
+          const currentInputVal = inputEl?.value?.trim();
+          const rawName = currentInputVal || S.studentName?.trim() || localStorage.getItem('cc_student_name')?.trim() || '';
+          
+          if (!rawName) {
+            toast('⚠️ Silakan ketik nama siswa terlebih dahulu sebelum memilih bagian latihan!', true);
+            if (inputEl) {
+              inputEl.focus();
+              inputEl.style.borderColor = '#dc2626';
+              inputEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            return;
+          }
+
+          // Simpan permanen ke state dan localStorage
+          S.studentName = rawName;
+          localStorage.setItem('cc_student_name', rawName);
+
           const part = Number(el.dataset.part) || 1;
           const cat = S.practiceCategory || 'CAMPURAN';
           const sort = S.practiceSort || 'ACAK';
-          const studentName = localStorage.getItem('cc_student_name') || 'Siswa';
+          const fullSessionName = `${rawName} (${cat} - Bagian ${part})`;
           
           const sess = await run(() => api.createSession({
             mode: 'LATIHAN_BAGIAN',
             category: cat,
             part,
             sort,
-            teamName: `${studentName} (${cat} - Bagian ${part})`
+            teamName: fullSessionName,
+            studentName: rawName
           }));
           S.session = sess;
           S.questionIndex = 0;
@@ -2817,6 +2872,8 @@
                 sess = {
                   id: data.id,
                   teamName: data.nama_tim,
+                  team: data.nama_tim,
+                  studentName: (data.nama_tim || '').replace(/\s*\([^)]*\)\s*$/, '').trim() || data.nama_tim,
                   mode: data.mode,
                   score: Number(data.skor) || 0,
                   maximum: Number(data.maks_skor) || 0,
@@ -2833,6 +2890,9 @@
           }
           if (!sess) { toast('Data sesi tidak ditemukan.', true); return; }
           
+          const sName = sess.studentName || (sess.teamName || sess.team || '').replace(/\s*\([^)]*\)\s*$/, '').trim() || 'Murid';
+          const tName = sess.teamName || sess.team || sName;
+
           if (!sess.review) {
             const allQuestions = await dbGetQuestions();
             const qMap = new Map(allQuestions.map(q => [q.ID_SOAL, q]));
@@ -2852,7 +2912,9 @@
               };
             });
             sess.review = {
-              teamName: sess.teamName || sess.team || 'Murid Hebat',
+              teamName: tName,
+              studentName: sName,
+              mode: sess.mode,
               score: sess.score !== undefined ? sess.score : items.reduce((s, it) => s + it.points, 0),
               maximum: sess.maximum || (items.length * 4),
               correct: items.filter(x => x.correct).length,
@@ -2860,6 +2922,10 @@
               items,
               finishedAt: sess.finishedAt || Date.now()
             };
+          } else {
+            sess.review.teamName = sess.review.teamName || tName;
+            sess.review.studentName = sess.review.studentName || sName;
+            sess.review.mode = sess.review.mode || sess.mode;
           }
           S.review = sess.review;
           S.reviewOnlyWrong = false;
