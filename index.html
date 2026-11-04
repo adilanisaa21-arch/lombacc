@@ -1726,12 +1726,7 @@
         ${heading('Latihan Mandiri Terpadu per Bagian (Paket)', 'Pilih mata pelajaran atau paket campuran, tentukan nomor bagian latihan (30 soal • 45 menit / alokasi 90 detik per soal), dan latih ketangkasanmu.')}
 
         <div class="card" style="margin-bottom:20px">
-          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">1. NAMA PESERTA / TIM:</div>
-          <div style="max-width:380px;margin-bottom:16px">
-            <input type="text" id="trainTeamName" placeholder="Contoh: Andi Pratama / Tim Rajawali" value="Murid Hebat" style="width:100%;padding:10px 12px;border:1.5px solid #cbd5e1;border-radius:8px;font-size:14px">
-          </div>
-
-          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">2. PILIH MATA PELAJARAN / PAKET:</div>
+          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">1. PILIH MATA PELAJARAN / PAKET:</div>
           <div class="part-category-bar">
             <button class="part-category-btn ${cat === 'CAMPURAN' ? 'active' : ''}" data-action="setPracticeCategory" data-val="CAMPURAN">
               🔀 Campuran MIPAS (10 MTK + 10 IPA + 10 IPS)
@@ -1747,7 +1742,7 @@
             </button>
           </div>
 
-          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">3. MENU SORTIR / URUTAN SOAL:</div>
+          <div style="font-size:12.5px;font-weight:800;color:#64748b;margin-bottom:8px">2. MENU SORTIR / URUTAN SOAL:</div>
           <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:16px">
             <button class="filter-btn ${sort === 'ACAK' ? 'active' : ''}" data-action="setPracticeSort" data-val="ACAK">
               🔀 Soal Teracak (Rekomendasi)
@@ -1761,7 +1756,8 @@
           </div>
 
           <div class="notice" style="background:#eff6ff;border:1px solid #bfdbfe;color:#1e40af">
-            ⏱️ <b>Format Resmi Latihan:</b> Setiap bagian terdiri dari <b>30 Soal</b> dengan waktu <b>45 Menit</b> (alokasi rata-rata <b>90 detik per soal</b>). Nilai dan pembahasan lengkap beserta diagnosa kekeliruan langsung tampil seketika setelah hasil dikumpulkan.
+            ⏱️ <b>Format Resmi Latihan:</b> Setiap bagian terdiri dari <b>30 Soal</b> dengan alokasi waktu <b>45 Menit</b> (90 detik per soal).<br>
+            ⚡ <b>Mode Pengerjaan Instan:</b> Tidak perlu isi nama. Cukup klik tombol bagian di bawah untuk mulai. Soal otomatis lanjut saat dijawab dan langsung otomatis dikumpulkan saat soal terakhir selesai.
           </div>
         </div>
 
@@ -1998,8 +1994,11 @@
           <div>
             ${card(`
               <div class="question-actions">
-                <span class="pill ${q.mapel === 'MATEMATIKA' ? 'blue' : 'green'}">${esc(q.mapel)} • Kelas ${q.kelas}</span>
+                <span class="pill ${q.mapel === 'MATEMATIKA' ? 'blue' : (q.mapel === 'IPA' ? 'green' : 'gold')}">${esc(q.mapel)} • Kelas ${q.kelas}</span>
                 <span class="subtle">${esc(q.topik)}</span>
+              </div>
+              <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:#0284c7;background:#f0f9ff;border:1px solid #bae6fd;padding:6px 12px;border-radius:8px;margin-bottom:12px">
+                <span>⚡ <b>Pengerjaan Cepat:</b> Klik jawaban otomatis lanjut ke nomor berikutnya &amp; langsung dikumpulkan di nomor terakhir.</span>
               </div>
               <div class="question-text">${formatQuestionText(q.text, q.svgStimulus)}</div>
               ${q.options.map((opt, i) => {
@@ -2659,7 +2658,8 @@
 
     async function submitQuiz(auto = false) {
       if (S.submitting || !S.session) return;
-      if (!auto && !confirm('Kumpulkan jawaban sekarang? Jawaban tidak dapat diubah setelah dikumpulkan.')) return;
+      if (S.autoAdvanceTimer) clearTimeout(S.autoAdvanceTimer);
+      if (S.autoSubmitTimer) clearTimeout(S.autoSubmitTimer);
       S.submitting = true;
       try {
         const res = await run(() => api.submitSession(S.session.id, S.answers));
@@ -2776,14 +2776,14 @@
           const part = Number(el.dataset.part) || 1;
           const cat = S.practiceCategory || 'CAMPURAN';
           const sort = S.practiceSort || 'ACAK';
-          const name = (value('trainTeamName') || 'Murid Hebat').trim();
+          const studentName = localStorage.getItem('cc_student_name') || 'Siswa';
           
           const sess = await run(() => api.createSession({
             mode: 'LATIHAN_BAGIAN',
             category: cat,
             part,
             sort,
-            teamName: `${name} (${cat} - Bagian ${part})`
+            teamName: `${studentName} (${cat} - Bagian ${part})`
           }));
           S.session = sess;
           S.questionIndex = 0;
@@ -2941,7 +2941,7 @@
 
         case 'startPractice': {
           const mode = value('trainMode');
-          const name = value('trainTeamName').trim() || 'Murid Hebat';
+          const name = (value('trainTeamName') || 'Siswa Mandiri').trim();
           const sess = await run(() => api.createSession({
             mode,
             teamName: name,
@@ -2981,30 +2981,62 @@
         }
 
         case 'answer': {
-          if (!S.session) return;
+          if (!S.session || S.submitting) return;
           const q = S.session.questions[S.questionIndex];
           S.answers[q.id] = el.dataset.key;
           api.saveAnswers(S.session.id, S.answers).catch(() => {});
           render();
+
+          const totalQ = S.session.questions.length;
+          const isLast = S.questionIndex === totalQ - 1;
+
+          if (isLast) {
+            // Soal nomor terakhir langsung otomatis dikumpulkan seketika
+            if (S.autoSubmitTimer) clearTimeout(S.autoSubmitTimer);
+            if (S.autoAdvanceTimer) clearTimeout(S.autoAdvanceTimer);
+            toast('🏁 Soal terakhir terjawab. Mengumpulkan jawaban otomatis...');
+            S.autoSubmitTimer = setTimeout(async () => {
+              if (S.session && !S.submitting) {
+                await submitQuiz(true);
+              }
+            }, 350);
+          } else {
+            // Otomatis pindah ke nomor berikutnya
+            if (S.autoAdvanceTimer) clearTimeout(S.autoAdvanceTimer);
+            S.autoAdvanceTimer = setTimeout(() => {
+              if (S.session && S.page === 'quiz' && S.questionIndex < totalQ - 1) {
+                S.questionIndex++;
+                render();
+              }
+            }, 260);
+          }
           break;
         }
 
         case 'previous':
+          if (S.autoAdvanceTimer) clearTimeout(S.autoAdvanceTimer);
+          if (S.autoSubmitTimer) clearTimeout(S.autoSubmitTimer);
           S.questionIndex = Math.max(0, S.questionIndex - 1);
           render();
           break;
 
         case 'next':
+          if (S.autoAdvanceTimer) clearTimeout(S.autoAdvanceTimer);
+          if (S.autoSubmitTimer) clearTimeout(S.autoSubmitTimer);
           S.questionIndex = Math.min(S.session.questions.length - 1, S.questionIndex + 1);
           render();
           break;
 
         case 'jump':
+          if (S.autoAdvanceTimer) clearTimeout(S.autoAdvanceTimer);
+          if (S.autoSubmitTimer) clearTimeout(S.autoSubmitTimer);
           S.questionIndex = Number(el.dataset.index);
           render();
           break;
 
         case 'submitQuiz':
+          if (S.autoAdvanceTimer) clearTimeout(S.autoAdvanceTimer);
+          if (S.autoSubmitTimer) clearTimeout(S.autoSubmitTimer);
           await submitQuiz();
           break;
 
