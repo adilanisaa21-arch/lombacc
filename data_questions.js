@@ -1,5 +1,5 @@
 // data_questions.js - 1000 Soal Terpadu MIPAS SD (Kelas 4-6)
-// Dilengkapi Stimulus Teks & Stimulus Gambar Edukatif SVG Inline
+// Dilengkapi Stimulus Gambar SVG Kontekstual (Angka & Data Nyata dari Soal)
 // Auto-generated
 
 const QUESTIONS_SEED = [
@@ -19,7 +19,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Angka 7 menempati nilai tempat ribuan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-02",
@@ -37,7 +38,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlahkan satuan sampai ribuan dengan teknik menyimpan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-03",
@@ -55,7 +57,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "8.000 dikurangi 2.675 sama dengan 5.325.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-04",
@@ -73,7 +76,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "24 × (10 + 5) = 240 + 120 = 360.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-05",
@@ -91,7 +95,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "12 × 72 = 864.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-06",
@@ -109,7 +114,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pembilang dan penyebut 2/3 dikalikan dua menjadi 4/6.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-07",
@@ -127,7 +133,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Penyebut sama; pembilang lebih besar berarti nilai lebih besar.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-08",
@@ -145,7 +152,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "3 km = 3.000 m, ditambah 250 m.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-09",
@@ -163,7 +171,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "6 × 4 = 24.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-10",
@@ -181,7 +190,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Faktor prima 18 adalah 2 dan 3.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-11",
@@ -199,7 +209,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Keliling persegi = 4 × 13 = 52 cm.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-12",
@@ -218,7 +229,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas persegi panjang = 18 × 7 = 126 cm².",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <rect x=\"50\" y=\"35\" width=\"220\" height=\"80\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"26\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">p (panjang)</text>\n    <text x=\"280\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">l</text>\n    <text x=\"160\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#166534\">Luas = p × l | Keliling = 2 × (p + l)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:170px;margin:0 auto\">\n    <rect width=\"360\" height=\"170\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#bbf7d0\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">📐 BANGUN DATAR PERSEGI PANJANG</text>\n    \n    <g transform=\"translate(60, 42)\">\n      <rect x=\"0\" y=\"0\" width=\"240\" height=\"90\" rx=\"4\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n      <!-- Panjang -->\n      <text x=\"120\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Panjang = 18 cm</text>\n      <text x=\"120\" y=\"108\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">18 cm</text>\n      <!-- Lebar -->\n      <text x=\"248\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">l = 7 cm</text>\n      <text x=\"-8\" y=\"50\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">7 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-13",
@@ -236,7 +247,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Dari 08.35 ke 09.35 satu jam, lalu 35 menit.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-14",
@@ -255,7 +267,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "8 + 12 + 10 + 14 = 44.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-15",
@@ -273,7 +285,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kerjakan perkalian dulu: 120 - 72 + 15 = 63.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-16",
@@ -291,7 +304,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jumlah 410, lalu kurangi 95 menjadi 315.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-17",
@@ -310,7 +324,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Sisi = 64 : 4 = 16 m; luas = 16 × 16 = 256 m².",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <rect x=\"50\" y=\"35\" width=\"220\" height=\"80\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"26\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">p (panjang)</text>\n    <text x=\"280\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">l</text>\n    <text x=\"160\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#166534\">Luas = p × l | Keliling = 2 × (p + l)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-18",
@@ -328,7 +342,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Sisa = 8/8 - 2/8 - 3/8 = 3/8.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-19",
@@ -346,7 +361,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Bilangan = 7 × 36 + 4 = 256.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA4-20",
@@ -364,7 +380,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Setiap suku = suku sebelumnya × 2 + 1.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-01",
@@ -382,7 +399,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Penyebut sama, sehingga pembilang dijumlahkan.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-02",
@@ -400,7 +418,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "1/3 = 2/6, jadi 5/6 - 2/6 = 3/6.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-03",
@@ -418,7 +437,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "0,75 = 75/100 = 3/4.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-04",
@@ -436,7 +456,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "25% adalah seperempat, jadi 240 : 4 = 60.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai potongan harga (diskon) dengan harga akhir yang harus dibayar setelah diskon.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-05",
@@ -454,7 +475,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Faktor bersama terbesar 24 dan 36 adalah 12.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara kelipatan terkecil (KPK untuk kegiatan berulang) dengan faktor pembagi terbesar (FPB untuk pembagian paket merata).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-06",
@@ -472,7 +494,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kelipatan persekutuan terkecil 8 dan 12 ialah 24.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara kelipatan terkecil (KPK untuk kegiatan berulang) dengan faktor pembagi terbesar (FPB untuk pembagian paket merata).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-07",
@@ -491,7 +514,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume kubus = 6 × 6 × 6 = 216 cm³.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(125, 45)\">\n      <rect x=\"0\" y=\"20\" width=\"55\" height=\"55\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,20 22,5 77,5 55,20\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"55,20 77,5 77,60 55,75\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <text x=\"27\" y=\"93\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">s (rusuk)</text>\n      <text x=\"95\" y=\"45\" font-size=\"10.5\" fill=\"#581c87\">V = s³</text>\n      <text x=\"95\" y=\"62\" font-size=\"10.5\" fill=\"#581c87\">LP = 6 × s²</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">🎲 BANGUN RUANG KUBUS</text>\n    \n    <g transform=\"translate(130, 48)\">\n      <rect x=\"0\" y=\"25\" width=\"80\" height=\"80\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,25 35,0 115,0 80,25\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"80,25 115,0 115,80 80,105\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Rusuk Nyata Sesuai Soal -->\n      <text x=\"40\" y=\"122\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">s = 6 cm</text>\n      <text x=\"120\" y=\"55\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">6 cm</text>\n      <text x=\"100\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">6 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-08",
@@ -509,7 +532,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "1 liter = 1.000 mL.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-09",
@@ -527,7 +551,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Pembilang dikalikan pembilang, penyebut dikalikan penyebut, lalu sederhanakan 6/15.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-10",
@@ -545,7 +570,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "3/4 × 2/1 = 6/4 = 1 1/2.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-11",
@@ -563,7 +589,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "4 × 100.000 cm = 400.000 cm = 4 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa konversi satuan panjang (ingat 1 km = 100.000 cm; 1 m = 100 cm).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-12",
@@ -581,7 +608,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Merah = 3/(3+5) × 40 = 15.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai hanya dengan salah satu angka perbandingan, bukan dengan jumlah total bagian rasio.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-13",
@@ -600,7 +628,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume = panjang × lebar × tinggi = 10 × 8 × 5.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(100, 45)\">\n      <rect x=\"0\" y=\"20\" width=\"90\" height=\"45\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,20 25,6 115,6 90,20\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"90,20 115,6 115,51 90,65\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <text x=\"45\" y=\"80\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6b21a8\">p (panjang)</text>\n      <text x=\"98\" y=\"45\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">t</text>\n      <text x=\"106\" y=\"14\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">l</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"380\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">📦 BANGUN RUANG BALOK</text>\n    \n    <g transform=\"translate(100, 48)\">\n      <!-- Sisi Depan -->\n      <rect x=\"0\" y=\"22\" width=\"130\" height=\"60\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Atas -->\n      <polygon points=\"0,22 40,0 170,0 130,22\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Kanan -->\n      <polygon points=\"130,22 170,0 170,60 130,82\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Dimensi Nyata Sesuai Soal -->\n      <!-- Panjang (Depan Bawah) -->\n      <text x=\"65\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">p = 10 cm</text>\n      <!-- Lebar (Samping Atas) -->\n      <text x=\"160\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">l = 8 cm</text>\n      <!-- Tinggi (Tegak Kanan) -->\n      <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">5 cm</text>\n      \n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-14",
@@ -618,7 +646,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlah 400 dibagi 5 = 80.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-15",
@@ -636,7 +665,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Diskon Rp12.000; harga akhir Rp68.000.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-16",
@@ -654,7 +684,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "36 km dibagi 3 jam sama dengan 12 km/jam.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-17",
@@ -672,7 +703,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "2/3 = 4/6, sehingga 1 4/6 + 2 1/6 = 3 5/6.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-18",
@@ -690,7 +722,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "KPK dari 12 dan 18 ialah 36 menit.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-19",
@@ -708,7 +741,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlah seluruhnya 4 × 25 = 100; tiga bilangan berjumlah 69.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA5-20",
@@ -726,7 +760,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "24 liter merupakan 2/5 kapasitas, jadi kapasitas 24 × 5/2 = 60 liter.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-01",
@@ -744,7 +779,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "-12 + 25 = 13, lalu 13 - 8 = 5.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-02",
@@ -762,7 +798,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "375/1000 disederhanakan dengan membagi 125 menjadi 3/8.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-03",
@@ -780,7 +817,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Bilangan = 96 : 0,4 = 240.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai potongan harga (diskon) dengan harga akhir yang harus dibayar setelah diskon.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-04",
@@ -798,7 +836,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Satu bagian = 12 : 4 = 3 tahun; Budi = 7 × 3.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai hanya dengan salah satu angka perbandingan, bukan dengan jumlah total bagian rasio.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-05",
@@ -817,7 +856,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Keliling = π × diameter = 22/7 × 14 = 44 cm.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(160, 80)\">\n      <circle r=\"55\" fill=\"#fed7aa\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n      <line x1=\"-55\" y1=\"0\" x2=\"55\" y2=\"0\" stroke=\"#b91c1c\" stroke-width=\"2\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      <text x=\"0\" y=\"-8\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Diameter (d = 2r)</text>\n      <text x=\"25\" y=\"16\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7c2d12\">r (jari-jari)</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#fed7aa\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">⭕ BANGUN DATAR LINGKARAN</text>\n    \n    <g transform=\"translate(180, 100)\">\n      <circle r=\"60\" fill=\"#ffedd5\" stroke=\"#ea580c\" stroke-width=\"2.5\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      \n      \n        <!-- Diameter -->\n        <line x1=\"-60\" y1=\"0\" x2=\"60\" y2=\"0\" stroke=\"#b91c1c\" stroke-width=\"2.5\"/>\n        <text x=\"0\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b91c1c\">Diameter (d) = 14 cm</text>\n        <text x=\"0\" y=\"20\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">Jari-jari (r) = 7 cm</text>\n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-06",
@@ -836,7 +875,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas = πr² = 22/7 × 7 × 7 = 154 cm².",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(160, 80)\">\n      <circle r=\"55\" fill=\"#fed7aa\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n      <line x1=\"-55\" y1=\"0\" x2=\"55\" y2=\"0\" stroke=\"#b91c1c\" stroke-width=\"2\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      <text x=\"0\" y=\"-8\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Diameter (d = 2r)</text>\n      <text x=\"25\" y=\"16\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7c2d12\">r (jari-jari)</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#fed7aa\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">⭕ BANGUN DATAR LINGKARAN</text>\n    \n    <g transform=\"translate(180, 100)\">\n      <circle r=\"60\" fill=\"#ffedd5\" stroke=\"#ea580c\" stroke-width=\"2.5\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      \n      \n        <!-- Jari-jari -->\n        <line x1=\"0\" y1=\"0\" x2=\"60\" y2=\"0\" stroke=\"#047857\" stroke-width=\"2.5\"/>\n        <text x=\"30\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#047857\">r = 7 cm</text>\n        <text x=\"0\" y=\"25\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">Diameter (d) = 14 cm</text>\n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-07",
@@ -854,7 +893,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Urutkan data 4, 6, 7, 9, 12; nilai tengah 7.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-08",
@@ -873,7 +913,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Tinggi = 720 : (12 × 10) = 6 cm.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(100, 45)\">\n      <rect x=\"0\" y=\"20\" width=\"90\" height=\"45\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,20 25,6 115,6 90,20\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"90,20 115,6 115,51 90,65\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <text x=\"45\" y=\"80\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6b21a8\">p (panjang)</text>\n      <text x=\"98\" y=\"45\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">t</text>\n      <text x=\"106\" y=\"14\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">l</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"380\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">📦 BANGUN RUANG BALOK</text>\n    \n    <g transform=\"translate(100, 48)\">\n      <!-- Sisi Depan -->\n      <rect x=\"0\" y=\"22\" width=\"130\" height=\"60\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Atas -->\n      <polygon points=\"0,22 40,0 170,0 130,22\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Kanan -->\n      <polygon points=\"130,22 170,0 170,60 130,82\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Dimensi Nyata Sesuai Soal -->\n      <!-- Panjang (Depan Bawah) -->\n      <text x=\"65\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">p = 12 10</text>\n      <!-- Lebar (Samping Atas) -->\n      <text x=\"160\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">l = cm 10</text>\n      <!-- Tinggi (Tegak Kanan) -->\n      <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">t = ?</text>\n      \n      <text x=\"65\" y=\"56\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#047857\">V = 720 10³</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-09",
@@ -891,7 +931,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kenaikan Rp30.000, sehingga harga baru Rp180.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai potongan harga (diskon) dengan harga akhir yang harus dibayar setelah diskon.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-10",
@@ -909,7 +950,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "2,5 jam × 72 km/jam = 180 km.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-11",
@@ -927,7 +969,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Perempuan = 4/9 × 36 = 16.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai hanya dengan salah satu angka perbandingan, bukan dengan jumlah total bagian rasio.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-12",
@@ -945,7 +988,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Ada tiga hasil genap dari enam kemungkinan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-13",
@@ -963,7 +1007,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "3/5 × 250 = 150, dan 25% × 120 = 30.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-14",
@@ -981,7 +1026,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "6 × 250.000 cm = 1.500.000 cm = 15 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa konversi satuan panjang (ingat 1 km = 100.000 cm; 1 m = 100 cm).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-15",
@@ -999,7 +1045,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlah 450; setelah dikurangi 90 menjadi 360, bagi 5 = 72.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-16",
@@ -1017,7 +1064,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Luas = 8² + 5² = 64 + 25 = 89 cm².",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-17",
@@ -1035,7 +1083,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Berkurang bersih 5 liter tiap menit; 120 - 15 × 5 = 45.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-18",
@@ -1053,7 +1102,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "200 adalah 125% nilai semula, jadi 200 : 1,25 = 160.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-19",
@@ -1071,7 +1121,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Volume penuh 60.000 cm³ = 60 liter; 3/4 × 60 = 45 liter.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-MATEMATIKA6-20",
@@ -1089,7 +1140,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jumlah awal 72; jumlah baru 100; selisih 28.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-01",
@@ -1107,7 +1159,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Akar menyerap air dan zat mineral melalui rambut akar.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-02",
@@ -1125,7 +1178,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Fotosintesis memanfaatkan energi cahaya untuk membuat makanan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-03",
@@ -1143,7 +1197,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Mencair adalah perubahan dari padat ke cair.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di luar gelas es berasal dari dalam gelas yang menembus kaca (padahal uap air di udara sekitar yang mengembun).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-04",
@@ -1161,7 +1216,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Mengembun merupakan perubahan gas menjadi cair.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di luar gelas es berasal dari dalam gelas yang menembus kaca (padahal uap air di udara sekitar yang mengembun).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-05",
@@ -1179,7 +1235,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Gravitasi Bumi menarik benda ke arah pusat Bumi.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-06",
@@ -1197,7 +1254,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Besi termasuk bahan feromagnetik.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-07",
@@ -1215,7 +1273,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Motor listrik menggerakkan baling-baling kipas.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-08",
@@ -1233,7 +1292,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Getaran sumber bunyi merambat melalui medium.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-09",
@@ -1252,7 +1312,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Tikus memakan padi sebagai produsen, jadi konsumen pertama.",
     "DIAGNOSA": "Kesalahan Umum: Mengira arah panah rantai makanan terbalik (arah panah menunjukkan perpindahan energi dari yang dimakan menuju pemakan).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-10",
@@ -1270,7 +1330,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Selaput memperluas bidang dorong ketika berenang.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-11",
@@ -1289,7 +1350,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Metamorfosis sempurna melewati fase telur, larva, pupa, lalu imago.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-12",
@@ -1307,7 +1368,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Baterai menyuplai listrik yang digunakan lampu menghasilkan cahaya.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-13",
@@ -1325,7 +1387,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Cahaya merambat lurus dalam medium seragam.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan (cahaya dibelokkan saat melewati dua medium berbeda kerapatan) dengan pemantulan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-14",
@@ -1343,7 +1406,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Alur membantu pembuangan air dan menjaga gesekan pada jalan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-15",
@@ -1361,7 +1425,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Panas merambat melalui logam secara konduksi.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-16",
@@ -1379,7 +1444,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Berkurangnya predator dapat menyebabkan jumlah mangsanya meningkat.",
     "DIAGNOSA": "Kesalahan Umum: Mengira arah panah rantai makanan terbalik (arah panah menunjukkan perpindahan energi dari yang dimakan menuju pemakan).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-17",
@@ -1397,7 +1463,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Reboisasi ialah penanaman kembali kawasan hutan yang gundul.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-18",
@@ -1415,7 +1482,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Tanaman memerlukan cahaya untuk produksi makanan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-19",
@@ -1433,7 +1501,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Gesekan lebih kecil mengurangi kemampuan pengereman.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA4-20",
@@ -1452,7 +1521,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Produsen menjadi dasar aliran energi dalam banyak rantai makanan.",
     "DIAGNOSA": "Kesalahan Umum: Mengira arah panah rantai makanan terbalik (arah panah menunjukkan perpindahan energi dari yang dimakan menuju pemakan).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-01",
@@ -1470,7 +1539,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Alveolus berdinding tipis dan dikelilingi kapiler darah.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-02",
@@ -1488,7 +1558,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Vili pada usus halus memperluas permukaan penyerapan nutrisi.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-03",
@@ -1506,7 +1577,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jantung bekerja sebagai pompa dalam sistem peredaran darah.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-04",
@@ -1525,7 +1597,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Pengurai mengembalikan unsur hara ke lingkungan.",
     "DIAGNOSA": "Kesalahan Umum: Mengira arah panah rantai makanan terbalik (arah panah menunjukkan perpindahan energi dari yang dimakan menuju pemakan).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-05",
@@ -1543,7 +1615,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Lebah mendapat makanan, bunga terbantu penyerbukannya.",
     "DIAGNOSA": "Kesalahan Umum: Mengira arah panah rantai makanan terbalik (arah panah menunjukkan perpindahan energi dari yang dimakan menuju pemakan).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-06",
@@ -1561,7 +1634,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Tumbuhan menggunakan karbon dioksida bersama air untuk membentuk gula.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-07",
@@ -1579,7 +1653,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Bayangan cermin datar tampak di belakang cermin dan sama besar.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan (cahaya dibelokkan saat melewati dua medium berbeda kerapatan) dengan pemantulan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-08",
@@ -1597,7 +1672,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Bunyi memerlukan medium partikel untuk merambat.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-09",
@@ -1616,7 +1692,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jaring makanan merupakan gabungan beberapa rantai yang saling terhubung.",
     "DIAGNOSA": "Kesalahan Umum: Mengira arah panah rantai makanan terbalik (arah panah menunjukkan perpindahan energi dari yang dimakan menuju pemakan).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-10",
@@ -1634,7 +1710,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Sel fotovoltaik menghasilkan listrik saat menerima cahaya.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-11",
@@ -1653,7 +1730,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Evaporasi merupakan penguapan air.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#bae6fd\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">💧 SIKLUS HIDROLOGI (DAUR AIR)</text>\n    <circle cx=\"35\" cy=\"45\" r=\"16\" fill=\"#fde047\" stroke=\"#eab308\"/>\n    <text x=\"35\" y=\"50\" text-anchor=\"middle\" font-size=\"12\">☀️</text>\n\n    <!-- Awan -->\n    <ellipse cx=\"140\" cy=\"45\" rx=\"30\" ry=\"14\" fill=\"#e2e8f0\" stroke=\"#94a3b8\"/>\n    <text x=\"140\" y=\"48\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#334155\">Kondensasi</text>\n\n    <!-- Hujan -->\n    <ellipse cx=\"250\" cy=\"50\" rx=\"28\" ry=\"12\" fill=\"#94a3b8\"/>\n    <text x=\"250\" y=\"45\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#0369a1\">Presipitasi</text>\n    <line x1=\"240\" y1=\"65\" x2=\"235\" y2=\"85\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n    <line x1=\"255\" y1=\"65\" x2=\"250\" y2=\"85\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n\n    <!-- Laut -->\n    <path d=\"M 0 130 Q 80 120 160 130 T 320 130 L 320 160 L 0 160 Z\" fill=\"#38bdf8\"/>\n    <text x=\"50\" y=\"148\" font-size=\"10\" font-weight=\"bold\" fill=\"#075985\">Evaporasi (Menguap) ↗</text>\n    <text x=\"240\" y=\"148\" font-size=\"9\" font-weight=\"bold\" fill=\"#075985\">Infiltrasi ↘</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-12",
@@ -1672,7 +1749,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Infiltrasi adalah masuknya air ke pori tanah.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#bae6fd\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">💧 SIKLUS HIDROLOGI (DAUR AIR)</text>\n    <circle cx=\"35\" cy=\"45\" r=\"16\" fill=\"#fde047\" stroke=\"#eab308\"/>\n    <text x=\"35\" y=\"50\" text-anchor=\"middle\" font-size=\"12\">☀️</text>\n\n    <!-- Awan -->\n    <ellipse cx=\"140\" cy=\"45\" rx=\"30\" ry=\"14\" fill=\"#e2e8f0\" stroke=\"#94a3b8\"/>\n    <text x=\"140\" y=\"48\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#334155\">Kondensasi</text>\n\n    <!-- Hujan -->\n    <ellipse cx=\"250\" cy=\"50\" rx=\"28\" ry=\"12\" fill=\"#94a3b8\"/>\n    <text x=\"250\" y=\"45\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#0369a1\">Presipitasi</text>\n    <line x1=\"240\" y1=\"65\" x2=\"235\" y2=\"85\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n    <line x1=\"255\" y1=\"65\" x2=\"250\" y2=\"85\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n\n    <!-- Laut -->\n    <path d=\"M 0 130 Q 80 120 160 130 T 320 130 L 320 160 L 0 160 Z\" fill=\"#38bdf8\"/>\n    <text x=\"50\" y=\"148\" font-size=\"10\" font-weight=\"bold\" fill=\"#075985\">Evaporasi (Menguap) ↗</text>\n    <text x=\"240\" y=\"148\" font-size=\"9\" font-weight=\"bold\" fill=\"#075985\">Infiltrasi ↘</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 175\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:175px;margin:0 auto\">\n    <rect width=\"380\" height=\"175\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#bae6fd\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#0369a1\">💧 BAGAN SIKLUS HIDROLOGI (DAUR AIR)</text>\n    \n    <!-- Matahari -->\n    <circle cx=\"45\" cy=\"50\" r=\"18\" fill=\"#fde047\" stroke=\"#eab308\" stroke-width=\"1.5\"/>\n    <text x=\"45\" y=\"55\" text-anchor=\"middle\" font-size=\"14\">☀️</text>\n\n    <!-- (1) Evaporasi -->\n    <g transform=\"translate(60, 95)\">\n      <circle cx=\"15\" cy=\"0\" r=\"10\" fill=\"#ef4444\"/>\n      <text x=\"15\" y=\"4\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">1</text>\n      <line x1=\"30\" y1=\"15\" x2=\"30\" y2=\"-15\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n      <polyline points=\"26,-10 30,-16 34,-10\" fill=\"none\" stroke=\"#f59e0b\" stroke-width=\"2\"/>\n      <text x=\"38\" y=\"5\" font-size=\"9\" font-weight=\"bold\" fill=\"#d97706\">Evaporasi</text>\n    </g>\n\n    <!-- (2) Kondensasi -->\n    <g transform=\"translate(160, 42)\">\n      <circle cx=\"15\" cy=\"-8\" r=\"10\" fill=\"#ef4444\"/>\n      <text x=\"15\" y=\"-4\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">2</text>\n      <ellipse cx=\"45\" cy=\"10\" rx=\"30\" ry=\"14\" fill=\"#e2e8f0\" stroke=\"#94a3b8\"/>\n      <text x=\"45\" y=\"14\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#334155\">Kondensasi</text>\n    </g>\n\n    <!-- (3) Presipitasi -->\n    <g transform=\"translate(260, 45)\">\n      <circle cx=\"15\" cy=\"-8\" r=\"10\" fill=\"#ef4444\"/>\n      <text x=\"15\" y=\"-4\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">3</text>\n      <ellipse cx=\"45\" cy=\"10\" rx=\"26\" ry=\"12\" fill=\"#94a3b8\"/>\n      <line x1=\"35\" y1=\"28\" x2=\"30\" y2=\"46\" stroke=\"#0284c7\" stroke-width=\"2\" stroke-dasharray=\"3,3\"/>\n      <line x1=\"50\" y1=\"28\" x2=\"45\" y2=\"46\" stroke=\"#0284c7\" stroke-width=\"2\" stroke-dasharray=\"3,3\"/>\n      <text x=\"45\" y=\"60\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#0284c7\">Presipitasi</text>\n    </g>\n\n    <!-- (4) Infiltrasi & Laut -->\n    <path d=\"M 0 135 Q 90 125 180 135 T 380 135 L 380 175 L 0 175 Z\" fill=\"#38bdf8\"/>\n    <text x=\"60\" y=\"158\" font-size=\"10\" font-weight=\"bold\" fill=\"#075985\">Laut / Air Permukaan</text>\n    \n    <g transform=\"translate(260, 138)\">\n      <circle cx=\"0\" cy=\"8\" r=\"10\" fill=\"#ef4444\"/>\n      <text x=\"0\" y=\"12\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#fff\">4</text>\n      <text x=\"15\" y=\"12\" font-size=\"9\" font-weight=\"bold\" fill=\"#0c4a6e\">Infiltrasi (Meresap ke tanah)</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "SEED-IPA5-13",
@@ -1690,7 +1767,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Aktivitas otot memerlukan pasokan oksigen lebih besar.",
     "DIAGNOSA": "Kesalahan Umum: Mengira paru-paru memompa darah (jantung yang memompa darah; paru-paru tempat pertukaran gas di alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-14",
@@ -1708,7 +1786,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Warna gelap umumnya menyerap lebih banyak energi radiasi.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-15",
@@ -1726,7 +1805,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Luas permukaan daun yang kecil membantu mengurangi kehilangan air.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-16",
@@ -1744,7 +1824,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Populasi yang berkurang memengaruhi predator dan mangsanya.",
     "DIAGNOSA": "Kesalahan Umum: Mengira arah panah rantai makanan terbalik (arah panah menunjukkan perpindahan energi dari yang dimakan menuju pemakan).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-17",
@@ -1762,7 +1843,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Cahaya berubah arah saat melewati dua medium berbeda.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan (cahaya dibelokkan saat melewati dua medium berbeda kerapatan) dengan pemantulan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-18",
@@ -1780,7 +1862,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Potongan lebih kecil memudahkan proses pencernaan berikutnya.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-19",
@@ -1799,7 +1882,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Permukaan kedap air mengurangi peresapan ke dalam tanah.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f0f9ff\" stroke=\"#bae6fd\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">💧 SIKLUS HIDROLOGI (DAUR AIR)</text>\n    <circle cx=\"35\" cy=\"45\" r=\"16\" fill=\"#fde047\" stroke=\"#eab308\"/>\n    <text x=\"35\" y=\"50\" text-anchor=\"middle\" font-size=\"12\">☀️</text>\n\n    <!-- Awan -->\n    <ellipse cx=\"140\" cy=\"45\" rx=\"30\" ry=\"14\" fill=\"#e2e8f0\" stroke=\"#94a3b8\"/>\n    <text x=\"140\" y=\"48\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#334155\">Kondensasi</text>\n\n    <!-- Hujan -->\n    <ellipse cx=\"250\" cy=\"50\" rx=\"28\" ry=\"12\" fill=\"#94a3b8\"/>\n    <text x=\"250\" y=\"45\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#0369a1\">Presipitasi</text>\n    <line x1=\"240\" y1=\"65\" x2=\"235\" y2=\"85\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n    <line x1=\"255\" y1=\"65\" x2=\"250\" y2=\"85\" stroke=\"#0284c7\" stroke-width=\"1.5\" stroke-dasharray=\"2,2\"/>\n\n    <!-- Laut -->\n    <path d=\"M 0 130 Q 80 120 160 130 T 320 130 L 320 160 L 0 160 Z\" fill=\"#38bdf8\"/>\n    <text x=\"50\" y=\"148\" font-size=\"10\" font-weight=\"bold\" fill=\"#075985\">Evaporasi (Menguap) ↗</text>\n    <text x=\"240\" y=\"148\" font-size=\"9\" font-weight=\"bold\" fill=\"#075985\">Infiltrasi ↘</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA5-20",
@@ -1817,7 +1900,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Hanya unsur hara yang sengaja dibedakan antara dua kelompok.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-01",
@@ -1835,7 +1919,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Pisang menghasilkan tunas dari bagian pangkal tanaman.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-02",
@@ -1853,7 +1938,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Penyerbukan terjadi sebelum pembuahan pada tumbuhan berbunga.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-03",
@@ -1872,7 +1958,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Rangkaian seri memiliki satu lintasan arus.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">💡 RANGKAIAN LISTRIK SERI (SEJAJAR)</text>\n    <rect x=\"50\" y=\"40\" width=\"220\" height=\"70\" rx=\"6\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"2\"/>\n    <circle cx=\"110\" cy=\"40\" r=\"12\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n    <text x=\"110\" y=\"44\" text-anchor=\"middle\" font-size=\"10\">💡1</text>\n    <circle cx=\"190\" cy=\"40\" r=\"12\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"44\" text-anchor=\"middle\" font-size=\"10\">💡2</text>\n    <!-- Baterai -->\n    <rect x=\"140\" y=\"105\" width=\"40\" height=\"10\" fill=\"#334155\" rx=\"2\"/>\n    <text x=\"160\" y=\"128\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#0f172a\">Baterai (Sumber Listrik)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-04",
@@ -1890,7 +1976,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Tembaga digunakan untuk kabel karena konduktivitas tinggi.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-05",
@@ -1908,7 +1995,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kutub magnet sejenis saling menolak.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-06",
@@ -1927,7 +2015,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Urutan planet dimulai Merkurius, Venus, Bumi, Mars.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi Bumi (siang-malam, 24 jam) dengan revolusi Bumi (pergantian musim, kalender masehi 365¼ hari).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-07",
@@ -1946,7 +2034,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Revolusi Bumi berlangsung sekitar satu tahun.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi Bumi (siang-malam, 24 jam) dengan revolusi Bumi (pergantian musim, kalender masehi 365¼ hari).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-08",
@@ -1964,7 +2052,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Bumi berputar pada porosnya sehingga wilayah bergantian menghadap Matahari.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi Bumi (siang-malam, 24 jam) dengan revolusi Bumi (pergantian musim, kalender masehi 365¼ hari).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-09",
@@ -1983,7 +2072,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Bayangan Bumi jatuh ke Bulan saat susunannya sesuai.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-10",
@@ -2001,7 +2090,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Angin terus tersedia melalui proses alam.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-11",
@@ -2019,7 +2109,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Unta memiliki sejumlah adaptasi fisiologis untuk menghemat air.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-12",
@@ -2038,7 +2129,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Saturnus memiliki sistem cincin besar yang tampak jelas.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi Bumi (siang-malam, 24 jam) dengan revolusi Bumi (pergantian musim, kalender masehi 365¼ hari).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-13",
@@ -2057,7 +2148,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Setiap cabang memiliki lintasan arus tersendiri.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">💡 RANGKAIAN LISTRIK SERI (SEJAJAR)</text>\n    <rect x=\"50\" y=\"40\" width=\"220\" height=\"70\" rx=\"6\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"2\"/>\n    <circle cx=\"110\" cy=\"40\" r=\"12\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n    <text x=\"110\" y=\"44\" text-anchor=\"middle\" font-size=\"10\">💡1</text>\n    <circle cx=\"190\" cy=\"40\" r=\"12\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"44\" text-anchor=\"middle\" font-size=\"10\">💡2</text>\n    <!-- Baterai -->\n    <rect x=\"140\" y=\"105\" width=\"40\" height=\"10\" fill=\"#334155\" rx=\"2\"/>\n    <text x=\"160\" y=\"128\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#0f172a\">Baterai (Sumber Listrik)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-14",
@@ -2075,7 +2166,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Lapisan kambium membantu pembentukan akar pada cangkok.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-15",
@@ -2094,7 +2186,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Bulan memantulkan sinar Matahari ke arah pengamat di Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi Bumi (siang-malam, 24 jam) dengan revolusi Bumi (pergantian musim, kalender masehi 365¼ hari).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-16",
@@ -2112,7 +2204,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Peningkatan efek rumah kaca mengurangi pelepasan panas ke angkasa.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-17",
@@ -2131,7 +2224,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Pada paralel tiap lampu menerima tegangan sumber penuh.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#1e293b\">💡 RANGKAIAN LISTRIK SERI (SEJAJAR)</text>\n    <rect x=\"50\" y=\"40\" width=\"220\" height=\"70\" rx=\"6\" fill=\"#fff\" stroke=\"#64748b\" stroke-width=\"2\"/>\n    <circle cx=\"110\" cy=\"40\" r=\"12\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n    <text x=\"110\" y=\"44\" text-anchor=\"middle\" font-size=\"10\">💡1</text>\n    <circle cx=\"190\" cy=\"40\" r=\"12\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"44\" text-anchor=\"middle\" font-size=\"10\">💡2</text>\n    <!-- Baterai -->\n    <rect x=\"140\" y=\"105\" width=\"40\" height=\"10\" fill=\"#334155\" rx=\"2\"/>\n    <text x=\"160\" y=\"128\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#0f172a\">Baterai (Sumber Listrik)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-18",
@@ -2149,7 +2242,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Bulan dapat menghalangi cahaya Matahari menuju sebagian Bumi.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-19",
@@ -2167,7 +2261,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Daya panel dipengaruhi jumlah cahaya yang diterima.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPA6-20",
@@ -2185,7 +2280,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Pemeriksaan sistematis dengan keselamatan menghasilkan informasi penyebab.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-01",
@@ -2203,7 +2299,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Legenda memuat keterangan simbol dan warna dalam peta.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara legenda (keterangan arti simbol) dengan inset (peta kecil penunjuk posisi wilayah dalam konteks luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-02",
@@ -2221,7 +2318,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Penunjuk arah membantu pembaca mengetahui orientasi peta.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara legenda (keterangan arti simbol) dengan inset (peta kecil penunjuk posisi wilayah dalam konteks luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-03",
@@ -2239,7 +2337,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Biru biasanya digunakan untuk sungai, danau, dan laut.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara legenda (keterangan arti simbol) dengan inset (peta kecil penunjuk posisi wilayah dalam konteks luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-04",
@@ -2257,7 +2356,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Gunung terbentuk melalui proses alam.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-05",
@@ -2275,7 +2375,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Waduk dibangun manusia untuk mengatur atau menyimpan air.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-06",
@@ -2293,7 +2394,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Produksi menciptakan barang dan jasa.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-07",
@@ -2312,7 +2414,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Distribusi memindahkan barang menuju pembeli.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-08",
@@ -2330,7 +2432,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Menghormati perbedaan membantu menjaga persatuan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-09",
@@ -2348,7 +2451,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "50.000 cm sama dengan 500 meter.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-10",
@@ -2366,7 +2470,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Air diperbarui melalui proses siklus air, walau ketersediaan air bersih tetap perlu dijaga.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-11",
@@ -2384,7 +2489,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Lingkungan alam memengaruhi jenis mata pencaharian.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-12",
@@ -2402,7 +2508,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Tongkonan merupakan rumah adat masyarakat Toraja.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-13",
@@ -2420,7 +2527,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Garis lintang mengukur posisi terhadap ekuator.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara legenda (keterangan arti simbol) dengan inset (peta kecil penunjuk posisi wilayah dalam konteks luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-14",
@@ -2438,7 +2546,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Garis bujur diukur dari meridian Greenwich.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara legenda (keterangan arti simbol) dengan inset (peta kecil penunjuk posisi wilayah dalam konteks luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-15",
@@ -2456,7 +2565,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kerja sama menghormati perbedaan memperkuat kebersamaan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-16",
@@ -2474,7 +2584,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Petani memproduksi, pedagang menyalurkan barang.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-17",
@@ -2492,7 +2603,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Inset memberi konteks wilayah yang lebih luas atau detail lokasi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara legenda (keterangan arti simbol) dengan inset (peta kecil penunjuk posisi wilayah dalam konteks luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-18",
@@ -2510,7 +2622,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pengambilan melebihi pengisian kembali menurunkan cadangan air tanah.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-19",
@@ -2528,7 +2641,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Air, lahan, dan jalur mobilitas dapat mendukung permukiman.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (garis lintang & bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS4-20",
@@ -2546,7 +2660,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Infrastruktur memengaruhi kelancaran distribusi barang.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-01",
@@ -2564,7 +2679,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Secara geografis Indonesia berada di antara Asia dan Australia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (garis lintang & bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-02",
@@ -2582,7 +2698,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dua samudra utama di sekitar Indonesia adalah Hindia dan Pasifik.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (garis lintang & bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-03",
@@ -2600,7 +2717,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Proklamasi dibacakan pada 17 Agustus 1945 di Jakarta.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-04",
@@ -2618,7 +2736,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Soekarno membacakan proklamasi didampingi Mohammad Hatta.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-05",
@@ -2636,7 +2755,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kongres Pemuda II menghasilkan ikrar Sumpah Pemuda 28 Oktober 1928.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-06",
@@ -2654,7 +2774,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Semboyan menekankan persatuan dalam keberagaman.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-07",
@@ -2672,7 +2793,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Ekspor adalah penjualan barang/jasa ke negara lain.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-08",
@@ -2690,7 +2812,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Impor memasukkan barang atau jasa dari negara lain.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-09",
@@ -2708,7 +2831,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Perikanan memanfaatkan sumber daya hayati laut.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-10",
@@ -2726,7 +2850,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Ki Hajar Dewantara berjasa besar dalam pendidikan nasional.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-11",
@@ -2744,7 +2869,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Khatulistiwa adalah garis lintang 0°.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (garis lintang & bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-12",
@@ -2762,7 +2888,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Koperasi mengajarkan kerja sama dan aktivitas ekonomi.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-13",
@@ -2780,7 +2907,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Pertempuran besar di Surabaya diperingati setiap 10 November.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-14",
@@ -2798,7 +2926,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Tari Kecak dikenal sebagai pertunjukan tradisi Bali.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-15",
@@ -2816,7 +2945,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Pasokan berkurang dengan permintaan tetap dapat mendorong harga naik.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-16",
@@ -2834,7 +2964,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Tanaman teh sesuai tumbuh pada banyak daerah sejuk di dataran tinggi.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-17",
@@ -2852,7 +2983,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Soekarno dan Hatta dikenal sebagai dua proklamator Indonesia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-18",
@@ -2870,7 +3002,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pengolahan dapat menaikkan nilai produk dan memperpanjang masa simpan.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-19",
@@ -2888,7 +3021,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Musyawarah memerlukan saling menghormati dan kesepakatan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS5-20",
@@ -2906,7 +3040,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Akar mangrove membantu meredam gelombang dan menahan sedimen.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (garis lintang & bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-01",
@@ -2924,7 +3059,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "ASEAN dibentuk melalui Deklarasi Bangkok pada 8 Agustus 1967.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-02",
@@ -2942,7 +3078,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Indonesia termasuk lima pendiri ASEAN.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-03",
@@ -2960,7 +3097,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Bangkok merupakan ibu kota Thailand.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-04",
@@ -2978,7 +3116,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Manila merupakan ibu kota Filipina.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-05",
@@ -2996,7 +3135,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Teknologi mempercepat komunikasi lintas negara.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-06",
@@ -3014,7 +3154,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Ekspor memperluas pasar dan berpotensi menghasilkan devisa.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-07",
@@ -3032,7 +3173,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "KAA berlangsung di Bandung pada April 1955.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-08",
@@ -3050,7 +3192,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Sultan Hasanuddin adalah penguasa Gowa yang melawan VOC.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-09",
@@ -3068,7 +3211,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Pemakaian ulang mengurangi kebutuhan plastik sekali pakai.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-10",
@@ -3086,7 +3230,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kerja sama pendidikan memperluas akses dan kualitas pembelajaran.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-11",
@@ -3104,7 +3249,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Platform digital membantu produsen menjangkau pembeli.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-12",
@@ -3122,7 +3268,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Laos merupakan negara terkurung daratan.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (garis lintang & bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-13",
@@ -3140,7 +3287,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Budi Utomo berdiri pada 20 Mei 1908, diperingati sebagai Kebangkitan Nasional.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-14",
@@ -3158,7 +3306,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Toleransi membangun hubungan yang baik.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-15",
@@ -3176,7 +3325,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Transportasi mempermudah distribusi produk.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-16",
@@ -3194,7 +3344,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Polusi udara dapat terbawa angin melintasi perbatasan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-17",
@@ -3212,7 +3363,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Perubahan kurs memengaruhi biaya pembelian barang impor.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-18",
@@ -3230,7 +3382,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jalan membuka akses pendidikan, kesehatan, dan distribusi ekonomi.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-19",
@@ -3248,7 +3401,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Sumber yang beragam membantu memeriksa kesesuaian dan konteks peristiwa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "SEED-IPS6-20",
@@ -3266,7 +3420,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Wisata berkelanjutan memerlukan partisipasi masyarakat dan pelestarian.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA4-01",
@@ -3284,7 +3439,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "3 × 24 − 17 = 55 pensil.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA4-02",
@@ -3302,7 +3458,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "12 + 9 + 15 + 6 = 42.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA4-03",
@@ -3320,7 +3477,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "AC",
     "PEMBAHASAN": "1 m = 100 cm dan 1 km = 1.000 m; yang benar A dan C.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA4-04",
@@ -3338,7 +3496,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "AB",
     "PEMBAHASAN": "1/2 = 2/4 = 3/6; 2/3 > 1/3, sedangkan 4/8 bukan 3/4.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA4-05",
@@ -3356,7 +3515,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BSBB",
     "PEMBAHASAN": "Hasil 800 − 250 adalah 550, bukan 650. Pernyataan lain benar.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA4-06",
@@ -3375,7 +3535,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Segitiga→C, persegi→A, persegi panjang→D, lingkaran→B.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <rect x=\"50\" y=\"35\" width=\"220\" height=\"80\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"26\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">p (panjang)</text>\n    <text x=\"280\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">l</text>\n    <text x=\"160\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#166534\">Luas = p × l | Keliling = 2 × (p + l)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA5-01",
@@ -3393,7 +3553,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "3/4 × 24 = 18 buku.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA5-02",
@@ -3411,7 +3572,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "KPK 12 dan 18 adalah 36 menit.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara kelipatan terkecil (KPK untuk kegiatan berulang) dengan faktor pembagi terbesar (FPB untuk pembagian paket merata).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA5-03",
@@ -3429,7 +3591,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABC",
     "PEMBAHASAN": "FPB = 12, KPK = 72, dan 24 : 6 = 4; 36 tidak habis dibagi 8.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara kelipatan terkecil (KPK untuk kegiatan berulang) dengan faktor pembagi terbesar (FPB untuk pembagian paket merata).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA5-04",
@@ -3447,7 +3610,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABD",
     "PEMBAHASAN": "2/5 = 0,4; 0,5 = 1/2; 25% = 1/4, bukan 1/5; 3/4 = 0,75.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai potongan harga (diskon) dengan harga akhir yang harus dibayar setelah diskon.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA5-05",
@@ -3465,7 +3629,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BSBB",
     "PEMBAHASAN": "120° adalah sudut tumpul; tiga pernyataan lain benar.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA5-06",
@@ -3483,7 +3648,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "CDAB",
     "PEMBAHASAN": "KPK→C, FPB→D, keliling→A, luas→B.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA6-01",
@@ -3501,7 +3667,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jumlah bagian 2 + 3 = 5; merah = 2/5 × 35 = 14.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai hanya dengan salah satu angka perbandingan, bukan dengan jumlah total bagian rasio.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA6-02",
@@ -3519,7 +3686,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Ada 3 bola merah dari 5, lebih banyak daripada bola biru.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA6-03",
@@ -3538,7 +3706,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas 24, keliling 20; setelah panjang 8 cm, luas 48 dan keliling 28 cm.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <rect x=\"50\" y=\"35\" width=\"220\" height=\"80\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"26\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">p (panjang)</text>\n    <text x=\"280\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">l</text>\n    <text x=\"160\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#166534\">Luas = p × l | Keliling = 2 × (p + l)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:170px;margin:0 auto\">\n    <rect width=\"360\" height=\"170\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#bbf7d0\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">📐 BANGUN DATAR PERSEGI PANJANG</text>\n    \n    <g transform=\"translate(60, 42)\">\n      <rect x=\"0\" y=\"0\" width=\"240\" height=\"90\" rx=\"4\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n      <!-- Panjang -->\n      <text x=\"120\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Panjang = 4 cm</text>\n      <text x=\"120\" y=\"108\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">4 cm</text>\n      <!-- Lebar -->\n      <text x=\"248\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">l = 6 cm</text>\n      <text x=\"-8\" y=\"50\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">6 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA6-04",
@@ -3556,7 +3724,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABC",
     "PEMBAHASAN": "Setiap bagian 3 murid, sehingga A = 6, B = 15, selisih = 9.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai hanya dengan salah satu angka perbandingan, bukan dengan jumlah total bagian rasio.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA6-05",
@@ -3574,7 +3743,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BSBB",
     "PEMBAHASAN": "3/5 = 0,6, bukan 0,8. Tiga pernyataan lain benar.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-MATEMATIKA6-06",
@@ -3592,7 +3762,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BDCA",
     "PEMBAHASAN": "Rasio→B, peluang→D, desimal→C, piktogram→A.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA4-01",
@@ -3610,7 +3781,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Air pada kain berubah dari cair menjadi uap.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di luar gelas es berasal dari dalam gelas yang menembus kaca (padahal uap air di udara sekitar yang mengembun).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA4-02",
@@ -3628,7 +3800,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Tumbuhan memerlukan cahaya untuk membuat makanan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA4-03",
@@ -3646,7 +3819,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABD",
     "PEMBAHASAN": "Air terutama diserap akar, bukan bunga.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA4-04",
@@ -3664,7 +3838,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABC",
     "PEMBAHASAN": "Lampu meja utamanya menghasilkan cahaya dan panas, bukan bunyi.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA4-05",
@@ -3682,7 +3857,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BSBS",
     "PEMBAHASAN": "Mendidih adalah penguapan; pelarutan garam bukan perubahan wujud mencair.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di luar gelas es berasal dari dalam gelas yang menembus kaca (padahal uap air di udara sekitar yang mengembun).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA4-06",
@@ -3700,7 +3876,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "CBAD",
     "PEMBAHASAN": "Gravitasi→C, gesek→B, magnet→A, pegas→D.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA5-01",
@@ -3719,7 +3896,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Belalang menjadi sumber makanan katak.",
     "DIAGNOSA": "Kesalahan Umum: Mengira arah panah rantai makanan terbalik (arah panah menunjukkan perpindahan energi dari yang dimakan menuju pemakan).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA5-02",
@@ -3737,7 +3914,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Cahaya berubah arah saat melewati udara dan air.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan (cahaya dibelokkan saat melewati dua medium berbeda kerapatan) dengan pemantulan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA5-03",
@@ -3755,7 +3933,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABD",
     "PEMBAHASAN": "Batu merupakan komponen abiotik.",
     "DIAGNOSA": "Kesalahan Umum: Mengira arah panah rantai makanan terbalik (arah panah menunjukkan perpindahan energi dari yang dimakan menuju pemakan).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA5-04",
@@ -3773,7 +3952,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABD",
     "PEMBAHASAN": "Plastik umumnya bersifat isolator, bukan konduktor.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA5-05",
@@ -3791,7 +3971,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BSBS",
     "PEMBAHASAN": "Bunyi memerlukan medium, dan benda opak tidak meneruskan cahaya.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan (cahaya dibelokkan saat melewati dua medium berbeda kerapatan) dengan pemantulan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA5-06",
@@ -3809,7 +3990,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "CDAB",
     "PEMBAHASAN": "Herbivora→C, karnivora→D, omnivora→A, pengurai→B.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA6-01",
@@ -3828,7 +4010,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Matahari dapat terjadi ketika Bulan menghalangi cahaya Matahari ke Bumi.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA6-02",
@@ -3846,7 +4028,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Daya panel surya dipengaruhi intensitas cahaya.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA6-03",
@@ -3864,7 +4047,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "AC",
     "PEMBAHASAN": "Rotasi sekitar 24 jam, revolusi sekitar setahun, Bulan memantulkan sinar Matahari.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi Bumi (siang-malam, 24 jam) dengan revolusi Bumi (pergantian musim, kalender masehi 365¼ hari).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA6-04",
@@ -3882,7 +4066,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABD",
     "PEMBAHASAN": "Membuang sampah ke sungai dapat mencemari air dan menyebabkan penyumbatan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA6-05",
@@ -3900,7 +4085,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BSBS",
     "PEMBAHASAN": "Otot menggerakkan tulang melalui kerja bersama; sistem saraf mengoordinasikannya.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPA6-06",
@@ -3919,7 +4105,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Rotasi→C, revolusi→D, gerhana Bulan→A, gerhana Matahari→B.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi Bumi (siang-malam, 24 jam) dengan revolusi Bumi (pergantian musim, kalender masehi 365¼ hari).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS4-01",
@@ -3937,7 +4123,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Lingkungan pesisir memberikan akses pada kegiatan perikanan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS4-02",
@@ -3955,7 +4142,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Utamakan kebutuhan belajar dan sesuaikan keinginan dengan kemampuan keuangan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS4-03",
@@ -3973,7 +4161,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABC",
     "PEMBAHASAN": "Judul menunjukkan tema/wilayah, bukan arah utara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara legenda (keterangan arti simbol) dengan inset (peta kecil penunjuk posisi wilayah dalam konteks luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS4-04",
@@ -3991,7 +4180,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABC",
     "PEMBAHASAN": "Uang merupakan alat tukar, bukan bentang alam.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS4-05",
@@ -4009,7 +4199,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BSBS",
     "PEMBAHASAN": "Jembatan dan waduk dibangun manusia.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS4-06",
@@ -4027,7 +4218,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "DBAC",
     "PEMBAHASAN": "Produksi→D, distribusi→B, konsumsi→A, menabung→C.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS5-01",
@@ -4045,7 +4237,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Tanaman teh cocok dibudidayakan di sejumlah daerah bersuhu sejuk.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS5-02",
@@ -4063,7 +4256,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Akar mangrove dapat membantu menahan sedimen dan meredam gelombang.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS5-03",
@@ -4081,7 +4275,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABD",
     "PEMBAHASAN": "Keragaman kondisi alam membuat pekerjaan masyarakat berbeda-beda.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (garis lintang & bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS5-04",
@@ -4099,7 +4294,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABC",
     "PEMBAHASAN": "Penebangan hutan tanpa pengelolaan dapat memperburuk kondisi lingkungan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS5-05",
@@ -4117,7 +4313,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BSBS",
     "PEMBAHASAN": "Ekspor berarti menjual ke luar negeri, impor memasukkan dari luar negeri.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS5-06",
@@ -4136,7 +4333,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Produsen→C, distributor→D, konsumen→A, SDA→B.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap penjual selalu produsen, padahal pedagang yang menyalurkan barang bertindak sebagai distributor.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS6-01",
@@ -4154,7 +4351,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Membandingkan berbagai sumber dapat membantu mengurangi bias.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS6-02",
@@ -4172,7 +4370,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Keterlibatan warga dan pelestarian budaya membuat wisata lebih berkelanjutan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS6-03",
@@ -4190,7 +4389,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABD",
     "PEMBAHASAN": "Kerja sama menyikapi tantangan bersama; kondisi geografis setiap negara berbeda.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS6-04",
@@ -4208,7 +4408,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "ABC",
     "PEMBAHASAN": "Tahun 1942 menandai pendudukan Jepang, bukan kemerdekaan Indonesia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS6-05",
@@ -4226,7 +4427,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BBSB",
     "PEMBAHASAN": "Negara-negara memiliki sumber daya dan potensi yang beragam.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "TKA-IPS6-06",
@@ -4244,7 +4446,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "BDAC",
     "PEMBAHASAN": "Proklamasi→B, ekspor→D, impor→A, perjanjian→C.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara urutan kronologi: 1908 (Budi Utomo) -> 1928 (Sumpah Pemuda 28 Okt) -> 1945 (Proklamasi 17 Ags).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0235",
@@ -4262,7 +4465,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Angka 4 pada bilangan 7.405 menempati posisi ratusan, sehingga bernilai 400.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0236",
@@ -4280,7 +4484,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Angka 7 pada bilangan 47.285 menempati posisi ribuan, sehingga bernilai 7.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0237",
@@ -4298,7 +4503,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Angka 8 pada bilangan 58.319 menempati posisi ribuan, sehingga bernilai 8.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0238",
@@ -4316,7 +4522,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Angka 9 pada bilangan 92.640 menempati posisi puluh ribuan, sehingga bernilai 90.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0239",
@@ -4334,7 +4541,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Angka 1 pada bilangan 31.450 menempati posisi ribuan, sehingga bernilai 1.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0240",
@@ -4352,7 +4560,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Angka 2 pada bilangan 65.278 menempati posisi ratusan, sehingga bernilai 200.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0241",
@@ -4370,7 +4579,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Angka 3 pada bilangan 84.931 menempati posisi puluhan, sehingga bernilai 30.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0242",
@@ -4388,7 +4598,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Angka 6 pada bilangan 50.672 menempati posisi ratusan, sehingga bernilai 600.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0243",
@@ -4406,7 +4617,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Angka 9 pada bilangan 19.845 menempati posisi ribuan, sehingga bernilai 9.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0244",
@@ -4424,7 +4636,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Angka 7 pada bilangan 73.420 menempati posisi puluh ribuan, sehingga bernilai 70.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai tempat (posisi angka) dengan nilai angka itu sendiri, atau salah membaca letak ribuan dan ratusan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0245",
@@ -4443,7 +4656,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 365 + 248 = 613. Kemudian kurangi dengan buku yang dipinjam: 613 − 179 = 434 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0246",
@@ -4462,7 +4675,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 420 + 185 = 605. Kemudian kurangi dengan buku yang dipinjam: 605 − 215 = 390 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0247",
@@ -4481,7 +4694,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 550 + 320 = 870. Kemudian kurangi dengan buku yang dipinjam: 870 − 240 = 630 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0248",
@@ -4500,7 +4713,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 610 + 190 = 800. Kemudian kurangi dengan buku yang dipinjam: 800 − 350 = 450 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0249",
@@ -4519,7 +4732,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 280 + 140 = 420. Kemudian kurangi dengan buku yang dipinjam: 420 − 125 = 295 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0250",
@@ -4538,7 +4751,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 750 + 250 = 1000. Kemudian kurangi dengan buku yang dipinjam: 1000 − 420 = 580 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0251",
@@ -4557,7 +4770,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 830 + 170 = 1000. Kemudian kurangi dengan buku yang dipinjam: 1000 − 310 = 690 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0252",
@@ -4576,7 +4789,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 390 + 260 = 650. Kemudian kurangi dengan buku yang dipinjam: 650 − 180 = 470 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0253",
@@ -4595,7 +4808,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 480 + 310 = 790. Kemudian kurangi dengan buku yang dipinjam: 790 − 290 = 500 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0254",
@@ -4614,7 +4827,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Hitung bertahap: Jumlah buku awal + sumbangan buku = 900 + 150 = 1050. Kemudian kurangi dengan buku yang dipinjam: 1050 − 430 = 620 buku.",
     "DIAGNOSA": "Kesalahan Umum: Salah menjumlahkan nilai satuan atau puluhan saat menyimpan, atau terbalik mengurangkan jumlah sumbangan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0255",
@@ -4632,7 +4845,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 8 × 9 = 72; 120 - 72 = 48; 48 + 15 = 63.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0256",
@@ -4650,7 +4864,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 25 × 4 = 100 dan 80 : 2 = 40; 150 + 100 - 40 = 210.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0257",
@@ -4668,7 +4883,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 15 × 6 = 90 dan 45 : 3 = 15; 200 - 90 + 15 = 125.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0258",
@@ -4686,7 +4902,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 120 : 4 = 30; 30 × 3 = 90; 80 + 90 - 50 = 120.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0259",
@@ -4704,7 +4921,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 6 × 8 = 48 dan 90 : 5 = 18; 75 - 48 + 18 = 45.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0260",
@@ -4722,7 +4940,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: Kurung dulu: 15 + 10 = 25; 300 : 25 = 12; 12 × 8 = 96; 96 - 16 = 80.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0261",
@@ -4740,7 +4959,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 40 × 3 = 120 dan 100 : 4 = 25; 90 + 120 - 25 = 185.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0262",
@@ -4758,7 +4978,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 80 : 4 = 20 dan 12 × 5 = 60; 240 - 20 + 60 = 280.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0263",
@@ -4776,7 +4997,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 50 × 4 = 200 dan 120 : 6 = 20; 200 - 20 + 35 = 215.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0264",
@@ -4794,7 +5016,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 180 : 9 = 20; 20 × 5 = 100; 100 + 60 - 25 = 135.",
     "DIAGNOSA": "Kesalahan Umum: Menghitung secara berurutan dari kiri tanpa mendahulukan perkalian atau pembagian, atau salah mengutamakan tanda kurung.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0265",
@@ -4812,7 +5035,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kelipatan 6: 6, 12, 18, 24... Kelipatan 8: 8, 16, 24... Kelipatan persekutuan terkecil = 24.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0266",
@@ -4830,7 +5054,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Faktor 18: 1, 2, 3, 6, 9, 18. Faktor 24: 1, 2, 3, 4, 6, 8, 12, 24. Faktor persekutuan terbesar = 6.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0267",
@@ -4848,7 +5073,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kelipatan 4: 4, 8, 12, 16... Kelipatan 6: 6, 12, 18... KPK = 12.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0268",
@@ -4866,7 +5092,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Faktor persekutuan terbesar 12 dan 18 adalah 6.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0269",
@@ -4884,7 +5111,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kelipatan 8 dan 12 yang pertama bertemu di 24.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0270",
@@ -4902,7 +5130,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Faktor persekutuan terbesar 16 dan 20 adalah 4.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0271",
@@ -4920,7 +5149,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Faktor 18 = 1, 2, 3, 6, 9, 18. Yang prima hanyalah 2 dan 3.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0272",
@@ -4938,7 +5168,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "6 × 4 = 24, terletak antara 20 dan 30.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0273",
@@ -4956,7 +5187,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Pola memiliki beda tetap bertambah 4 (+4). Maka 17 + 4 = 21.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0274",
@@ -4974,7 +5206,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Pola kelipatan dua (dikali 2). 24 × 2 = 48.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara KPK (mencari kelipatan yang sama) dan FPB (mencari pembagi yang sama).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0275",
@@ -4992,7 +5225,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pola bertambah 3 (+3).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0276",
@@ -5010,7 +5244,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Pola berkurang 5: 40, 35, 30, 25, 20 (ke-5), 15 (ke-6).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0277",
@@ -5028,7 +5263,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "21 habis dibagi 3, 27 habis dibagi 3. Yang prima hanya 23 dan 29.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0278",
@@ -5046,7 +5282,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Faktorisasi prima 30 = 2 × 3 × 5. Angka 1 bukan bilangan prima.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0279",
@@ -5064,7 +5301,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Karena 5 dan 7 keduanya bilangan prima, KPK-nya langsung 5 × 7 = 35.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0280",
@@ -5082,7 +5320,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Faktor persekutuan terbesar 15 dan 25 adalah 5.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0281",
@@ -5100,7 +5339,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Faktor 12: 1 + 2 + 3 + 4 + 6 + 12 = 28.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0282",
@@ -5118,7 +5358,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Faktor 20: 1, 2, 4, 5, 10, 20 (ada 6 faktor).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0283",
@@ -5136,7 +5377,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pola kuadrat bilangan asli: 1², 2², 3², 4², 5²=25, 6²=36.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0284",
@@ -5154,7 +5396,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "24 = 2³ × 3 dan 32 = 2⁵. FPB = 2³ = 8.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam mengidentifikasi pola beda atau memasukkan angka 1 sebagai bilangan prima.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0285",
@@ -5172,7 +5415,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kalikan pembilang dan penyebut dengan 2: (2×2)/(3×2) = 4/6.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0286",
@@ -5190,7 +5434,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "3/4 = (3×3)/(4×3) = 9/12.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0287",
@@ -5208,7 +5453,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Bagi pembilang dan penyebut dengan FPB-nya yaitu 4: 12:4 / 16:4 = 3/4.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0288",
@@ -5226,7 +5472,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Penyebut sama (8), maka pembilang lebih besar bernilai lebih besar (5 > 3).",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0289",
@@ -5244,7 +5491,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "1/2 = 5/10 = 0,5 = 50%.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0290",
@@ -5262,7 +5510,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "3/4 × 100% = 75%.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0291",
@@ -5280,7 +5529,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "1/4 = 25/100 = 0,25.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0292",
@@ -5298,7 +5548,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Samakan penyebut per 12: 2/3 = 8/12, sedangkan 3/4 = 9/12. Maka 3/4 > 2/3.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0293",
@@ -5316,7 +5567,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Penyebut sama, langsung jumlahkan pembilang: 2 + 3 = 5 -> 5/7.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0294",
@@ -5334,7 +5586,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "7/9 - 4/9 = 3/9. Sederhanakan bagi 3 menjadi 1/3.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0295",
@@ -5352,7 +5605,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "5/10 dibagi 5 menjadi 1/2.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0296",
@@ -5370,7 +5624,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "3/5 lebih kecil dari 4/5 karena 3 < 4.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0297",
@@ -5388,7 +5643,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "2/5 = 4/10 = 0,4.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0298",
@@ -5406,7 +5662,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "1/4 = 0,25; 1/2 = 0,50; 3/4 = 0,75.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0299",
@@ -5424,7 +5681,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "3 bagian dari 8 bagian sama bernilai 3/8.",
     "DIAGNOSA": "Kesalahan Umum: Menganggap pecahan dengan penyebut lebih besar nilainya otomatis lebih besar (contoh keliru: 2/3 dianggap lebih kecil dari 2/7).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0300",
@@ -5443,7 +5701,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Keliling = 2 × (p + l) = 2 × (12 + 7) = 2 × 19 = 38 cm.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <rect x=\"50\" y=\"35\" width=\"220\" height=\"80\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"26\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">p (panjang)</text>\n    <text x=\"280\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">l</text>\n    <text x=\"160\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#166534\">Luas = p × l | Keliling = 2 × (p + l)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:170px;margin:0 auto\">\n    <rect width=\"360\" height=\"170\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#bbf7d0\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">📐 BANGUN DATAR PERSEGI PANJANG</text>\n    \n    <g transform=\"translate(60, 42)\">\n      <rect x=\"0\" y=\"0\" width=\"240\" height=\"90\" rx=\"4\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n      <!-- Panjang -->\n      <text x=\"120\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Panjang = 12 cm</text>\n      <text x=\"120\" y=\"108\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">12 cm</text>\n      <!-- Lebar -->\n      <text x=\"248\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">l = 7 cm</text>\n      <text x=\"-8\" y=\"50\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">7 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0301",
@@ -5462,7 +5720,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas = p × l = 12 × 7 = 84 cm².",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <rect x=\"50\" y=\"35\" width=\"220\" height=\"80\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"26\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">p (panjang)</text>\n    <text x=\"280\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">l</text>\n    <text x=\"160\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#166534\">Luas = p × l | Keliling = 2 × (p + l)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:170px;margin:0 auto\">\n    <rect width=\"360\" height=\"170\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#bbf7d0\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">📐 BANGUN DATAR PERSEGI PANJANG</text>\n    \n    <g transform=\"translate(60, 42)\">\n      <rect x=\"0\" y=\"0\" width=\"240\" height=\"90\" rx=\"4\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n      <!-- Panjang -->\n      <text x=\"120\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Panjang = 12 cm</text>\n      <text x=\"120\" y=\"108\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">12 cm</text>\n      <!-- Lebar -->\n      <text x=\"248\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">l = 7 cm</text>\n      <text x=\"-8\" y=\"50\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">7 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0302",
@@ -5480,7 +5738,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Keliling persegi = 4 × sisi = 4 × 13 = 52 cm.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0303",
@@ -5498,7 +5757,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Luas persegi = s × s = 13 × 13 = 169 cm².",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0304",
@@ -5516,7 +5776,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "3 m = 300 cm, ditambah 20 cm = 320 cm.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0305",
@@ -5534,7 +5795,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "2 kg = 2.000 g, ditambah 500 g = 2.500 g.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0306",
@@ -5552,7 +5814,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Sisi = Keliling : 4 = 64 : 4 = 16 m.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0307",
@@ -5571,7 +5834,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Sisi = 64 : 4 = 16 m. Luas = 16 × 16 = 256 m².",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <rect x=\"50\" y=\"35\" width=\"220\" height=\"80\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"26\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">p (panjang)</text>\n    <text x=\"280\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">l</text>\n    <text x=\"160\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#166534\">Luas = p × l | Keliling = 2 × (p + l)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0308",
@@ -5589,7 +5852,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dari 08.35 ke 09.35 = 60 menit. Dari 09.35 ke 10.10 = 35 menit. Total = 60 + 35 = 95 menit.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0309",
@@ -5608,7 +5872,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Keliling = 6 + 8 + 10 = 24 cm.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (memakai satuan panjang cm/m) dan rumus luas (memakai satuan persegi cm²/m²).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK4-0310",
@@ -5626,7 +5890,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 14 + 9 + 14 + 11 = 48 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">14</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"92\" width=\"42\" height=\"48\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">9</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">14</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"81\" width=\"42\" height=\"59\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"75\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">11</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0311",
@@ -5644,7 +5909,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 16 + 10 + 13 + 12 = 51 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">16</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"93\" width=\"42\" height=\"47\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"87\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">10</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"79\" width=\"42\" height=\"61\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"73\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">13</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"84\" width=\"42\" height=\"56\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">12</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0312",
@@ -5662,7 +5928,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 18 + 11 + 12 + 13 = 54 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">18</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"94\" width=\"42\" height=\"46\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"88\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">11</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"90\" width=\"42\" height=\"50\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"84\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">12</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"86\" width=\"42\" height=\"54\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"80\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">13</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0313",
@@ -5680,7 +5947,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 20 + 12 + 15 + 14 = 61 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">20</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"95\" width=\"42\" height=\"45\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"89\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">12</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"84\" width=\"42\" height=\"56\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"78\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">15</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"87\" width=\"42\" height=\"53\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"81\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">14</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0314",
@@ -5698,7 +5966,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 22 + 13 + 14 + 10 = 59 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">22</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"96\" width=\"42\" height=\"44\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"90\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">13</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"92\" width=\"42\" height=\"48\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"86\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">14</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"106\" width=\"42\" height=\"34\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"100\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">10</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0315",
@@ -5716,7 +5985,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 24 + 14 + 13 + 11 = 62 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">24</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"96\" width=\"42\" height=\"44\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"90\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">14</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"99\" width=\"42\" height=\"41\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">13</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"106\" width=\"42\" height=\"34\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"100\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">11</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0316",
@@ -5734,7 +6004,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 26 + 15 + 12 + 12 = 65 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">26</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"97\" width=\"42\" height=\"43\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"91\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">15</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"105\" width=\"42\" height=\"35\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"99\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">12</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"105\" width=\"42\" height=\"35\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"99\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">12</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0317",
@@ -5752,7 +6023,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 28 + 16 + 15 + 13 = 72 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">28</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"97\" width=\"42\" height=\"43\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"91\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">16</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"100\" width=\"42\" height=\"40\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"94\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">15</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"105\" width=\"42\" height=\"35\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"99\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">13</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0318",
@@ -5770,7 +6042,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 30 + 17 + 14 + 14 = 75 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">30</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"97\" width=\"42\" height=\"43\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"91\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">17</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"105\" width=\"42\" height=\"35\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"99\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">14</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"105\" width=\"42\" height=\"35\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"99\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">14</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0319",
@@ -5788,7 +6061,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 32 + 18 + 13 + 10 = 73 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">32</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"98\" width=\"42\" height=\"42\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"92\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">18</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"110\" width=\"42\" height=\"30\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"104\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">13</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"117\" width=\"42\" height=\"23\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"111\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">10</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0320",
@@ -5806,7 +6080,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 34 + 19 + 12 + 11 = 76 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">34</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"98\" width=\"42\" height=\"42\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"92\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">19</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"114\" width=\"42\" height=\"26\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">12</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"116\" width=\"42\" height=\"24\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">11</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0321",
@@ -5824,7 +6099,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 36 + 20 + 15 + 12 = 83 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">36</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"98\" width=\"42\" height=\"42\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"92\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">20</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"109\" width=\"42\" height=\"31\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"103\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">15</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"115\" width=\"42\" height=\"25\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"109\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">12</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0322",
@@ -5842,7 +6118,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 38 + 21 + 14 + 13 = 86 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">38</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"99\" width=\"42\" height=\"41\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">21</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"112\" width=\"42\" height=\"28\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"106\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">14</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"114\" width=\"42\" height=\"26\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">13</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0323",
@@ -5860,7 +6137,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 40 + 22 + 13 + 14 = 89 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">40</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"99\" width=\"42\" height=\"41\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">22</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"116\" width=\"42\" height=\"24\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"110\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">13</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"114\" width=\"42\" height=\"26\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"108\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">14</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK4-0324",
@@ -5878,7 +6156,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jumlahkan seluruh data peminjaman buku: 42 + 23 + 12 + 10 = 87 buku.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam menjumlahkan data dari tabel atau salah membaca data baris tertentu.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 185\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:185px;margin:0 auto\">\n    <rect width=\"380\" height=\"185\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#1e293b\">📊 DIAGRAM PEMINJAMAN BUKU PERPUSTAKAAN</text>\n    \n    <!-- Sumbu X & Y -->\n    <line x1=\"50\" y1=\"35\" x2=\"50\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"50\" y1=\"140\" x2=\"350\" y2=\"140\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    \n    <!-- Batang Tiap Hari -->\n    \n        <rect x=\"75\" y=\"65\" width=\"42\" height=\"75\" fill=\"#2563eb\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"96\" y=\"59\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#1e40af\">42</text>\n        <text x=\"96\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Senin</text>\n      \n        <rect x=\"140\" y=\"99\" width=\"42\" height=\"41\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"161\" y=\"93\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">23</text>\n        <text x=\"161\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Selasa</text>\n      \n        <rect x=\"205\" y=\"119\" width=\"42\" height=\"21\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"226\" y=\"113\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">12</text>\n        <text x=\"226\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Rabu</text>\n      \n        <rect x=\"270\" y=\"122\" width=\"42\" height=\"18\" fill=\"#38bdf8\" rx=\"3\" stroke=\"#0284c7\" stroke-width=\"1\"/>\n        <text x=\"291\" y=\"116\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#0369a1\">10</text>\n        <text x=\"291\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">Kamis</text>\n      \n    \n    <text x=\"190\" y=\"174\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#64748b\">Angka di atas batang menunjukkan jumlah peminjaman buku</text>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0325",
@@ -5896,7 +6175,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Samakan penyebut dengan KPK dari 3 dan 4 yaitu 12: 2/3 = 8/12 dan 1/4 = 3/12. Hasil = 8/12 + 3/12 = 11/12.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0326",
@@ -5914,7 +6194,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Samakan penyebut: 1/3 = 2/6. Maka 5/6 − 2/6 = 3/6 = 1/2.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0327",
@@ -5932,7 +6213,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "KPK 2 dan 5 adalah 10: 5/10 + 4/10 = 9/10.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0328",
@@ -5950,7 +6232,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "1/2 = 2/4. Maka 3/4 − 2/4 = 1/4.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0329",
@@ -5968,7 +6251,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "4/10 + 5/10 = 9/10.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0330",
@@ -5986,7 +6270,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "8/10 − 5/10 = 3/10.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0331",
@@ -6004,7 +6289,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "1/3 = 3/9. Maka 3/9 + 2/9 = 5/9.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0332",
@@ -6022,7 +6308,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "1/4 = 2/8. Maka 7/8 − 2/8 = 5/8.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0333",
@@ -6040,7 +6327,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "KPK 5 dan 6 adalah 30: 18/30 + 5/30 = 23/30.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0334",
@@ -6058,7 +6346,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "KPK 6 dan 4 adalah 12: 10/12 − 9/12 = 1/12.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0335",
@@ -6076,7 +6365,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "1 + 2 = 3; 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Hasil = 3 5/6.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0336",
@@ -6094,7 +6384,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "3 − 1 = 2; 3/4 − 2/4 = 1/4. Hasil = 2 1/4.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0337",
@@ -6112,7 +6403,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "(2×3)/(3×5) = 6/15 = 2/5.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0338",
@@ -6130,7 +6422,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "3/4 × 2/1 = 6/4 = 3/2 = 1 1/2.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0339",
@@ -6148,7 +6441,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "(4×7)/(7×8) = 28/56 = 1/2.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0340",
@@ -6166,7 +6460,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "5/6 × 3/2 = 15/12 = 5/4 = 1 1/4.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0341",
@@ -6184,7 +6479,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "2/4 + 3/4 = 5/4 = 1 1/4 kg.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0342",
@@ -6202,7 +6498,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "7/8 − 4/8 = 3/8 liter.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0343",
@@ -6220,7 +6517,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "4/10 + 3/10 = 7/10.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0344",
@@ -6238,7 +6536,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "4/9 + 3/9 = 7/9.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan atau mengurangkan penyebut secara langsung (ingat peringatan modul: 2/3 + 1/4 BUKAN 3/7!). Samakan penyebut terlebih dahulu dengan KPK penyebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0345",
@@ -6256,7 +6555,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Besar diskon = 20% × Rp75.000 = (20/100) × Rp75.000 = Rp15.000. Harga akhir yang dibayar = Rp75.000 − Rp15.000 = Rp60.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0346",
@@ -6274,7 +6574,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 20% × Rp75.000 = Rp15.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0347",
@@ -6292,7 +6593,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Besar diskon = 15% × Rp80.000 = (15/100) × Rp80.000 = Rp12.000. Harga akhir yang dibayar = Rp80.000 − Rp12.000 = Rp68.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0348",
@@ -6310,7 +6612,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 15% × Rp80.000 = Rp12.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0349",
@@ -6328,7 +6631,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Besar diskon = 25% × Rp100.000 = (25/100) × Rp100.000 = Rp25.000. Harga akhir yang dibayar = Rp100.000 − Rp25.000 = Rp75.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0350",
@@ -6346,7 +6650,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 25% × Rp100.000 = Rp25.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0351",
@@ -6364,7 +6669,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Besar diskon = 10% × Rp50.000 = (10/100) × Rp50.000 = Rp5.000. Harga akhir yang dibayar = Rp50.000 − Rp5.000 = Rp45.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0352",
@@ -6382,7 +6688,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 10% × Rp50.000 = Rp5.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0353",
@@ -6400,7 +6707,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Besar diskon = 30% × Rp120.000 = (30/100) × Rp120.000 = Rp36.000. Harga akhir yang dibayar = Rp120.000 − Rp36.000 = Rp84.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0354",
@@ -6418,7 +6726,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 30% × Rp120.000 = Rp36.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0355",
@@ -6436,7 +6745,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Besar diskon = 20% × Rp150.000 = (20/100) × Rp150.000 = Rp30.000. Harga akhir yang dibayar = Rp150.000 − Rp30.000 = Rp120.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0356",
@@ -6454,7 +6764,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 20% × Rp150.000 = Rp30.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0357",
@@ -6472,7 +6783,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Besar diskon = 25% × Rp40.000 = (25/100) × Rp40.000 = Rp10.000. Harga akhir yang dibayar = Rp40.000 − Rp10.000 = Rp30.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0358",
@@ -6490,7 +6802,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 25% × Rp40.000 = Rp10.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0359",
@@ -6508,7 +6821,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Besar diskon = 15% × Rp60.000 = (15/100) × Rp60.000 = Rp9.000. Harga akhir yang dibayar = Rp60.000 − Rp9.000 = Rp51.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0360",
@@ -6526,7 +6840,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 15% × Rp60.000 = Rp9.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0361",
@@ -6544,7 +6859,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Besar diskon = 10% × Rp90.000 = (10/100) × Rp90.000 = Rp9.000. Harga akhir yang dibayar = Rp90.000 − Rp9.000 = Rp81.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0362",
@@ -6562,7 +6878,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 10% × Rp90.000 = Rp9.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0363",
@@ -6580,7 +6897,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Besar diskon = 40% × Rp200.000 = (40/100) × Rp200.000 = Rp80.000. Harga akhir yang dibayar = Rp200.000 − Rp80.000 = Rp120.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pertanyaan besar diskon (potongan) dengan harga akhir yang harus dibayar.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0364",
@@ -6598,7 +6916,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Nominal potongan harga = persentase diskon × harga awal = 40% × Rp200.000 = Rp80.000.",
     "DIAGNOSA": "Kesalahan Umum: Menjawab harga setelah diskon padahal yang ditanyakan adalah besar potongan harganya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0365",
@@ -6616,7 +6935,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(6, 8) = 24 detik.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0366",
@@ -6634,7 +6954,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(12, 18) = 36 menit.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0367",
@@ -6652,7 +6973,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(4, 6) = 12 hari.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0368",
@@ -6670,7 +6992,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(15, 20) = 60 menit.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0369",
@@ -6688,7 +7011,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(8, 10) = 40 hari.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0370",
@@ -6706,7 +7030,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(3, 5) = 15 hari.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0371",
@@ -6724,7 +7049,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(10, 15) = 30 menit.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0372",
@@ -6742,7 +7068,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(6, 9) = 18 menit.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0373",
@@ -6760,7 +7087,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(12, 15) = 60 hari.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0374",
@@ -6778,7 +7106,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(16, 24) = 48 menit.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan waktu kedua kegiatan (bukan mencari KPK) atau tertukar dengan konsep pembagian FPB.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0375",
@@ -6796,7 +7125,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(24, 36) = 12 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0376",
@@ -6814,7 +7144,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(30, 45) = 15 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0377",
@@ -6832,7 +7163,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(16, 24) = 8 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0378",
@@ -6850,7 +7182,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(20, 50) = 10 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0379",
@@ -6868,7 +7201,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(32, 48) = 16 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0380",
@@ -6886,7 +7220,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(40, 60) = 20 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0381",
@@ -6904,7 +7239,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(28, 42) = 14 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0382",
@@ -6922,7 +7258,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(36, 54) = 18 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0383",
@@ -6940,7 +7277,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(48, 72) = 24 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0384",
@@ -6958,7 +7296,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(18, 30) = 6 paket.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara konsep pembagian merata (FPB) dengan kejadian berulang (KPK).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0385",
@@ -6977,7 +7316,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas segitiga = 1/2 × alas × tinggi = 1/2 × 12 × 8 = 48 cm².",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#bbf7d0\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">📐 BANGUN DATAR SEGITIGA</text>\n    \n    <g transform=\"translate(60, 40)\">\n      <polygon points=\"0,100 130,10 240,100\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n      <!-- Garis Tinggi Tegak Lurus Putus-Putus -->\n      <line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n      <!-- Siku-siku -->\n      <rect x=\"130\" y=\"90\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1\"/>\n      \n      <!-- Keterangan Angka Nyata Sesuai Soal -->\n      <text x=\"140\" y=\"60\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">t = 8 cm</text>\n      <text x=\"120\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">alas (a) = 12 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0386",
@@ -6996,7 +7335,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas = 1/2 × a × t = 1/2 × 10 × 6 = 30 cm². Ingat peringatan modul: panjang sisi miring tidak dipakai untuk menghitung luas!",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#bbf7d0\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">📐 BANGUN DATAR SEGITIGA</text>\n    \n    <g transform=\"translate(60, 40)\">\n      <polygon points=\"0,100 130,10 240,100\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n      <!-- Garis Tinggi Tegak Lurus Putus-Putus -->\n      <line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n      <!-- Siku-siku -->\n      <rect x=\"130\" y=\"90\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1\"/>\n      \n      <!-- Keterangan Angka Nyata Sesuai Soal -->\n      <text x=\"140\" y=\"60\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">t = 6 cm</text>\n      <text x=\"120\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">alas (a) = 10 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0387",
@@ -7015,7 +7354,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume balok = p × l × t = 8 × 5 × 4 = 160 cm³.",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"380\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">📦 BANGUN RUANG BALOK</text>\n    \n    <g transform=\"translate(100, 48)\">\n      <!-- Sisi Depan -->\n      <rect x=\"0\" y=\"22\" width=\"130\" height=\"60\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Atas -->\n      <polygon points=\"0,22 40,0 170,0 130,22\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Kanan -->\n      <polygon points=\"130,22 170,0 170,60 130,82\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Dimensi Nyata Sesuai Soal -->\n      <!-- Panjang (Depan Bawah) -->\n      <text x=\"65\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">p = 8 cm</text>\n      <!-- Lebar (Samping Atas) -->\n      <text x=\"160\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">l = cm cm</text>\n      <!-- Tinggi (Tegak Kanan) -->\n      <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">5 cm</text>\n      \n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0388",
@@ -7034,7 +7373,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume kubus = s³ = 6 × 6 × 6 = 216 cm³.",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">🎲 BANGUN RUANG KUBUS</text>\n    \n    <g transform=\"translate(130, 48)\">\n      <rect x=\"0\" y=\"25\" width=\"80\" height=\"80\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,25 35,0 115,0 80,25\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"80,25 115,0 115,80 80,105\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Rusuk Nyata Sesuai Soal -->\n      <text x=\"40\" y=\"122\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">s = 6 cm</text>\n      <text x=\"120\" y=\"55\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">6 cm</text>\n      <text x=\"100\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">6 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0389",
@@ -7053,7 +7392,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Tinggi = Volume : (p × l) = 240 : (10 × 6) = 240 : 60 = 4 cm.",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"380\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">📦 BANGUN RUANG BALOK</text>\n    \n    <g transform=\"translate(100, 48)\">\n      <!-- Sisi Depan -->\n      <rect x=\"0\" y=\"22\" width=\"130\" height=\"60\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Atas -->\n      <polygon points=\"0,22 40,0 170,0 130,22\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Kanan -->\n      <polygon points=\"130,22 170,0 170,60 130,82\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Dimensi Nyata Sesuai Soal -->\n      <!-- Panjang (Depan Bawah) -->\n      <text x=\"65\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">p = 10 6</text>\n      <!-- Lebar (Samping Atas) -->\n      <text x=\"160\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">l = cm 6</text>\n      <!-- Tinggi (Tegak Kanan) -->\n      <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">t = ?</text>\n      \n      <text x=\"65\" y=\"56\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#047857\">V = 240 6³</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0390",
@@ -7072,7 +7411,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Keliling segitiga sama sisi = 3 × sisi = 3 × 15 = 45 cm.",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0391",
@@ -7091,7 +7430,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume = 4 × 3 × 2 = 24 m³.",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"380\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">📦 BANGUN RUANG BALOK</text>\n    \n    <g transform=\"translate(100, 48)\">\n      <!-- Sisi Depan -->\n      <rect x=\"0\" y=\"22\" width=\"130\" height=\"60\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Atas -->\n      <polygon points=\"0,22 40,0 170,0 130,22\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Kanan -->\n      <polygon points=\"130,22 170,0 170,60 130,82\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Dimensi Nyata Sesuai Soal -->\n      <!-- Panjang (Depan Bawah) -->\n      <text x=\"65\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">p = 4 m</text>\n      <!-- Lebar (Samping Atas) -->\n      <text x=\"160\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">l = 3 m</text>\n      <!-- Tinggi (Tegak Kanan) -->\n      <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">2 m</text>\n      \n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0392",
@@ -7110,7 +7449,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas permukaan kubus = 6 × s² = 6 × 5² = 6 × 25 = 150 cm².",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">🎲 BANGUN RUANG KUBUS</text>\n    \n    <g transform=\"translate(130, 48)\">\n      <rect x=\"0\" y=\"25\" width=\"80\" height=\"80\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,25 35,0 115,0 80,25\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"80,25 115,0 115,80 80,105\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Rusuk Nyata Sesuai Soal -->\n      <text x=\"40\" y=\"122\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">s = 5 cm</text>\n      <text x=\"120\" y=\"55\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">5 cm</text>\n      <text x=\"100\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">5 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0393",
@@ -7129,7 +7468,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "LP = 2 × (pl + pt + lt) = 2 × (60 + 40 + 24) = 2 × 124 = 248 cm².",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"380\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">📦 BANGUN RUANG BALOK</text>\n    \n    <g transform=\"translate(100, 48)\">\n      <!-- Sisi Depan -->\n      <rect x=\"0\" y=\"22\" width=\"130\" height=\"60\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Atas -->\n      <polygon points=\"0,22 40,0 170,0 130,22\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Kanan -->\n      <polygon points=\"130,22 170,0 170,60 130,82\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Dimensi Nyata Sesuai Soal -->\n      <!-- Panjang (Depan Bawah) -->\n      <text x=\"65\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">p = 10 cm</text>\n      <!-- Lebar (Samping Atas) -->\n      <text x=\"160\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">l = 6 cm</text>\n      <!-- Tinggi (Tegak Kanan) -->\n      <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">4 cm</text>\n      \n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0394",
@@ -7148,7 +7487,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas = 1/2 × 14 × 10 = 70 cm².",
     "DIAGNOSA": "Kesalahan Umum: Memasukkan sisi miring sebagai tinggi segitiga (ingat: sisi miring BUKAN tinggi), atau lupa mengalikan 1/2 pada rumus luas segitiga.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <polygon points=\"50,130 180,30 270,130\" fill=\"#e0f2fe\" stroke=\"#0284c7\" stroke-width=\"2\"/>\n    <line x1=\"180\" y1=\"30\" x2=\"180\" y2=\"130\" stroke=\"#ef4444\" stroke-width=\"1.5\" stroke-dasharray=\"4,3\"/>\n    <rect x=\"180\" y=\"120\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#ef4444\" stroke-width=\"1\"/>\n    <text x=\"188\" y=\"85\" font-size=\"11\" font-weight=\"bold\" fill=\"#dc2626\">t (tinggi)</text>\n    <text x=\"160\" y=\"146\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#0369a1\">a (alas segitiga)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#bbf7d0\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">📐 BANGUN DATAR SEGITIGA</text>\n    \n    <g transform=\"translate(60, 40)\">\n      <polygon points=\"0,100 130,10 240,100\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n      <!-- Garis Tinggi Tegak Lurus Putus-Putus -->\n      <line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"100\" stroke=\"#dc2626\" stroke-width=\"2\" stroke-dasharray=\"4,3\"/>\n      <!-- Siku-siku -->\n      <rect x=\"130\" y=\"90\" width=\"10\" height=\"10\" fill=\"none\" stroke=\"#dc2626\" stroke-width=\"1\"/>\n      \n      <!-- Keterangan Angka Nyata Sesuai Soal -->\n      <text x=\"140\" y=\"60\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">t = 10 cm</text>\n      <text x=\"120\" y=\"118\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">alas (a) = 14 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK5-0395",
@@ -7166,7 +7505,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jumlah nilai = 6 + 8 + 10 + 8 = 32. Banyak data = 4. Rata-rata = 32 : 4 = 8.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rata-rata (jumlah dibagi banyak data) dengan modus (nilai paling sering muncul).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0396",
@@ -7184,7 +7524,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlah = 400. Rata-rata = 400 : 5 = 80.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rata-rata (jumlah dibagi banyak data) dengan modus (nilai paling sering muncul).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0397",
@@ -7203,7 +7544,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Modus adalah nilai yang paling sering muncul. Angka 8 muncul 3 kali.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rata-rata (jumlah dibagi banyak data) dengan modus (nilai paling sering muncul).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0398",
@@ -7221,7 +7562,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kecepatan = Jarak : Waktu = 120 : 2 = 60 km/jam.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rata-rata (jumlah dibagi banyak data) dengan modus (nilai paling sering muncul).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK5-0399",
@@ -7239,7 +7581,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Debit = Volume : Waktu = 60 : 3 = 20 liter/menit.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rata-rata (jumlah dibagi banyak data) dengan modus (nilai paling sering muncul).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0400",
@@ -7257,7 +7600,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 25% × 200 = 50. Langkah 2: Hitung sisa yang baik = 200 − 50 = 150. Langkah 3: Alokasi penanaman = 2/5 DARI SISA = 2/5 × 150 = 60 bibit pohon sengon.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0401",
@@ -7275,7 +7619,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 20% × 300 = 60. Langkah 2: Hitung sisa yang baik = 300 − 60 = 240. Langkah 3: Alokasi penanaman = 3/4 DARI SISA = 3/4 × 240 = 180 benih jagung hibrida.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0402",
@@ -7293,7 +7638,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 10% × 500 = 50. Langkah 2: Hitung sisa yang baik = 500 − 50 = 450. Langkah 3: Alokasi penanaman = 1/3 DARI SISA = 1/3 × 450 = 150 bibit cabai rawit.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0403",
@@ -7311,7 +7657,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 15% × 400 = 60. Langkah 2: Hitung sisa yang baik = 400 − 60 = 340. Langkah 3: Alokasi penanaman = 1/2 DARI SISA = 1/2 × 340 = 170 ikan nila di kolam.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0404",
@@ -7330,7 +7677,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 20% × 250 = 50. Langkah 2: Hitung sisa yang baik = 250 − 50 = 200. Langkah 3: Alokasi penanaman = 3/5 DARI SISA = 3/5 × 200 = 120 buku donasi perpustakaan.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0405",
@@ -7348,7 +7695,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 25% × 600 = 150. Langkah 2: Hitung sisa yang baik = 600 − 150 = 450. Langkah 3: Alokasi penanaman = 2/3 DARI SISA = 2/3 × 450 = 300 telur ayam petelur.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0406",
@@ -7366,7 +7714,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 25% × 160 = 40. Langkah 2: Hitung sisa yang baik = 160 − 40 = 120. Langkah 3: Alokasi penanaman = 1/4 DARI SISA = 1/4 × 120 = 30 tanaman hias monstera.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0407",
@@ -7384,7 +7733,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 20% × 350 = 70. Langkah 2: Hitung sisa yang baik = 350 − 70 = 280. Langkah 3: Alokasi penanaman = 2/7 DARI SISA = 2/7 × 280 = 80 bibit ikan lele.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0408",
@@ -7402,7 +7752,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 25% × 480 = 120. Langkah 2: Hitung sisa yang baik = 480 − 120 = 360. Langkah 3: Alokasi penanaman = 5/6 DARI SISA = 5/6 × 360 = 300 karung beras bantuan.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0409",
@@ -7420,7 +7771,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Langkah 1: Hitung yang rusak = 10% × 800 = 80. Langkah 2: Hitung sisa yang baik = 800 − 80 = 720. Langkah 3: Alokasi penanaman = 3/8 DARI SISA = 3/8 × 720 = 270 batu bata untuk renovasi.",
     "DIAGNOSA": "Kesalahan Umum: Mengalikan pecahan dengan jumlah awal total, bukan dengan nilai sisa (ingat modul hal 5: kata \"dari sisa\" berarti menggunakan nilai baru!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0410",
@@ -7438,7 +7790,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 3 + 2 = 5 bagian. Nilai satu bagian = 45 ÷ 5 = 9. Maka banyak merah = 3 × 9 = 27.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0411",
@@ -7456,7 +7809,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 2 + 3 = 5 bagian. Nilai satu bagian = 35 ÷ 5 = 7. Maka banyak kelereng merah = 2 × 7 = 14.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0412",
@@ -7475,7 +7829,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 3 + 5 = 8 bagian. Nilai satu bagian = 40 ÷ 8 = 5. Maka banyak buku IPA = 3 × 5 = 15.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0413",
@@ -7493,7 +7847,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 5 + 4 = 9 bagian. Nilai satu bagian = 36 ÷ 9 = 4. Maka banyak siswa laki-laki = 5 × 4 = 20.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0414",
@@ -7511,7 +7866,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 1 + 3 = 4 bagian. Nilai satu bagian = 48 ÷ 4 = 12. Maka banyak regu Garuda = 1 × 12 = 12.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0415",
@@ -7529,7 +7885,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 7 + 5 = 12 bagian. Nilai satu bagian = 60 ÷ 12 = 5. Maka banyak pohon mangga = 7 × 5 = 35.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0416",
@@ -7547,7 +7904,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 4 + 5 = 9 bagian. Nilai satu bagian = 54 ÷ 9 = 6. Maka banyak kursi merah = 4 × 6 = 24.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0417",
@@ -7565,7 +7923,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 5 + 3 = 8 bagian. Nilai satu bagian = 72 ÷ 8 = 9. Maka banyak kue cokelat = 5 × 9 = 45.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0418",
@@ -7583,7 +7942,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 2 + 3 = 5 bagian. Nilai satu bagian = 50 ÷ 5 = 10. Maka banyak mobil = 2 × 10 = 20.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0419",
@@ -7601,7 +7961,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlah seluruh bagian rasio = 4 + 3 = 7 bagian. Nilai satu bagian = 63 ÷ 7 = 9. Maka banyak kelompok A = 4 × 9 = 36.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai langsung dengan angka rasio pertama saja (ingat modul hal 5: jangan membagi total hanya dengan salah satu angka pada rasio!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0420",
@@ -7619,7 +7980,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 4 cm × 100.000 = 400.000 cm. Ubah cm ke km dengan membagi 100.000: 4 km = 4 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0421",
@@ -7637,7 +7999,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 6 cm × 250.000 = 1.500.000 cm. Ubah cm ke km dengan membagi 100.000: 15 km = 15 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0422",
@@ -7655,7 +8018,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 3 cm × 500.000 = 1.500.000 cm. Ubah cm ke km dengan membagi 100.000: 15 km = 15 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0423",
@@ -7673,7 +8037,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 7 cm × 100.000 = 700.000 cm. Ubah cm ke km dengan membagi 100.000: 7 km = 7 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0424",
@@ -7691,7 +8056,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 5 cm × 200.000 = 1.000.000 cm. Ubah cm ke km dengan membagi 100.000: 10 km = 10 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0425",
@@ -7709,7 +8075,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 2 cm × 1.500.000 = 3.000.000 cm. Ubah cm ke km dengan membagi 100.000: 30 km = 30 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0426",
@@ -7727,7 +8094,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 4 cm × 750.000 = 3.000.000 cm. Ubah cm ke km dengan membagi 100.000: 30 km = 30 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0427",
@@ -7745,7 +8113,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 8 cm × 1.000.000 = 8.000.000 cm. Ubah cm ke km dengan membagi 100.000: 80 km = 80 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0428",
@@ -7763,7 +8132,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 10 cm × 50.000 = 500.000 cm. Ubah cm ke km dengan membagi 100.000: 5 km = 5 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0429",
@@ -7781,7 +8151,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jarak sebenarnya = Jarak pada peta × Skala = 3 cm × 2.500.000 = 7.500.000 cm. Ubah cm ke km dengan membagi 100.000: 75 km = 75 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa faktor konversi 1 km = 100.000 cm sehingga hasil meleset 10 atau 100 kali lipat.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0430",
@@ -7800,7 +8171,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Keliling = π × d = 22/7 × 14 = 44 cm.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling lingkaran (πd) dan luas lingkaran (πr²), atau salah mengonversi cm³ ke liter (1 liter = 1.000 cm³).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(160, 80)\">\n      <circle r=\"55\" fill=\"#fed7aa\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n      <line x1=\"-55\" y1=\"0\" x2=\"55\" y2=\"0\" stroke=\"#b91c1c\" stroke-width=\"2\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      <text x=\"0\" y=\"-8\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Diameter (d = 2r)</text>\n      <text x=\"25\" y=\"16\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7c2d12\">r (jari-jari)</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#fed7aa\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">⭕ BANGUN DATAR LINGKARAN</text>\n    \n    <g transform=\"translate(180, 100)\">\n      <circle r=\"60\" fill=\"#ffedd5\" stroke=\"#ea580c\" stroke-width=\"2.5\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      \n      \n        <!-- Diameter -->\n        <line x1=\"-60\" y1=\"0\" x2=\"60\" y2=\"0\" stroke=\"#b91c1c\" stroke-width=\"2.5\"/>\n        <text x=\"0\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b91c1c\">Diameter (d) = 14 cm</text>\n        <text x=\"0\" y=\"20\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">Jari-jari (r) = 7 cm</text>\n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK6-0431",
@@ -7819,7 +8190,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas = π × r² = 22/7 × 7 × 7 = 154 cm².",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling lingkaran (πd) dan luas lingkaran (πr²), atau salah mengonversi cm³ ke liter (1 liter = 1.000 cm³).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(160, 80)\">\n      <circle r=\"55\" fill=\"#fed7aa\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n      <line x1=\"-55\" y1=\"0\" x2=\"55\" y2=\"0\" stroke=\"#b91c1c\" stroke-width=\"2\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      <text x=\"0\" y=\"-8\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Diameter (d = 2r)</text>\n      <text x=\"25\" y=\"16\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7c2d12\">r (jari-jari)</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#fed7aa\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">⭕ BANGUN DATAR LINGKARAN</text>\n    \n    <g transform=\"translate(180, 100)\">\n      <circle r=\"60\" fill=\"#ffedd5\" stroke=\"#ea580c\" stroke-width=\"2.5\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      \n      \n        <!-- Jari-jari -->\n        <line x1=\"0\" y1=\"0\" x2=\"60\" y2=\"0\" stroke=\"#047857\" stroke-width=\"2.5\"/>\n        <text x=\"30\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#047857\">r = 7 cm</text>\n        <text x=\"0\" y=\"25\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">Diameter (d) = 14 cm</text>\n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK6-0432",
@@ -7838,7 +8209,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume penuh = 50 × 30 × 40 = 60.000 cm³ = 60 liter. Air 3/4 bagian = 3/4 × 60 = 45 liter.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling lingkaran (πd) dan luas lingkaran (πr²), atau salah mengonversi cm³ ke liter (1 liter = 1.000 cm³).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(100, 45)\">\n      <rect x=\"0\" y=\"20\" width=\"90\" height=\"45\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,20 25,6 115,6 90,20\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"90,20 115,6 115,51 90,65\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <text x=\"45\" y=\"80\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6b21a8\">p (panjang)</text>\n      <text x=\"98\" y=\"45\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">t</text>\n      <text x=\"106\" y=\"14\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">l</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"380\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">📦 BANGUN RUANG BALOK</text>\n    \n    <g transform=\"translate(100, 48)\">\n      <!-- Sisi Depan -->\n      <rect x=\"0\" y=\"22\" width=\"130\" height=\"60\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Atas -->\n      <polygon points=\"0,22 40,0 170,0 130,22\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Kanan -->\n      <polygon points=\"130,22 170,0 170,60 130,82\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Dimensi Nyata Sesuai Soal -->\n      <!-- Panjang (Depan Bawah) -->\n      <text x=\"65\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">p = 50 cm</text>\n      <!-- Lebar (Samping Atas) -->\n      <text x=\"160\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">l = 30 cm</text>\n      <!-- Tinggi (Tegak Kanan) -->\n      <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">40 cm</text>\n      \n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK6-0433",
@@ -7857,7 +8228,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume kubus = 6 × 6 × 6 = 216 cm³ (ingat modul hal 5: satuan volume adalah kubik, bukan persegi!).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling lingkaran (πd) dan luas lingkaran (πr²), atau salah mengonversi cm³ ke liter (1 liter = 1.000 cm³).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(125, 45)\">\n      <rect x=\"0\" y=\"20\" width=\"55\" height=\"55\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,20 22,5 77,5 55,20\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"55,20 77,5 77,60 55,75\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <text x=\"27\" y=\"93\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">s (rusuk)</text>\n      <text x=\"95\" y=\"45\" font-size=\"10.5\" fill=\"#581c87\">V = s³</text>\n      <text x=\"95\" y=\"62\" font-size=\"10.5\" fill=\"#581c87\">LP = 6 × s²</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">🎲 BANGUN RUANG KUBUS</text>\n    \n    <g transform=\"translate(130, 48)\">\n      <rect x=\"0\" y=\"25\" width=\"80\" height=\"80\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,25 35,0 115,0 80,25\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"80,25 115,0 115,80 80,105\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Rusuk Nyata Sesuai Soal -->\n      <text x=\"40\" y=\"122\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">s = 6 cm</text>\n      <text x=\"120\" y=\"55\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">6 cm</text>\n      <text x=\"100\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">6 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK6-0434",
@@ -7876,7 +8247,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume = 10 × 10 × 10 = 1.000 dm³ = 1.000 liter.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling lingkaran (πd) dan luas lingkaran (πr²), atau salah mengonversi cm³ ke liter (1 liter = 1.000 cm³).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(125, 45)\">\n      <rect x=\"0\" y=\"20\" width=\"55\" height=\"55\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,20 22,5 77,5 55,20\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"55,20 77,5 77,60 55,75\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <text x=\"27\" y=\"93\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">s (rusuk)</text>\n      <text x=\"95\" y=\"45\" font-size=\"10.5\" fill=\"#581c87\">V = s³</text>\n      <text x=\"95\" y=\"62\" font-size=\"10.5\" fill=\"#581c87\">LP = 6 × s²</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">🎲 BANGUN RUANG KUBUS</text>\n    \n    <g transform=\"translate(130, 48)\">\n      <rect x=\"0\" y=\"25\" width=\"80\" height=\"80\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,25 35,0 115,0 80,25\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"80,25 115,0 115,80 80,105\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Rusuk Nyata Sesuai Soal -->\n      <text x=\"40\" y=\"122\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">s = 10 dm</text>\n      <text x=\"120\" y=\"55\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">10 dm</text>\n      <text x=\"100\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">10 dm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-MTK6-0435",
@@ -7894,7 +8265,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 71 + 84 + 89 = 244. Langkah 3: Nilai hilang = 320 − 244 = 76.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0436",
@@ -7912,7 +8284,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 72 + 83 + 88 = 243. Langkah 3: Nilai hilang = 320 − 243 = 77.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0437",
@@ -7930,7 +8303,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 73 + 82 + 87 = 242. Langkah 3: Nilai hilang = 320 − 242 = 78.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0438",
@@ -7948,7 +8322,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 74 + 85 + 86 = 245. Langkah 3: Nilai hilang = 320 − 245 = 75.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0439",
@@ -7966,7 +8341,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 70 + 84 + 85 = 239. Langkah 3: Nilai hilang = 320 − 239 = 81.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0440",
@@ -7984,7 +8360,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 71 + 83 + 90 = 244. Langkah 3: Nilai hilang = 320 − 244 = 76.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0441",
@@ -8002,7 +8379,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 72 + 82 + 89 = 243. Langkah 3: Nilai hilang = 320 − 243 = 77.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0442",
@@ -8020,7 +8398,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 73 + 85 + 88 = 246. Langkah 3: Nilai hilang = 320 − 246 = 74.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0443",
@@ -8038,7 +8417,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 74 + 84 + 87 = 245. Langkah 3: Nilai hilang = 320 − 245 = 75.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0444",
@@ -8056,7 +8436,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 70 + 83 + 86 = 239. Langkah 3: Nilai hilang = 320 − 239 = 81.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0445",
@@ -8074,7 +8455,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 71 + 82 + 85 = 238. Langkah 3: Nilai hilang = 320 − 238 = 82.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0446",
@@ -8092,7 +8474,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 72 + 85 + 90 = 247. Langkah 3: Nilai hilang = 320 − 247 = 73.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0447",
@@ -8110,7 +8493,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 73 + 84 + 89 = 246. Langkah 3: Nilai hilang = 320 − 246 = 74.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0448",
@@ -8128,7 +8512,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 74 + 83 + 88 = 245. Langkah 3: Nilai hilang = 320 − 245 = 75.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-MTK6-0449",
@@ -8146,7 +8531,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 70 + 82 + 87 = 239. Langkah 3: Nilai hilang = 320 − 239 = 81.",
     "DIAGNOSA": "Kesalahan Umum: Mengira nilai keempat sama dengan rata-rata nilai tiga ulangan pertama, atau salah menghitung total target.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0450",
@@ -8164,7 +8550,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Hidung memiliki saraf olfaktori sebagai reseptor penciuman bau.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0451",
@@ -8182,7 +8569,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kulit memiliki reseptor termoreseptor (suhu) dan mekanoreseptor (sentuhan/tekanan).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0452",
@@ -8200,7 +8588,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Telinga menangkap getaran gelombang bunyi melalui gendang telinga.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0453",
@@ -8218,7 +8607,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Papila pada lidah mengandung kuncup pengecap rasa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0454",
@@ -8236,7 +8626,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Mata berfungsi sebagai penerima rangsangan cahaya, sedangkan otak menafsirkan informasi tersebut (ingat modul hal 10!).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0455",
@@ -8254,7 +8645,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pencahayaan cukup membantu lensa mata memfokuskan bayangan tanpa bekerja terlalu tegang.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0456",
@@ -8272,7 +8664,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Hidung memiliki saraf olfaktori sebagai reseptor penciuman bau.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0457",
@@ -8290,7 +8683,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kulit memiliki reseptor termoreseptor (suhu) dan mekanoreseptor (sentuhan/tekanan).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0458",
@@ -8308,7 +8702,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Telinga menangkap getaran gelombang bunyi melalui gendang telinga.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0459",
@@ -8326,7 +8721,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Papila pada lidah mengandung kuncup pengecap rasa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0460",
@@ -8344,7 +8740,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Mata berfungsi sebagai penerima rangsangan cahaya, sedangkan otak menafsirkan informasi tersebut (ingat modul hal 10!).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0461",
@@ -8362,7 +8759,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Pencahayaan cukup membantu lensa mata memfokuskan bayangan tanpa bekerja terlalu tegang.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0462",
@@ -8380,7 +8778,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Hidung memiliki saraf olfaktori sebagai reseptor penciuman bau.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0463",
@@ -8398,7 +8797,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kulit memiliki reseptor termoreseptor (suhu) dan mekanoreseptor (sentuhan/tekanan).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0464",
@@ -8416,7 +8816,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Telinga menangkap getaran gelombang bunyi melalui gendang telinga.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0465",
@@ -8434,7 +8835,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Papila pada lidah mengandung kuncup pengecap rasa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0466",
@@ -8452,7 +8854,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Mata berfungsi sebagai penerima rangsangan cahaya, sedangkan otak menafsirkan informasi tersebut (ingat modul hal 10!).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0467",
@@ -8470,7 +8873,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pencahayaan cukup membantu lensa mata memfokuskan bayangan tanpa bekerja terlalu tegang.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0468",
@@ -8488,7 +8892,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Hidung memiliki saraf olfaktori sebagai reseptor penciuman bau.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0469",
@@ -8506,7 +8911,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kulit memiliki reseptor termoreseptor (suhu) dan mekanoreseptor (sentuhan/tekanan).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara peran organ indra sebagai penerima rangsangan fisik dengan peran otak sebagai penafsir informasi rangsangan tersebut.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0470",
@@ -8525,7 +8931,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "kupu-kupu mengalami metamorfosis sempurna dengan urutan: Telur → larva (ulat) → pupa (kepompong) → dewasa (imago). Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0471",
@@ -8544,7 +8950,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "nyamuk mengalami metamorfosis sempurna dengan urutan: Telur → larva (jentik) → pupa → dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0472",
@@ -8563,7 +8969,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "katak mengalami metamorfosis sempurna dengan urutan: Telur → berudu (larva) → berudu berkaki → katak muda → katak dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0473",
@@ -8582,7 +8988,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "lalat mengalami metamorfosis sempurna dengan urutan: Telur → larva (belatung) → pupa → lalat dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0474",
@@ -8601,7 +9007,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "belalang mengalami metamorfosis tidak sempurna dengan urutan: Telur → nimfa → belalang dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0475",
@@ -8620,7 +9026,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "kecoak mengalami metamorfosis tidak sempurna dengan urutan: Telur → nimfa → kecoak dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0476",
@@ -8639,7 +9045,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "capung mengalami metamorfosis tidak sempurna dengan urutan: Telur → nimfa air → capung dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0477",
@@ -8658,7 +9064,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "jangkrik mengalami metamorfosis tidak sempurna dengan urutan: Telur → nimfa muda → jangkrik dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0478",
@@ -8677,7 +9083,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "kupu-kupu mengalami metamorfosis sempurna dengan urutan: Telur → larva (ulat) → pupa (kepompong) → dewasa (imago). Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0479",
@@ -8696,7 +9102,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "nyamuk mengalami metamorfosis sempurna dengan urutan: Telur → larva (jentik) → pupa → dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0480",
@@ -8715,7 +9121,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "katak mengalami metamorfosis sempurna dengan urutan: Telur → berudu (larva) → berudu berkaki → katak muda → katak dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0481",
@@ -8734,7 +9140,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "lalat mengalami metamorfosis sempurna dengan urutan: Telur → larva (belatung) → pupa → lalat dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0482",
@@ -8753,7 +9159,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "belalang mengalami metamorfosis tidak sempurna dengan urutan: Telur → nimfa → belalang dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0483",
@@ -8772,7 +9178,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "kecoak mengalami metamorfosis tidak sempurna dengan urutan: Telur → nimfa → kecoak dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0484",
@@ -8791,7 +9197,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "capung mengalami metamorfosis tidak sempurna dengan urutan: Telur → nimfa air → capung dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0485",
@@ -8810,7 +9216,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "jangkrik mengalami metamorfosis tidak sempurna dengan urutan: Telur → nimfa muda → jangkrik dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0486",
@@ -8829,7 +9235,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "kupu-kupu mengalami metamorfosis sempurna dengan urutan: Telur → larva (ulat) → pupa (kepompong) → dewasa (imago). Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0487",
@@ -8848,7 +9254,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "nyamuk mengalami metamorfosis sempurna dengan urutan: Telur → larva (jentik) → pupa → dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0488",
@@ -8867,7 +9273,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "katak mengalami metamorfosis sempurna dengan urutan: Telur → berudu (larva) → berudu berkaki → katak muda → katak dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0489",
@@ -8886,7 +9292,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "lalat mengalami metamorfosis sempurna dengan urutan: Telur → larva (belatung) → pupa → lalat dewasa. Perhatikan modul hal 10: Larva dan nimfa tidak sama; kuncinya ada pada kehadiran tahap pupa (kepompong).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nimfa (anak hewan pada metamorfosis tidak sempurna) dan larva/pupa (pada metamorfosis sempurna).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#fdf4ff\" stroke=\"#f5d0fe\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#86198f\">🦋 METAMORFOSIS SEMPURNA</text>\n    <g transform=\"translate(15, 45)\">\n      <text x=\"30\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥚</text>\n      <text x=\"30\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Telur</text>\n      <text x=\"65\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"105\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐛</text>\n      <text x=\"105\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Larva (Ulat)</text>\n      <text x=\"145\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"185\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🥜</text>\n      <text x=\"185\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Pupa (Kepompong)</text>\n      <text x=\"228\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#a21caf\">→</text>\n\n      <text x=\"265\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦋</text>\n      <text x=\"265\" y=\"45\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#831843\">Kupu Dewasa</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#701a75\">Ciri khas: Melewati fase istirahat pupa (kepompong)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0490",
@@ -8904,7 +9310,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Air cair menyerap panas dari matahari dan berubah wujud menjadi uap air (gas) yang naik ke udara.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0491",
@@ -8922,7 +9329,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Ingat peringatan modul hal 10: Titik air di luar gelas BUKAN air dari dalam gelas yang menembus dindingnya, melainkan uap air di udara sekitar yang melepaskan kalor dan mengembun.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0492",
@@ -8940,7 +9348,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Mencair adalah perubahan wujud dari zat padat menjadi zat cair karena menyerap kalor.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0493",
@@ -8958,7 +9367,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Menyublim adalah perubahan wujud dari padat langsung menjadi gas tanpa melalui fase cair.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0494",
@@ -8976,7 +9386,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Membeku merupakan perubahan wujud zat cair menjadi zat padat akibat pelepasan kalor.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0495",
@@ -8994,7 +9405,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Air cair menyerap panas dari matahari dan berubah wujud menjadi uap air (gas) yang naik ke udara.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0496",
@@ -9012,7 +9424,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Ingat peringatan modul hal 10: Titik air di luar gelas BUKAN air dari dalam gelas yang menembus dindingnya, melainkan uap air di udara sekitar yang melepaskan kalor dan mengembun.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0497",
@@ -9030,7 +9443,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Mencair adalah perubahan wujud dari zat padat menjadi zat cair karena menyerap kalor.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0498",
@@ -9048,7 +9462,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Menyublim adalah perubahan wujud dari padat langsung menjadi gas tanpa melalui fase cair.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0499",
@@ -9066,7 +9481,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Membeku merupakan perubahan wujud zat cair menjadi zat padat akibat pelepasan kalor.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0500",
@@ -9084,7 +9500,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Air cair menyerap panas dari matahari dan berubah wujud menjadi uap air (gas) yang naik ke udara.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0501",
@@ -9102,7 +9519,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Ingat peringatan modul hal 10: Titik air di luar gelas BUKAN air dari dalam gelas yang menembus dindingnya, melainkan uap air di udara sekitar yang melepaskan kalor dan mengembun.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0502",
@@ -9120,7 +9538,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Mencair adalah perubahan wujud dari zat padat menjadi zat cair karena menyerap kalor.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0503",
@@ -9138,7 +9557,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Menyublim adalah perubahan wujud dari padat langsung menjadi gas tanpa melalui fase cair.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0504",
@@ -9156,7 +9576,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Membeku merupakan perubahan wujud zat cair menjadi zat padat akibat pelepasan kalor.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0505",
@@ -9174,7 +9595,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Air cair menyerap panas dari matahari dan berubah wujud menjadi uap air (gas) yang naik ke udara.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0506",
@@ -9192,7 +9614,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Ingat peringatan modul hal 10: Titik air di luar gelas BUKAN air dari dalam gelas yang menembus dindingnya, melainkan uap air di udara sekitar yang melepaskan kalor dan mengembun.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0507",
@@ -9210,7 +9633,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Mencair adalah perubahan wujud dari zat padat menjadi zat cair karena menyerap kalor.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0508",
@@ -9228,7 +9652,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Menyublim adalah perubahan wujud dari padat langsung menjadi gas tanpa melalui fase cair.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0509",
@@ -9246,7 +9671,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Membeku merupakan perubahan wujud zat cair menjadi zat padat akibat pelepasan kalor.",
     "DIAGNOSA": "Kesalahan Umum: Mengira titik air di dinding luar gelas es adalah air dalam gelas yang bocor/menembus kaca (padahal itu uap air di udara yang mengembun!).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0510",
@@ -9264,7 +9690,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Karet rem menjepit velg roda sehingga timbul gaya gesek yang menghambat dan menghentikan putaran roda.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0511",
@@ -9282,7 +9709,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Gaya gravitasi Bumi selalu menarik benda menuju ke arah pusat Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0512",
@@ -9300,7 +9728,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Alur pada ban meningkatkan cengkeraman pada jalan dan membuang air saat jalan basah.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0513",
@@ -9318,7 +9747,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Alat listrik tidak menciptakan energi dari nol, melainkan mengubah energi listrik menjadi cahaya dan panas (ingat modul hal 10!).",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0514",
@@ -9336,7 +9766,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Motor listrik pada kipas angin mengubah energi listrik menjadi energi putar/gerak.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0515",
@@ -9354,7 +9785,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Besi dan baja termasuk bahan feromagnetik yang ditarik kuat oleh magnet.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0516",
@@ -9372,7 +9804,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Karet rem menjepit velg roda sehingga timbul gaya gesek yang menghambat dan menghentikan putaran roda.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0517",
@@ -9390,7 +9823,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Gaya gravitasi Bumi selalu menarik benda menuju ke arah pusat Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0518",
@@ -9408,7 +9842,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Alur pada ban meningkatkan cengkeraman pada jalan dan membuang air saat jalan basah.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0519",
@@ -9426,7 +9861,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Alat listrik tidak menciptakan energi dari nol, melainkan mengubah energi listrik menjadi cahaya dan panas (ingat modul hal 10!).",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0520",
@@ -9444,7 +9880,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Motor listrik pada kipas angin mengubah energi listrik menjadi energi putar/gerak.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0521",
@@ -9462,7 +9899,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Besi dan baja termasuk bahan feromagnetik yang ditarik kuat oleh magnet.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0522",
@@ -9480,7 +9918,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Karet rem menjepit velg roda sehingga timbul gaya gesek yang menghambat dan menghentikan putaran roda.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0523",
@@ -9498,7 +9937,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Gaya gravitasi Bumi selalu menarik benda menuju ke arah pusat Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0524",
@@ -9516,7 +9956,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Alur pada ban meningkatkan cengkeraman pada jalan dan membuang air saat jalan basah.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0525",
@@ -9534,7 +9975,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Alat listrik tidak menciptakan energi dari nol, melainkan mengubah energi listrik menjadi cahaya dan panas (ingat modul hal 10!).",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0526",
@@ -9552,7 +9994,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Motor listrik pada kipas angin mengubah energi listrik menjadi energi putar/gerak.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0527",
@@ -9570,7 +10013,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Besi dan baja termasuk bahan feromagnetik yang ditarik kuat oleh magnet.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0528",
@@ -9588,7 +10032,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Karet rem menjepit velg roda sehingga timbul gaya gesek yang menghambat dan menghentikan putaran roda.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA4-0529",
@@ -9606,7 +10051,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Gaya gravitasi Bumi selalu menarik benda menuju ke arah pusat Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Mengira alat dapat menciptakan energi baru dari ketiadaan (ingat hukum kekekalan: alat hanya mengubah bentuk energi).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0530",
@@ -9625,7 +10071,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (katak) berkurang, maka populasi mangsanya (belalang) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0531",
@@ -9644,7 +10090,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (burung pipit) berkurang, maka populasi mangsanya (ulat) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0532",
@@ -9663,7 +10109,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (serigala) berkurang, maka populasi mangsanya (kelinci) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0533",
@@ -9682,7 +10128,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ikan kecil) berkurang, maka populasi mangsanya (zooplankton) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0534",
@@ -9701,7 +10147,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ayam) berkurang, maka populasi mangsanya (ulat daun) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0535",
@@ -9720,7 +10166,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (katak) berkurang, maka populasi mangsanya (belalang) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0536",
@@ -9739,7 +10185,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (burung pipit) berkurang, maka populasi mangsanya (ulat) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0537",
@@ -9758,7 +10204,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (serigala) berkurang, maka populasi mangsanya (kelinci) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0538",
@@ -9777,7 +10223,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ikan kecil) berkurang, maka populasi mangsanya (zooplankton) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0539",
@@ -9796,7 +10242,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ayam) berkurang, maka populasi mangsanya (ulat daun) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0540",
@@ -9815,7 +10261,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (katak) berkurang, maka populasi mangsanya (belalang) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0541",
@@ -9834,7 +10280,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (burung pipit) berkurang, maka populasi mangsanya (ulat) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0542",
@@ -9853,7 +10299,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (serigala) berkurang, maka populasi mangsanya (kelinci) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0543",
@@ -9872,7 +10318,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ikan kecil) berkurang, maka populasi mangsanya (zooplankton) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0544",
@@ -9891,7 +10337,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ayam) berkurang, maka populasi mangsanya (ulat daun) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0545",
@@ -9910,7 +10356,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (katak) berkurang, maka populasi mangsanya (belalang) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0546",
@@ -9929,7 +10375,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (burung pipit) berkurang, maka populasi mangsanya (ulat) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0547",
@@ -9948,7 +10394,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (serigala) berkurang, maka populasi mangsanya (kelinci) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0548",
@@ -9967,7 +10413,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ikan kecil) berkurang, maka populasi mangsanya (zooplankton) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0549",
@@ -9986,7 +10432,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ayam) berkurang, maka populasi mangsanya (ulat daun) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0550",
@@ -10005,7 +10451,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (katak) berkurang, maka populasi mangsanya (belalang) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0551",
@@ -10024,7 +10470,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (burung pipit) berkurang, maka populasi mangsanya (ulat) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0552",
@@ -10043,7 +10489,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (serigala) berkurang, maka populasi mangsanya (kelinci) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0553",
@@ -10062,7 +10508,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ikan kecil) berkurang, maka populasi mangsanya (zooplankton) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0554",
@@ -10081,7 +10527,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jika pemangsa (ayam) berkurang, maka populasi mangsanya (ulat daun) cenderung meningkat karena tekanan pemangsaan berkurang. Ingat modul hal 11: Panah rantai makanan menunjukkan arah aliran energi (dari yang dimakan ke pemakan).",
     "DIAGNOSA": "Kesalahan Umum: Terbalik membaca arah panah rantai makanan atau mengira hilangnya satu populasi tidak berdampak pada rantai makanan.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#dcfce7\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#166534\">🌾 RANTAI MAKANAN SAWAH</text>\n    <g transform=\"translate(15, 45)\">\n      <!-- Produsen -->\n      <text x=\"25\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🌱</text>\n      <text x=\"25\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#14532d\">Padi</text>\n      <text x=\"58\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Konsumen I -->\n      <text x=\"95\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦗</text>\n      <text x=\"95\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#713f12\">Belalang</text>\n      <text x=\"130\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#ca8a04\">→</text>\n\n      <!-- Konsumen II -->\n      <text x=\"165\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐸</text>\n      <text x=\"165\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#312e81\">Katak</text>\n      <text x=\"200\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#4f46e5\">→</text>\n\n      <!-- Konsumen III -->\n      <text x=\"235\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🐍</text>\n      <text x=\"235\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7f1d1d\">Ular</text>\n      <text x=\"268\" y=\"28\" font-size=\"14\" font-weight=\"bold\" fill=\"#dc2626\">→</text>\n\n      <!-- Puncak -->\n      <text x=\"290\" y=\"25\" text-anchor=\"middle\" font-size=\"20\">🦅</text>\n      <text x=\"290\" y=\"44\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#7c2d12\">Elang</text>\n    </g>\n    <text x=\"160\" y=\"125\" text-anchor=\"middle\" font-size=\"9.5\" fill=\"#475569\">Arah panah (→) menunjukkan aliran energi makanan</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0555",
@@ -10099,7 +10545,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Alveolus berupa gelembung-gelembung tipis tempat difusi gas O2 dan CO2.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0556",
@@ -10117,7 +10564,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Ingat peringatan modul hal 11: Jantung adalah organ yang memompa darah; paru-paru BUKAN organ pemompa darah!",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0557",
@@ -10135,7 +10583,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Vili (jonjot usus) pada usus halus memperluas bidang penyerapan zat gizi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0558",
@@ -10153,7 +10602,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Lambung memproduksi HCl untuk menciptakan suasana asam dan membunuh kuman penyakit.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0559",
@@ -10171,7 +10621,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Arteri membawa darah meninggalkan jantung; aorta adalah arteri terbesar.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0560",
@@ -10189,7 +10640,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Cahaya matahari dan air termasuk komponen abiotik (tak hidup) yang mutlak untuk fotosintesis.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0561",
@@ -10207,7 +10659,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Alveolus berupa gelembung-gelembung tipis tempat difusi gas O2 dan CO2.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0562",
@@ -10225,7 +10678,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Ingat peringatan modul hal 11: Jantung adalah organ yang memompa darah; paru-paru BUKAN organ pemompa darah!",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0563",
@@ -10243,7 +10697,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Vili (jonjot usus) pada usus halus memperluas bidang penyerapan zat gizi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0564",
@@ -10261,7 +10716,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Lambung memproduksi HCl untuk menciptakan suasana asam dan membunuh kuman penyakit.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0565",
@@ -10279,7 +10735,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Arteri membawa darah meninggalkan jantung; aorta adalah arteri terbesar.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0566",
@@ -10297,7 +10754,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Cahaya matahari dan air termasuk komponen abiotik (tak hidup) yang mutlak untuk fotosintesis.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0567",
@@ -10315,7 +10773,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Alveolus berupa gelembung-gelembung tipis tempat difusi gas O2 dan CO2.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0568",
@@ -10333,7 +10792,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Ingat peringatan modul hal 11: Jantung adalah organ yang memompa darah; paru-paru BUKAN organ pemompa darah!",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0569",
@@ -10351,7 +10811,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Vili (jonjot usus) pada usus halus memperluas bidang penyerapan zat gizi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0570",
@@ -10369,7 +10830,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Lambung memproduksi HCl untuk menciptakan suasana asam dan membunuh kuman penyakit.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0571",
@@ -10387,7 +10849,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Arteri membawa darah meninggalkan jantung; aorta adalah arteri terbesar.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0572",
@@ -10405,7 +10868,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Cahaya matahari dan air termasuk komponen abiotik (tak hidup) yang mutlak untuk fotosintesis.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0573",
@@ -10423,7 +10887,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Alveolus berupa gelembung-gelembung tipis tempat difusi gas O2 dan CO2.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0574",
@@ -10441,7 +10906,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Ingat peringatan modul hal 11: Jantung adalah organ yang memompa darah; paru-paru BUKAN organ pemompa darah!",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0575",
@@ -10459,7 +10925,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Vili (jonjot usus) pada usus halus memperluas bidang penyerapan zat gizi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0576",
@@ -10477,7 +10944,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Lambung memproduksi HCl untuk menciptakan suasana asam dan membunuh kuman penyakit.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0577",
@@ -10495,7 +10963,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Arteri membawa darah meninggalkan jantung; aorta adalah arteri terbesar.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0578",
@@ -10513,7 +10982,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Cahaya matahari dan air termasuk komponen abiotik (tak hidup) yang mutlak untuk fotosintesis.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0579",
@@ -10531,7 +11001,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Alveolus berupa gelembung-gelembung tipis tempat difusi gas O2 dan CO2.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0580",
@@ -10549,7 +11020,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Ingat peringatan modul hal 11: Jantung adalah organ yang memompa darah; paru-paru BUKAN organ pemompa darah!",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0581",
@@ -10567,7 +11039,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Vili (jonjot usus) pada usus halus memperluas bidang penyerapan zat gizi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0582",
@@ -10585,7 +11058,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Lambung memproduksi HCl untuk menciptakan suasana asam dan membunuh kuman penyakit.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0583",
@@ -10603,7 +11077,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Arteri membawa darah meninggalkan jantung; aorta adalah arteri terbesar.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0584",
@@ -10621,7 +11096,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Cahaya matahari dan air termasuk komponen abiotik (tak hidup) yang mutlak untuk fotosintesis.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara organ pemompa darah (jantung) dengan organ pertukaran gas (paru-paru/alveolus).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0585",
@@ -10639,7 +11115,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Cahaya mengalami pembelokan arah rambat saat merambat melalui dua medium yang berbeda kerapatannya (udara dan air).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0586",
@@ -10657,7 +11134,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Semua bunyi dihasilkan oleh getaran benda yang merambat melalui medium partikel.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0587",
@@ -10675,7 +11153,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Ingat modul hal 11: Bunyi memerlukan medium partikel (padat, cair, gas) untuk merambat; bunyi TIDAK BISA merambat di ruang hampa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0588",
@@ -10693,7 +11172,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Matahari, air, dan angin adalah sumber energi terbarukan yang diperbarui secara alami.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0589",
@@ -10711,7 +11191,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Bayangan cermin datar tegak, ukurannya persis sama dengan benda asli, dan bersifat maya (di belakang cermin).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0590",
@@ -10729,7 +11210,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Cahaya mengalami pembelokan arah rambat saat merambat melalui dua medium yang berbeda kerapatannya (udara dan air).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0591",
@@ -10747,7 +11229,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Semua bunyi dihasilkan oleh getaran benda yang merambat melalui medium partikel.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0592",
@@ -10765,7 +11248,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Ingat modul hal 11: Bunyi memerlukan medium partikel (padat, cair, gas) untuk merambat; bunyi TIDAK BISA merambat di ruang hampa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0593",
@@ -10783,7 +11267,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Matahari, air, dan angin adalah sumber energi terbarukan yang diperbarui secara alami.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0594",
@@ -10801,7 +11286,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Bayangan cermin datar tegak, ukurannya persis sama dengan benda asli, dan bersifat maya (di belakang cermin).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0595",
@@ -10819,7 +11305,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Cahaya mengalami pembelokan arah rambat saat merambat melalui dua medium yang berbeda kerapatannya (udara dan air).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0596",
@@ -10837,7 +11324,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Semua bunyi dihasilkan oleh getaran benda yang merambat melalui medium partikel.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0597",
@@ -10855,7 +11343,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Ingat modul hal 11: Bunyi memerlukan medium partikel (padat, cair, gas) untuk merambat; bunyi TIDAK BISA merambat di ruang hampa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0598",
@@ -10873,7 +11362,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Matahari, air, dan angin adalah sumber energi terbarukan yang diperbarui secara alami.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0599",
@@ -10891,7 +11381,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Bayangan cermin datar tegak, ukurannya persis sama dengan benda asli, dan bersifat maya (di belakang cermin).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0600",
@@ -10909,7 +11400,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Cahaya mengalami pembelokan arah rambat saat merambat melalui dua medium yang berbeda kerapatannya (udara dan air).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0601",
@@ -10927,7 +11419,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Semua bunyi dihasilkan oleh getaran benda yang merambat melalui medium partikel.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0602",
@@ -10945,7 +11438,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Ingat modul hal 11: Bunyi memerlukan medium partikel (padat, cair, gas) untuk merambat; bunyi TIDAK BISA merambat di ruang hampa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0603",
@@ -10963,7 +11457,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Matahari, air, dan angin adalah sumber energi terbarukan yang diperbarui secara alami.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0604",
@@ -10981,7 +11476,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Bayangan cermin datar tegak, ukurannya persis sama dengan benda asli, dan bersifat maya (di belakang cermin).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0605",
@@ -10999,7 +11495,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Cahaya mengalami pembelokan arah rambat saat merambat melalui dua medium yang berbeda kerapatannya (udara dan air).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0606",
@@ -11017,7 +11514,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Semua bunyi dihasilkan oleh getaran benda yang merambat melalui medium partikel.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0607",
@@ -11035,7 +11533,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Ingat modul hal 11: Bunyi memerlukan medium partikel (padat, cair, gas) untuk merambat; bunyi TIDAK BISA merambat di ruang hampa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0608",
@@ -11053,7 +11552,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Matahari, air, dan angin adalah sumber energi terbarukan yang diperbarui secara alami.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0609",
@@ -11071,7 +11571,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Bayangan cermin datar tegak, ukurannya persis sama dengan benda asli, dan bersifat maya (di belakang cermin).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0610",
@@ -11089,7 +11590,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Cahaya mengalami pembelokan arah rambat saat merambat melalui dua medium yang berbeda kerapatannya (udara dan air).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0611",
@@ -11107,7 +11609,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Semua bunyi dihasilkan oleh getaran benda yang merambat melalui medium partikel.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0612",
@@ -11125,7 +11628,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Ingat modul hal 11: Bunyi memerlukan medium partikel (padat, cair, gas) untuk merambat; bunyi TIDAK BISA merambat di ruang hampa.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0613",
@@ -11143,7 +11647,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Matahari, air, dan angin adalah sumber energi terbarukan yang diperbarui secara alami.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA5-0614",
@@ -11161,7 +11666,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Bayangan cermin datar tegak, ukurannya persis sama dengan benda asli, dan bersifat maya (di belakang cermin).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara pembiasan dan pemantulan cahaya, atau mengira gelombang bunyi dapat merambat di ruang hampa seperti cahaya.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0615",
@@ -11180,7 +11686,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Matahari adalah bintang induk di pusat tata surya kita.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0616",
@@ -11199,7 +11705,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Urutan planet dari Matahari: Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, Neptunus.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0617",
@@ -11218,7 +11724,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Venus memiliki efek rumah kaca luar biasa yang menjadikannya planet terpanas.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0618",
@@ -11237,7 +11743,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jupiter adalah planet gas raksasa terbesar.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0619",
@@ -11256,7 +11762,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Saturnus memiliki cincin partikel es dan batuan yang sangat menonjol.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0620",
@@ -11275,7 +11781,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Ingat peringatan modul hal 12: Jangan menggolongkan Bulan sebagai planet atau Matahari sebagai planet!",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0621",
@@ -11294,7 +11800,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Matahari adalah bintang induk di pusat tata surya kita.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0622",
@@ -11313,7 +11819,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Urutan planet dari Matahari: Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, Neptunus.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0623",
@@ -11332,7 +11838,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Venus memiliki efek rumah kaca luar biasa yang menjadikannya planet terpanas.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0624",
@@ -11351,7 +11857,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jupiter adalah planet gas raksasa terbesar.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0625",
@@ -11370,7 +11876,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Saturnus memiliki cincin partikel es dan batuan yang sangat menonjol.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0626",
@@ -11389,7 +11895,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Ingat peringatan modul hal 12: Jangan menggolongkan Bulan sebagai planet atau Matahari sebagai planet!",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0627",
@@ -11408,7 +11914,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Matahari adalah bintang induk di pusat tata surya kita.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0628",
@@ -11427,7 +11933,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Urutan planet dari Matahari: Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, Neptunus.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0629",
@@ -11446,7 +11952,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Venus memiliki efek rumah kaca luar biasa yang menjadikannya planet terpanas.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0630",
@@ -11465,7 +11971,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jupiter adalah planet gas raksasa terbesar.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0631",
@@ -11484,7 +11990,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Saturnus memiliki cincin partikel es dan batuan yang sangat menonjol.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0632",
@@ -11503,7 +12009,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Ingat peringatan modul hal 12: Jangan menggolongkan Bulan sebagai planet atau Matahari sebagai planet!",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0633",
@@ -11522,7 +12028,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Matahari adalah bintang induk di pusat tata surya kita.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0634",
@@ -11541,7 +12047,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Urutan planet dari Matahari: Merkurius, Venus, Bumi, Mars, Jupiter, Saturnus, Uranus, Neptunus.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0635",
@@ -11560,7 +12066,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Venus memiliki efek rumah kaca luar biasa yang menjadikannya planet terpanas.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0636",
@@ -11579,7 +12085,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Jupiter adalah planet gas raksasa terbesar.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0637",
@@ -11598,7 +12104,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Saturnus memiliki cincin partikel es dan batuan yang sangat menonjol.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0638",
@@ -11617,7 +12123,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Ingat peringatan modul hal 12: Jangan menggolongkan Bulan sebagai planet atau Matahari sebagai planet!",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0639",
@@ -11636,7 +12142,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Matahari adalah bintang induk di pusat tata surya kita.",
     "DIAGNOSA": "Kesalahan Umum: Mengira Bulan atau Matahari termasuk planet (ingat: Matahari adalah bintang, Bulan adalah satelit alami Bumi).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0640",
@@ -11655,7 +12161,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Rotasi Bumi berputar pada porosnya menyebabkan pergantian siang dan malam.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0641",
@@ -11674,7 +12180,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Revolusi Bumi memerlukan waktu 1 tahun (365¼ hari) dan menjadi dasar kalender Masehi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0642",
@@ -11693,7 +12199,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Ingat modul hal 12: Musim hujan dan kemarau di Indonesia terutama terkait pola angin muson, bukan semata-mata revolusi Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0643",
@@ -11712,7 +12218,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Matahari terjadi saat piringan Bulan berada di antara Matahari dan Bumi sehingga bayangan Bulan jatuh ke permukaan Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0644",
@@ -11731,7 +12237,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Bulan terjadi saat bayangan Bumi menutupi permukaan Bulan purnama.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0645",
@@ -11750,7 +12256,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Rotasi Bumi berputar pada porosnya menyebabkan pergantian siang dan malam.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0646",
@@ -11769,7 +12275,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Revolusi Bumi memerlukan waktu 1 tahun (365¼ hari) dan menjadi dasar kalender Masehi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0647",
@@ -11788,7 +12294,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Ingat modul hal 12: Musim hujan dan kemarau di Indonesia terutama terkait pola angin muson, bukan semata-mata revolusi Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0648",
@@ -11807,7 +12313,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Matahari terjadi saat piringan Bulan berada di antara Matahari dan Bumi sehingga bayangan Bulan jatuh ke permukaan Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0649",
@@ -11826,7 +12332,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Bulan terjadi saat bayangan Bumi menutupi permukaan Bulan purnama.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0650",
@@ -11845,7 +12351,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Rotasi Bumi berputar pada porosnya menyebabkan pergantian siang dan malam.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0651",
@@ -11864,7 +12370,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Revolusi Bumi memerlukan waktu 1 tahun (365¼ hari) dan menjadi dasar kalender Masehi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0652",
@@ -11883,7 +12389,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Ingat modul hal 12: Musim hujan dan kemarau di Indonesia terutama terkait pola angin muson, bukan semata-mata revolusi Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0653",
@@ -11902,7 +12408,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Matahari terjadi saat piringan Bulan berada di antara Matahari dan Bumi sehingga bayangan Bulan jatuh ke permukaan Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0654",
@@ -11921,7 +12427,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Bulan terjadi saat bayangan Bumi menutupi permukaan Bulan purnama.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0655",
@@ -11940,7 +12446,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Rotasi Bumi berputar pada porosnya menyebabkan pergantian siang dan malam.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0656",
@@ -11959,7 +12465,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Revolusi Bumi memerlukan waktu 1 tahun (365¼ hari) dan menjadi dasar kalender Masehi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0657",
@@ -11978,7 +12484,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Ingat modul hal 12: Musim hujan dan kemarau di Indonesia terutama terkait pola angin muson, bukan semata-mata revolusi Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0658",
@@ -11997,7 +12503,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Matahari terjadi saat piringan Bulan berada di antara Matahari dan Bumi sehingga bayangan Bulan jatuh ke permukaan Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0659",
@@ -12016,7 +12522,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Bulan terjadi saat bayangan Bumi menutupi permukaan Bulan purnama.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0660",
@@ -12035,7 +12541,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Rotasi Bumi berputar pada porosnya menyebabkan pergantian siang dan malam.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0661",
@@ -12054,7 +12560,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Revolusi Bumi memerlukan waktu 1 tahun (365¼ hari) dan menjadi dasar kalender Masehi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0662",
@@ -12073,7 +12579,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Ingat modul hal 12: Musim hujan dan kemarau di Indonesia terutama terkait pola angin muson, bukan semata-mata revolusi Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0663",
@@ -12092,7 +12598,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Matahari terjadi saat piringan Bulan berada di antara Matahari dan Bumi sehingga bayangan Bulan jatuh ke permukaan Bumi.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0664",
@@ -12111,7 +12617,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Gerhana Bulan terjadi saat bayangan Bumi menutupi permukaan Bulan purnama.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara akibat rotasi (24 jam: siang-malam) dengan akibat revolusi (365¼ hari: musim/tahun).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#0f172a\" stroke=\"#334155\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#f8fafc\">🪐 SISTEM TATA SURYA</text>\n    <path d=\"M 0 30 A 45 45 0 0 1 0 130 Z\" fill=\"#f59e0b\"/>\n    <circle cx=\"45\" cy=\"80\" r=\"4\" fill=\"#94a3b8\"/><text x=\"45\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Mer</text>\n    <circle cx=\"75\" cy=\"80\" r=\"6\" fill=\"#fbbf24\"/><text x=\"75\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#cbd5e1\">Ven</text>\n    <circle cx=\"110\" cy=\"80\" r=\"7\" fill=\"#38bdf8\"/><text x=\"110\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#38bdf8\">Bumi</text>\n    <circle cx=\"145\" cy=\"80\" r=\"5\" fill=\"#ef4444\"/><text x=\"145\" y=\"98\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fca5a5\">Mars</text>\n    <circle cx=\"195\" cy=\"80\" r=\"14\" fill=\"#d97706\"/><text x=\"195\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fcd34d\">Yupiter</text>\n    <circle cx=\"240\" cy=\"80\" r=\"11\" fill=\"#fde047\"/>\n    <ellipse cx=\"240\" cy=\"80\" rx=\"18\" ry=\"4\" fill=\"none\" stroke=\"#ca8a04\"/>\n    <text x=\"240\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#fde047\">Saturnus</text>\n    <circle cx=\"280\" cy=\"80\" r=\"8\" fill=\"#67e8f9\"/><text x=\"280\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#a5f3fc\">Uranus</text>\n    <circle cx=\"305\" cy=\"80\" r=\"7\" fill=\"#3b82f6\"/><text x=\"305\" y=\"108\" text-anchor=\"middle\" font-size=\"7\" fill=\"#93c5fd\">Nep</text>\n    <text x=\"160\" y=\"135\" text-anchor=\"middle\" font-size=\"8.5\" fill=\"#94a3b8\">Pusat tata surya adalah Matahari</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0665",
@@ -12129,7 +12635,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0666",
@@ -12148,7 +12655,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0667",
@@ -12166,7 +12673,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0668",
@@ -12184,7 +12692,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0669",
@@ -12203,7 +12712,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0670",
@@ -12221,7 +12730,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0671",
@@ -12239,7 +12749,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0672",
@@ -12258,7 +12769,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0673",
@@ -12276,7 +12787,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0674",
@@ -12294,7 +12806,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0675",
@@ -12313,7 +12826,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0676",
@@ -12331,7 +12844,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0677",
@@ -12349,7 +12863,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0678",
@@ -12368,7 +12883,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0679",
@@ -12386,7 +12901,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0680",
@@ -12404,7 +12920,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0681",
@@ -12423,7 +12940,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0682",
@@ -12441,7 +12958,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0683",
@@ -12459,7 +12977,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0684",
@@ -12478,7 +12997,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0685",
@@ -12496,7 +13015,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0686",
@@ -12514,7 +13034,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0687",
@@ -12533,7 +13054,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0688",
@@ -12551,7 +13072,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0689",
@@ -12569,7 +13091,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0690",
@@ -12588,7 +13111,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0691",
@@ -12606,7 +13129,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0692",
@@ -12624,7 +13148,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0693",
@@ -12643,7 +13168,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0694",
@@ -12661,7 +13186,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0695",
@@ -12679,7 +13205,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0696",
@@ -12698,7 +13225,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0697",
@@ -12716,7 +13243,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu lama pencahayaan lampu. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0698",
@@ -12734,7 +13262,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu dosis pemberian pupuk. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPA6-0699",
@@ -12753,7 +13282,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Dalam percobaan yang adil (fair test), hanya SATU faktor yang sengaja dibedakan (variabel bebas/yang diuji), yaitu frekuensi penyiraman air. Faktor lainnya dijaga tetap sama (jenis bibit tanaman, jumlah tanah, dan ukuran pot) sebagai variabel kontrol. Ingat modul hal 12!",
     "DIAGNOSA": "Kesalahan Umum: Mengira variabel yang diuji adalah faktor yang dijaga tetap sama (variabel kontrol).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0700",
@@ -12771,7 +13300,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Legenda memuat keterangan semua simbol dan kode warna dalam peta.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0701",
@@ -12789,7 +13319,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Ingat peringatan modul hal 16: Inset adalah peta kecil yang menunjukkan posisi suatu wilayah dalam konteks lebih luas; BUKAN legenda!",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0702",
@@ -12807,7 +13338,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Orientasi mata angin standar: Atas = Utara, Kanan = Timur, Bawah = Selatan, Kiri = Barat.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0703",
@@ -12825,7 +13357,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Simbol jangkar mewakili pelabuhan laut/dermaga kapal.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0704",
@@ -12843,7 +13376,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Simbol pesawat menunjukkan simpul transportasi udara/bandara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0705",
@@ -12861,7 +13395,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Warna biru pada peta secara konvensional melambangkan perairan.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0706",
@@ -12879,7 +13414,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Legenda memuat keterangan semua simbol dan kode warna dalam peta.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0707",
@@ -12897,7 +13433,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Ingat peringatan modul hal 16: Inset adalah peta kecil yang menunjukkan posisi suatu wilayah dalam konteks lebih luas; BUKAN legenda!",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0708",
@@ -12915,7 +13452,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Orientasi mata angin standar: Atas = Utara, Kanan = Timur, Bawah = Selatan, Kiri = Barat.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0709",
@@ -12933,7 +13471,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Simbol jangkar mewakili pelabuhan laut/dermaga kapal.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0710",
@@ -12951,7 +13490,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Simbol pesawat menunjukkan simpul transportasi udara/bandara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0711",
@@ -12969,7 +13509,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Warna biru pada peta secara konvensional melambangkan perairan.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0712",
@@ -12987,7 +13528,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Legenda memuat keterangan semua simbol dan kode warna dalam peta.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0713",
@@ -13005,7 +13547,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Ingat peringatan modul hal 16: Inset adalah peta kecil yang menunjukkan posisi suatu wilayah dalam konteks lebih luas; BUKAN legenda!",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0714",
@@ -13023,7 +13566,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Orientasi mata angin standar: Atas = Utara, Kanan = Timur, Bawah = Selatan, Kiri = Barat.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0715",
@@ -13041,7 +13585,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Simbol jangkar mewakili pelabuhan laut/dermaga kapal.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0716",
@@ -13059,7 +13604,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Simbol pesawat menunjukkan simpul transportasi udara/bandara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0717",
@@ -13077,7 +13623,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Warna biru pada peta secara konvensional melambangkan perairan.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0718",
@@ -13095,7 +13642,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Legenda memuat keterangan semua simbol dan kode warna dalam peta.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0719",
@@ -13113,7 +13661,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Ingat peringatan modul hal 16: Inset adalah peta kecil yang menunjukkan posisi suatu wilayah dalam konteks lebih luas; BUKAN legenda!",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara fungsi legenda (keterangan simbol) dengan inset (peta kecil penunjuk letak dalam konteks wilayah luas).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0720",
@@ -13131,7 +13680,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kondisi pesisir memudahkan akses melaut dan budidaya tambak perikanan. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0721",
@@ -13149,7 +13699,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Suhu sejuk di dataran tinggi sangat cocok untuk tanaman teh dan sayuran. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0722",
@@ -13167,7 +13718,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Sungai di Kalimantan berfungsi penting sebagai urat nadi transportasi dan interaksi ekonomi. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0723",
@@ -13185,7 +13737,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kondisi pesisir memudahkan akses melaut dan budidaya tambak perikanan. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0724",
@@ -13203,7 +13756,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Suhu sejuk di dataran tinggi sangat cocok untuk tanaman teh dan sayuran. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0725",
@@ -13221,7 +13775,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Sungai di Kalimantan berfungsi penting sebagai urat nadi transportasi dan interaksi ekonomi. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0726",
@@ -13239,7 +13794,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kondisi pesisir memudahkan akses melaut dan budidaya tambak perikanan. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0727",
@@ -13257,7 +13813,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Suhu sejuk di dataran tinggi sangat cocok untuk tanaman teh dan sayuran. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0728",
@@ -13275,7 +13832,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Sungai di Kalimantan berfungsi penting sebagai urat nadi transportasi dan interaksi ekonomi. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0729",
@@ -13293,7 +13851,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kondisi pesisir memudahkan akses melaut dan budidaya tambak perikanan. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0730",
@@ -13311,7 +13870,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Suhu sejuk di dataran tinggi sangat cocok untuk tanaman teh dan sayuran. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0731",
@@ -13329,7 +13889,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Sungai di Kalimantan berfungsi penting sebagai urat nadi transportasi dan interaksi ekonomi. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0732",
@@ -13347,7 +13908,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kondisi pesisir memudahkan akses melaut dan budidaya tambak perikanan. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0733",
@@ -13365,7 +13927,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Suhu sejuk di dataran tinggi sangat cocok untuk tanaman teh dan sayuran. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0734",
@@ -13383,7 +13946,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Sungai di Kalimantan berfungsi penting sebagai urat nadi transportasi dan interaksi ekonomi. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0735",
@@ -13401,7 +13965,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kondisi pesisir memudahkan akses melaut dan budidaya tambak perikanan. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0736",
@@ -13419,7 +13984,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Suhu sejuk di dataran tinggi sangat cocok untuk tanaman teh dan sayuran. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0737",
@@ -13437,7 +14003,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Sungai di Kalimantan berfungsi penting sebagai urat nadi transportasi dan interaksi ekonomi. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0738",
@@ -13455,7 +14022,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kondisi pesisir memudahkan akses melaut dan budidaya tambak perikanan. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0739",
@@ -13473,7 +14041,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Suhu sejuk di dataran tinggi sangat cocok untuk tanaman teh dan sayuran. Ingat peringatan modul hal 16: Jangan menganggap SEMUA penduduk pesisir pasti bekerja sebagai nelayan; lihat selalu data kasus soal!",
     "DIAGNOSA": "Kesalahan Umum: Menggeneralisasi secara mutlak bahwa semua penduduk pesisir pasti nelayan, tanpa memperhatikan konteks kasus soal.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0740",
@@ -13491,7 +14060,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Tongkonan adalah rumah adat masyarakat Toraja, Sulawesi Selatan.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0741",
@@ -13509,7 +14079,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kapal Pinisi dibuat oleh suku Bugis dan Makassar di Sulawesi Selatan dan telah diakui UNESCO.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0742",
@@ -13527,7 +14098,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Menghormati keragaman adalah pengamalan semboyan Bhinneka Tunggal Ika.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0743",
@@ -13545,7 +14117,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Tongkonan adalah rumah adat masyarakat Toraja, Sulawesi Selatan.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0744",
@@ -13563,7 +14136,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kapal Pinisi dibuat oleh suku Bugis dan Makassar di Sulawesi Selatan dan telah diakui UNESCO.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0745",
@@ -13581,7 +14155,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Menghormati keragaman adalah pengamalan semboyan Bhinneka Tunggal Ika.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0746",
@@ -13599,7 +14174,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Tongkonan adalah rumah adat masyarakat Toraja, Sulawesi Selatan.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0747",
@@ -13617,7 +14193,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kapal Pinisi dibuat oleh suku Bugis dan Makassar di Sulawesi Selatan dan telah diakui UNESCO.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0748",
@@ -13635,7 +14212,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Menghormati keragaman adalah pengamalan semboyan Bhinneka Tunggal Ika.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0749",
@@ -13653,7 +14231,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Tongkonan adalah rumah adat masyarakat Toraja, Sulawesi Selatan.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0750",
@@ -13671,7 +14250,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kapal Pinisi dibuat oleh suku Bugis dan Makassar di Sulawesi Selatan dan telah diakui UNESCO.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0751",
@@ -13689,7 +14269,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Menghormati keragaman adalah pengamalan semboyan Bhinneka Tunggal Ika.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0752",
@@ -13707,7 +14288,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Tongkonan adalah rumah adat masyarakat Toraja, Sulawesi Selatan.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0753",
@@ -13725,7 +14307,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kapal Pinisi dibuat oleh suku Bugis dan Makassar di Sulawesi Selatan dan telah diakui UNESCO.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0754",
@@ -13743,7 +14326,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Menghormati keragaman adalah pengamalan semboyan Bhinneka Tunggal Ika.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0755",
@@ -13761,7 +14345,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Tongkonan adalah rumah adat masyarakat Toraja, Sulawesi Selatan.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0756",
@@ -13779,7 +14364,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kapal Pinisi dibuat oleh suku Bugis dan Makassar di Sulawesi Selatan dan telah diakui UNESCO.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0757",
@@ -13797,7 +14383,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Menghormati keragaman adalah pengamalan semboyan Bhinneka Tunggal Ika.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0758",
@@ -13815,7 +14402,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Tongkonan adalah rumah adat masyarakat Toraja, Sulawesi Selatan.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0759",
@@ -13833,7 +14421,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kapal Pinisi dibuat oleh suku Bugis dan Makassar di Sulawesi Selatan dan telah diakui UNESCO.",
     "DIAGNOSA": "Kesalahan Umum: Sikap etnosentrisme (menganggap budaya sendiri paling unggul) atau salah membedakan rumah adat daerah.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0760",
@@ -13851,7 +14440,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0761",
@@ -13869,7 +14459,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0762",
@@ -13887,7 +14478,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0763",
@@ -13905,7 +14497,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0764",
@@ -13923,7 +14516,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0765",
@@ -13941,7 +14535,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0766",
@@ -13959,7 +14554,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0767",
@@ -13977,7 +14573,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0768",
@@ -13995,7 +14592,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0769",
@@ -14013,7 +14611,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0770",
@@ -14031,7 +14630,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0771",
@@ -14049,7 +14649,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0772",
@@ -14067,7 +14668,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0773",
@@ -14085,7 +14687,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0774",
@@ -14103,7 +14706,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0775",
@@ -14121,7 +14725,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0776",
@@ -14139,7 +14744,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0777",
@@ -14157,7 +14763,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0778",
@@ -14175,7 +14782,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS4-0779",
@@ -14193,7 +14801,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Produksi = membuat/menghasilkan barang; Distribusi = menyalurkan barang dari produsen ke konsumen; Konsumsi = menggunakan/menghabiskan nilai barang. Ingat modul hal 16: Orang yang menjual barang bukan selalu produsen; periksa perannya dalam alur!",
     "DIAGNOSA": "Kesalahan Umum: Mengira pedagang adalah produsen (padahal pedagang yang menyalurkan barang bertindak sebagai distributor).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0780",
@@ -14211,7 +14820,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Indonesia berada di posisi silang antara Asia dan Australia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0781",
@@ -14229,7 +14839,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dua samudra yang mengapit kepulauan Indonesia adalah Samudra Hindia dan Samudra Pasifik.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0782",
@@ -14247,7 +14858,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kondisi kepulauan membutuhkan armada kapal laut dan pesawat terbang untuk konektivitas antarpulau (modul hal 17).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0783",
@@ -14265,7 +14877,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Letak geografis = posisi thd benua & samudra; Letak astronomis = koordinat 6°LU–11°LS dan 95°BT–141°BT.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0784",
@@ -14283,7 +14896,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Indonesia berada di posisi silang antara Asia dan Australia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0785",
@@ -14301,7 +14915,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dua samudra yang mengapit kepulauan Indonesia adalah Samudra Hindia dan Samudra Pasifik.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0786",
@@ -14319,7 +14934,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kondisi kepulauan membutuhkan armada kapal laut dan pesawat terbang untuk konektivitas antarpulau (modul hal 17).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0787",
@@ -14337,7 +14953,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Letak geografis = posisi thd benua & samudra; Letak astronomis = koordinat 6°LU–11°LS dan 95°BT–141°BT.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0788",
@@ -14355,7 +14972,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Indonesia berada di posisi silang antara Asia dan Australia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0789",
@@ -14373,7 +14991,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dua samudra yang mengapit kepulauan Indonesia adalah Samudra Hindia dan Samudra Pasifik.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0790",
@@ -14391,7 +15010,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kondisi kepulauan membutuhkan armada kapal laut dan pesawat terbang untuk konektivitas antarpulau (modul hal 17).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0791",
@@ -14409,7 +15029,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Letak geografis = posisi thd benua & samudra; Letak astronomis = koordinat 6°LU–11°LS dan 95°BT–141°BT.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0792",
@@ -14427,7 +15048,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Indonesia berada di posisi silang antara Asia dan Australia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0793",
@@ -14445,7 +15067,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dua samudra yang mengapit kepulauan Indonesia adalah Samudra Hindia dan Samudra Pasifik.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0794",
@@ -14463,7 +15086,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kondisi kepulauan membutuhkan armada kapal laut dan pesawat terbang untuk konektivitas antarpulau (modul hal 17).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0795",
@@ -14481,7 +15105,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Letak geografis = posisi thd benua & samudra; Letak astronomis = koordinat 6°LU–11°LS dan 95°BT–141°BT.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0796",
@@ -14499,7 +15124,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Indonesia berada di posisi silang antara Asia dan Australia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0797",
@@ -14517,7 +15143,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dua samudra yang mengapit kepulauan Indonesia adalah Samudra Hindia dan Samudra Pasifik.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0798",
@@ -14535,7 +15162,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kondisi kepulauan membutuhkan armada kapal laut dan pesawat terbang untuk konektivitas antarpulau (modul hal 17).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0799",
@@ -14553,7 +15181,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Letak geografis = posisi thd benua & samudra; Letak astronomis = koordinat 6°LU–11°LS dan 95°BT–141°BT.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0800",
@@ -14571,7 +15200,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Indonesia berada di posisi silang antara Asia dan Australia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0801",
@@ -14589,7 +15219,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dua samudra yang mengapit kepulauan Indonesia adalah Samudra Hindia dan Samudra Pasifik.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0802",
@@ -14607,7 +15238,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kondisi kepulauan membutuhkan armada kapal laut dan pesawat terbang untuk konektivitas antarpulau (modul hal 17).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0803",
@@ -14625,7 +15257,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Letak geografis = posisi thd benua & samudra; Letak astronomis = koordinat 6°LU–11°LS dan 95°BT–141°BT.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0804",
@@ -14643,7 +15276,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Indonesia berada di posisi silang antara Asia dan Australia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0805",
@@ -14661,7 +15295,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Dua samudra yang mengapit kepulauan Indonesia adalah Samudra Hindia dan Samudra Pasifik.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0806",
@@ -14679,7 +15314,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kondisi kepulauan membutuhkan armada kapal laut dan pesawat terbang untuk konektivitas antarpulau (modul hal 17).",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0807",
@@ -14697,7 +15333,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Letak geografis = posisi thd benua & samudra; Letak astronomis = koordinat 6°LU–11°LS dan 95°BT–141°BT.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara letak geografis (di antara 2 benua & 2 samudra) dengan letak astronomis (koordinat lintang dan bujur).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0808",
@@ -14715,7 +15352,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Budi Utomo didirikan 20 Mei 1908 oleh para pemuda STOVIA dipimpin Dr. Soetomo.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0809",
@@ -14733,7 +15371,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kongres Pemuda II melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0810",
@@ -14751,7 +15390,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Proklamasi kemerdekaan dibacakan pada hari Jumat, 17 Agustus 1945 di Jakarta.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0811",
@@ -14769,7 +15409,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kronologi urutan waktu: Budi Utomo (1908) → Sumpah Pemuda (1928) → Proklamasi (1945). Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0812",
@@ -14787,7 +15428,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Budi Utomo didirikan 20 Mei 1908 oleh para pemuda STOVIA dipimpin Dr. Soetomo.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0813",
@@ -14805,7 +15447,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kongres Pemuda II melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0814",
@@ -14823,7 +15466,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Proklamasi kemerdekaan dibacakan pada hari Jumat, 17 Agustus 1945 di Jakarta.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0815",
@@ -14841,7 +15485,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kronologi urutan waktu: Budi Utomo (1908) → Sumpah Pemuda (1928) → Proklamasi (1945). Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0816",
@@ -14859,7 +15504,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Budi Utomo didirikan 20 Mei 1908 oleh para pemuda STOVIA dipimpin Dr. Soetomo.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0817",
@@ -14877,7 +15523,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kongres Pemuda II melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0818",
@@ -14895,7 +15542,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Proklamasi kemerdekaan dibacakan pada hari Jumat, 17 Agustus 1945 di Jakarta.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0819",
@@ -14913,7 +15561,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kronologi urutan waktu: Budi Utomo (1908) → Sumpah Pemuda (1928) → Proklamasi (1945). Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0820",
@@ -14931,7 +15580,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Budi Utomo didirikan 20 Mei 1908 oleh para pemuda STOVIA dipimpin Dr. Soetomo.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0821",
@@ -14949,7 +15599,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kongres Pemuda II melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0822",
@@ -14967,7 +15618,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Proklamasi kemerdekaan dibacakan pada hari Jumat, 17 Agustus 1945 di Jakarta.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0823",
@@ -14985,7 +15637,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kronologi urutan waktu: Budi Utomo (1908) → Sumpah Pemuda (1928) → Proklamasi (1945). Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0824",
@@ -15003,7 +15656,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Budi Utomo didirikan 20 Mei 1908 oleh para pemuda STOVIA dipimpin Dr. Soetomo.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0825",
@@ -15021,7 +15675,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kongres Pemuda II melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0826",
@@ -15039,7 +15694,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Proklamasi kemerdekaan dibacakan pada hari Jumat, 17 Agustus 1945 di Jakarta.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0827",
@@ -15057,7 +15713,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kronologi urutan waktu: Budi Utomo (1908) → Sumpah Pemuda (1928) → Proklamasi (1945). Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0828",
@@ -15075,7 +15732,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Budi Utomo didirikan 20 Mei 1908 oleh para pemuda STOVIA dipimpin Dr. Soetomo.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0829",
@@ -15093,7 +15751,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kongres Pemuda II melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0830",
@@ -15111,7 +15770,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Proklamasi kemerdekaan dibacakan pada hari Jumat, 17 Agustus 1945 di Jakarta.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0831",
@@ -15129,7 +15789,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kronologi urutan waktu: Budi Utomo (1908) → Sumpah Pemuda (1928) → Proklamasi (1945). Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0832",
@@ -15147,7 +15808,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Budi Utomo didirikan 20 Mei 1908 oleh para pemuda STOVIA dipimpin Dr. Soetomo.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0833",
@@ -15165,7 +15827,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kongres Pemuda II melahirkan Sumpah Pemuda pada 28 Oktober 1928.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0834",
@@ -15183,7 +15846,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Proklamasi kemerdekaan dibacakan pada hari Jumat, 17 Agustus 1945 di Jakarta.",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0835",
@@ -15201,7 +15865,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kronologi urutan waktu: Budi Utomo (1908) → Sumpah Pemuda (1928) → Proklamasi (1945). Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Menyamakan tanggal Sumpah Pemuda (28 Oktober) dengan Proklamasi Kemerdekaan (17 Agustus) atau terbalik menyusun urutan kronologi tahun.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0836",
@@ -15219,7 +15884,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0837",
@@ -15237,7 +15903,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0838",
@@ -15255,7 +15922,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0839",
@@ -15273,7 +15941,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0840",
@@ -15291,7 +15960,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0841",
@@ -15309,7 +15979,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0842",
@@ -15327,7 +15998,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0843",
@@ -15345,7 +16017,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0844",
@@ -15363,7 +16036,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0845",
@@ -15381,7 +16055,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0846",
@@ -15399,7 +16074,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0847",
@@ -15417,7 +16093,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0848",
@@ -15435,7 +16112,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0849",
@@ -15453,7 +16131,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0850",
@@ -15471,7 +16150,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0851",
@@ -15489,7 +16169,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0852",
@@ -15507,7 +16188,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0853",
@@ -15525,7 +16207,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0854",
@@ -15543,7 +16226,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0855",
@@ -15561,7 +16245,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0856",
@@ -15579,7 +16264,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0857",
@@ -15597,7 +16283,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0858",
@@ -15615,7 +16302,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0859",
@@ -15633,7 +16321,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0860",
@@ -15651,7 +16340,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0861",
@@ -15669,7 +16359,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS5-0862",
@@ -15687,7 +16378,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jika pasokan barang di pasar berkurang sementara jumlah permintaan pembeli tetap atau meningkat, harga barang tersebut cenderung bergerak naik. Ingat modul hal 17!",
     "DIAGNOSA": "Kesalahan Umum: Mengira berkurangnya pasokan akan menurunkan harga barang (ingat hukum pasar: kelangkaan pasokan memicu kenaikan harga).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0863",
@@ -15705,7 +16397,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0864",
@@ -15723,7 +16416,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Perbedaan sumber daya memunculkan perdagangan dan hubungan saling melengkapi antardaerah.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0865",
@@ -15741,7 +16435,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Pelabuhan merupakan simpul transportasi laut strategis yang memperlancar distribusi barang (modul hal 18).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0866",
@@ -15759,7 +16454,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0867",
@@ -15777,7 +16473,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Perbedaan sumber daya memunculkan perdagangan dan hubungan saling melengkapi antardaerah.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0868",
@@ -15795,7 +16492,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pelabuhan merupakan simpul transportasi laut strategis yang memperlancar distribusi barang (modul hal 18).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0869",
@@ -15813,7 +16511,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0870",
@@ -15831,7 +16530,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Perbedaan sumber daya memunculkan perdagangan dan hubungan saling melengkapi antardaerah.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0871",
@@ -15849,7 +16549,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Pelabuhan merupakan simpul transportasi laut strategis yang memperlancar distribusi barang (modul hal 18).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0872",
@@ -15867,7 +16568,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0873",
@@ -15885,7 +16587,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Perbedaan sumber daya memunculkan perdagangan dan hubungan saling melengkapi antardaerah.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0874",
@@ -15903,7 +16606,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Pelabuhan merupakan simpul transportasi laut strategis yang memperlancar distribusi barang (modul hal 18).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0875",
@@ -15921,7 +16625,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0876",
@@ -15939,7 +16644,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Perbedaan sumber daya memunculkan perdagangan dan hubungan saling melengkapi antardaerah.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0877",
@@ -15957,7 +16663,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Pelabuhan merupakan simpul transportasi laut strategis yang memperlancar distribusi barang (modul hal 18).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0878",
@@ -15975,7 +16682,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0879",
@@ -15993,7 +16701,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Perbedaan sumber daya memunculkan perdagangan dan hubungan saling melengkapi antardaerah.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0880",
@@ -16011,7 +16720,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pelabuhan merupakan simpul transportasi laut strategis yang memperlancar distribusi barang (modul hal 18).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0881",
@@ -16029,7 +16739,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0882",
@@ -16047,7 +16758,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Perbedaan sumber daya memunculkan perdagangan dan hubungan saling melengkapi antardaerah.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0883",
@@ -16065,7 +16777,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Pelabuhan merupakan simpul transportasi laut strategis yang memperlancar distribusi barang (modul hal 18).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0884",
@@ -16083,7 +16796,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0885",
@@ -16101,7 +16815,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Perbedaan sumber daya memunculkan perdagangan dan hubungan saling melengkapi antardaerah.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0886",
@@ -16119,7 +16834,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Pelabuhan merupakan simpul transportasi laut strategis yang memperlancar distribusi barang (modul hal 18).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0887",
@@ -16137,7 +16853,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0888",
@@ -16155,7 +16872,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Perbedaan sumber daya memunculkan perdagangan dan hubungan saling melengkapi antardaerah.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0889",
@@ -16173,7 +16891,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Pelabuhan merupakan simpul transportasi laut strategis yang memperlancar distribusi barang (modul hal 18).",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0890",
@@ -16191,7 +16910,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Peta tematik menampilkan tema khusus seperti kepadatan penduduk.",
     "DIAGNOSA": "Kesalahan Umum: Kurang teliti dalam membaca kategori tema peta atau mengabaikan manfaat konektivitas antarpulau.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0891",
@@ -16209,7 +16929,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0892",
@@ -16227,7 +16948,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0893",
@@ -16245,7 +16967,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0894",
@@ -16263,7 +16986,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0895",
@@ -16281,7 +17005,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0896",
@@ -16299,7 +17024,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0897",
@@ -16317,7 +17043,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0898",
@@ -16335,7 +17062,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0899",
@@ -16353,7 +17081,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0900",
@@ -16371,7 +17100,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0901",
@@ -16389,7 +17119,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0902",
@@ -16407,7 +17138,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0903",
@@ -16425,7 +17157,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0904",
@@ -16443,7 +17176,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0905",
@@ -16461,7 +17195,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0906",
@@ -16479,7 +17214,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0907",
@@ -16497,7 +17233,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0908",
@@ -16515,7 +17252,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0909",
@@ -16533,7 +17271,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0910",
@@ -16551,7 +17290,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0911",
@@ -16569,7 +17309,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0912",
@@ -16587,7 +17328,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0913",
@@ -16605,7 +17347,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0914",
@@ -16623,7 +17366,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0915",
@@ -16641,7 +17385,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0916",
@@ -16659,7 +17404,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0917",
@@ -16677,7 +17423,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0918",
@@ -16695,7 +17442,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kebutuhan pokok (air minum) jauh lebih mendesak bagi kelangsungan belajar dibanding kebutuhan pendukung/hiasan (keinginan). Pengelolaan sumber daya yang bijak mendahulukan kebutuhan pokok di atas keinginan. Ingat modul hal 18!",
     "DIAGNOSA": "Kesalahan Umum: Mementingkan keinginan estetika/hiasan di atas pemenuhan kebutuhan pokok yang mendesak.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0919",
@@ -16713,7 +17461,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "ASEAN dibentuk di Bangkok pada 8 Agustus 1967 melalui Deklarasi Bangkok.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0920",
@@ -16731,7 +17480,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Adam Malik menandatangani Deklarasi Bangkok mewakili Indonesia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0921",
@@ -16749,7 +17499,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Laos adalah negara landlocked (terkurung daratan) di Asia Tenggara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0922",
@@ -16767,7 +17518,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "SEA Games (Southeast Asian Games) adalah pesta olahraga persahabatan antarnegara ASEAN.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0923",
@@ -16785,7 +17537,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "ASEAN dibentuk di Bangkok pada 8 Agustus 1967 melalui Deklarasi Bangkok.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0924",
@@ -16803,7 +17556,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Adam Malik menandatangani Deklarasi Bangkok mewakili Indonesia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0925",
@@ -16821,7 +17575,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Laos adalah negara landlocked (terkurung daratan) di Asia Tenggara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0926",
@@ -16839,7 +17594,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "SEA Games (Southeast Asian Games) adalah pesta olahraga persahabatan antarnegara ASEAN.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0927",
@@ -16857,7 +17613,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "ASEAN dibentuk di Bangkok pada 8 Agustus 1967 melalui Deklarasi Bangkok.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0928",
@@ -16875,7 +17632,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Adam Malik menandatangani Deklarasi Bangkok mewakili Indonesia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0929",
@@ -16893,7 +17651,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Laos adalah negara landlocked (terkurung daratan) di Asia Tenggara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0930",
@@ -16911,7 +17670,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "SEA Games (Southeast Asian Games) adalah pesta olahraga persahabatan antarnegara ASEAN.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0931",
@@ -16929,7 +17689,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "ASEAN dibentuk di Bangkok pada 8 Agustus 1967 melalui Deklarasi Bangkok.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0932",
@@ -16947,7 +17708,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Adam Malik menandatangani Deklarasi Bangkok mewakili Indonesia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0933",
@@ -16965,7 +17727,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Laos adalah negara landlocked (terkurung daratan) di Asia Tenggara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0934",
@@ -16983,7 +17746,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "SEA Games (Southeast Asian Games) adalah pesta olahraga persahabatan antarnegara ASEAN.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0935",
@@ -17001,7 +17765,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "ASEAN dibentuk di Bangkok pada 8 Agustus 1967 melalui Deklarasi Bangkok.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0936",
@@ -17019,7 +17784,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Adam Malik menandatangani Deklarasi Bangkok mewakili Indonesia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0937",
@@ -17037,7 +17803,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Laos adalah negara landlocked (terkurung daratan) di Asia Tenggara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0938",
@@ -17055,7 +17822,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "SEA Games (Southeast Asian Games) adalah pesta olahraga persahabatan antarnegara ASEAN.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0939",
@@ -17073,7 +17841,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "ASEAN dibentuk di Bangkok pada 8 Agustus 1967 melalui Deklarasi Bangkok.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0940",
@@ -17091,7 +17860,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Adam Malik menandatangani Deklarasi Bangkok mewakili Indonesia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0941",
@@ -17109,7 +17879,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Laos adalah negara landlocked (terkurung daratan) di Asia Tenggara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0942",
@@ -17127,7 +17898,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "SEA Games (Southeast Asian Games) adalah pesta olahraga persahabatan antarnegara ASEAN.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0943",
@@ -17145,7 +17917,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "ASEAN dibentuk di Bangkok pada 8 Agustus 1967 melalui Deklarasi Bangkok.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0944",
@@ -17163,7 +17936,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Adam Malik menandatangani Deklarasi Bangkok mewakili Indonesia.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-IPS6-0945",
@@ -17181,7 +17955,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Laos adalah negara landlocked (terkurung daratan) di Asia Tenggara.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara ajang tingkat Asia Tenggara (SEA Games) dan tingkat seluruh Asia (Asian Games) atau salah mengingat tokoh pendiri ASEAN.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0946",
@@ -17199,7 +17974,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Angka 7 menempati nilai tempat ribuan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0947",
@@ -17217,7 +17993,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlahkan satuan sampai ribuan dengan teknik menyimpan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0948",
@@ -17235,7 +18012,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "8.000 dikurangi 2.675 sama dengan 5.325.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0949",
@@ -17253,7 +18031,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "24 × (10 + 5) = 240 + 120 = 360.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0950",
@@ -17271,7 +18050,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "12 × 72 = 864.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0951",
@@ -17289,7 +18069,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Pembilang dan penyebut 2/3 dikalikan dua menjadi 4/6.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0952",
@@ -17307,7 +18088,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Penyebut sama; pembilang lebih besar berarti nilai lebih besar.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0953",
@@ -17325,7 +18107,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "3 km = 3.000 m, ditambah 250 m.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0954",
@@ -17343,7 +18126,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "6 × 4 = 24.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0955",
@@ -17361,7 +18145,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Faktor prima 18 adalah 2 dan 3.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0956",
@@ -17379,7 +18164,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Keliling persegi = 4 × 13 = 52 cm.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0957",
@@ -17398,7 +18184,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas persegi panjang = 18 × 7 = 126 cm².",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <rect x=\"50\" y=\"35\" width=\"220\" height=\"80\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"26\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">p (panjang)</text>\n    <text x=\"280\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">l</text>\n    <text x=\"160\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#166534\">Luas = p × l | Keliling = 2 × (p + l)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:170px;margin:0 auto\">\n    <rect width=\"360\" height=\"170\" rx=\"10\" fill=\"#f0fdf4\" stroke=\"#bbf7d0\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#166534\">📐 BANGUN DATAR PERSEGI PANJANG</text>\n    \n    <g transform=\"translate(60, 42)\">\n      <rect x=\"0\" y=\"0\" width=\"240\" height=\"90\" rx=\"4\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n      <!-- Panjang -->\n      <text x=\"120\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">Panjang = 18 cm</text>\n      <text x=\"120\" y=\"108\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#15803d\">18 cm</text>\n      <!-- Lebar -->\n      <text x=\"248\" y=\"50\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">l = 7 cm</text>\n      <text x=\"-8\" y=\"50\" text-anchor=\"end\" font-size=\"12\" font-weight=\"bold\" fill=\"#15803d\">7 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-REV-0958",
@@ -17416,7 +18202,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Dari 08.35 ke 09.35 satu jam, lalu 35 menit.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0959",
@@ -17435,7 +18222,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "8 + 12 + 10 + 14 = 44.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <text x=\"160\" y=\"20\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#334155\">📊 DIAGRAM BATANG FREKUENSI DATA</text>\n    <line x1=\"45\" y1=\"35\" x2=\"45\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <line x1=\"45\" y1=\"125\" x2=\"290\" y2=\"125\" stroke=\"#64748b\" stroke-width=\"1.5\"/>\n    <!-- Batang-batang -->\n    <rect x=\"65\" y=\"85\" width=\"30\" height=\"40\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"80\" y=\"78\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">4</text>\n    <text x=\"80\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sen</text>\n\n    <rect x=\"115\" y=\"55\" width=\"30\" height=\"70\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"130\" y=\"48\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">7</text>\n    <text x=\"130\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sel</text>\n\n    <rect x=\"165\" y=\"45\" width=\"30\" height=\"80\" fill=\"#2563eb\" rx=\"2\"/>\n    <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#1d4ed8\">8</text>\n    <text x=\"180\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Rab (Modus)</text>\n\n    <rect x=\"215\" y=\"75\" width=\"30\" height=\"50\" fill=\"#38bdf8\" rx=\"2\"/>\n    <text x=\"230\" y=\"68\" text-anchor=\"middle\" font-size=\"10\" font-weight=\"bold\" fill=\"#0284c7\">5</text>\n    <text x=\"230\" y=\"139\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Kam</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0960",
@@ -17453,7 +18240,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Kerjakan perkalian dulu: 120 - 72 + 15 = 63.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0961",
@@ -17471,7 +18259,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Jumlah 410, lalu kurangi 95 menjadi 315.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0962",
@@ -17490,7 +18279,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Sisi = 64 : 4 = 16 m; luas = 16 × 16 = 256 m².",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 150\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:150px;margin:0 auto\">\n    <rect width=\"320\" height=\"150\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <rect x=\"50\" y=\"35\" width=\"220\" height=\"80\" rx=\"4\" fill=\"#f0fdf4\" stroke=\"#16a34a\" stroke-width=\"2\"/>\n    <text x=\"160\" y=\"26\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">p (panjang)</text>\n    <text x=\"280\" y=\"80\" font-size=\"11\" font-weight=\"bold\" fill=\"#15803d\">l</text>\n    <text x=\"160\" y=\"80\" text-anchor=\"middle\" font-size=\"10\" fill=\"#166534\">Luas = p × l | Keliling = 2 × (p + l)</text>\n  </svg>"
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0963",
@@ -17508,7 +18297,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Sisa = 8/8 - 2/8 - 3/8 = 3/8.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0964",
@@ -17526,7 +18316,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Bilangan = 7 × 36 + 4 = 256.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0965",
@@ -17544,7 +18335,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Setiap suku = suku sebelumnya × 2 + 1.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0966",
@@ -17562,7 +18354,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Penyebut sama, sehingga pembilang dijumlahkan.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0967",
@@ -17580,7 +18373,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "1/3 = 2/6, jadi 5/6 - 2/6 = 3/6.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0968",
@@ -17598,7 +18392,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "0,75 = 75/100 = 3/4.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0969",
@@ -17616,7 +18411,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "25% adalah seperempat, jadi 240 : 4 = 60.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai potongan harga (diskon) dengan harga akhir yang harus dibayar setelah diskon.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0970",
@@ -17634,7 +18430,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Faktor bersama terbesar 24 dan 36 adalah 12.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara kelipatan terkecil (KPK untuk kegiatan berulang) dengan faktor pembagi terbesar (FPB untuk pembagian paket merata).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0971",
@@ -17652,7 +18449,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Kelipatan persekutuan terkecil 8 dan 12 ialah 24.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara kelipatan terkecil (KPK untuk kegiatan berulang) dengan faktor pembagi terbesar (FPB untuk pembagian paket merata).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0972",
@@ -17671,7 +18469,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume kubus = 6 × 6 × 6 = 216 cm³.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(125, 45)\">\n      <rect x=\"0\" y=\"20\" width=\"55\" height=\"55\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,20 22,5 77,5 55,20\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"55,20 77,5 77,60 55,75\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <text x=\"27\" y=\"93\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">s (rusuk)</text>\n      <text x=\"95\" y=\"45\" font-size=\"10.5\" fill=\"#581c87\">V = s³</text>\n      <text x=\"95\" y=\"62\" font-size=\"10.5\" fill=\"#581c87\">LP = 6 × s²</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">🎲 BANGUN RUANG KUBUS</text>\n    \n    <g transform=\"translate(130, 48)\">\n      <rect x=\"0\" y=\"25\" width=\"80\" height=\"80\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,25 35,0 115,0 80,25\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"80,25 115,0 115,80 80,105\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Rusuk Nyata Sesuai Soal -->\n      <text x=\"40\" y=\"122\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#6b21a8\">s = 6 cm</text>\n      <text x=\"120\" y=\"55\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#6b21a8\">6 cm</text>\n      <text x=\"100\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">6 cm</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-REV-0973",
@@ -17689,7 +18487,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "1 liter = 1.000 mL.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0974",
@@ -17707,7 +18506,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Pembilang dikalikan pembilang, penyebut dikalikan penyebut, lalu sederhanakan 6/15.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0975",
@@ -17725,7 +18525,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "3/4 × 2/1 = 6/4 = 1 1/2.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0976",
@@ -17743,7 +18544,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "4 × 100.000 cm = 400.000 cm = 4 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa konversi satuan panjang (ingat 1 km = 100.000 cm; 1 m = 100 cm).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0977",
@@ -17761,7 +18563,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Merah = 3/(3+5) × 40 = 15.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai hanya dengan salah satu angka perbandingan, bukan dengan jumlah total bagian rasio.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0978",
@@ -17780,7 +18583,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Volume = panjang × lebar × tinggi = 10 × 8 × 5.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(100, 45)\">\n      <rect x=\"0\" y=\"20\" width=\"90\" height=\"45\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,20 25,6 115,6 90,20\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"90,20 115,6 115,51 90,65\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <text x=\"45\" y=\"80\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6b21a8\">p (panjang)</text>\n      <text x=\"98\" y=\"45\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">t</text>\n      <text x=\"106\" y=\"14\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">l</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"380\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">📦 BANGUN RUANG BALOK</text>\n    \n    <g transform=\"translate(100, 48)\">\n      <!-- Sisi Depan -->\n      <rect x=\"0\" y=\"22\" width=\"130\" height=\"60\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Atas -->\n      <polygon points=\"0,22 40,0 170,0 130,22\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Kanan -->\n      <polygon points=\"130,22 170,0 170,60 130,82\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Dimensi Nyata Sesuai Soal -->\n      <!-- Panjang (Depan Bawah) -->\n      <text x=\"65\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">p = 10 cm</text>\n      <!-- Lebar (Samping Atas) -->\n      <text x=\"160\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">l = 8 cm</text>\n      <!-- Tinggi (Tegak Kanan) -->\n      <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">5 cm</text>\n      \n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-REV-0979",
@@ -17798,7 +18601,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "Jumlah 400 dibagi 5 = 80.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0980",
@@ -17816,7 +18620,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Diskon Rp12.000; harga akhir Rp68.000.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0981",
@@ -17834,7 +18639,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "36 km dibagi 3 jam sama dengan 12 km/jam.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0982",
@@ -17852,7 +18658,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "2/3 = 4/6, sehingga 1 4/6 + 2 1/6 = 3 5/6.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0983",
@@ -17870,7 +18677,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "KPK dari 12 dan 18 ialah 36 menit.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0984",
@@ -17888,7 +18696,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlah seluruhnya 4 × 25 = 100; tiga bilangan berjumlah 69.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0985",
@@ -17906,7 +18715,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "24 liter merupakan 2/5 kapasitas, jadi kapasitas 24 × 5/2 = 60 liter.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0986",
@@ -17924,7 +18734,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "-12 + 25 = 13, lalu 13 - 8 = 5.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0987",
@@ -17942,7 +18753,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "375/1000 disederhanakan dengan membagi 125 menjadi 3/8.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0988",
@@ -17960,7 +18772,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Bilangan = 96 : 0,4 = 240.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai potongan harga (diskon) dengan harga akhir yang harus dibayar setelah diskon.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0989",
@@ -17978,7 +18791,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Satu bagian = 12 : 4 = 3 tahun; Budi = 7 × 3.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai hanya dengan salah satu angka perbandingan, bukan dengan jumlah total bagian rasio.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0990",
@@ -17997,7 +18811,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Keliling = π × diameter = 22/7 × 14 = 44 cm.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(160, 80)\">\n      <circle r=\"55\" fill=\"#fed7aa\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n      <line x1=\"-55\" y1=\"0\" x2=\"55\" y2=\"0\" stroke=\"#b91c1c\" stroke-width=\"2\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      <text x=\"0\" y=\"-8\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Diameter (d = 2r)</text>\n      <text x=\"25\" y=\"16\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7c2d12\">r (jari-jari)</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#fed7aa\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">⭕ BANGUN DATAR LINGKARAN</text>\n    \n    <g transform=\"translate(180, 100)\">\n      <circle r=\"60\" fill=\"#ffedd5\" stroke=\"#ea580c\" stroke-width=\"2.5\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      \n      \n        <!-- Diameter -->\n        <line x1=\"-60\" y1=\"0\" x2=\"60\" y2=\"0\" stroke=\"#b91c1c\" stroke-width=\"2.5\"/>\n        <text x=\"0\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#b91c1c\">Diameter (d) = 14 cm</text>\n        <text x=\"0\" y=\"20\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">Jari-jari (r) = 7 cm</text>\n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-REV-0991",
@@ -18016,7 +18830,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Luas = πr² = 22/7 × 7 × 7 = 154 cm².",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(160, 80)\">\n      <circle r=\"55\" fill=\"#fed7aa\" stroke=\"#ea580c\" stroke-width=\"2\"/>\n      <line x1=\"-55\" y1=\"0\" x2=\"55\" y2=\"0\" stroke=\"#b91c1c\" stroke-width=\"2\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      <text x=\"0\" y=\"-8\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#b91c1c\">Diameter (d = 2r)</text>\n      <text x=\"25\" y=\"16\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#7c2d12\">r (jari-jari)</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 360 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"360\" height=\"180\" rx=\"10\" fill=\"#fff7ed\" stroke=\"#fed7aa\" stroke-width=\"1.5\"/>\n    <text x=\"180\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#9a3412\">⭕ BANGUN DATAR LINGKARAN</text>\n    \n    <g transform=\"translate(180, 100)\">\n      <circle r=\"60\" fill=\"#ffedd5\" stroke=\"#ea580c\" stroke-width=\"2.5\"/>\n      <circle cx=\"0\" cy=\"0\" r=\"3.5\" fill=\"#1e293b\"/>\n      \n      \n        <!-- Jari-jari -->\n        <line x1=\"0\" y1=\"0\" x2=\"60\" y2=\"0\" stroke=\"#047857\" stroke-width=\"2.5\"/>\n        <text x=\"30\" y=\"-8\" text-anchor=\"middle\" font-size=\"12.5\" font-weight=\"bold\" fill=\"#047857\">r = 7 cm</text>\n        <text x=\"0\" y=\"25\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#7c2d12\">Diameter (d) = 14 cm</text>\n      \n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-REV-0992",
@@ -18034,7 +18848,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Urutkan data 4, 6, 7, 9, 12; nilai tengah 7.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0993",
@@ -18053,7 +18868,7 @@ const QUESTIONS_SEED = [
     "PEMBAHASAN": "Tinggi = 720 : (12 × 10) = 6 cm.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara rumus keliling (cm/m), luas (cm²/m²), dan volume (cm³/liter).",
     "STATUS": "AKTIF",
-    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 320 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px;margin:0 auto\">\n    <rect width=\"320\" height=\"160\" rx=\"10\" fill=\"#f8fafc\" stroke=\"#e2e8f0\"/>\n    <g transform=\"translate(100, 45)\">\n      <rect x=\"0\" y=\"20\" width=\"90\" height=\"45\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"0,20 25,6 115,6 90,20\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <polygon points=\"90,20 115,6 115,51 90,65\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <text x=\"45\" y=\"80\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#6b21a8\">p (panjang)</text>\n      <text x=\"98\" y=\"45\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">t</text>\n      <text x=\"106\" y=\"14\" font-size=\"10\" font-weight=\"bold\" fill=\"#6b21a8\">l</text>\n    </g>\n  </svg>"
+    "STIMULUS_GAMBAR": "<svg viewBox=\"0 0 380 180\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:180px;margin:0 auto\">\n    <rect width=\"380\" height=\"180\" rx=\"10\" fill=\"#faf5ff\" stroke=\"#e9d5ff\" stroke-width=\"1.5\"/>\n    <text x=\"190\" y=\"20\" text-anchor=\"middle\" font-size=\"11.5\" font-weight=\"bold\" fill=\"#581c87\">📦 BANGUN RUANG BALOK</text>\n    \n    <g transform=\"translate(100, 48)\">\n      <!-- Sisi Depan -->\n      <rect x=\"0\" y=\"22\" width=\"130\" height=\"60\" fill=\"#f3e8ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Atas -->\n      <polygon points=\"0,22 40,0 170,0 130,22\" fill=\"#e9d5ff\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      <!-- Sisi Kanan -->\n      <polygon points=\"130,22 170,0 170,60 130,82\" fill=\"#d8b4fe\" stroke=\"#9333ea\" stroke-width=\"2\"/>\n      \n      <!-- Label Dimensi Nyata Sesuai Soal -->\n      <!-- Panjang (Depan Bawah) -->\n      <text x=\"65\" y=\"98\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#6b21a8\">p = 12 10</text>\n      <!-- Lebar (Samping Atas) -->\n      <text x=\"160\" y=\"10\" font-size=\"11\" font-weight=\"bold\" fill=\"#6b21a8\">l = cm 10</text>\n      <!-- Tinggi (Tegak Kanan) -->\n      <text x=\"175\" y=\"55\" font-size=\"12\" font-weight=\"bold\" fill=\"#dc2626\">t = ?</text>\n      \n      <text x=\"65\" y=\"56\" text-anchor=\"middle\" font-size=\"11\" font-weight=\"bold\" fill=\"#047857\">V = 720 10³</text>\n    </g>\n  </svg>"
   },
   {
     "ID_SOAL": "PRIO-REV-0994",
@@ -18071,7 +18886,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "Kenaikan Rp30.000, sehingga harga baru Rp180.000.",
     "DIAGNOSA": "Kesalahan Umum: Tertukar antara nilai potongan harga (diskon) dengan harga akhir yang harus dibayar setelah diskon.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0995",
@@ -18089,7 +18905,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "2,5 jam × 72 km/jam = 180 km.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0996",
@@ -18107,7 +18924,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Perempuan = 4/9 × 36 = 16.",
     "DIAGNOSA": "Kesalahan Umum: Membagi total nilai hanya dengan salah satu angka perbandingan, bukan dengan jumlah total bagian rasio.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0997",
@@ -18125,7 +18943,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "B",
     "PEMBAHASAN": "Ada tiga hasil genap dari enam kemungkinan.",
     "DIAGNOSA": "Perhatikan konsep dasar materi, lakukan perhitungan bertahap, dan cermati informasi pada stimulus.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0998",
@@ -18143,7 +18962,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "A",
     "PEMBAHASAN": "3/5 × 250 = 150, dan 25% × 120 = 30.",
     "DIAGNOSA": "Kesalahan Umum: Menjumlahkan penyebut secara langsung tanpa menyamakan penyebut dengan KPK, atau lupa menyederhanakan.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-0999",
@@ -18161,7 +18981,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "D",
     "PEMBAHASAN": "6 × 250.000 cm = 1.500.000 cm = 15 km.",
     "DIAGNOSA": "Kesalahan Umum: Lupa konversi satuan panjang (ingat 1 km = 100.000 cm; 1 m = 100 cm).",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   },
   {
     "ID_SOAL": "PRIO-REV-1000",
@@ -18179,7 +19000,8 @@ const QUESTIONS_SEED = [
     "KUNCI": "C",
     "PEMBAHASAN": "Jumlah 450; setelah dikurangi 90 menjadi 360, bagi 5 = 72.",
     "DIAGNOSA": "Kesalahan Umum: Mengira rata-rata adalah nilai yang sering muncul (modus), atau salah menghitung total data.",
-    "STATUS": "AKTIF"
+    "STATUS": "AKTIF",
+    "STIMULUS_GAMBAR": null
   }
 ];
 
