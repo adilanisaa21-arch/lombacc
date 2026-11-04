@@ -211,7 +211,9 @@
     .summary-card-header{display:flex;align-items:flex-start;gap:14px;margin-bottom:12px}
     .summary-card-icon{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-size:24px;flex-shrink:0}
     .summary-card.mtk .summary-card-icon{background:#eff6ff}
+    .summary-card.ipa .summary-card-icon{background:#ecfdf5}
     .summary-card.ipas .summary-card-icon{background:#ecfdf5}
+    .summary-card.ips .summary-card-icon{background:#fef3c7}
     .summary-card h3{margin:0;font-size:16.5px;font-weight:800;color:var(--navy);line-height:1.35}
     .summary-category{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
     .summary-ringkasan{font-size:13px;color:#334155;line-height:1.6;margin-bottom:14px}
@@ -331,7 +333,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <!-- Data Soal Offline-First & Seed -->
   <script src="data_questions.js"></script>
-  <!-- Data Rangkuman Materi Lengkap MTK & IPAS Kelas 4 - 6 -->
+  <!-- Data Rangkuman Materi Lengkap Matematika, IPA, & IPS Kelas 4 - 6 -->
   <script src="data_rangkuman.js"></script>
 </head>
 <body>
@@ -1421,7 +1423,7 @@
           <div>
             <div class="eyebrow">Selamat datang, Pejuang Olimpiade MIPAS!</div>
             <h1>Berpikir Cepat.<br>Menjawab Tepat. Jadi Juara!</h1>
-            <p>Platform latihan Matematika dan IPAS (IPA & IPS) interaktif SD Kelas 4–6, kini bertenaga Vercel & Supabase Cloud.</p>
+            <p>Platform latihan Matematika, IPA, dan IPS interaktif SD Kelas 4–6, kini bertenaga Vercel & Supabase Cloud.</p>
             <div class="btn-row">
               <button class="btn gold" data-action="navigate" data-page="summary">📖 Buka Rangkuman Materi</button>
               <button class="btn secondary" data-action="navigate" data-page="practice" style="background:rgba(255,255,255,.2);color:#fff;border-color:rgba(255,255,255,.3)">🚀 Mulai Latihan</button>
@@ -1435,8 +1437,8 @@
           ${[
             ['📚', 'Total Soal Aktif', S.boot?.totalQuestions || 0],
             ['🔢', 'Matematika (MTK)', c.MATEMATIKA || 0],
-            ['🌿', 'IPA', c.IPA || 0],
-            ['🌏', 'IPS', c.IPS || 0]
+            ['🔬', 'IPA (Sains)', c.IPA || 0],
+            ['🌏', 'IPS (Sosial)', c.IPS || 0]
           ].map(([ico, t, n]) => card(`
             <div class="stat">
               <div class="stat-icon">${ico}</div>
@@ -1447,7 +1449,7 @@
 
         ${heading('Pilih Arena Pembelajaran', 'Bersiap menghadapi latihan mandiri, olimpiade beregu, hingga babak final ber-buzzer.')}
         <div class="grid cols-4">
-          ${modeCard('📖', 'Rangkuman Materi', 'Kumpulan materi MTK & IPAS lengkap Kelas 4–6 dengan rumus cepat dan konsep penting.', 'summary')}
+          ${modeCard('📖', 'Rangkuman Materi', 'Kumpulan materi Matematika, IPA, & IPS lengkap Kelas 4–6 dengan rumus cepat dan konsep penting.', 'summary')}
           ${modeCard('🧠', 'Latihan Mandiri', 'Latihan per bagian (30 soal, 45 menit, 90 dtk/soal) untuk MTK, IPA, IPS & Campuran.', 'practice')}
           ${modeCard('📋', 'Review Hasil Belajar', 'Lihat penjelasan soal yang salah, diagnosa konsep, dan latih ulang soal salah.', 'reviews')}
           ${modeCard('🏆', 'Simulasi Lomba', 'Babak 30 soal, 45 menit, 10 MTK + 10 IPA + 10 IPS standar olimpiade.', 'exam')}
@@ -1456,7 +1458,7 @@
 
         <div class="top-spacer"></div>
         <div class="notice">
-          📌 <strong>Kurikulum Terpadu:</strong> Materi dan soal mencakup kurikulum Matematika & IPAS (Ilmu Pengetahuan Alam dan Sosial) untuk Kelas 4, 5, dan 6 sesuai silabus Olimpiade Sains & ANBK Nasional.
+          📌 <strong>Kurikulum Terpadu:</strong> Materi dan soal mencakup kurikulum Matematika, IPA, dan IPS untuk Kelas 4, 5, dan 6 sesuai silabus Kurikulum Merdeka, Olimpiade Sains & ANBK Nasional.
         </div>
       `;
     }
@@ -1473,7 +1475,7 @@
     }
 
     // =========================================================================
-    // VIEW: HALAMAN RANGKUMAN MATERI MTK & IPAS (KELAS 4 - 6) [BARU]
+    // VIEW: HALAMAN RANGKUMAN MATERI MATEMATIKA, IPA & IPS (KELAS 4 - 6) [BARU]
     // =========================================================================
     function summaryView() {
       const data = typeof RANGKUMAN_DATA !== 'undefined' ? RANGKUMAN_DATA : [];
@@ -1496,7 +1498,7 @@
       });
 
       return `
-        ${heading('Rangkuman Materi Terpadu MTK & IPAS', 'Ringkasan komprehensif konsep inti, rumus emas, poin hafalan, dan contoh soal untuk SD Kelas 4, 5, dan 6.')}
+        ${heading('Rangkuman Materi Terpadu Matematika, IPA & IPS', 'Ringkasan komprehensif konsep inti, rumus emas, poin hafalan, dan contoh soal untuk SD Kelas 4, 5, dan 6 sesuai Kurikulum Merdeka.')}
         
         <div class="card" style="margin-bottom:24px">
           <div class="summary-filter-bar">
@@ -1504,7 +1506,8 @@
               <span class="subtle" style="display:flex;align-items:center;margin-right:4px"><b>Mapel:</b></span>
               <button class="filter-btn ${!filter.mapel ? 'active' : ''}" data-action="setSummaryMapel" data-val="">Semua Mapel</button>
               <button class="filter-btn ${filter.mapel === 'MATEMATIKA' ? 'active' : ''}" data-action="setSummaryMapel" data-val="MATEMATIKA">🔢 Matematika (MTK)</button>
-              <button class="filter-btn ${filter.mapel === 'IPAS' ? 'active' : ''}" data-action="setSummaryMapel" data-val="IPAS">🌿 IPAS (IPA & IPS)</button>
+              <button class="filter-btn ${filter.mapel === 'IPA' ? 'active' : ''}" data-action="setSummaryMapel" data-val="IPA">🔬 IPA (Sains)</button>
+              <button class="filter-btn ${filter.mapel === 'IPS' ? 'active' : ''}" data-action="setSummaryMapel" data-val="IPS">🌏 IPS (Sosial)</button>
             </div>
             <div class="filter-pills">
               <span class="subtle" style="display:flex;align-items:center;margin-right:4px"><b>Tingkat:</b></span>
@@ -1519,7 +1522,7 @@
             </div>
           </div>
           <div class="btn-row" style="justify-content:space-between">
-            <span class="subtle">Menampilkan <b>${filtered.length}</b> bab materi pembelajaran</span>
+            <span class="subtle">Menampilkan <b>${filtered.length}</b> modul materi pembelajaran</span>
             <button class="btn ghost sm" data-action="print">🖨️ Cetak Lembar Rangkuman</button>
           </div>
         </div>
@@ -1541,17 +1544,22 @@
 
     function summaryCardHtml(item) {
       const isMtk = item.mapel === 'MATEMATIKA';
+      const isIpa = item.mapel === 'IPA';
+      const isIps = item.mapel === 'IPS';
       const showAnswer = !!S.summaryOpenAnswers[item.id];
+      const cardClass = isMtk ? 'mtk' : (isIpa ? 'ipa' : 'ips');
+      const icon = item.icon || (isMtk ? '🔢' : (isIpa ? '🔬' : '🌏'));
+      const pillColor = isMtk ? 'blue' : (isIpa ? 'green' : 'gold');
 
       return `
-        <article class="summary-card ${isMtk ? 'mtk' : 'ipas'}">
+        <article class="summary-card ${cardClass}">
           <div class="summary-card-header">
-            <div class="summary-card-icon">${item.icon || (isMtk ? '🔢' : '🌿')}</div>
+            <div class="summary-card-icon">${icon}</div>
             <div style="flex:1">
               <div class="summary-category">${esc(item.kategori)}</div>
               <h3>${esc(item.judul)}</h3>
               <div style="margin-top:5px;display:flex;gap:6px;flex-wrap:wrap">
-                <span class="pill ${isMtk ? 'blue' : 'green'}">${esc(item.mapel)}</span>
+                <span class="pill ${pillColor}">${esc(item.mapel)}</span>
                 <span class="pill gold">Kelas ${item.kelas}</span>
               </div>
             </div>
@@ -1607,7 +1615,7 @@
 
           <div class="summary-card-foot">
             <span class="subtle" style="font-size:11.5px">SD Kelas ${item.kelas}</span>
-            <button class="btn secondary sm" data-action="practiceFromSummary" data-mapel="${item.mapel === 'IPAS' ? 'IPA' : 'MATEMATIKA'}" data-kelas="${item.kelas}">
+            <button class="btn secondary sm" data-action="practiceFromSummary" data-mapel="${item.mapel}" data-kelas="${item.kelas}">
               🎯 Latih Soal Terkait →
             </button>
           </div>
@@ -2618,7 +2626,7 @@
 
         case 'practiceFromSummary': {
           const mapel = el.dataset.mapel;
-          S.practiceCategory = mapel === 'MATEMATIKA' ? 'MATEMATIKA' : (mapel === 'IPA' ? 'IPA' : 'CAMPURAN');
+          S.practiceCategory = (mapel === 'MATEMATIKA' || mapel === 'IPA' || mapel === 'IPS') ? mapel : 'CAMPURAN';
           await navigate('practice');
           break;
         }
