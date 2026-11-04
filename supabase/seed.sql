@@ -4,66 +4,66 @@
 
 INSERT INTO cc_questions (id, mapel, kelas, topik, babak, level, tipe, pertanyaan, opsi_a, opsi_b, opsi_c, opsi_d, kunci, pembahasan, status)
 VALUES
-('SEED-MATEMATIKA4-01', 'MATEMATIKA', 4, 'Bilangan', 'PENYISIHAN', 'MUDAH', 'PG', 'Nilai angka 7 pada bilangan 47.285 adalah ...', '7.000', '700', '70', '70.000', 'A', 'Angka 7 menempati nilai tempat ribuan.', 'AKTIF'),
-('SEED-MATEMATIKA4-02', 'MATEMATIKA', 4, 'Penjumlahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil 2.475 + 1.386 adalah ...', '3.761', '3.851', '4.861', '3.861', 'D', 'Jumlahkan satuan sampai ribuan dengan teknik menyimpan.', 'AKTIF'),
-('SEED-MATEMATIKA4-03', 'MATEMATIKA', 4, 'Pengurangan', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil 8.000 - 2.675 adalah ...', '6.325', '5.225', '5.325', '5.425', 'C', '8.000 dikurangi 2.675 sama dengan 5.325.', 'AKTIF'),
-('SEED-MATEMATIKA4-04', 'MATEMATIKA', 4, 'Perkalian', 'PENYISIHAN', 'MUDAH', 'PG', '24 × 15 = ...', '340', '360', '240', '390', 'B', '24 × (10 + 5) = 240 + 120 = 360.', 'AKTIF'),
-('SEED-MATEMATIKA4-05', 'MATEMATIKA', 4, 'Pembagian', 'PENYISIHAN', 'MUDAH', 'PG', '864 : 12 = ...', '72', '62', '82', '74', 'A', '12 × 72 = 864.', 'AKTIF'),
+('SEED-MATEMATIKA4-01', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Nilai angka 7 pada bilangan 47.285 adalah ...', '7.000', '700', '70', '70.000', 'A', 'Angka 7 menempati nilai tempat ribuan.', 'AKTIF'),
+('SEED-MATEMATIKA4-02', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil 2.475 + 1.386 adalah ...', '3.761', '3.851', '4.861', '3.861', 'D', 'Jumlahkan satuan sampai ribuan dengan teknik menyimpan.', 'AKTIF'),
+('SEED-MATEMATIKA4-03', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil 8.000 - 2.675 adalah ...', '6.325', '5.225', '5.325', '5.425', 'C', '8.000 dikurangi 2.675 sama dengan 5.325.', 'AKTIF'),
+('SEED-MATEMATIKA4-04', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', '24 × 15 = ...', '340', '360', '240', '390', 'B', '24 × (10 + 5) = 240 + 120 = 360.', 'AKTIF'),
+('SEED-MATEMATIKA4-05', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', '864 : 12 = ...', '72', '62', '82', '74', 'A', '12 × 72 = 864.', 'AKTIF'),
 ('SEED-MATEMATIKA4-06', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan yang senilai dengan 2/3 adalah ...', '3/6', '2/6', '4/9', '4/6', 'D', 'Pembilang dan penyebut 2/3 dikalikan dua menjadi 4/6.', 'AKTIF'),
 ('SEED-MATEMATIKA4-07', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Di antara 3/8 dan 5/8, pecahan yang lebih besar adalah ...', '1/8', '2/8', '5/8', '3/8', 'C', 'Penyebut sama; pembilang lebih besar berarti nilai lebih besar.', 'AKTIF'),
 ('SEED-MATEMATIKA4-08', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'MUDAH', 'PG', '3 km 250 m sama dengan ... meter.', '32.500', '3.250', '325', '3.025', 'B', '3 km = 3.000 m, ditambah 250 m.', 'AKTIF'),
-('SEED-MATEMATIKA4-09', 'MATEMATIKA', 4, 'Kelipatan', 'SEMIFINAL', 'SEDANG', 'PG', 'Bilangan kelipatan 6 yang terletak antara 20 dan 25 adalah ...', '24', '21', '22', '23', 'A', '6 × 4 = 24.', 'AKTIF'),
-('SEED-MATEMATIKA4-10', 'MATEMATIKA', 4, 'Faktor', 'SEMIFINAL', 'SEDANG', 'PG', 'Faktor dari bilangan 18 yang merupakan bilangan prima adalah ...', '2 dan 9', '3 dan 6', '1 dan 18', '2 dan 3', 'D', 'Faktor prima 18 adalah 2 dan 3.', 'AKTIF'),
-('SEED-MATEMATIKA4-11', 'MATEMATIKA', 4, 'Keliling', 'SEMIFINAL', 'SEDANG', 'PG', 'Persegi dengan sisi 13 cm memiliki keliling ... cm.', '39', '169', '52', '26', 'C', 'Keliling persegi = 4 × 13 = 52 cm.', 'AKTIF'),
-('SEED-MATEMATIKA4-12', 'MATEMATIKA', 4, 'Luas', 'SEMIFINAL', 'SEDANG', 'PG', 'Persegi panjang panjang 18 cm dan lebar 7 cm mempunyai luas ... cm².', '112', '126', '50', '25', 'B', 'Luas persegi panjang = 18 × 7 = 126 cm².', 'AKTIF'),
-('SEED-MATEMATIKA4-13', 'MATEMATIKA', 4, 'Waktu', 'SEMIFINAL', 'SEDANG', 'PG', 'Film dimulai pukul 08.35 dan selesai pukul 10.10. Lama film ... menit.', '95', '85', '105', '75', 'A', 'Dari 08.35 ke 09.35 satu jam, lalu 35 menit.', 'AKTIF'),
-('SEED-MATEMATIKA4-14', 'MATEMATIKA', 4, 'Data', 'SEMIFINAL', 'SEDANG', 'PG', 'Data banyak buku: 8, 12, 10, dan 14. Jumlah seluruh buku adalah ...', '42', '46', '48', '44', 'D', '8 + 12 + 10 + 14 = 44.', 'AKTIF'),
-('SEED-MATEMATIKA4-15', 'MATEMATIKA', 4, 'Operasi campuran', 'FINAL_WAJIB', 'SULIT', 'PG', 'Nilai 120 - (8 × 9) + 15 adalah ...', '57', '135', '63', '48', 'C', 'Kerjakan perkalian dulu: 120 - 72 + 15 = 63.', 'AKTIF'),
-('SEED-MATEMATIKA4-16', 'MATEMATIKA', 4, 'Soal cerita', 'FINAL_WAJIB', 'SULIT', 'PG', 'Tiga kelas mengumpulkan masing-masing 125, 138, dan 147 botol. Jika 95 botol didaur ulang, sisanya ... botol.', '325', '315', '410', '305', 'B', 'Jumlah 410, lalu kurangi 95 menjadi 315.', 'AKTIF'),
-('SEED-MATEMATIKA4-17', 'MATEMATIKA', 4, 'Luas', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sebuah taman berbentuk persegi berkeliling 64 m. Luas taman adalah ... m².', '256', '128', '64', '1.024', 'A', 'Sisi = 64 : 4 = 16 m; luas = 16 × 16 = 256 m².', 'AKTIF'),
+('SEED-MATEMATIKA4-09', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'SEMIFINAL', 'SEDANG', 'PG', 'Bilangan kelipatan 6 yang terletak antara 20 dan 25 adalah ...', '24', '21', '22', '23', 'A', '6 × 4 = 24.', 'AKTIF'),
+('SEED-MATEMATIKA4-10', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'SEMIFINAL', 'SEDANG', 'PG', 'Faktor dari bilangan 18 yang merupakan bilangan prima adalah ...', '2 dan 9', '3 dan 6', '1 dan 18', '2 dan 3', 'D', 'Faktor prima 18 adalah 2 dan 3.', 'AKTIF'),
+('SEED-MATEMATIKA4-11', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'SEMIFINAL', 'SEDANG', 'PG', 'Persegi dengan sisi 13 cm memiliki keliling ... cm.', '39', '169', '52', '26', 'C', 'Keliling persegi = 4 × 13 = 52 cm.', 'AKTIF'),
+('SEED-MATEMATIKA4-12', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'SEMIFINAL', 'SEDANG', 'PG', 'Persegi panjang panjang 18 cm dan lebar 7 cm mempunyai luas ... cm².', '112', '126', '50', '25', 'B', 'Luas persegi panjang = 18 × 7 = 126 cm².', 'AKTIF'),
+('SEED-MATEMATIKA4-13', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Film dimulai pukul 08.35 dan selesai pukul 10.10. Lama film ... menit.', '95', '85', '105', '75', 'A', 'Dari 08.35 ke 09.35 satu jam, lalu 35 menit.', 'AKTIF'),
+('SEED-MATEMATIKA4-14', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Data banyak buku: 8, 12, 10, dan 14. Jumlah seluruh buku adalah ...', '42', '46', '48', '44', 'D', '8 + 12 + 10 + 14 = 44.', 'AKTIF'),
+('SEED-MATEMATIKA4-15', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'FINAL_WAJIB', 'SULIT', 'PG', 'Nilai 120 - (8 × 9) + 15 adalah ...', '57', '135', '63', '48', 'C', 'Kerjakan perkalian dulu: 120 - 72 + 15 = 63.', 'AKTIF'),
+('SEED-MATEMATIKA4-16', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'FINAL_WAJIB', 'SULIT', 'PG', 'Tiga kelas mengumpulkan masing-masing 125, 138, dan 147 botol. Jika 95 botol didaur ulang, sisanya ... botol.', '325', '315', '410', '305', 'B', 'Jumlah 410, lalu kurangi 95 menjadi 315.', 'AKTIF'),
+('SEED-MATEMATIKA4-17', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sebuah taman berbentuk persegi berkeliling 64 m. Luas taman adalah ... m².', '256', '128', '64', '1.024', 'A', 'Sisi = 64 : 4 = 16 m; luas = 16 × 16 = 256 m².', 'AKTIF'),
 ('SEED-MATEMATIKA4-18', 'MATEMATIKA', 4, 'Pecahan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Dina memakan 2/8 kue dan Rafi 3/8 kue. Bagian kue yang tersisa adalah ...', '5/8', '2/8', '1/8', '3/8', 'D', 'Sisa = 8/8 - 2/8 - 3/8 = 3/8.', 'AKTIF'),
-('SEED-MATEMATIKA4-19', 'MATEMATIKA', 4, 'Penalaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Suatu bilangan dibagi 7 menghasilkan 36 sisa 4. Bilangan tersebut adalah ...', '260', '284', '256', '252', 'C', 'Bilangan = 7 × 36 + 4 = 256.', 'AKTIF'),
-('SEED-MATEMATIKA4-20', 'MATEMATIKA', 4, 'Pola bilangan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Pola 3, 7, 15, 31, ... dilanjutkan dengan bilangan ...', '65', '63', '47', '61', 'B', 'Setiap suku = suku sebelumnya × 2 + 1.', 'AKTIF'),
-('SEED-MATEMATIKA5-01', 'MATEMATIKA', 5, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '1/4 + 2/4 = ...', '3/4', '3/8', '1/2', '2/4', 'A', 'Penyebut sama, sehingga pembilang dijumlahkan.', 'AKTIF'),
-('SEED-MATEMATIKA5-02', 'MATEMATIKA', 5, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '5/6 - 1/3 = ...', '2/3', '4/3', '1/3', '1/2', 'D', '1/3 = 2/6, jadi 5/6 - 2/6 = 3/6.', 'AKTIF'),
-('SEED-MATEMATIKA5-03', 'MATEMATIKA', 5, 'Desimal', 'PENYISIHAN', 'MUDAH', 'PG', '0,75 sama dengan pecahan sederhana ...', '1/4', '2/3', '3/4', '7/5', 'C', '0,75 = 75/100 = 3/4.', 'AKTIF'),
-('SEED-MATEMATIKA5-04', 'MATEMATIKA', 5, 'Persen', 'PENYISIHAN', 'MUDAH', 'PG', '25% dari 240 adalah ...', '90', '60', '50', '80', 'B', '25% adalah seperempat, jadi 240 : 4 = 60.', 'AKTIF'),
-('SEED-MATEMATIKA5-05', 'MATEMATIKA', 5, 'FPB', 'PENYISIHAN', 'MUDAH', 'PG', 'FPB dari 24 dan 36 adalah ...', '12', '6', '18', '8', 'A', 'Faktor bersama terbesar 24 dan 36 adalah 12.', 'AKTIF'),
-('SEED-MATEMATIKA5-06', 'MATEMATIKA', 5, 'KPK', 'PENYISIHAN', 'MUDAH', 'PG', 'KPK dari 8 dan 12 adalah ...', '48', '16', '36', '24', 'D', 'Kelipatan persekutuan terkecil 8 dan 12 ialah 24.', 'AKTIF'),
-('SEED-MATEMATIKA5-07', 'MATEMATIKA', 5, 'Volume', 'PENYISIHAN', 'MUDAH', 'PG', 'Kubus bersisi 6 cm memiliki volume ... cm³.', '72', '126', '216', '36', 'C', 'Volume kubus = 6 × 6 × 6 = 216 cm³.', 'AKTIF'),
-('SEED-MATEMATIKA5-08', 'MATEMATIKA', 5, 'Pengukuran', 'PENYISIHAN', 'MUDAH', 'PG', '2,5 liter sama dengan ... mililiter.', '2.050', '2.500', '250', '25.000', 'B', '1 liter = 1.000 mL.', 'AKTIF'),
-('SEED-MATEMATIKA5-09', 'MATEMATIKA', 5, 'Pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '2/3 × 3/5 = ...', '2/5', '6/8', '5/8', '1/5', 'A', 'Pembilang dikalikan pembilang, penyebut dikalikan penyebut, lalu sederhanakan 6/15.', 'AKTIF'),
-('SEED-MATEMATIKA5-10', 'MATEMATIKA', 5, 'Pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '3/4 : 1/2 = ...', '3/8', '2/3', '1/4', '1 1/2', 'D', '3/4 × 2/1 = 6/4 = 1 1/2.', 'AKTIF'),
-('SEED-MATEMATIKA5-11', 'MATEMATIKA', 5, 'Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada peta skala 1:100.000, jarak dua lokasi 4 cm. Jarak sebenarnya ... km.', '400', '0,4', '4', '40', 'C', '4 × 100.000 cm = 400.000 cm = 4 km.', 'AKTIF'),
-('SEED-MATEMATIKA5-12', 'MATEMATIKA', 5, 'Perbandingan', 'SEMIFINAL', 'SEDANG', 'PG', 'Rasio kelereng merah dan biru 3:5. Jika total 40, jumlah merah adalah ...', '18', '15', '24', '25', 'B', 'Merah = 3/(3+5) × 40 = 15.', 'AKTIF'),
-('SEED-MATEMATIKA5-13', 'MATEMATIKA', 5, 'Volume', 'SEMIFINAL', 'SEDANG', 'PG', 'Balok berukuran 10 cm × 8 cm × 5 cm memiliki volume ... cm³.', '400', '230', '800', '300', 'A', 'Volume = panjang × lebar × tinggi = 10 × 8 × 5.', 'AKTIF'),
-('SEED-MATEMATIKA5-14', 'MATEMATIKA', 5, 'Rata-rata', 'SEMIFINAL', 'SEDANG', 'PG', 'Rata-rata nilai 70, 80, 90, 80, dan 80 adalah ...', '78', '82', '84', '80', 'D', 'Jumlah 400 dibagi 5 = 80.', 'AKTIF'),
-('SEED-MATEMATIKA5-15', 'MATEMATIKA', 5, 'Soal cerita', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sebuah barang seharga Rp80.000 mendapat diskon 15%. Harga setelah diskon adalah ...', 'Rp65.000', 'Rp12.000', 'Rp68.000', 'Rp72.000', 'C', 'Diskon Rp12.000; harga akhir Rp68.000.', 'AKTIF'),
-('SEED-MATEMATIKA5-16', 'MATEMATIKA', 5, 'Kecepatan', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sepeda menempuh 36 km dalam 3 jam. Kecepatan rata-ratanya ... km/jam.', '108', '12', '9', '18', 'B', '36 km dibagi 3 jam sama dengan 12 km/jam.', 'AKTIF'),
-('SEED-MATEMATIKA5-17', 'MATEMATIKA', 5, 'Pecahan campuran', 'FINAL_WAJIB', 'SULIT', 'PG', '1 2/3 + 2 1/6 = ...', '3 5/6', '3 3/6', '4 1/6', '3 1/2', 'A', '2/3 = 4/6, sehingga 1 4/6 + 2 1/6 = 3 5/6.', 'AKTIF'),
-('SEED-MATEMATIKA5-18', 'MATEMATIKA', 5, 'Penalaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Dua bel berbunyi tiap 12 dan 18 menit. Jika bersama pada 08.00, bersama lagi pukul ...', '08.24', '08.30', '08.48', '08.36', 'D', 'KPK dari 12 dan 18 ialah 36 menit.', 'AKTIF'),
-('SEED-MATEMATIKA5-19', 'MATEMATIKA', 5, 'Data', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Rata-rata empat bilangan adalah 25. Tiga bilangan pertama 18, 27, 24. Bilangan keempat ...', '29', '33', '31', '25', 'C', 'Jumlah seluruhnya 4 × 25 = 100; tiga bilangan berjumlah 69.', 'AKTIF'),
-('SEED-MATEMATIKA5-20', 'MATEMATIKA', 5, 'Penalaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Sebuah bak terisi 3/5. Setelah ditambah 24 liter, penuh. Kapasitas bak ... liter.', '72', '60', '40', '48', 'B', '24 liter merupakan 2/5 kapasitas, jadi kapasitas 24 × 5/2 = 60 liter.', 'AKTIF'),
-('SEED-MATEMATIKA6-01', 'MATEMATIKA', 6, 'Bilangan bulat', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil -12 + 25 - 8 adalah ...', '5', '-5', '13', '21', 'A', '-12 + 25 = 13, lalu 13 - 8 = 5.', 'AKTIF'),
-('SEED-MATEMATIKA6-02', 'MATEMATIKA', 6, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '0,375 sebagai pecahan paling sederhana adalah ...', '3/5', '5/8', '7/20', '3/8', 'D', '375/1000 disederhanakan dengan membagi 125 menjadi 3/8.', 'AKTIF'),
-('SEED-MATEMATIKA6-03', 'MATEMATIKA', 6, 'Persen', 'PENYISIHAN', 'MUDAH', 'PG', '40% dari suatu bilangan adalah 96. Bilangan itu ...', '260', '384', '240', '200', 'C', 'Bilangan = 96 : 0,4 = 240.', 'AKTIF'),
-('SEED-MATEMATIKA6-04', 'MATEMATIKA', 6, 'Perbandingan', 'PENYISIHAN', 'MUDAH', 'PG', 'Rasio umur Ani dan Budi 4:7. Jika umur Ani 12 tahun, umur Budi ...', '28 tahun', '21 tahun', '18 tahun', '24 tahun', 'B', 'Satu bagian = 12 : 4 = 3 tahun; Budi = 7 × 3.', 'AKTIF'),
-('SEED-MATEMATIKA6-05', 'MATEMATIKA', 6, 'Lingkaran', 'PENYISIHAN', 'MUDAH', 'PG', 'Keliling lingkaran berdiameter 14 cm, dengan π = 22/7, adalah ...', '44 cm', '22 cm', '154 cm', '88 cm', 'A', 'Keliling = π × diameter = 22/7 × 14 = 44 cm.', 'AKTIF'),
-('SEED-MATEMATIKA6-06', 'MATEMATIKA', 6, 'Lingkaran', 'PENYISIHAN', 'MUDAH', 'PG', 'Luas lingkaran berjari-jari 7 cm, π = 22/7, adalah ...', '44 cm²', '49 cm²', '308 cm²', '154 cm²', 'D', 'Luas = πr² = 22/7 × 7 × 7 = 154 cm².', 'AKTIF'),
-('SEED-MATEMATIKA6-07', 'MATEMATIKA', 6, 'Data', 'PENYISIHAN', 'MUDAH', 'PG', 'Median dari 4, 9, 7, 12, 6 adalah ...', '9', '8', '7', '6', 'C', 'Urutkan data 4, 6, 7, 9, 12; nilai tengah 7.', 'AKTIF'),
-('SEED-MATEMATIKA6-08', 'MATEMATIKA', 6, 'Volume', 'PENYISIHAN', 'MUDAH', 'PG', 'Volume balok 720 cm³, panjang 12 cm dan lebar 10 cm. Tingginya ... cm.', '60', '6', '8', '5', 'B', 'Tinggi = 720 : (12 × 10) = 6 cm.', 'AKTIF'),
-('SEED-MATEMATIKA6-09', 'MATEMATIKA', 6, 'Persen', 'SEMIFINAL', 'SEDANG', 'PG', 'Harga Rp150.000 naik 20%. Harga baru menjadi ...', 'Rp180.000', 'Rp170.000', 'Rp175.000', 'Rp200.000', 'A', 'Kenaikan Rp30.000, sehingga harga baru Rp180.000.', 'AKTIF'),
-('SEED-MATEMATIKA6-10', 'MATEMATIKA', 6, 'Kecepatan', 'SEMIFINAL', 'SEDANG', 'PG', 'Mobil melaju 72 km/jam selama 2 jam 30 menit. Jaraknya ... km.', '144', '150', '216', '180', 'D', '2,5 jam × 72 km/jam = 180 km.', 'AKTIF'),
-('SEED-MATEMATIKA6-11', 'MATEMATIKA', 6, 'Perbandingan', 'SEMIFINAL', 'SEDANG', 'PG', 'Perbandingan siswa laki-laki dan perempuan 5:4. Jika total 36, perempuan ada ...', '15', '18', '16', '20', 'C', 'Perempuan = 4/9 × 36 = 16.', 'AKTIF'),
+('SEED-MATEMATIKA4-19', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Suatu bilangan dibagi 7 menghasilkan 36 sisa 4. Bilangan tersebut adalah ...', '260', '284', '256', '252', 'C', 'Bilangan = 7 × 36 + 4 = 256.', 'AKTIF'),
+('SEED-MATEMATIKA4-20', 'MATEMATIKA', 4, 'Pola Gambar dan Pola Bilangan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Pola 3, 7, 15, 31, ... dilanjutkan dengan bilangan ...', '65', '63', '47', '61', 'B', 'Setiap suku = suku sebelumnya × 2 + 1.', 'AKTIF'),
+('SEED-MATEMATIKA5-01', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '1/4 + 2/4 = ...', '3/4', '3/8', '1/2', '2/4', 'A', 'Penyebut sama, sehingga pembilang dijumlahkan.', 'AKTIF'),
+('SEED-MATEMATIKA5-02', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '5/6 - 1/3 = ...', '2/3', '4/3', '1/3', '1/2', 'D', '1/3 = 2/6, jadi 5/6 - 2/6 = 3/6.', 'AKTIF'),
+('SEED-MATEMATIKA5-03', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '0,75 sama dengan pecahan sederhana ...', '1/4', '2/3', '3/4', '7/5', 'C', '0,75 = 75/100 = 3/4.', 'AKTIF'),
+('SEED-MATEMATIKA5-04', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '25% dari 240 adalah ...', '90', '60', '50', '80', 'B', '25% adalah seperempat, jadi 240 : 4 = 60.', 'AKTIF'),
+('SEED-MATEMATIKA5-05', 'MATEMATIKA', 5, 'KPK dan FPB', 'PENYISIHAN', 'MUDAH', 'PG', 'FPB dari 24 dan 36 adalah ...', '12', '6', '18', '8', 'A', 'Faktor bersama terbesar 24 dan 36 adalah 12.', 'AKTIF'),
+('SEED-MATEMATIKA5-06', 'MATEMATIKA', 5, 'KPK dan FPB', 'PENYISIHAN', 'MUDAH', 'PG', 'KPK dari 8 dan 12 adalah ...', '48', '16', '36', '24', 'D', 'Kelipatan persekutuan terkecil 8 dan 12 ialah 24.', 'AKTIF'),
+('SEED-MATEMATIKA5-07', 'MATEMATIKA', 5, 'Volume Bangun Ruang', 'PENYISIHAN', 'MUDAH', 'PG', 'Kubus bersisi 6 cm memiliki volume ... cm³.', '72', '126', '216', '36', 'C', 'Volume kubus = 6 × 6 × 6 = 216 cm³.', 'AKTIF'),
+('SEED-MATEMATIKA5-08', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'MUDAH', 'PG', '2,5 liter sama dengan ... mililiter.', '2.050', '2.500', '250', '25.000', 'B', '1 liter = 1.000 mL.', 'AKTIF'),
+('SEED-MATEMATIKA5-09', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '2/3 × 3/5 = ...', '2/5', '6/8', '5/8', '1/5', 'A', 'Pembilang dikalikan pembilang, penyebut dikalikan penyebut, lalu sederhanakan 6/15.', 'AKTIF'),
+('SEED-MATEMATIKA5-10', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '3/4 : 1/2 = ...', '3/8', '2/3', '1/4', '1 1/2', 'D', '3/4 × 2/1 = 6/4 = 1 1/2.', 'AKTIF'),
+('SEED-MATEMATIKA5-11', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada peta skala 1:100.000, jarak dua lokasi 4 cm. Jarak sebenarnya ... km.', '400', '0,4', '4', '40', 'C', '4 × 100.000 cm = 400.000 cm = 4 km.', 'AKTIF'),
+('SEED-MATEMATIKA5-12', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', 'Rasio kelereng merah dan biru 3:5. Jika total 40, jumlah merah adalah ...', '18', '15', '24', '25', 'B', 'Merah = 3/(3+5) × 40 = 15.', 'AKTIF'),
+('SEED-MATEMATIKA5-13', 'MATEMATIKA', 5, 'Volume Bangun Ruang', 'SEMIFINAL', 'SEDANG', 'PG', 'Balok berukuran 10 cm × 8 cm × 5 cm memiliki volume ... cm³.', '400', '230', '800', '300', 'A', 'Volume = panjang × lebar × tinggi = 10 × 8 × 5.', 'AKTIF'),
+('SEED-MATEMATIKA5-14', 'MATEMATIKA', 5, 'Data dan Diagram', 'SEMIFINAL', 'SEDANG', 'PG', 'Rata-rata nilai 70, 80, 90, 80, dan 80 adalah ...', '78', '82', '84', '80', 'D', 'Jumlah 400 dibagi 5 = 80.', 'AKTIF'),
+('SEED-MATEMATIKA5-15', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sebuah barang seharga Rp80.000 mendapat diskon 15%. Harga setelah diskon adalah ...', 'Rp65.000', 'Rp12.000', 'Rp68.000', 'Rp72.000', 'C', 'Diskon Rp12.000; harga akhir Rp68.000.', 'AKTIF'),
+('SEED-MATEMATIKA5-16', 'MATEMATIKA', 5, 'Data dan Diagram', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sepeda menempuh 36 km dalam 3 jam. Kecepatan rata-ratanya ... km/jam.', '108', '12', '9', '18', 'B', '36 km dibagi 3 jam sama dengan 12 km/jam.', 'AKTIF'),
+('SEED-MATEMATIKA5-17', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'FINAL_WAJIB', 'SULIT', 'PG', '1 2/3 + 2 1/6 = ...', '3 5/6', '3 3/6', '4 1/6', '3 1/2', 'A', '2/3 = 4/6, sehingga 1 4/6 + 2 1/6 = 3 5/6.', 'AKTIF'),
+('SEED-MATEMATIKA5-18', 'MATEMATIKA', 5, 'KPK dan FPB', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Dua bel berbunyi tiap 12 dan 18 menit. Jika bersama pada 08.00, bersama lagi pukul ...', '08.24', '08.30', '08.48', '08.36', 'D', 'KPK dari 12 dan 18 ialah 36 menit.', 'AKTIF'),
+('SEED-MATEMATIKA5-19', 'MATEMATIKA', 5, 'Data dan Diagram', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Rata-rata empat bilangan adalah 25. Tiga bilangan pertama 18, 27, 24. Bilangan keempat ...', '29', '33', '31', '25', 'C', 'Jumlah seluruhnya 4 × 25 = 100; tiga bilangan berjumlah 69.', 'AKTIF'),
+('SEED-MATEMATIKA5-20', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Sebuah bak terisi 3/5. Setelah ditambah 24 liter, penuh. Kapasitas bak ... liter.', '72', '60', '40', '48', 'B', '24 liter merupakan 2/5 kapasitas, jadi kapasitas 24 × 5/2 = 60 liter.', 'AKTIF'),
+('SEED-MATEMATIKA6-01', 'MATEMATIKA', 6, 'Koordinat Kartesius', 'PENYISIHAN', 'MUDAH', 'PG', 'Titik A terletak pada 4 satuan ke kanan (sumbu X) dan 3 satuan ke atas (sumbu Y) dari titik pusat (0,0). Koordinat titik A adalah ...', '(4, 3)', '(3, 4)', '(-4, 3)', '(4, -3)', 'A', 'Format penulisan koordinat Kartesius selalu mendahulukan sumbu mendatar X, baru sumbu tegak Y: (x, y). Ke kanan artinya x = 4, ke atas artinya y = 3. Maka koordinat titik A adalah (4, 3).', 'AKTIF'),
+('SEED-MATEMATIKA6-02', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'PENYISIHAN', 'MUDAH', 'PG', '0,375 sebagai pecahan paling sederhana adalah ...', '3/5', '5/8', '7/20', '3/8', 'D', '375/1000 disederhanakan dengan membagi 125 menjadi 3/8.', 'AKTIF'),
+('SEED-MATEMATIKA6-03', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'PENYISIHAN', 'MUDAH', 'PG', '40% dari suatu bilangan adalah 96. Bilangan itu ...', '260', '384', '240', '200', 'C', 'Bilangan = 96 : 0,4 = 240.', 'AKTIF'),
+('SEED-MATEMATIKA6-04', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'MUDAH', 'PG', 'Rasio umur Ani dan Budi 4:7. Jika umur Ani 12 tahun, umur Budi ...', '28 tahun', '21 tahun', '18 tahun', '24 tahun', 'B', 'Satu bagian = 12 : 4 = 3 tahun; Budi = 7 × 3.', 'AKTIF'),
+('SEED-MATEMATIKA6-05', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'PENYISIHAN', 'MUDAH', 'PG', 'Keliling lingkaran berdiameter 14 cm, dengan π = 22/7, adalah ...', '44 cm', '22 cm', '154 cm', '88 cm', 'A', 'Keliling = π × diameter = 22/7 × 14 = 44 cm.', 'AKTIF'),
+('SEED-MATEMATIKA6-06', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'PENYISIHAN', 'MUDAH', 'PG', 'Luas lingkaran berjari-jari 7 cm, π = 22/7, adalah ...', '44 cm²', '49 cm²', '308 cm²', '154 cm²', 'D', 'Luas = πr² = 22/7 × 7 × 7 = 154 cm².', 'AKTIF'),
+('SEED-MATEMATIKA6-07', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'PENYISIHAN', 'MUDAH', 'PG', 'Median dari 4, 9, 7, 12, 6 adalah ...', '9', '8', '7', '6', 'C', 'Urutkan data 4, 6, 7, 9, 12; nilai tengah 7.', 'AKTIF'),
+('SEED-MATEMATIKA6-08', 'MATEMATIKA', 6, 'Kubus dan Balok (Luas Permukaan & Volume)', 'PENYISIHAN', 'MUDAH', 'PG', 'Volume balok 720 cm³, panjang 12 cm dan lebar 10 cm. Tingginya ... cm.', '60', '6', '8', '5', 'B', 'Tinggi = 720 : (12 × 10) = 6 cm.', 'AKTIF'),
+('SEED-MATEMATIKA6-09', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'SEMIFINAL', 'SEDANG', 'PG', 'Harga Rp150.000 naik 20%. Harga baru menjadi ...', 'Rp180.000', 'Rp170.000', 'Rp175.000', 'Rp200.000', 'A', 'Kenaikan Rp30.000, sehingga harga baru Rp180.000.', 'AKTIF'),
+('SEED-MATEMATIKA6-10', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'SEMIFINAL', 'SEDANG', 'PG', 'Mobil melaju 72 km/jam selama 2 jam 30 menit. Jaraknya ... km.', '144', '150', '216', '180', 'D', '2,5 jam × 72 km/jam = 180 km.', 'AKTIF'),
+('SEED-MATEMATIKA6-11', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Perbandingan siswa laki-laki dan perempuan 5:4. Jika total 36, perempuan ada ...', '15', '18', '16', '20', 'C', 'Perempuan = 4/9 × 36 = 16.', 'AKTIF'),
 ('SEED-MATEMATIKA6-12', 'MATEMATIKA', 6, 'Peluang', 'SEMIFINAL', 'SEDANG', 'PG', 'Dadu enam sisi dilempar. Peluang memperoleh bilangan genap adalah ...', '1/6', '1/2', '1/3', '2/3', 'B', 'Ada tiga hasil genap dari enam kemungkinan.', 'AKTIF'),
-('SEED-MATEMATIKA6-13', 'MATEMATIKA', 6, 'Operasi pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '3/5 dari 250 ditambah 25% dari 120 sama dengan ...', '180', '170', '190', '210', 'A', '3/5 × 250 = 150, dan 25% × 120 = 30.', 'AKTIF'),
-('SEED-MATEMATIKA6-14', 'MATEMATIKA', 6, 'Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Peta berskala 1:250.000 menunjukkan jarak 6 cm. Jarak sebenarnya ... km.', '1,5', '150', '25', '15', 'D', '6 × 250.000 cm = 1.500.000 cm = 15 km.', 'AKTIF'),
-('SEED-MATEMATIKA6-15', 'MATEMATIKA', 6, 'Data', 'FINAL_WAJIB', 'SULIT', 'PG', 'Rata-rata enam nilai adalah 75. Jika satu nilai 90 dikeluarkan, rata-rata sisanya ...', '74', '78', '72', '70', 'C', 'Jumlah 450; setelah dikurangi 90 menjadi 360, bagi 5 = 72.', 'AKTIF'),
-('SEED-MATEMATIKA6-16', 'MATEMATIKA', 6, 'Geometri', 'FINAL_WAJIB', 'SULIT', 'PG', 'Luas gabungan dua persegi tanpa tumpang tindih dengan sisi 8 cm dan 5 cm adalah ... cm².', '169', '89', '64', '104', 'B', 'Luas = 8² + 5² = 64 + 25 = 89 cm².', 'AKTIF'),
-('SEED-MATEMATIKA6-17', 'MATEMATIKA', 6, 'Penalaran', 'FINAL_WAJIB', 'SULIT', 'PG', 'Tangki berisi 120 liter. Setiap menit keluar 8 liter dan masuk 3 liter. Setelah 15 menit sisa ... liter.', '45', '75', '60', '30', 'A', 'Berkurang bersih 5 liter tiap menit; 120 - 15 × 5 = 45.', 'AKTIF'),
-('SEED-MATEMATIKA6-18', 'MATEMATIKA', 6, 'Penalaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Nilai suatu bilangan dinaikkan 25% menjadi 200. Nilai mula-mula ...', '150', '175', '180', '160', 'D', '200 adalah 125% nilai semula, jadi 200 : 1,25 = 160.', 'AKTIF'),
-('SEED-MATEMATIKA6-19', 'MATEMATIKA', 6, 'Volume', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Akuarium 50 cm × 30 cm × 40 cm terisi 3/4. Volume airnya ... liter.', '40', '30', '45', '60', 'C', 'Volume penuh 60.000 cm³ = 60 liter; 3/4 × 60 = 45 liter.', 'AKTIF'),
-('SEED-MATEMATIKA6-20', 'MATEMATIKA', 6, 'Penalaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Rata-rata empat bilangan 18. Jika ditambah satu bilangan, rata-rata menjadi 20. Bilangan tambahan ...', '30', '28', '24', '26', 'B', 'Jumlah awal 72; jumlah baru 100; selisih 28.', 'AKTIF'),
+('SEED-MATEMATIKA6-13', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'SEMIFINAL', 'SEDANG', 'PG', '3/5 dari 250 ditambah 25% dari 120 sama dengan ...', '180', '170', '190', '210', 'A', '3/5 × 250 = 150, dan 25% × 120 = 30.', 'AKTIF'),
+('SEED-MATEMATIKA6-14', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Peta berskala 1:250.000 menunjukkan jarak 6 cm. Jarak sebenarnya ... km.', '1,5', '150', '25', '15', 'D', '6 × 250.000 cm = 1.500.000 cm = 15 km.', 'AKTIF'),
+('SEED-MATEMATIKA6-15', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'SULIT', 'PG', 'Rata-rata enam nilai adalah 75. Jika satu nilai 90 dikeluarkan, rata-rata sisanya ...', '74', '78', '72', '70', 'C', 'Jumlah 450; setelah dikurangi 90 menjadi 360, bagi 5 = 72.', 'AKTIF'),
+('SEED-MATEMATIKA6-16', 'MATEMATIKA', 6, 'Kubus dan Balok (Luas Permukaan & Volume)', 'FINAL_WAJIB', 'SULIT', 'PG', 'Luas gabungan dua persegi tanpa tumpang tindih dengan sisi 8 cm dan 5 cm adalah ... cm².', '169', '89', '64', '104', 'B', 'Luas = 8² + 5² = 64 + 25 = 89 cm².', 'AKTIF'),
+('SEED-MATEMATIKA6-17', 'MATEMATIKA', 6, 'Debit', 'FINAL_WAJIB', 'SULIT', 'PG', 'Tangki berisi 120 liter. Setiap menit keluar 8 liter dan masuk 3 liter. Setelah 15 menit sisa ... liter.', '45', '75', '60', '30', 'A', 'Berkurang bersih 5 liter tiap menit; 120 - 15 × 5 = 45.', 'AKTIF'),
+('SEED-MATEMATIKA6-18', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Nilai suatu bilangan dinaikkan 25% menjadi 200. Nilai mula-mula ...', '150', '175', '180', '160', 'D', '200 adalah 125% nilai semula, jadi 200 : 1,25 = 160.', 'AKTIF'),
+('SEED-MATEMATIKA6-19', 'MATEMATIKA', 6, 'Kubus dan Balok (Luas Permukaan & Volume)', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Akuarium 50 cm × 30 cm × 40 cm terisi 3/4. Volume airnya ... liter.', '40', '30', '45', '60', 'C', 'Volume penuh 60.000 cm³ = 60 liter; 3/4 × 60 = 45 liter.', 'AKTIF'),
+('SEED-MATEMATIKA6-20', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Rata-rata empat bilangan 18. Jika ditambah satu bilangan, rata-rata menjadi 20. Bilangan tambahan ...', '30', '28', '24', '26', 'B', 'Jumlah awal 72; jumlah baru 100; selisih 28.', 'AKTIF'),
 ('SEED-IPA4-01', 'IPA', 4, 'Bagian tumbuhan', 'PENYISIHAN', 'MUDAH', 'PG', 'Bagian tumbuhan yang menyerap air dan mineral dari tanah adalah ...', 'Akar', 'Daun', 'Bunga', 'Buah', 'A', 'Akar menyerap air dan zat mineral melalui rambut akar.', 'AKTIF'),
 ('SEED-IPA4-02', 'IPA', 4, 'Fotosintesis', 'PENYISIHAN', 'MUDAH', 'PG', 'Energi utama yang digunakan tumbuhan saat fotosintesis berasal dari ...', 'Angin', 'Bunyi', 'Listrik', 'Cahaya matahari', 'D', 'Fotosintesis memanfaatkan energi cahaya untuk membuat makanan.', 'AKTIF'),
 ('SEED-IPA4-03', 'IPA', 4, 'Wujud benda', 'PENYISIHAN', 'MUDAH', 'PG', 'Peristiwa es berubah menjadi air dinamakan ...', 'Menguap', 'Mengembun', 'Mencair', 'Membeku', 'C', 'Mencair adalah perubahan dari padat ke cair.', 'AKTIF'),
@@ -184,32 +184,32 @@ VALUES
 ('SEED-IPS6-18', 'IPS', 6, 'Geografi ekonomi', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Mengapa pembangunan jalan di wilayah terpencil dapat mengurangi kesenjangan?', 'Membuat semua daerah menjadi ibu kota', 'Menghilangkan seluruh risiko bencana', 'Menyamakan kondisi alam semua daerah', 'Mempermudah akses layanan dan pasar', 'D', 'Jalan membuka akses pendidikan, kesehatan, dan distribusi ekonomi.', 'AKTIF'),
 ('SEED-IPS6-19', 'IPS', 6, 'Penalaran sejarah', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Mengapa mempelajari lebih dari satu sumber sejarah penting?', 'Untuk menghapus bukti yang berbeda', 'Agar tidak perlu memeriksa tanggal', 'Untuk membandingkan informasi dan mengurangi bias', 'Agar semua cerita dianggap pasti benar', 'C', 'Sumber yang beragam membantu memeriksa kesesuaian dan konteks peristiwa.', 'AKTIF'),
 ('SEED-IPS6-20', 'IPS', 6, 'Penalaran sosial', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Jika suatu desa mengembangkan wisata budaya, langkah terbaik untuk menjaga manfaat jangka panjang adalah ...', 'Menutup semua usaha lokal', 'Melibatkan warga serta melestarikan budaya dan lingkungan', 'Mengabaikan penduduk setempat', 'Merusak situs sejarah', 'B', 'Wisata berkelanjutan memerlukan partisipasi masyarakat dan pelestarian.', 'AKTIF'),
-('TKA-MATEMATIKA4-01', 'MATEMATIKA', 4, 'Operasi hitung', 'UMUM', 'SEDANG', 'PG', 'Kelas IV mendapat 3 kotak pensil. Setiap kotak berisi 24 pensil. Sebanyak 17 pensil dibagikan. Berapa pensil tersisa?', '45', '55', '65', '72', 'B', '3 × 24 − 17 = 55 pensil.', 'AKTIF'),
-('TKA-MATEMATIKA4-02', 'MATEMATIKA', 4, 'Analisis data', 'UMUM', 'SEDANG', 'PG', 'Data buku yang dipinjam Senin sampai Kamis berturut-turut 12, 9, 15, dan 6. Jumlah seluruh buku yang dipinjam adalah ...', '36', '39', '42', '45', 'C', '12 + 9 + 15 + 6 = 42.', 'AKTIF'),
-('TKA-MATEMATIKA4-03', 'MATEMATIKA', 4, 'Satuan panjang', 'UMUM', 'SULIT', 'PGK', 'Pilih SEMUA pernyataan konversi panjang yang benar.', '2 meter = 200 cm', '1 kilometer = 100 meter', '3 meter = 300 cm', '500 cm = 50 meter', 'AC', '1 m = 100 cm dan 1 km = 1.000 m; yang benar A dan C.', 'AKTIF'),
-('TKA-MATEMATIKA4-04', 'MATEMATIKA', 4, 'Pecahan senilai', 'UMUM', 'SULIT', 'PGK', 'Perhatikan pecahan berikut. Pilih SEMUA pernyataan yang benar.', '1/2 senilai dengan 2/4', '3/6 senilai dengan 1/2', '2/3 lebih kecil daripada 1/3', '4/8 senilai dengan 3/4', 'AB', '1/2 = 2/4 = 3/6; 2/3 > 1/3, sedangkan 4/8 bukan 3/4.', 'AKTIF'),
-('TKA-MATEMATIKA4-05', 'MATEMATIKA', 4, 'Operasi bilangan', 'UMUM', 'HOTS', 'BS', 'Tentukan BENAR atau SALAH untuk setiap pernyataan operasi hitung.', '3.000 + 400 = 3.400', '800 − 250 = 650', '7 × 8 = 56', '63 : 9 = 7', 'BSBB', 'Hasil 800 − 250 adalah 550, bukan 650. Pernyataan lain benar.', 'AKTIF'),
-('TKA-MATEMATIKA4-06', 'MATEMATIKA', 4, 'Bangun datar', 'UMUM', 'HOTS', 'JODOH', 'Jodohkan bentuk dengan cirinya.
+('TKA-MATEMATIKA4-01', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'UMUM', 'SEDANG', 'PG', 'Kelas IV mendapat 3 kotak pensil. Setiap kotak berisi 24 pensil. Sebanyak 17 pensil dibagikan. Berapa pensil tersisa?', '45', '55', '65', '72', 'B', '3 × 24 − 17 = 55 pensil.', 'AKTIF'),
+('TKA-MATEMATIKA4-02', 'MATEMATIKA', 4, 'Pengukuran', 'UMUM', 'SEDANG', 'PG', 'Data buku yang dipinjam Senin sampai Kamis berturut-turut 12, 9, 15, dan 6. Jumlah seluruh buku yang dipinjam adalah ...', '36', '39', '42', '45', 'C', '12 + 9 + 15 + 6 = 42.', 'AKTIF'),
+('TKA-MATEMATIKA4-03', 'MATEMATIKA', 4, 'Pengukuran', 'UMUM', 'SULIT', 'PGK', 'Pilih SEMUA pernyataan konversi panjang yang benar.', '2 meter = 200 cm', '1 kilometer = 100 meter', '3 meter = 300 cm', '500 cm = 50 meter', 'AC', '1 m = 100 cm dan 1 km = 1.000 m; yang benar A dan C.', 'AKTIF'),
+('TKA-MATEMATIKA4-04', 'MATEMATIKA', 4, 'Pecahan', 'UMUM', 'SULIT', 'PGK', 'Perhatikan pecahan berikut. Pilih SEMUA pernyataan yang benar.', '1/2 senilai dengan 2/4', '3/6 senilai dengan 1/2', '2/3 lebih kecil daripada 1/3', '4/8 senilai dengan 3/4', 'AB', '1/2 = 2/4 = 3/6; 2/3 > 1/3, sedangkan 4/8 bukan 3/4.', 'AKTIF'),
+('TKA-MATEMATIKA4-05', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'UMUM', 'HOTS', 'BS', 'Tentukan BENAR atau SALAH untuk setiap pernyataan operasi hitung.', '3.000 + 400 = 3.400', '800 − 250 = 650', '7 × 8 = 56', '63 : 9 = 7', 'BSBB', 'Hasil 800 − 250 adalah 550, bukan 650. Pernyataan lain benar.', 'AKTIF'),
+('TKA-MATEMATIKA4-06', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'UMUM', 'HOTS', 'JODOH', 'Jodohkan bentuk dengan cirinya.
 1. Segitiga
 2. Persegi
 3. Persegi panjang
 4. Lingkaran', 'Memiliki empat sisi sama panjang', 'Tidak memiliki titik sudut', 'Memiliki tiga sisi', 'Dua pasang sisi berhadapan sama panjang', 'CADB', 'Segitiga→C, persegi→A, persegi panjang→D, lingkaran→B.', 'AKTIF'),
-('TKA-MATEMATIKA5-01', 'MATEMATIKA', 5, 'Pecahan', 'UMUM', 'SEDANG', 'PG', 'Di perpustakaan ada 24 buku sains. Sebanyak 3/4 buku sudah dibaca kelompok belajar. Berapa buku yang sudah dibaca?', '12', '16', '18', '20', 'C', '3/4 × 24 = 18 buku.', 'AKTIF'),
-('TKA-MATEMATIKA5-02', 'MATEMATIKA', 5, 'KPK', 'UMUM', 'SEDANG', 'PG', 'Dua bus berangkat bersama pukul 08.00. Bus A berangkat setiap 12 menit dan bus B setiap 18 menit. Keduanya berangkat bersama lagi pada pukul ...', '08.36', '08.24', '08.30', '08.48', 'A', 'KPK 12 dan 18 adalah 36 menit.', 'AKTIF'),
-('TKA-MATEMATIKA5-03', 'MATEMATIKA', 5, 'KPK dan FPB', 'UMUM', 'SULIT', 'PGK', 'Perhatikan bilangan 24 dan 36. Pilih SEMUA pernyataan yang benar.', 'FPB-nya adalah 12', 'KPK-nya adalah 72', '24 habis dibagi 6', '36 habis dibagi 8', 'ABC', 'FPB = 12, KPK = 72, dan 24 : 6 = 4; 36 tidak habis dibagi 8.', 'AKTIF'),
-('TKA-MATEMATIKA5-04', 'MATEMATIKA', 5, 'Desimal dan persen', 'UMUM', 'SULIT', 'PGK', 'Pilih SEMUA kesetaraan bilangan yang benar.', '2/5 = 4/10', '0,5 = 1/2', '25% = 1/5', '3/4 = 0,75', 'ABD', '2/5 = 0,4; 0,5 = 1/2; 25% = 1/4, bukan 1/5; 3/4 = 0,75.', 'AKTIF'),
+('TKA-MATEMATIKA5-01', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', 'Di perpustakaan ada 24 buku sains. Sebanyak 3/4 buku sudah dibaca kelompok belajar. Berapa buku yang sudah dibaca?', '12', '16', '18', '20', 'C', '3/4 × 24 = 18 buku.', 'AKTIF'),
+('TKA-MATEMATIKA5-02', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'UMUM', 'SEDANG', 'PG', 'Dua bus berangkat bersama pukul 08.00. Bus A berangkat setiap 12 menit dan bus B setiap 18 menit. Keduanya berangkat bersama lagi pada pukul ...', '08.36', '08.24', '08.30', '08.48', 'A', 'KPK 12 dan 18 adalah 36 menit.', 'AKTIF'),
+('TKA-MATEMATIKA5-03', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'UMUM', 'SULIT', 'PGK', 'Perhatikan bilangan 24 dan 36. Pilih SEMUA pernyataan yang benar.', 'FPB-nya adalah 12', 'KPK-nya adalah 72', '24 habis dibagi 6', '36 habis dibagi 8', 'ABC', 'FPB = 12, KPK = 72, dan 24 : 6 = 4; 36 tidak habis dibagi 8.', 'AKTIF'),
+('TKA-MATEMATIKA5-04', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'UMUM', 'SULIT', 'PGK', 'Pilih SEMUA kesetaraan bilangan yang benar.', '2/5 = 4/10', '0,5 = 1/2', '25% = 1/5', '3/4 = 0,75', 'ABD', '2/5 = 0,4; 0,5 = 1/2; 25% = 1/4, bukan 1/5; 3/4 = 0,75.', 'AKTIF'),
 ('TKA-MATEMATIKA5-05', 'MATEMATIKA', 5, 'Sudut', 'UMUM', 'HOTS', 'BS', 'Tentukan BENAR atau SALAH untuk setiap pernyataan sudut.', 'Sudut 90° adalah sudut siku-siku', 'Sudut 120° adalah sudut lancip', 'Sudut 45° adalah sudut lancip', 'Sudut 180° adalah sudut lurus', 'BSBB', '120° adalah sudut tumpul; tiga pernyataan lain benar.', 'AKTIF'),
-('TKA-MATEMATIKA5-06', 'MATEMATIKA', 5, 'Konsep matematika', 'UMUM', 'HOTS', 'JODOH', 'Jodohkan istilah dengan definisinya.
+('TKA-MATEMATIKA5-06', 'MATEMATIKA', 5, 'Keliling dan Luas Bangun Datar', 'UMUM', 'HOTS', 'JODOH', 'Jodohkan istilah dengan definisinya.
 1. KPK
 2. FPB
 3. Keliling
 4. Luas', 'Jumlah panjang semua sisi suatu bangun', 'Besar daerah yang ditutupi bangun', 'Kelipatan persekutuan yang paling kecil', 'Faktor persekutuan yang paling besar', 'CDAB', 'KPK→C, FPB→D, keliling→A, luas→B.', 'AKTIF'),
-('TKA-MATEMATIKA6-01', 'MATEMATIKA', 6, 'Rasio', 'UMUM', 'SEDANG', 'PG', 'Jumlah kelereng merah dan biru adalah 35 dengan rasio 2 : 3. Banyak kelereng merah adalah ...', '12', '14', '21', '23', 'B', 'Jumlah bagian 2 + 3 = 5; merah = 2/5 × 35 = 14.', 'AKTIF'),
-('TKA-MATEMATIKA6-02', 'MATEMATIKA', 6, 'Peluang sederhana', 'UMUM', 'SEDANG', 'PG', 'Sebuah kantong berisi 3 bola merah dan 2 bola biru dengan ukuran sama. Jika diambil satu secara acak, warna yang lebih mungkin diperoleh adalah ...', 'Merah', 'Biru', 'Keduanya selalu keluar bersama', 'Tidak mungkin dipastikan peluangnya', 'A', 'Ada 3 bola merah dari 5, lebih banyak daripada bola biru.', 'AKTIF'),
-('TKA-MATEMATIKA6-03', 'MATEMATIKA', 6, 'Bangun datar', 'UMUM', 'SULIT', 'PGK', 'Sebuah persegi panjang berukuran 4 cm × 6 cm. Pilih SEMUA pernyataan yang benar.', 'Luasnya 24 cm²', 'Kelilingnya 20 cm', 'Jika sisi 4 cm menjadi 8 cm, luasnya menjadi 48 cm²', 'Jika sisi 4 cm menjadi 8 cm, kelilingnya menjadi 24 cm', 'ABC', 'Luas 24, keliling 20; setelah panjang 8 cm, luas 48 dan keliling 28 cm.', 'AKTIF'),
-('TKA-MATEMATIKA6-04', 'MATEMATIKA', 6, 'Rasio', 'UMUM', 'SULIT', 'PGK', 'Perbandingan banyak murid kelompok A dan B adalah 2 : 5. Jumlah murid 21 orang. Pilih SEMUA pernyataan yang benar.', 'Kelompok A berisi 6 orang', 'Kelompok B berisi 15 orang', 'Rasio kelompok A terhadap total adalah 2 : 7', 'Selisih anggota kedua kelompok 7 orang', 'ABC', 'Setiap bagian 3 murid, sehingga A = 6, B = 15, selisih = 9.', 'AKTIF'),
-('TKA-MATEMATIKA6-05', 'MATEMATIKA', 6, 'Pecahan dan desimal', 'UMUM', 'HOTS', 'BS', 'Tentukan BENAR atau SALAH untuk setiap pernyataan.', '1/4 = 0,25', '3/5 = 0,8', '50% = 1/2', '0,75 = 3/4', 'BSBB', '3/5 = 0,6, bukan 0,8. Tiga pernyataan lain benar.', 'AKTIF'),
-('TKA-MATEMATIKA6-06', 'MATEMATIKA', 6, 'Istilah numerasi', 'UMUM', 'HOTS', 'JODOH', 'Jodohkan istilah dengan artinya.
+('TKA-MATEMATIKA6-01', 'MATEMATIKA', 6, 'Peluang', 'UMUM', 'SEDANG', 'PG', 'Jumlah kelereng merah dan biru adalah 35 dengan rasio 2 : 3. Banyak kelereng merah adalah ...', '12', '14', '21', '23', 'B', 'Jumlah bagian 2 + 3 = 5; merah = 2/5 × 35 = 14.', 'AKTIF'),
+('TKA-MATEMATIKA6-02', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'UMUM', 'SEDANG', 'PG', 'Sebuah kantong berisi 3 bola merah dan 2 bola biru dengan ukuran sama. Jika diambil satu secara acak, warna yang lebih mungkin diperoleh adalah ...', 'Merah', 'Biru', 'Keduanya selalu keluar bersama', 'Tidak mungkin dipastikan peluangnya', 'A', 'Ada 3 bola merah dari 5, lebih banyak daripada bola biru.', 'AKTIF'),
+('TKA-MATEMATIKA6-03', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'UMUM', 'SULIT', 'PGK', 'Sebuah persegi panjang berukuran 4 cm × 6 cm. Pilih SEMUA pernyataan yang benar.', 'Luasnya 24 cm²', 'Kelilingnya 20 cm', 'Jika sisi 4 cm menjadi 8 cm, luasnya menjadi 48 cm²', 'Jika sisi 4 cm menjadi 8 cm, kelilingnya menjadi 24 cm', 'ABC', 'Luas 24, keliling 20; setelah panjang 8 cm, luas 48 dan keliling 28 cm.', 'AKTIF'),
+('TKA-MATEMATIKA6-04', 'MATEMATIKA', 6, 'Rasio dan Skala', 'UMUM', 'SULIT', 'PGK', 'Perbandingan banyak murid kelompok A dan B adalah 2 : 5. Jumlah murid 21 orang. Pilih SEMUA pernyataan yang benar.', 'Kelompok A berisi 6 orang', 'Kelompok B berisi 15 orang', 'Rasio kelompok A terhadap total adalah 2 : 7', 'Selisih anggota kedua kelompok 7 orang', 'ABC', 'Setiap bagian 3 murid, sehingga A = 6, B = 15, selisih = 9.', 'AKTIF'),
+('TKA-MATEMATIKA6-05', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'UMUM', 'HOTS', 'BS', 'Tentukan BENAR atau SALAH untuk setiap pernyataan.', '1/4 = 0,25', '3/5 = 0,8', '50% = 1/2', '0,75 = 3/4', 'BSBB', '3/5 = 0,6, bukan 0,8. Tiga pernyataan lain benar.', 'AKTIF'),
+('TKA-MATEMATIKA6-06', 'MATEMATIKA', 6, 'Peluang', 'UMUM', 'HOTS', 'JODOH', 'Jodohkan istilah dengan artinya.
 1. Rasio
 2. Peluang
 3. Desimal
@@ -274,122 +274,122 @@ VALUES
 2. Ekspor
 3. Impor
 4. Perjanjian kerja sama', 'Barang masuk dari luar negeri', 'Pernyataan resmi kemerdekaan', 'Kesepakatan yang dibuat antarpihak', 'Penjualan barang ke negara lain', 'BDAC', 'Proklamasi→B, ekspor→D, impor→A, perjanjian→C.', 'AKTIF'),
-('PRIO-MTK4-0235', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 7.405, nilai dari angka 4 adalah ...', '400', '40', '4', '4.000', 'A', 'Angka 4 pada bilangan 7.405 menempati posisi ratusan, sehingga bernilai 400.', 'AKTIF'),
-('PRIO-MTK4-0236', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 47.285, nilai dari angka 7 adalah ...', '700', '70', '70.000', '7.000', 'D', 'Angka 7 pada bilangan 47.285 menempati posisi ribuan, sehingga bernilai 7.000.', 'AKTIF'),
-('PRIO-MTK4-0237', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 58.319, nilai dari angka 8 adalah ...', '80', '80.000', '8.000', '800', 'C', 'Angka 8 pada bilangan 58.319 menempati posisi ribuan, sehingga bernilai 8.000.', 'AKTIF'),
-('PRIO-MTK4-0238', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 92.640, nilai dari angka 9 adalah ...', '90', '90.000', '9.000', '900', 'B', 'Angka 9 pada bilangan 92.640 menempati posisi puluh ribuan, sehingga bernilai 90.000.', 'AKTIF'),
-('PRIO-MTK4-0239', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 31.450, nilai dari angka 1 adalah ...', '1.000', '100', '10', '10.000', 'A', 'Angka 1 pada bilangan 31.450 menempati posisi ribuan, sehingga bernilai 1.000.', 'AKTIF'),
-('PRIO-MTK4-0240', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 65.278, nilai dari angka 2 adalah ...', '20', '2', '2.000', '200', 'D', 'Angka 2 pada bilangan 65.278 menempati posisi ratusan, sehingga bernilai 200.', 'AKTIF'),
-('PRIO-MTK4-0241', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 84.931, nilai dari angka 3 adalah ...', '3', '3.000', '30', '300', 'C', 'Angka 3 pada bilangan 84.931 menempati posisi puluhan, sehingga bernilai 30.', 'AKTIF'),
-('PRIO-MTK4-0242', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 50.672, nilai dari angka 6 adalah ...', '6', '600', '60', '6.000', 'B', 'Angka 6 pada bilangan 50.672 menempati posisi ratusan, sehingga bernilai 600.', 'AKTIF'),
-('PRIO-MTK4-0243', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 19.845, nilai dari angka 9 adalah ...', '9.000', '900', '90.000', '90', 'A', 'Angka 9 pada bilangan 19.845 menempati posisi ribuan, sehingga bernilai 9.000.', 'AKTIF'),
-('PRIO-MTK4-0244', 'MATEMATIKA', 4, 'Nilai Tempat & Bilangan Cacah', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 73.420, nilai dari angka 7 adalah ...', '7.000', '700', '70', '70.000', 'D', 'Angka 7 pada bilangan 73.420 menempati posisi puluh ribuan, sehingga bernilai 70.000.', 'AKTIF'),
-('PRIO-MTK4-0245', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0235', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 7.405, nilai dari angka 4 adalah ...', '400', '40', '4', '4.000', 'A', 'Angka 4 pada bilangan 7.405 menempati posisi ratusan, sehingga bernilai 400.', 'AKTIF'),
+('PRIO-MTK4-0236', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 47.285, nilai dari angka 7 adalah ...', '700', '70', '70.000', '7.000', 'D', 'Angka 7 pada bilangan 47.285 menempati posisi ribuan, sehingga bernilai 7.000.', 'AKTIF'),
+('PRIO-MTK4-0237', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 58.319, nilai dari angka 8 adalah ...', '80', '80.000', '8.000', '800', 'C', 'Angka 8 pada bilangan 58.319 menempati posisi ribuan, sehingga bernilai 8.000.', 'AKTIF'),
+('PRIO-MTK4-0238', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 92.640, nilai dari angka 9 adalah ...', '90', '90.000', '9.000', '900', 'B', 'Angka 9 pada bilangan 92.640 menempati posisi puluh ribuan, sehingga bernilai 90.000.', 'AKTIF'),
+('PRIO-MTK4-0239', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Pada bilangan 31.450, nilai dari angka 1 adalah ...', '1.000', '100', '10', '10.000', 'A', 'Angka 1 pada bilangan 31.450 menempati posisi ribuan, sehingga bernilai 1.000.', 'AKTIF'),
+('PRIO-MTK4-0240', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 65.278, nilai dari angka 2 adalah ...', '20', '2', '2.000', '200', 'D', 'Angka 2 pada bilangan 65.278 menempati posisi ratusan, sehingga bernilai 200.', 'AKTIF'),
+('PRIO-MTK4-0241', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 84.931, nilai dari angka 3 adalah ...', '3', '3.000', '30', '300', 'C', 'Angka 3 pada bilangan 84.931 menempati posisi puluhan, sehingga bernilai 30.', 'AKTIF'),
+('PRIO-MTK4-0242', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 50.672, nilai dari angka 6 adalah ...', '6', '600', '60', '6.000', 'B', 'Angka 6 pada bilangan 50.672 menempati posisi ratusan, sehingga bernilai 600.', 'AKTIF'),
+('PRIO-MTK4-0243', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 19.845, nilai dari angka 9 adalah ...', '9.000', '900', '90.000', '90', 'A', 'Angka 9 pada bilangan 19.845 menempati posisi ribuan, sehingga bernilai 9.000.', 'AKTIF'),
+('PRIO-MTK4-0244', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'UMUM', 'MUDAH', 'PG', 'Pada bilangan 73.420, nilai dari angka 7 adalah ...', '7.000', '700', '70', '70.000', 'D', 'Angka 7 pada bilangan 73.420 menempati posisi puluh ribuan, sehingga bernilai 70.000.', 'AKTIF'),
+('PRIO-MTK4-0245', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan SD Inpres Tangkala pada awal bulan memiliki persediaan 365 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 248 buku baru dari para donatur. Pada minggu kedua, sebanyak 179 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan SD Inpres Tangkala?', '434 buku', '414 buku', '464 buku', '334 buku', 'A', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 365 + 248 = 613. Kemudian kurangi dengan buku yang dipinjam: 613 − 179 = 434 buku.', 'AKTIF'),
-('PRIO-MTK4-0246', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0246', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan SD Nusantara pada awal bulan memiliki persediaan 420 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 185 buku baru dari para donatur. Pada minggu kedua, sebanyak 215 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan SD Nusantara?', '370 buku', '420 buku', '290 buku', '390 buku', 'D', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 420 + 185 = 605. Kemudian kurangi dengan buku yang dipinjam: 605 − 215 = 390 buku.', 'AKTIF'),
-('PRIO-MTK4-0247', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0247', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan Perpustakaan Cendekia pada awal bulan memiliki persediaan 550 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 320 buku baru dari para donatur. Pada minggu kedua, sebanyak 240 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan Perpustakaan Cendekia?', '660 buku', '530 buku', '630 buku', '610 buku', 'C', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 550 + 320 = 870. Kemudian kurangi dengan buku yang dipinjam: 870 − 240 = 630 buku.', 'AKTIF'),
-('PRIO-MTK4-0248', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0248', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan Taman Baca Melati pada awal bulan memiliki persediaan 610 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 190 buku baru dari para donatur. Pada minggu kedua, sebanyak 350 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan Taman Baca Melati?', '350 buku', '450 buku', '430 buku', '480 buku', 'B', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 610 + 190 = 800. Kemudian kurangi dengan buku yang dipinjam: 800 − 350 = 450 buku.', 'AKTIF'),
-('PRIO-MTK4-0249', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0249', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan Pojok Baca Pintar pada awal bulan memiliki persediaan 280 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 140 buku baru dari para donatur. Pada minggu kedua, sebanyak 125 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan Pojok Baca Pintar?', '295 buku', '275 buku', '325 buku', '195 buku', 'A', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 280 + 140 = 420. Kemudian kurangi dengan buku yang dipinjam: 420 − 125 = 295 buku.', 'AKTIF'),
-('PRIO-MTK4-0250', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0250', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan Perpustakaan Daerah pada awal bulan memiliki persediaan 750 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 250 buku baru dari para donatur. Pada minggu kedua, sebanyak 420 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan Perpustakaan Daerah?', '560 buku', '610 buku', '480 buku', '580 buku', 'D', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 750 + 250 = 1000. Kemudian kurangi dengan buku yang dipinjam: 1000 − 420 = 580 buku.', 'AKTIF'),
-('PRIO-MTK4-0251', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0251', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan Koleksi Buku Sekolah pada awal bulan memiliki persediaan 830 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 170 buku baru dari para donatur. Pada minggu kedua, sebanyak 310 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan Koleksi Buku Sekolah?', '720 buku', '590 buku', '690 buku', '670 buku', 'C', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 830 + 170 = 1000. Kemudian kurangi dengan buku yang dipinjam: 1000 − 310 = 690 buku.', 'AKTIF'),
-('PRIO-MTK4-0252', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0252', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan Perpustakaan Sahabat pada awal bulan memiliki persediaan 390 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 260 buku baru dari para donatur. Pada minggu kedua, sebanyak 180 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan Perpustakaan Sahabat?', '370 buku', '470 buku', '450 buku', '500 buku', 'B', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 390 + 260 = 650. Kemudian kurangi dengan buku yang dipinjam: 650 − 180 = 470 buku.', 'AKTIF'),
-('PRIO-MTK4-0253', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0253', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan Ruang Literasi pada awal bulan memiliki persediaan 480 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 310 buku baru dari para donatur. Pada minggu kedua, sebanyak 290 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan Ruang Literasi?', '500 buku', '480 buku', '530 buku', '400 buku', 'A', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 480 + 310 = 790. Kemudian kurangi dengan buku yang dipinjam: 790 − 290 = 500 buku.', 'AKTIF'),
-('PRIO-MTK4-0254', 'MATEMATIKA', 4, 'Operasi Campuran Bilangan Cacah', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK4-0254', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perpustakaan Pustaka Hebat pada awal bulan memiliki persediaan 900 buku cerita. Pengurus perpustakaan kemudian menerima sumbangan sebanyak 150 buku baru dari para donatur. Pada minggu kedua, sebanyak 430 buku dipinjam oleh para siswa untuk kegiatan membaca terarah.
 
 [PERTANYAAN]
 Berapa banyak buku yang saat ini tersisa di rak perpustakaan Pustaka Hebat?', '600 buku', '650 buku', '520 buku', '620 buku', 'D', 'Hitung bertahap: Jumlah buku awal + sumbangan buku = 900 + 150 = 1050. Kemudian kurangi dengan buku yang dipinjam: 1050 − 430 = 620 buku.', 'AKTIF'),
-('PRIO-MTK4-0255', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 120 - (8 × 9) + 15 adalah ...', '57', '135', '63', '48', 'C', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 8 × 9 = 72; 120 - 72 = 48; 48 + 15 = 63.', 'AKTIF'),
-('PRIO-MTK4-0256', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 150 + 25 × 4 - 80 : 2 adalah ...', '160', '210', '180', '310', 'B', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 25 × 4 = 100 dan 80 : 2 = 40; 150 + 100 - 40 = 210.', 'AKTIF'),
-('PRIO-MTK4-0257', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 200 - 15 × 6 + 45 : 3 adalah ...', '125', '110', '140', '95', 'A', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 15 × 6 = 90 dan 45 : 3 = 15; 200 - 90 + 15 = 125.', 'AKTIF'),
-('PRIO-MTK4-0258', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 80 + 120 : 4 × 3 - 50 adalah ...', '100', '90', '140', '120', 'D', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 120 : 4 = 30; 30 × 3 = 90; 80 + 90 - 50 = 120.', 'AKTIF'),
-('PRIO-MTK4-0259', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 75 - (6 × 8) + 90 : 5 adalah ...', '55', '25', '45', '35', 'C', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 6 × 8 = 48 dan 90 : 5 = 18; 75 - 48 + 18 = 45.', 'AKTIF'),
-('PRIO-MTK4-0260', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 300 : (15 + 10) × 8 - 16 adalah ...', '64', '80', '72', '96', 'B', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: Kurung dulu: 15 + 10 = 25; 300 : 25 = 12; 12 × 8 = 96; 96 - 16 = 80.', 'AKTIF'),
-('PRIO-MTK4-0261', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 90 + 40 × 3 - 100 : 4 adalah ...', '185', '165', '175', '200', 'A', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 40 × 3 = 120 dan 100 : 4 = 25; 90 + 120 - 25 = 185.', 'AKTIF'),
-('PRIO-MTK4-0262', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 240 - 80 : 4 + 12 × 5 adalah ...', '240', '260', '300', '280', 'D', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 80 : 4 = 20 dan 12 × 5 = 60; 240 - 20 + 60 = 280.', 'AKTIF'),
-('PRIO-MTK4-0263', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 50 × 4 - (120 : 6) + 35 adalah ...', '205', '225', '215', '195', 'C', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 50 × 4 = 200 dan 120 : 6 = 20; 200 - 20 + 35 = 215.', 'AKTIF'),
-('PRIO-MTK4-0264', 'MATEMATIKA', 4, 'Operasi Campuran (Aturan Kabataku)', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 180 : 9 × 5 + 60 - 25 adalah ...', '115', '135', '125', '145', 'B', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 180 : 9 = 20; 20 × 5 = 100; 100 + 60 - 25 = 135.', 'AKTIF'),
-('PRIO-MTK4-0265', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'KPK dari 6 dan 8 adalah ...', '48', '24', '12', '14', 'B', 'Kelipatan 6: 6, 12, 18, 24... Kelipatan 8: 8, 16, 24... Kelipatan persekutuan terkecil = 24.', 'AKTIF'),
-('PRIO-MTK4-0266', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'FPB dari 18 dan 24 adalah ...', '6', '3', '12', '2', 'A', 'Faktor 18: 1, 2, 3, 6, 9, 18. Faktor 24: 1, 2, 3, 4, 6, 8, 12, 24. Faktor persekutuan terbesar = 6.', 'AKTIF'),
-('PRIO-MTK4-0267', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'KPK dari 4 dan 6 adalah ...', '24', '18', '8', '12', 'D', 'Kelipatan 4: 4, 8, 12, 16... Kelipatan 6: 6, 12, 18... KPK = 12.', 'AKTIF'),
-('PRIO-MTK4-0268', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'FPB dari 12 dan 18 adalah ...', '3', '2', '6', '4', 'C', 'Faktor persekutuan terbesar 12 dan 18 adalah 6.', 'AKTIF'),
-('PRIO-MTK4-0269', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'KPK dari 8 dan 12 adalah ...', '16', '24', '48', '36', 'B', 'Kelipatan 8 dan 12 yang pertama bertemu di 24.', 'AKTIF'),
-('PRIO-MTK4-0270', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'FPB dari 16 dan 20 adalah ...', '4', '2', '8', '5', 'A', 'Faktor persekutuan terbesar 16 dan 20 adalah 4.', 'AKTIF'),
-('PRIO-MTK4-0271', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'Faktor dari 18 yang merupakan bilangan prima adalah ...', '2 dan 9', '3 dan 6', '1 dan 18', '2 dan 3', 'D', 'Faktor 18 = 1, 2, 3, 6, 9, 18. Yang prima hanyalah 2 dan 3.', 'AKTIF'),
-('PRIO-MTK4-0272', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'Kelipatan 6 yang berada di antara 20 dan 30 adalah ...', '26', '28', '24', '22', 'C', '6 × 4 = 24, terletak antara 20 dan 30.', 'AKTIF'),
-('PRIO-MTK4-0273', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'Suku berikutnya dari pola bilangan 5, 9, 13, 17, ... adalah ...', '23', '21', '20', '22', 'B', 'Pola memiliki beda tetap bertambah 4 (+4). Maka 17 + 4 = 21.', 'AKTIF'),
-('PRIO-MTK4-0274', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'Suku berikutnya dari pola bilangan 3, 6, 12, 24, ... adalah ...', '48', '36', '42', '50', 'A', 'Pola kelipatan dua (dikali 2). 24 × 2 = 48.', 'AKTIF'),
-('PRIO-MTK4-0275', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Pola bilangan 2, 5, 8, 11, ... Tiga bilangan berikutnya berturut-turut adalah ...', '13, 16, 19', '14, 16, 18', '15, 18, 21', '14, 17, 20', 'D', 'Pola bertambah 3 (+3).', 'AKTIF'),
-('PRIO-MTK4-0276', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Pola bilangan 40, 35, 30, 25, ... Bilangan pada suku ke-6 adalah ...', '10', '5', '15', '20', 'C', 'Pola berkurang 5: 40, 35, 30, 25, 20 (ke-5), 15 (ke-6).', 'AKTIF'),
-('PRIO-MTK4-0277', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Bilangan prima di antara 20 dan 30 adalah ...', '21 dan 29', '23 dan 29', '21 dan 27', '23 dan 27', 'B', '21 habis dibagi 3, 27 habis dibagi 3. Yang prima hanya 23 dan 29.', 'AKTIF'),
-('PRIO-MTK4-0278', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Faktor prima dari bilangan 30 adalah ...', '2, 3, dan 5', '2 dan 15', '3 dan 10', '1, 2, 3, 5', 'A', 'Faktorisasi prima 30 = 2 × 3 × 5. Angka 1 bukan bilangan prima.', 'AKTIF'),
-('PRIO-MTK4-0279', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'KPK dari 5 dan 7 adalah ...', '12', '25', '42', '35', 'D', 'Karena 5 dan 7 keduanya bilangan prima, KPK-nya langsung 5 × 7 = 35.', 'AKTIF'),
-('PRIO-MTK4-0280', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'FPB dari 15 dan 25 adalah ...', '1', '15', '5', '3', 'C', 'Faktor persekutuan terbesar 15 dan 25 adalah 5.', 'AKTIF'),
-('PRIO-MTK4-0281', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Jumlah semua faktor dari bilangan 12 adalah ...', '30', '28', '24', '26', 'B', 'Faktor 12: 1 + 2 + 3 + 4 + 6 + 12 = 28.', 'AKTIF'),
-('PRIO-MTK4-0282', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Banyak faktor bilangan 20 adalah ...', '6 buah', '4 buah', '5 buah', '7 buah', 'A', 'Faktor 20: 1, 2, 4, 5, 10, 20 (ada 6 faktor).', 'AKTIF'),
-('PRIO-MTK4-0283', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Pola bilangan 1, 4, 9, 16, ... Bilangan ke-6 dari pola tersebut adalah ...', '25', '30', '49', '36', 'D', 'Pola kuadrat bilangan asli: 1², 2², 3², 4², 5²=25, 6²=36.', 'AKTIF'),
-('PRIO-MTK4-0284', 'MATEMATIKA', 4, 'Faktor, Kelipatan, & Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'FPB dari 24 dan 32 adalah ...', '6', '12', '8', '4', 'C', '24 = 2³ × 3 dan 32 = 2⁵. FPB = 2³ = 8.', 'AKTIF'),
-('PRIO-MTK4-0285', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan yang senilai dengan 2/3 adalah ...', '4/6', '3/6', '2/6', '4/9', 'A', 'Kalikan pembilang dan penyebut dengan 2: (2×2)/(3×2) = 4/6.', 'AKTIF'),
-('PRIO-MTK4-0286', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan yang senilai dengan 3/4 adalah ...', '6/12', '8/12', '9/16', '9/12', 'D', '3/4 = (3×3)/(4×3) = 9/12.', 'AKTIF'),
-('PRIO-MTK4-0287', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Bentuk paling sederhana dari pecahan 12/16 adalah ...', '2/3', '4/5', '3/4', '6/8', 'C', 'Bagi pembilang dan penyebut dengan FPB-nya yaitu 4: 12:4 / 16:4 = 3/4.', 'AKTIF'),
-('PRIO-MTK4-0288', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Di antara pecahan 3/8 dan 5/8, pecahan yang lebih besar adalah ...', '1/8', '5/8', '3/8', 'Keduanya sama', 'B', 'Penyebut sama (8), maka pembilang lebih besar bernilai lebih besar (5 > 3).', 'AKTIF'),
-('PRIO-MTK4-0289', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan 1/2 jika diubah ke bentuk desimal dan persen adalah ...', '0,5 dan 50%', '0,2 dan 20%', '0,05 dan 5%', '0,5 dan 5%', 'A', '1/2 = 5/10 = 0,5 = 50%.', 'AKTIF'),
-('PRIO-MTK4-0290', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan 3/4 jika diubah ke bentuk persen adalah ...', '50%', '25%', '80%', '75%', 'D', '3/4 × 100% = 75%.', 'AKTIF'),
-('PRIO-MTK4-0291', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Bentuk desimal dari pecahan 1/4 adalah ...', '0,5', '0,14', '0,25', '0,4', 'C', '1/4 = 25/100 = 0,25.', 'AKTIF'),
-('PRIO-MTK4-0292', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan yang nilainya lebih besar dari 2/3 adalah ...', '3/6', '3/4', '1/2', '2/4', 'B', 'Samakan penyebut per 12: 2/3 = 8/12, sedangkan 3/4 = 9/12. Maka 3/4 > 2/3.', 'AKTIF'),
-('PRIO-MTK4-0293', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil dari 2/7 + 3/7 adalah ...', '5/7', '5/14', '6/7', '1/7', 'A', 'Penyebut sama, langsung jumlahkan pembilang: 2 + 3 = 5 -> 5/7.', 'AKTIF'),
-('PRIO-MTK4-0294', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil dari 7/9 − 4/9 adalah ...', '3/18', '11/9', '4/9', '3/9 = 1/3', 'D', '7/9 - 4/9 = 3/9. Sederhanakan bagi 3 menjadi 1/3.', 'AKTIF'),
-('PRIO-MTK4-0295', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan senilai dari 5/10 dalam bentuk paling sederhana adalah ...', '1/5', '5/2', '1/2', '2/5', 'C', '5/10 dibagi 5 menjadi 1/2.', 'AKTIF'),
-('PRIO-MTK4-0296', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Tanda perbandingan yang tepat untuk 3/5 ... 4/5 adalah ...', '>= (tidak tentu)', '< (lebih kecil)', '> (lebih besar)', '= (sama dengan)', 'B', '3/5 lebih kecil dari 4/5 karena 3 < 4.', 'AKTIF'),
-('PRIO-MTK4-0297', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan 2/5 jika diubah ke bentuk desimal adalah ...', '0,4', '0,2', '0,25', '0,5', 'A', '2/5 = 4/10 = 0,4.', 'AKTIF'),
-('PRIO-MTK4-0298', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Urutan pecahan 1/4, 1/2, 3/4 dari yang terkecil adalah ...', '1/2, 1/4, 3/4', '3/4, 1/2, 1/4', '1/4, 3/4, 1/2', '1/4, 1/2, 3/4', 'D', '1/4 = 0,25; 1/2 = 0,50; 3/4 = 0,75.', 'AKTIF'),
-('PRIO-MTK4-0299', 'MATEMATIKA', 4, 'Pecahan Sederhana & Desimal', 'PENYISIHAN', 'MUDAH', 'PG', 'Ibu memotong semangka menjadi 8 bagian sama besar. Budi memakan 3 bagian. Bagian semangka yang dimakan Budi bernilai ...', '5/8', '3/5', '3/8', '8/3', 'C', '3 bagian dari 8 bagian sama bernilai 3/8.', 'AKTIF'),
-('PRIO-MTK4-0300', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Keliling persegi panjang berukuran panjang 12 cm dan lebar 7 cm adalah ...', '19 cm', '84 cm', '144 cm', '38 cm', 'D', 'Keliling = 2 × (p + l) = 2 × (12 + 7) = 2 × 19 = 38 cm.', 'AKTIF'),
-('PRIO-MTK4-0301', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Luas persegi panjang dengan panjang 12 cm dan lebar 7 cm adalah ...', '19 cm²', '96 cm²', '84 cm²', '38 cm²', 'C', 'Luas = p × l = 12 × 7 = 84 cm².', 'AKTIF'),
-('PRIO-MTK4-0302', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Keliling persegi dengan panjang sisi 13 cm adalah ...', '169 cm', '52 cm', '26 cm', '39 cm', 'B', 'Keliling persegi = 4 × sisi = 4 × 13 = 52 cm.', 'AKTIF'),
-('PRIO-MTK4-0303', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Luas persegi dengan sisi 13 cm adalah ...', '169 cm²', '52 cm²', '26 cm²', '144 cm²', 'A', 'Luas persegi = s × s = 13 × 13 = 169 cm².', 'AKTIF'),
-('PRIO-MTK4-0304', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Panjang tali 3 meter 20 cm sama dengan ...', '32 cm', '3.200 cm', '302 cm', '320 cm', 'D', '3 m = 300 cm, ditambah 20 cm = 320 cm.', 'AKTIF'),
-('PRIO-MTK4-0305', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Berat beras 2 kg 500 gram sama dengan ...', '25.000 gram', '2.050 gram', '2.500 gram', '250 gram', 'C', '2 kg = 2.000 g, ditambah 500 g = 2.500 g.', 'AKTIF'),
-('PRIO-MTK4-0306', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah taman berbentuk persegi memiliki keliling 64 m. Panjang sisi taman tersebut adalah ...', '64 m', '16 m', '32 m', '8 m', 'B', 'Sisi = Keliling : 4 = 64 : 4 = 16 m.', 'AKTIF'),
-('PRIO-MTK4-0307', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah taman persegi berkeliling 64 m memiliki luas sebesar ...', '256 m²', '128 m²', '64 m²', '1.024 m²', 'A', 'Sisi = 64 : 4 = 16 m. Luas = 16 × 16 = 256 m².', 'AKTIF'),
-('PRIO-MTK4-0308', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Film dimulai pukul 08.35 dan selesai pukul 10.10. Lama pemutaran film adalah ...', '85 menit', '105 menit', '75 menit', '95 menit', 'D', 'Dari 08.35 ke 09.35 = 60 menit. Dari 09.35 ke 10.10 = 35 menit. Total = 60 + 35 = 95 menit.', 'AKTIF'),
-('PRIO-MTK4-0309', 'MATEMATIKA', 4, 'Pengukuran & Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah segitiga memiliki sisi-sisi 6 cm, 8 cm, dan 10 cm. Keliling segitiga tersebut adalah ...', '14 cm', '30 cm', '24 cm', '48 cm', 'C', 'Keliling = 6 + 8 + 10 = 24 cm.', 'AKTIF'),
-('PRIO-MTK4-0310', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0255', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 120 - (8 × 9) + 15 adalah ...', '57', '135', '63', '48', 'C', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 8 × 9 = 72; 120 - 72 = 48; 48 + 15 = 63.', 'AKTIF'),
+('PRIO-MTK4-0256', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 150 + 25 × 4 - 80 : 2 adalah ...', '160', '210', '180', '310', 'B', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 25 × 4 = 100 dan 80 : 2 = 40; 150 + 100 - 40 = 210.', 'AKTIF'),
+('PRIO-MTK4-0257', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 200 - 15 × 6 + 45 : 3 adalah ...', '125', '110', '140', '95', 'A', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 15 × 6 = 90 dan 45 : 3 = 15; 200 - 90 + 15 = 125.', 'AKTIF'),
+('PRIO-MTK4-0258', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 80 + 120 : 4 × 3 - 50 adalah ...', '100', '90', '140', '120', 'D', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 120 : 4 = 30; 30 × 3 = 90; 80 + 90 - 50 = 120.', 'AKTIF'),
+('PRIO-MTK4-0259', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 75 - (6 × 8) + 90 : 5 adalah ...', '55', '25', '45', '35', 'C', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 6 × 8 = 48 dan 90 : 5 = 18; 75 - 48 + 18 = 45.', 'AKTIF'),
+('PRIO-MTK4-0260', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 300 : (15 + 10) × 8 - 16 adalah ...', '64', '80', '72', '96', 'B', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: Kurung dulu: 15 + 10 = 25; 300 : 25 = 12; 12 × 8 = 96; 96 - 16 = 80.', 'AKTIF'),
+('PRIO-MTK4-0261', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 90 + 40 × 3 - 100 : 4 adalah ...', '185', '165', '175', '200', 'A', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 40 × 3 = 120 dan 100 : 4 = 25; 90 + 120 - 25 = 185.', 'AKTIF'),
+('PRIO-MTK4-0262', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 240 - 80 : 4 + 12 × 5 adalah ...', '240', '260', '300', '280', 'D', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 80 : 4 = 20 dan 12 × 5 = 60; 240 - 20 + 60 = 280.', 'AKTIF'),
+('PRIO-MTK4-0263', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 50 × 4 - (120 : 6) + 35 adalah ...', '205', '225', '215', '195', 'C', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 50 × 4 = 200 dan 120 : 6 = 20; 200 - 20 + 35 = 215.', 'AKTIF'),
+('PRIO-MTK4-0264', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Hasil perhitungan dari 180 : 9 × 5 + 60 - 25 adalah ...', '115', '135', '125', '145', 'B', 'Terapkan aturan hierarki operasi (Kabataku): Selesaikan tanda kurung, lalu perkalian/pembagian dari kiri ke kanan, dilanjutkan penjumlahan/pengurangan dari kiri ke kanan: 180 : 9 = 20; 20 × 5 = 100; 100 + 60 - 25 = 135.', 'AKTIF'),
+('PRIO-MTK4-0265', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'PENYISIHAN', 'SEDANG', 'PG', 'KPK dari 6 dan 8 adalah ...', '48', '24', '12', '14', 'B', 'Kelipatan 6: 6, 12, 18, 24... Kelipatan 8: 8, 16, 24... Kelipatan persekutuan terkecil = 24.', 'AKTIF'),
+('PRIO-MTK4-0266', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'PENYISIHAN', 'SEDANG', 'PG', 'FPB dari 18 dan 24 adalah ...', '6', '3', '12', '2', 'A', 'Faktor 18: 1, 2, 3, 6, 9, 18. Faktor 24: 1, 2, 3, 4, 6, 8, 12, 24. Faktor persekutuan terbesar = 6.', 'AKTIF'),
+('PRIO-MTK4-0267', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'PENYISIHAN', 'SEDANG', 'PG', 'KPK dari 4 dan 6 adalah ...', '24', '18', '8', '12', 'D', 'Kelipatan 4: 4, 8, 12, 16... Kelipatan 6: 6, 12, 18... KPK = 12.', 'AKTIF'),
+('PRIO-MTK4-0268', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'PENYISIHAN', 'SEDANG', 'PG', 'FPB dari 12 dan 18 adalah ...', '3', '2', '6', '4', 'C', 'Faktor persekutuan terbesar 12 dan 18 adalah 6.', 'AKTIF'),
+('PRIO-MTK4-0269', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'PENYISIHAN', 'SEDANG', 'PG', 'KPK dari 8 dan 12 adalah ...', '16', '24', '48', '36', 'B', 'Kelipatan 8 dan 12 yang pertama bertemu di 24.', 'AKTIF'),
+('PRIO-MTK4-0270', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'PENYISIHAN', 'SEDANG', 'PG', 'FPB dari 16 dan 20 adalah ...', '4', '2', '8', '5', 'A', 'Faktor persekutuan terbesar 16 dan 20 adalah 4.', 'AKTIF'),
+('PRIO-MTK4-0271', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'PENYISIHAN', 'SEDANG', 'PG', 'Faktor dari 18 yang merupakan bilangan prima adalah ...', '2 dan 9', '3 dan 6', '1 dan 18', '2 dan 3', 'D', 'Faktor 18 = 1, 2, 3, 6, 9, 18. Yang prima hanyalah 2 dan 3.', 'AKTIF'),
+('PRIO-MTK4-0272', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'PENYISIHAN', 'SEDANG', 'PG', 'Kelipatan 6 yang berada di antara 20 dan 30 adalah ...', '26', '28', '24', '22', 'C', '6 × 4 = 24, terletak antara 20 dan 30.', 'AKTIF'),
+('PRIO-MTK4-0273', 'MATEMATIKA', 4, 'Pola Gambar dan Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'Suku berikutnya dari pola bilangan 5, 9, 13, 17, ... adalah ...', '23', '21', '20', '22', 'B', 'Pola memiliki beda tetap bertambah 4 (+4). Maka 17 + 4 = 21.', 'AKTIF'),
+('PRIO-MTK4-0274', 'MATEMATIKA', 4, 'Pola Gambar dan Pola Bilangan', 'PENYISIHAN', 'SEDANG', 'PG', 'Suku berikutnya dari pola bilangan 3, 6, 12, 24, ... adalah ...', '48', '36', '42', '50', 'A', 'Pola kelipatan dua (dikali 2). 24 × 2 = 48.', 'AKTIF'),
+('PRIO-MTK4-0275', 'MATEMATIKA', 4, 'Pola Gambar dan Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Pola bilangan 2, 5, 8, 11, ... Tiga bilangan berikutnya berturut-turut adalah ...', '13, 16, 19', '14, 16, 18', '15, 18, 21', '14, 17, 20', 'D', 'Pola bertambah 3 (+3).', 'AKTIF'),
+('PRIO-MTK4-0276', 'MATEMATIKA', 4, 'Pola Gambar dan Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Pola bilangan 40, 35, 30, 25, ... Bilangan pada suku ke-6 adalah ...', '10', '5', '15', '20', 'C', 'Pola berkurang 5: 40, 35, 30, 25, 20 (ke-5), 15 (ke-6).', 'AKTIF'),
+('PRIO-MTK4-0277', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'UMUM', 'SEDANG', 'PG', 'Bilangan prima di antara 20 dan 30 adalah ...', '21 dan 29', '23 dan 29', '21 dan 27', '23 dan 27', 'B', '21 habis dibagi 3, 27 habis dibagi 3. Yang prima hanya 23 dan 29.', 'AKTIF'),
+('PRIO-MTK4-0278', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'UMUM', 'SEDANG', 'PG', 'Faktor prima dari bilangan 30 adalah ...', '2, 3, dan 5', '2 dan 15', '3 dan 10', '1, 2, 3, 5', 'A', 'Faktorisasi prima 30 = 2 × 3 × 5. Angka 1 bukan bilangan prima.', 'AKTIF'),
+('PRIO-MTK4-0279', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'UMUM', 'SEDANG', 'PG', 'KPK dari 5 dan 7 adalah ...', '12', '25', '42', '35', 'D', 'Karena 5 dan 7 keduanya bilangan prima, KPK-nya langsung 5 × 7 = 35.', 'AKTIF'),
+('PRIO-MTK4-0280', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'UMUM', 'SEDANG', 'PG', 'FPB dari 15 dan 25 adalah ...', '1', '15', '5', '3', 'C', 'Faktor persekutuan terbesar 15 dan 25 adalah 5.', 'AKTIF'),
+('PRIO-MTK4-0281', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'UMUM', 'SEDANG', 'PG', 'Jumlah semua faktor dari bilangan 12 adalah ...', '30', '28', '24', '26', 'B', 'Faktor 12: 1 + 2 + 3 + 4 + 6 + 12 = 28.', 'AKTIF'),
+('PRIO-MTK4-0282', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'UMUM', 'SEDANG', 'PG', 'Banyak faktor bilangan 20 adalah ...', '6 buah', '4 buah', '5 buah', '7 buah', 'A', 'Faktor 20: 1, 2, 4, 5, 10, 20 (ada 6 faktor).', 'AKTIF'),
+('PRIO-MTK4-0283', 'MATEMATIKA', 4, 'Pola Gambar dan Pola Bilangan', 'UMUM', 'SEDANG', 'PG', 'Pola bilangan 1, 4, 9, 16, ... Bilangan ke-6 dari pola tersebut adalah ...', '25', '30', '49', '36', 'D', 'Pola kuadrat bilangan asli: 1², 2², 3², 4², 5²=25, 6²=36.', 'AKTIF'),
+('PRIO-MTK4-0284', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'UMUM', 'SEDANG', 'PG', 'FPB dari 24 dan 32 adalah ...', '6', '12', '8', '4', 'C', '24 = 2³ × 3 dan 32 = 2⁵. FPB = 2³ = 8.', 'AKTIF'),
+('PRIO-MTK4-0285', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan yang senilai dengan 2/3 adalah ...', '4/6', '3/6', '2/6', '4/9', 'A', 'Kalikan pembilang dan penyebut dengan 2: (2×2)/(3×2) = 4/6.', 'AKTIF'),
+('PRIO-MTK4-0286', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan yang senilai dengan 3/4 adalah ...', '6/12', '8/12', '9/16', '9/12', 'D', '3/4 = (3×3)/(4×3) = 9/12.', 'AKTIF'),
+('PRIO-MTK4-0287', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Bentuk paling sederhana dari pecahan 12/16 adalah ...', '2/3', '4/5', '3/4', '6/8', 'C', 'Bagi pembilang dan penyebut dengan FPB-nya yaitu 4: 12:4 / 16:4 = 3/4.', 'AKTIF'),
+('PRIO-MTK4-0288', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Di antara pecahan 3/8 dan 5/8, pecahan yang lebih besar adalah ...', '1/8', '5/8', '3/8', 'Keduanya sama', 'B', 'Penyebut sama (8), maka pembilang lebih besar bernilai lebih besar (5 > 3).', 'AKTIF'),
+('PRIO-MTK4-0289', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan 1/2 jika diubah ke bentuk desimal dan persen adalah ...', '0,5 dan 50%', '0,2 dan 20%', '0,05 dan 5%', '0,5 dan 5%', 'A', '1/2 = 5/10 = 0,5 = 50%.', 'AKTIF'),
+('PRIO-MTK4-0290', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan 3/4 jika diubah ke bentuk persen adalah ...', '50%', '25%', '80%', '75%', 'D', '3/4 × 100% = 75%.', 'AKTIF'),
+('PRIO-MTK4-0291', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Bentuk desimal dari pecahan 1/4 adalah ...', '0,5', '0,14', '0,25', '0,4', 'C', '1/4 = 25/100 = 0,25.', 'AKTIF'),
+('PRIO-MTK4-0292', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan yang nilainya lebih besar dari 2/3 adalah ...', '3/6', '3/4', '1/2', '2/4', 'B', 'Samakan penyebut per 12: 2/3 = 8/12, sedangkan 3/4 = 9/12. Maka 3/4 > 2/3.', 'AKTIF'),
+('PRIO-MTK4-0293', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil dari 2/7 + 3/7 adalah ...', '5/7', '5/14', '6/7', '1/7', 'A', 'Penyebut sama, langsung jumlahkan pembilang: 2 + 3 = 5 -> 5/7.', 'AKTIF'),
+('PRIO-MTK4-0294', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil dari 7/9 − 4/9 adalah ...', '3/18', '11/9', '4/9', '3/9 = 1/3', 'D', '7/9 - 4/9 = 3/9. Sederhanakan bagi 3 menjadi 1/3.', 'AKTIF'),
+('PRIO-MTK4-0295', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan senilai dari 5/10 dalam bentuk paling sederhana adalah ...', '1/5', '5/2', '1/2', '2/5', 'C', '5/10 dibagi 5 menjadi 1/2.', 'AKTIF'),
+('PRIO-MTK4-0296', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Tanda perbandingan yang tepat untuk 3/5 ... 4/5 adalah ...', '>= (tidak tentu)', '< (lebih kecil)', '> (lebih besar)', '= (sama dengan)', 'B', '3/5 lebih kecil dari 4/5 karena 3 < 4.', 'AKTIF'),
+('PRIO-MTK4-0297', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan 2/5 jika diubah ke bentuk desimal adalah ...', '0,4', '0,2', '0,25', '0,5', 'A', '2/5 = 4/10 = 0,4.', 'AKTIF'),
+('PRIO-MTK4-0298', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Urutan pecahan 1/4, 1/2, 3/4 dari yang terkecil adalah ...', '1/2, 1/4, 3/4', '3/4, 1/2, 1/4', '1/4, 3/4, 1/2', '1/4, 1/2, 3/4', 'D', '1/4 = 0,25; 1/2 = 0,50; 3/4 = 0,75.', 'AKTIF'),
+('PRIO-MTK4-0299', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Ibu memotong semangka menjadi 8 bagian sama besar. Budi memakan 3 bagian. Bagian semangka yang dimakan Budi bernilai ...', '5/8', '3/5', '3/8', '8/3', 'C', '3 bagian dari 8 bagian sama bernilai 3/8.', 'AKTIF'),
+('PRIO-MTK4-0300', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'PENYISIHAN', 'SEDANG', 'PG', 'Keliling persegi panjang berukuran panjang 12 cm dan lebar 7 cm adalah ...', '19 cm', '84 cm', '144 cm', '38 cm', 'D', 'Keliling = 2 × (p + l) = 2 × (12 + 7) = 2 × 19 = 38 cm.', 'AKTIF'),
+('PRIO-MTK4-0301', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'PENYISIHAN', 'SEDANG', 'PG', 'Luas persegi panjang dengan panjang 12 cm dan lebar 7 cm adalah ...', '19 cm²', '96 cm²', '84 cm²', '38 cm²', 'C', 'Luas = p × l = 12 × 7 = 84 cm².', 'AKTIF'),
+('PRIO-MTK4-0302', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'PENYISIHAN', 'SEDANG', 'PG', 'Keliling persegi dengan panjang sisi 13 cm adalah ...', '169 cm', '52 cm', '26 cm', '39 cm', 'B', 'Keliling persegi = 4 × sisi = 4 × 13 = 52 cm.', 'AKTIF'),
+('PRIO-MTK4-0303', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'PENYISIHAN', 'SEDANG', 'PG', 'Luas persegi dengan sisi 13 cm adalah ...', '169 cm²', '52 cm²', '26 cm²', '144 cm²', 'A', 'Luas persegi = s × s = 13 × 13 = 169 cm².', 'AKTIF'),
+('PRIO-MTK4-0304', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', 'Panjang tali 3 meter 20 cm sama dengan ...', '32 cm', '3.200 cm', '302 cm', '320 cm', 'D', '3 m = 300 cm, ditambah 20 cm = 320 cm.', 'AKTIF'),
+('PRIO-MTK4-0305', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'SEDANG', 'PG', 'Berat beras 2 kg 500 gram sama dengan ...', '25.000 gram', '2.050 gram', '2.500 gram', '250 gram', 'C', '2 kg = 2.000 g, ditambah 500 g = 2.500 g.', 'AKTIF'),
+('PRIO-MTK4-0306', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah taman berbentuk persegi memiliki keliling 64 m. Panjang sisi taman tersebut adalah ...', '64 m', '16 m', '32 m', '8 m', 'B', 'Sisi = Keliling : 4 = 64 : 4 = 16 m.', 'AKTIF'),
+('PRIO-MTK4-0307', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah taman persegi berkeliling 64 m memiliki luas sebesar ...', '256 m²', '128 m²', '64 m²', '1.024 m²', 'A', 'Sisi = 64 : 4 = 16 m. Luas = 16 × 16 = 256 m².', 'AKTIF'),
+('PRIO-MTK4-0308', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'SEDANG', 'PG', 'Film dimulai pukul 08.35 dan selesai pukul 10.10. Lama pemutaran film adalah ...', '85 menit', '105 menit', '75 menit', '95 menit', 'D', 'Dari 08.35 ke 09.35 = 60 menit. Dari 09.35 ke 10.10 = 35 menit. Total = 60 + 35 = 95 menit.', 'AKTIF'),
+('PRIO-MTK4-0309', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah segitiga memiliki sisi-sisi 6 cm, 8 cm, dan 10 cm. Keliling segitiga tersebut adalah ...', '14 cm', '30 cm', '24 cm', '48 cm', 'C', 'Keliling = 6 + 8 + 10 = 24 cm.', 'AKTIF'),
+('PRIO-MTK4-0310', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 14 buku
 - Selasa: 9 buku
@@ -398,7 +398,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '43 buku', '58 buku', '36 buku', '48 buku', 'D', 'Jumlahkan seluruh data peminjaman buku: 14 + 9 + 14 + 11 = 48 buku.', 'AKTIF'),
-('PRIO-MTK4-0311', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0311', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 16 buku
 - Selasa: 10 buku
@@ -407,7 +407,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '61 buku', '39 buku', '51 buku', '46 buku', 'C', 'Jumlahkan seluruh data peminjaman buku: 16 + 10 + 13 + 12 = 51 buku.', 'AKTIF'),
-('PRIO-MTK4-0312', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0312', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 18 buku
 - Selasa: 11 buku
@@ -416,7 +416,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '42 buku', '54 buku', '49 buku', '64 buku', 'B', 'Jumlahkan seluruh data peminjaman buku: 18 + 11 + 12 + 13 = 54 buku.', 'AKTIF'),
-('PRIO-MTK4-0313', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0313', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 20 buku
 - Selasa: 12 buku
@@ -425,7 +425,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '61 buku', '56 buku', '71 buku', '49 buku', 'A', 'Jumlahkan seluruh data peminjaman buku: 20 + 12 + 15 + 14 = 61 buku.', 'AKTIF'),
-('PRIO-MTK4-0314', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0314', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 22 buku
 - Selasa: 13 buku
@@ -434,7 +434,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '54 buku', '69 buku', '47 buku', '59 buku', 'D', 'Jumlahkan seluruh data peminjaman buku: 22 + 13 + 14 + 10 = 59 buku.', 'AKTIF'),
-('PRIO-MTK4-0315', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0315', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 24 buku
 - Selasa: 14 buku
@@ -443,7 +443,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '72 buku', '50 buku', '62 buku', '57 buku', 'C', 'Jumlahkan seluruh data peminjaman buku: 24 + 14 + 13 + 11 = 62 buku.', 'AKTIF'),
-('PRIO-MTK4-0316', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0316', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 26 buku
 - Selasa: 15 buku
@@ -452,7 +452,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '53 buku', '65 buku', '60 buku', '75 buku', 'B', 'Jumlahkan seluruh data peminjaman buku: 26 + 15 + 12 + 12 = 65 buku.', 'AKTIF'),
-('PRIO-MTK4-0317', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0317', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 28 buku
 - Selasa: 16 buku
@@ -461,7 +461,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '72 buku', '67 buku', '82 buku', '60 buku', 'A', 'Jumlahkan seluruh data peminjaman buku: 28 + 16 + 15 + 13 = 72 buku.', 'AKTIF'),
-('PRIO-MTK4-0318', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0318', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 30 buku
 - Selasa: 17 buku
@@ -470,7 +470,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '70 buku', '85 buku', '63 buku', '75 buku', 'D', 'Jumlahkan seluruh data peminjaman buku: 30 + 17 + 14 + 14 = 75 buku.', 'AKTIF'),
-('PRIO-MTK4-0319', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0319', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 32 buku
 - Selasa: 18 buku
@@ -479,7 +479,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '83 buku', '61 buku', '73 buku', '68 buku', 'C', 'Jumlahkan seluruh data peminjaman buku: 32 + 18 + 13 + 10 = 73 buku.', 'AKTIF'),
-('PRIO-MTK4-0320', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0320', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 34 buku
 - Selasa: 19 buku
@@ -488,7 +488,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '64 buku', '76 buku', '71 buku', '86 buku', 'B', 'Jumlahkan seluruh data peminjaman buku: 34 + 19 + 12 + 11 = 76 buku.', 'AKTIF'),
-('PRIO-MTK4-0321', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0321', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 36 buku
 - Selasa: 20 buku
@@ -497,7 +497,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '83 buku', '78 buku', '93 buku', '71 buku', 'A', 'Jumlahkan seluruh data peminjaman buku: 36 + 20 + 15 + 12 = 83 buku.', 'AKTIF'),
-('PRIO-MTK4-0322', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0322', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 38 buku
 - Selasa: 21 buku
@@ -506,7 +506,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '81 buku', '96 buku', '74 buku', '86 buku', 'D', 'Jumlahkan seluruh data peminjaman buku: 38 + 21 + 14 + 13 = 86 buku.', 'AKTIF'),
-('PRIO-MTK4-0323', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0323', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 40 buku
 - Selasa: 22 buku
@@ -515,7 +515,7 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '99 buku', '77 buku', '89 buku', '84 buku', 'C', 'Jumlahkan seluruh data peminjaman buku: 40 + 22 + 13 + 14 = 89 buku.', 'AKTIF'),
-('PRIO-MTK4-0324', 'MATEMATIKA', 4, 'Membaca Data Tabel & Diagram', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
+('PRIO-MTK4-0324', 'MATEMATIKA', 4, 'Piktogram dan Diagram Batang', 'UMUM', 'MUDAH', 'PG', '[STIMULUS]
 Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 - Senin: 42 buku
 - Selasa: 23 buku
@@ -524,427 +524,427 @@ Tabel Peminjaman Buku Perpustakaan Kelas IV (Senin – Kamis):
 
 [PERTANYAAN]
 Berdasarkan tabel di atas, jumlah seluruh buku yang dipinjam siswa dari hari Senin sampai Kamis adalah ...', '75 buku', '87 buku', '82 buku', '97 buku', 'B', 'Jumlahkan seluruh data peminjaman buku: 42 + 23 + 12 + 10 = 87 buku.', 'AKTIF'),
-('PRIO-MTK5-0325', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil penjumlahan dari 2/3 + 1/4 adalah ...', '11/12', '3/7', '5/12', '3/12', 'A', 'Samakan penyebut dengan KPK dari 3 dan 4 yaitu 12: 2/3 = 8/12 dan 1/4 = 3/12. Hasil = 8/12 + 3/12 = 11/12.', 'AKTIF'),
-('PRIO-MTK5-0326', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil pengurangan dari 5/6 − 1/3 adalah ...', '4/3', '4/6', '2/3', '1/2', 'D', 'Samakan penyebut: 1/3 = 2/6. Maka 5/6 − 2/6 = 3/6 = 1/2.', 'AKTIF'),
-('PRIO-MTK5-0327', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 1/2 + 2/5 adalah ...', '3/10', '7/10', '9/10', '3/7', 'C', 'KPK 2 dan 5 adalah 10: 5/10 + 4/10 = 9/10.', 'AKTIF'),
-('PRIO-MTK5-0328', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 3/4 − 1/2 adalah ...', '1/2', '1/4', '2/2', '2/4', 'B', '1/2 = 2/4. Maka 3/4 − 2/4 = 1/4.', 'AKTIF'),
-('PRIO-MTK5-0329', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 2/5 + 1/2 adalah ...', '9/10', '3/10', '3/7', '4/10', 'A', '4/10 + 5/10 = 9/10.', 'AKTIF'),
-('PRIO-MTK5-0330', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 4/5 − 1/2 adalah ...', '3/3', '3/5', '1/10', '3/10', 'D', '8/10 − 5/10 = 3/10.', 'AKTIF'),
-('PRIO-MTK5-0331', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 1/3 + 2/9 adalah ...', '3/9', '1/3', '5/9', '3/12', 'C', '1/3 = 3/9. Maka 3/9 + 2/9 = 5/9.', 'AKTIF'),
-('PRIO-MTK5-0332', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 7/8 − 1/4 adalah ...', '3/8', '5/8', '6/4', '6/8', 'B', '1/4 = 2/8. Maka 7/8 − 2/8 = 5/8.', 'AKTIF'),
-('PRIO-MTK5-0333', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 3/5 + 1/6 adalah ...', '23/30', '4/11', '4/30', '19/30', 'A', 'KPK 5 dan 6 adalah 30: 18/30 + 5/30 = 23/30.', 'AKTIF'),
-('PRIO-MTK5-0334', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 5/6 − 3/4 adalah ...', '2/2', '2/12', '1/6', '1/12', 'D', 'KPK 6 dan 4 adalah 12: 10/12 − 9/12 = 1/12.', 'AKTIF'),
-('PRIO-MTK5-0335', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 1 1/2 + 2 1/3 adalah ...', '3 1/6', '4 1/6', '3 5/6', '3 2/5', 'C', '1 + 2 = 3; 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Hasil = 3 5/6.', 'AKTIF'),
-('PRIO-MTK5-0336', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 3 3/4 − 1 1/2 adalah ...', '1 3/4', '2 1/4', '2 2/2', '2 1/2', 'B', '3 − 1 = 2; 3/4 − 2/4 = 1/4. Hasil = 2 1/4.', 'AKTIF'),
-('PRIO-MTK5-0337', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil perkalian pecahan 2/3 × 3/5 adalah ...', '2/5', '6/8', '5/8', '1/5', 'A', '(2×3)/(3×5) = 6/15 = 2/5.', 'AKTIF'),
-('PRIO-MTK5-0338', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil pembagian pecahan 3/4 : 1/2 adalah ...', '3/8', '2/3', '1/4', '1 1/2', 'D', '3/4 × 2/1 = 6/4 = 3/2 = 1 1/2.', 'AKTIF'),
-('PRIO-MTK5-0339', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 4/7 × 7/8 adalah ...', '4/8', '1/4', '1/2', '28/15', 'C', '(4×7)/(7×8) = 28/56 = 1/2.', 'AKTIF'),
-('PRIO-MTK5-0340', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 5/6 : 2/3 adalah ...', '5/9', '1 1/4', '10/18', '15/12', 'B', '5/6 × 3/2 = 15/12 = 5/4 = 1 1/4.', 'AKTIF'),
-('PRIO-MTK5-0341', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Ibu memiliki 1/2 kg gula dan membeli lagi 3/4 kg. Total gula Ibu sekarang adalah ...', '1 1/4 kg', '4/6 kg', '1 1/2 kg', '1 kg', 'A', '2/4 + 3/4 = 5/4 = 1 1/4 kg.', 'AKTIF'),
-('PRIO-MTK5-0342', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah wadah berisi 7/8 liter minyak. Digunakan 1/2 liter. Sisa minyak adalah ...', '6/6 liter', '5/8 liter', '1/4 liter', '3/8 liter', 'D', '7/8 − 4/8 = 3/8 liter.', 'AKTIF'),
-('PRIO-MTK5-0343', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 2/5 + 3/10 adalah ...', '5/10', '1/2', '7/10', '5/15', 'C', '4/10 + 3/10 = 7/10.', 'AKTIF'),
-('PRIO-MTK5-0344', 'MATEMATIKA', 5, 'Operasi Pecahan Berbeda Penyebut', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 4/9 + 1/3 adalah ...', '2/3', '7/9', '5/12', '5/9', 'B', '4/9 + 3/9 = 7/9.', 'AKTIF'),
-('PRIO-MTK5-0345', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0325', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil penjumlahan dari 2/3 + 1/4 adalah ...', '11/12', '3/7', '5/12', '3/12', 'A', 'Samakan penyebut dengan KPK dari 3 dan 4 yaitu 12: 2/3 = 8/12 dan 1/4 = 3/12. Hasil = 8/12 + 3/12 = 11/12.', 'AKTIF'),
+('PRIO-MTK5-0326', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil pengurangan dari 5/6 − 1/3 adalah ...', '4/3', '4/6', '2/3', '1/2', 'D', 'Samakan penyebut: 1/3 = 2/6. Maka 5/6 − 2/6 = 3/6 = 1/2.', 'AKTIF'),
+('PRIO-MTK5-0327', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 1/2 + 2/5 adalah ...', '3/10', '7/10', '9/10', '3/7', 'C', 'KPK 2 dan 5 adalah 10: 5/10 + 4/10 = 9/10.', 'AKTIF'),
+('PRIO-MTK5-0328', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 3/4 − 1/2 adalah ...', '1/2', '1/4', '2/2', '2/4', 'B', '1/2 = 2/4. Maka 3/4 − 2/4 = 1/4.', 'AKTIF'),
+('PRIO-MTK5-0329', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 2/5 + 1/2 adalah ...', '9/10', '3/10', '3/7', '4/10', 'A', '4/10 + 5/10 = 9/10.', 'AKTIF'),
+('PRIO-MTK5-0330', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 4/5 − 1/2 adalah ...', '3/3', '3/5', '1/10', '3/10', 'D', '8/10 − 5/10 = 3/10.', 'AKTIF'),
+('PRIO-MTK5-0331', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 1/3 + 2/9 adalah ...', '3/9', '1/3', '5/9', '3/12', 'C', '1/3 = 3/9. Maka 3/9 + 2/9 = 5/9.', 'AKTIF'),
+('PRIO-MTK5-0332', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 7/8 − 1/4 adalah ...', '3/8', '5/8', '6/4', '6/8', 'B', '1/4 = 2/8. Maka 7/8 − 2/8 = 5/8.', 'AKTIF'),
+('PRIO-MTK5-0333', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 3/5 + 1/6 adalah ...', '23/30', '4/11', '4/30', '19/30', 'A', 'KPK 5 dan 6 adalah 30: 18/30 + 5/30 = 23/30.', 'AKTIF'),
+('PRIO-MTK5-0334', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 5/6 − 3/4 adalah ...', '2/2', '2/12', '1/6', '1/12', 'D', 'KPK 6 dan 4 adalah 12: 10/12 − 9/12 = 1/12.', 'AKTIF'),
+('PRIO-MTK5-0335', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 1 1/2 + 2 1/3 adalah ...', '3 1/6', '4 1/6', '3 5/6', '3 2/5', 'C', '1 + 2 = 3; 1/2 + 1/3 = 3/6 + 2/6 = 5/6. Hasil = 3 5/6.', 'AKTIF'),
+('PRIO-MTK5-0336', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 3 3/4 − 1 1/2 adalah ...', '1 3/4', '2 1/4', '2 2/2', '2 1/2', 'B', '3 − 1 = 2; 3/4 − 2/4 = 1/4. Hasil = 2 1/4.', 'AKTIF'),
+('PRIO-MTK5-0337', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil perkalian pecahan 2/3 × 3/5 adalah ...', '2/5', '6/8', '5/8', '1/5', 'A', '(2×3)/(3×5) = 6/15 = 2/5.', 'AKTIF'),
+('PRIO-MTK5-0338', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil pembagian pecahan 3/4 : 1/2 adalah ...', '3/8', '2/3', '1/4', '1 1/2', 'D', '3/4 × 2/1 = 6/4 = 3/2 = 1 1/2.', 'AKTIF'),
+('PRIO-MTK5-0339', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 4/7 × 7/8 adalah ...', '4/8', '1/4', '1/2', '28/15', 'C', '(4×7)/(7×8) = 28/56 = 1/2.', 'AKTIF'),
+('PRIO-MTK5-0340', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 5/6 : 2/3 adalah ...', '5/9', '1 1/4', '10/18', '15/12', 'B', '5/6 × 3/2 = 15/12 = 5/4 = 1 1/4.', 'AKTIF'),
+('PRIO-MTK5-0341', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Ibu memiliki 1/2 kg gula dan membeli lagi 3/4 kg. Total gula Ibu sekarang adalah ...', '1 1/4 kg', '4/6 kg', '1 1/2 kg', '1 kg', 'A', '2/4 + 3/4 = 5/4 = 1 1/4 kg.', 'AKTIF'),
+('PRIO-MTK5-0342', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah wadah berisi 7/8 liter minyak. Digunakan 1/2 liter. Sisa minyak adalah ...', '6/6 liter', '5/8 liter', '1/4 liter', '3/8 liter', 'D', '7/8 − 4/8 = 3/8 liter.', 'AKTIF'),
+('PRIO-MTK5-0343', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 2/5 + 3/10 adalah ...', '5/10', '1/2', '7/10', '5/15', 'C', '4/10 + 3/10 = 7/10.', 'AKTIF'),
+('PRIO-MTK5-0344', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', 'Hasil dari 4/9 + 1/3 adalah ...', '2/3', '7/9', '5/12', '5/9', 'B', '4/9 + 3/9 = 7/9.', 'AKTIF'),
+('PRIO-MTK5-0345', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah buku cerita sains tercantum dengan harga label Rp75.000. Di atas rak tertulis pengumuman diskon sebesar 20%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp60.000', 'Rp15.000', 'Rp65.000', 'Rp55.000', 'A', 'Besar diskon = 20% × Rp75.000 = (20/100) × Rp75.000 = Rp15.000. Harga akhir yang dibayar = Rp75.000 − Rp15.000 = Rp60.000.', 'AKTIF'),
-('PRIO-MTK5-0346', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0346', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual buku cerita sains seharga Rp75.000. Pembeli memperoleh potongan harga langsung sebesar 20%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp60.000', 'Rp30.000', 'Rp37.500', 'Rp15.000', 'D', 'Nominal potongan harga = persentase diskon × harga awal = 20% × Rp75.000 = Rp15.000.', 'AKTIF'),
-('PRIO-MTK5-0347', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0347', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah tas ransel sekolah tercantum dengan harga label Rp80.000. Di atas rak tertulis pengumuman diskon sebesar 15%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp12.000', 'Rp73.000', 'Rp63.000', 'Rp68.000', 'D', 'Besar diskon = 15% × Rp80.000 = (15/100) × Rp80.000 = Rp12.000. Harga akhir yang dibayar = Rp80.000 − Rp12.000 = Rp68.000.', 'AKTIF'),
-('PRIO-MTK5-0348', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0348', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual tas ransel sekolah seharga Rp80.000. Pembeli memperoleh potongan harga langsung sebesar 15%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp24.000', 'Rp40.000', 'Rp12.000', 'Rp68.000', 'C', 'Nominal potongan harga = persentase diskon × harga awal = 15% × Rp80.000 = Rp12.000.', 'AKTIF'),
-('PRIO-MTK5-0349', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0349', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah sepatu olahraga tercantum dengan harga label Rp100.000. Di atas rak tertulis pengumuman diskon sebesar 25%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp80.000', 'Rp70.000', 'Rp75.000', 'Rp25.000', 'C', 'Besar diskon = 25% × Rp100.000 = (25/100) × Rp100.000 = Rp25.000. Harga akhir yang dibayar = Rp100.000 − Rp25.000 = Rp75.000.', 'AKTIF'),
-('PRIO-MTK5-0350', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0350', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual sepatu olahraga seharga Rp100.000. Pembeli memperoleh potongan harga langsung sebesar 25%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp50.000', 'Rp25.000', 'Rp75.000', 'Rp50.000', 'B', 'Nominal potongan harga = persentase diskon × harga awal = 25% × Rp100.000 = Rp25.000.', 'AKTIF'),
-('PRIO-MTK5-0351', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0351', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah set alat tulis tercantum dengan harga label Rp50.000. Di atas rak tertulis pengumuman diskon sebesar 10%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp40.000', 'Rp45.000', 'Rp5.000', 'Rp50.000', 'B', 'Besar diskon = 10% × Rp50.000 = (10/100) × Rp50.000 = Rp5.000. Harga akhir yang dibayar = Rp50.000 − Rp5.000 = Rp45.000.', 'AKTIF'),
-('PRIO-MTK5-0352', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0352', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual set alat tulis seharga Rp50.000. Pembeli memperoleh potongan harga langsung sebesar 10%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp5.000', 'Rp45.000', 'Rp10.000', 'Rp25.000', 'A', 'Nominal potongan harga = persentase diskon × harga awal = 10% × Rp50.000 = Rp5.000.', 'AKTIF'),
-('PRIO-MTK5-0353', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0353', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah seragam batik sekolah tercantum dengan harga label Rp120.000. Di atas rak tertulis pengumuman diskon sebesar 30%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp84.000', 'Rp36.000', 'Rp89.000', 'Rp79.000', 'A', 'Besar diskon = 30% × Rp120.000 = (30/100) × Rp120.000 = Rp36.000. Harga akhir yang dibayar = Rp120.000 − Rp36.000 = Rp84.000.', 'AKTIF'),
-('PRIO-MTK5-0354', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0354', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual seragam batik sekolah seharga Rp120.000. Pembeli memperoleh potongan harga langsung sebesar 30%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp84.000', 'Rp72.000', 'Rp60.000', 'Rp36.000', 'D', 'Nominal potongan harga = persentase diskon × harga awal = 30% × Rp120.000 = Rp36.000.', 'AKTIF'),
-('PRIO-MTK5-0355', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0355', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah jaket kontingen lomba tercantum dengan harga label Rp150.000. Di atas rak tertulis pengumuman diskon sebesar 20%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp30.000', 'Rp125.000', 'Rp115.000', 'Rp120.000', 'D', 'Besar diskon = 20% × Rp150.000 = (20/100) × Rp150.000 = Rp30.000. Harga akhir yang dibayar = Rp150.000 − Rp30.000 = Rp120.000.', 'AKTIF'),
-('PRIO-MTK5-0356', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0356', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual jaket kontingen lomba seharga Rp150.000. Pembeli memperoleh potongan harga langsung sebesar 20%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp60.000', 'Rp75.000', 'Rp30.000', 'Rp120.000', 'C', 'Nominal potongan harga = persentase diskon × harga awal = 20% × Rp150.000 = Rp30.000.', 'AKTIF'),
-('PRIO-MTK5-0357', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0357', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah kotak pensil bertingkat tercantum dengan harga label Rp40.000. Di atas rak tertulis pengumuman diskon sebesar 25%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp35.000', 'Rp25.000', 'Rp30.000', 'Rp10.000', 'C', 'Besar diskon = 25% × Rp40.000 = (25/100) × Rp40.000 = Rp10.000. Harga akhir yang dibayar = Rp40.000 − Rp10.000 = Rp30.000.', 'AKTIF'),
-('PRIO-MTK5-0358', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0358', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual kotak pensil bertingkat seharga Rp40.000. Pembeli memperoleh potongan harga langsung sebesar 25%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp20.000', 'Rp10.000', 'Rp30.000', 'Rp20.000', 'B', 'Nominal potongan harga = persentase diskon × harga awal = 25% × Rp40.000 = Rp10.000.', 'AKTIF'),
-('PRIO-MTK5-0359', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0359', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah buku kamus mini tercantum dengan harga label Rp60.000. Di atas rak tertulis pengumuman diskon sebesar 15%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp46.000', 'Rp51.000', 'Rp9.000', 'Rp56.000', 'B', 'Besar diskon = 15% × Rp60.000 = (15/100) × Rp60.000 = Rp9.000. Harga akhir yang dibayar = Rp60.000 − Rp9.000 = Rp51.000.', 'AKTIF'),
-('PRIO-MTK5-0360', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0360', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual buku kamus mini seharga Rp60.000. Pembeli memperoleh potongan harga langsung sebesar 15%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp9.000', 'Rp51.000', 'Rp18.000', 'Rp30.000', 'A', 'Nominal potongan harga = persentase diskon × harga awal = 15% × Rp60.000 = Rp9.000.', 'AKTIF'),
-('PRIO-MTK5-0361', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0361', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah kalkulator ilmiah siswa tercantum dengan harga label Rp90.000. Di atas rak tertulis pengumuman diskon sebesar 10%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp81.000', 'Rp9.000', 'Rp86.000', 'Rp76.000', 'A', 'Besar diskon = 10% × Rp90.000 = (10/100) × Rp90.000 = Rp9.000. Harga akhir yang dibayar = Rp90.000 − Rp9.000 = Rp81.000.', 'AKTIF'),
-('PRIO-MTK5-0362', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0362', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual kalkulator ilmiah siswa seharga Rp90.000. Pembeli memperoleh potongan harga langsung sebesar 10%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp81.000', 'Rp18.000', 'Rp45.000', 'Rp9.000', 'D', 'Nominal potongan harga = persentase diskon × harga awal = 10% × Rp90.000 = Rp9.000.', 'AKTIF'),
-('PRIO-MTK5-0363', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0363', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko buku memberikan promo khusus menjelang SEA Competition 2026. Sebuah ensiklopedia flora fauna tercantum dengan harga label Rp200.000. Di atas rak tertulis pengumuman diskon sebesar 40%.
 
 [PERTANYAAN]
 Berapakah harga yang harus dibayar oleh pembeli setelah mendapatkan potongan harga?', 'Rp80.000', 'Rp125.000', 'Rp115.000', 'Rp120.000', 'D', 'Besar diskon = 40% × Rp200.000 = (40/100) × Rp200.000 = Rp80.000. Harga akhir yang dibayar = Rp200.000 − Rp80.000 = Rp120.000.', 'AKTIF'),
-('PRIO-MTK5-0364', 'MATEMATIKA', 5, 'Desimal, Persen, & Diskon', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0364', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'UMUM', 'SEDANG', 'PG', '[STIMULUS]
 Sebuah toko perlengkapan sekolah menjual ensiklopedia flora fauna seharga Rp200.000. Pembeli memperoleh potongan harga langsung sebesar 40%.
 
 [PERTANYAAN]
 Berapakah nominal potongan harga (diskon) yang diperoleh pembeli?', 'Rp160.000', 'Rp100.000', 'Rp80.000', 'Rp120.000', 'C', 'Nominal potongan harga = persentase diskon × harga awal = 40% × Rp200.000 = Rp80.000.', 'AKTIF'),
-('PRIO-MTK5-0365', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0365', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Lampu merah beroperasi setiap 6 detik, sedangkan lampu hijau beroperasi setiap 8 detik. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa detik keduanya akan beroperasi bersama-sama kembali?', '24 detik', '14 detik', '12 detik', '16 detik', 'A', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(6, 8) = 24 detik.', 'AKTIF'),
-('PRIO-MTK5-0366', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0366', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Bus jurusan A beroperasi setiap 12 menit, sedangkan bus jurusan B beroperasi setiap 18 menit. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa menit keduanya akan beroperasi bersama-sama kembali?', '30 menit', '24 menit', '36 menit', '36 menit', 'D', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(12, 18) = 36 menit.', 'AKTIF'),
-('PRIO-MTK5-0367', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0367', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Ali ronda tiap beroperasi setiap 4 hari, sedangkan Budi ronda tiap beroperasi setiap 6 hari. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa hari keduanya akan beroperasi bersama-sama kembali?', '8 hari', '12 hari', '12 hari', '10 hari', 'C', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(4, 6) = 12 hari.', 'AKTIF'),
-('PRIO-MTK5-0368', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0368', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Bel laboratorium beroperasi setiap 15 menit, sedangkan bel perpustakaan beroperasi setiap 20 menit. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa menit keduanya akan beroperasi bersama-sama kembali?', '40 menit', '60 menit', '35 menit', '30 menit', 'B', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(15, 20) = 60 menit.', 'AKTIF'),
-('PRIO-MTK5-0369', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0369', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Siti berenang tiap beroperasi setiap 8 hari, sedangkan Dewi berenang tiap beroperasi setiap 10 hari. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa hari keduanya akan beroperasi bersama-sama kembali?', '40 hari', '18 hari', '16 hari', '20 hari', 'A', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(8, 10) = 40 hari.', 'AKTIF'),
-('PRIO-MTK5-0370', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0370', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Penyiraman kebun A beroperasi setiap 3 hari, sedangkan penyiraman kebun B beroperasi setiap 5 hari. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa hari keduanya akan beroperasi bersama-sama kembali?', '8 hari', '6 hari', '10 hari', '15 hari', 'D', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(3, 5) = 15 hari.', 'AKTIF'),
-('PRIO-MTK5-0371', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0371', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Kereta rel listrik 1 beroperasi setiap 10 menit, sedangkan kereta rel listrik 2 beroperasi setiap 15 menit. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa menit keduanya akan beroperasi bersama-sama kembali?', '20 menit', '30 menit', '30 menit', '25 menit', 'C', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(10, 15) = 30 menit.', 'AKTIF'),
-('PRIO-MTK5-0372', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0372', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Alarm A berbunyi tiap beroperasi setiap 6 menit, sedangkan alarm B berbunyi tiap beroperasi setiap 9 menit. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa menit keduanya akan beroperasi bersama-sama kembali?', '18 menit', '18 menit', '15 menit', '12 menit', 'B', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(6, 9) = 18 menit.', 'AKTIF'),
-('PRIO-MTK5-0373', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0373', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Bimbel Matematika tiap beroperasi setiap 12 hari, sedangkan bimbel IPAS tiap beroperasi setiap 15 hari. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa hari keduanya akan beroperasi bersama-sama kembali?', '60 hari', '27 hari', '24 hari', '30 hari', 'A', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(12, 15) = 60 hari.', 'AKTIF'),
-('PRIO-MTK5-0374', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0374', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', '[STIMULUS]
 Pada pos pantau, Kapal feri Merak beroperasi setiap 16 menit, sedangkan kapal feri Bakauheni beroperasi setiap 24 menit. Keduanya memulai kegiatan secara bersamaan pada pukul 08.00.
 
 [PERTANYAAN]
 Setelah berapa menit keduanya akan beroperasi bersama-sama kembali?', '40 menit', '32 menit', '48 menit', '48 menit', 'D', 'Gunakan konsep KPK (Kelipatan Persekutuan Terkecil) untuk mencari waktu dua kejadian bertemu kembali. KPK(16, 24) = 48 menit.', 'AKTIF'),
-('PRIO-MTK5-0375', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0375', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 24 buku tulis dan 36 pensil. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '16 paket', '24 paket', '12 paket', '6 paket', 'C', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(24, 36) = 12 paket.', 'AKTIF'),
-('PRIO-MTK5-0376', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0376', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 30 apel dan 45 jeruk. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '30 paket', '15 paket', '7.5 paket', '19 paket', 'B', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(30, 45) = 15 paket.', 'AKTIF'),
-('PRIO-MTK5-0377', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0377', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 16 kue bolu dan 24 donat. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '8 paket', '4 paket', '12 paket', '16 paket', 'A', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(16, 24) = 8 paket.', 'AKTIF'),
-('PRIO-MTK5-0378', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0378', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 20 permen cokelat dan 50 biskuit. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '5 paket', '14 paket', '20 paket', '10 paket', 'D', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(20, 50) = 10 paket.', 'AKTIF'),
-('PRIO-MTK5-0379', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0379', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 32 buku gambar dan 48 krayon. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '20 paket', '32 paket', '16 paket', '8 paket', 'C', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(32, 48) = 16 paket.', 'AKTIF'),
-('PRIO-MTK5-0380', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0380', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 40 bibit tomat dan 60 bibit cabai. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '40 paket', '20 paket', '10 paket', '24 paket', 'B', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(40, 60) = 20 paket.', 'AKTIF'),
-('PRIO-MTK5-0381', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0381', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 28 botol air dan 42 kotak snack. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '14 paket', '7 paket', '18 paket', '28 paket', 'A', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(28, 42) = 14 paket.', 'AKTIF'),
-('PRIO-MTK5-0382', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0382', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 36 penggaris dan 54 penghapus. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '9 paket', '22 paket', '36 paket', '18 paket', 'D', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(36, 54) = 18 paket.', 'AKTIF'),
-('PRIO-MTK5-0383', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0383', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 48 pita merah dan 72 pita biru. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '28 paket', '48 paket', '24 paket', '12 paket', 'C', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(48, 72) = 24 paket.', 'AKTIF'),
-('PRIO-MTK5-0384', 'MATEMATIKA', 5, 'KPK & FPB Soal Cerita', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK5-0384', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Seorang guru menyiapkan bingkisan lomba yang terdiri atas 18 buku modul dan 30 lembar kerja. Semua barang tersebut akan dimasukkan ke dalam beberapa paket bingkisan dengan jumlah dan jenis yang sama rata tanpa ada sisa.
 
 [PERTANYAAN]
 Berapa banyak paket bingkisan terbanyak yang dapat dibuat oleh guru tersebut?', '18 paket', '6 paket', '3 paket', '10 paket', 'B', 'Gunakan konsep FPB (Faktor Persekutuan Terbesar) untuk membagi benda ke beberapa wadah sama banyak tanpa sisa. FPB(18, 30) = 6 paket.', 'AKTIF'),
-('PRIO-MTK5-0385', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah segitiga memiliki panjang alas 12 cm dan tinggi 8 cm. Luas segitiga tersebut adalah ...', '40 cm²', '48 cm²', '96 cm²', '20 cm²', 'B', 'Luas segitiga = 1/2 × alas × tinggi = 1/2 × 12 × 8 = 48 cm².', 'AKTIF'),
-('PRIO-MTK5-0386', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah segitiga siku-siku memiliki alas 10 cm, tinggi 6 cm, dan sisi miring 12 cm. Luas segitiga adalah ...', '30 cm²', '60 cm²', '36 cm²', '45 cm²', 'A', 'Luas = 1/2 × a × t = 1/2 × 10 × 6 = 30 cm². Ingat peringatan modul: panjang sisi miring tidak dipakai untuk menghitung luas!', 'AKTIF'),
-('PRIO-MTK5-0387', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Balok berukuran panjang 8 cm, lebar 5 cm, dan tinggi 4 cm memiliki volume sebesar ...', '80 cm³', '34 cm³', '320 cm³', '160 cm³', 'D', 'Volume balok = p × l × t = 8 × 5 × 4 = 160 cm³.', 'AKTIF'),
-('PRIO-MTK5-0388', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Kubus dengan panjang rusuk 6 cm memiliki volume sebesar ...', '72 cm³', '144 cm³', '216 cm³', '36 cm³', 'C', 'Volume kubus = s³ = 6 × 6 × 6 = 216 cm³.', 'AKTIF'),
-('PRIO-MTK5-0389', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah balok memiliki volume 240 cm³. Jika panjangnya 10 cm dan lebarnya 6 cm, tinggi balok adalah ...', '24 cm', '4 cm', '6 cm', '8 cm', 'B', 'Tinggi = Volume : (p × l) = 240 : (10 × 6) = 240 : 60 = 4 cm.', 'AKTIF'),
-('PRIO-MTK5-0390', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Keliling segitiga sama sisi dengan panjang sisi 15 cm adalah ...', '45 cm', '30 cm', '60 cm', '225 cm', 'A', 'Keliling segitiga sama sisi = 3 × sisi = 3 × 15 = 45 cm.', 'AKTIF'),
-('PRIO-MTK5-0391', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah kolam berbentuk balok berukuran 4 m × 3 m × 2 m. Volume air jika kolam terisi penuh adalah ...', '18 m³', '12 m³', '48 m³', '24 m³', 'D', 'Volume = 4 × 3 × 2 = 24 m³.', 'AKTIF'),
-('PRIO-MTK5-0392', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Kubus dengan rusuk 5 cm memiliki luas permukaan sebesar ...', '25 cm²', '100 cm²', '150 cm²', '125 cm²', 'C', 'Luas permukaan kubus = 6 × s² = 6 × 5² = 6 × 25 = 150 cm².', 'AKTIF'),
-('PRIO-MTK5-0393', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Balok berukuran 10 cm × 6 cm × 4 cm memiliki luas permukaan sebesar ...', '180 cm²', '248 cm²', '240 cm²', '124 cm²', 'B', 'LP = 2 × (pl + pt + lt) = 2 × (60 + 40 + 24) = 2 × 124 = 248 cm².', 'AKTIF'),
-('PRIO-MTK5-0394', 'MATEMATIKA', 5, 'Luas Segitiga & Volume Bangun', 'PENYISIHAN', 'SEDANG', 'PG', 'Segitiga beralas 14 cm dan tinggi 10 cm memiliki luas sebesar ...', '70 cm²', '140 cm²', '48 cm²', '35 cm²', 'A', 'Luas = 1/2 × 14 × 10 = 70 cm².', 'AKTIF'),
-('PRIO-MTK5-0395', 'MATEMATIKA', 5, 'Statistika, Kecepatan, & Debit', 'SEMIFINAL', 'SEDANG', 'PG', 'Rata-rata dari nilai 6, 8, 10, dan 8 adalah ...', '8', '7', '9', '32', 'A', 'Jumlah nilai = 6 + 8 + 10 + 8 = 32. Banyak data = 4. Rata-rata = 32 : 4 = 8.', 'AKTIF'),
-('PRIO-MTK5-0396', 'MATEMATIKA', 5, 'Statistika, Kecepatan, & Debit', 'SEMIFINAL', 'SEDANG', 'PG', 'Rata-rata dari nilai 70, 80, 90, 80, dan 80 adalah ...', '78', '82', '84', '80', 'D', 'Jumlah = 400. Rata-rata = 400 : 5 = 80.', 'AKTIF'),
-('PRIO-MTK5-0397', 'MATEMATIKA', 5, 'Statistika, Kecepatan, & Debit', 'SEMIFINAL', 'SEDANG', 'PG', 'Modus dari data nilai 7, 8, 6, 8, 9, 8, 7 adalah ...', '9', '6', '8', '7', 'C', 'Modus adalah nilai yang paling sering muncul. Angka 8 muncul 3 kali.', 'AKTIF'),
-('PRIO-MTK5-0398', 'MATEMATIKA', 5, 'Statistika, Kecepatan, & Debit', 'SEMIFINAL', 'SEDANG', 'PG', 'Sebuah mobil menempuh jarak 120 km dalam waktu 2 jam. Kecepatan rata-rata mobil tersebut adalah ...', '240 km/jam', '60 km/jam', '50 km/jam', '70 km/jam', 'B', 'Kecepatan = Jarak : Waktu = 120 : 2 = 60 km/jam.', 'AKTIF'),
-('PRIO-MTK5-0399', 'MATEMATIKA', 5, 'Statistika, Kecepatan, & Debit', 'SEMIFINAL', 'SEDANG', 'PG', 'Pipa air mengalirkan 60 liter air dalam waktu 3 menit. Debit air yang mengalir adalah ...', '20 liter/menit', '180 liter/menit', '30 liter/menit', '15 liter/menit', 'A', 'Debit = Volume : Waktu = 60 : 3 = 20 liter/menit.', 'AKTIF'),
-('PRIO-MTK6-0400', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK5-0385', 'MATEMATIKA', 5, 'Keliling dan Luas Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah segitiga memiliki panjang alas 12 cm dan tinggi 8 cm. Luas segitiga tersebut adalah ...', '40 cm²', '48 cm²', '96 cm²', '20 cm²', 'B', 'Luas segitiga = 1/2 × alas × tinggi = 1/2 × 12 × 8 = 48 cm².', 'AKTIF'),
+('PRIO-MTK5-0386', 'MATEMATIKA', 5, 'Keliling dan Luas Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah segitiga siku-siku memiliki alas 10 cm, tinggi 6 cm, dan sisi miring 12 cm. Luas segitiga adalah ...', '30 cm²', '60 cm²', '36 cm²', '45 cm²', 'A', 'Luas = 1/2 × a × t = 1/2 × 10 × 6 = 30 cm². Ingat peringatan modul: panjang sisi miring tidak dipakai untuk menghitung luas!', 'AKTIF'),
+('PRIO-MTK5-0387', 'MATEMATIKA', 5, 'Volume Bangun Ruang', 'PENYISIHAN', 'SEDANG', 'PG', 'Balok berukuran panjang 8 cm, lebar 5 cm, dan tinggi 4 cm memiliki volume sebesar ...', '80 cm³', '34 cm³', '320 cm³', '160 cm³', 'D', 'Volume balok = p × l × t = 8 × 5 × 4 = 160 cm³.', 'AKTIF'),
+('PRIO-MTK5-0388', 'MATEMATIKA', 5, 'Volume Bangun Ruang', 'PENYISIHAN', 'SEDANG', 'PG', 'Kubus dengan panjang rusuk 6 cm memiliki volume sebesar ...', '72 cm³', '144 cm³', '216 cm³', '36 cm³', 'C', 'Volume kubus = s³ = 6 × 6 × 6 = 216 cm³.', 'AKTIF'),
+('PRIO-MTK5-0389', 'MATEMATIKA', 5, 'Volume Bangun Ruang', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah balok memiliki volume 240 cm³. Jika panjangnya 10 cm dan lebarnya 6 cm, tinggi balok adalah ...', '24 cm', '4 cm', '6 cm', '8 cm', 'B', 'Tinggi = Volume : (p × l) = 240 : (10 × 6) = 240 : 60 = 4 cm.', 'AKTIF'),
+('PRIO-MTK5-0390', 'MATEMATIKA', 5, 'Keliling dan Luas Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Keliling segitiga sama sisi dengan panjang sisi 15 cm adalah ...', '45 cm', '30 cm', '60 cm', '225 cm', 'A', 'Keliling segitiga sama sisi = 3 × sisi = 3 × 15 = 45 cm.', 'AKTIF'),
+('PRIO-MTK5-0391', 'MATEMATIKA', 5, 'Volume Bangun Ruang', 'PENYISIHAN', 'SEDANG', 'PG', 'Sebuah kolam berbentuk balok berukuran 4 m × 3 m × 2 m. Volume air jika kolam terisi penuh adalah ...', '18 m³', '12 m³', '48 m³', '24 m³', 'D', 'Volume = 4 × 3 × 2 = 24 m³.', 'AKTIF'),
+('PRIO-MTK5-0392', 'MATEMATIKA', 5, 'Keliling dan Luas Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Kubus dengan rusuk 5 cm memiliki luas permukaan sebesar ...', '25 cm²', '100 cm²', '150 cm²', '125 cm²', 'C', 'Luas permukaan kubus = 6 × s² = 6 × 5² = 6 × 25 = 150 cm².', 'AKTIF'),
+('PRIO-MTK5-0393', 'MATEMATIKA', 5, 'Keliling dan Luas Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Balok berukuran 10 cm × 6 cm × 4 cm memiliki luas permukaan sebesar ...', '180 cm²', '248 cm²', '240 cm²', '124 cm²', 'B', 'LP = 2 × (pl + pt + lt) = 2 × (60 + 40 + 24) = 2 × 124 = 248 cm².', 'AKTIF'),
+('PRIO-MTK5-0394', 'MATEMATIKA', 5, 'Keliling dan Luas Bangun Datar', 'PENYISIHAN', 'SEDANG', 'PG', 'Segitiga beralas 14 cm dan tinggi 10 cm memiliki luas sebesar ...', '70 cm²', '140 cm²', '48 cm²', '35 cm²', 'A', 'Luas = 1/2 × 14 × 10 = 70 cm².', 'AKTIF'),
+('PRIO-MTK5-0395', 'MATEMATIKA', 5, 'Data dan Diagram', 'SEMIFINAL', 'SEDANG', 'PG', 'Rata-rata dari nilai 6, 8, 10, dan 8 adalah ...', '8', '7', '9', '32', 'A', 'Jumlah nilai = 6 + 8 + 10 + 8 = 32. Banyak data = 4. Rata-rata = 32 : 4 = 8.', 'AKTIF'),
+('PRIO-MTK5-0396', 'MATEMATIKA', 5, 'Data dan Diagram', 'SEMIFINAL', 'SEDANG', 'PG', 'Rata-rata dari nilai 70, 80, 90, 80, dan 80 adalah ...', '78', '82', '84', '80', 'D', 'Jumlah = 400. Rata-rata = 400 : 5 = 80.', 'AKTIF'),
+('PRIO-MTK5-0397', 'MATEMATIKA', 5, 'Data dan Diagram', 'SEMIFINAL', 'SEDANG', 'PG', 'Modus dari data nilai 7, 8, 6, 8, 9, 8, 7 adalah ...', '9', '6', '8', '7', 'C', 'Modus adalah nilai yang paling sering muncul. Angka 8 muncul 3 kali.', 'AKTIF'),
+('PRIO-MTK5-0398', 'MATEMATIKA', 5, 'Data dan Diagram', 'SEMIFINAL', 'SEDANG', 'PG', 'Sebuah mobil menempuh jarak 120 km dalam waktu 2 jam. Kecepatan rata-rata mobil tersebut adalah ...', '240 km/jam', '60 km/jam', '50 km/jam', '70 km/jam', 'B', 'Kecepatan = Jarak : Waktu = 120 : 2 = 60 km/jam.', 'AKTIF'),
+('PRIO-MTK5-0399', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', 'Pipa air mengalirkan 60 liter air dalam waktu 3 menit. Debit air yang mengalir adalah ...', '20 liter/menit', '180 liter/menit', '30 liter/menit', '15 liter/menit', 'A', 'Debit = Volume : Waktu = 60 : 3 = 20 liter/menit.', 'AKTIF'),
+('PRIO-MTK6-0400', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 200 bibit pohon sengon. Saat diperiksa oleh panitia, ternyata 25% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 2/5 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak bibit pohon sengon yang dialokasikan untuk penanaman di Taman Edukasi?', '60 bibit pohon sengon', '150 bibit pohon sengon', '50 bibit pohon sengon', '90 bibit pohon sengon', 'A', 'Langkah 1: Hitung yang rusak = 25% × 200 = 50. Langkah 2: Hitung sisa yang baik = 200 − 50 = 150. Langkah 3: Alokasi penanaman = 2/5 DARI SISA = 2/5 × 150 = 60 bibit pohon sengon.', 'AKTIF'),
-('PRIO-MTK6-0401', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0401', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 300 benih jagung hibrida. Saat diperiksa oleh panitia, ternyata 20% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 3/4 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak benih jagung hibrida yang dialokasikan untuk penanaman di Taman Edukasi?', '240 benih jagung hibrida', '60 benih jagung hibrida', '60 benih jagung hibrida', '180 benih jagung hibrida', 'D', 'Langkah 1: Hitung yang rusak = 20% × 300 = 60. Langkah 2: Hitung sisa yang baik = 300 − 60 = 240. Langkah 3: Alokasi penanaman = 3/4 DARI SISA = 3/4 × 240 = 180 benih jagung hibrida.', 'AKTIF'),
-('PRIO-MTK6-0402', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0402', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 500 bibit cabai rawit. Saat diperiksa oleh panitia, ternyata 10% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 1/3 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak bibit cabai rawit yang dialokasikan untuk penanaman di Taman Edukasi?', '50 bibit cabai rawit', '300 bibit cabai rawit', '150 bibit cabai rawit', '450 bibit cabai rawit', 'C', 'Langkah 1: Hitung yang rusak = 10% × 500 = 50. Langkah 2: Hitung sisa yang baik = 500 − 50 = 450. Langkah 3: Alokasi penanaman = 1/3 DARI SISA = 1/3 × 450 = 150 bibit cabai rawit.', 'AKTIF'),
-('PRIO-MTK6-0403', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0403', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 400 ikan nila di kolam. Saat diperiksa oleh panitia, ternyata 15% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 1/2 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak ikan nila di kolam yang dialokasikan untuk penanaman di Taman Edukasi?', '170 ikan nila di kolam', '170 ikan nila di kolam', '340 ikan nila di kolam', '60 ikan nila di kolam', 'B', 'Langkah 1: Hitung yang rusak = 15% × 400 = 60. Langkah 2: Hitung sisa yang baik = 400 − 60 = 340. Langkah 3: Alokasi penanaman = 1/2 DARI SISA = 1/2 × 340 = 170 ikan nila di kolam.', 'AKTIF'),
-('PRIO-MTK6-0404', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0404', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 250 buku donasi perpustakaan. Saat diperiksa oleh panitia, ternyata 20% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 3/5 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak buku donasi perpustakaan yang dialokasikan untuk penanaman di Taman Edukasi?', '120 buku donasi perpustakaan', '200 buku donasi perpustakaan', '50 buku donasi perpustakaan', '80 buku donasi perpustakaan', 'A', 'Langkah 1: Hitung yang rusak = 20% × 250 = 50. Langkah 2: Hitung sisa yang baik = 250 − 50 = 200. Langkah 3: Alokasi penanaman = 3/5 DARI SISA = 3/5 × 200 = 120 buku donasi perpustakaan.', 'AKTIF'),
-('PRIO-MTK6-0405', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0405', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 600 telur ayam petelur. Saat diperiksa oleh panitia, ternyata 25% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 2/3 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak telur ayam petelur yang dialokasikan untuk penanaman di Taman Edukasi?', '450 telur ayam petelur', '150 telur ayam petelur', '150 telur ayam petelur', '300 telur ayam petelur', 'D', 'Langkah 1: Hitung yang rusak = 25% × 600 = 150. Langkah 2: Hitung sisa yang baik = 600 − 150 = 450. Langkah 3: Alokasi penanaman = 2/3 DARI SISA = 2/3 × 450 = 300 telur ayam petelur.', 'AKTIF'),
-('PRIO-MTK6-0406', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0406', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 160 tanaman hias monstera. Saat diperiksa oleh panitia, ternyata 25% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 1/4 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak tanaman hias monstera yang dialokasikan untuk penanaman di Taman Edukasi?', '40 tanaman hias monstera', '90 tanaman hias monstera', '30 tanaman hias monstera', '120 tanaman hias monstera', 'C', 'Langkah 1: Hitung yang rusak = 25% × 160 = 40. Langkah 2: Hitung sisa yang baik = 160 − 40 = 120. Langkah 3: Alokasi penanaman = 1/4 DARI SISA = 1/4 × 120 = 30 tanaman hias monstera.', 'AKTIF'),
-('PRIO-MTK6-0407', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0407', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 350 bibit ikan lele. Saat diperiksa oleh panitia, ternyata 20% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 2/7 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak bibit ikan lele yang dialokasikan untuk penanaman di Taman Edukasi?', '200 bibit ikan lele', '80 bibit ikan lele', '280 bibit ikan lele', '70 bibit ikan lele', 'B', 'Langkah 1: Hitung yang rusak = 20% × 350 = 70. Langkah 2: Hitung sisa yang baik = 350 − 70 = 280. Langkah 3: Alokasi penanaman = 2/7 DARI SISA = 2/7 × 280 = 80 bibit ikan lele.', 'AKTIF'),
-('PRIO-MTK6-0408', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0408', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 480 karung beras bantuan. Saat diperiksa oleh panitia, ternyata 25% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 5/6 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak karung beras bantuan yang dialokasikan untuk penanaman di Taman Edukasi?', '300 karung beras bantuan', '360 karung beras bantuan', '120 karung beras bantuan', '60 karung beras bantuan', 'A', 'Langkah 1: Hitung yang rusak = 25% × 480 = 120. Langkah 2: Hitung sisa yang baik = 480 − 120 = 360. Langkah 3: Alokasi penanaman = 5/6 DARI SISA = 5/6 × 360 = 300 karung beras bantuan.', 'AKTIF'),
-('PRIO-MTK6-0409', 'MATEMATIKA', 6, 'Soal Cerita Bertingkat ("Dari Sisa")', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0409', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Kelompok tani sekolah memiliki persediaan 800 batu bata untuk renovasi. Saat diperiksa oleh panitia, ternyata 10% dari jumlah total tersebut rusak karena cuaca lembap. Sisanya yang masih dalam kondisi baik kemudian disortir, dan sebanyak 3/8 dari sisa tersebut segera dialokasikan untuk kegiatan penanaman di Taman Edukasi.
 
 [PERTANYAAN]
 Berapa banyak batu bata untuk renovasi yang dialokasikan untuk penanaman di Taman Edukasi?', '720 batu bata untuk renovasi', '80 batu bata untuk renovasi', '450 batu bata untuk renovasi', '270 batu bata untuk renovasi', 'D', 'Langkah 1: Hitung yang rusak = 10% × 800 = 80. Langkah 2: Hitung sisa yang baik = 800 − 80 = 720. Langkah 3: Alokasi penanaman = 3/8 DARI SISA = 3/8 × 720 = 270 batu bata untuk renovasi.', 'AKTIF'),
-('PRIO-MTK6-0410', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0410', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak merah dan biru di gudang sekolah adalah 3 : 2. Jumlah seluruh barang tersebut adalah 45 buah.
 
 [PERTANYAAN]
 Berapa banyak merah yang ada di gudang tersebut?', '18', '18', '15', '27', 'D', 'Jumlah seluruh bagian rasio = 3 + 2 = 5 bagian. Nilai satu bagian = 45 ÷ 5 = 9. Maka banyak merah = 3 × 9 = 27.', 'AKTIF'),
-('PRIO-MTK6-0411', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0411', 'MATEMATIKA', 6, 'Peluang', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak kelereng merah dan kelereng biru di gudang sekolah adalah 2 : 3. Jumlah seluruh barang tersebut adalah 35 buah.
 
 [PERTANYAAN]
 Berapa banyak kelereng merah yang ada di gudang tersebut?', '21', '18', '14', '21', 'C', 'Jumlah seluruh bagian rasio = 2 + 3 = 5 bagian. Nilai satu bagian = 35 ÷ 5 = 7. Maka banyak kelereng merah = 2 × 7 = 14.', 'AKTIF'),
-('PRIO-MTK6-0412', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0412', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak buku IPA dan buku Matematika di gudang sekolah adalah 3 : 5. Jumlah seluruh barang tersebut adalah 40 buah.
 
 [PERTANYAAN]
 Berapa banyak buku IPA yang ada di gudang tersebut?', '13', '15', '25', '25', 'B', 'Jumlah seluruh bagian rasio = 3 + 5 = 8 bagian. Nilai satu bagian = 40 ÷ 8 = 5. Maka banyak buku IPA = 3 × 5 = 15.', 'AKTIF'),
-('PRIO-MTK6-0413', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0413', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak siswa laki-laki dan siswa perempuan di gudang sekolah adalah 5 : 4. Jumlah seluruh barang tersebut adalah 36 buah.
 
 [PERTANYAAN]
 Berapa banyak siswa laki-laki yang ada di gudang tersebut?', '20', '16', '16', '7', 'A', 'Jumlah seluruh bagian rasio = 5 + 4 = 9 bagian. Nilai satu bagian = 36 ÷ 9 = 4. Maka banyak siswa laki-laki = 5 × 4 = 20.', 'AKTIF'),
-('PRIO-MTK6-0414', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0414', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak regu Garuda dan regu Rajawali di gudang sekolah adalah 1 : 3. Jumlah seluruh barang tersebut adalah 48 buah.
 
 [PERTANYAAN]
 Berapa banyak regu Garuda yang ada di gudang tersebut?', '36', '36', '48', '12', 'D', 'Jumlah seluruh bagian rasio = 1 + 3 = 4 bagian. Nilai satu bagian = 48 ÷ 4 = 12. Maka banyak regu Garuda = 1 × 12 = 12.', 'AKTIF'),
-('PRIO-MTK6-0415', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0415', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak pohon mangga dan pohon jambu di gudang sekolah adalah 7 : 5. Jumlah seluruh barang tersebut adalah 60 buah.
 
 [PERTANYAAN]
 Berapa banyak pohon mangga yang ada di gudang tersebut?', '25', '9', '35', '25', 'C', 'Jumlah seluruh bagian rasio = 7 + 5 = 12 bagian. Nilai satu bagian = 60 ÷ 12 = 5. Maka banyak pohon mangga = 7 × 5 = 35.', 'AKTIF'),
-('PRIO-MTK6-0416', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0416', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak kursi merah dan kursi biru di gudang sekolah adalah 4 : 5. Jumlah seluruh barang tersebut adalah 54 buah.
 
 [PERTANYAAN]
 Berapa banyak kursi merah yang ada di gudang tersebut?', '14', '24', '30', '30', 'B', 'Jumlah seluruh bagian rasio = 4 + 5 = 9 bagian. Nilai satu bagian = 54 ÷ 9 = 6. Maka banyak kursi merah = 4 × 6 = 24.', 'AKTIF'),
-('PRIO-MTK6-0417', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0417', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak kue cokelat dan kue keju di gudang sekolah adalah 5 : 3. Jumlah seluruh barang tersebut adalah 72 buah.
 
 [PERTANYAAN]
 Berapa banyak kue cokelat yang ada di gudang tersebut?', '45', '27', '27', '14', 'A', 'Jumlah seluruh bagian rasio = 5 + 3 = 8 bagian. Nilai satu bagian = 72 ÷ 8 = 9. Maka banyak kue cokelat = 5 × 9 = 45.', 'AKTIF'),
-('PRIO-MTK6-0418', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0418', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak mobil dan sepeda motor di gudang sekolah adalah 2 : 3. Jumlah seluruh barang tersebut adalah 50 buah.
 
 [PERTANYAAN]
 Berapa banyak mobil yang ada di gudang tersebut?', '30', '30', '25', '20', 'D', 'Jumlah seluruh bagian rasio = 2 + 3 = 5 bagian. Nilai satu bagian = 50 ÷ 5 = 10. Maka banyak mobil = 2 × 10 = 20.', 'AKTIF'),
-('PRIO-MTK6-0419', 'MATEMATIKA', 6, 'Rasio & Perbandingan Senilai', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
+('PRIO-MTK6-0419', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'SEDANG', 'PG', '[STIMULUS]
 Perbandingan antara banyak kelompok A dan kelompok B di gudang sekolah adalah 4 : 3. Jumlah seluruh barang tersebut adalah 63 buah.
 
 [PERTANYAAN]
 Berapa banyak kelompok A yang ada di gudang tersebut?', '27', '16', '36', '27', 'C', 'Jumlah seluruh bagian rasio = 4 + 3 = 7 bagian. Nilai satu bagian = 63 ÷ 7 = 9. Maka banyak kelompok A = 4 × 9 = 36.', 'AKTIF'),
-('PRIO-MTK6-0420', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 100.000, jarak antara kota X dan kota Y terukur sepanjang 4 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '4 km', '40 km', '0.4 km', '400 km', 'A', 'Jarak sebenarnya = Jarak pada peta × Skala = 4 cm × 100.000 = 400.000 cm. Ubah cm ke km dengan membagi 100.000: 4 km = 4 km.', 'AKTIF'),
-('PRIO-MTK6-0421', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 250.000, jarak antara kota X dan kota Y terukur sepanjang 6 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '150 km', '1.5 km', '1500 km', '15 km', 'D', 'Jarak sebenarnya = Jarak pada peta × Skala = 6 cm × 250.000 = 1.500.000 cm. Ubah cm ke km dengan membagi 100.000: 15 km = 15 km.', 'AKTIF'),
-('PRIO-MTK6-0422', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 500.000, jarak antara kota X dan kota Y terukur sepanjang 3 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '1.5 km', '1500 km', '15 km', '150 km', 'C', 'Jarak sebenarnya = Jarak pada peta × Skala = 3 cm × 500.000 = 1.500.000 cm. Ubah cm ke km dengan membagi 100.000: 15 km = 15 km.', 'AKTIF'),
-('PRIO-MTK6-0423', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 100.000, jarak antara kota X dan kota Y terukur sepanjang 7 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '700 km', '7 km', '70 km', '0.7 km', 'B', 'Jarak sebenarnya = Jarak pada peta × Skala = 7 cm × 100.000 = 700.000 cm. Ubah cm ke km dengan membagi 100.000: 7 km = 7 km.', 'AKTIF'),
-('PRIO-MTK6-0424', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 200.000, jarak antara kota X dan kota Y terukur sepanjang 5 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '10 km', '100 km', '1 km', '1000 km', 'A', 'Jarak sebenarnya = Jarak pada peta × Skala = 5 cm × 200.000 = 1.000.000 cm. Ubah cm ke km dengan membagi 100.000: 10 km = 10 km.', 'AKTIF'),
-('PRIO-MTK6-0425', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 1.500.000, jarak antara kota X dan kota Y terukur sepanjang 2 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '300 km', '3 km', '3000 km', '30 km', 'D', 'Jarak sebenarnya = Jarak pada peta × Skala = 2 cm × 1.500.000 = 3.000.000 cm. Ubah cm ke km dengan membagi 100.000: 30 km = 30 km.', 'AKTIF'),
-('PRIO-MTK6-0426', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 750.000, jarak antara kota X dan kota Y terukur sepanjang 4 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '3 km', '3000 km', '30 km', '300 km', 'C', 'Jarak sebenarnya = Jarak pada peta × Skala = 4 cm × 750.000 = 3.000.000 cm. Ubah cm ke km dengan membagi 100.000: 30 km = 30 km.', 'AKTIF'),
-('PRIO-MTK6-0427', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 1.000.000, jarak antara kota X dan kota Y terukur sepanjang 8 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '8000 km', '80 km', '800 km', '8 km', 'B', 'Jarak sebenarnya = Jarak pada peta × Skala = 8 cm × 1.000.000 = 8.000.000 cm. Ubah cm ke km dengan membagi 100.000: 80 km = 80 km.', 'AKTIF'),
-('PRIO-MTK6-0428', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 50.000, jarak antara kota X dan kota Y terukur sepanjang 10 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '5 km', '50 km', '0.5 km', '500 km', 'A', 'Jarak sebenarnya = Jarak pada peta × Skala = 10 cm × 50.000 = 500.000 cm. Ubah cm ke km dengan membagi 100.000: 5 km = 5 km.', 'AKTIF'),
-('PRIO-MTK6-0429', 'MATEMATIKA', 6, 'Skala Peta & Konversi Satuan', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 2.500.000, jarak antara kota X dan kota Y terukur sepanjang 3 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '750 km', '7.5 km', '7500 km', '75 km', 'D', 'Jarak sebenarnya = Jarak pada peta × Skala = 3 cm × 2.500.000 = 7.500.000 cm. Ubah cm ke km dengan membagi 100.000: 75 km = 75 km.', 'AKTIF'),
-('PRIO-MTK6-0430', 'MATEMATIKA', 6, 'Bangun Ruang & Lingkaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Keliling lingkaran dengan diameter 14 cm (π = 22/7) adalah ...', '88 cm', '154 cm', '22 cm', '44 cm', 'D', 'Keliling = π × d = 22/7 × 14 = 44 cm.', 'AKTIF'),
-('PRIO-MTK6-0431', 'MATEMATIKA', 6, 'Bangun Ruang & Lingkaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Luas lingkaran dengan jari-jari 7 cm (π = 22/7) adalah ...', '49 cm²', '308 cm²', '154 cm²', '44 cm²', 'C', 'Luas = π × r² = 22/7 × 7 × 7 = 154 cm².', 'AKTIF'),
-('PRIO-MTK6-0432', 'MATEMATIKA', 6, 'Bangun Ruang & Lingkaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Sebuah akuarium berbentuk balok berukuran 50 cm × 30 cm × 40 cm terisi air 3/4 bagian. Volume air di dalam akuarium adalah ...', '30 liter', '45 liter', '60 liter', '40 liter', 'B', 'Volume penuh = 50 × 30 × 40 = 60.000 cm³ = 60 liter. Air 3/4 bagian = 3/4 × 60 = 45 liter.', 'AKTIF'),
-('PRIO-MTK6-0433', 'MATEMATIKA', 6, 'Bangun Ruang & Lingkaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Volume kubus dengan panjang rusuk 6 cm adalah ... cm³ ...', '216 cm³', '36 cm³', '72 cm³', '144 cm³', 'A', 'Volume kubus = 6 × 6 × 6 = 216 cm³ (ingat modul hal 5: satuan volume adalah kubik, bukan persegi!).', 'AKTIF'),
-('PRIO-MTK6-0434', 'MATEMATIKA', 6, 'Bangun Ruang & Lingkaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Sebuah tangki air berbentuk kubus memiliki rusuk 10 dm. Volume air jika terisi penuh adalah ...', '100 liter', '10.000 liter', '500 liter', '1.000 liter', 'D', 'Volume = 10 × 10 × 10 = 1.000 dm³ = 1.000 liter.', 'AKTIF'),
-('PRIO-MTK6-0435', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0420', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 100.000, jarak antara kota X dan kota Y terukur sepanjang 4 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '4 km', '40 km', '0.4 km', '400 km', 'A', 'Jarak sebenarnya = Jarak pada peta × Skala = 4 cm × 100.000 = 400.000 cm. Ubah cm ke km dengan membagi 100.000: 4 km = 4 km.', 'AKTIF'),
+('PRIO-MTK6-0421', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 250.000, jarak antara kota X dan kota Y terukur sepanjang 6 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '150 km', '1.5 km', '1500 km', '15 km', 'D', 'Jarak sebenarnya = Jarak pada peta × Skala = 6 cm × 250.000 = 1.500.000 cm. Ubah cm ke km dengan membagi 100.000: 15 km = 15 km.', 'AKTIF'),
+('PRIO-MTK6-0422', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 500.000, jarak antara kota X dan kota Y terukur sepanjang 3 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '1.5 km', '1500 km', '15 km', '150 km', 'C', 'Jarak sebenarnya = Jarak pada peta × Skala = 3 cm × 500.000 = 1.500.000 cm. Ubah cm ke km dengan membagi 100.000: 15 km = 15 km.', 'AKTIF'),
+('PRIO-MTK6-0423', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 100.000, jarak antara kota X dan kota Y terukur sepanjang 7 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '700 km', '7 km', '70 km', '0.7 km', 'B', 'Jarak sebenarnya = Jarak pada peta × Skala = 7 cm × 100.000 = 700.000 cm. Ubah cm ke km dengan membagi 100.000: 7 km = 7 km.', 'AKTIF'),
+('PRIO-MTK6-0424', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 200.000, jarak antara kota X dan kota Y terukur sepanjang 5 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '10 km', '100 km', '1 km', '1000 km', 'A', 'Jarak sebenarnya = Jarak pada peta × Skala = 5 cm × 200.000 = 1.000.000 cm. Ubah cm ke km dengan membagi 100.000: 10 km = 10 km.', 'AKTIF'),
+('PRIO-MTK6-0425', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 1.500.000, jarak antara kota X dan kota Y terukur sepanjang 2 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '300 km', '3 km', '3000 km', '30 km', 'D', 'Jarak sebenarnya = Jarak pada peta × Skala = 2 cm × 1.500.000 = 3.000.000 cm. Ubah cm ke km dengan membagi 100.000: 30 km = 30 km.', 'AKTIF'),
+('PRIO-MTK6-0426', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 750.000, jarak antara kota X dan kota Y terukur sepanjang 4 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '3 km', '3000 km', '30 km', '300 km', 'C', 'Jarak sebenarnya = Jarak pada peta × Skala = 4 cm × 750.000 = 3.000.000 cm. Ubah cm ke km dengan membagi 100.000: 30 km = 30 km.', 'AKTIF'),
+('PRIO-MTK6-0427', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 1.000.000, jarak antara kota X dan kota Y terukur sepanjang 8 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '8000 km', '80 km', '800 km', '8 km', 'B', 'Jarak sebenarnya = Jarak pada peta × Skala = 8 cm × 1.000.000 = 8.000.000 cm. Ubah cm ke km dengan membagi 100.000: 80 km = 80 km.', 'AKTIF'),
+('PRIO-MTK6-0428', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 50.000, jarak antara kota X dan kota Y terukur sepanjang 10 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '5 km', '50 km', '0.5 km', '500 km', 'A', 'Jarak sebenarnya = Jarak pada peta × Skala = 10 cm × 50.000 = 500.000 cm. Ubah cm ke km dengan membagi 100.000: 5 km = 5 km.', 'AKTIF'),
+('PRIO-MTK6-0429', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada sebuah peta berskala 1 : 2.500.000, jarak antara kota X dan kota Y terukur sepanjang 3 cm. Jarak sebenarnya antara kedua kota tersebut di lapangan adalah ...', '750 km', '7.5 km', '7500 km', '75 km', 'D', 'Jarak sebenarnya = Jarak pada peta × Skala = 3 cm × 2.500.000 = 7.500.000 cm. Ubah cm ke km dengan membagi 100.000: 75 km = 75 km.', 'AKTIF'),
+('PRIO-MTK6-0430', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Keliling lingkaran dengan diameter 14 cm (π = 22/7) adalah ...', '88 cm', '154 cm', '22 cm', '44 cm', 'D', 'Keliling = π × d = 22/7 × 14 = 44 cm.', 'AKTIF'),
+('PRIO-MTK6-0431', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Luas lingkaran dengan jari-jari 7 cm (π = 22/7) adalah ...', '49 cm²', '308 cm²', '154 cm²', '44 cm²', 'C', 'Luas = π × r² = 22/7 × 7 × 7 = 154 cm².', 'AKTIF'),
+('PRIO-MTK6-0432', 'MATEMATIKA', 6, 'Kubus dan Balok (Luas Permukaan & Volume)', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Sebuah akuarium berbentuk balok berukuran 50 cm × 30 cm × 40 cm terisi air 3/4 bagian. Volume air di dalam akuarium adalah ...', '30 liter', '45 liter', '60 liter', '40 liter', 'B', 'Volume penuh = 50 × 30 × 40 = 60.000 cm³ = 60 liter. Air 3/4 bagian = 3/4 × 60 = 45 liter.', 'AKTIF'),
+('PRIO-MTK6-0433', 'MATEMATIKA', 6, 'Kubus dan Balok (Luas Permukaan & Volume)', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Volume kubus dengan panjang rusuk 6 cm adalah ... cm³ ...', '216 cm³', '36 cm³', '72 cm³', '144 cm³', 'A', 'Volume kubus = 6 × 6 × 6 = 216 cm³ (ingat modul hal 5: satuan volume adalah kubik, bukan persegi!).', 'AKTIF'),
+('PRIO-MTK6-0434', 'MATEMATIKA', 6, 'Kubus dan Balok (Luas Permukaan & Volume)', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Sebuah tangki air berbentuk kubus memiliki rusuk 10 dm. Volume air jika terisi penuh adalah ...', '100 liter', '10.000 liter', '500 liter', '1.000 liter', 'D', 'Volume = 10 × 10 × 10 = 1.000 dm³ = 1.000 liter.', 'AKTIF'),
+('PRIO-MTK6-0435', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 71, 84, dan 89. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '81', '66', '80', '76', 'D', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 71 + 84 + 89 = 244. Langkah 3: Nilai hilang = 320 − 244 = 76.', 'AKTIF'),
-('PRIO-MTK6-0436', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0436', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 72, 83, dan 88. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '67', '80', '77', '82', 'C', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 72 + 83 + 88 = 243. Langkah 3: Nilai hilang = 320 − 243 = 77.', 'AKTIF'),
-('PRIO-MTK6-0437', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0437', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 73, 82, dan 87. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '80', '78', '83', '68', 'B', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 73 + 82 + 87 = 242. Langkah 3: Nilai hilang = 320 − 242 = 78.', 'AKTIF'),
-('PRIO-MTK6-0438', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0438', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 74, 85, dan 86. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '75', '80', '65', '80', 'A', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 74 + 85 + 86 = 245. Langkah 3: Nilai hilang = 320 − 245 = 75.', 'AKTIF'),
-('PRIO-MTK6-0439', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0439', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 70, 84, dan 85. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '86', '71', '80', '81', 'D', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 70 + 84 + 85 = 239. Langkah 3: Nilai hilang = 320 − 239 = 81.', 'AKTIF'),
-('PRIO-MTK6-0440', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0440', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 71, 83, dan 90. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '66', '80', '76', '81', 'C', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 71 + 83 + 90 = 244. Langkah 3: Nilai hilang = 320 − 244 = 76.', 'AKTIF'),
-('PRIO-MTK6-0441', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0441', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 72, 82, dan 89. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '80', '77', '82', '67', 'B', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 72 + 82 + 89 = 243. Langkah 3: Nilai hilang = 320 − 243 = 77.', 'AKTIF'),
-('PRIO-MTK6-0442', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0442', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 73, 85, dan 88. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '74', '79', '64', '80', 'A', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 73 + 85 + 88 = 246. Langkah 3: Nilai hilang = 320 − 246 = 74.', 'AKTIF'),
-('PRIO-MTK6-0443', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0443', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 74, 84, dan 87. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '80', '65', '80', '75', 'D', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 74 + 84 + 87 = 245. Langkah 3: Nilai hilang = 320 − 245 = 75.', 'AKTIF'),
-('PRIO-MTK6-0444', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0444', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 70, 83, dan 86. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '71', '80', '81', '86', 'C', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 70 + 83 + 86 = 239. Langkah 3: Nilai hilang = 320 − 239 = 81.', 'AKTIF'),
-('PRIO-MTK6-0445', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0445', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 71, 82, dan 85. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '80', '82', '87', '72', 'B', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 71 + 82 + 85 = 238. Langkah 3: Nilai hilang = 320 − 238 = 82.', 'AKTIF'),
-('PRIO-MTK6-0446', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0446', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 72, 85, dan 90. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '73', '78', '63', '80', 'A', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 72 + 85 + 90 = 247. Langkah 3: Nilai hilang = 320 − 247 = 73.', 'AKTIF'),
-('PRIO-MTK6-0447', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0447', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 73, 84, dan 89. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '79', '64', '80', '74', 'D', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 73 + 84 + 89 = 246. Langkah 3: Nilai hilang = 320 − 246 = 74.', 'AKTIF'),
-('PRIO-MTK6-0448', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0448', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 74, 83, dan 88. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
 Berapakah nilai yang diperoleh siswa tersebut pada penilaian keempat?', '65', '80', '75', '80', 'C', 'Langkah 1: Hitung total target 4 nilai = Rata-rata × banyak data = 80 × 4 = 320. Langkah 2: Hitung jumlah 3 nilai yang ada = 74 + 83 + 88 = 245. Langkah 3: Nilai hilang = 320 − 245 = 75.', 'AKTIF'),
-('PRIO-MTK6-0449', 'MATEMATIKA', 6, 'Penalaran Informasi Tidak Lengkap (Rata-rata)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
+('PRIO-MTK6-0449', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'HOTS', 'PG', '[STIMULUS]
 Seorang siswa mengikuti 4 kali penilaian harian Matematika. Nilai rata-rata dari keempat penilaian tersebut adalah 80. Nilai pada tiga penilaian pertama berturut-turut adalah 70, 82, dan 87. Nilai penilaian keempat belum tercatat pada daftar nilai.
 
 [PERTANYAAN]
@@ -2215,61 +2215,61 @@ Berdasarkan prinsip skala prioritas dalam menghadapi keterbatasan dana, keputusa
 ('PRIO-IPS6-0943', 'IPS', 6, 'ASEAN & Kerja Sama Internasional', 'FINAL_REBUTAN', 'SEDANG', 'PG', 'Organisasi ASEAN didirikan pada tanggal 8 Agustus 1967 melalui penandatanganan dokumen bersejarah yaitu ...', 'Perjanjian Renville', 'Konferensi Meja Bundar', 'Deklarasi Juanda', 'Deklarasi Bangkok di Thailand', 'D', 'ASEAN dibentuk di Bangkok pada 8 Agustus 1967 melalui Deklarasi Bangkok.', 'AKTIF'),
 ('PRIO-IPS6-0944', 'IPS', 6, 'ASEAN & Kerja Sama Internasional', 'FINAL_REBUTAN', 'SEDANG', 'PG', 'Tokoh perwakilan Indonesia yang menjadi salah satu dari lima menteri luar negeri pemrakarsa berdirinya ASEAN adalah ...', 'Soepomo', 'Ali Alatas', 'Adam Malik', 'Mohammad Hatta', 'C', 'Adam Malik menandatangani Deklarasi Bangkok mewakili Indonesia.', 'AKTIF'),
 ('PRIO-IPS6-0945', 'IPS', 6, 'ASEAN & Kerja Sama Internasional', 'FINAL_REBUTAN', 'SEDANG', 'PG', 'Satu-satunya negara anggota ASEAN yang wilayah daratannya tidak memiliki garis pantai (terkurung daratan) adalah ...', 'Vietnam', 'Laos', 'Kamboja', 'Myanmar', 'B', 'Laos adalah negara landlocked (terkurung daratan) di Asia Tenggara.', 'AKTIF'),
-('PRIO-REV-0946', 'MATEMATIKA', 4, 'Bilangan', 'PENYISIHAN', 'MUDAH', 'PG', 'Nilai angka 7 pada bilangan 47.285 adalah ...', '7.000', '700', '70', '70.000', 'A', 'Angka 7 menempati nilai tempat ribuan.', 'AKTIF'),
-('PRIO-REV-0947', 'MATEMATIKA', 4, 'Penjumlahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil 2.475 + 1.386 adalah ...', '3.761', '3.851', '4.861', '3.861', 'D', 'Jumlahkan satuan sampai ribuan dengan teknik menyimpan.', 'AKTIF'),
-('PRIO-REV-0948', 'MATEMATIKA', 4, 'Pengurangan', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil 8.000 - 2.675 adalah ...', '6.325', '5.225', '5.325', '5.425', 'C', '8.000 dikurangi 2.675 sama dengan 5.325.', 'AKTIF'),
-('PRIO-REV-0949', 'MATEMATIKA', 4, 'Perkalian', 'PENYISIHAN', 'MUDAH', 'PG', '24 × 15 = ...', '340', '360', '240', '390', 'B', '24 × (10 + 5) = 240 + 120 = 360.', 'AKTIF'),
-('PRIO-REV-0950', 'MATEMATIKA', 4, 'Pembagian', 'PENYISIHAN', 'MUDAH', 'PG', '864 : 12 = ...', '72', '62', '82', '74', 'A', '12 × 72 = 864.', 'AKTIF'),
+('PRIO-REV-0946', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Nilai angka 7 pada bilangan 47.285 adalah ...', '7.000', '700', '70', '70.000', 'A', 'Angka 7 menempati nilai tempat ribuan.', 'AKTIF'),
+('PRIO-REV-0947', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil 2.475 + 1.386 adalah ...', '3.761', '3.851', '4.861', '3.861', 'D', 'Jumlahkan satuan sampai ribuan dengan teknik menyimpan.', 'AKTIF'),
+('PRIO-REV-0948', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil 8.000 - 2.675 adalah ...', '6.325', '5.225', '5.325', '5.425', 'C', '8.000 dikurangi 2.675 sama dengan 5.325.', 'AKTIF'),
+('PRIO-REV-0949', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', '24 × 15 = ...', '340', '360', '240', '390', 'B', '24 × (10 + 5) = 240 + 120 = 360.', 'AKTIF'),
+('PRIO-REV-0950', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'PENYISIHAN', 'MUDAH', 'PG', '864 : 12 = ...', '72', '62', '82', '74', 'A', '12 × 72 = 864.', 'AKTIF'),
 ('PRIO-REV-0951', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Pecahan yang senilai dengan 2/3 adalah ...', '3/6', '2/6', '4/9', '4/6', 'D', 'Pembilang dan penyebut 2/3 dikalikan dua menjadi 4/6.', 'AKTIF'),
 ('PRIO-REV-0952', 'MATEMATIKA', 4, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', 'Di antara 3/8 dan 5/8, pecahan yang lebih besar adalah ...', '1/8', '2/8', '5/8', '3/8', 'C', 'Penyebut sama; pembilang lebih besar berarti nilai lebih besar.', 'AKTIF'),
 ('PRIO-REV-0953', 'MATEMATIKA', 4, 'Pengukuran', 'PENYISIHAN', 'MUDAH', 'PG', '3 km 250 m sama dengan ... meter.', '32.500', '3.250', '325', '3.025', 'B', '3 km = 3.000 m, ditambah 250 m.', 'AKTIF'),
-('PRIO-REV-0954', 'MATEMATIKA', 4, 'Kelipatan', 'SEMIFINAL', 'SEDANG', 'PG', 'Bilangan kelipatan 6 yang terletak antara 20 dan 25 adalah ...', '24', '21', '22', '23', 'A', '6 × 4 = 24.', 'AKTIF'),
-('PRIO-REV-0955', 'MATEMATIKA', 4, 'Faktor', 'SEMIFINAL', 'SEDANG', 'PG', 'Faktor dari bilangan 18 yang merupakan bilangan prima adalah ...', '2 dan 9', '3 dan 6', '1 dan 18', '2 dan 3', 'D', 'Faktor prima 18 adalah 2 dan 3.', 'AKTIF'),
-('PRIO-REV-0956', 'MATEMATIKA', 4, 'Keliling', 'SEMIFINAL', 'SEDANG', 'PG', 'Persegi dengan sisi 13 cm memiliki keliling ... cm.', '39', '169', '52', '26', 'C', 'Keliling persegi = 4 × 13 = 52 cm.', 'AKTIF'),
-('PRIO-REV-0957', 'MATEMATIKA', 4, 'Luas', 'SEMIFINAL', 'SEDANG', 'PG', 'Persegi panjang panjang 18 cm dan lebar 7 cm mempunyai luas ... cm².', '112', '126', '50', '25', 'B', 'Luas persegi panjang = 18 × 7 = 126 cm².', 'AKTIF'),
-('PRIO-REV-0958', 'MATEMATIKA', 4, 'Waktu', 'SEMIFINAL', 'SEDANG', 'PG', 'Film dimulai pukul 08.35 dan selesai pukul 10.10. Lama film ... menit.', '95', '85', '105', '75', 'A', 'Dari 08.35 ke 09.35 satu jam, lalu 35 menit.', 'AKTIF'),
-('PRIO-REV-0959', 'MATEMATIKA', 4, 'Data', 'SEMIFINAL', 'SEDANG', 'PG', 'Data banyak buku: 8, 12, 10, dan 14. Jumlah seluruh buku adalah ...', '42', '46', '48', '44', 'D', '8 + 12 + 10 + 14 = 44.', 'AKTIF'),
-('PRIO-REV-0960', 'MATEMATIKA', 4, 'Operasi campuran', 'FINAL_WAJIB', 'SULIT', 'PG', 'Nilai 120 - (8 × 9) + 15 adalah ...', '57', '135', '63', '48', 'C', 'Kerjakan perkalian dulu: 120 - 72 + 15 = 63.', 'AKTIF'),
-('PRIO-REV-0961', 'MATEMATIKA', 4, 'Soal cerita', 'FINAL_WAJIB', 'SULIT', 'PG', 'Tiga kelas mengumpulkan masing-masing 125, 138, dan 147 botol. Jika 95 botol didaur ulang, sisanya ... botol.', '325', '315', '410', '305', 'B', 'Jumlah 410, lalu kurangi 95 menjadi 315.', 'AKTIF'),
-('PRIO-REV-0962', 'MATEMATIKA', 4, 'Luas', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sebuah taman berbentuk persegi berkeliling 64 m. Luas taman adalah ... m².', '256', '128', '64', '1.024', 'A', 'Sisi = 64 : 4 = 16 m; luas = 16 × 16 = 256 m².', 'AKTIF'),
+('PRIO-REV-0954', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'SEMIFINAL', 'SEDANG', 'PG', 'Bilangan kelipatan 6 yang terletak antara 20 dan 25 adalah ...', '24', '21', '22', '23', 'A', '6 × 4 = 24.', 'AKTIF'),
+('PRIO-REV-0955', 'MATEMATIKA', 4, 'Kelipatan dan Faktor', 'SEMIFINAL', 'SEDANG', 'PG', 'Faktor dari bilangan 18 yang merupakan bilangan prima adalah ...', '2 dan 9', '3 dan 6', '1 dan 18', '2 dan 3', 'D', 'Faktor prima 18 adalah 2 dan 3.', 'AKTIF'),
+('PRIO-REV-0956', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'SEMIFINAL', 'SEDANG', 'PG', 'Persegi dengan sisi 13 cm memiliki keliling ... cm.', '39', '169', '52', '26', 'C', 'Keliling persegi = 4 × 13 = 52 cm.', 'AKTIF'),
+('PRIO-REV-0957', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'SEMIFINAL', 'SEDANG', 'PG', 'Persegi panjang panjang 18 cm dan lebar 7 cm mempunyai luas ... cm².', '112', '126', '50', '25', 'B', 'Luas persegi panjang = 18 × 7 = 126 cm².', 'AKTIF'),
+('PRIO-REV-0958', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Film dimulai pukul 08.35 dan selesai pukul 10.10. Lama film ... menit.', '95', '85', '105', '75', 'A', 'Dari 08.35 ke 09.35 satu jam, lalu 35 menit.', 'AKTIF'),
+('PRIO-REV-0959', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'SEMIFINAL', 'SEDANG', 'PG', 'Data banyak buku: 8, 12, 10, dan 14. Jumlah seluruh buku adalah ...', '42', '46', '48', '44', 'D', '8 + 12 + 10 + 14 = 44.', 'AKTIF'),
+('PRIO-REV-0960', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'FINAL_WAJIB', 'SULIT', 'PG', 'Nilai 120 - (8 × 9) + 15 adalah ...', '57', '135', '63', '48', 'C', 'Kerjakan perkalian dulu: 120 - 72 + 15 = 63.', 'AKTIF'),
+('PRIO-REV-0961', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'FINAL_WAJIB', 'SULIT', 'PG', 'Tiga kelas mengumpulkan masing-masing 125, 138, dan 147 botol. Jika 95 botol didaur ulang, sisanya ... botol.', '325', '315', '410', '305', 'B', 'Jumlah 410, lalu kurangi 95 menjadi 315.', 'AKTIF'),
+('PRIO-REV-0962', 'MATEMATIKA', 4, 'Geometri (Bangun Datar)', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sebuah taman berbentuk persegi berkeliling 64 m. Luas taman adalah ... m².', '256', '128', '64', '1.024', 'A', 'Sisi = 64 : 4 = 16 m; luas = 16 × 16 = 256 m².', 'AKTIF'),
 ('PRIO-REV-0963', 'MATEMATIKA', 4, 'Pecahan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Dina memakan 2/8 kue dan Rafi 3/8 kue. Bagian kue yang tersisa adalah ...', '5/8', '2/8', '1/8', '3/8', 'D', 'Sisa = 8/8 - 2/8 - 3/8 = 3/8.', 'AKTIF'),
-('PRIO-REV-0964', 'MATEMATIKA', 4, 'Penalaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Suatu bilangan dibagi 7 menghasilkan 36 sisa 4. Bilangan tersebut adalah ...', '260', '284', '256', '252', 'C', 'Bilangan = 7 × 36 + 4 = 256.', 'AKTIF'),
-('PRIO-REV-0965', 'MATEMATIKA', 4, 'Pola bilangan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Pola 3, 7, 15, 31, ... dilanjutkan dengan bilangan ...', '65', '63', '47', '61', 'B', 'Setiap suku = suku sebelumnya × 2 + 1.', 'AKTIF'),
-('PRIO-REV-0966', 'MATEMATIKA', 5, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '1/4 + 2/4 = ...', '3/4', '3/8', '1/2', '2/4', 'A', 'Penyebut sama, sehingga pembilang dijumlahkan.', 'AKTIF'),
-('PRIO-REV-0967', 'MATEMATIKA', 5, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '5/6 - 1/3 = ...', '2/3', '4/3', '1/3', '1/2', 'D', '1/3 = 2/6, jadi 5/6 - 2/6 = 3/6.', 'AKTIF'),
-('PRIO-REV-0968', 'MATEMATIKA', 5, 'Desimal', 'PENYISIHAN', 'MUDAH', 'PG', '0,75 sama dengan pecahan sederhana ...', '1/4', '2/3', '3/4', '7/5', 'C', '0,75 = 75/100 = 3/4.', 'AKTIF'),
-('PRIO-REV-0969', 'MATEMATIKA', 5, 'Persen', 'PENYISIHAN', 'MUDAH', 'PG', '25% dari 240 adalah ...', '90', '60', '50', '80', 'B', '25% adalah seperempat, jadi 240 : 4 = 60.', 'AKTIF'),
-('PRIO-REV-0970', 'MATEMATIKA', 5, 'FPB', 'PENYISIHAN', 'MUDAH', 'PG', 'FPB dari 24 dan 36 adalah ...', '12', '6', '18', '8', 'A', 'Faktor bersama terbesar 24 dan 36 adalah 12.', 'AKTIF'),
-('PRIO-REV-0971', 'MATEMATIKA', 5, 'KPK', 'PENYISIHAN', 'MUDAH', 'PG', 'KPK dari 8 dan 12 adalah ...', '48', '16', '36', '24', 'D', 'Kelipatan persekutuan terkecil 8 dan 12 ialah 24.', 'AKTIF'),
-('PRIO-REV-0972', 'MATEMATIKA', 5, 'Volume', 'PENYISIHAN', 'MUDAH', 'PG', 'Kubus bersisi 6 cm memiliki volume ... cm³.', '72', '126', '216', '36', 'C', 'Volume kubus = 6 × 6 × 6 = 216 cm³.', 'AKTIF'),
-('PRIO-REV-0973', 'MATEMATIKA', 5, 'Pengukuran', 'PENYISIHAN', 'MUDAH', 'PG', '2,5 liter sama dengan ... mililiter.', '2.050', '2.500', '250', '25.000', 'B', '1 liter = 1.000 mL.', 'AKTIF'),
-('PRIO-REV-0974', 'MATEMATIKA', 5, 'Pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '2/3 × 3/5 = ...', '2/5', '6/8', '5/8', '1/5', 'A', 'Pembilang dikalikan pembilang, penyebut dikalikan penyebut, lalu sederhanakan 6/15.', 'AKTIF'),
-('PRIO-REV-0975', 'MATEMATIKA', 5, 'Pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '3/4 : 1/2 = ...', '3/8', '2/3', '1/4', '1 1/2', 'D', '3/4 × 2/1 = 6/4 = 1 1/2.', 'AKTIF'),
-('PRIO-REV-0976', 'MATEMATIKA', 5, 'Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada peta skala 1:100.000, jarak dua lokasi 4 cm. Jarak sebenarnya ... km.', '400', '0,4', '4', '40', 'C', '4 × 100.000 cm = 400.000 cm = 4 km.', 'AKTIF'),
-('PRIO-REV-0977', 'MATEMATIKA', 5, 'Perbandingan', 'SEMIFINAL', 'SEDANG', 'PG', 'Rasio kelereng merah dan biru 3:5. Jika total 40, jumlah merah adalah ...', '18', '15', '24', '25', 'B', 'Merah = 3/(3+5) × 40 = 15.', 'AKTIF'),
-('PRIO-REV-0978', 'MATEMATIKA', 5, 'Volume', 'SEMIFINAL', 'SEDANG', 'PG', 'Balok berukuran 10 cm × 8 cm × 5 cm memiliki volume ... cm³.', '400', '230', '800', '300', 'A', 'Volume = panjang × lebar × tinggi = 10 × 8 × 5.', 'AKTIF'),
-('PRIO-REV-0979', 'MATEMATIKA', 5, 'Rata-rata', 'SEMIFINAL', 'SEDANG', 'PG', 'Rata-rata nilai 70, 80, 90, 80, dan 80 adalah ...', '78', '82', '84', '80', 'D', 'Jumlah 400 dibagi 5 = 80.', 'AKTIF'),
-('PRIO-REV-0980', 'MATEMATIKA', 5, 'Soal cerita', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sebuah barang seharga Rp80.000 mendapat diskon 15%. Harga setelah diskon adalah ...', 'Rp65.000', 'Rp12.000', 'Rp68.000', 'Rp72.000', 'C', 'Diskon Rp12.000; harga akhir Rp68.000.', 'AKTIF'),
-('PRIO-REV-0981', 'MATEMATIKA', 5, 'Kecepatan', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sepeda menempuh 36 km dalam 3 jam. Kecepatan rata-ratanya ... km/jam.', '108', '12', '9', '18', 'B', '36 km dibagi 3 jam sama dengan 12 km/jam.', 'AKTIF'),
-('PRIO-REV-0982', 'MATEMATIKA', 5, 'Pecahan campuran', 'FINAL_WAJIB', 'SULIT', 'PG', '1 2/3 + 2 1/6 = ...', '3 5/6', '3 3/6', '4 1/6', '3 1/2', 'A', '2/3 = 4/6, sehingga 1 4/6 + 2 1/6 = 3 5/6.', 'AKTIF'),
-('PRIO-REV-0983', 'MATEMATIKA', 5, 'Penalaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Dua bel berbunyi tiap 12 dan 18 menit. Jika bersama pada 08.00, bersama lagi pukul ...', '08.24', '08.30', '08.48', '08.36', 'D', 'KPK dari 12 dan 18 ialah 36 menit.', 'AKTIF'),
-('PRIO-REV-0984', 'MATEMATIKA', 5, 'Data', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Rata-rata empat bilangan adalah 25. Tiga bilangan pertama 18, 27, 24. Bilangan keempat ...', '29', '33', '31', '25', 'C', 'Jumlah seluruhnya 4 × 25 = 100; tiga bilangan berjumlah 69.', 'AKTIF'),
-('PRIO-REV-0985', 'MATEMATIKA', 5, 'Penalaran', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Sebuah bak terisi 3/5. Setelah ditambah 24 liter, penuh. Kapasitas bak ... liter.', '72', '60', '40', '48', 'B', '24 liter merupakan 2/5 kapasitas, jadi kapasitas 24 × 5/2 = 60 liter.', 'AKTIF'),
-('PRIO-REV-0986', 'MATEMATIKA', 6, 'Bilangan bulat', 'PENYISIHAN', 'MUDAH', 'PG', 'Hasil -12 + 25 - 8 adalah ...', '5', '-5', '13', '21', 'A', '-12 + 25 = 13, lalu 13 - 8 = 5.', 'AKTIF'),
-('PRIO-REV-0987', 'MATEMATIKA', 6, 'Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '0,375 sebagai pecahan paling sederhana adalah ...', '3/5', '5/8', '7/20', '3/8', 'D', '375/1000 disederhanakan dengan membagi 125 menjadi 3/8.', 'AKTIF'),
-('PRIO-REV-0988', 'MATEMATIKA', 6, 'Persen', 'PENYISIHAN', 'MUDAH', 'PG', '40% dari suatu bilangan adalah 96. Bilangan itu ...', '260', '384', '240', '200', 'C', 'Bilangan = 96 : 0,4 = 240.', 'AKTIF'),
-('PRIO-REV-0989', 'MATEMATIKA', 6, 'Perbandingan', 'PENYISIHAN', 'MUDAH', 'PG', 'Rasio umur Ani dan Budi 4:7. Jika umur Ani 12 tahun, umur Budi ...', '28 tahun', '21 tahun', '18 tahun', '24 tahun', 'B', 'Satu bagian = 12 : 4 = 3 tahun; Budi = 7 × 3.', 'AKTIF'),
-('PRIO-REV-0990', 'MATEMATIKA', 6, 'Lingkaran', 'PENYISIHAN', 'MUDAH', 'PG', 'Keliling lingkaran berdiameter 14 cm, dengan π = 22/7, adalah ...', '44 cm', '22 cm', '154 cm', '88 cm', 'A', 'Keliling = π × diameter = 22/7 × 14 = 44 cm.', 'AKTIF'),
-('PRIO-REV-0991', 'MATEMATIKA', 6, 'Lingkaran', 'PENYISIHAN', 'MUDAH', 'PG', 'Luas lingkaran berjari-jari 7 cm, π = 22/7, adalah ...', '44 cm²', '49 cm²', '308 cm²', '154 cm²', 'D', 'Luas = πr² = 22/7 × 7 × 7 = 154 cm².', 'AKTIF'),
-('PRIO-REV-0992', 'MATEMATIKA', 6, 'Data', 'PENYISIHAN', 'MUDAH', 'PG', 'Median dari 4, 9, 7, 12, 6 adalah ...', '9', '8', '7', '6', 'C', 'Urutkan data 4, 6, 7, 9, 12; nilai tengah 7.', 'AKTIF'),
-('PRIO-REV-0993', 'MATEMATIKA', 6, 'Volume', 'PENYISIHAN', 'MUDAH', 'PG', 'Volume balok 720 cm³, panjang 12 cm dan lebar 10 cm. Tingginya ... cm.', '60', '6', '8', '5', 'B', 'Tinggi = 720 : (12 × 10) = 6 cm.', 'AKTIF'),
-('PRIO-REV-0994', 'MATEMATIKA', 6, 'Persen', 'SEMIFINAL', 'SEDANG', 'PG', 'Harga Rp150.000 naik 20%. Harga baru menjadi ...', 'Rp180.000', 'Rp170.000', 'Rp175.000', 'Rp200.000', 'A', 'Kenaikan Rp30.000, sehingga harga baru Rp180.000.', 'AKTIF'),
-('PRIO-REV-0995', 'MATEMATIKA', 6, 'Kecepatan', 'SEMIFINAL', 'SEDANG', 'PG', 'Mobil melaju 72 km/jam selama 2 jam 30 menit. Jaraknya ... km.', '144', '150', '216', '180', 'D', '2,5 jam × 72 km/jam = 180 km.', 'AKTIF'),
-('PRIO-REV-0996', 'MATEMATIKA', 6, 'Perbandingan', 'SEMIFINAL', 'SEDANG', 'PG', 'Perbandingan siswa laki-laki dan perempuan 5:4. Jika total 36, perempuan ada ...', '15', '18', '16', '20', 'C', 'Perempuan = 4/9 × 36 = 16.', 'AKTIF'),
+('PRIO-REV-0964', 'MATEMATIKA', 4, 'Bilangan Cacah sampai 10.000', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Suatu bilangan dibagi 7 menghasilkan 36 sisa 4. Bilangan tersebut adalah ...', '260', '284', '256', '252', 'C', 'Bilangan = 7 × 36 + 4 = 256.', 'AKTIF'),
+('PRIO-REV-0965', 'MATEMATIKA', 4, 'Pola Gambar dan Pola Bilangan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Pola 3, 7, 15, 31, ... dilanjutkan dengan bilangan ...', '65', '63', '47', '61', 'B', 'Setiap suku = suku sebelumnya × 2 + 1.', 'AKTIF'),
+('PRIO-REV-0966', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '1/4 + 2/4 = ...', '3/4', '3/8', '1/2', '2/4', 'A', 'Penyebut sama, sehingga pembilang dijumlahkan.', 'AKTIF'),
+('PRIO-REV-0967', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '5/6 - 1/3 = ...', '2/3', '4/3', '1/3', '1/2', 'D', '1/3 = 2/6, jadi 5/6 - 2/6 = 3/6.', 'AKTIF'),
+('PRIO-REV-0968', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '0,75 sama dengan pecahan sederhana ...', '1/4', '2/3', '3/4', '7/5', 'C', '0,75 = 75/100 = 3/4.', 'AKTIF'),
+('PRIO-REV-0969', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'PENYISIHAN', 'MUDAH', 'PG', '25% dari 240 adalah ...', '90', '60', '50', '80', 'B', '25% adalah seperempat, jadi 240 : 4 = 60.', 'AKTIF'),
+('PRIO-REV-0970', 'MATEMATIKA', 5, 'KPK dan FPB', 'PENYISIHAN', 'MUDAH', 'PG', 'FPB dari 24 dan 36 adalah ...', '12', '6', '18', '8', 'A', 'Faktor bersama terbesar 24 dan 36 adalah 12.', 'AKTIF'),
+('PRIO-REV-0971', 'MATEMATIKA', 5, 'KPK dan FPB', 'PENYISIHAN', 'MUDAH', 'PG', 'KPK dari 8 dan 12 adalah ...', '48', '16', '36', '24', 'D', 'Kelipatan persekutuan terkecil 8 dan 12 ialah 24.', 'AKTIF'),
+('PRIO-REV-0972', 'MATEMATIKA', 5, 'Volume Bangun Ruang', 'PENYISIHAN', 'MUDAH', 'PG', 'Kubus bersisi 6 cm memiliki volume ... cm³.', '72', '126', '216', '36', 'C', 'Volume kubus = 6 × 6 × 6 = 216 cm³.', 'AKTIF'),
+('PRIO-REV-0973', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'PENYISIHAN', 'MUDAH', 'PG', '2,5 liter sama dengan ... mililiter.', '2.050', '2.500', '250', '25.000', 'B', '1 liter = 1.000 mL.', 'AKTIF'),
+('PRIO-REV-0974', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '2/3 × 3/5 = ...', '2/5', '6/8', '5/8', '1/5', 'A', 'Pembilang dikalikan pembilang, penyebut dikalikan penyebut, lalu sederhanakan 6/15.', 'AKTIF'),
+('PRIO-REV-0975', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '3/4 : 1/2 = ...', '3/8', '2/3', '1/4', '1 1/2', 'D', '3/4 × 2/1 = 6/4 = 1 1/2.', 'AKTIF'),
+('PRIO-REV-0976', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', 'Pada peta skala 1:100.000, jarak dua lokasi 4 cm. Jarak sebenarnya ... km.', '400', '0,4', '4', '40', 'C', '4 × 100.000 cm = 400.000 cm = 4 km.', 'AKTIF'),
+('PRIO-REV-0977', 'MATEMATIKA', 5, 'Bilangan Cacah sampai 100.000 (dan 1.000.000)', 'SEMIFINAL', 'SEDANG', 'PG', 'Rasio kelereng merah dan biru 3:5. Jika total 40, jumlah merah adalah ...', '18', '15', '24', '25', 'B', 'Merah = 3/(3+5) × 40 = 15.', 'AKTIF'),
+('PRIO-REV-0978', 'MATEMATIKA', 5, 'Volume Bangun Ruang', 'SEMIFINAL', 'SEDANG', 'PG', 'Balok berukuran 10 cm × 8 cm × 5 cm memiliki volume ... cm³.', '400', '230', '800', '300', 'A', 'Volume = panjang × lebar × tinggi = 10 × 8 × 5.', 'AKTIF'),
+('PRIO-REV-0979', 'MATEMATIKA', 5, 'Data dan Diagram', 'SEMIFINAL', 'SEDANG', 'PG', 'Rata-rata nilai 70, 80, 90, 80, dan 80 adalah ...', '78', '82', '84', '80', 'D', 'Jumlah 400 dibagi 5 = 80.', 'AKTIF'),
+('PRIO-REV-0980', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sebuah barang seharga Rp80.000 mendapat diskon 15%. Harga setelah diskon adalah ...', 'Rp65.000', 'Rp12.000', 'Rp68.000', 'Rp72.000', 'C', 'Diskon Rp12.000; harga akhir Rp68.000.', 'AKTIF'),
+('PRIO-REV-0981', 'MATEMATIKA', 5, 'Data dan Diagram', 'FINAL_WAJIB', 'SULIT', 'PG', 'Sepeda menempuh 36 km dalam 3 jam. Kecepatan rata-ratanya ... km/jam.', '108', '12', '9', '18', 'B', '36 km dibagi 3 jam sama dengan 12 km/jam.', 'AKTIF'),
+('PRIO-REV-0982', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'FINAL_WAJIB', 'SULIT', 'PG', '1 2/3 + 2 1/6 = ...', '3 5/6', '3 3/6', '4 1/6', '3 1/2', 'A', '2/3 = 4/6, sehingga 1 4/6 + 2 1/6 = 3 5/6.', 'AKTIF'),
+('PRIO-REV-0983', 'MATEMATIKA', 5, 'KPK dan FPB', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Dua bel berbunyi tiap 12 dan 18 menit. Jika bersama pada 08.00, bersama lagi pukul ...', '08.24', '08.30', '08.48', '08.36', 'D', 'KPK dari 12 dan 18 ialah 36 menit.', 'AKTIF'),
+('PRIO-REV-0984', 'MATEMATIKA', 5, 'Data dan Diagram', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Rata-rata empat bilangan adalah 25. Tiga bilangan pertama 18, 27, 24. Bilangan keempat ...', '29', '33', '31', '25', 'C', 'Jumlah seluruhnya 4 × 25 = 100; tiga bilangan berjumlah 69.', 'AKTIF'),
+('PRIO-REV-0985', 'MATEMATIKA', 5, 'Bilangan Pecahan', 'FINAL_REBUTAN', 'HOTS', 'PG', 'Sebuah bak terisi 3/5. Setelah ditambah 24 liter, penuh. Kapasitas bak ... liter.', '72', '60', '40', '48', 'B', '24 liter merupakan 2/5 kapasitas, jadi kapasitas 24 × 5/2 = 60 liter.', 'AKTIF'),
+('PRIO-REV-0986', 'MATEMATIKA', 6, 'Koordinat Kartesius', 'PENYISIHAN', 'MUDAH', 'PG', 'Titik A terletak pada 4 satuan ke kanan (sumbu X) dan 3 satuan ke atas (sumbu Y) dari titik pusat (0,0). Koordinat titik A adalah ...', '(4, 3)', '(3, 4)', '(-4, 3)', '(4, -3)', 'A', 'Format penulisan koordinat Kartesius selalu mendahulukan sumbu mendatar X, baru sumbu tegak Y: (x, y). Ke kanan artinya x = 4, ke atas artinya y = 3. Maka koordinat titik A adalah (4, 3).', 'AKTIF'),
+('PRIO-REV-0987', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'PENYISIHAN', 'MUDAH', 'PG', '0,375 sebagai pecahan paling sederhana adalah ...', '3/5', '5/8', '7/20', '3/8', 'D', '375/1000 disederhanakan dengan membagi 125 menjadi 3/8.', 'AKTIF'),
+('PRIO-REV-0988', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'PENYISIHAN', 'MUDAH', 'PG', '40% dari suatu bilangan adalah 96. Bilangan itu ...', '260', '384', '240', '200', 'C', 'Bilangan = 96 : 0,4 = 240.', 'AKTIF'),
+('PRIO-REV-0989', 'MATEMATIKA', 6, 'Rasio dan Skala', 'PENYISIHAN', 'MUDAH', 'PG', 'Rasio umur Ani dan Budi 4:7. Jika umur Ani 12 tahun, umur Budi ...', '28 tahun', '21 tahun', '18 tahun', '24 tahun', 'B', 'Satu bagian = 12 : 4 = 3 tahun; Budi = 7 × 3.', 'AKTIF'),
+('PRIO-REV-0990', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'PENYISIHAN', 'MUDAH', 'PG', 'Keliling lingkaran berdiameter 14 cm, dengan π = 22/7, adalah ...', '44 cm', '22 cm', '154 cm', '88 cm', 'A', 'Keliling = π × diameter = 22/7 × 14 = 44 cm.', 'AKTIF'),
+('PRIO-REV-0991', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'PENYISIHAN', 'MUDAH', 'PG', 'Luas lingkaran berjari-jari 7 cm, π = 22/7, adalah ...', '44 cm²', '49 cm²', '308 cm²', '154 cm²', 'D', 'Luas = πr² = 22/7 × 7 × 7 = 154 cm².', 'AKTIF'),
+('PRIO-REV-0992', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'PENYISIHAN', 'MUDAH', 'PG', 'Median dari 4, 9, 7, 12, 6 adalah ...', '9', '8', '7', '6', 'C', 'Urutkan data 4, 6, 7, 9, 12; nilai tengah 7.', 'AKTIF'),
+('PRIO-REV-0993', 'MATEMATIKA', 6, 'Kubus dan Balok (Luas Permukaan & Volume)', 'PENYISIHAN', 'MUDAH', 'PG', 'Volume balok 720 cm³, panjang 12 cm dan lebar 10 cm. Tingginya ... cm.', '60', '6', '8', '5', 'B', 'Tinggi = 720 : (12 × 10) = 6 cm.', 'AKTIF'),
+('PRIO-REV-0994', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'SEMIFINAL', 'SEDANG', 'PG', 'Harga Rp150.000 naik 20%. Harga baru menjadi ...', 'Rp180.000', 'Rp170.000', 'Rp175.000', 'Rp200.000', 'A', 'Kenaikan Rp30.000, sehingga harga baru Rp180.000.', 'AKTIF'),
+('PRIO-REV-0995', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'SEMIFINAL', 'SEDANG', 'PG', 'Mobil melaju 72 km/jam selama 2 jam 30 menit. Jaraknya ... km.', '144', '150', '216', '180', 'D', '2,5 jam × 72 km/jam = 180 km.', 'AKTIF'),
+('PRIO-REV-0996', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Perbandingan siswa laki-laki dan perempuan 5:4. Jika total 36, perempuan ada ...', '15', '18', '16', '20', 'C', 'Perempuan = 4/9 × 36 = 16.', 'AKTIF'),
 ('PRIO-REV-0997', 'MATEMATIKA', 6, 'Peluang', 'SEMIFINAL', 'SEDANG', 'PG', 'Dadu enam sisi dilempar. Peluang memperoleh bilangan genap adalah ...', '1/6', '1/2', '1/3', '2/3', 'B', 'Ada tiga hasil genap dari enam kemungkinan.', 'AKTIF'),
-('PRIO-REV-0998', 'MATEMATIKA', 6, 'Operasi pecahan', 'SEMIFINAL', 'SEDANG', 'PG', '3/5 dari 250 ditambah 25% dari 120 sama dengan ...', '180', '170', '190', '210', 'A', '3/5 × 250 = 150, dan 25% × 120 = 30.', 'AKTIF'),
-('PRIO-REV-0999', 'MATEMATIKA', 6, 'Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Peta berskala 1:250.000 menunjukkan jarak 6 cm. Jarak sebenarnya ... km.', '1,5', '150', '25', '15', 'D', '6 × 250.000 cm = 1.500.000 cm = 15 km.', 'AKTIF'),
-('PRIO-REV-1000', 'MATEMATIKA', 6, 'Data', 'FINAL_WAJIB', 'SULIT', 'PG', 'Rata-rata enam nilai adalah 75. Jika satu nilai 90 dikeluarkan, rata-rata sisanya ...', '74', '78', '72', '70', 'C', 'Jumlah 450; setelah dikurangi 90 menjadi 360, bagi 5 = 72.', 'AKTIF')
+('PRIO-REV-0998', 'MATEMATIKA', 6, 'Pecahan dan Desimal Lanjutan', 'SEMIFINAL', 'SEDANG', 'PG', '3/5 dari 250 ditambah 25% dari 120 sama dengan ...', '180', '170', '190', '210', 'A', '3/5 × 250 = 150, dan 25% × 120 = 30.', 'AKTIF'),
+('PRIO-REV-0999', 'MATEMATIKA', 6, 'Rasio dan Skala', 'SEMIFINAL', 'SEDANG', 'PG', 'Peta berskala 1:250.000 menunjukkan jarak 6 cm. Jarak sebenarnya ... km.', '1,5', '150', '25', '15', 'D', '6 × 250.000 cm = 1.500.000 cm = 15 km.', 'AKTIF'),
+('PRIO-REV-1000', 'MATEMATIKA', 6, 'Pengolahan Data (Mean, Median, Modus)', 'FINAL_WAJIB', 'SULIT', 'PG', 'Rata-rata enam nilai adalah 75. Jika satu nilai 90 dikeluarkan, rata-rata sisanya ...', '74', '78', '72', '70', 'C', 'Jumlah 450; setelah dikurangi 90 menjadi 360, bagi 5 = 72.', 'AKTIF')
 ON CONFLICT (id) DO UPDATE SET
   mapel = EXCLUDED.mapel,
   kelas = EXCLUDED.kelas,
