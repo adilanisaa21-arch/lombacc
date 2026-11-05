@@ -1,14 +1,15 @@
 // =============================================================================
 // BUILDER 1.000 SOAL MATEMATIKA BERKUALITAS TINGGI (100% UNIK & BEBAS DUPLIKAT)
 // 10 Topik Kurikulum × (20 Mudah + 40 Sedang + 20 Sulit + 20 HOTS) = 1.000 Soal
+// Setiap soal memiliki variasi target, angka, objek, dan konteks berbeda
 // =============================================================================
 
 const {
   renderPersegi, renderPersegiPanjang, renderSegitiga, renderJajarGenjang,
   renderBelahKetupat, renderLayangLayang, renderTrapesium, renderLingkaran,
   renderJamSudut, renderKubus, renderBalok, renderPrismaSegitiga,
-  renderTabung, renderKerucut, renderLimas, renderDiagramBatang,
-  renderDiagramGaris, renderDiagramLingkaran, renderPiktogram, renderTabelTurus
+  renderTabung, renderKerucut, renderLimas, renderDiagramLingkaran,
+  renderDiagramGaris, renderPiktogram, renderTabelTurus, renderDiagramBatang
 } = require('./svg_helpers');
 
 function createSafeOptions(correct, w1, w2, w3, seed) {
@@ -26,7 +27,7 @@ function createSafeOptions(correct, w1, w2, w3, seed) {
         finalOpt = finalOpt.replace(numMatch[0], String(nextVal));
         delta++;
       } else {
-        finalOpt = finalOpt + ' *';
+        finalOpt = finalOpt + ' (alternatif ' + delta + ')';
         delta++;
       }
     }
@@ -43,13 +44,7 @@ function createSafeOptions(correct, w1, w2, w3, seed) {
   const correctIndex = list.indexOf(String(correct).trim());
   const kunci = 'ABCD'[correctIndex >= 0 ? correctIndex : 0];
 
-  return {
-    A: list[0],
-    B: list[1],
-    C: list[2],
-    D: list[3],
-    kunci
-  };
+  return { A: list[0], B: list[1], C: list[2], D: list[3], kunci };
 }
 
 function buildMathQuestions() {
@@ -59,48 +54,52 @@ function buildMathQuestions() {
   function addQ(q) {
     let cleanText = q.PERTANYAAN.trim();
     let norm = cleanText.toLowerCase().replace(/[^a-z0-9]/g, '');
-    let counter = 1;
-    while (globalUsedText.has(norm)) {
-      counter++;
-      cleanText = q.PERTANYAAN.trim() + ` (Variasi ${counter})`;
-      norm = cleanText.toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (globalUsedText.has(norm)) {
+      throw new Error('DUPLICATE MATH QUESTION DETECTED: ' + cleanText);
     }
     globalUsedText.add(norm);
-    q.PERTANYAAN = cleanText;
     list.push(q);
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 1: Bangun Datar Segiempat (Persegi, Persegi Panjang, Jajar Genjang)
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   const T1 = 'Bangun Datar Segiempat (Persegi, Persegi Panjang, Jajar Genjang)';
 
   // Mudah (20)
   for (let i = 1; i <= 20; i++) {
-    const s = 4 + i;
     const seed = i * 7;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
-
-    if (i <= 7) {
+    
+    if (i <= 5) {
+      const s = 4 + i;
       svg = renderPersegi(s);
-      qTxt = `Perhatikan gambar persegi di atas! Panjang sisi persegi adalah ${s} cm. Keliling persegi tersebut adalah ...`;
+      qTxt = `Perhatikan gambar persegi di atas! Panjang sisi persegi tersebut adalah ${s} cm. Keliling persegi adalah ...`;
       ans = `${4 * s} cm`; w1 = `${s * s} cm`; w2 = `${4 * s + 4} cm`; w3 = `${4 * s - 4} cm`;
-      exp = `Keliling persegi = 4 × s = 4 × ${s} = ${4 * s} cm.`;
-      diag = 'Rumus keliling persegi adalah 4 dikalikan panjang sisinya.';
-    } else if (i <= 14) {
-      const p = 8 + i, l = 4 + (i % 5);
+      exp = `Keliling persegi = 4 × sisi = 4 × ${s} = ${4 * s} cm.`;
+      diag = 'Keliling persegi dihitung dengan mengalikan panjang sisi dengan 4.';
+    } else if (i <= 10) {
+      const p = 8 + i, l = 3 + (i % 3);
       svg = renderPersegiPanjang(p, l);
       qTxt = `Perhatikan gambar persegi panjang di atas! Diketahui panjang ${p} cm dan lebar ${l} cm. Keliling bangun tersebut adalah ...`;
       ans = `${2 * (p + l)} cm`; w1 = `${p * l} cm`; w2 = `${p + l} cm`; w3 = `${2 * (p + l) + 6} cm`;
       exp = `Keliling = 2 × (p + l) = 2 × (${p} + ${l}) = ${2 * (p + l)} cm.`;
-      diag = 'Keliling persegi panjang adalah dua kali jumlah panjang dan lebar.';
+      diag = 'Keliling persegi panjang adalah 2 kali jumlah panjang dan lebar.';
+    } else if (i <= 15) {
+      const kel = (5 + i) * 4;
+      const s = kel / 4;
+      const obj = ['sapu tangan', 'taplak meja kecil', 'bingkai foto', 'ubin teras', 'kertas lipat origami'][i - 11];
+      qTxt = `Sebuah ${obj} berbentuk persegi memiliki keliling ${kel} cm. Panjang sisi ${obj} tersebut adalah ...`;
+      ans = `${s} cm`; w1 = `${s + 3} cm`; w2 = `${kel / 2} cm`; w3 = `${s * 2} cm`;
+      exp = `Panjang sisi = Keliling : 4 = ${kel} : 4 = ${s} cm.`;
+      diag = 'Untuk mencari panjang sisi persegi dari keliling, bagi nilai keliling dengan 4.';
     } else {
-      const a = 10 + i, t = 6 + (i % 4);
+      const a = 10 + i, t = 4 + (i % 4);
       svg = renderJajarGenjang(a, t);
-      qTxt = `Perhatikan gambar jajar genjang di atas! Panjang alas ${a} cm dan tinggi tegak ${t} cm. Luas jajar genjang tersebut adalah ...`;
-      ans = `${a * t} cm²`; w1 = `${(a * t) / 2} cm²`; w2 = `${2 * (a + t)} cm²`; w3 = `${a * t + 12} cm²`;
+      qTxt = `Perhatikan gambar jajar genjang di atas! Diketahui panjang alas ${a} cm dan tinggi ${t} cm. Luas bangun tersebut adalah ...`;
+      ans = `${a * t} cm²`; w1 = `${(a * t) / 2} cm²`; w2 = `${2 * (a + t)} cm²`; w3 = `${a * t + 8} cm²`;
       exp = `Luas jajar genjang = alas × tinggi = ${a} × ${t} = ${a * t} cm².`;
-      diag = 'Luas jajar genjang alas dikali tinggi (tidak dibagi 2).';
+      diag = 'Luas jajar genjang dihitung dengan mengalikan panjang alas dengan tingginya.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -116,27 +115,39 @@ function buildMathQuestions() {
     const seed = i * 11;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    if (i <= 15) {
-      const s = 10 + i;
+    if (i <= 10) {
+      const s = 9 + i;
       svg = renderPersegi(s);
-      qTxt = `Perhatikan gambar persegi di atas! Diketahui panjang sisi adalah ${s} cm. Luas daerah bangun persegi tersebut adalah ...`;
-      ans = `${s * s} cm²`; w1 = `${4 * s} cm²`; w2 = `${s * s - 15} cm²`; w3 = `${s * s + 20} cm²`;
-      exp = `Luas persegi = s × s = ${s} × ${s} = ${s * s} cm².`;
-      diag = 'Luas persegi diperoleh dari sisi dikali sisi.';
-    } else if (i <= 30) {
-      const p = 12 + (i % 10), l = 6 + (i % 6);
+      const objects = ['ubin granit lantai', 'papan catur kayu', 'kanvas lukisan', 'meja kopi persegi', 'panel surya mini', 'jendela kamar', 'keset lantai', 'bantal kursi', 'pigura kayu', 'papan pengumuman'];
+      qTxt = `Sebuah ${objects[i - 1]} berbentuk persegi memiliki panjang sisi ${s} cm. Luas permukaan benda tersebut adalah ...`;
+      ans = `${s * s} cm²`; w1 = `${4 * s} cm²`; w2 = `${s * s - 10} cm²`; w3 = `${s * s + 15} cm²`;
+      exp = `Luas persegi = sisi × sisi = ${s} × ${s} = ${s * s} cm².`;
+      diag = 'Luas persegi diperoleh dari perkalian sisi dengan sisi.';
+    } else if (i <= 20) {
+      const p = 12 + i, l = 6 + (i % 4);
       svg = renderPersegiPanjang(p, l);
-      qTxt = `Perhatikan gambar persegi panjang di atas! Diketahui panjang ${p} cm dan lebar ${l} cm. Luas daerah bangun tersebut adalah ...`;
-      ans = `${p * l} cm²`; w1 = `${2 * (p + l)} cm²`; w2 = `${p * l - 12} cm²`; w3 = `${p * l + 16} cm²`;
-      exp = `Luas persegi panjang = p × l = ${p} × ${l} = ${p * l} cm².`;
-      diag = 'Luas persegi panjang adalah panjang dikali lebar.';
+      const rooms = ['kebun cabai Pak Budi', 'lapangan bulu tangkis', 'aula pertemuan sekolah', 'ruang perpustakaan', 'teras depan rumah', 'lapangan futsal mini', 'gudang perlengkapan', 'halaman samping', 'kolam renang anak', 'garasi mobil'];
+      qTxt = `Sebidang ${rooms[i - 11]} berbentuk persegi panjang berukuran panjang ${p} meter dan lebar ${l} meter. Luas tanah tersebut adalah ...`;
+      ans = `${p * l} m²`; w1 = `${2 * (p + l)} m²`; w2 = `${p * l - 8} m²`; w3 = `${p * l + 12} m²`;
+      exp = `Luas = panjang × lebar = ${p} × ${l} = ${p * l} m².`;
+      diag = 'Luas persegi panjang dihitung dengan mengalikan panjang dan lebar.';
+    } else if (i <= 30) {
+      const p = 15 + i, l = 5 + (i % 3);
+      const luas = p * l, kel = 2 * (p + l);
+      const selisih = Math.abs(luas - kel);
+      qTxt = `Sebuah pelat baja persegi panjang berukuran panjang ${p} cm dan lebar ${l} cm. Selisih antara nilai luas (cm²) dan kelilingnya (cm) adalah ...`;
+      ans = `${selisih}`; w1 = `${luas}`; w2 = `${kel}`; w3 = `${selisih + 10}`;
+      exp = `Luas = ${p} × ${l} = ${luas} cm². Keliling = 2 × (${p} + ${l}) = ${kel} cm. Selisih = ${luas} - ${kel} = ${selisih}.`;
+      diag = 'Hitung nilai luas dan keliling masing-masing, kemudian cari selisih nilainya.';
     } else {
-      const a = 14 + (i % 8), t = 8 + (i % 5);
-      svg = renderJajarGenjang(a, t);
-      qTxt = `Sebuah sebidang tanah pekarangan berbentuk jajar genjang memiliki panjang alas ${a} meter dan jarak tegak kedua sisi sejajar ${t} meter. Luas tanah pekarangan tersebut adalah ...`;
-      ans = `${a * t} m²`; w1 = `${(a * t) / 2} m²`; w2 = `${a * t + 15} m²`; w3 = `${2 * (a + t)} m²`;
-      exp = `Luas = alas × tinggi = ${a} × ${t} = ${a * t} m².`;
-      diag = 'Luas jajar genjang adalah alas dikalikan tinggi tegak.';
+      const p = 10 + i;
+      const l = 4 + (i % 5);
+      const luas = p * l;
+      const areas = ['kebun jagung', 'ruang kelas 5A', 'taman bermain', 'lapangan voli', 'halaman sekolah', 'kebun singkong', 'toko kelontong', 'kolam ikan hias', 'kebun sayuran', 'area parkir'];
+      qTxt = `Sebuah ${areas[i - 31]} berbentuk persegi panjang memiliki luas ${luas} m² dan panjang ${p} meter. Lebar tempat tersebut adalah ...`;
+      ans = `${l} meter`; w1 = `${l + 2} meter`; w2 = `${l - 1} meter`; w3 = `${p / 2} meter`;
+      exp = `Lebar = Luas : Panjang = ${luas} : ${p} = ${l} meter.`;
+      diag = 'Lebar diperoleh dari luas dibagi panjang.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -147,19 +158,35 @@ function buildMathQuestions() {
     });
   }
 
-  // Sulit (20) - Soal Multilangkah Spesifik Segiempat
+  // Sulit (20)
   for (let i = 1; i <= 20; i++) {
     const seed = i * 13;
-    const kel = 28 + i * 4;
-    const s = kel / 4;
-    const luas = s * s;
-    const qTxt = `Pak Ahmad memiliki kolam ikan berbentuk persegi dengan keliling ${kel} meter. Luas permukaan kolam ikan Pak Ahmad tersebut adalah ...`;
-    const ans = `${luas} m²`;
-    const w1 = `${kel} m²`;
-    const w2 = `${luas - 16} m²`;
-    const w3 = `${s * 2} m²`;
-    const exp = `Sisi kolam = Keliling : 4 = ${kel} : 4 = ${s} m.\nLuas kolam = ${s} × ${s} = ${luas} m².`;
-    const diag = 'Cari terlebih dahulu panjang sisi dengan membagi keliling dengan 4, lalu hitung luasnya.';
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
+    
+    if (i <= 10) {
+      const kel = 36 + i * 4;
+      const s = kel / 4;
+      const luas = s * s;
+      const owners = ['Pak Joko', 'Pak Hadi', 'Bu Rahayu', 'Pak Slamet', 'Pak Wahyu', 'Bu Endang', 'Pak Tri', 'Bu Ratna', 'Pak Bambang', 'Pak Surya'];
+      qTxt = `Pekarangan milik ${owners[i - 1]} berbentuk persegi dengan keliling pagar bambu sepanjang ${kel} meter. Luas tanah pekarangan tersebut adalah ...`;
+      ans = `${luas} m²`; w1 = `${kel} m²`; w2 = `${luas - 15} m²`; w3 = `${s * 2} m²`;
+      exp = `Sisi pekarangan = ${kel} : 4 = ${s} m. Luas pekarangan = ${s} × ${s} = ${luas} m².`;
+      diag = 'Cari panjang sisi terlebih dahulu dengan membagi keliling dengan 4, lalu hitung sisi dikalikan sisi.';
+    } else {
+      const idx = i - 10;
+      const p = 5 + idx, l = 4 + (idx % 3);
+      const luasLantai = p * l;
+      const biayaM2 = 25000 + idx * 5000;
+      const totalBiaya = luasLantai * biayaM2;
+      const rooms = ['kamar tidur utama', 'ruang tamu', 'teras samping', 'dapur bersih', 'ruang keluarga', 'kamar tamu', 'ruang kerja', 'teras atas', 'balkon depan', 'ruang makan'];
+      qTxt = `Lantai ${rooms[idx - 1]} berukuran panjang ${p} meter dan lebar ${l} meter akan dipasangi keramik dengan biaya Rp ${biayaM2.toLocaleString('id-ID')} per m². Biaya total pemasangan keramik adalah ...`;
+      ans = `Rp ${totalBiaya.toLocaleString('id-ID')}`;
+      w1 = `Rp ${(totalBiaya - 50000).toLocaleString('id-ID')}`;
+      w2 = `Rp ${(totalBiaya + 75000).toLocaleString('id-ID')}`;
+      w3 = `Rp ${(luasLantai * 20000).toLocaleString('id-ID')}`;
+      exp = `Luas lantai = ${p} × ${l} = ${luasLantai} m². Total biaya = ${luasLantai} × Rp ${biayaM2.toLocaleString('id-ID')} = Rp ${totalBiaya.toLocaleString('id-ID')}.`;
+      diag = 'Kalikan luas ruangan dengan biaya pemasangan per meter persegi.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -169,22 +196,25 @@ function buildMathQuestions() {
     });
   }
 
-  // HOTS (20) - Soal Kontekstual Berpikir Kritis Segiempat
+  // HOTS (20)
   for (let i = 1; i <= 20; i++) {
     const seed = i * 17;
-    const pR = 6 + (i % 4), lR = 4 + (i % 3);
-    const ubin = 20 + (i % 3) * 5; // 20, 25, 30 cm
-    const luasLantaiCm = pR * 100 * lR * 100;
-    const luasUbinCm = ubin * ubin;
-    const butuhUbin = Math.ceil(luasLantaiCm / luasUbinCm);
+    const pTaman = 10 + i;
+    const lTaman = 6 + Math.floor(i / 2);
+    const lebarJalan = (i % 2 === 0) ? 2 : 1;
+    const pTotal = pTaman + 2 * lebarJalan;
+    const lTotal = lTaman + 2 * lebarJalan;
+    const luasTotal = pTotal * lTotal;
+    const luasTaman = pTaman * lTaman;
+    const luasJalan = luasTotal - luasTaman;
+    const locations = ['taman kota bunga', 'kolam renang publik', 'lapangan futsal komplek', 'panggung pertunjukan seni', 'kebun anggrek asri', 'arena skateboard', 'lapangan tenis', 'taman bermain anak', 'kolam pemancingan', 'kebun hidroponik', 'lapangan voli outdoor', 'arena panahan mini', 'taman lalu lintas', 'area parkir VIP', 'kebun herbal sekolah', 'kolam hias teratai', 'panggung terbuka RT', 'lapangan basket 3x3', 'kebun buah melon', 'area santai gazebo'];
 
-    const qTxt = `Aula pertemuan warga berukuran ${pR} meter × ${lR} meter akan dipasangi lantai keramik berbentuk persegi dengan ukuran sisi ${ubin} cm. Banyaknya keramik minimal yang harus dibeli panitia pembangunan adalah ...`;
-    const ans = `${butuhUbin} buah`;
-    const w1 = `${butuhUbin + 50} buah`;
-    const w2 = `${butuhUbin - 40} buah`;
-    const w3 = `${Math.round(butuhUbin * 1.5)} buah`;
-    const exp = `Luas lantai = (${pR} × 100) × (${lR} × 100) = ${luasLantaiCm} cm².\nLuas 1 ubin = ${ubin} × ${ubin} = ${luasUbinCm} cm².\nBanyak keramik = ${luasLantaiCm} : ${luasUbinCm} = ${butuhUbin} buah.`;
-    const diag = 'Samakan satuan ukuran meter ke sentimeter sebelum membagi luas lantai dengan luas keramik.';
+    const qTxt = `Sebuah ${locations[i - 1]} berukuran ${pTaman} m × ${lTaman} m dikelilingi jalan setapak selebar ${lebarJalan} meter di sekeliling luarnya. Luas area jalan setapak tersebut adalah ...`;
+    ans = `${luasJalan} m²`; w1 = `${luasTotal} m²`; w2 = `${luasTaman} m²`; w3 = `${luasJalan + 12} m²`;
+    exp = `Dimensi luar = (${pTaman} + ${2 * lebarJalan}) × (${lTaman} + ${2 * lebarJalan}) = ${pTotal} × ${lTotal} = ${luasTotal} m².
+Luas area dalam = ${luasTaman} m².
+Luas jalan setapak = ${luasTotal} - ${luasTaman} = ${luasJalan} m².`;
+    diag = 'Tambahkan 2 kali lebar jalan ke panjang dan lebar taman untuk mencari luas total luar, lalu kurangkan dengan luas taman dalam.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -194,37 +224,40 @@ function buildMathQuestions() {
     });
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 2: Bangun Datar Segitiga, Belah Ketupat, & Layang-Layang
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   const T2 = 'Bangun Datar Segitiga, Belah Ketupat, & Layang-Layang';
 
   // Mudah (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 19;
+    const seed = i * 23;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
     if (i <= 7) {
-      const a = 6 + (i % 6) * 2, t = 4 + (i % 4) * 2;
-      svg = renderSegitiga(a, t, 'siku');
-      qTxt = `Perhatikan gambar segitiga siku-siku di atas! Jika alas segitiga ${a} cm dan tingginya ${t} cm, luas segitiga adalah ...`;
-      ans = `${(a * t) / 2} cm²`; w1 = `${a * t} cm²`; w2 = `${(a * t) / 2 + 8} cm²`; w3 = `${(a * t) / 2 - 4} cm²`;
-      exp = `Luas segitiga = ½ × a × t = ½ × ${a} × ${t} = ${(a * t) / 2} cm².`;
-      diag = 'Rumus luas segitiga adalah setengah kali alas dikali tinggi.';
+      const a = 6 + i, t = 4 + (i % 3);
+      const luas = (a * t) / 2;
+      svg = renderSegitiga(a, t);
+      qTxt = `Perhatikan gambar segitiga di atas! Diketahui panjang alas ${a} cm dan tinggi ${t} cm. Luas segitiga tersebut adalah ...`;
+      ans = `${luas} cm²`; w1 = `${a * t} cm²`; w2 = `${luas + 5} cm²`; w3 = `${luas - 3} cm²`;
+      exp = `Luas segitiga = (alas × tinggi) : 2 = (${a} × ${t}) : 2 = ${luas} cm².`;
+      diag = 'Luas segitiga adalah setengah dari hasil kali alas dan tinggi.';
     } else if (i <= 14) {
-      const d1 = 8 + (i % 5) * 2, d2 = 12 + (i % 4) * 2;
+      const d1 = 10 + 2 * i, d2 = 6 + 2 * (i % 3);
+      const luas = (d1 * d2) / 2;
       svg = renderBelahKetupat(d1, d2);
-      qTxt = `Perhatikan gambar belah ketupat di atas! Panjang diagonal d₁ = ${d1} cm dan d₂ = ${d2} cm. Luas belah ketupat adalah ...`;
-      ans = `${(d1 * d2) / 2} cm²`; w1 = `${d1 * d2} cm²`; w2 = `${(d1 * d2) / 2 + 10} cm²`; w3 = `${(d1 * d2) / 2 - 6} cm²`;
-      exp = `Luas belah ketupat = ½ × d₁ × d₂ = ½ × ${d1} × ${d2} = ${(d1 * d2) / 2} cm².`;
-      diag = 'Luas belah ketupat adalah perkalian kedua diagonal dibagi dua.';
+      qTxt = `Perhatikan gambar belah ketupat di atas! Panjang diagonal d1 = ${d1} cm dan d2 = ${d2} cm. Luas bangun tersebut adalah ...`;
+      ans = `${luas} cm²`; w1 = `${d1 * d2} cm²`; w2 = `${luas + 8} cm²`; w3 = `${luas - 6} cm²`;
+      exp = `Luas belah ketupat = (d1 × d2) : 2 = (${d1} × ${d2}) : 2 = ${luas} cm².`;
+      diag = 'Luas belah ketupat adalah setengah hasil kali kedua diagonalnya.';
     } else {
-      const d1 = 10 + (i % 4) * 2, d2 = 16 + (i % 4) * 2;
+      const d1 = 12 + 2 * i, d2 = 8 + 2 * (i % 4);
+      const luas = (d1 * d2) / 2;
       svg = renderLayangLayang(d1, d2);
-      qTxt = `Perhatikan gambar layang-layang di atas! Jika diagonal mendatar ${d1} cm dan diagonal tegak ${d2} cm, luas layang-layang tersebut adalah ...`;
-      ans = `${(d1 * d2) / 2} cm²`; w1 = `${d1 * d2} cm²`; w2 = `${(d1 * d2) / 2 + 14} cm²`; w3 = `${(d1 * d2) / 2 - 8} cm²`;
-      exp = `Luas layang-layang = ½ × d₁ × d₂ = ½ × ${d1} × ${d2} = ${(d1 * d2) / 2} cm².`;
-      diag = 'Luas layang-layang dihitung dengan mengalikan kedua diagonal lalu dibagi dua.';
+      qTxt = `Perhatikan gambar layang-layang di atas! Panjang diagonal horizontal ${d1} cm dan vertikal ${d2} cm. Luas layang-layang tersebut adalah ...`;
+      ans = `${luas} cm²`; w1 = `${d1 * d2} cm²`; w2 = `${luas + 10} cm²`; w3 = `${luas - 8} cm²`;
+      exp = `Luas layang-layang = (d1 × d2) : 2 = (${d1} × ${d2}) : 2 = ${luas} cm².`;
+      diag = 'Luas layang-layang dihitung dengan membagi dua hasil perkalian diagonalnya.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -237,24 +270,39 @@ function buildMathQuestions() {
 
   // Sedang (40)
   for (let i = 1; i <= 40; i++) {
-    const seed = i * 23;
+    const seed = i * 29;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    if (i <= 20) {
-      const a = 12 + (i % 8) * 2, t = 8 + (i % 6);
-      svg = renderSegitiga(a, t, 'samakaki');
-      qTxt = `Perhatikan gambar segitiga sama kaki di atas! Panjang alas ${a} cm dan tinggi ${t} cm. Luas daerah segitiga tersebut adalah ...`;
-      ans = `${(a * t) / 2} cm²`; w1 = `${a * t} cm²`; w2 = `${(a * t) / 2 + 12} cm²`; w3 = `${(a * t) / 2 - 10} cm²`;
-      exp = `Luas = ½ × ${a} × ${t} = ${(a * t) / 2} cm².`;
-      diag = 'Gunakan garis tinggi tegak lurus alas segitiga untuk menghitung luas.';
+    if (i <= 10) {
+      const a = 8 + 2 * i, s = 6 + i;
+      const kel = a + 2 * s;
+      qTxt = `Sebuah segitiga sama kaki memiliki panjang alas ${a} cm dan panjang masing-masing sisi kakinya ${s} cm. Keliling segitiga tersebut adalah ...`;
+      ans = `${kel} cm`; w1 = `${a + s} cm`; w2 = `${kel + 4} cm`; w3 = `${3 * s} cm`;
+      exp = `Keliling segitiga sama kaki = alas + (2 × sisi kaki) = ${a} + (2 × ${s}) = ${kel} cm.`;
+      diag = 'Keliling adalah penjumlahan seluruh sisi pembatas segitiga.';
+    } else if (i <= 20) {
+      const s = 10 + i;
+      const kel = 4 * s;
+      const objects = ['hiasan ketupat lebaran', 'liontin perak motif intan', 'rambu lalu lintas peringatan', 'bingkai cermin belah ketupat', 'potongan ubin teras', 'motif kain batik', 'gantungan kunci akrilik', 'plakat penghargaan', 'ornamen dinding kayu', 'lambang regu pramuka'];
+      qTxt = `Sebuah ${objects[i - 11]} berbentuk belah ketupat memiliki panjang sisi ${s} cm. Keliling benda tersebut adalah ...`;
+      ans = `${kel} cm`; w1 = `${s * s} cm`; w2 = `${2 * s} cm`; w3 = `${kel + 6} cm`;
+      exp = `Keliling belah ketupat = 4 × sisi = 4 × ${s} = ${kel} cm.`;
+      diag = 'Keempat sisi belah ketupat sama panjang sehingga kelilingnya 4 kali sisi.';
+    } else if (i <= 30) {
+      const a = 7 + i, b = 13 + i;
+      const kel = 2 * (a + b);
+      qTxt = `Sebuah layang-layang memiliki dua pasang sisi yang sama panjang, yaitu ${a} cm dan ${b} cm. Keliling layang-layang tersebut adalah ...`;
+      ans = `${kel} cm`; w1 = `${a + b} cm`; w2 = `${a * b} cm`; w3 = `${kel + 8} cm`;
+      exp = `Keliling = 2 × (${a} + ${b}) = 2 × ${a + b} = ${kel} cm.`;
+      diag = 'Jumlahkan pasangan sisi layang-layang lalu kalikan dua.';
     } else {
-      const s = 10 + (i % 8);
-      qTxt = `Sebuah kerangka hiasan dinding berbentuk belah ketupat dibuat dari kawat dengan panjang setiap sisinya ${s} cm. Panjang total kawat yang dibutuhkan untuk membuat 3 buah kerangka adalah ...`;
-      const kel1 = 4 * s;
-      const totKawat = kel1 * 3;
-      ans = `${totKawat} cm`; w1 = `${kel1} cm`; w2 = `${totKawat + 12} cm`; w3 = `${totKawat - 16} cm`;
-      exp = `Keliling 1 belah ketupat = 4 × ${s} = ${kel1} cm.\nTotal kawat untuk 3 buah = 3 × ${kel1} = ${totKawat} cm.`;
-      diag = 'Belah ketupat memiliki 4 sisi yang sama panjang.';
+      const a = (10 + i) * 2;
+      const t = 5 + (i % 4);
+      const luas = (a * t) / 2;
+      qTxt = `Sebuah bidang papan reklame segitiga memiliki luas ${luas} m² dan panjang alas ${a} meter. Tinggi papan reklame segitiga tersebut adalah ...`;
+      ans = `${t} meter`; w1 = `${t + 2} meter`; w2 = `${t - 1} meter`; w3 = `${a / 2} meter`;
+      exp = `Tinggi = (2 × Luas) : alas = (2 × ${luas}) : ${a} = ${2 * luas} : ${a} = ${t} meter.`;
+      diag = 'Tinggi segitiga diperoleh dari dua kali luas dibagi alas.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -265,20 +313,38 @@ function buildMathQuestions() {
     });
   }
 
-  // Sulit (20) - Soal Multilangkah Segitiga & Layang-Layang
+  // Sulit (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 29;
-    const d1 = 12 + (i % 5) * 2;
-    const luas = 120 + i * 12;
-    const d2 = (2 * luas) / d1;
+    const seed = i * 31;
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Doni membuat layang-layang tradisional dengan luas permukaan kertas ${luas} cm². Jika panjang salah satu bilah bambu diagonalnya adalah ${d1} cm, maka panjang bilah bambu diagonal lainnya adalah ...`;
-    const ans = `${d2} cm`;
-    const w1 = `${d2 + 4} cm`;
-    const w2 = `${d2 - 4} cm`;
-    const w3 = `${luas / d1} cm`;
-    const exp = `Luas layang-layang = ½ × d₁ × d₂.\n${luas} = ½ × ${d1} × d₂  =>  d₂ = (2 × ${luas}) : ${d1} = ${d2} cm.`;
-    const diag = 'Untuk mencari diagonal dari luas yang diketahui: kalikan luas dengan 2 lalu bagi dengan diagonal yang ada.';
+    if (i <= 10) {
+      const k = 2 + i;
+      const a = 3 * k, b = 4 * k, c = 5 * k;
+      const kel = a + b + c;
+      const biaya = 20000 + i * 2000;
+      const total = kel * biaya;
+      const owners = ['Pak Hasan', 'Bu Siti', 'Pak Darmo', 'Bu Dewi', 'Pak Anwar', 'Pak Hendra', 'Bu Maya', 'Pak Kuncoro', 'Bu Lilis', 'Pak Fajar'];
+      qTxt = `Tanah pekarangan milik ${owners[i - 1]} berbentuk segitiga siku-siku dengan panjang sisi masing-masing ${a} m, ${b} m, dan ${c} m. Jika sekeliling tanah dipasangi pagar dengan biaya Rp ${biaya.toLocaleString('id-ID')} per meter, biaya totalnya adalah ...`;
+      ans = `Rp ${total.toLocaleString('id-ID')}`;
+      w1 = `Rp ${(total - 40000).toLocaleString('id-ID')}`;
+      w2 = `Rp ${(total + 50000).toLocaleString('id-ID')}`;
+      w3 = `Rp ${(kel * 15000).toLocaleString('id-ID')}`;
+      exp = `Keliling tanah = ${a} + ${b} + ${c} = ${kel} m.
+Total biaya = ${kel} × Rp ${biaya.toLocaleString('id-ID')} = Rp ${total.toLocaleString('id-ID')}.`;
+      diag = 'Cari keliling segitiga dengan menjumlahkan ketiga sisi, lalu kalikan biaya per meter.';
+    } else {
+      const idx = i - 10;
+      const n = 3 + (idx % 3);
+      const d1 = 16 + 2 * idx, d2 = 12 + 2 * (idx % 4);
+      const luasSatu = (d1 * d2) / 2;
+      const totalLuas = n * luasSatu;
+      qTxt = `Adit membuat ${n} buah layang-layang tradisional berukuran diagonal ${d1} cm dan ${d2} cm. Luas total kertas minyak yang dibutuhkan untuk melapisi seluruh layang-layang adalah ...`;
+      ans = `${totalLuas} cm²`; w1 = `${luasSatu} cm²`; w2 = `${totalLuas + 50} cm²`; w3 = `${n * d1 * d2} cm²`;
+      exp = `Luas 1 layang-layang = (${d1} × ${d2}) : 2 = ${luasSatu} cm².
+Luas ${n} buah = ${n} × ${luasSatu} = ${totalLuas} cm².`;
+      diag = 'Hitung luas satu layang-layang lalu kalikan dengan banyaknya layang-layang yang dibuat.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -288,24 +354,22 @@ function buildMathQuestions() {
     });
   }
 
-  // HOTS (20) - Analisis Kontekstual Segitiga & Belah Ketupat
+  // HOTS (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 31;
-    const alasT = 6 + (i % 3);
-    const tinggiT = 4 + (i % 2);
-    const jmlTenda = 5 + (i % 4);
-    const luas1 = (alasT * tinggiT) / 2;
-    const totLuas = luas1 * jmlTenda;
-    const hargaPerM2 = 25000;
-    const totBiaya = totLuas * hargaPerM2;
+    const seed = i * 37;
+    const sPersegi = 8 + i;
+    const tSegitiga = 6 + (i % 4);
+    const luasPersegi = sPersegi * sPersegi;
+    const luasSegitiga = (sPersegi * tSegitiga) / 2;
+    const luasTotal = luasPersegi + luasSegitiga;
+    const objects = ['papan nama pramuka', 'hiasan dinding rumah gadang', 'maket gapura sekolah', 'plakat akrilik juara', 'motif bordir busana', 'ikon rambu petunjuk jalan', 'model miniatur rumah', 'papan petunjuk arah', 'maket atap pos ronda', 'ornamen panggung pentas', 'stiker dinding kamar', 'logo tenda kemah', 'desain bendera panji', 'model tugu batas desa', 'kap lampu gantung hias', 'desain kemasan cokelat', 'spanduk segitiga toko', 'kain slayer regu', 'banner sudut kelas', 'papan informasi mading'];
 
-    const qTxt = `Kelompok Pramuka merancang ${jmlTenda} buah pintu tenda berbentuk segitiga dengan alas ${alasT} meter dan tinggi ${tinggiT} meter. Jika bahan terpal kain dihargai Rp${hargaPerM2.toLocaleString('id-ID')} per meter persegi, total biaya pembelian terpal adalah ...`;
-    const ans = `Rp${totBiaya.toLocaleString('id-ID')}`;
-    const w1 = `Rp${(totBiaya + 50000).toLocaleString('id-ID')}`;
-    const w2 = `Rp${(totBiaya - 50000).toLocaleString('id-ID')}`;
-    const w3 = `Rp${(totLuas * 30000).toLocaleString('id-ID')}`;
-    const exp = `Luas 1 pintu tenda = ½ × ${alasT} × ${tinggiT} = ${luas1} m².\nTotal luas ${jmlTenda} tenda = ${jmlTenda} × ${luas1} = ${totLuas} m².\nTotal biaya = ${totLuas} × Rp${hargaPerM2.toLocaleString('id-ID')} = Rp${totBiaya.toLocaleString('id-ID')}.`;
-    const diag = 'Hitung luas satu bidang segitiga terlebih dahulu, kalikan dengan jumlah tenda, lalu kalikan dengan harga satuan bahan.';
+    const qTxt = `Sebuah ${objects[i - 1]} merupakan gabungan bangun persegi dengan sisi ${sPersegi} cm dan atap berbentuk segitiga dengan alas ${sPersegi} cm serta tinggi ${tSegitiga} cm. Luas total bangun gabungan tersebut adalah ...`;
+    ans = `${luasTotal} cm²`; w1 = `${luasPersegi} cm²`; w2 = `${luasTotal + 15} cm²`; w3 = `${luasPersegi + sPersegi * tSegitiga} cm²`;
+    exp = `Luas persegi = ${sPersegi} × ${sPersegi} = ${luasPersegi} cm².
+Luas segitiga atap = (${sPersegi} × ${tSegitiga}) : 2 = ${luasSegitiga} cm².
+Luas gabungan = ${luasPersegi} + ${luasSegitiga} = ${luasTotal} cm².`;
+    diag = 'Hitung luas masing-masing bangun pembentuk kemudian jumlahkan keduanya.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -315,31 +379,33 @@ function buildMathQuestions() {
     });
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 3: Bangun Datar Trapesium & Lingkaran (Keliling, Luas, Juring)
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   const T3 = 'Bangun Datar Trapesium & Lingkaran (Keliling, Luas, Juring)';
 
   // Mudah (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 37;
+    const seed = i * 41;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
     if (i <= 10) {
-      const a = 6 + (i % 4) * 2, b = 12 + (i % 4) * 2, t = 4 + (i % 3) * 2;
-      svg = renderTrapesium(a, b, t);
-      qTxt = `Perhatikan gambar trapesium di atas! Panjang sisi atas ${a} cm, sisi bawah ${b} cm, dan tinggi ${t} cm. Luas trapesium adalah ...`;
-      ans = `${((a + b) * t) / 2} cm²`; w1 = `${(a + b) * t} cm²`; w2 = `${((a + b) * t) / 2 + 10} cm²`; w3 = `${((a + b) * t) / 2 - 8} cm²`;
-      exp = `Luas trapesium = ½ × (a + b) × t = ½ × (${a} + ${b}) × ${t} = ${((a + b) * t) / 2} cm².`;
-      diag = 'Jumlahkan kedua sisi sejajar sebelum dikalikan dengan tinggi dan dibagi 2.';
-    } else {
-      const r = 7 * (1 + (i % 4));
-      svg = renderLingkaran(r, 'penuh');
-      qTxt = `Perhatikan gambar lingkaran di atas! Diketahui jari-jari lingkaran r = ${r} cm. Keliling lingkaran tersebut adalah ... (π = 22/7)`;
+      const r = 7 * i;
+      const d = 2 * r;
       const kel = Math.round(2 * (22 / 7) * r);
-      ans = `${kel} cm`; w1 = `${Math.round((22 / 7) * r * r)} cm`; w2 = `${kel + 14} cm`; w3 = `${kel - 14} cm`;
-      exp = `Keliling lingkaran = 2 × π × r = 2 × 22/7 × ${r} = ${kel} cm.`;
-      diag = 'Rumus keliling lingkaran adalah 2 × π × r.';
+      svg = renderLingkaran(r);
+      qTxt = `Perhatikan gambar lingkaran di atas! Diketahui jari-jari lingkaran r = ${r} cm (diameter ${d} cm). Keliling lingkaran tersebut adalah ...`;
+      ans = `${kel} cm`; w1 = `${kel + 14} cm`; w2 = `${kel - 14} cm`; w3 = `${Math.round((22 / 7) * r * r)} cm`;
+      exp = `Keliling = 2 × (22/7) × ${r} = ${kel} cm.`;
+      diag = 'Gunakan rumus keliling lingkaran 2 × π × r.';
+    } else {
+      const r = 7 * (i - 10);
+      const luas = Math.round((22 / 7) * r * r);
+      svg = renderLingkaran(r);
+      qTxt = `Perhatikan gambar lingkaran di atas! Jika panjang jari-jari r = ${r} cm, luas daerah lingkaran tersebut adalah ...`;
+      ans = `${luas} cm²`; w1 = `${2 * (22 / 7) * r} cm²`; w2 = `${luas + 28} cm²`; w3 = `${luas - 35} cm²`;
+      exp = `Luas = π × r² = (22/7) × ${r} × ${r} = ${luas} cm².`;
+      diag = 'Gunakan rumus luas lingkaran π × r × r.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -352,25 +418,41 @@ function buildMathQuestions() {
 
   // Sedang (40)
   for (let i = 1; i <= 40; i++) {
-    const seed = i * 41;
+    const seed = i * 43;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    if (i <= 20) {
-      const r = 7 * (1 + (i % 5));
-      svg = renderLingkaran(r, 'penuh');
-      qTxt = `Perhatikan gambar lingkaran di atas! Panjang jari-jari r = ${r} cm. Luas daerah lingkaran tersebut adalah ... (π = 22/7)`;
-      const luas = Math.round((22 / 7) * r * r);
-      ans = `${luas} cm²`; w1 = `${Math.round(2 * (22 / 7) * r)} cm²`; w2 = `${luas + 44} cm²`; w3 = `${luas - 36} cm²`;
-      exp = `Luas = π × r² = 22/7 × ${r} × ${r} = ${luas} cm².`;
-      diag = 'Rumus luas lingkaran adalah π dikali jari-jari kuadrat.';
-    } else {
-      const a = 10 + (i % 6) * 2, b = 18 + (i % 6) * 2, t = 8 + (i % 4);
+    if (i <= 10) {
+      const r = 7 * i;
+      const luasSetengah = Math.round(0.5 * (22 / 7) * r * r);
+      qTxt = `Sebuah cetakan kue berbentuk setengah lingkaran memiliki jari-jari r = ${r} cm. Luas permukaan cetakan kue tersebut adalah ...`;
+      ans = `${luasSetengah} cm²`; w1 = `${luasSetengah * 2} cm²`; w2 = `${luasSetengah + 20} cm²`; w3 = `${luasSetengah - 15} cm²`;
+      exp = `Luas setengah lingkaran = 1/2 × π × r² = 1/2 × (22/7) × ${r}² = ${luasSetengah} cm².`;
+      diag = 'Kalikan luas lingkaran penuh dengan 1/2.';
+    } else if (i <= 20) {
+      const a = 10 + 2 * i, b = 18 + 2 * i, t = 6 + (i % 3);
+      const luas = Math.round(((a + b) * t) / 2);
       svg = renderTrapesium(a, b, t);
-      qTxt = `Perhatikan gambar trapesium di atas! Diketahui panjang sisi sejajar ${a} cm dan ${b} cm, serta tinggi ${t} cm. Luas daerah trapesium adalah ...`;
-      const luas = ((a + b) * t) / 2;
+      qTxt = `Perhatikan gambar trapesium di atas! Panjang sisi sejajar adalah ${a} cm dan ${b} cm serta tingginya ${t} cm. Luas trapesium tersebut adalah ...`;
       ans = `${luas} cm²`; w1 = `${(a + b) * t} cm²`; w2 = `${luas + 16} cm²`; w3 = `${luas - 12} cm²`;
-      exp = `Luas = ½ × (${a} + ${b}) × ${t} = ${luas} cm².`;
-      diag = 'Rumus luas trapesium adalah setengah jumlah sisi sejajar dikali tinggi.';
+      exp = `Luas trapesium = ((a + b) × t) : 2 = ((${a} + ${b}) × ${t}) : 2 = ${luas} cm².`;
+      diag = 'Jumlahkan kedua sisi sejajar, kalikan tinggi, lalu bagi dua.';
+    } else if (i <= 30) {
+      const r = 14 + 7 * (i - 20);
+      const luas34 = Math.round(0.75 * (22 / 7) * r * r);
+      qTxt = `Sebuah taman bunga berbentuk 3/4 lingkaran memiliki jari-jari r = ${r} meter. Luas tanah taman bunga tersebut adalah ...`;
+      ans = `${luas34} m²`; w1 = `${Math.round((22 / 7) * r * r)} m²`; w2 = `${luas34 + 30} m²`; w3 = `${luas34 - 25} m²`;
+      exp = `Luas 3/4 lingkaran = 3/4 × (22/7) × ${r}² = ${luas34} m².`;
+      diag = 'Kalikan luas lingkaran penuh dengan pecahan 3/4.';
+    } else {
+      const r = 14 + 7 * (i - 30);
+      const n = 40 + i * 10;
+      const kelilingCm = 2 * (22 / 7) * r;
+      const jarakMeter = Math.round((n * kelilingCm) / 100);
+      qTxt = `Sebuah roda sepeda anak berjari-jari ${r} cm berputar di jalan lurus sebanyak ${n} putaran penuh. Jarak tempuh sepeda tersebut adalah ...`;
+      ans = `${jarakMeter} meter`; w1 = `${jarakMeter + 15} meter`; w2 = `${jarakMeter - 20} meter`; w3 = `${Math.round(jarakMeter / 2)} meter`;
+      exp = `Keliling roda = 2 × (22/7) × ${r} = ${kelilingCm} cm = ${kelilingCm / 100} m.
+Jarak total = ${n} × ${kelilingCm / 100} m = ${jarakMeter} meter.`;
+      diag = 'Hitung keliling roda terlebih dahulu, lalu kalikan dengan banyaknya putaran dan ubah cm ke meter.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -381,22 +463,37 @@ function buildMathQuestions() {
     });
   }
 
-  // Sulit (20) - Roda Berputar & Luas Arsiran Lingkaran
+  // Sulit (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 43;
-    const r = 14 + (i % 3) * 7; // 14, 21, 28 cm
-    const d = 2 * r;
-    const putaran = 100 + i * 20;
-    const kelLingkaranCm = Math.round(2 * (22 / 7) * r);
-    const jarakTempuhMeter = (kelLingkaranCm * putaran) / 100;
+    const seed = i * 47;
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Roda sepeda adik memiliki diameter ${d} cm. Jika sepeda dikayuh sehingga roda berputar sebanyak ${putaran} kali putaran penuh, jarak lintasan yang telah ditempuh adik adalah ... (π = 22/7)`;
-    const ans = `${jarakTempuhMeter} meter`;
-    const w1 = `${jarakTempuhMeter + 25} meter`;
-    const w2 = `${jarakTempuhMeter - 20} meter`;
-    const w3 = `${jarakTempuhMeter * 2} meter`;
-    const exp = `Keliling roda = π × d = 22/7 × ${d} = ${kelLingkaranCm} cm.\nJarak tempuh = ${kelLingkaranCm} cm × ${putaran} = ${kelLingkaranCm * putaran} cm = ${jarakTempuhMeter} meter.`;
-    const diag = 'Jarak lintasan diperoleh dari keliling roda dikalikan banyaknya putaran roda, lalu ubah sentimeter ke meter.';
+    if (i <= 10) {
+      const d = 70 + i * 14;
+      const r = d / 2;
+      const kel = Math.round((22 / 7) * d);
+      const biayaPerMeter = 15000 + i * 1000;
+      const totalBiaya = Math.round((kel / 100) * biayaPerMeter);
+      const owners = ['Ibu Sinta', 'Ibu Ratna', 'Ibu Mirna', 'Ibu Laksmi', 'Ibu Wati', 'Ibu Nurul', 'Ibu Anita', 'Ibu Farida', 'Ibu Kusuma', 'Ibu Dania'];
+      qTxt = `${owners[i - 1]} memiliki taplak meja bundar berdiameter ${d} cm. Di sekeliling tepi taplak akan dijahit renda seharga Rp ${biayaPerMeter.toLocaleString('id-ID')} per meter. Biaya renda yang dibutuhkan adalah ...`;
+      ans = `Rp ${totalBiaya.toLocaleString('id-ID')}`;
+      w1 = `Rp ${(totalBiaya - 15000).toLocaleString('id-ID')}`;
+      w2 = `Rp ${(totalBiaya + 20000).toLocaleString('id-ID')}`;
+      w3 = `Rp ${Math.round(totalBiaya * 1.5).toLocaleString('id-ID')}`;
+      exp = `Keliling taplak = π × d = (22/7) × ${d} = ${kel} cm = ${kel / 100} m.
+Total biaya = ${kel / 100} × Rp ${biayaPerMeter.toLocaleString('id-ID')} = Rp ${totalBiaya.toLocaleString('id-ID')}.`;
+      diag = 'Cari keliling lingkaran π × d, ubah satuan cm ke meter, lalu kalikan harga renda per meter.';
+    } else {
+      const idx = i - 10;
+      const sudut = [30, 45, 60, 75, 90, 105, 120, 135, 150, 180][idx - 1];
+      const r = 14 + 7 * idx;
+      const luasPenuh = (22 / 7) * r * r;
+      const luasJuring = Math.round((sudut / 360) * luasPenuh);
+      qTxt = `Sebuah potongan pizza bundar membentuk sudut pusat ${sudut}° dengan jari-jari r = ${r} cm. Luas permukaan potongan pizza (juring) tersebut adalah ...`;
+      ans = `${luasJuring} cm²`; w1 = `${luasPenuh} cm²`; w2 = `${luasJuring + 15} cm²`; w3 = `${luasJuring - 12} cm²`;
+      exp = `Luas juring = (sudut : 360°) × π × r² = (${sudut}/360) × (22/7) × ${r}² = ${luasJuring} cm².`;
+      diag = 'Bagi besar sudut pusat dengan 360 derajat lalu kalikan dengan luas lingkaran penuh.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -406,23 +503,22 @@ function buildMathQuestions() {
     });
   }
 
-  // HOTS (20) - Desain Taman Lingkaran & Jalan Setapak Melingkar
+  // HOTS (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 47;
-    const rTaman = 7 + (i % 3) * 7; // 7, 14, 21 m
-    const lebarJalan = 7;
-    const rLuar = rTaman + lebarJalan;
-    const luasLuar = Math.round((22 / 7) * rLuar * rLuar);
-    const luasDalam = Math.round((22 / 7) * rTaman * rTaman);
-    const luasJalan = luasLuar - luasDalam;
+    const seed = i * 53;
+    const R = 14 + 7 * i;
+    const r = 7;
+    const luasBesar = Math.round((22 / 7) * R * R);
+    const luasKecil = Math.round((22 / 7) * r * r);
+    const luasArsir = luasBesar - luasKecil;
+    const parks = ['taman kota bundar', 'bundaran air mancur monumen', 'lapangan terbuka hijau', 'pelataran tugu pahlawan', 'taman bermain perumahan', 'taman bunga balai kota', 'area rekreasi danau', 'plaza melati komplek', 'bundaran lalu lintas asri', 'halaman paviliun pusaka', 'taman flora nusantara', 'pelataran istana cagar', 'taman rusa lestari', 'area gazebo kenanga', 'bundaran kampus hijau', 'taman kolam teratai raya', 'plaza budaya nusantara', 'taman santai cendana', 'area memorial taman pahlawan', 'taman ekologi pesona'];
 
-    const qTxt = `Pemerintah kota membangun taman bunga berbentuk lingkaran dengan jari-jari ${rTaman} meter. Di sekeliling luar taman tersebut akan dibangun jalan setapak melingkar selebar ${lebarJalan} meter berbahan paving block. Luas area jalan setapak paving block tersebut adalah ... (π = 22/7)`;
-    const ans = `${luasJalan} m²`;
-    const w1 = `${luasLuar} m²`;
-    const w2 = `${luasDalam} m²`;
-    const w3 = `${luasJalan + 110} m²`;
-    const exp = `Jari-jari total luar = ${rTaman} + ${lebarJalan} = ${rLuar} m.\nLuas lingkaran luar = 22/7 × ${rLuar}² = ${luasLuar} m².\nLuas taman bunga = 22/7 × ${rTaman}² = ${luasDalam} m².\nLuas jalan setapak = ${luasLuar} - ${luasDalam} = ${luasJalan} m².`;
-    const diag = 'Kurangkan luas lingkaran besar luar dengan luas lingkaran kecil dalam untuk mendapatkan luas jalan setapak cincin melingkar.';
+    const qTxt = `Sebuah ${parks[i - 1]} berbentuk lingkaran berjari-jari ${R} meter. Di tengah taman tersebut dibangun kolam air mancur bundar dengan jari-jari ${r} meter. Luas area taman di luar kolam yang ditanami rumput adalah ...`;
+    ans = `${luasArsir} m²`; w1 = `${luasBesar} m²`; w2 = `${luasKecil} m²`; w3 = `${luasArsir + 35} m²`;
+    exp = `Luas lingkaran besar = (22/7) × ${R}² = ${luasBesar} m².
+Luas kolam tengah = (22/7) × ${r}² = ${luasKecil} m².
+Luas rumput = ${luasBesar} - ${luasKecil} = ${luasArsir} m².`;
+    diag = 'Kurangkan luas lingkaran besar luar dengan luas lingkaran kecil di dalamnya.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -432,25 +528,44 @@ function buildMathQuestions() {
     });
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 4: Pengukuran Sudut, Waktu, & Busur Derajat
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   const T4 = 'Pengukuran Sudut, Waktu, & Busur Derajat';
 
   // Mudah (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 53;
-    const jam = 1 + (i % 11);
-    const sudut = Math.min((jam % 12) * 30, 360 - (jam % 12) * 30);
-    const svg = renderJamSudut(jam, 0);
+    const seed = i * 59;
+    let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Perhatikan gambar jam analog di atas! Jarum jam menunjukkan tepat pukul ${String(jam).padStart(2, '0')}.00. Besar sudut terkecil yang dibentuk kedua jarum jam adalah ...`;
-    const ans = `${sudut}°`;
-    const w1 = `${sudut + 30}°`;
-    const w2 = `${sudut - 15 > 0 ? sudut - 15 : sudut + 60}°`;
-    const w3 = `${180 - sudut}°`;
-    const exp = `Tiap pergeseran 1 angka pada jam analog bernilai 30°. Sudut terkecil = ${jam} × 30° = ${sudut}°.`;
-    const diag = 'Satu putaran penuh jam adalah 360 derajat dibagi 12 angka = 30 derajat per angka.';
+    if (i <= 10) {
+      const jam = i; // 1 s.d 10
+      const jamStr = String(jam).padStart(2, '0') + '.00';
+      const derajat = jam <= 6 ? jam * 30 : (12 - jam) * 30;
+      svg = renderJamSudut(jamStr);
+      qTxt = `Perhatikan gambar jam analog di atas! Jarum jam menunjukkan tepat pukul ${jamStr}. Sudut terkecil yang dibentuk kedua jarum jam adalah ...`;
+      ans = `${derajat}°`; w1 = `${derajat + 15}°`; w2 = `${derajat - 15}°`; w3 = `${jam * 15}°`;
+      exp = `Setiap lompatan 1 jam pada jam bernilai 360° : 12 = 30°. Sudut terkecil pada pukul ${jamStr} adalah ${derajat}°.`;
+      diag = 'Kalikan jarak antar angka jam dengan 30 derajat.';
+    } else {
+      const idx = i - 10;
+      const angleTypes = [
+        ['Sudut yang besarnya tepat 90° dinamakan sudut ...', 'Siku-siku', 'Lancip', 'Tumpul', 'Lurus', 'Sudut siku-siku memiliki besar tepat 90 derajat.'],
+        ['Sudut yang besarnya antara 0° sampai kurang dari 90° dinamakan sudut ...', 'Lancip', 'Tumpul', 'Siku-siku', 'Refleks', 'Sudut lancip lebih kecil dari 90 derajat.'],
+        ['Sudut yang besarnya lebih dari 90° tetapi kurang dari 180° dinamakan sudut ...', 'Tumpul', 'Lancip', 'Siku-siku', 'Lurus', 'Sudut tumpul lebih besar dari 90 derajat dan kurang dari 180 derajat.'],
+        ['Sudut yang besarnya tepat 180° membentuk garis lurus dinamakan sudut ...', 'Lurus', 'Siku-siku', 'Refleks', 'Tumpul', 'Sudut lurus bernilai 180 derajat.'],
+        ['Sudut yang besarnya lebih dari 180° tetapi kurang dari 360° dinamakan sudut ...', 'Refleks', 'Tumpul', 'Lurus', 'Lancip', 'Sudut refleks berada di antara 180° dan 360°.'],
+        ['Alat standar yang digunakan untuk mengukur dan menggambar besar sudut derajat adalah ...', 'Busur derajat', 'Jangka sorong', 'Penggaris siku', 'Mikrometer sekrup', 'Busur derajat memiliki skala 0 sampai 180 derajat.'],
+        ['Jumlah besar seluruh sudut dalam bangun datar segitiga sembarang selalu sama dengan ...', '180°', '360°', '90°', '270°', 'Jumlah ketiga sudut dalam segitiga selalu 180 derajat.'],
+        ['Jumlah besar seluruh sudut dalam bangun datar segiempat sembarang selalu sama dengan ...', '360°', '180°', '270°', '540°', 'Segiempat terdiri dari dua segitiga sehingga jumlah sudutnya 360 derajat.'],
+        ['Besar masing-masing sudut pada segitiga sama sisi adalah ...', '60°', '45°', '90°', '30°', 'Segitiga sama sisi memiliki 3 sudut yang sama besar yaitu 180° : 3 = 60°.'],
+        ['Jika sebuah sudut siku-siku dibagi menjadi dua bagian yang sama besar, maka masing-masing sudut bernilai ...', '45°', '30°', '60°', '90°', '90° : 2 = 45°.']
+      ][idx - 1];
+      qTxt = angleTypes[0];
+      ans = angleTypes[1]; w1 = angleTypes[2]; w2 = angleTypes[3]; w3 = angleTypes[4];
+      exp = angleTypes[5];
+      diag = 'Pahami klasifikasi sudut berdasarkan besar derajatnya.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -462,23 +577,33 @@ function buildMathQuestions() {
 
   // Sedang (40)
   for (let i = 1; i <= 40; i++) {
-    const seed = i * 59;
-    const jam = 2 + (i % 5);
-    const jarumMenit = 30;
-    // Sudut pada jam X:30
-    // Jarum jam berada pada X.5 * 30 = X*30 + 15
-    // Jarum menit pada angka 6 = 180°
-    const sudutJam = jam * 30 + 15;
-    const selisih = Math.abs(180 - sudutJam);
-    const svg = renderJamSudut(jam, 30);
+    const seed = i * 61;
+    let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Perhatikan gambar jam analog di atas! Jarum jam menunjukkan pukul ${String(jam).padStart(2, '0')}.30. Besar sudut terkecil yang dibentuk jarum jam dan jarum menit adalah ...`;
-    const ans = `${selisih}°`;
-    const w1 = `${selisih + 15}°`;
-    const w2 = `${selisih - 15}°`;
-    const w3 = `${180 - jam * 30}°`;
-    const exp = `Pada pukul ${jam}.30, jarum menit di angka 6 (180°), dan jarum jam di ${jam} × 30° + (30/60 × 30°) = ${sudutJam}°. Selisih sudut terkecil = 180° - ${sudutJam}° = ${selisih}°.`;
-    const diag = 'Ingat bahwa pada menit ke-30, jarum jam sudah bergeser sejauh setengah lompatan (15 derajat) melewati angka jam.';
+    if (i <= 20) {
+      const times = [
+        ['01.30', 135], ['02.30', 105], ['03.30', 75], ['04.30', 45], ['05.30', 15],
+        ['07.30', 45], ['08.30', 75], ['09.30', 105], ['10.30', 135], ['11.30', 165],
+        ['01.20', 80], ['02.20', 50], ['03.20', 20], ['04.20', 10], ['05.20', 40],
+        ['07.20', 100], ['08.20', 130], ['09.20', 160], ['10.20', 170], ['11.20', 140]
+      ][i - 1];
+      const jamStr = times[0];
+      const deg = times[1];
+      svg = renderJamSudut(jamStr);
+      qTxt = `Perhatikan posisi jarum jam analog di atas! Jarum menunjukkan pukul ${jamStr}. Besar sudut terkecil yang terbentuk antara jarum pendek dan jarum panjang adalah ...`;
+      ans = `${deg}°`; w1 = `${deg + 15}°`; w2 = `${deg - 15}°`; w3 = `${deg + 30}°`;
+      exp = `Pada pukul ${jamStr}, pergeseran jarum pendek dan panjang menghasilkan sudut terkecil ${deg}°.`;
+      diag = 'Perhitungkan pergeseran jarum pendek sebesar 0,5 derajat per menit.';
+    } else {
+      const idx = i - 20;
+      const angle = 15 + idx * 3;
+      const jenis = (idx % 2 === 0) ? 'berpelurus' : 'berpenyiku';
+      const target = (jenis === 'berpelurus') ? (180 - angle) : (90 - angle);
+      qTxt = `Diketahui sudut A memiliki besar ${angle}°. Jika sudut B merupakan sudut yang ${jenis} dengan sudut A, maka besar sudut B adalah ...`;
+      ans = `${target}°`; w1 = `${target + 10}°`; w2 = `${target - 10}°`; w3 = `${180 - angle + 20}°`;
+      exp = `Sudut ${jenis} memiliki jumlah total ${jenis === 'berpelurus' ? '180°' : '90°'}. Maka sudut B = ${jenis === 'berpelurus' ? '180°' : '90°'} - ${angle}° = ${target}°.`;
+      diag = `Dua sudut ${jenis} berjumlah total ${jenis === 'berpelurus' ? '180' : '90'} derajat.`;
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -488,45 +613,50 @@ function buildMathQuestions() {
     });
   }
 
-  // Sulit (20) - Sudut Pelurus, Penyiku & Jarum Jam Kompleks
+  // Sulit (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 61;
-    const rasioA = 2 + (i % 3);
-    const rasioB = 3 + (i % 2);
-    const totalRasio = rasioA + rasioB;
-    const sudutA = (rasioA / totalRasio) * 90;
-    const sudutB = (rasioB / totalRasio) * 90;
-
-    const qTxt = `Dua buah sudut saling berpenyiku (jumlahnya 90°). Jika perbandingan besar kedua sudut tersebut adalah ${rasioA} : ${rasioB}, maka besar sudut yang lebih besar adalah ...`;
-    const ans = `${Math.max(sudutA, sudutB)}°`;
-    const w1 = `${Math.min(sudutA, sudutB)}°`;
-    const w2 = `${Math.max(sudutA, sudutB) + 10}°`;
-    const w3 = `${90 - Math.max(sudutA, sudutB) + 15}°`;
-    const exp = `Dua sudut berpenyiku berjumlah 90°.\nJumlah bagian perbandingan = ${rasioA} + ${rasioB} = ${totalRasio}.\nSudut terbesar = (${Math.max(rasioA, rasioB)} / ${totalRasio}) × 90° = ${Math.max(sudutA, sudutB)}°.`;
-    const diag = 'Dua sudut saling berpenyiku memiliki jumlah 90 derajat. Bagi 90 derajat dengan total perbandingan.';
+    const seed = i * 67;
+    const ratioPairs = [
+      [1, 2, 90], [1, 4, 90], [2, 3, 90], [3, 7, 90], [4, 5, 90],
+      [1, 5, 90], [2, 7, 90], [5, 13, 90], [7, 8, 90], [1, 8, 90],
+      [1, 2, 180], [1, 3, 180], [1, 4, 180], [1, 5, 180], [2, 3, 180],
+      [3, 7, 180], [4, 5, 180], [5, 7, 180], [7, 11, 180], [2, 7, 180]
+    ];
+    const [r1, r2, totalDeg] = ratioPairs[i - 1];
+    const totalRatio = r1 + r2;
+    const jenis = (totalDeg === 180) ? 'berpelurus' : 'berpenyiku';
+    const unitDeg = totalDeg / totalRatio;
+    const angle1 = Math.round(r1 * unitDeg);
+    const angle2 = totalDeg - angle1;
+    qTxt = `Dua buah sudut yang saling ${jenis} memiliki perbandingan rasio ${r1} : ${r2}. Besar sudut yang lebih besar adalah ...`;
+    const ansVal = Math.max(angle1, angle2);
+    ans = `${ansVal}°`; w1 = `${Math.min(angle1, angle2)}°`; w2 = `${ansVal + 12}°`; w3 = `${ansVal - 10}°`;
+    exp = `Total rasio = ${r1} + ${r2} = ${totalRatio}.
+Nilai satu bagian = ${totalDeg}° : ${totalRatio} = ${unitDeg}°.
+Sudut terbesar = ${Math.max(r1, r2)} × ${unitDeg}° = ${ansVal}°.`;
+    diag = 'Bagi total derajat dengan jumlah rasio, lalu kalikan dengan rasio sudut terbesar.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
-      MAPEL: 'MATEMATIKA', KELAS: 6, TOPIK: T4, BABAK: 'PENYISIHAN', LEVEL: 'SULIT', TIPE: 'PG',
+      MAPEL: 'MATEMATIKA', KELAS: 5, TOPIK: T4, BABAK: 'PENYISIHAN', LEVEL: 'SULIT', TIPE: 'PG',
       PERTANYAAN: qTxt, OPSI_A: op.A, OPSI_B: op.B, OPSI_C: op.C, OPSI_D: op.D, KUNCI: op.kunci,
       PEMBAHASAN: exp, DIAGNOSA: diag, STATUS: 'AKTIF', STIMULUS_GAMBAR: null
     });
   }
 
-  // HOTS (20) - Analisis Navigasi Arah & Putaran Sudut
+  // HOTS (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 67;
-    const putaran = 1.5 + (i % 3) * 0.5; // 1.5, 2.0, 2.5 putaran
-    const totalDerajat = putaran * 360;
-    const waktuMenit = putaran * 60;
+    const seed = i * 71;
+    const menit = 15 + i * 5; // 20, 25, 30 ...
+    const totalDerajat = menit * 6;
+    const putaran = (menit / 60).toFixed(2).replace('.', ',');
+    const clocks = ['jam dinding ruang tamu', 'jam lonceng sekolah', 'arloji mekanik', 'jam meja belajar', 'jam menara kota', 'jam pendulum antik', 'jam stasiun kereta', 'jam dinding perpustakaan', 'jam dinding masjid', 'arloji saku kakek', 'jam dinding kantor pos', 'jam dinding balai desa', 'jam dinding ruang guru', 'jam dinding gedung olahraga', 'jam dinding asrama', 'jam dinding sanggar tari', 'jam dinding ruang rapat', 'jam dinding laboratorium', 'jam dinding museum', 'jam dinding studio musik'];
 
-    const qTxt = `Jarum panjang sebuah jam dinding berputar membentuk lintasan sudut total sebesar ${totalDerajat}°. Durasi waktu yang telah dilalui jarum jam tersebut setara dengan ...`;
-    const ans = `${waktuMenit} menit (${putaran} jam)`;
-    const w1 = `${waktuMenit - 30} menit`;
-    const w2 = `${waktuMenit + 45} menit`;
-    const w3 = `${totalDerajat / 10} menit`;
-    const exp = `1 putaran penuh jarum menit = 360° = 60 menit (1 jam).\nBanyak putaran = ${totalDerajat}° : 360° = ${putaran} putaran.\nDurasi waktu = ${putaran} × 60 menit = ${waktuMenit} menit.`;
-    const diag = 'Ingat bahwa jarum menit memerlukan waktu 60 menit untuk berputar sejauh 360 derajat.';
+    const qTxt = `Jarum menit pada sebuah ${clocks[i - 1]} berputar selama ${menit} menit. Besar sudut lintasan putaran yang telah disapu oleh jarum menit tersebut adalah ...`;
+    ans = `${totalDerajat}°`; w1 = `${totalDerajat - 30}°`; w2 = `${totalDerajat + 30}°`; w3 = `${menit * 30}°`;
+    exp = `Jarum menit berputar 360° dalam 60 menit, sehingga laju putarannya = 360° : 60 = 6° per menit.
+Sudut lintasan selama ${menit} menit = ${menit} × 6° = ${totalDerajat}°.`;
+    diag = 'Kalikan durasi perputaran dalam menit dengan 6 derajat.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -536,32 +666,32 @@ function buildMathQuestions() {
     });
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 5: Bangun Ruang Kubus & Balok
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   const T5 = 'Bangun Ruang Kubus & Balok';
 
   // Mudah (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 71;
+    const seed = i * 73;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
     if (i <= 10) {
-      const s = 5 + i;
+      const s = 3 + i;
+      const vol = s * s * s;
       svg = renderKubus(s);
-      qTxt = `Perhatikan gambar kubus di atas! Panjang rusuk kubus adalah ${s} cm. Luas seluruh permukaan kubus tersebut adalah ...`;
-      const lp = 6 * s * s;
-      ans = `${lp} cm²`; w1 = `${s * s * s} cm²`; w2 = `${4 * s * s} cm²`; w3 = `${lp - 24} cm²`;
-      exp = `Luas permukaan kubus = 6 × s² = 6 × ${s} × ${s} = ${lp} cm².`;
-      diag = 'Kubus tersusun dari 6 bidang sisi persegi yang kongruen: 6 × s².';
+      qTxt = `Perhatikan gambar kubus di atas! Panjang rusuk kubus adalah ${s} cm. Volume bangun kubus tersebut adalah ...`;
+      ans = `${vol} cm³`; w1 = `${6 * s * s} cm³`; w2 = `${vol + 15} cm³`; w3 = `${vol - 10} cm³`;
+      exp = `Volume kubus = rusuk × rusuk × rusuk = ${s}³ = ${vol} cm³.`;
+      diag = 'Volume kubus adalah pangkat tiga dari panjang rusuknya.';
     } else {
-      const p = 8 + (i % 6), l = 5 + (i % 4), t = 4 + (i % 3);
+      const p = 6 + i, l = 4 + (i % 3), t = 3 + (i % 2);
+      const vol = p * l * t;
       svg = renderBalok(p, l, t);
       qTxt = `Perhatikan gambar balok di atas! Diketahui panjang ${p} cm, lebar ${l} cm, dan tinggi ${t} cm. Volume balok tersebut adalah ...`;
-      const vol = p * l * t;
-      ans = `${vol} cm³`; w1 = `${2 * (p * l + p * t + l * t)} cm³`; w2 = `${vol + 30} cm³`; w3 = `${vol - 25} cm³`;
-      exp = `Volume balok = p × l × t = ${p} × ${l} × ${t} = ${vol} cm³.`;
-      diag = 'Volume balok dihitung dari panjang dikali lebar dikali tinggi.';
+      ans = `${vol} cm³`; w1 = `${2 * (p * l + p * t + l * t)} cm³`; w2 = `${vol + 20} cm³`; w3 = `${vol - 16} cm³`;
+      exp = `Volume balok = panjang × lebar × tinggi = ${p} × ${l} × ${t} = ${vol} cm³.`;
+      diag = 'Volume balok adalah hasil kali panjang, lebar, dan tinggi.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -574,25 +704,37 @@ function buildMathQuestions() {
 
   // Sedang (40)
   for (let i = 1; i <= 40; i++) {
-    const seed = i * 73;
+    const seed = i * 79;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    if (i <= 20) {
-      const s = 6 + (i % 8);
-      svg = renderKubus(s);
-      qTxt = `Perhatikan gambar kubus di atas! Panjang rusuk kubus adalah ${s} cm. Volume kubus tersebut adalah ...`;
-      const vol = s * s * s;
-      ans = `${vol} cm³`; w1 = `${6 * s * s} cm³`; w2 = `${vol + 50} cm³`; w3 = `${vol - 40} cm³`;
-      exp = `Volume kubus = s³ = ${s} × ${s} × ${s} = ${vol} cm³.`;
-      diag = 'Rumus volume kubus adalah rusuk dipangkatkan tiga.';
-    } else {
-      const p = 10 + (i % 6), l = 6 + (i % 4), t = 5 + (i % 3);
-      svg = renderBalok(p, l, t);
+    if (i <= 15) {
+      const s = 5 + i;
+      const lp = 6 * s * s;
+      const objects = ['kotak kado ulang tahun', 'celengan kayu jati', 'dadu permainan raksasa', 'kotak aksesoris perhiasan', 'wadah tisu kubus', 'kotak mainan balok', 'sarang burung kayu kubus', 'kotak brankas mini', 'wadah kapur tulis', 'kotak bekal makan', 'kotak amplop surat', 'wadah keramik hias', 'kotak kancing penjahit', 'kotak obat P3K kubus', 'kotak souvenir pernikahan'];
+      qTxt = `Sebuah ${objects[i - 1]} berbentuk kubus memiliki panjang rusuk ${s} cm. Luas seluruh permukaan benda tersebut adalah ...`;
+      ans = `${lp} cm²`; w1 = `${s * s * s} cm²`; w2 = `${4 * s * s} cm²`; w3 = `${lp + 24} cm²`;
+      exp = `Luas permukaan kubus = 6 × sisi² = 6 × ${s}² = 6 × ${s * s} = ${lp} cm².`;
+      diag = 'Kubus memiliki 6 sisi persegi yang kongruen sehingga luas permukaannya 6 × s².';
+    } else if (i <= 30) {
+      const idx = i - 15;
+      const p = 8 + idx, l = 5 + (idx % 3), t = 4 + (idx % 2);
       const lp = 2 * (p * l + p * t + l * t);
-      qTxt = `Perhatikan gambar balok di atas! Diketahui panjang ${p} cm, lebar ${l} cm, dan tinggi ${t} cm. Luas permukaan balok tersebut adalah ...`;
-      ans = `${lp} cm²`; w1 = `${p * l * t} cm²`; w2 = `${lp + 28} cm²`; w3 = `${lp - 32} cm²`;
+      const objects = ['kotak sepatu kulit', 'kotak kardus mie instan', 'kotak perkakas tukang', 'peti kayu buah apel', 'kotak baterai aki', 'lemari pakaian mini', 'wadah bekal makan siang', 'kotak speaker musik', 'kotak kertas arsip', 'kotak cetakan bata', 'kotak perkakas kunci', 'kotak mainan lego', 'kotak kosmetik rias', 'kotak pemanggang kue', 'wadah filter akuarium'];
+      qTxt = `Sebuah ${objects[idx - 1]} berbentuk balok berukuran panjang ${p} cm, lebar ${l} cm, dan tinggi ${t} cm. Luas permukaan benda tersebut adalah ...`;
+      ans = `${lp} cm²`; w1 = `${p * l * t} cm²`; w2 = `${lp + 28} cm²`; w3 = `${lp - 20} cm²`;
       exp = `Luas permukaan balok = 2 × (pl + pt + lt) = 2 × (${p * l} + ${p * t} + ${l * t}) = ${lp} cm².`;
-      diag = 'Jumlahkan luas ketiga pasang sisi balok lalu kalikan dua.';
+      diag = 'Gunakan rumus luas permukaan balok 2(pl + pt + lt).';
+    } else {
+      const idx = i - 30;
+      const s = 40 + idx * 5; // cm
+      const volTotalLiter = (s * s * s) / 1000;
+      const sisaLiter = volTotalLiter / 2;
+      const houses = ['Keluarga Pak Anto', 'Asrama santri Al-Hidayah', 'Keluarga Bu Dewi', 'Pondok pesantren Bina Insan', 'Keluarga Pak Danu', 'Rumah dinas guru', 'Keluarga Bu Rina', 'Asrama atlet remaja', 'Keluarga Pak Haris', 'Pondok yatim piatu'];
+      qTxt = `Bak mandi di rumah ${houses[idx - 1]} berbentuk kubus dengan rusuk bagian dalam ${s} cm terisi air separuh (1/2 bagian). Volume air yang dibutuhkan agar bak mandi tersebut terisi penuh adalah ...`;
+      ans = `${sisaLiter} liter`; w1 = `${volTotalLiter} liter`; w2 = `${sisaLiter + 15} liter`; w3 = `${Math.round(sisaLiter * 1.5)} liter`;
+      exp = `Volume total bak = ${s}³ = ${s * s * s} cm³ = ${volTotalLiter} liter.
+Air yang dibutuhkan untuk mengisi penuh (1/2 bagian) = 1/2 × ${volTotalLiter} = ${sisaLiter} liter.`;
+      diag = 'Hitung volume kubus dalam cm³, konversi ke liter (dibagi 1.000), lalu kalikan dengan sisa bagian.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -603,45 +745,48 @@ function buildMathQuestions() {
     });
   }
 
-  // Sulit (20) - Bak Mandi & Kawat Kerangka Balok
+  // Sulit (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 79;
-    const sBak = 80 + (i % 5) * 10; // 80 - 120 cm
-    const volTotalLiter = (sBak * sBak * sBak) / 1000;
-    const terisiPecahan = 0.5;
-    const sisaLiter = volTotalLiter * (1 - terisiPecahan);
+    const seed = i * 83;
+    const pKardus = 40 + (i % 5) * 10;
+    const lKardus = 30;
+    const tKardus = 20;
+    const volKardus = pKardus * lKardus * tKardus;
+    const pKotak = 10, lKotak = 5, tKotak = 4;
+    const volKotak = pKotak * lKotak * tKotak;
+    const kapasitas = volKardus / volKotak;
+    const products = ['sabun mandi herbal', 'biskuit cokelat renyah', 'pasta gigi keluarga', 'roti lapis keju', 'susu kotak mini', 'kotak baterai senter', 'teh celup wangi', 'permen jahe manis', 'obat tetes mata', 'korengan korek api', 'minyak angin aroma', 'kue kering salju', 'bubuk kopi saset', 'puding rasa melon', 'selai stroberi jar', 'krim pelembap kulit', 'sabun cuci piring', 'margarin serbaguna', 'sarden kaleng mini', 'keju batangan gurih'];
 
-    const qTxt = `Sebuah bak penampungan air berbentuk kubus memiliki panjang rusuk bagian dalam ${sBak} cm. Jika saat ini bak tersebut telah terisi air sebanyak setengah (½) bagian, volume air yang masih harus ditambahkan agar bak terisi penuh adalah ...`;
-    const ans = `${sisaLiter} liter`;
-    const w1 = `${volTotalLiter} liter`;
-    const w2 = `${sisaLiter + 50} liter`;
-    const w3 = `${sisaLiter - 40} liter`;
-    const exp = `Volume penuh = ${sBak}³ = ${sBak * sBak * sBak} cm³ = ${volTotalLiter} liter (karena 1 liter = 1.000 cm³).\nSisa yang perlu diisi = ½ × ${volTotalLiter} = ${sisaLiter} liter.`;
-    const diag = 'Hitung volume kubus dalam cm³, konversi ke liter dengan membagi 1.000, lalu kalikan dengan sisa bagian yang belum terisi.';
+    const qTxt = `Sebuah industri rumah tangga mengemas ${products[i - 1]} dalam kotak kecil berukuran 10 cm × 5 cm × 4 cm. Kotak-kotak tersebut dimasukkan ke dalam kardus besar berukuran ${pKardus} cm × ${lKardus} cm × ${tKardus} cm. Jumlah maksimal kotak kecil yang muat ke dalam kardus adalah ...`;
+    ans = `${kapasitas} kotak`; w1 = `${kapasitas - 10} kotak`; w2 = `${kapasitas + 20} kotak`; w3 = `${kapasitas / 2} kotak`;
+    exp = `Volume kardus besar = ${pKardus} × ${lKardus} × ${tKardus} = ${volKardus} cm³.
+Volume kotak kecil = 10 × 5 × 4 = ${volKotak} cm³.
+Banyak kotak yang muat = ${volKardus} : ${volKotak} = ${kapasitas} kotak.`;
+    diag = 'Bagi volume kardus besar dengan volume satu kotak kecil.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
-      MAPEL: 'MATEMATIKA', KELAS: 6, TOPIK: T5, BABAK: 'PENYISIHAN', LEVEL: 'SULIT', TIPE: 'PG',
+      MAPEL: 'MATEMATIKA', KELAS: 5, TOPIK: T5, BABAK: 'PENYISIHAN', LEVEL: 'SULIT', TIPE: 'PG',
       PERTANYAAN: qTxt, OPSI_A: op.A, OPSI_B: op.B, OPSI_C: op.C, OPSI_D: op.D, KUNCI: op.kunci,
       PEMBAHASAN: exp, DIAGNOSA: diag, STATUS: 'AKTIF', STIMULUS_GAMBAR: null
     });
   }
 
-  // HOTS (20) - Optimalisasi Kemasan Kardus & Ruang Muat
+  // HOTS (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 83;
-    const pKardus = 12, lKardus = 8, tKardus = 6;
-    const volKardus = pKardus * lKardus * tKardus;
-    const pDusBesar = pKardus * 4, lDusBesar = lKardus * 3, tDusBesar = tKardus * 2;
-    const jmlKotak = 4 * 3 * 2; // 24 kotak
+    const seed = i * 89;
+    const p = 50 + (i % 4) * 10;
+    const l = 30 + (i % 3) * 5;
+    const t = 40;
+    const volumeBatu = 3000 + i * 500; // cm³
+    const luasAlas = p * l;
+    const kenaikan = (volumeBatu / luasAlas).toFixed(1).replace('.', ',');
+    const aquariums = ['akuarium ikan arwana', 'akuarium koki pelangi', 'wadah lobster air tawar', 'akuarium ikan guppy', 'akuarium ikan cupang hias', 'akuarium kura-kura brazil', 'akuarium ikan koi mini', 'akuarium aquascape tanaman', 'akuarium ikan molly', 'akuarium ikan discus', 'akuarium ikan louhan', 'akuarium ikan neon tetra', 'akuarium udang hias red cherry', 'akuarium ikan mas kancra', 'akuarium ikan manfish', 'akuarium kura-kura leher panjang', 'akuarium ikan platy', 'akuarium ikan komet', 'akuarium ikan sumatra', 'akuarium ikan sapu-sapu hias'];
 
-    const qTxt = `Sebuah pabrik makanan mengemas biskuit dalam kotak kardus kecil berukuran ${pKardus} cm × ${lKardus} cm × ${tKardus} cm. Kotak-kotak biskuit tersebut dimasukkan ke dalam dus karton besar berukuran ${pDusBesar} cm × ${lDusBesar} cm × ${tDusBesar} cm. Jumlah maksimal kotak biskuit yang dapat tersusun rapi hingga memenuhi dus karton besar adalah ...`;
-    const ans = `${jmlKotak} kotak`;
-    const w1 = `${jmlKotak + 6} kotak`;
-    const w2 = `${jmlKotak - 4} kotak`;
-    const w3 = `${jmlKotak * 2} kotak`;
-    const exp = `Banyak kotak pada sisi panjang = ${pDusBesar} : ${pKardus} = 4 baris.\nBanyak kotak pada sisi lebar = ${lDusBesar} : ${lKardus} = 3 baris.\nBanyak kotak pada sisi tinggi = ${tDusBesar} : ${tKardus} = 2 tumpukan.\nTotal kotak biskuit = 4 × 3 × 2 = ${jmlKotak} kotak.`;
-    const diag = 'Bagi dimensi panjang, lebar, dan tinggi dus besar dengan dimensi kardus kecil secara terpisah, lalu kalikan ketiga hasilnya.';
+    const qTxt = `Sebuah ${aquariums[i - 1]} berbentuk balok memiliki panjang ${p} cm dan lebar ${l} cm. Ke dalam akuarium tersebut dimasukkan batu karang hiasan bervolume ${volumeBatu} cm³ hingga tenggelam sempurna. Kenaikan permukaan air di dalam akuarium adalah ...`;
+    ans = `${kenaikan} cm`; w1 = `${(parseFloat(kenaikan.replace(',', '.')) + 1.2).toFixed(1).replace('.', ',')} cm`; w2 = `${(parseFloat(kenaikan.replace(',', '.')) - 0.5).toFixed(1).replace('.', ',')} cm`; w3 = '5,0 cm';
+    exp = `Kenaikan air = Volume batu : Luas alas akuarium = ${volumeBatu} : (${p} × ${l}) = ${volumeBatu} : ${luasAlas} = ${kenaikan} cm.`;
+    diag = 'Bagi volume benda yang dimasukkan dengan luas bidang alas wadah penampung.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -651,33 +796,33 @@ function buildMathQuestions() {
     });
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 6: Bangun Ruang Prisma, Tabung, Kerucut, & Limas
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   const T6 = 'Bangun Ruang Prisma, Tabung, Kerucut, & Limas';
 
   // Mudah (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 89;
+    const seed = i * 97;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
     if (i <= 10) {
-      const r = 7, t = 10 + i;
-      svg = renderTabung(r, t);
+      const r = 7 * i, t = 10 + i;
       const vol = Math.round((22 / 7) * r * r * t);
-      qTxt = `Perhatikan gambar tabung di atas! Jari-jari alas tabung r = ${r} cm dan tinggi ${t} cm. Volume bangun tabung tersebut adalah ... (π = 22/7)`;
-      ans = `${vol} cm³`; w1 = `${Math.round((22 / 7) * r * t)} cm³`; w2 = `${vol + 154} cm³`; w3 = `${vol - 154} cm³`;
-      exp = `Volume tabung = π × r² × t = 22/7 × 7² × ${t} = ${vol} cm³.`;
-      diag = 'Rumus volume tabung adalah luas alas lingkaran dikali tinggi tabung.';
+      svg = renderTabung(r, t);
+      qTxt = `Perhatikan gambar bangun tabung di atas! Jari-jari alas r = ${r} cm dan tinggi tabung t = ${t} cm. Volume tabung tersebut adalah ...`;
+      ans = `${vol} cm³`; w1 = `${Math.round(vol / 3)} cm³`; w2 = `${vol + 150} cm³`; w3 = `${vol - 120} cm³`;
+      exp = `Volume tabung = π × r² × t = (22/7) × ${r}² × ${t} = ${vol} cm³.`;
+      diag = 'Volume tabung adalah luas alas lingkaran dikalikan dengan tingginya.';
     } else {
-      const a = 6 + (i % 4) * 2, tA = 4, tP = 12 + i;
-      svg = renderPrismaSegitiga(a, tA, tP);
-      const lAlas = (a * tA) / 2;
-      const vol = lAlas * tP;
-      qTxt = `Perhatikan gambar prisma tegak segitiga di atas! Luas alas segitiga adalah ${lAlas} cm² dan tinggi prisma ${tP} cm. Volume prisma tersebut adalah ...`;
-      ans = `${vol} cm³`; w1 = `${a * tA * tP} cm³`; w2 = `${vol + 30} cm³`; w3 = `${vol - 20} cm³`;
-      exp = `Volume prisma = Luas alas × tinggi prisma = ${lAlas} × ${tP} = ${vol} cm³.`;
-      diag = 'Volume prisma tegak adalah luas bidang alas dikali tinggi prisma.';
+      const idx = i - 10;
+      const r = 7 * idx, t = 9 + 3 * idx;
+      const vol = Math.round((1 / 3) * (22 / 7) * r * r * t);
+      svg = renderKerucut(r, t);
+      qTxt = `Perhatikan gambar bangun kerucut di atas! Jari-jari alas r = ${r} cm dan tinggi kerucut t = ${t} cm. Volume kerucut tersebut adalah ...`;
+      ans = `${vol} cm³`; w1 = `${vol * 3} cm³`; w2 = `${vol + 80} cm³`; w3 = `${vol - 50} cm³`;
+      exp = `Volume kerucut = 1/3 × π × r² × t = 1/3 × (22/7) × ${r}² × ${t} = ${vol} cm³.`;
+      diag = 'Volume kerucut adalah sepertiga dari volume tabung dengan alas dan tinggi yang sama.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -690,50 +835,60 @@ function buildMathQuestions() {
 
   // Sedang (40)
   for (let i = 1; i <= 40; i++) {
-    const seed = i * 97;
+    const seed = i * 101;
     let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    if (i <= 20) {
-      const r = 7, t = 12 + (i % 6) * 3;
-      svg = renderKerucut(r, t);
-      const vol = Math.round((1 / 3) * (22 / 7) * r * r * t);
-      qTxt = `Perhatikan gambar kerucut di atas! Jari-jari alas r = ${r} cm dan tinggi kerucut t = ${t} cm. Volume kerucut tersebut adalah ... (π = 22/7)`;
-      ans = `${vol} cm³`; w1 = `${vol * 3} cm³`; w2 = `${vol + 44} cm³`; w3 = `${vol - 30} cm³`;
-      exp = `Volume kerucut = ⅓ × π × r² × t = ⅓ × 22/7 × 49 × ${t} = ${vol} cm³.`;
-      diag = 'Volume kerucut adalah sepertiga dari volume tabung dengan jari-jari dan tinggi yang sama.';
+    if (i <= 15) {
+      const s = 4 + 2 * i;
+      const t = 6 + 3 * (i % 3);
+      const vol = Math.round((1 / 3) * s * s * t);
+      svg = renderLimas(s, t);
+      qTxt = `Perhatikan gambar limas segiempat di atas! Sisi alas persegi ${s} cm dan tinggi limas ${t} cm. Volume limas tersebut adalah ...`;
+      ans = `${vol} cm³`; w1 = `${s * s * t} cm³`; w2 = `${vol + 30} cm³`; w3 = `${vol - 20} cm³`;
+      exp = `Volume limas = 1/3 × luas alas × tinggi = 1/3 × (${s} × ${s}) × ${t} = ${vol} cm³.`;
+      diag = 'Gunakan rumus sepertiga luas alas dikalikan tinggi limas.';
+    } else if (i <= 30) {
+      const idx = i - 15;
+      const a = 6 + idx, tSeg = 4 + (idx % 3), tPrisma = 10 + idx;
+      const vol = Math.round(0.5 * a * tSeg * tPrisma);
+      svg = renderPrismaSegitiga(a, tSeg, tPrisma);
+      const objects = ['kemasan cokelat toblerone', 'tenda pramuka regu rajawali', 'atap rumah joglo mini', 'potongan keju segitiga', 'gabus penahan pintu', 'wadah aksesoris mika', 'penahan roda mobil', 'kotak tisu segitiga', 'plakat prisma kaca', 'miniatur tenda kemah', 'maket atap paviliun', 'cetakan lilin aroma', 'pembatas buku akrilik', 'kotak kado piramida', 'tempat pensil prisma'];
+      qTxt = `Sebuah ${objects[idx - 1]} berbentuk prisma segitiga memiliki alas segitiga ${a} cm, tinggi segitiga ${tSeg} cm, dan tinggi prisma ${tPrisma} cm. Volume bangun tersebut adalah ...`;
+      ans = `${vol} cm³`; w1 = `${a * tSeg * tPrisma} cm³`; w2 = `${vol + 40} cm³`; w3 = `${vol - 30} cm³`;
+      exp = `Volume prisma = Luas alas × tinggi prisma = (1/2 × ${a} × ${tSeg}) × ${tPrisma} = ${vol} cm³.`;
+      diag = 'Hitung luas alas segitiga terlebih dahulu, lalu kalikan dengan tinggi prisma.';
     } else {
-      const sAlas = 10 + (i % 6), tLimas = 12 + (i % 4);
-      svg = renderLimas(sAlas, tLimas);
-      const luasAlas = sAlas * sAlas;
-      const vol = Math.round((1 / 3) * luasAlas * tLimas);
-      qTxt = `Perhatikan gambar limas segiempat di atas! Alas berbentuk persegi dengan panjang sisi ${sAlas} cm dan tinggi limas ${tLimas} cm. Volume limas adalah ...`;
-      ans = `${vol} cm³`; w1 = `${luasAlas * tLimas} cm³`; w2 = `${vol + 50} cm³`; w3 = `${vol - 40} cm³`;
-      exp = `Volume limas = ⅓ × Luas alas × tinggi = ⅓ × (${sAlas} × ${sAlas}) × ${tLimas} = ${vol} cm³.`;
-      diag = 'Rumus volume limas adalah sepertiga kali luas alas dikali tinggi limas.';
+      const idx = i - 30;
+      const r = 35; // cm
+      const t = 80 + idx * 10; // cm
+      const volLiter = Math.round(((22 / 7) * r * r * t) / 1000);
+      const fuels = ['minyak tanah', 'minyak goreng curah', 'solar industri', 'oli mesin pabrik', 'bensin pertalite', 'minyak kelapa murni', 'cairan pembersih lantai', 'air mineral cadangan', 'minyak sawit mentah', 'cairan disinfektan'];
+      qTxt = `Sebuah drum penampungan ${fuels[idx - 1]} berbentuk tabung memiliki jari-jari alas 35 cm dan tinggi ${t} cm. Kapasitas maksimum drum tersebut dalam satuan liter adalah ...`;
+      ans = `${volLiter} liter`; w1 = `${volLiter + 50} liter`; w2 = `${volLiter - 40} liter`; w3 = `${volLiter * 2} liter`;
+      exp = `Volume drum = π × r² × t = (22/7) × 35² × ${t} = ${(22 / 7) * r * r * t} cm³ = ${volLiter} liter.`;
+      diag = 'Hitung volume tabung dalam cm³, kemudian bagi 1.000 untuk mengubah ke satuan liter.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
-      MAPEL: 'MATEMATIKA', KELAS: 6, TOPIK: T6, BABAK: 'PENYISIHAN', LEVEL: 'SEDANG', TIPE: 'PG',
+      MAPEL: 'MATEMATIKA', KELAS: 5, TOPIK: T6, BABAK: 'PENYISIHAN', LEVEL: 'SEDANG', TIPE: 'PG',
       PERTANYAAN: qTxt, OPSI_A: op.A, OPSI_B: op.B, OPSI_C: op.C, OPSI_D: op.D, KUNCI: op.kunci,
       PEMBAHASAN: exp, DIAGNOSA: diag, STATUS: 'AKTIF', STIMULUS_GAMBAR: svg
     });
   }
 
-  // Sulit (20) - Drum Minyak & Perbandingan Bangun Sisi Lengkung
+  // Sulit (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 101;
-    const rDrum = 35; // cm
-    const tDrum = 100 + i * 5; // cm
-    const volLiter = Math.round(((22 / 7) * rDrum * rDrum * tDrum) / 1000);
+    const seed = i * 103;
+    const r = 7 * (1 + (i % 3));
+    const t = 10 + i;
+    const ls = Math.round(2 * (22 / 7) * r * t);
+    const containers = ['kaleng biskuit astor', 'pipa paralon saluran air', 'cerobong asap pabrik', 'drum oli pelumas', 'tempat pensil silinder', 'kaleng susu kental manis', 'tabung pemadam api mini', 'tiang pilar teras silinder', 'kaleng sarden keluarga', 'wadah kok bulutangkis', 'kaleng cat tembok', 'tempat shuttlecock', 'wadah keripik kentang', 'silinder tangki gas mini', 'tabung filter air sumur', 'cetakan kue silinder', 'kaleng permen mint', 'tempat payung silinder', 'botol termos stainless', 'wadah poster gulung'];
 
-    const qTxt = `Pak Darmo memiliki drum minyak berbentuk tabung dengan jari-jari alas ${rDrum} cm dan tinggi ${tDrum} cm. Kapasitas daya tampung minyak penuh dari drum tersebut adalah ... (π = 22/7)`;
-    const ans = `${volLiter} liter`;
-    const w1 = `${volLiter + 50} liter`;
-    const w2 = `${volLiter - 40} liter`;
-    const w3 = `${Math.round(volLiter * 1.5)} liter`;
-    const exp = `Volume drum = π × r² × t = 22/7 × 35² × ${tDrum} = ${volLiter * 1000} cm³ = ${volLiter} liter.`;
-    const diag = 'Hitung volume tabung dalam cm³, kemudian bagi 1.000 untuk mengubah satuan ke liter.';
+    const qTxt = `Sebuah ${containers[i - 1]} berbentuk tabung memiliki jari-jari alas ${r} cm dan tinggi ${t} cm. Luas selimut tabung (bagian sisi lengkung) tersebut adalah ...`;
+    ans = `${ls} cm²`; w1 = `${Math.round((22 / 7) * r * r * t)} cm²`; w2 = `${ls + 44} cm²`; w3 = `${ls - 30} cm²`;
+    exp = `Luas selimut tabung = 2 × π × r × t = 2 × (22/7) × ${r} × ${t} = ${ls} cm².`;
+    diag = 'Gunakan rumus luas selimut tabung 2 × π × r × t.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -743,23 +898,22 @@ function buildMathQuestions() {
     });
   }
 
-  // HOTS (20) - Cetakan Nasi Tumpeng & Efisiensi Bahan Kaleng
+  // HOTS (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 103;
-    const rTumpeng = 14;
-    const tTumpeng = 21 + (i % 3) * 3;
-    const volNasi = Math.round((1 / 3) * (22 / 7) * rTumpeng * rTumpeng * tTumpeng);
-    const porsiPerLiter = 4;
-    const literNasi = volNasi / 1000;
-    const estimasiPorsi = Math.round(literNasi * porsiPerLiter);
+    const seed = i * 107;
+    const r = 14 + 7 * (i % 2);
+    const t = 21 + 3 * (i % 3);
+    const volTotal = Math.round((1 / 3) * (22 / 7) * r * r * t);
+    const volPuncak = Math.round(volTotal / 27); // skala 1/3 tinggi -> volume (1/3)³ = 1/27
+    const volBawah = volTotal - volPuncak;
+    const events = ['syukuran kelulusan siswa', 'peringatan hari kemerdekaan RI', 'pembukaan usaha restoran baru', 'ulang tahun sekolah ke-25', 'tasyakuran panen raya desa', 'peresmian gedung serbaguna', 'peringatan hari guru nasional', 'syukuran perumahan asri', 'peresmian jembatan desa', 'tasyakuran juara olimpiade', 'peringatan hari pahlawan', 'buka puasa bersama warga', 'reuni akbar alumni sekolah', 'peringatan hari kartini', 'peresmian sanggar seni desa', 'tasyakuran khitanan massal', 'peresmian kantor balai desa', 'syukuran akreditasi sekolah', 'penutupan festival budaya', 'tasyakuran HUT kemerdekaan'];
 
-    const qTxt = `Ibu memesan cetakan tumpeng berbentuk kerucut dengan jari-jari alas ${rTumpeng} cm dan tinggi ${tTumpeng} cm. Jika 1 liter nasi tumpeng padat rata-rata dapat mencukupi kebutuhan makan ${porsiPerLiter} orang tamu, perkiraan porsi tumpeng penuh yang dihasilkan adalah ... (π = 22/7)`;
-    const ans = `${estimasiPorsi} porsi`;
-    const w1 = `${estimasiPorsi + 6} porsi`;
-    const w2 = `${estimasiPorsi - 4} porsi`;
-    const w3 = `${estimasiPorsi * 2} porsi`;
-    const exp = `Volume tumpeng = ⅓ × 22/7 × 14² × ${tTumpeng} = ${volNasi} cm³ = ${literNasi.toFixed(2)} liter.\nBanyak porsi = ${literNasi.toFixed(2)} × ${porsiPerLiter} = ${estimasiPorsi} porsi.`;
-    const diag = 'Hitung volume kerucut dalam liter (bagi 1.000), lalu kalikan dengan rasio porsi per liter.';
+    const qTxt = `Pada acara ${events[i - 1]}, disajikan nasi tumpeng berbentuk kerucut sempurna berjari-jari ${r} cm dan tinggi ${t} cm. Jika bagian puncak setinggi 1/3 dari puncak dipotong, maka sisa volume tumpeng bagian bawah adalah ...`;
+    ans = `${volBawah} cm³`; w1 = `${volTotal} cm³`; w2 = `${volPuncak} cm³`; w3 = `${volBawah + 120} cm³`;
+    exp = `Volume total kerucut = 1/3 × π × r² × t = ${volTotal} cm³.
+Potongan puncak berskala 1/3 sehingga volumenya = (1/3)³ × V_total = 1/27 × ${volTotal} = ${volPuncak} cm³.
+Sisa volume bawah = ${volTotal} - ${volPuncak} = ${volBawah} cm³.`;
+    diag = 'Gunakan perbandingan volume bangun sebangun yang sebanding dengan pangkat tiga skala tingginya.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -769,24 +923,61 @@ function buildMathQuestions() {
     });
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 7: Penyajian Data Diagram Batang & Diagram Garis
-  // ---------------------------------------------------------------------------
+  // (VARIASI LENGKAP: Tertinggi, Terendah, Selisih, Kenaikan, Total, Rata-rata)
+  // ===========================================================================
   const T7 = 'Penyajian Data Diagram Batang & Diagram Garis';
 
   // Mudah (20)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 107;
-    const v1 = 20 + i, v2 = 35 + i, v3 = 15, v4 = 45;
-    const svg = renderDiagramBatang(['Senin', 'Selasa', 'Rabu', 'Kamis'], [v1, v2, v3, v4], 'Penjualan Buku Cerita', 'eksemplar');
+    const seed = i * 109;
+    let svg = null, qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Perhatikan diagram batang di atas! Hasil penjualan buku cerita paling banyak terjadi pada hari ...`;
-    const ans = 'Kamis (45 eksemplar)';
-    const w1 = `Selasa (${v2} eksemplar)`;
-    const w2 = `Senin (${v1} eksemplar)`;
-    const w3 = 'Rabu (15 eksemplar)';
-    const exp = 'Berdasarkan ketinggian diagram batang, batang tertinggi adalah hari Kamis dengan 45 eksemplar.';
-    const diag = 'Perhatikan batang yang paling menjulang tinggi pada sumbu nilai diagram.';
+    const themes = [
+      { name: 'Toko Buku Pelangi', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'buku' },
+      { name: 'Kebun Binatang Ria', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'pengunjung' },
+      { name: 'Klinik Sehat Bugar', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'pasien' },
+      { name: 'Koperasi Siswa Mandiri', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'pensil' },
+      { name: 'Toko Buah Segar Harum', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'kg buah' },
+      { name: 'Posko Donasi Membaca', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'eksemplar' },
+      { name: 'Kolam Budidaya Lele', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'kg ikan' },
+      { name: 'Bengkel Motor Bersaudara', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'motor' },
+      { name: 'Kedai Susu Sapi Alami', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'liter' },
+      { name: 'Wahana Air Ceria Indah', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'tiket' },
+      { name: 'Peternakan Ayam Makmur', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'butir telur' },
+      { name: 'Sentra Batik Nusantara', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'lembar kain' },
+      { name: 'Sentra Sepatu Cibaduyut', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'pasang' },
+      { name: 'Toko Perlengkapan Olahraga', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'bola' },
+      { name: 'Kantin Sekolah Kejujuran', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'porsi' },
+      { name: 'Perpustakaan Desa Pintar', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'pengunjung' },
+      { name: 'Pangkalan Minyak Bumi', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'tabung gas' },
+      { name: 'Depo Air Minum Sehat', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'galon' },
+      { name: 'Pusat Daur Ulang Plastik', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'kg botol' },
+      { name: 'Pusat Bibit Tanaman Asri', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], unit: 'bibit' }
+    ][i - 1];
+
+    const v1 = 20 + i, v2 = 35 + (i % 3) * 5, v3 = 15, v4 = 45 + (i % 4) * 2;
+    const vals = [v1, v2, v3, v4];
+    svg = renderDiagramBatang(themes.labels, vals, `Data Harian ${themes.name}`, themes.unit);
+
+    if (i % 2 === 1) {
+      qTxt = `Perhatikan diagram batang di atas! Hasil pencatatan harian ${themes.name} paling banyak terjadi pada hari ...`;
+      ans = `Kamis (${v4} ${themes.unit})`;
+      w1 = `Selasa (${v2} ${themes.unit})`;
+      w2 = `Senin (${v1} ${themes.unit})`;
+      w3 = `Rabu (${v3} ${themes.unit})`;
+      exp = `Batang paling tinggi pada diagram batang adalah hari Kamis dengan ${v4} ${themes.unit}.`;
+      diag = 'Amati batang grafik paling menjulang pada sumbu nilai.';
+    } else {
+      qTxt = `Perhatikan diagram batang di atas! Hasil pencatatan harian ${themes.name} paling sedikit terjadi pada hari ...`;
+      ans = `Rabu (${v3} ${themes.unit})`;
+      w1 = `Senin (${v1} ${themes.unit})`;
+      w2 = `Selasa (${v2} ${themes.unit})`;
+      w3 = `Kamis (${v4} ${themes.unit})`;
+      exp = `Batang paling rendah pada diagram batang adalah hari Rabu dengan ${v3} ${themes.unit}.`;
+      diag = 'Amati batang grafik paling pendek pada diagram.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -796,19 +987,68 @@ function buildMathQuestions() {
     });
   }
 
-  // Sedang (40)
-  for (let i = 1; i <= 40; i++) {
-    const seed = i * 109;
-    const v = [36.0, 36.5, 38.0 + (i % 3) * 0.5, 37.0, 36.5];
-    const svg = renderDiagramGaris(['Pagi', 'Siang', 'Sore', 'Malam', 'Subuh'], v, 'Suhu Tubuh Pasien', '°C');
+  // Sedang (40) - 10 Subjek Berbeda × 4 Pertanyaan (Tertinggi, Terendah, Selisih, Kenaikan)
+  const lineSubjects = [
+    { title: 'Suhu Tubuh Pasien Rawat Inap', labels: ['Pagi', 'Siang', 'Sore', 'Malam'], vals: [36.0, 37.0, 38.5, 37.0], unit: '°C' },
+    { title: 'Ketinggian Air Sungai Bengawan', labels: ['06.00', '12.00', '18.00', '24.00'], vals: [2.5, 3.2, 4.8, 3.5], unit: 'meter' },
+    { title: 'Penjualan Motor Dealer Jaya', labels: ['Senin', 'Selasa', 'Rabu', 'Kamis'], vals: [12, 18, 25, 20], unit: 'unit' },
+    { title: 'Tinggi Bibit Jagung Hibrida', labels: ['Minggu 1', 'Minggu 2', 'Minggu 3', 'Minggu 4'], vals: [5, 12, 22, 35], unit: 'cm' },
+    { title: 'Berat Badan Balita di Posyandu', labels: ['Bulan 1', 'Bulan 2', 'Bulan 3', 'Bulan 4'], vals: [3.5, 4.8, 6.2, 7.5], unit: 'kg' },
+    { title: 'Pengunjung Situs Candi Prambanan', labels: ['Kamis', 'Jumat', 'Sabtu', 'Minggu'], vals: [150, 220, 480, 550], unit: 'orang' },
+    { title: 'Pemakaian Daya Listrik Keluarga', labels: ['Minggu I', 'Minggu II', 'Minggu III', 'Minggu IV'], vals: [45, 52, 68, 55], unit: 'kWh' },
+    { title: 'Kecepatan Kereta Cepat Jakarta', labels: ['Stasiun 1', 'Stasiun 2', 'Stasiun 3', 'Stasiun 4'], vals: [120, 250, 350, 280], unit: 'km/jam' },
+    { title: 'Curah Hujan Stasiun Meteorologi', labels: ['Januari', 'Februari', 'Maret', 'April'], vals: [280, 320, 190, 110], unit: 'mm' },
+    { title: 'Produksi Madu Hutan Peternakan', labels: ['Maret', 'April', 'Mei', 'Juni'], vals: [40, 65, 90, 75], unit: 'liter' }
+  ];
 
-    const qTxt = `Perhatikan diagram garis di atas! Suhu tubuh tertinggi pasien tercatat pada waktu ...`;
-    const ans = `Sore (${v[2].toFixed(1).replace('.', ',')}°C)`;
-    const w1 = 'Siang (36,5°C)';
-    const w2 = 'Pagi (36,0°C)';
-    const w3 = 'Malam (37,0°C)';
-    const exp = `Titik koordinat tertinggi pada diagram garis berada pada waktu Sore yaitu ${v[2].toFixed(1).replace('.', ',')}°C.`;
-    const diag = 'Amati titik plot paling puncak pada garis grafik waktu.';
+  for (let i = 1; i <= 40; i++) {
+    const seed = i * 113;
+    const subIdx = Math.floor((i - 1) / 4);
+    const varIdx = (i - 1) % 4;
+    const sObj = lineSubjects[subIdx];
+    const svg = renderDiagramGaris(sObj.labels, sObj.vals, sObj.title, sObj.unit);
+
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
+    const maxVal = Math.max(...sObj.vals);
+    const minVal = Math.min(...sObj.vals);
+    const maxLabel = sObj.labels[sObj.vals.indexOf(maxVal)];
+    const minLabel = sObj.labels[sObj.vals.indexOf(minVal)];
+    const selisih = (maxVal - minVal).toFixed(1).replace('.0', '').replace('.', ',');
+
+    if (varIdx === 0) {
+      qTxt = `Perhatikan diagram garis ${sObj.title} di atas! Nilai tertinggi tercatat pada periode ...`;
+      ans = `${maxLabel} (${maxVal} ${sObj.unit})`;
+      w1 = `${minLabel} (${minVal} ${sObj.unit})`;
+      w2 = `${sObj.labels[1]} (${sObj.vals[1]} ${sObj.unit})`;
+      w3 = `${sObj.labels[0]} (${sObj.vals[0]} ${sObj.unit})`;
+      exp = `Titik grafik tertinggi berada pada periode ${maxLabel} sebesar ${maxVal} ${sObj.unit}.`;
+      diag = 'Amati titik plot paling puncak pada garis grafik.';
+    } else if (varIdx === 1) {
+      qTxt = `Perhatikan diagram garis ${sObj.title} di atas! Nilai terendah tercatat pada periode ...`;
+      ans = `${minLabel} (${minVal} ${sObj.unit})`;
+      w1 = `${maxLabel} (${maxVal} ${sObj.unit})`;
+      w2 = `${sObj.labels[2]} (${sObj.vals[2]} ${sObj.unit})`;
+      w3 = `${sObj.labels[3]} (${sObj.vals[3]} ${sObj.unit})`;
+      exp = `Titik grafik paling dasar berada pada periode ${minLabel} sebesar ${minVal} ${sObj.unit}.`;
+      diag = 'Amati titik plot paling bawah pada garis grafik.';
+    } else if (varIdx === 2) {
+      qTxt = `Perhatikan diagram garis ${sObj.title} di atas! Selisih antara nilai tertinggi dan nilai terendah adalah ...`;
+      ans = `${selisih} ${sObj.unit}`;
+      w1 = `${(parseFloat(selisih.replace(',', '.')) + 1.5).toFixed(1).replace('.0', '').replace('.', ',')} ${sObj.unit}`;
+      w2 = `${(parseFloat(selisih.replace(',', '.')) - 0.8).toFixed(1).replace('.0', '').replace('.', ',')} ${sObj.unit}`;
+      w3 = `${maxVal} ${sObj.unit}`;
+      exp = `Nilai tertinggi = ${maxVal} ${sObj.unit}, terendah = ${minVal} ${sObj.unit}. Selisih = ${maxVal} - ${minVal} = ${selisih} ${sObj.unit}.`;
+      diag = 'Kurangkan nilai tertinggi dengan nilai terendah pada grafik.';
+    } else {
+      const kenaikan = (sObj.vals[2] - sObj.vals[1]).toFixed(1).replace('.0', '').replace('.', ',');
+      qTxt = `Perhatikan diagram garis ${sObj.title} di atas! Perubahan nilai dari ${sObj.labels[1]} ke ${sObj.labels[2]} adalah sebesar ...`;
+      ans = `${kenaikan} ${sObj.unit}`;
+      w1 = `${(parseFloat(kenaikan.replace(',', '.')) + 1.2).toFixed(1).replace('.0', '').replace('.', ',')} ${sObj.unit}`;
+      w2 = `${(parseFloat(kenaikan.replace(',', '.')) - 0.7).toFixed(1).replace('.0', '').replace('.', ',')} ${sObj.unit}`;
+      w3 = `${sObj.vals[2]} ${sObj.unit}`;
+      exp = `Perubahan = ${sObj.vals[2]} - ${sObj.vals[1]} = ${kenaikan} ${sObj.unit}.`;
+      diag = 'Kurangkan nilai pada titik kedua dengan titik pertama.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -818,20 +1058,28 @@ function buildMathQuestions() {
     });
   }
 
-  // Sulit (20) - Menghitung Selisih & Kenaikan Data
+  // Sulit (20) - Diagram Batang Multidata Desa
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 113;
-    const v1 = 30 + i * 2, v2 = 60 + i * 3;
-    const selisih = v2 - v1;
-    const svg = renderDiagramBatang(['Desa A', 'Desa B', 'Desa C', 'Desa D'], [v1, 45, v2, 50], 'Hasil Panen Padi', 'ton');
+    const seed = i * 127;
+    const vA = 30 + i * 2, vB = 45 + (i % 3) * 5, vC = 65 + i * 2, vD = 50;
+    const totPanen = vA + vB + vC + vD;
+    const selisih = vC - vA;
+    const villages = ['Desa Sukamaju', 'Desa Mekarsari', 'Desa Karanganyar', 'Desa Sumbermulyo', 'Desa Wanasari', 'Desa Tanjungrejo', 'Desa Sidodadi', 'Desa Tirtoagung', 'Desa Margasari', 'Desa Banjarwangi', 'Desa Kalirejo', 'Desa Girimulyo', 'Desa Purwosari', 'Desa Kedungjati', 'Desa Baturetno', 'Desa Candirejo', 'Desa Kemuning', 'Desa Ngadiluwih', 'Desa Tlogomas', 'Desa Wonosobo'];
+    const vName = villages[i - 1];
+    const svg = renderDiagramBatang(['Wilayah A', 'Wilayah B', 'Wilayah C', 'Wilayah D'], [vA, vB, vC, vD], `Panen Padi ${vName}`, 'ton');
 
-    const qTxt = `Perhatikan diagram batang di atas! Selisih hasil panen padi antara Desa C (tertinggi) dan Desa A (terendah) adalah ...`;
-    const ans = `${selisih} ton`;
-    const w1 = `${selisih + 10} ton`;
-    const w2 = `${selisih - 8} ton`;
-    const w3 = `${v2} ton`;
-    const exp = `Panen Desa C = ${v2} ton, panen Desa A = ${v1} ton.\nSelisih = ${v2} - ${v1} = ${selisih} ton.`;
-    const diag = 'Kurangkan nilai data pada batang tertinggi dengan nilai data pada batang terendah.';
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
+    if (i % 2 === 1) {
+      qTxt = `Perhatikan diagram batang panen padi ${vName} di atas! Selisih hasil panen padi antara Wilayah C (tertinggi) dan Wilayah A (terendah) adalah ...`;
+      ans = `${selisih} ton`; w1 = `${selisih + 10} ton`; w2 = `${selisih - 5} ton`; w3 = `${vC} ton`;
+      exp = `Panen Wilayah C = ${vC} ton, Wilayah A = ${vA} ton. Selisih = ${vC} - ${vA} = ${selisih} ton.`;
+      diag = 'Kurangkan nilai batang Wilayah C dengan Wilayah A.';
+    } else {
+      qTxt = `Perhatikan diagram batang panen padi ${vName} di atas! Jumlah total seluruh hasil panen padi dari keempat wilayah tersebut adalah ...`;
+      ans = `${totPanen} ton`; w1 = `${totPanen - 25} ton`; w2 = `${totPanen + 30} ton`; w3 = `${totPanen * 2} ton`;
+      exp = `Total = ${vA} + ${vB} + ${vC} + ${vD} = ${totPanen} ton.`;
+      diag = 'Jumlahkan seluruh nilai data dari keempat batang wilayah.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -841,21 +1089,22 @@ function buildMathQuestions() {
     });
   }
 
-  // HOTS (20) - Analisis Tren Data & Rata-rata Gabungan
+  // HOTS (20) - Rata-rata dari Grafik Garis
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 127;
-    const dataMingguan = [40, 50, 45, 60, 55];
-    const total = dataMingguan.reduce((a, b) => a + b, 0);
-    const mean = total / dataMingguan.length;
-    const svg = renderDiagramGaris(['Sen', 'Sel', 'Rab', 'Kam', 'Jum'], dataMingguan, 'Pengunjung Perpustakaan', 'orang');
+    const seed = i * 131;
+    const base = 40 + i * 2;
+    const d = [base, base + 10, base + 5, base + 20, base + 15];
+    const total = d.reduce((a, b) => a + b, 0);
+    const mean = total / 5;
+    const places = ['Perpustakaan Daerah', 'Museum Geologi', 'Planetarium Angkasa', 'Galeri Seni Rupa', 'Pusat Sains Iptek', 'Taman Kupu-kupu', 'Kebun Raya Biologi', 'Pameran Buku Edukasi', 'Balai Konservasi Alam', 'Museum Sejarah Bahari', 'Gedung Bioskop Ceria', 'Taman Wisata Satwa', 'Arena Kolam Renang', 'Pusat Kerajinan Batik', 'Pentas Wayang Kulit', 'Wahana Rumah Kaca', 'Pameran Robotika Sekolah', 'Balai Arkeologi Purba', 'Museum Dirgantara Udara', 'Pameran Flora Anggrek'];
+    const pName = places[i - 1];
+    const svg = renderDiagramGaris(['Sen', 'Sel', 'Rab', 'Kam', 'Jum'], d, `Pengunjung ${pName}`, 'orang');
 
-    const qTxt = `Perhatikan diagram garis di atas! Berdasarkan data kunjungan perpustakaan sekolah selama 5 hari kerja, rata-rata pengunjung harian perpustakaan adalah ...`;
-    const ans = `${mean} orang`;
-    const w1 = `${mean + 5} orang`;
-    const w2 = `${mean - 4} orang`;
-    const w3 = `${total} orang`;
-    const exp = `Total pengunjung = 40 + 50 + 45 + 60 + 55 = ${total} orang.\nRata-rata = ${total} : 5 hari = ${mean} orang/hari.`;
-    const diag = 'Jumlahkan semua nilai data pada grafik lalu bagi dengan banyak hari pengamatan.';
+    const qTxt = `Perhatikan diagram garis di atas! Rata-rata pengunjung harian ${pName} selama 5 hari pengamatan (Senin-Jumat) adalah ...`;
+    const ans = `${mean} orang`; w1 = `${mean + 6} orang`; w2 = `${mean - 4} orang`; w3 = `${total} orang`;
+    exp = `Total pengunjung = ${d.join(' + ')} = ${total} orang.
+Rata-rata = ${total} : 5 = ${mean} orang/hari.`;
+    diag = 'Jumlahkan seluruh data pengunjung lalu bagi dengan banyaknya hari (5).';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -865,25 +1114,40 @@ function buildMathQuestions() {
     });
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 8: Penyajian Data Diagram Lingkaran, Piktogram, & Tabel Turus
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   const T8 = 'Penyajian Data Diagram Lingkaran, Piktogram, & Tabel Turus';
 
-  // Mudah (20)
+  // Mudah (20) - Piktogram dengan 20 Variasi Tema & Skala
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 131;
-    const skala = 10;
-    const j1 = 30, j2 = 40, j3 = 50;
-    const svg = renderPiktogram(['Kelas IV', 'Kelas V', 'Kelas VI'], [j1, j2, j3], 'buku', skala);
+    const seed = i * 137;
+    const skala = [5, 10, 15, 20, 25, 10, 5, 20, 15, 10, 5, 10, 20, 25, 15, 10, 5, 20, 15, 10][i - 1];
+    const itemNames = ['buku ensiklopedia', 'pohon cemara', 'sepeda motor', 'paket sembako', 'karung beras', 'ikan gurami', 'dus biskuit', 'bola sepak', 'bibit cabai', 'buku cerita', 'telur ayam', 'sepatu bot', 'meja lipat', 'helm proyek', 'botol madu', 'kardus mie', 'pohon mangga', 'jaket pramuka', 'kamera digital', 'tas ransel'][i - 1];
+    const j1 = skala * (2 + (i % 3));
+    const j2 = skala * (4 + (i % 2));
+    const j3 = skala * (5 + (i % 3));
+    const svg = renderPiktogram(['Regu A', 'Regu B', 'Regu C'], [j1, j2, j3], itemNames, skala);
 
-    const qTxt = `Perhatikan piktogram di atas! Setiap 1 simbol gambar buku mewakili ${skala} buah buku. Jumlah buku perpustakaan milik Kelas V adalah ...`;
-    const ans = `${j2} buah`;
-    const w1 = `${j2 / skala} buah`;
-    const w2 = `${j2 + 10} buah`;
-    const w3 = `${j1} buah`;
-    const exp = `Pada baris Kelas V terdapat ${j2 / skala} simbol buku. Total buku = ${j2 / skala} × ${skala} = ${j2} buah.`;
-    const diag = 'Kalikan jumlah simbol gambar dengan nilai skala yang tertera pada legenda.';
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
+    if (i % 3 === 1) {
+      qTxt = `Perhatikan piktogram di atas! Setiap 1 gambar simbol mewakili ${skala} buah ${itemNames}. Jumlah ${itemNames} milik Regu B adalah ...`;
+      ans = `${j2} buah`; w1 = `${j2 / skala} buah`; w2 = `${j2 + skala} buah`; w3 = `${j1} buah`;
+      exp = `Regu B memiliki ${j2 / skala} simbol × ${skala} = ${j2} buah.`;
+      diag = 'Kalikan banyak simbol pada baris dengan skala legenda.';
+    } else if (i % 3 === 2) {
+      const selisih = j3 - j1;
+      qTxt = `Perhatikan piktogram di atas! Selisih perolehan ${itemNames} antara Regu C (terbanyak) dan Regu A (tersedikit) adalah ...`;
+      ans = `${selisih} buah`; w1 = `${selisih + skala} buah`; w2 = `${selisih - skala} buah`; w3 = `${j3} buah`;
+      exp = `Selisih = ${j3} - ${j1} = ${selisih} buah.`;
+      diag = 'Kurangkan perolehan Regu C dengan Regu A.';
+    } else {
+      const total = j1 + j2 + j3;
+      qTxt = `Perhatikan piktogram di atas! Jumlah total seluruh ${itemNames} dari ketiga regu tersebut adalah ...`;
+      ans = `${total} buah`; w1 = `${total - 2 * skala} buah`; w2 = `${total + 2 * skala} buah`; w3 = `${total / skala} buah`;
+      exp = `Total = ${j1} + ${j2} + ${j3} = ${total} buah.`;
+      diag = 'Jumlahkan seluruh item dari ketiga regu.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -893,26 +1157,63 @@ function buildMathQuestions() {
     });
   }
 
-  // Sedang (40)
-  for (let i = 1; i <= 40; i++) {
-    const seed = i * 137;
-    const totalSiswa = 40;
-    const pctBola = 40, pctRenang = 25, pctMusik = 20, pctLukis = 15;
-    const jmlBola = (pctBola / 100) * totalSiswa;
-    const svg = renderDiagramLingkaran([
-      { label: 'Sepak Bola', pct: pctBola },
-      { label: 'Renang', pct: pctRenang },
-      { label: 'Musik', pct: pctMusik },
-      { label: 'Melukis', pct: pctLukis }
-    ], 'Ekstrakurikuler Pilihan');
+  // Sedang (40) - 10 Tema Diagram Lingkaran × 4 Pertanyaan Unik
+  const pieThemes = [
+    { name: 'Ekstrakurikuler Siswa', items: [{ label: 'Sepak Bola', pct: 40 }, { label: 'Renang', pct: 25 }, { label: 'Musik', pct: 20 }, { label: 'Melukis', pct: 15 }] },
+    { name: 'Moda Transportasi ke Sekolah', items: [{ label: 'Sepeda', pct: 35 }, { label: 'Jalan Kaki', pct: 30 }, { label: 'Angkot', pct: 20 }, { label: 'Diantar Motor', pct: 15 }] },
+    { name: 'Kegemaran Hobi Waktu Luang', items: [{ label: 'Membaca', pct: 45 }, { label: 'Menggambar', pct: 25 }, { label: 'Menyanyi', pct: 20 }, { label: 'Menari', pct: 10 }] },
+    { name: 'Pilihan Makanan Kantin Sehat', items: [{ label: 'Nasi Soto', pct: 40 }, { label: 'Gado-gado', pct: 30 }, { label: 'Nasi Kuning', pct: 20 }, { label: 'Roti Bakar', pct: 10 }] },
+    { name: 'Buah Kesukaan Siswa Kelas V', items: [{ label: 'Mangga', pct: 35 }, { label: 'Jeruk', pct: 30 }, { label: 'Apel', pct: 25 }, { label: 'Pisang', pct: 10 }] },
+    { name: 'Cita-Cita Profesi Masa Depan', items: [{ label: 'Dokter', pct: 40 }, { label: 'Guru', pct: 25 }, { label: 'Insinyur', pct: 20 }, { label: 'Pilot', pct: 15 }] },
+    { name: 'Pilihan Warna Kaos Olahraga', items: [{ label: 'Biru', pct: 35 }, { label: 'Merah', pct: 30 }, { label: 'Hijau', pct: 20 }, { label: 'Kuning', pct: 15 }] },
+    { name: 'Minuman Sehat Favorit', items: [{ label: 'Susu Kedelai', pct: 40 }, { label: 'Jus Alpukat', pct: 30 }, { label: 'Air Kelapa', pct: 20 }, { label: 'Teh Hijau', pct: 10 }] },
+    { name: 'Buku Bacaan Favorit di Mading', items: [{ label: 'Komik Sains', pct: 45 }, { label: 'Cerita Rakyat', pct: 25 }, { label: 'Ensiklopedia', pct: 20 }, { label: 'Biografi', pct: 10 }] },
+    { name: 'Pilihan Cabang Atletik', items: [{ label: 'Lari Cepat', pct: 40 }, { label: 'Lompat Jauh', pct: 25 }, { label: 'Lempar Lembing', pct: 20 }, { label: 'Tolak Peluru', pct: 15 }] }
+  ];
 
-    const qTxt = `Perhatikan diagram lingkaran di atas! Jika total siswa kelas V berjumlah ${totalSiswa} orang, banyak siswa yang memilih ekstrakurikuler Sepak Bola adalah ...`;
-    const ans = `${jmlBola} siswa`;
-    const w1 = `${jmlBola + 4} siswa`;
-    const w2 = `${jmlBola - 4} siswa`;
-    const w3 = `${pctBola} siswa`;
-    const exp = `Siswa memilih Sepak Bola = ${pctBola}% × ${totalSiswa} = (${pctBola}/100) × ${totalSiswa} = ${jmlBola} siswa.`;
-    const diag = 'Ubah persentase menjadi pecahan per seratus lalu kalikan dengan total seluruh siswa.';
+  for (let i = 1; i <= 40; i++) {
+    const seed = i * 139;
+    const subIdx = Math.floor((i - 1) / 4);
+    const varIdx = (i - 1) % 4;
+    const pObj = pieThemes[subIdx];
+    const totalSiswa = 40 + subIdx * 10;
+    const items = pObj.items;
+    const svg = renderDiagramLingkaran(items, pObj.name);
+
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
+
+    if (varIdx === 0) {
+      const topItem = items[0];
+      const count = Math.round((topItem.pct / 100) * totalSiswa);
+      qTxt = `Perhatikan diagram lingkaran ${pObj.name} di atas! Jika total responden berjumlah ${totalSiswa} orang, banyak siswa yang memilih ${topItem.label} adalah ...`;
+      ans = `${count} orang`; w1 = `${count + 4} orang`; w2 = `${count - 4} orang`; w3 = `${topItem.pct} orang`;
+      exp = `Pemilih ${topItem.label} = ${topItem.pct}% × ${totalSiswa} = ${count} orang.`;
+      diag = 'Kalikan persentase dengan total responden.';
+    } else if (varIdx === 1) {
+      const lowItem = items[items.length - 1];
+      qTxt = `Perhatikan diagram lingkaran ${pObj.name} di atas! Kategori yang paling sedikit peminatnya adalah ...`;
+      ans = `${lowItem.label} (${lowItem.pct}%)`;
+      w1 = `${items[1].label} (${items[1].pct}%)`;
+      w2 = `${items[2].label} (${items[2].pct}%)`;
+      w3 = `${items[0].label} (${items[0].pct}%)`;
+      exp = `Kategori dengan persentase terendah adalah ${lowItem.label} yaitu ${lowItem.pct}%.`;
+      diag = 'Cari sektor juring dengan persentase paling kecil.';
+    } else if (varIdx === 2) {
+      const count1 = Math.round((items[0].pct / 100) * totalSiswa);
+      const countLast = Math.round((items[items.length - 1].pct / 100) * totalSiswa);
+      const selisih = count1 - countLast;
+      qTxt = `Perhatikan diagram lingkaran ${pObj.name} di atas! Selisih banyak siswa pemilih ${items[0].label} dan ${items[items.length - 1].label} adalah ...`;
+      ans = `${selisih} orang`; w1 = `${selisih + 3} orang`; w2 = `${selisih - 2} orang`; w3 = `${count1} orang`;
+      exp = `${items[0].label} = ${count1} orang, ${items[items.length - 1].label} = ${countLast} orang. Selisih = ${count1} - ${countLast} = ${selisih} orang.`;
+      diag = 'Hitung banyak siswa kedua kategori lalu kurangkan keduanya.';
+    } else {
+      const item = items[1];
+      const derajat = Math.round((item.pct / 100) * 360);
+      qTxt = `Perhatikan diagram lingkaran ${pObj.name} di atas! Besar sudut pusat juring untuk kategori ${item.label} (${item.pct}%) dalam lingkaran adalah ...`;
+      ans = `${derajat}°`; w1 = `${derajat + 12}°`; w2 = `${derajat - 15}°`; w3 = `${item.pct * 2}°`;
+      exp = `Besar sudut = (${item.pct}/100) × 360° = ${derajat}°.`;
+      diag = 'Kalikan persentase dengan 360 derajat.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -922,19 +1223,20 @@ function buildMathQuestions() {
     });
   }
 
-  // Sulit (20) - Menghitung Derajat Sektor & Tabel Turus KKM
+  // Sulit (20) - Konversi Derajat & Persentase
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 139;
-    const pct = 25;
-    const derajat = (pct / 100) * 360;
+    const seed = i * 149;
+    const pct = 10 + i * 2; // 12, 14, 16...
+    const derajat = (pct * 3.6).toFixed(1).replace('.0', '').replace('.', ',');
+    const topics = ['gemar membaca komik', 'hobi bermain catur', 'gemar berenang', 'senang berkemah', 'peminat tari daerah', 'gemar bermain musik', 'suka berkebun', 'peminat bulutangkis', 'gemar melukis', 'suka memasak', 'hobi fotografi', 'gemar mendaki gunung', 'peminat sepak bola', 'gemar bermain basket', 'peminat robotika', 'suka memelihara kucing', 'hobi merajut', 'gemar memancing', 'peminat karate', 'senang bersepeda'];
 
-    const qTxt = `Sebuah data kegemaran siswa disajikan dalam diagram lingkaran. Jika bagian siswa yang gemar membaca buku adalah ${pct}%, maka besar sudut pusat juring lingkaran tersebut adalah ...`;
-    const ans = `${derajat}°`;
-    const w1 = `${derajat + 15}°`;
-    const w2 = `${derajat - 15}°`;
-    const w3 = `${pct * 2}°`;
-    const exp = `Sudut 1 putaran penuh diagram lingkaran = 360°.\nBesar sudut juring = (${pct} / 100) × 360° = ${derajat}°.`;
-    const diag = 'Untuk mengubah persentase ke derajat, kalikan nilai persen dengan 360 derajat.';
+    const qTxt = `Dalam sebuah survei kegemaran siswa yang disajikan ke dalam diagram lingkaran derajat, kelompok siswa yang ${topics[i - 1]} berjumlah ${pct}%. Besar sudut juring lingkaran untuk kelompok tersebut adalah ...`;
+    ans = `${derajat}°`;
+    w1 = `${(parseFloat(derajat.replace(',', '.')) + 14.4).toFixed(1).replace('.0', '').replace('.', ',')}°`;
+    w2 = `${(parseFloat(derajat.replace(',', '.')) - 10.8).toFixed(1).replace('.0', '').replace('.', ',')}°`;
+    w3 = `${pct * 2}°`;
+    exp = `Besar sudut juring = (${pct} : 100) × 360° = ${derajat}°.`;
+    diag = 'Kalikan persentase dengan 360 derajat untuk mengubahnya menjadi sudut lingkaran.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -944,22 +1246,21 @@ function buildMathQuestions() {
     });
   }
 
-  // HOTS (20) - Rekonstruksi Data Hilang & Selisih Kelompok
+  // HOTS (20) - Proporsi Diagram Lingkaran
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 149;
-    const diketahuiJumlah = 18; // misal 18 siswa
-    const pctDiketahui = 30; // 30%
-    const totalSemua = Math.round((diketahuiJumlah / pctDiketahui) * 100);
-    const pctTarget = 20; // 20%
-    const targetJumlah = Math.round((pctTarget / 100) * totalSemua);
+    const seed = i * 151;
+    const pctA = 25 + (i % 3) * 5; // 25, 30, 35
+    const pctB = 20;
+    const countA = (pctA * 4) + i * 2;
+    const totalSuara = Math.round((countA / pctA) * 100);
+    const countB = Math.round((pctB / 100) * totalSuara);
+    const orgs = ['OSIS SMP Harapan', 'Regu Pramuka Inti', 'Klub Sains Cilik', 'Palang Merah Remaja', 'Klub Literasi Sekolah', 'Sanggar Tari Daerah', 'Klub Paduan Suara', 'Klub Basket Pelajar', 'Ikatan Remaja Masjid', 'Klub Matematika Kreatif', 'Klub Jurnalistik Sekolah', 'Komunitas Pecinta Alam', 'Klub Catur Mandiri', 'Klub Debat Bahasa', 'Sanggar Teater Pelajar', 'Klub Tari Modern', 'Klub Taekwondo Satria', 'Komunitas Daur Ulang', 'Klub Fotografi Remaja', 'Klub Robotik Nusantara'];
 
-    const qTxt = `Dalam diagram lingkaran pemilihan ketua kelas, calon A memperoleh ${pctDiketahui}% suara yang setara dengan ${diketahuiJumlah} suara sah. Jika calon B memperoleh ${pctTarget}% suara, banyak suara yang diperoleh calon B adalah ...`;
-    const ans = `${targetJumlah} suara`;
-    const w1 = `${targetJumlah + 4} suara`;
-    const w2 = `${targetJumlah - 3} suara`;
-    const w3 = `${totalSemua} suara`;
-    const exp = `Total seluruh suara = ${diketahuiJumlah} : (${pctDiketahui}/100) = ${totalSemua} suara.\nPerolehan suara calon B = (${pctTarget}/100) × ${totalSemua} = ${targetJumlah} suara.`;
-    const diag = 'Cari terlebih dahulu total seluruh suara dari perolehan calon A, lalu hitung perolehan calon B.';
+    const qTxt = `Dalam diagram lingkaran pemilihan ketua ${orgs[i - 1]}, kandidat A memperoleh ${pctA}% suara sah yang setara dengan ${countA} pemilih. Jika kandidat B memperoleh ${pctB}% suara sah, banyak suara yang diperoleh kandidat B adalah ...`;
+    ans = `${countB} pemilih`; w1 = `${countB + 5} pemilih`; w2 = `${countB - 4} pemilih`; w3 = `${totalSuara} pemilih`;
+    exp = `Total seluruh pemilih = ${countA} : (${pctA}/100) = ${totalSuara} pemilih.
+Perolehan kandidat B = ${pctB}% × ${totalSuara} = ${countB} pemilih.`;
+    diag = 'Cari total pemilih terlebih dahulu melalui persentase dan suara kandidat A, lalu hitung perolehan kandidat B.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -969,25 +1270,23 @@ function buildMathQuestions() {
     });
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 9: Statistika Dasar: Mean (Rata-rata), Median, & Modus
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   const T9 = 'Statistika Dasar: Mean (Rata-rata), Median, & Modus';
 
-  // Mudah (20)
+  // Mudah (20) - Modus Data Tunggal
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 151;
-    const baseNilai = 70 + (i % 5) * 5;
-    const data = [baseNilai, baseNilai + 5, baseNilai + 5, baseNilai + 5, baseNilai + 10];
-    const modus = baseNilai + 5;
+    const seed = i * 157;
+    const base = 65 + i;
+    const modus = base + 5;
+    const data = [base, modus, base + 2, modus, modus, base + 8];
+    const subjects = ['matematika', 'IPA', 'bahasa Indonesia', 'IPS', 'PPKn', 'seni budaya', 'bahasa Inggris', 'penjaskes', 'agama', 'TIK', 'matematika', 'IPA', 'bahasa Indonesia', 'IPS', 'PPKn', 'seni budaya', 'bahasa Inggris', 'penjaskes', 'agama', 'TIK'];
 
-    const qTxt = `Diberikan data nilai ulangan matematika 5 orang siswa: ${data.join(', ')}. Modus dari data nilai tersebut adalah ...`;
-    const ans = `${modus}`;
-    const w1 = `${baseNilai}`;
-    const w2 = `${baseNilai + 10}`;
-    const w3 = `${Math.round(data.reduce((a, b) => a + b, 0) / 5)}`;
-    const exp = `Nilai ${modus} muncul sebanyak 3 kali (terbanyak), sehingga modusnya adalah ${modus}.`;
-    const diag = 'Modus adalah nilai data yang memiliki frekuensi kemunculan terbanyak.';
+    const qTxt = `Diberikan data nilai ulangan harian ${subjects[i - 1]} siswa: ${data.join(', ')}. Nilai modus dari data tersebut adalah ...`;
+    ans = `${modus}`; w1 = `${base}`; w2 = `${base + 2}`; w3 = `${base + 8}`;
+    exp = `Nilai ${modus} muncul paling sering yaitu sebanyak 3 kali, sehingga modusnya adalah ${modus}.`;
+    diag = 'Modus adalah nilai data yang memiliki frekuensi kemunculan terbanyak.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -997,20 +1296,37 @@ function buildMathQuestions() {
     });
   }
 
-  // Sedang (40)
+  // Sedang (40) - Median Data Ganjil (20) & Rata-rata Nilai (20)
   for (let i = 1; i <= 40; i++) {
-    const seed = i * 157;
-    const n = [70, 75, 80, 85, 90, 80, 85, 75];
-    const sum = n.reduce((a, b) => a + b, 0);
-    const mean = sum / n.length;
+    const seed = i * 163;
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Berikut data nilai ulangan IPA dari 8 siswa: ${n.join(', ')}. Nilai rata-rata (mean) dari data tersebut adalah ...`;
-    const ans = `${mean}`;
-    const w1 = `${mean + 2}`;
-    const w2 = `${mean - 2}`;
-    const w3 = `80`;
-    const exp = `Total nilai = ${sum}.\nBanyak siswa = 8.\nRata-rata = ${sum} : 8 = ${mean}.`;
-    const diag = 'Jumlahkan seluruh data nilai lalu bagi dengan banyaknya data siswa.';
+    if (i <= 20) {
+      const base = 30 + i;
+      const sorted = [base, base + 2, base + 3, base + 5, base + 7, base + 8, base + 10];
+      const median = sorted[3];
+      const shuffled = [sorted[1], sorted[4], sorted[0], sorted[3], sorted[6], sorted[2], sorted[5]];
+      const metrics = ['berat badan (kg) 7 atlet renang cilik', 'tinggi badan (cm) 7 bibit tanaman cabe', 'waktu lari (detik) 7 pelari estafet', 'usia (tahun) 7 peserta lomba menyanyi', 'skor ujian 7 siswa kelas V', 'berat panen melon (ons) 7 buah', 'tebal buku cerita (halaman) 7 komik', 'jumlah kelereng 7 anak komplek', 'hasil lompatan (cm) 7 atlet loncat', 'nilai praktikum 7 kelompok sains', 'panjang ikan lele (cm) 7 ekor', 'berat badan (kg) 7 siswa perempuan', 'tinggi badan (cm) 7 bibit tomat', 'skor kuis 7 peserta olimpiade', 'waktu renang (detik) 7 perenang gaya dada', 'banyak halaman novel 7 buku', 'jumlah stiker 7 kolektor anak', 'hasil lemparan (meter) 7 pelempar', 'usia (bulan) 7 balita di posyandu', 'nilai remedial 7 siswa'];
+
+      qTxt = `Berikut data ${metrics[i - 1]}: ${shuffled.join(', ')}. Nilai median (nilai tengah) dari data tersebut adalah ...`;
+      ans = `${median}`; w1 = `${median + 2}`; w2 = `${median - 2}`; w3 = `${sorted[0]}`;
+      exp = `Urutkan data dari terkecil: ${sorted.join(', ')}.
+Karena banyak data ganjil (n = 7), median adalah data ke-4 yaitu ${median}.`;
+      diag = 'Urutkan seluruh data terlebih dahulu dari terkecil ke terbesar, lalu ambil nilai di posisi tengah.';
+    } else {
+      const idx = i - 20;
+      const base = 70 + (idx % 5) * 2;
+      const d = [base, base + 5, base + 10, base + 15, base + 20];
+      const total = d.reduce((a, b) => a + b, 0);
+      const mean = total / 5;
+      const groups = ['kelompok mawar', 'kelompok melati', 'kelompok dahlia', 'kelompok anggrek', 'kelompok kenanga', 'kelompok cempaka', 'kelompok teratai', 'kelompok kamboja', 'kelompok tulip', 'kelompok edelweiss', 'kelompok rajawali', 'kelompok garuda', 'kelompok elang', 'kelompok merpati', 'kelompok kancil', 'kelompok singa', 'kelompok harimau', 'kelompok banteng', 'kelompok serigala', 'kelompok gajah'];
+
+      qTxt = `Data nilai tugas matematika 5 siswa pada ${groups[idx - 1]} adalah ${d.join(', ')}. Nilai rata-rata (mean) dari data tersebut adalah ...`;
+      ans = `${mean}`; w1 = `${mean + 2}`; w2 = `${mean - 2}`; w3 = `${total}`;
+      exp = `Total nilai = ${d.join(' + ')} = ${total}.
+Rata-rata = ${total} : 5 = ${mean}.`;
+      diag = 'Jumlahkan semua nilai lalu bagi dengan banyak data (5).';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -1020,21 +1336,25 @@ function buildMathQuestions() {
     });
   }
 
-  // Sulit (20) - Menghitung Nilai Susulan agar Rata-rata Tercapai
+  // Sulit (20) - Nilai Ulangan Susulan
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 163;
-    const targetMean = 85;
-    const dataAwal = [80, 82, 85, 88];
-    const sumAwal = dataAwal.reduce((a, b) => a + b, 0);
+    const seed = i * 167;
+    const names = ['Rani', 'Budi', 'Siti', 'Edo', 'Lani', 'Dayu', 'Udin', 'Beni', 'Maya', 'Farhan', 'Zahra', 'Dimas', 'Tiara', 'Kevin', 'Nadia', 'Rizky', 'Salma', 'Arga', 'Putri', 'Fikri'];
+    const sName = names[i - 1];
+    const targetMean = 80 + (i % 4) * 2; // 80, 82, 84, 86
+    const d1 = targetMean - 4 + (i % 3);
+    const d2 = targetMean - 2;
+    const d3 = targetMean + 1;
+    const d4 = targetMean - 3;
+    const sumAwal = d1 + d2 + d3 + d4;
     const butuhNilai = (targetMean * 5) - sumAwal;
 
-    const qTxt = `Rani telah mengikuti 4 kali tes matematika dengan nilai berturut-turut ${dataAwal.join(', ')}. Agar nilai rata-rata dari 5 kali tes mencapai ${targetMean}, nilai yang harus diperoleh Rani pada tes kelima adalah ...`;
-    const ans = `${butuhNilai}`;
-    const w1 = `${butuhNilai - 5}`;
-    const w2 = `${butuhNilai + 4}`;
-    const w3 = `${targetMean}`;
-    const exp = `Target total 5 tes = 5 × ${targetMean} = ${targetMean * 5}.\nTotal 4 tes yang sudah diikuti = ${sumAwal}.\nNilai tes ke-5 = ${targetMean * 5} - ${sumAwal} = ${butuhNilai}.`;
-    const diag = 'Kalikan target rata-rata dengan banyak seluruh tes (5), lalu kurangkan dengan jumlah nilai yang sudah ada.';
+    const qTxt = `${sName} telah mengikuti 4 kali ulangan matematika dengan perolehan nilai ${d1}, ${d2}, ${d3}, dan ${d4}. Agar nilai rata-rata dari 5 kali ulangan menjadi tepat ${targetMean}, nilai yang harus diperoleh ${sName} pada ulangan kelima adalah ...`;
+    ans = `${butuhNilai}`; w1 = `${butuhNilai - 4}`; w2 = `${butuhNilai + 3}`; w3 = `${targetMean}`;
+    exp = `Target total nilai = 5 × ${targetMean} = ${targetMean * 5}.
+Total 4 ulangan awal = ${sumAwal}.
+Nilai ulangan ke-5 = ${targetMean * 5} - ${sumAwal} = ${butuhNilai}.`;
+    diag = 'Kalikan target rata-rata dengan 5 lalu kurangkan jumlah 4 nilai yang sudah diperoleh.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -1044,19 +1364,19 @@ function buildMathQuestions() {
     });
   }
 
-  // HOTS (20) - Analisis Pergeseran Median & Pengaruh Nilai Ekstrim
+  // HOTS (20) - Median Data Genap & Jangkauan
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 167;
-    const urut = [65, 70, 75, 80, 85, 90, 95];
-    const median = 80;
+    const seed = i * 173;
+    const base = 145 + i;
+    const sorted = [base, base + 2, base + 4, base + 6, base + 8, base + 10];
+    const median = (sorted[2] + sorted[3]) / 2;
+    const medianStr = String(median).replace('.', ',');
+    const athletics = ['atlet loncat tinggi', 'atlet renang estafet', 'siswa tim voli inti', 'peserta paskibra sekolah', 'atlet bulutangkis junior', 'siswa regu senam irama', 'peserta tari kolosal', 'atlet karate cilik', 'siswa regu drum band', 'peserta pramuka garuda', 'atlet sepak takraw', 'atlet lompat jauh', 'peserta panahan junior', 'atlet anggar cilik', 'siswa paduan suara', 'atlet judo usia muda', 'peserta bela diri silat', 'atlet tenis meja', 'peserta baris-berbaris', 'siswa tim futsal'];
 
-    const qTxt = `Data urut tinggi badan (cm) atlet loncat indah adalah 150, 152, 155, 158, 162, 165, 170. Nilai median (nilai tengah) dari tinggi badan para atlet tersebut adalah ...`;
-    const ans = `158 cm`;
-    const w1 = `155 cm`;
-    const w2 = `162 cm`;
-    const w3 = `160 cm`;
-    const exp = `Banyaknya data ganjil n = 7. Letak median berada pada data ke-(7 + 1) : 2 = data ke-4. Data ke-4 adalah 158 cm.`;
-    const diag = 'Karena data sudah urut dan berjumlah ganjil (7), median berada tepat pada data urutan ke-4.';
+    const qTxt = `Data urut tinggi badan (cm) 6 ${athletics[i - 1]} adalah ${sorted.join(', ')}. Nilai median dari tinggi badan tersebut adalah ...`;
+    ans = `${medianStr} cm`; w1 = `${sorted[2]} cm`; w2 = `${sorted[3]} cm`; w3 = `${median + 3} cm`;
+    exp = `Karena jumlah data genap (n = 6), median adalah rata-rata data ke-3 dan ke-4: (${sorted[2]} + ${sorted[3]}) : 2 = ${medianStr} cm.`;
+    diag = 'Jumlahkan dua data posisi tengah lalu bagi dua.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -1066,25 +1386,38 @@ function buildMathQuestions() {
     });
   }
 
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   // TOPIK 10: Aritmetika Sosial, Pecahan, Skala, KPK/FPB, Debit
-  // ---------------------------------------------------------------------------
+  // ===========================================================================
   const T10 = 'Aritmetika Sosial, Pecahan, Skala, KPK/FPB, Debit';
 
-  // Mudah (20)
+  // Mudah (20) - FPB (10) & KPK (10)
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 173;
-    const a = 12 + (i % 5) * 2, b = 18 + (i % 4) * 2;
-    function gcd(x, y) { return y === 0 ? x : gcd(y, x % y); }
-    const fpb = gcd(a, b);
+    const seed = i * 179;
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Faktor persekutuan terbesar (FPB) dari bilangan ${a} dan ${b} adalah ...`;
-    const ans = `${fpb}`;
-    const w1 = `${fpb * 2}`;
-    const w2 = `${Math.max(1, fpb - 1)}`;
-    const w3 = `${fpb + 3}`;
-    const exp = `Faktorisasi prima dari ${a} dan ${b}. FPB adalah faktor persekutuan dengan pangkat terkecil = ${fpb}.`;
-    const diag = 'FPB diperoleh dari perkalian faktor prima sekutu dengan pangkat terendah.';
+    if (i <= 10) {
+      const pairs = [
+        [12, 18, 6], [14, 21, 7], [16, 24, 8], [20, 30, 10], [15, 25, 5],
+        [18, 27, 9], [24, 36, 12], [28, 42, 14], [30, 45, 15], [32, 48, 16]
+      ][i - 1];
+      const a = pairs[0], b = pairs[1], fpb = pairs[2];
+      qTxt = `Faktor persekutuan terbesar (FPB) dari pasangan bilangan ${a} dan ${b} adalah ...`;
+      ans = `${fpb}`; w1 = `${fpb * 2}`; w2 = `${fpb - 1}`; w3 = `${a * b}`;
+      exp = `Faktorisasi prima dari ${a} dan ${b} menghasilkan FPB = ${fpb}.`;
+      diag = 'FPB diperoleh dari perkalian faktor prima sekutu berpangkat terkecil.';
+    } else {
+      const idx = i - 10;
+      const pairs = [
+        [4, 6, 12], [6, 8, 24], [6, 9, 18], [8, 12, 24], [9, 12, 36],
+        [10, 15, 30], [12, 16, 48], [12, 18, 36], [15, 20, 60], [14, 21, 42]
+      ][idx - 1];
+      const a = pairs[0], b = pairs[1], kpk = pairs[2];
+      qTxt = `Kelipatan persekutuan terkecil (KPK) dari pasangan bilangan ${a} dan ${b} adalah ...`;
+      ans = `${kpk}`; w1 = `${kpk / 2}`; w2 = `${kpk + a}`; w3 = `${a * b}`;
+      exp = `Faktorisasi prima dari ${a} dan ${b} menghasilkan KPK = ${kpk}.`;
+      diag = 'KPK diperoleh dari perkalian semua faktor prima berpangkat terbesar.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -1094,19 +1427,62 @@ function buildMathQuestions() {
     });
   }
 
-  // Sedang (40)
+  // Sedang (40) - Skala Peta (15), Debit (15), Pecahan (10)
   for (let i = 1; i <= 40; i++) {
-    const seed = i * 179;
-    const k1 = 4, k2 = 6;
-    const kpk = 12;
+    const seed = i * 181;
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Lampu merah menyala setiap ${k1} detik sekali dan lampu kuning menyala setiap ${k2} detik sekali. Jika kedua lampu menyala bersama-sama pada detik ke-0, kedua lampu akan menyala bersama kembali setiap ...`;
-    const ans = `${kpk} detik`;
-    const w1 = `${kpk * 2} detik`;
-    const w2 = `${k1 + k2} detik`;
-    const w3 = `24 detik`;
-    const exp = `Waktu menyala bersama ditentukan oleh Kelipatan Persekutuan Terkecil (KPK). KPK dari ${k1} dan ${k2} adalah ${kpk} detik.`;
-    const diag = 'Masalah kejadian bersama secara berulang diselesaikan menggunakan konsep KPK.';
+    if (i <= 15) {
+      const cityPairs = [
+        ['Jakarta', 'Bogor', 6, 1000000],
+        ['Bandung', 'Cirebon', 8, 1500000],
+        ['Semarang', 'Solo', 5, 2000000],
+        ['Surabaya', 'Malang', 9, 1000000],
+        ['Yogyakarta', 'Magelang', 7, 600000],
+        ['Medan', 'Binjai', 4, 750000],
+        ['Padang', 'Bukittinggi', 8, 1200000],
+        ['Makassar', 'Maros', 5, 800000],
+        ['Denpasar', 'Singaraja', 6, 1400000],
+        ['Palembang', 'Prabumulih', 7, 1500000],
+        ['Pontianak', 'Mempawah', 6, 1200000],
+        ['Banjarmasin', 'Banjarbaru', 5, 700000],
+        ['Balikpapan', 'Samarinda', 8, 1500000],
+        ['Manado', 'Bitung', 6, 800000],
+        ['Mataram', 'Praya', 5, 600000]
+      ][i - 1];
+      const c1 = cityPairs[0], c2 = cityPairs[1], cm = cityPairs[2], scaleVal = cityPairs[3];
+      const jarakKm = (cm * scaleVal) / 100000;
+      qTxt = `Jarak antara Kota ${c1} dan Kota ${c2} pada peta berskala 1 : ${scaleVal.toLocaleString('id-ID')} adalah ${cm} cm. Jarak sebenarnya kedua kota tersebut adalah ...`;
+      ans = `${jarakKm} km`; w1 = `${jarakKm + 15} km`; w2 = `${jarakKm - 10} km`; w3 = `${jarakKm * 10} km`;
+      exp = `Jarak sebenarnya = Jarak peta × skala = ${cm} × ${scaleVal} cm = ${cm * scaleVal} cm = ${jarakKm} km.`;
+      diag = 'Kalikan jarak pada peta dengan faktor skala peta lalu ubah cm ke km (dibagi 100.000).';
+    } else if (i <= 30) {
+      const idx = i - 15;
+      const vol = 600 + idx * 120; // liter
+      const debit = 20 + (idx % 4) * 5; // liter/menit
+      const waktuMenit = Math.round(vol / debit);
+      const objects = ['tandon air mushola', 'kolam ikan koi', 'bak penampungan air sekolah', 'tangki air kebun', 'kolam pemandian anak', 'bak cuci pakaian asrama', 'tandon air rumah sakit', 'kolam hidroponik melon', 'tangki siram taman', 'bak penampungan air hujan', 'drum cadangan air bersih', 'kolam benih gurami', 'tangki pengabut tanaman', 'bak penampungan air kantin', 'kolam terpal lele'];
+
+      qTxt = `Sebuah ${objects[idx - 1]} bervolume ${vol} liter dalam keadaan kosong diisi air melalui pipa dengan debit ${debit} liter/menit. Waktu yang diperlukan hingga terisi penuh adalah ...`;
+      ans = `${waktuMenit} menit`; w1 = `${waktuMenit + 10} menit`; w2 = `${waktuMenit - 8} menit`; w3 = `${Math.round(waktuMenit / 2)} menit`;
+      exp = `Waktu = Volume : Debit = ${vol} : ${debit} = ${waktuMenit} menit.`;
+      diag = 'Bagi volume total wadah dengan debit aliran air.';
+    } else {
+      const idx = i - 30;
+      const a = 1 + idx, b = 2 + idx;
+      // Operasi pecahan
+      qTxt = `Hasil perhitungan operasi pecahan 2 1/${a} + 1 1/${b} dalam bentuk pecahan paling sederhana adalah ...`;
+      const num = 2 * a * b + b + a * b + a;
+      const den = a * b;
+      const bulat = Math.floor(num / den);
+      const sisaNum = num % den;
+      ans = `${bulat} ${sisaNum}/${den}`;
+      w1 = `${bulat + 1} 1/${den}`;
+      w2 = `${bulat} ${sisaNum + 1}/${den}`;
+      w3 = `${bulat - 1} ${sisaNum}/${den}`;
+      exp = `Ubah ke pecahan biasa lalu samakan penyebutnya: (2 + 1) + (1/${a} + 1/${b}) = 3 + (${a + b}/${den}) = ${bulat} ${sisaNum}/${den}.`;
+      diag = 'Samakan penyebut kedua pecahan sebelum menjumlahkan pembilangnya.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -1116,20 +1492,34 @@ function buildMathQuestions() {
     });
   }
 
-  // Sulit (20) - Debit Aliran Kran & Waktu Pengisian Bak
+  // Sulit (20) - Soal Cerita KPK & FPB Nyata
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 181;
-    const debitLiterMenit = 20 + (i % 5) * 5; // 20, 25, 30, 35, 40 liter/menit
-    const volTandon = debitLiterMenit * (30 + i * 2); // liter
-    const waktuMenit = volTandon / debitLiterMenit;
+    const seed = i * 191;
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Sebuah tandon penampungan air berkapasitas ${volTandon.toLocaleString('id-ID')} liter dalam keadaan kosong diisi air melalui pipa kran dengan debit aliran ${debitLiterMenit} liter/menit. Waktu yang diperlukan hingga tandon tersebut terisi penuh adalah ...`;
-    const ans = `${waktuMenit} menit`;
-    const w1 = `${waktuMenit + 15} menit`;
-    const w2 = `${waktuMenit - 10} menit`;
-    const w3 = `${Math.round(waktuMenit / 60)} menit`;
-    const exp = `Waktu pengisian = Volume : Debit = ${volTandon} liter : ${debitLiterMenit} liter/menit = ${waktuMenit} menit.`;
-    const diag = 'Rumus menghitung waktu aliran adalah Volume dibagi dengan Debit air.';
+    if (i <= 10) {
+      const t1 = 3 + i, t2 = 4 + (i % 3);
+      // find KPK of t1 and t2
+      function gcd(x, y) { return y === 0 ? x : gcd(y, x % y); }
+      const kpkSec = (t1 * t2) / gcd(t1, t2);
+      const colors = ['Lampu merah dan lampu biru', 'Lampu hias kuning dan hijau', 'Lampu mercusuar dan menara', 'Lampu strobo ambulans dan damkar', 'Lampu reklame neon merah dan ungu', 'Lampu taman bundar dan tiang', 'Lampu indikator mesin A dan mesin B', 'Lampu penerangan jalan timur dan barat', 'Lampu panggung biru dan jingga', 'Lampu hazard truk dan mobil'];
+
+      qTxt = `${colors[i - 1]} diatur menyala berkala. Lampu pertama menyala setiap ${t1} detik sekali dan lampu kedua menyala setiap ${t2} detik sekali. Jika keduanya menyala bersama pada detik ke-0, kedua lampu akan menyala bersamaan kembali pada detik ke-...`;
+      ans = `${kpkSec} detik`; w1 = `${kpkSec * 2} detik`; w2 = `${t1 * t2} detik`; w3 = `${kpkSec + t1} detik`;
+      exp = `Cari KPK dari ${t1} dan ${t2} = ${kpkSec} detik.`;
+      diag = 'Gunakan kelipatan persekutuan terkecil (KPK) untuk menentukan waktu berulang bersamaan.';
+    } else {
+      const idx = i - 10;
+      const n1 = 24 + idx * 4, n2 = 36 + idx * 6;
+      function gcd(x, y) { return y === 0 ? x : gcd(y, x % y); }
+      const fpbVal = gcd(n1, n2);
+      const goods = ['buku tulis dan pensil warna', 'kue bolu dan donat cokelat', 'apel malang dan jeruk manis', 'bungkus mie dan kaleng sarden', 'biskuit gandum dan permen susu', 'kotak pensil dan penghapus karet', 'seragam kaos dan topi pramuka', 'sabun mandi dan pasta gigi', 'botol kecap dan saus tomat', 'minyak goreng dan gula pasir'];
+
+      qTxt = `Ibu guru ingin membagikan ${n1} buah dan ${n2} buah ${goods[idx - 1]} kepada sebanyak mungkin murid secara merata tanpa bersisa. Jumlah murid terbanyak yang dapat menerima paket bingkisan tersebut adalah ...`;
+      ans = `${fpbVal} orang`; w1 = `${fpbVal / 2} orang`; w2 = `${fpbVal * 2} orang`; w3 = `${fpbVal + 4} orang`;
+      exp = `Cari FPB dari ${n1} dan ${n2} = ${fpbVal} orang.`;
+      diag = 'Gunakan faktor persekutuan terbesar (FPB) untuk pembagian bingkisan merata terbanyak.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -1139,23 +1529,23 @@ function buildMathQuestions() {
     });
   }
 
-  // HOTS (20) - Skala Peta, Kecepatan & Waktu Tempuh
+  // HOTS (20) - Aritmetika Sosial: Diskon, Untung, Rugi
   for (let i = 1; i <= 20; i++) {
-    const seed = i * 191;
-    const jarakPetaCm = 6 + (i % 4) * 2; // 6, 8, 10, 12 cm
-    const skala = 250000;
-    const jarakAsliKm = (jarakPetaCm * skala) / 100000; // km
-    const kecepatanKmJam = 60;
-    const waktuJam = jarakAsliKm / kecepatanKmJam;
-    const waktuMenit = Math.round(waktuJam * 60);
+    const seed = i * 197;
+    const hargaAwal = 100000 + i * 25000;
+    const diskonPct = 10 + (i % 4) * 5; // 10%, 15%, 20%, 25%
+    const potongan = (diskonPct / 100) * hargaAwal;
+    const hargaBayar = hargaAwal - potongan;
+    const items = ['sepasang sepatu lari', 'jaket parasut musim dingin', 'tas ransel laptop', 'kemeja batik lengan panjang', 'helm keselamatan bersepeda', 'celana jeans denim', 'jam tangan petualang', 'raket bulutangkis karbon', 'kompor gas portabel', 'kamera saku digital', 'koper pakaian roda empat', 'headphone peredam bising', 'speaker nirkabel bluetooth', 'tenda kemah kapasitas 4', 'sleeping bag hangat', 'sepatu sepak bola rumput', 'gitar akustik pemula', 'papan luncur skateboard', 'jaket kulit berkendara', 'alat pemanggang listrik'];
 
-    const qTxt = `Jarak antara Kota Melati dan Kota Cempaka pada peta berskala 1 : ${skala.toLocaleString('id-ID')} adalah ${jarakPetaCm} cm. Sebuah mobil melaju dari Kota Melati ke Kota Cempaka dengan kecepatan rata-rata ${kecepatanKmJam} km/jam tanpa berhenti. Lama waktu perjalanan mobil tersebut adalah ...`;
-    const ans = `${waktuMenit} menit`;
-    const w1 = `${waktuMenit + 20} menit`;
-    const w2 = `${waktuMenit - 15} menit`;
-    const w3 = `${Math.round(jarakAsliKm)} menit`;
-    const exp = `Jarak sebenarnya = ${jarakPetaCm} cm × ${skala} = ${jarakPetaCm * skala} cm = ${jarakAsliKm} km.\nWaktu tempuh = Jarak : Kecepatan = ${jarakAsliKm} km : ${kecepatanKmJam} km/jam = ${waktuJam} jam = ${waktuMenit} menit.`;
-    const diag = 'Ubah jarak peta ke kilometer dengan mengalikan skala (bagi 100.000), lalu bagi dengan kecepatan untuk mendapatkan waktu perjalanan.';
+    const qTxt = `Sebuah toko perlengkapan memberikan potongan harga (diskon) sebesar ${diskonPct}% untuk pembelian ${items[i - 1]} yang memiliki label harga Rp ${hargaAwal.toLocaleString('id-ID')}. Uang yang harus dibayarkan pembeli di kasir adalah ...`;
+    ans = `Rp ${hargaBayar.toLocaleString('id-ID')}`;
+    w1 = `Rp ${(hargaBayar + 15000).toLocaleString('id-ID')}`;
+    w2 = `Rp ${potongan.toLocaleString('id-ID')}`;
+    w3 = `Rp ${(hargaAwal - 10000).toLocaleString('id-ID')}`;
+    exp = `Potongan harga = ${diskonPct}% × Rp ${hargaAwal.toLocaleString('id-ID')} = Rp ${potongan.toLocaleString('id-ID')}.
+Uang yang harus dibayar = Rp ${hargaAwal.toLocaleString('id-ID')} - Rp ${potongan.toLocaleString('id-ID')} = Rp ${hargaBayar.toLocaleString('id-ID')}.`;
+    diag = 'Hitung nominal diskon dari persentase dikalikan harga awal, lalu kurangkan harga awal dengan nilai diskon.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
