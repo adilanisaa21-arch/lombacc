@@ -519,12 +519,12 @@ const sulit = [
     "Saat didinginkan, aluminium menyusut lebih banyak daripada besi sehingga sisi aluminium menjadi lebih pendek dan melengkung ke dalamnya."
   ],
   [
-    "Sebuah dongkrak hidrolik mobil bekerja berdasarkan Hukum Pascal. Luas penampang piston kecil adalah 10 cm² dan luas piston besar adalah 200 cm². Jika gaya tekan pada piston kecil adalah 150 Newton, maka gaya angkat yang dihasilkan pada piston besar adalah ...",
-    "3.000 Newton",
-    "1.500 Newton",
-    "750 Newton",
-    "300 Newton",
-    "Hukum Pascal: F1 / A1 = F2 / A2 -> 150 / 10 = F2 / 200 -> F2 = 15 * 200 = 3.000 Newton."
+    "Alat cuci mobil modern dapat mengangkat mobil yang sangat berat ke atas hanya dengan menggunakan pompa minyak hidrolik bertekanan. Prinsip sains yang dimanfaatkan oleh alat pengangkat mobil hidrolik tersebut adalah ...",
+    "Hukum Pascal: tekanan yang diberikan pada zat cair dalam ruang tertutup akan diteruskan ke segala arah sama besar",
+    "Gaya gesek antara ban mobil dengan lantai tempat pencucian mobil",
+    "Gaya magnet raksasa yang dipasang di bawah lantai tempat cuci mobil",
+    "Tekanan udara terbuka yang menekan bodi mobil dari arah atas",
+    "Pompa hidrolik memanfaatkan sifat zat cair di mana tekanan pada ruang tertutup diteruskan sama besar ke segala arah, sehingga gaya dorong kecil mampu menghasilkan gaya angkat raksasa."
   ],
   [
     "Ketika seorang tukang kayu ingin mencabut paku yang tertancap kuat pada balok kayu menggunakan linggis atau martil pencabut paku, alat tersebut bekerja memanfaatkan prinsip pesawat sederhana jenis ...",
@@ -729,20 +729,20 @@ const hots = [
     "Strategi ini meminimalkan lengan beban (Lb) dan memaksimalkan lengan kuasa (Lk) melipatgandakan keuntungan mekanis tuas secara optimal."
   ],
   [
-    "Dua bejana berhubungan berbentuk U diisi dengan air tawar (massa jenis 1.000 kg/m³). Pada kaki bejana sebelah kiri dituangkan minyak zaitun setinggi 10 cm sehingga permukaan minyak dan air membentuk selisih ketinggian. Jika massa jenis minyak zaitun adalah 800 kg/m³, maka selisih tinggi permukaan air pada kaki bejana sebelah kanan di atas batas pisah adalah ...",
-    "8 sentimeter",
-    "10 sentimeter",
-    "12 sentimeter",
-    "5 sentimeter",
-    "Tekanan hidrostatis sama di batas pisah: ρ_minyak * h_minyak = ρ_air * h_air -> 800 * 10 = 1.000 * h_air -> 8.000 = 1.000 * h_air -> h_air = 8 cm."
+    "Ketika minyak goreng dituangkan ke dalam sebuah wadah berisi air, minyak selalu berada di lapisan paling atas dan tidak mau bercampur dengan air. Alasan ilmiah mengapa minyak mengapung di atas air adalah ...",
+    "Massa jenis minyak goreng lebih kecil daripada massa jenis air dan sifat molekul keduanya berbeda",
+    "Minyak goreng memiliki suhu yang selalu lebih panas daripada air",
+    "Air memiliki daya tolak magnet yang mendorong minyak ke atas",
+    "Minyak goreng mengandung gas udara yang menjebaknya di permukaan",
+    "Zat cair dengan massa jenis lebih kecil (minyak ~0,8 g/cm³) akan terapung di atas zat cair bermassa jenis lebih besar (air 1 g/cm³). Selain itu sifat nonpolar minyak tidak larut dalam air polar."
   ],
   [
-    "Sebuah mobil derek mengangkat mobil mogok bermassa 1.500 kg menggunakan derek katrol listrik berdaya 3.000 Watt. Jika percepatan gravitasi g = 10 m/s² (berat beban 15.000 Newton) dan efisiensi mesin derek 100%, maka kecepatan angkat mobil mogok tersebut bergerak naik vertikal konstan adalah ...",
-    "0,2 meter per sekon",
-    "2 meter per sekon",
-    "0,5 meter per sekon",
-    "1 meter per sekon",
-    "Daya mekanik P = F * v -> 3.000 Watt = 15.000 N * v -> v = 3.000 / 15.000 = 0,2 m/s."
+    "Para pekerja bangunan sering menggunakan katrol tetap yang dipasang di bagian atas bangunan untuk mengangkat ember berisi semen ke lantai dua. Manfaat utama dari katrol tetap tersebut adalah ...",
+    "Mengubah arah gaya tarik dari menarik ke atas menjadi menarik ke bawah yang dibantu berat badan pekerja",
+    "Mengurangi berat beban semen menjadi tinggal setengah dari berat aslinya",
+    "Menghilangkan kebutuhan tenaga manusia sepenuhnya secara otomatis",
+    "Menggandakan kecepatan gerak semen tanpa perlu menarik tali sama sekali",
+    "Katrol tetap memiliki keuntungan mekanis 1, fungsinya bukan memperkecil gaya angkat, melainkan mempermudah arah gaya (menarik ke bawah dibantu oleh gaya berat tubuh kita)."
   ],
   [
     "Mengapa bola bowling yang menggelinding lambat di lintasan licin memiliki daya hancur pin bowling yang jauh lebih dahsyat dibandingkan bola tenis yang dilempar dengan kecepatan yang sama?",

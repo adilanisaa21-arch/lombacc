@@ -380,9 +380,9 @@ Luas gabungan = ${luasPersegi} + ${luasSegitiga} = ${luasTotal} cm².`;
   }
 
   // ===========================================================================
-  // TOPIK 3: Bangun Datar Trapesium & Lingkaran (Keliling, Luas, Juring)
+  // TOPIK 3: Bangun Datar Trapesium & Lingkaran (Keliling & Luas)
   // ===========================================================================
-  const T3 = 'Bangun Datar Trapesium & Lingkaran (Keliling, Luas, Juring)';
+  const T3 = 'Bangun Datar Trapesium & Lingkaran (Keliling & Luas)';
 
   // Mudah (20)
   for (let i = 1; i <= 20; i++) {
@@ -483,16 +483,36 @@ Jarak total = ${n} × ${kelilingCm / 100} m = ${jarakMeter} meter.`;
       exp = `Keliling taplak = π × d = (22/7) × ${d} = ${kel} cm = ${kel / 100} m.
 Total biaya = ${kel / 100} × Rp ${biayaPerMeter.toLocaleString('id-ID')} = Rp ${totalBiaya.toLocaleString('id-ID')}.`;
       diag = 'Cari keliling lingkaran π × d, ubah satuan cm ke meter, lalu kalikan harga renda per meter.';
-    } else {
+    } else if (i <= 15) {
       const idx = i - 10;
-      const sudut = [30, 45, 60, 75, 90, 105, 120, 135, 150, 180][idx - 1];
-      const r = 14 + 7 * idx;
-      const luasPenuh = (22 / 7) * r * r;
-      const luasJuring = Math.round((sudut / 360) * luasPenuh);
-      qTxt = `Sebuah potongan pizza bundar membentuk sudut pusat ${sudut}° dengan jari-jari r = ${r} cm. Luas permukaan potongan pizza (juring) tersebut adalah ...`;
-      ans = `${luasJuring} cm²`; w1 = `${luasPenuh} cm²`; w2 = `${luasJuring + 15} cm²`; w3 = `${luasJuring - 12} cm²`;
-      exp = `Luas juring = (sudut : 360°) × π × r² = (${sudut}/360) × (22/7) × ${r}² = ${luasJuring} cm².`;
-      diag = 'Bagi besar sudut pusat dengan 360 derajat lalu kalikan dengan luas lingkaran penuh.';
+      const d = 28 + idx * 14;
+      const r = d / 2;
+      const luasPenuh = Math.round((22 / 7) * r * r);
+      const luasPotong = Math.round(luasPenuh / 8);
+      const foods = ['kue tart ulang tahun', 'pizza keju spesial', 'martabak manis pandan', 'kue bolu karamel', 'puding cokelat busa'];
+      qTxt = `Sebuah ${foods[idx - 1]} berbentuk lingkaran dengan diameter ${d} cm dipotong menjadi 8 bagian sama besar untuk dibagikan kepada anak-anak. Luas permukaan satu potong ${foods[idx - 1]} tersebut adalah ...`;
+      ans = `${luasPotong} cm²`;
+      w1 = `${luasPenuh} cm²`;
+      w2 = `${luasPotong + 18} cm²`;
+      w3 = `${luasPotong - 14} cm²`;
+      exp = `Jari-jari (r) = ${d} : 2 = ${r} cm.
+Luas lingkaran penuh = (22/7) × ${r}² = ${luasPenuh} cm².
+Luas satu potong (1/8 bagian) = ${luasPenuh} : 8 = ${luasPotong} cm².`;
+      diag = 'Hitung jari-jari dari diameter, cari luas lingkaran penuh, lalu bagi dengan 8.';
+    } else {
+      const idx = i - 15;
+      const d = 14 + idx * 14;
+      const kelBusur = Math.round(0.5 * (22 / 7) * d);
+      const kelTotal = kelBusur + d;
+      const places = ['panggung pementasan seni', 'kolam ikan hias taman', 'arena bermain pasir', 'taman tanaman obat keluarga', 'pelataran gazebo sekolah'];
+      qTxt = `Sebuah ${places[idx - 1]} berbentuk bangun datar setengah lingkaran tertutup memiliki panjang garis tengah (diameter) ${d} meter. Di sekeliling tepi area tersebut akan dipasang pagar pembatas. Panjang total pagar pembatas yang dibutuhkan adalah ...`;
+      ans = `${kelTotal} meter`;
+      w1 = `${kelBusur} meter`;
+      w2 = `${kelTotal + 12} meter`;
+      w3 = `${Math.round((22 / 7) * d)} meter`;
+      exp = `Keliling busur lengkung = 1/2 × π × d = 1/2 × (22/7) × ${d} = ${kelBusur} meter.
+Karena bangun setengah lingkaran tertutup dibatasi busur dan diameter, maka keliling total = ${kelBusur} + ${d} = ${kelTotal} meter.`;
+      diag = 'Ingat bahwa keliling bangun setengah lingkaran tertutup adalah jumlah panjang busur lengkung ditambah panjang diameter lurusnya.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -1219,7 +1239,7 @@ Rata-rata = ${total} : 5 = ${mean} orang/hari.`;
       w2 = `${items[2].label} (${items[2].pct}%)`;
       w3 = `${items[0].label} (${items[0].pct}%)`;
       exp = `Kategori dengan persentase terendah adalah ${lowItem.label} yaitu ${lowItem.pct}%.`;
-      diag = 'Cari sektor juring dengan persentase paling kecil.';
+      diag = 'Cari kategori dengan persentase paling kecil.';
     } else if (varIdx === 2) {
       const count1 = Math.round((items[0].pct / 100) * totalSiswa);
       const countLast = Math.round((items[items.length - 1].pct / 100) * totalSiswa);
@@ -1229,12 +1249,18 @@ Rata-rata = ${total} : 5 = ${mean} orang/hari.`;
       exp = `${items[0].label} = ${count1} orang, ${items[items.length - 1].label} = ${countLast} orang. Selisih = ${count1} - ${countLast} = ${selisih} orang.`;
       diag = 'Hitung banyak siswa kedua kategori lalu kurangkan keduanya.';
     } else {
-      const item = items[1];
-      const derajat = Math.round((item.pct / 100) * 360);
-      qTxt = `Perhatikan diagram lingkaran ${pObj.name} di atas! Besar sudut pusat juring untuk kategori ${item.label} (${item.pct}%) dalam lingkaran adalah ...`;
-      ans = `${derajat}°`; w1 = `${derajat + 12}°`; w2 = `${derajat - 15}°`; w3 = `${item.pct * 2}°`;
-      exp = `Besar sudut = (${item.pct}/100) × 360° = ${derajat}°.`;
-      diag = 'Kalikan persentase dengan 360 derajat.';
+      const itemA = items[0];
+      const itemB = items[1];
+      const totalPct = itemA.pct + itemB.pct;
+      const countGabungan = Math.round((totalPct / 100) * totalSiswa);
+      qTxt = `Perhatikan diagram lingkaran ${pObj.name} di atas! Jika total responden berjumlah ${totalSiswa} orang, jumlah gabungan siswa pemilih ${itemA.label} dan ${itemB.label} adalah ...`;
+      ans = `${countGabungan} orang`;
+      w1 = `${countGabungan - 6} orang`;
+      w2 = `${countGabungan + 8} orang`;
+      w3 = `${Math.round((itemA.pct / 100) * totalSiswa)} orang`;
+      exp = `Persentase gabungan = ${itemA.pct}% + ${itemB.pct}% = ${totalPct}%.
+Jumlah siswa = ${totalPct}% × ${totalSiswa} = ${countGabungan} orang.`;
+      diag = 'Jumlahkan persentase kedua kategori lalu kalikan dengan total seluruh responden.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -1245,20 +1271,65 @@ Rata-rata = ${total} : 5 = ${mean} orang/hari.`;
     });
   }
 
-  // Sulit (20) - Konversi Derajat & Persentase
+  // Sulit (20) - Menentukan Kategori Sisa & Nilai Nyata Diagram Lingkaran (Standar SD)
+  const sdSurveys = [
+    { title: 'ekstrakurikuler olahraga', cats: ['Sepak Bola', 'Bulu Tangkis', 'Renang', 'Bola Voli'], pcts: [35, 25, 20] },
+    { title: 'kegemaran seni siswa', cats: ['Menggambar', 'Seni Musik', 'Tari Tradisional', 'Seni Kriya'], pcts: [30, 25, 25] },
+    { title: 'mata pelajaran favorit', cats: ['Matematika', 'IPA', 'Bahasa Indonesia', 'IPS'], pcts: [35, 30, 15] },
+    { title: 'hasil panen buah kebun sekolah', cats: ['Mangga', 'Pepaya', 'Pisang', 'Jambu Air'], pcts: [40, 20, 25] },
+    { title: 'pilihan bekal makan siang', cats: ['Nasi Goreng', 'Roti Lapis', 'Nasi Kuning', 'Mie Goreng Sehat'], pcts: [40, 30, 15] },
+    { title: 'moda transportasi siswa', cats: ['Jalan Kaki', 'Sepeda Santai', 'Angkutan Kota', 'Sepeda Motor'], pcts: [25, 35, 20] },
+    { title: 'buku bacaan di perpustakaan', cats: ['Buku Cerita Fabel', 'Ensiklopedi Sains', 'Komik Edukasi', 'Majalah Anak'], pcts: [30, 30, 20] },
+    { title: 'hewan peliharaan di rumah', cats: ['Kucing', 'Ikan Hias', 'Burung Kenari', 'Kelinci'], pcts: [45, 25, 15] },
+    { title: 'cita-cita siswa kelas VI', cats: ['Dokter', 'Guru', 'Tentara/Polisi', 'Arsitek'], pcts: [35, 25, 25] },
+    { title: 'minuman sehat favorit', cats: ['Susu Segar', 'Jus Buah', 'Air Kelapa', 'Madu Hangat'], pcts: [30, 35, 20] },
+    { title: 'kegiatan liburan akhir semester', cats: ['Wisata Alam', 'Mengunjungi Nenek', 'Bermain di Rumah', 'Belajar Kesenian'], pcts: [40, 25, 20] },
+    { title: 'jenis sampah daur ulang sekolah', cats: ['Kertas & Kardus', 'Botol Plastik', 'Kaleng Bekas', 'Kaca'], pcts: [45, 30, 15] },
+    { title: 'warna seragam regu pramuka', cats: ['Cokelat', 'Hijau Daun', 'Biru Langit', 'Kuning Emas'], pcts: [35, 30, 20] },
+    { title: 'permainan tradisional favorit', cats: ['Gobak Sodor', 'Egrang', 'Bentengan', 'Congklak'], pcts: [30, 25, 25] },
+    { title: 'sayuran yang paling disukai', cats: ['Wortel', 'Bayam', 'Kangkung', 'Jagung Manis'], pcts: [35, 35, 15] },
+    { title: 'alat musik tradisional pilihan', cats: ['Angklung', 'Gamelan', 'Kolintang', 'Suling Bambu'], pcts: [40, 25, 20] },
+    { title: 'cabang lomba pramuka siaga', cats: ['PBB Tongkat', 'Sandi Morse', 'Pentas Seni', 'Menaksir Tinggi'], pcts: [30, 30, 25] },
+    { title: 'pilihan karya hasta karya', cats: ['Anyaman Bambu', 'Origami Kertas', 'Bonsai Kawat', 'Gerabah Tanah Liat'], pcts: [35, 25, 20] },
+    { title: 'jenis olahraga atletik', cats: ['Lari Estafet', 'Lompat Jauh', 'Tolak Peluru', 'Lempar Roket'], pcts: [40, 30, 15] },
+    { title: 'kegiatan peduli lingkungan', cats: ['Menanam Pohon', 'Membersihkan Selokan', 'Membuat Kompos', 'Memilah Sampah'], pcts: [30, 35, 20] }
+  ];
+
   for (let i = 1; i <= 20; i++) {
     const seed = i * 149;
-    const pct = 10 + i * 2; // 12, 14, 16...
-    const derajat = (pct * 3.6).toFixed(1).replace('.0', '').replace('.', ',');
-    const topics = ['gemar membaca komik', 'hobi bermain catur', 'gemar berenang', 'senang berkemah', 'peminat tari daerah', 'gemar bermain musik', 'suka berkebun', 'peminat bulutangkis', 'gemar melukis', 'suka memasak', 'hobi fotografi', 'gemar mendaki gunung', 'peminat sepak bola', 'gemar bermain basket', 'peminat robotika', 'suka memelihara kucing', 'hobi merajut', 'gemar memancing', 'peminat karate', 'senang bersepeda'];
+    const s = sdSurveys[i - 1];
+    const totalSiswa = 100 + i * 20; // 120, 140, 160, 180, 200, 220, 240...
+    const sumPcts = s.pcts[0] + s.pcts[1] + s.pcts[2];
+    const sisaPct = 100 - sumPcts;
+    const targetCat = s.cats[3];
+    const targetCount = Math.round((sisaPct / 100) * totalSiswa);
 
-    const qTxt = `Dalam sebuah survei kegemaran siswa yang disajikan ke dalam diagram lingkaran derajat, kelompok siswa yang ${topics[i - 1]} berjumlah ${pct}%. Besar sudut juring lingkaran untuk kelompok tersebut adalah ...`;
-    ans = `${derajat}°`;
-    w1 = `${(parseFloat(derajat.replace(',', '.')) + 14.4).toFixed(1).replace('.0', '').replace('.', ',')}°`;
-    w2 = `${(parseFloat(derajat.replace(',', '.')) - 10.8).toFixed(1).replace('.0', '').replace('.', ',')}°`;
-    w3 = `${pct * 2}°`;
-    exp = `Besar sudut juring = (${pct} : 100) × 360° = ${derajat}°.`;
-    diag = 'Kalikan persentase dengan 360 derajat untuk mengubahnya menjadi sudut lingkaran.';
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
+
+    if (i % 2 === 1) {
+      qTxt = `Diagram lingkaran data ${s.title} di suatu sekolah menunjukkan: ${s.cats[0]} ${s.pcts[0]}%, ${s.cats[1]} ${s.pcts[1]}%, ${s.cats[2]} ${s.pcts[2]}%, dan sisanya memilih ${targetCat}. Jika jumlah seluruh responden ada ${totalSiswa} siswa, banyak siswa yang memilih ${targetCat} adalah ...`;
+      ans = `${targetCount} siswa`;
+      w1 = `${targetCount + 10} siswa`;
+      w2 = `${targetCount - 8} siswa`;
+      w3 = `${Math.round((s.pcts[0] / 100) * totalSiswa)} siswa`;
+      exp = `Persentase total lingkaran = 100%.
+Persentase pemilih ${targetCat} = 100% - (${s.pcts[0]}% + ${s.pcts[1]}% + ${s.pcts[2]}%) = 100% - ${sumPcts}% = ${sisaPct}%.
+Banyak siswa pemilih ${targetCat} = (${sisaPct} : 100) × ${totalSiswa} = ${targetCount} siswa.`;
+      diag = 'Cari persentase kategori sisa dengan mengurangkan 100% dengan jumlah persentase kategori lain, lalu kalikan dengan total siswa.';
+    } else {
+      const count1 = Math.round((s.pcts[0] / 100) * totalSiswa);
+      const selisih = count1 - targetCount;
+      qTxt = `Dalam diagram lingkaran ${s.title} dari ${totalSiswa} siswa, tercatat: ${s.cats[0]} ${s.pcts[0]}%, ${s.cats[1]} ${s.pcts[1]}%, ${s.cats[2]} ${s.pcts[2]}%, dan sisanya memilih ${targetCat}. Selisih banyak siswa pemilih ${s.cats[0]} dan ${targetCat} adalah ...`;
+      ans = `${selisih} siswa`;
+      w1 = `${selisih + 12} siswa`;
+      w2 = `${selisih - 10} siswa`;
+      w3 = `${targetCount} siswa`;
+      exp = `Persentase ${targetCat} = 100% - (${s.pcts[0]}% + ${s.pcts[1]}% + ${s.pcts[2]}%) = ${sisaPct}%.
+Pemilih ${s.cats[0]} = ${s.pcts[0]}% × ${totalSiswa} = ${count1} siswa.
+Pemilih ${targetCat} = ${sisaPct}% × ${totalSiswa} = ${targetCount} siswa.
+Selisih keduanya = ${count1} - ${targetCount} = ${selisih} siswa.`;
+      diag = 'Tentukan persentase kategori sisa terlebih dahulu, hitung banyak siswa pada masing-masing kategori, lalu kurangkan keduanya.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({

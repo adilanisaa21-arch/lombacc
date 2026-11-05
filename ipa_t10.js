@@ -373,28 +373,28 @@ const sedang = [
     "Hantaman meteorit berukuran besar di muka bumi dapat menghasilkan kawah meteorit (impact crater)."
   ],
   [
-    "Dalam suatu rangkaian listrik tertutup sederhana yang terdiri atas 1 buah baterai 1,5 Volt dan 1 buah lampu dengan hambatan 3 Ohm, besar kuat arus listrik yang mengalir menurut Hukum Ohm adalah ...",
-    "0,5 Ampere",
-    "4,5 Ampere",
-    "2 Ampere",
-    "1 Ampere",
-    "Hukum Ohm: I = V / R = 1,5 Volt / 3 Ohm = 0,5 Ampere."
+    "Ketika kita menambahkan satu buah baterai baru secara seri ke dalam sebuah senter yang sebelumnya hanya memakai satu buah baterai, nyala lampu senter akan menjadi ...",
+    "Menyala lebih terang karena tegangan listrik yang mengalir ke lampu meningkat",
+    "Menyala lebih redup karena baterai saling bertabrakan",
+    "Langsung mati total karena kehabisan muatan",
+    "Menyala dengan warna yang berubah menjadi ungu tua",
+    "Menyusun baterai secara seri menjumlahkan tegangan (voltase), sehingga arus listrik yang mengalir melalui filamen lampu bertambah besar dan menghasilkan nyala lebih terang."
   ],
   [
-    "Jika dua buah lampu identik masing-masing memiliki hambatan 6 Ohm disusun secara seri pada rangkaian tertutup, maka besar hambatan pengganti total rangkaian seri tersebut adalah ...",
-    "12 Ohm",
-    "3 Ohm",
-    "6 Ohm",
-    "1 Ohm",
-    "Hambatan total rangkaian seri: R_total = R1 + R2 = 6 Ohm + 6 Ohm = 12 Ohm."
+    "Lampu hias pohon natal atau hiasan perayaan sering dipasang secara seri. Kelemahan terbesar dari rangkaian listrik yang dipasang secara seri adalah ...",
+    "Jika salah satu lampu putus atau dicabut, maka seluruh lampu lainnya akan ikut padam serentak",
+    "Semua lampu akan menyala terlalu terang dan menyilaukan mata",
+    "Baterai atau sumber listrik akan meledak dalam hitungan menit",
+    "Kabel penghubung akan berubah menjadi kaku dan dingin membeku",
+    "Pada rangkaian seri hanya terdapat satu jalur aliran arus. Jika satu lampu putus, rangkaian menjadi terbuka sehingga arus listrik langsung terputus total."
   ],
   [
-    "Jika dua buah lampu identik masing-masing memiliki hambatan 6 Ohm disusun secara paralel pada rangkaian tertutup, maka besar hambatan pengganti total rangkaian paralel tersebut adalah ...",
-    "3 Ohm",
-    "12 Ohm",
-    "6 Ohm",
-    "0,5 Ohm",
-    "1 / R_total = 1/R1 + 1/R2 = 1/6 + 1/6 = 2/6 -> R_total = 6 / 2 = 3 Ohm."
+    "Instalasi kabel listrik di rumah-rumah penduduk selalu dipasang secara paralel bukan seri. Alasan utama penggunaan rangkaian paralel di perumahan adalah ...",
+    "Setiap alat elektronik dapat dinyalakan dan dimatikan secara mandiri tanpa memengaruhi alat elektronik lainnya",
+    "Menghemat penggunaan kabel penghubung hingga sembilan puluh persen",
+    "Mencegah terjadinya petir menyambar atap rumah di musim hujan",
+    "Menyebabkan tarif tagihan rekening listrik otomatis menjadi gratis",
+    "Pada rangkaian paralel, setiap peralatan listrik terhubung langsung ke sumber tegangan utama secara mandiri, sehingga padamnya satu alat tidak mengganggu alat lainnya."
   ],
   [
     "Dua buah lampu identik dipasang secara paralel pada sumber tegangan baterai 6 Volt. Perbandingan nyala lampu pada rangkaian paralel tersebut dibandingkan jika kedua lampu dipasang secara seri pada baterai yang sama adalah ...",
@@ -511,28 +511,28 @@ const sulit = [
     "Bagian dalam sendok melengkung ke dalam menyerupai cermin cekung; jika benda berada di luar titik fokus, bayangan yang terbentuk bersifat nyata dan terbalik."
   ],
   [
-    "Tiga buah hambatan listrik masing-masing bernilai R1 = 2 Ohm, R2 = 3 Ohm, dan R3 = 6 Ohm dirangkai secara paralel. Besar hambatan pengganti total dari ketiga resistor paralel tersebut adalah ...",
-    "1 Ohm",
-    "11 Ohm",
-    "6 Ohm",
-    "0,5 Ohm",
-    "1 / R_p = 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 6/6 = 1 -> R_p = 1 Ohm."
+    "Seorang siswa menguji kemampuan menghantarkan arus listrik dari beberapa bahan menggunakan rangkaian baterai dan lampu. Bahan yang paling tepat digunakan sebagai isolator listrik untuk membungkus kawat kabel agar aman dipegang adalah ...",
+    "Karet atau plastik sintetis",
+    "Tembaga murni",
+    "Besi baja tahan karat",
+    "Aluminium padat",
+    "Karet dan plastik merupakan bahan isolator terbaik karena elektronnya terikat kuat dan tidak dapat mengalirkan arus listrik, sehingga mencegah bahaya sengatan listrik."
   ],
   [
-    "Rangkaian paralel pada soal sebelumnya (R_total = 1 Ohm) dihubungkan dengan sumber tegangan baterai 12 Volt dengan hambatan dalam baterai diabaikan. Kuat arus total yang mengalir dari baterai adalah ...",
-    "12 Ampere",
-    "1 Ampere",
-    "2 Ampere",
-    "6 Ampere",
-    "Hukum Ohm total: I_total = V / R_total = 12 Volt / 1 Ohm = 12 Ampere."
+    "Mengapa kita dilarang keras menyentuh sakelar listrik atau mencolokkan steker kabel dalam kondisi telapak tangan masih basah terkena air?",
+    "Karena air yang mengandung mineral merupakan penghantar listrik yang baik sehingga memperbesar risiko tubuh tersengat arus listrik",
+    "Karena air akan membuat sakelar langsung berkarat dalam hitungan detik",
+    "Karena air akan membekukan aliran listrik di dalam dinding rumah",
+    "Karena sakelar listrik akan meledak jika terkena sedikit percikan air",
+    "Air biasa mengandung ion-ion mineral terlarut yang dapat menghantarkan arus listrik dengan mudah, sehingga tangan basah menurunkan resistansi kulit dan berbahaya memicu kesetrum."
   ],
   [
-    "Pada rangkaian seri yang terdiri dari hambatan R1 = 4 Ohm dan R2 = 6 Ohm yang dihubungkan ke sumber arus 20 Volt, besar tegangan (beda potensial) pada ujung-ujung hambatan R2 adalah ...",
-    "12 Volt",
-    "8 Volt",
-    "20 Volt",
-    "10 Volt",
-    "R_total = 4 + 6 = 10 Ohm. Arus I = 20 V / 10 Ohm = 2 A. Tegangan pada R2: V2 = I * R2 = 2 A * 6 Ohm = 12 Volt."
+    "Tindakan hemat energi listrik berikut ini yang paling mudah dan tepat dibiasakan oleh siswa sekolah dasar sehari-hari di rumah adalah ...",
+    "Mematikan lampu kamar dan televisi jika sudah tidak digunakan atau sebelum pergi tidur",
+    "Menyalakan pendingin ruangan (AC) sepanjang hari dengan jendela dan pintu terbuka lebar",
+    "Menghidupkan pompa air secara terus-menerus tanpa penampungan tandon",
+    "Membiarkan kabel pengisi daya ponsel (charger) tetap tercolok di stopkontak sepanjang hari",
+    "Mematikan alat-alat elektronik yang sedang tidak dipakai merupakan langkah nyata hemat energi listrik untuk melestarikan sumber daya energi dan menghemat biaya."
   ],
   [
     "Perubahan bentuk energi yang terjadi saat sebuah setrika listrik dihubungkan ke sumber arus listrik dan digunakan untuk melicinkan pakaian adalah ...",
@@ -543,12 +543,12 @@ const sulit = [
     "Arus listrik yang mengalir melalui kawat nikelin pada elemen pemanas setrika mengalami hambatan sehingga menghasilkan energi kalor (panas)."
   ],
   [
-    "Indeks bias mutlak kaca korona adalah n = 1,5 dan laju rambat cahaya di ruang hampa adalah c = 300.000 km/s. Cepat rambat cahaya saat menembus kaca korona tersebut adalah ...",
-    "200.000 km/s",
-    "450.000 km/s",
-    "150.000 km/s",
-    "300.000 km/s",
-    "Rumus indeks bias: n = c / v -> 1,5 = 300.000 / v -> v = 300.000 / 1,5 = 200.000 km/s."
+    "Kolam renang yang airnya sangat jernih sering kali terlihat jauh lebih dangkal daripada kedalaman aslinya ketika dilihat dari atas tepi kolam. Peristiwa optik ini terjadi akibat ...",
+    "Pembiasan (pembelokan) berkas cahaya saat merambat dari air yang lebih rapat ke udara yang kurang rapat",
+    "Pemantulan sempurna oleh dasar kolam renang",
+    "Cahaya mengalami penyerapan total oleh air kolam",
+    "Mata kita mengalami kelelahan saat melihat air jernih",
+    "Sinar datang dari dasar kolam (medium lebih rapat) menuju mata pengamat di udara (medium kurang rapat) dibelokkan menjauhi garis normal, sehingga bayangan dasar kolam tampak terangkat lebih dangkal."
   ],
   [
     "Ketika seberkas sinar cahaya merambat dari medium optik lebih rapat (air, n = 1,33) menuju medium optik kurang rapat (udara, n = 1,00) dengan sudut datang yang melebihi sudut kritis, maka seluruh berkas cahaya tidak akan dibiaskan keluar melainkan dipantulkan kembali ke dalam air. Fenomena optik ini disebut ...",
@@ -623,20 +623,20 @@ const sulit = [
     "Fluks bolak-balik menginduksi sirkulasi arus Eddy dalam inti konduktif; penanggulangan dilakukan dengan melaminasi lembaran pelat baja tipis."
   ],
   [
-    "Pada orbit elips planet mengelilingi matahari, Hukum II Kepler menyatakan bahwa garis khayal yang menghubungkan planet ke matahari menyapu luas juring yang sama dalam waktu yang sama. Konsekuensi gerak planet dari hukum ini adalah ...",
-    "Planet bergerak paling cepat saat berada di titik terdekat dengan matahari (perihelion) dan paling lambat saat di titik terjauh (aphelion)",
-    "Kecepatan gerak planet selalu konstan tidak pernah berubah",
-    "Planet akan berhenti bergerak saat malam hari",
-    "Planet berbalik arah saat mendekati matahari",
-    "Kekekalan momentum sudut (L = m * r * v) menuntut peningkatan kelajuan sudut dan orbital saat jari-jari lintasan r mengecil di perihelion."
+    "Ketika sebuah planet bergerak mengelilingi matahari pada lintasan orbitnya yang berbentuk elips (lonjong), kecepatan gerak planet tersebut saat berada di titik paling dekat dengan matahari (perihelion) adalah ...",
+    "Bergerak paling cepat dibandingkan saat berada di posisi orbit lainnya",
+    "Bergerak paling lambat karena tertahan oleh panas terik matahari",
+    "Berhenti sesaat sebelum kembali bergerak menjauh",
+    "Selalu berputar konstan dengan kelajuan yang sama persis di setiap titik",
+    "Gaya tarik gravitasi matahari semakin kuat ketika jarak planet semakin dekat, sehingga kelajuan gerak revolusi planet menjadi paling cepat saat di perihelion dan paling lambat di aphelion."
   ],
   [
-    "Hukum III Kepler menyatakan hubungan antara periode revolusi planet (T) dengan jarak rata-rata planet ke matahari (R) adalah T² / R³ = konstan. Jika jarak rata-rata planet X ke matahari adalah 4 kali jarak bumi ke matahari (R_X = 4 AU), maka kala revolusi planet X mengelilingi matahari adalah ...",
-    "8 tahun",
-    "2 tahun",
-    "16 tahun",
-    "64 tahun",
-    "T_X² / R_X³ = T_B² / R_B³ -> T_X² / 4³ = 1² / 1³ -> T_X² / 64 = 1 -> T_X = √64 = 8 tahun."
+    "Pernyataan yang paling tepat mengenai waktu revolusi (kala revolusi) planet-planet di tata surya saat mengelilingi matahari adalah ...",
+    "Semakin jauh jarak suatu planet dari matahari, maka waktu yang dibutuhkan untuk satu kali mengelilingi matahari akan semakin lama",
+    "Semakin jauh jarak suatu planet dari matahari, maka waktu revolusinya akan menjadi semakin cepat",
+    "Semua planet memiliki waktu revolusi yang persis sama yaitu 365 hari",
+    "Waktu revolusi planet hanya ditentukan oleh besar atau kecilnya ukuran diameter fisik planet",
+    "Semakin jauh jarak orbit planet dari matahari, lintasannya semakin panjang dan gaya gravitasi matahari semakin lemah, sehingga periode revolusinya semakin lama (Merkurius 88 hari, Neptunus 165 tahun)."
   ],
   [
     "Mengapa gerhana bulan hanya dapat terjadi pada saat fase bulan purnama, tetapi tidak setiap bulan purnama selalu terjadi gerhana bulan?",
@@ -713,12 +713,12 @@ const hots = [
     "Sakelar bimetal atau elektromagnet pada MCB trip (membuka sirkuit) seketika saat arus listrik melampaui batas aman, mencegah kabel terbakar akibat korsleting."
   ],
   [
-    "Dua buah bola konduktor identik, bola A bermuatan positif (+8 mikro Coulomb) dan bola B bermuatan negatif (-2 mikro Coulomb), saling disentuhkan sesaat lalu dijauhkan kembali ke posisi semula. Muatan akhir pada masing-masing bola konduktor setelah disentuhkan menurut hukum kekekalan muatan adalah ...",
-    "+3 mikro Coulomb pada bola A dan +3 mikro Coulomb pada bola B",
-    "+6 mikro Coulomb pada bola A dan 0 pada bola B",
-    "+4 mikro Coulomb pada bola A dan -4 pada bola B",
-    "Nol pada kedua bola karena muatan musnah",
-    "Total muatan sistem Q_total = (+8) + (-2) = +6 μC. Karena kedua bola identik, muatan terbagi rata sama besar: Q_akhir = +6 / 2 = +3 μC tiap bola."
+    "Ketika sebuah balon karet ditiup lalu digosokkan ke rambut yang kering beberapa kali dan didekatkan ke potongan kertas kecil, kertas-kertas tersebut akan melompat dan menempel pada balon. Peristiwa ini terjadi karena ...",
+    "Balon memperoleh muatan listrik statis akibat perpindahan elektron dari rambut ke permukaan balon",
+    "Balon mengeluarkan zat perekat alami saat digosokkan ke rambut",
+    "Balon menghasilkan medan magnet permanen berdaya tarik tinggi",
+    "Balon menjadi hangat dan melelehkan udara di sekitar potongan kertas",
+    "Gesekan antara balon karet dan rambut menyebabkan elektron berpindah dari rambut ke balon, sehingga balon bermuatan listrik statis negatif dan mampu menarik potongan kertas kecil."
   ],
   [
     "Satelit komunikasi geostasioner (seperti satelit Telkom dan Palapa) tampak diam terpaku pada posisi bujur langit yang sama jika dipantau dari stasiun bumi 24 jam nonstop. Syarat orbit mekanika orbital yang harus dipenuhi oleh satelit geostasioner tersebut adalah ...",
@@ -777,12 +777,12 @@ const hots = [
     "Arus listrik searah yang mengalir melingkari paku besi menciptakan medan magnet sementara pada inti paku sehingga paku mampu menarik benda magnetis."
   ],
   [
-    "Jika seseorang bercermin pada cermin datar sambil berjalan mundur menjauhi cermin dengan kelajuan 2 meter per sekon, maka kelajuan bayangannya bergerak menjauh relatif terhadap orang tersebut adalah ...",
-    "4 meter per sekon",
-    "2 meter per sekon",
-    "1 meter per sekon",
-    "0 meter per sekon",
-    "Kecepatan bayangan relatif terhadap cermin adalah 2 m/s berlawanan arah. Kecepatan relatif bayangan terhadap orang adalah 2 + 2 = 4 m/s."
+    "Seorang siswa berdiri tepat pada jarak 1,5 meter di depan sebuah cermin datar di dalam kamarnya. Jarak antara siswa tersebut dengan bayangannya yang terbentuk di dalam cermin adalah ...",
+    "3 meter (jarak bayangan ke cermin sama dengan jarak benda ke cermin)",
+    "1,5 meter",
+    "0,75 meter",
+    "4,5 meter",
+    "Pada cermin datar, jarak bayangan di belakang cermin sama persis dengan jarak benda di depan cermin (s' = s = 1,5 m). Maka jarak siswa ke bayangannya adalah 1,5 m + 1,5 m = 3 meter."
   ],
   [
     "Pada peristiwa peluncuran wahana antariksa menuju planet Mars, wahana seringkali memanfaatkan terbang lintas dekat (gravity assist / slingshot) di planet Venus atau bumi terlebih dahulu. Manfaat mekanika gravitasi dari manuver slingshot ini adalah ...",
