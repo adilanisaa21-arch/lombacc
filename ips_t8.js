@@ -737,7 +737,7 @@ const hots = [
     "Menggantikan peran semua kereta api di Indonesia",
     "Menghilangkan semua kendaraan sepeda motor di jalan raya",
     "Membuat harga mobil pribadi menjadi gratis bagi rakyat",
-    "Konektivitas infrastruktur transportasi darat menurunkan biaya logistik ICOR (Incremental Capital Output Ratio) dan meningkatkan efisiensi mobilitas modal antardaerah."
+    "Konektivitas infrastruktur transportasi darat menurunkan biaya logistik pengiriman barang dan mempercepat mobilitas barang serta orang antardaerah."
   ],
   [
     "Danau Tempe di Kabupaten Wajo Sulawesi Selatan mengalami pendangkalan danau yang sangat cepat dari tahun ke tahun. Berdasarkan telaah hidrologi dan tata ruang lingkungan hidup, akar penyebab utama terjadinya pendangkalan masif Danau Tempe adalah ...",

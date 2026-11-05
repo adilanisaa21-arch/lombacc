@@ -657,7 +657,7 @@ const hots = [
     "Kawasan Wallacea dihuni oleh hewan reptil luar angkasa yang jatuh ke bumi",
     "Iklim di kawasan Wallacea tidak pernah mengalami pergantian siang dan malam",
     "Semua hewan di zona Wallacea sengaja dibawa berlayar oleh para pelaut pedagang Eropa",
-    "Isolasi geografis kepulauan purba memutus aliran genetik (allopatric speciation) menghasilkan taksa endemik khas seperti anoa dan babirusa."
+    "Isolasi geografis kepulauan purba membuat satwa berevolusi terpisah menghasilkan satwa endemik khas yang unik seperti anoa dan babirusa."
   ],
   [
     "Hutan bakau (mangrove) dan terumbu karang di kawasan pesisir Indonesia membentuk ekosistem penyangga kehidupan bahari yang saling bergantung. Analisis dampak berantai terhadap keanekaragaman hayati ikan laut apabila kawasan hutan mangrove di garis pantai musnah ditebang adalah ...",
@@ -745,7 +745,7 @@ const hots = [
     "Rumah panggung dibangun agar pemilik rumah bisa memancing ikan dari jendela kamar tidur",
     "Paku besi pada masa lampau dilarang digunakan oleh para dewa",
     "Rumah panggung dirancang khusus untuk diterbangkan oleh angin puting beliung",
-    "Prinsip biomekanika konstruksi tahan gempa (aseismic timber framework) menyerap gaya inersia guncangan seismik secara lentur."
+    "Konstruksi sambungan kayu pasak tanpa paku kaku memberikan kelenturan sehingga bangunan menyerap guncangan gempa secara elastis tanpa roboh."
   ],
   [
     "Ancaman kepunahan satwa langka Orangutan Sumatera (Pongo abelii) dan Orangutan Tapanuli (Pongo tapanuliensis) di ekosistem Batang Toru dan Leuser berkaitan erat dengan pembangunan proyek infrastruktur dan perkebunan monokultur. Faktor paling krusial penyebab anjloknya populasi satwa liar tersebut adalah ...",

@@ -596,13 +596,13 @@ Luas rumput = ${luasBesar} - ${luasKecil} = ${luasArsir} m².`;
       diag = 'Perhitungkan pergeseran jarum pendek sebesar 0,5 derajat per menit.';
     } else {
       const idx = i - 20;
-      const angle = 15 + idx * 3;
-      const jenis = (idx % 2 === 0) ? 'berpelurus' : 'berpenyiku';
-      const target = (jenis === 'berpelurus') ? (180 - angle) : (90 - angle);
-      qTxt = `Diketahui sudut A memiliki besar ${angle}°. Jika sudut B merupakan sudut yang ${jenis} dengan sudut A, maka besar sudut B adalah ...`;
-      ans = `${target}°`; w1 = `${target + 10}°`; w2 = `${target - 10}°`; w3 = `${180 - angle + 20}°`;
-      exp = `Sudut ${jenis} memiliki jumlah total ${jenis === 'berpelurus' ? '180°' : '90°'}. Maka sudut B = ${jenis === 'berpelurus' ? '180°' : '90°'} - ${angle}° = ${target}°.`;
-      diag = `Dua sudut ${jenis} berjumlah total ${jenis === 'berpelurus' ? '180' : '90'} derajat.`;
+      const a1 = 30 + (idx * 2);
+      const a2 = 40 + (idx * 3);
+      const a3 = 180 - (a1 + a2);
+      qTxt = `Sebuah bangun segitiga memiliki dua buah sudut dengan besar masing-masing ${a1}° dan ${a2}°. Besar sudut ketiga dari segitiga tersebut adalah ...`;
+      ans = `${a3}°`; w1 = `${a3 + 10}°`; w2 = `${a3 - 10}°`; w3 = `${180 - a1}°`;
+      exp = `Jumlah ketiga sudut dalam sebuah segitiga adalah 180°. Sudut ketiga = 180° - (${a1}° + ${a2}°) = 180° - ${a1 + a2}° = ${a3}°.`;
+      diag = 'Jumlah seluruh sudut pada bangun segitiga selalu sama dengan 180 derajat.';
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -613,28 +613,28 @@ Luas rumput = ${luasBesar} - ${luasKecil} = ${luasArsir} m².`;
     });
   }
 
-  // Sulit (20)
+  // Sulit (20) - Sudut Segitiga Sama Kaki & Segi Empat (180° & 360°)
   for (let i = 1; i <= 20; i++) {
     const seed = i * 67;
-    const ratioPairs = [
-      [1, 2, 90], [1, 4, 90], [2, 3, 90], [3, 7, 90], [4, 5, 90],
-      [1, 5, 90], [2, 7, 90], [5, 13, 90], [7, 8, 90], [1, 8, 90],
-      [1, 2, 180], [1, 3, 180], [1, 4, 180], [1, 5, 180], [2, 3, 180],
-      [3, 7, 180], [4, 5, 180], [5, 7, 180], [7, 11, 180], [2, 7, 180]
-    ];
-    const [r1, r2, totalDeg] = ratioPairs[i - 1];
-    const totalRatio = r1 + r2;
-    const jenis = (totalDeg === 180) ? 'berpelurus' : 'berpenyiku';
-    const unitDeg = totalDeg / totalRatio;
-    const angle1 = Math.round(r1 * unitDeg);
-    const angle2 = totalDeg - angle1;
-    qTxt = `Dua buah sudut yang saling ${jenis} memiliki perbandingan rasio ${r1} : ${r2}. Besar sudut yang lebih besar adalah ...`;
-    const ansVal = Math.max(angle1, angle2);
-    ans = `${ansVal}°`; w1 = `${Math.min(angle1, angle2)}°`; w2 = `${ansVal + 12}°`; w3 = `${ansVal - 10}°`;
-    exp = `Total rasio = ${r1} + ${r2} = ${totalRatio}.
-Nilai satu bagian = ${totalDeg}° : ${totalRatio} = ${unitDeg}°.
-Sudut terbesar = ${Math.max(r1, r2)} × ${unitDeg}° = ${ansVal}°.`;
-    diag = 'Bagi total derajat dengan jumlah rasio, lalu kalikan dengan rasio sudut terbesar.';
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
+    if (i <= 10) {
+      const puncak = 30 + i * 4;
+      const alas = (180 - puncak) / 2;
+      qTxt = `Sebuah segitiga sama kaki memiliki sudut puncak sebesar ${puncak}°. Besar salah satu sudut pada alas segitiga tersebut adalah ...`;
+      ans = `${alas}°`; w1 = `${alas + 10}°`; w2 = `${alas - 10}°`; w3 = `${180 - puncak}°`;
+      exp = `Pada segitiga sama kaki, kedua sudut alas memiliki besar yang sama. Besar sudut alas = (180° - ${puncak}°) : 2 = ${180 - puncak}° : 2 = ${alas}°.`;
+      diag = 'Kurangkan 180 derajat dengan sudut puncak, lalu bagi dua untuk mencari sudut alas.';
+    } else {
+      const idx = i - 10;
+      const s1 = 70 + idx * 2;
+      const s2 = 80 + idx * 3;
+      const s3 = 90 + idx * 2;
+      const s4 = 360 - (s1 + s2 + s3);
+      qTxt = `Sebuah bangun segi empat sembarang memiliki tiga sudut dengan besar masing-masing ${s1}°, ${s2}°, dan ${s3}°. Besar sudut keempat dari bangun tersebut adalah ...`;
+      ans = `${s4}°`; w1 = `${s4 + 15}°`; w2 = `${s4 - 15}°`; w3 = `${180 - s1}°`;
+      exp = `Jumlah seluruh sudut dalam bangun segi empat adalah 360°. Sudut keempat = 360° - (${s1}° + ${s2}° + ${s3}°) = 360° - ${s1 + s2 + s3}° = ${s4}°.`;
+      diag = 'Jumlah seluruh sudut pada bangun segi empat selalu sama dengan 360 derajat.';
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -644,19 +644,43 @@ Sudut terbesar = ${Math.max(r1, r2)} × ${unitDeg}° = ${ansVal}°.`;
     });
   }
 
-  // HOTS (20)
+  // HOTS (20) - Sudut Jarum Jam Terkecil pada Waktu Tertentu (SD)
   for (let i = 1; i <= 20; i++) {
     const seed = i * 71;
-    const menit = 15 + i * 5; // 20, 25, 30 ...
-    const totalDerajat = menit * 6;
-    const putaran = (menit / 60).toFixed(2).replace('.', ',');
+    const times = [
+      { time: '01.00', deg: 30, desc: 'pukul satu tepat' },
+      { time: '02.00', deg: 60, desc: 'pukul dua tepat' },
+      { time: '03.00', deg: 90, desc: 'pukul tiga tepat' },
+      { time: '04.00', deg: 120, desc: 'pukul empat tepat' },
+      { time: '05.00', deg: 150, desc: 'pukul lima tepat' },
+      { time: '07.00', deg: 150, desc: 'pukul tujuh tepat' },
+      { time: '08.00', deg: 120, desc: 'pukul delapan tepat' },
+      { time: '09.00', deg: 90, desc: 'pukul sembilan tepat' },
+      { time: '10.00', deg: 60, desc: 'pukul sepuluh tepat' },
+      { time: '11.00', deg: 30, desc: 'pukul sebelas tepat' },
+      { time: '01.30', deg: 135, desc: 'pukul satu lebih tiga puluh menit' },
+      { time: '02.30', deg: 105, desc: 'pukul dua lebih tiga puluh menit' },
+      { time: '03.30', deg: 75, desc: 'pukul tiga lebih tiga puluh menit' },
+      { time: '04.30', deg: 45, desc: 'pukul empat lebih tiga puluh menit' },
+      { time: '07.30', deg: 45, desc: 'pukul tujuh lebih tiga puluh menit' },
+      { time: '08.30', deg: 75, desc: 'pukul delapan lebih tiga puluh menit' },
+      { time: '09.30', deg: 105, desc: 'pukul sembilan lebih tiga puluh menit' },
+      { time: '10.30', deg: 135, desc: 'pukul sepuluh lebih tiga puluh menit' },
+      { time: '06.00', deg: 180, desc: 'pukul enam tepat' },
+      { time: '12.00', deg: 0, desc: 'pukul dua belas tepat saat jarum berimpit' }
+    ];
+    const item = times[i - 1];
     const clocks = ['jam dinding ruang tamu', 'jam lonceng sekolah', 'arloji mekanik', 'jam meja belajar', 'jam menara kota', 'jam pendulum antik', 'jam stasiun kereta', 'jam dinding perpustakaan', 'jam dinding masjid', 'arloji saku kakek', 'jam dinding kantor pos', 'jam dinding balai desa', 'jam dinding ruang guru', 'jam dinding gedung olahraga', 'jam dinding asrama', 'jam dinding sanggar tari', 'jam dinding ruang rapat', 'jam dinding laboratorium', 'jam dinding museum', 'jam dinding studio musik'];
 
-    const qTxt = `Jarum menit pada sebuah ${clocks[i - 1]} berputar selama ${menit} menit. Besar sudut lintasan putaran yang telah disapu oleh jarum menit tersebut adalah ...`;
-    ans = `${totalDerajat}°`; w1 = `${totalDerajat - 30}°`; w2 = `${totalDerajat + 30}°`; w3 = `${menit * 30}°`;
-    exp = `Jarum menit berputar 360° dalam 60 menit, sehingga laju putarannya = 360° : 60 = 6° per menit.
-Sudut lintasan selama ${menit} menit = ${menit} × 6° = ${totalDerajat}°.`;
-    diag = 'Kalikan durasi perputaran dalam menit dengan 6 derajat.';
+    const qTxt = item.deg === 0
+      ? `Pada sebuah ${clocks[i - 1]} yang menunjukkan pukul 12.00, jarum pendek dan jarum panjang saling berimpit. Besar sudut yang dibentuk oleh kedua jarum jam tersebut adalah ...`
+      : `Pada sebuah ${clocks[i - 1]} yang menunjukkan pukul ${item.time} (${item.desc}), besar sudut terkecil yang dibentuk oleh jarum jam pendek dan jarum jam panjang adalah ...`;
+    ans = `${item.deg}°`;
+    w1 = `${(item.deg + 30) % 180 || 60}°`;
+    w2 = `${Math.abs(item.deg - 30)}°`;
+    w3 = `${(item.deg + 45) % 180 || 90}°`;
+    exp = `Setiap 1 jam (angka jam) mewakili sudut 360° : 12 = 30°. Pada pukul ${item.time}, posisi jarum jam menghasilkan sudut terkecil ${item.deg}°.`;
+    diag = 'Hitung selisih posisi jarum jam dan jarum menit dikalikan 30 derajat per jam serta pergeseran jarum pendek.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -772,20 +796,18 @@ Banyak kotak yang muat = ${volKardus} : ${volKotak} = ${kapasitas} kotak.`;
     });
   }
 
-  // HOTS (20)
+  // HOTS (20) - Kenaikan Air Akuarium Balok Bulat Pas (SD)
   for (let i = 1; i <= 20; i++) {
     const seed = i * 89;
-    const p = 50 + (i % 4) * 10;
-    const l = 30 + (i % 3) * 5;
-    const t = 40;
-    const volumeBatu = 3000 + i * 500; // cm³
-    const luasAlas = p * l;
-    const kenaikan = (volumeBatu / luasAlas).toFixed(1).replace('.', ',');
+    const p = 50;
+    const l = 40; // luas alas = 2000 cm²
+    const kenaikanInt = 1 + (i % 5); // 1, 2, 3, 4, 5 cm (bilangan bulat pas!)
+    const volumeBatu = p * l * kenaikanInt; // 2000, 4000, 6000, 8000, 10000 cm³
     const aquariums = ['akuarium ikan arwana', 'akuarium koki pelangi', 'wadah lobster air tawar', 'akuarium ikan guppy', 'akuarium ikan cupang hias', 'akuarium kura-kura brazil', 'akuarium ikan koi mini', 'akuarium aquascape tanaman', 'akuarium ikan molly', 'akuarium ikan discus', 'akuarium ikan louhan', 'akuarium ikan neon tetra', 'akuarium udang hias red cherry', 'akuarium ikan mas kancra', 'akuarium ikan manfish', 'akuarium kura-kura leher panjang', 'akuarium ikan platy', 'akuarium ikan komet', 'akuarium ikan sumatra', 'akuarium ikan sapu-sapu hias'];
 
     const qTxt = `Sebuah ${aquariums[i - 1]} berbentuk balok memiliki panjang ${p} cm dan lebar ${l} cm. Ke dalam akuarium tersebut dimasukkan batu karang hiasan bervolume ${volumeBatu} cm³ hingga tenggelam sempurna. Kenaikan permukaan air di dalam akuarium adalah ...`;
-    ans = `${kenaikan} cm`; w1 = `${(parseFloat(kenaikan.replace(',', '.')) + 1.2).toFixed(1).replace('.', ',')} cm`; w2 = `${(parseFloat(kenaikan.replace(',', '.')) - 0.5).toFixed(1).replace('.', ',')} cm`; w3 = '5,0 cm';
-    exp = `Kenaikan air = Volume batu : Luas alas akuarium = ${volumeBatu} : (${p} × ${l}) = ${volumeBatu} : ${luasAlas} = ${kenaikan} cm.`;
+    ans = `${kenaikanInt} cm`; w1 = `${kenaikanInt + 2} cm`; w2 = `${kenaikanInt + 4} cm`; w3 = `${kenaikanInt + 6} cm`;
+    exp = `Kenaikan air = Volume batu : Luas alas akuarium = ${volumeBatu} : (${p} × ${l}) = ${volumeBatu} : 2000 = ${kenaikanInt} cm.`;
     diag = 'Bagi volume benda yang dimasukkan dengan luas bidang alas wadah penampung.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -898,22 +920,22 @@ Banyak kotak yang muat = ${volKardus} : ${volKotak} = ${kapasitas} kotak.`;
     });
   }
 
-  // HOTS (20)
+  // HOTS (20) - Volume Air dalam Wadah Balok & Pengambilan Air (SD)
   for (let i = 1; i <= 20; i++) {
     const seed = i * 107;
-    const r = 14 + 7 * (i % 2);
-    const t = 21 + 3 * (i % 3);
-    const volTotal = Math.round((1 / 3) * (22 / 7) * r * r * t);
-    const volPuncak = Math.round(volTotal / 27); // skala 1/3 tinggi -> volume (1/3)³ = 1/27
-    const volBawah = volTotal - volPuncak;
-    const events = ['syukuran kelulusan siswa', 'peringatan hari kemerdekaan RI', 'pembukaan usaha restoran baru', 'ulang tahun sekolah ke-25', 'tasyakuran panen raya desa', 'peresmian gedung serbaguna', 'peringatan hari guru nasional', 'syukuran perumahan asri', 'peresmian jembatan desa', 'tasyakuran juara olimpiade', 'peringatan hari pahlawan', 'buka puasa bersama warga', 'reuni akbar alumni sekolah', 'peringatan hari kartini', 'peresmian sanggar seni desa', 'tasyakuran khitanan massal', 'peresmian kantor balai desa', 'syukuran akreditasi sekolah', 'penutupan festival budaya', 'tasyakuran HUT kemerdekaan'];
+    const p = 50 + (i % 3) * 10;
+    const l = 40;
+    const t = 50;
+    const volTotalLiter = (p * l * t) / 1000; // liter bulat
+    const terpakaiLiter = 15 + i * 2;
+    const sisaLiter = volTotalLiter - terpakaiLiter;
+    const wadahs = ['bak penampungan air wudhu', 'tandon air bersih sekolah', 'bak mandi kamar siswa', 'kolam penampungan air hujan', 'bak cuci tangan kantin', 'wadah air peternakan kelinci', 'bak penampung air kebun sayur', 'tandon air laboratorium sains', 'bak mandi asrama putra', 'bak mandi asrama putri', 'kolam ikan hias sekolah', 'bak perendaman bibit tanaman', 'tandon air rumah guru', 'bak air tempat cuci piring', 'bak penampung air mushola', 'tandon air darurat puskesmas', 'bak penampung air taman bunga', 'tandon air gedung serbaguna', 'bak air kamar mandi perpustakaan', 'wadah tandon air dapur sekolah'];
 
-    const qTxt = `Pada acara ${events[i - 1]}, disajikan nasi tumpeng berbentuk kerucut sempurna berjari-jari ${r} cm dan tinggi ${t} cm. Jika bagian puncak setinggi 1/3 dari puncak dipotong, maka sisa volume tumpeng bagian bawah adalah ...`;
-    ans = `${volBawah} cm³`; w1 = `${volTotal} cm³`; w2 = `${volPuncak} cm³`; w3 = `${volBawah + 120} cm³`;
-    exp = `Volume total kerucut = 1/3 × π × r² × t = ${volTotal} cm³.
-Potongan puncak berskala 1/3 sehingga volumenya = (1/3)³ × V_total = 1/27 × ${volTotal} = ${volPuncak} cm³.
-Sisa volume bawah = ${volTotal} - ${volPuncak} = ${volBawah} cm³.`;
-    diag = 'Gunakan perbandingan volume bangun sebangun yang sebanding dengan pangkat tiga skala tingginya.';
+    const qTxt = `Sebuah ${wadahs[i - 1]} berbentuk balok memiliki ukuran panjang ${p} cm, lebar ${l} cm, dan tinggi ${t} cm. Mula-mula wadah tersebut terisi penuh air. Jika air di dalam wadah diambil sebanyak ${terpakaiLiter} liter untuk kebutuhan harian, maka sisa volume air di dalam wadah adalah ...`;
+    ans = `${sisaLiter} liter`; w1 = `${volTotalLiter} liter`; w2 = `${sisaLiter + 10} liter`; w3 = `${terpakaiLiter} liter`;
+    exp = `Volume total wadah = ${p} × ${l} × ${t} = ${p * l * t} cm³ = ${volTotalLiter} liter (karena 1 liter = 1.000 cm³).
+Sisa volume air = ${volTotalLiter} liter - ${terpakaiLiter} liter = ${sisaLiter} liter.`;
+    diag = 'Hitung volume balok dalam cm kubik, ubah ke liter (bagi 1.000), lalu kurangkan dengan volume air yang diambil.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
@@ -1246,20 +1268,20 @@ Rata-rata = ${total} : 5 = ${mean} orang/hari.`;
     });
   }
 
-  // HOTS (20) - Proporsi Diagram Lingkaran
+  // HOTS (20) - Proporsi Diagram Lingkaran Siswa SD Bulat Pas
   for (let i = 1; i <= 20; i++) {
     const seed = i * 151;
-    const pctA = 25 + (i % 3) * 5; // 25, 30, 35
-    const pctB = 20;
-    const countA = (pctA * 4) + i * 2;
-    const totalSuara = Math.round((countA / pctA) * 100);
-    const countB = Math.round((pctB / 100) * totalSuara);
-    const orgs = ['OSIS SMP Harapan', 'Regu Pramuka Inti', 'Klub Sains Cilik', 'Palang Merah Remaja', 'Klub Literasi Sekolah', 'Sanggar Tari Daerah', 'Klub Paduan Suara', 'Klub Basket Pelajar', 'Ikatan Remaja Masjid', 'Klub Matematika Kreatif', 'Klub Jurnalistik Sekolah', 'Komunitas Pecinta Alam', 'Klub Catur Mandiri', 'Klub Debat Bahasa', 'Sanggar Teater Pelajar', 'Klub Tari Modern', 'Klub Taekwondo Satria', 'Komunitas Daur Ulang', 'Klub Fotografi Remaja', 'Klub Robotik Nusantara'];
+    const totalSiswa = 200 + (i % 4) * 100; // 200, 300, 400, 500
+    const pctA = 20 + (i % 3) * 10; // 20, 30, 40%
+    const pctB = 25; // 25%
+    const countA = (pctA / 100) * totalSiswa;
+    const countB = (pctB / 100) * totalSiswa;
+    const orgs = ['Regu Pramuka Siaga SD', 'Klub Sains Cilik SD', 'Palang Merah Remaja SD', 'Klub Literasi Cilik', 'Sanggar Tari Tradisional SD', 'Klub Paduan Suara Pelajar', 'Klub Futsal Cilik', 'Klub Dokter Kecil Sekolah', 'Klub Matematika Kreatif SD', 'Klub Jurnalistik Cilik', 'Komunitas Cilik Pecinta Alam', 'Klub Catur Siswa SD', 'Klub Bahasa Inggris Ceria', 'Sanggar Musik Angklung SD', 'Klub Senam Ceria Pelajar', 'Klub Taekwondo Usia Dini', 'Komunitas Sahabat Bumi SD', 'Klub Menggambar Ceria', 'Klub Robotika Cilik', 'Klub Bulu Tangkis Harapan'];
 
-    const qTxt = `Dalam diagram lingkaran pemilihan ketua ${orgs[i - 1]}, kandidat A memperoleh ${pctA}% suara sah yang setara dengan ${countA} pemilih. Jika kandidat B memperoleh ${pctB}% suara sah, banyak suara yang diperoleh kandidat B adalah ...`;
-    ans = `${countB} pemilih`; w1 = `${countB + 5} pemilih`; w2 = `${countB - 4} pemilih`; w3 = `${totalSuara} pemilih`;
-    exp = `Total seluruh pemilih = ${countA} : (${pctA}/100) = ${totalSuara} pemilih.
-Perolehan kandidat B = ${pctB}% × ${totalSuara} = ${countB} pemilih.`;
+    const qTxt = `Dalam diagram lingkaran pemilihan ketua ${orgs[i - 1]}, kandidat A memperoleh ${pctA}% suara sah yang setara dengan ${countA} siswa. Jika kandidat B memperoleh ${pctB}% suara sah, banyak suara yang diperoleh kandidat B adalah ...`;
+    ans = `${countB} siswa`; w1 = `${countB + 10} siswa`; w2 = `${countB - 10} siswa`; w3 = `${totalSiswa} siswa`;
+    exp = `Total seluruh pemilih = ${countA} : (${pctA}/100) = ${totalSiswa} siswa.
+Perolehan kandidat B = ${pctB}% × ${totalSiswa} = ${countB} siswa.`;
     diag = 'Cari total pemilih terlebih dahulu melalui persentase dan suara kandidat A, lalu hitung perolehan kandidat B.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);

@@ -1,120 +1,817 @@
-// ips_t1.js - Topik 1: Kerajaan Hindu-Buddha di Indonesia (100 Soal)
-// 20 Mudah, 40 Sedang, 20 Sulit, 20 HOTS
+// Topik 1: Peta, Kenampakan Alam & Bentang Alam Indonesia
+// Format: [pertanyaan, pilihanBenar, salah1, salah2, salah3, penjelasan]
 
 const mudah = [
-  ['Kerajaan bercorak Hindu tertua di Indonesia yang terletak di tepi Sungai Mahakam, Kalimantan Timur adalah Kerajaan ...', 'Kutai Martapura', 'Tarumanegara', 'Sriwijaya', 'Majapahit', 'Kerajaan Kutai berdiri sekitar abad ke-4 Masehi di Muara Kaman, Kalimantan Timur.'],
-  ['Peninggalan sejarah Kerajaan Kutai yang berupa tugu batu bertulis huruf Pallawa dan berbahasa Sanskerta disebut ...', 'Yupa', 'Prasasti Ciaruteun', 'Candi Muara Takus', 'Kitab Sutasoma', 'Tujuh buah tugu batu Yupa berfungsi sebagai prasasti peringatan upacara keagamaan dan tiang pengikat hewan kurban.'],
-  ['Raja Kerajaan Kutai yang terkenal sangat dermawan menyedekahkan 20.000 ekor sapi kepada kaum Brahmana adalah Raja ...', 'Mulawarman', 'Aswawarman', 'Kudungga', 'Purnawarman', 'Mulawarman adalah putra Aswawarman dan cucu pendiri dinasti Kundungga.'],
-  ['Kerajaan Hindu tertua di Pulau Jawa yang berpusat di wilayah Jawa Barat dan berkembang sekitar abad ke-5 Masehi adalah ...', 'Tarumanegara', 'Kalingga', 'Mataram Kuno', 'Pajajaran', 'Kerajaan Tarumanegara dipimpin oleh raja termasyhur bernama Raja Purnawarman.'],
-  ['Prasasti peninggalan Kerajaan Tarumanegara yang memuat lukisan tapak kaki Raja Purnawarman yang diibaratkan seperti tapak kaki Dewa Wisnu adalah Prasasti ...', 'Ciaruteun', 'Tugu', 'Kebon Kopi', 'Jambu', 'Tapak kaki pada prasasti Ciaruteun melambangkan kekuasaan dan perlindungan raja laksana Dewa Wisnu.'],
-  ['Prasasti Tarumanegara yang memuat telapak kaki gajah tunggangan Raja Purnawarman yang disamakan dengan gajah Airawata adalah Prasasti ...', 'Kebon Kopi', 'Pasir Awi', 'Cidanghiang', 'Muara Cianten', 'Prasasti Kebon Kopi (Tapak Gajah) dipahatkan pada batu andesit di Bogor.'],
-  ['Kerajaan maritim bercorak Buddha terbesar di Nusantara yang berpusat di Palembang, Sumatera Selatan adalah Kerajaan ...', 'Sriwijaya', 'Majapahit', 'Singasari', 'Kutai', 'Sriwijaya menguasai jalur pelayaran perdagangan strategis Selat Malaka dan Selat Sunda.'],
-  ['Pendeta Tiongkok yang pernah singgah bertahun-tahun di Sriwijaya untuk memperdalam bahasa Sanskerta dan menerjemahkan kitab Buddha adalah ...', 'I-Tsing (I Tsing)', 'Fa-Hien', 'Laksamana Cheng Ho', 'Hui-Ning', 'I-Tsing mencatat Sriwijaya sebagai pusat pembelajaran agama Buddha terkemuka di Asia Tenggara.'],
-  ['Candi Buddha terbesar di dunia yang dibangun pada masa Dinasti Syailendra di Magelang, Jawa Tengah adalah Candi ...', 'Borobudur', 'Prambanan', 'Mendut', 'Sewu', 'Borobudur didirikan sekitar abad ke-8 dan ke-9 masehi berstruktur punden berundak stupa.'],
-  ['Candi Hindu tercantik dan termegah di Indonesia yang dibangun oleh Dinasti Sanjaya (Rakai Pikatan) di Klaten-Sleman adalah Candi ...', 'Prambanan (Candi Roro Jonggrang)', 'Borobudur', 'Candi Kalasan', 'Candi Plaosan', 'Candi Prambanan dipersembahkan untuk Trimurti: Dewa Brahma, Wisnu, dan Siwa.'],
-  ['Raja Kerajaan Singasari yang terkenal menggagas Ekspedisi Pamalayu untuk membendung ekspansi bangsa Mongol adalah Raja ...', 'Kertanegara', 'Ken Arok', 'Anusapati', 'Tohjaya', 'Kertanegara memimpin Singasari mencapai puncak kejayaan dengan memperluas pengaruh ke Sumatera.'],
-  ['Kerajaan Hindu-Buddha terbesar di Nusantara yang didirikan oleh Raden Wijaya pada tahun 1293 adalah Kerajaan ...', 'Majapahit', 'Sriwijaya', 'Kediri', 'Pajajaran', 'Majapahit berpusat di wilayah Trowulan, Mojokerto, Jawa Timur.'],
-  ['Masa keemasan Kerajaan Majapahit dicapai pada masa pemerintahan raja ...', 'Hayam Wuruk', 'Raden Wijaya', 'Jayanegara', 'Tribhuwana Tunggadewi', 'Di bawah Hayam Wuruk dan Mahapatih Gajah Mada, Majapahit menyatukan wilayah Nusantara.'],
-  ['Sumpah terkenal yang diucapkan oleh Mahapatih Gajah Mada untuk menyatukan seluruh wilayah Nusantara di bawah naungan Majapahit disebut ...', 'Sumpah Palapa', 'Sumpah Pemuda', 'Prasasti Tugu', 'Sumpah Ksatria', 'Gajah Mada bersumpah tidak akan menikmati makanan palapa sebelum berhasil menyatukan Nusantara.'],
-  ['Semboyan persatuan bangsa Indonesia "Bhinneka Tunggal Ika" diambil dari kitab peninggalan Kerajaan Majapahit yang berjudul ...', 'Kitab Sutasoma karya Mpu Tantular', 'Kitab Negarakertagama karya Mpu Prapanca', 'Kitab Bharatayuddha karya Mpu Sedah', 'Kitab Arjuna Wiwaha karya Mpu Kanwa', 'Bhinneka Tunggal Ika tan Hana Dharma Mangrwa mengajarkan toleransi antara pemeluk Hindu dan Buddha.'],
-  ['Kitab peninggalan zaman Majapahit yang memuat sejarah perjalanan Raja Hayam Wuruk dan struktur pemerintahan Majapahit adalah ...', 'Kitab Negarakertagama karangan Mpu Prapanca', 'Kitab Pararaton', 'Kitab Sundayana', 'Kitab Smaradahana', 'Negarakertagama (Desawarnana) ditulis pada tahun 1365 masehi sebagai sumber sejarah penting.'],
-  ['Candi peninggalan Kerajaan Sriwijaya yang terletak di Kabupaten Kampar, Riau adalah Candi ...', 'Muara Takus', 'Muaro Jambi', 'Candi Bahal', 'Candi Tikus', 'Candi Muara Takus merupakan kompleks candi Buddha berbahan batu bata merah dengan stupa silinder.'],
-  ['Perang saudara yang terjadi antar-anggota keluarga Kerajaan Majapahit yang menjadi awal penyebab runtuhnya kerajaan ini adalah Perang ...', 'Paregreg', 'Bubat', 'Ganter', 'Pamalayu', 'Perang Paregreg (1404-1406) antara Wikramawardhana dan Bhre Wirabhumi melemahkan kekuatan internal Majapahit.'],
-  ['Kerajaan Kediri di Jawa Timur terkenal dengan rajanya yang adil dan bijaksana serta dikenal memiliki ramalan jangka panjang, yaitu Raja ...', 'Jayabaya', 'Kameswara', 'Bameswara', 'Kertajaya', 'Prabu Jayabaya terkenal dengan ramalan Jangka Jayabaya tentang masa depan Nusantara.'],
-  ['Pembagian lapisan masyarakat ke dalam empat kasta (Brahmana, Ksatria, Waisya, dan Sudra) merupakan pengaruh ajaran agama ...', 'Hindu', 'Buddha', 'Islam', 'Kristen', 'Sistem kasta membagi peran masyarakat berdasarkan tingkatan keagamaan dan fungsi sosial di India kuno.']
+  [
+    "Gambaran permukaan bumi pada suatu bidang datar dengan menggunakan skala tertentu dinamakan ...",
+    "Peta",
+    "Globe",
+    "Denah",
+    "Atlas",
+    "Peta adalah gambaran sebagian atau seluruh permukaan bumi pada bidang datar dengan skala tertentu."
+  ],
+  [
+    "Kumpulan peta-peta yang dibukukan secara rapi dan sistematis disebut ...",
+    "Atlas",
+    "Globe",
+    "Katalog",
+    "Ensiklopedia",
+    "Atlas berisi kumpulan peta wilayah kabupaten, provinsi, negara, hingga benua."
+  ],
+  [
+    "Tiruan bola bumi bulat dalam bentuk tiga dimensi yang menggambarkan bentuk bumi sebenarnya disebut ...",
+    "Globe",
+    "Atlas",
+    "Peta timbul",
+    "Prisma",
+    "Globe dapat diputar pada porosnya untuk mempelajari rotasi bumi dan letak samudra/benua."
+  ],
+  [
+    "Bagian pada peta yang menunjukkan arah mata angin (seperti arah Utara, Timur, Selatan, Barat) disebut ...",
+    "Orientasi atau Petunjuk Arah",
+    "Skala peta",
+    "Legenda",
+    "Garis tepi",
+    "Petunjuk arah mata angin biasanya disimbolkan dengan tanda panah menunjuk arah Utara (U)."
+  ],
+  [
+    "Komponen peta yang berfungsi menjelaskan arti dari simbol-simbol yang terdapat pada bidang peta dinamakan ...",
+    "Legenda",
+    "Judul peta",
+    "Inset",
+    "Indeks",
+    "Legenda memuat keterangan simbol seperti jalan raya, rel kereta, ibu kota, dan sungai."
+  ],
+  [
+    "Simbol warna hijau pada peta kenampakan alam biasanya menggambarkan wilayah bentang alam ...",
+    "Dataran rendah",
+    "Pegunungan tinggi",
+    "Lautan dalam",
+    "Gurun pasir",
+    "Warna hijau melambangkan dataran rendah yang subur dengan ketinggian 0 - 200 meter di atas permukaan laut."
+  ],
+  [
+    "Simbol warna biru pada peta kenampakan alam digunakan untuk menunjukkan wilayah ...",
+    "Perairan (sungai, danau, laut)",
+    "Dataran tinggi",
+    "Hutan lindung",
+    "Kawasan industri",
+    "Gradasi warna biru muda menunjukkan perairan dangkal, sedangkan biru tua menunjukkan laut dalam."
+  ],
+  [
+    "Simbol warna cokelat pada peta kenampakan alam menggambarkan bentang alam ...",
+    "Pegunungan atau dataran tinggi",
+    "Lembah sungai",
+    "Padang rumput",
+    "Rawa-rawa",
+    "Warna cokelat tua menunjukkan bentang alam pegunungan tinggi atau puncak gunung."
+  ],
+  [
+    "Simbol gambar segitiga berwarna merah pada peta geografis melambangkan ...",
+    "Gunung berapi aktif",
+    "Gunung mati atau tidak aktif",
+    "Puncak bukit kapur",
+    "Menara suar pantai",
+    "Segitiga merah menandakan gunung api yang masih aktif mengeluarkan asap/lahar, sedangkan segitiga hitam untuk gunung mati."
+  ],
+  [
+    "Bagian daratan yang berbatasan langsung dengan perairan laut dinamakan ...",
+    "Pantai",
+    "Lembah",
+    "Tanjung",
+    "Delta",
+    "Wilayah pantai banyak dimanfaatkan masyarakat untuk tempat pelelangan ikan, pariwisata, dan tambak garam."
+  ],
+  [
+    "Daratan yang memiliki ketinggian antara 0 sampai 200 meter di atas permukaan laut dinamakan ...",
+    "Dataran rendah",
+    "Dataran tinggi",
+    "Pegunungan",
+    "Plato",
+    "Dataran rendah umumnya berhawa hangat dan cocok untuk area persawahan padi, permukiman, dan pusat kota."
+  ],
+  [
+    "Daratan luas yang berada pada ketinggian lebih dari 500 meter di atas permukaan laut dengan udara yang sejuk dinamakan ...",
+    "Dataran tinggi",
+    "Dataran rendah",
+    "Pesisir pantai",
+    "Lembah pantai",
+    "Dataran tinggi sangat cocok untuk perkebunan teh, kopi, stroberi, dan sayur-mayur."
+  ],
+  [
+    "Aliran air alami berukuran besar yang mengalir memanjang dari daerah hulu pegunungan menuju muara di laut disebut ...",
+    "Sungai",
+    "Danau",
+    "Rawa",
+    "Selat",
+    "Air sungai mengalir dari tempat yang tinggi ke tempat yang lebih rendah."
+  ],
+  [
+    "Genangan air tawar yang sangat luas di daratan dan dikelilingi oleh daratan di sekitarnya dinamakan ...",
+    "Danau",
+    "Laut",
+    "Selat",
+    "Teluk",
+    "Contoh danau alami di Indonesia antara lain Danau Toba di Sumatera Utara dan Danau Singkarak di Sumatera Barat."
+  ],
+  [
+    "Laut sempit yang menghubungkan dua pulau yang berdekatan dinamakan ...",
+    "Selat",
+    "Teluk",
+    "Tanjung",
+    "Muara",
+    "Contoh selat di Indonesia adalah Selat Sunda (antara Jawa dan Sumatera) dan Selat Bali."
+  ],
+  [
+    "Bagian perairan laut yang menjorok masuk ke arah daratan dinamakan ...",
+    "Teluk",
+    "Tanjung",
+    "Delta",
+    "Palung",
+    "Contoh teluk di Indonesia adalah Teluk Jakarta, Teluk Lampung, dan Teluk Tomini."
+  ],
+  [
+    "Bagian daratan yang menjorok keluar ke arah laut dinamakan ...",
+    "Tanjung atau Ujung",
+    "Teluk",
+    "Danau",
+    "Ngarai",
+    "Tanjung yang sangat luas sering disebut sebagai semenanjung."
+  ],
+  [
+    "Endapan lumpur dan pasir yang terbentuk di muara sungai akibat pertemuan arus air sungai dengan laut disebut ...",
+    "Delta",
+    "Lembah",
+    "Ngarai",
+    "Bukit pasir",
+    "Contohnya adalah Delta Sungai Mahakam di Kalimantan Timur yang kaya hutan mangrove dan tambak udang."
+  ],
+  [
+    "Cara bertani di lahan miring pegunungan dengan membuat undakan atau terasering bertingkat bertujuan untuk ...",
+    "Mencegah terjadinya erosi tanah dan longsor",
+    "Mempercepat air hujan mengalir ke sungai",
+    "Membuat tanaman menjadi lebih cepat besar",
+    "Menghemat penggunaan bibit tanaman",
+    "Terasering atau sengkedan memperlambat aliran air hujan di lereng bukit sehingga tanah tidak tergerus longsor."
+  ],
+  [
+    "Penanaman kembali pohon-pohon di kawasan hutan yang telah gundul dinamakan ...",
+    "Reboisasi",
+    "Irigasi",
+    "Evolusi",
+    "Urbanisasi",
+    "Reboisasi mengembalikan fungsi hutan sebagai daerah resapan air dan paru-paru bumi."
+  ]
 ];
-
 const sedang = [
-  ['Prasasti Tugu dari Kerajaan Tarumanegara menerangkan tentang karya besar Raja Purnawarman di bidang pengairan yaitu ...', 'Penggalian Sungai Candrabhaga dan Sungai Gomati sepanjang 12 km untuk mencegah banjir dan irigasi pertanian', 'Pembangunan pelabuhan samudra di Selat Sunda', 'Pembangunan benteng pertahanan batu andesit', 'Penggalian sumur minyak bumi di pesisir utara', 'Saluran air Gomati sepanjang 6.112 tombak (sekitar 11 km) diselesaikan dalam waktu 21 hari.'],
-  ['Raja Aswawarman dari Kerajaan Kutai dijuluki sebagai "Wangsakarta" karena berperan sebagai ...', 'Pendiri dinasti atau pembentuk keluarga raja yang menganut agama Hindu', 'Panglima perang penakluk lautan', 'Pendeta agung pembuat candi batu', 'Pencipta aksara Jawa kuno pertama', 'Ayah Aswawarman, Kudungga, masih menggunakan nama lokal Nusantara belum terpengaruh Hindu.'],
-  ['Masa kejayaan Kerajaan Sriwijaya dicapai pada masa pemerintahan raja ...', 'Balaputradewa', 'Dapunta Hyang', 'Sri Sanggrama Wijayatunggawarman', 'Dharanindra', 'Balaputradewa menjalin hubungan diplomatik erat dengan Kerajaan Nalanda di India dan memajukan maritim.'],
-  ['Bukti tertulis tertua mengenai keberadaan Kerajaan Sriwijaya pada tahun 683 Masehi yang menceritakan perjalanan suci Dapunta Hyang membawa 20.000 tentara adalah Prasasti ...', 'Kedukan Bukit', 'Talang Tuo', 'Telaga Batu', 'Kota Kapur', 'Prasasti Kedukan Bukit ditemukan di Palembang mencatat kemenangan Dapunta Hyang (Dapunta Hiyang).'],
-  ['Prasasti Talang Tuo bertarikh 684 Masehi dari Sriwijaya berisi tentang ...', 'Pembangunan Taman Sriksetra yang indah oleh Raja Dapunta Hyang untuk kemakmuran semua makhluk', 'Kutukan raja bagi pemberontak kerajaan', 'Peperangan melawan tentara Tiongkok', 'Daftar nama pelabuhan dagang internasional', 'Taman Sriksetra ditanami pohon kelapa, pinang, dan bambu dengan doa kebaikan universal Buddha Mahayana.'],
-  ['Prasasti Telaga Batu dari Sriwijaya sangat unik dan bersejarah karena di bagian atasnya dihiasi oleh tujuh kepala ular kobra dan berisi ...', 'Kutukan sangat keras bagi siapa saja yang berbuat jahat dan tidak setia kepada Datu (Raja Sriwijaya)', 'Peta rahasia tambang emas di pulau Bangka', 'Resep obat herbal tabib istana', 'Surat cinta raja kepada permaisuri', 'Air pembasuh prasasti ditampung di corong bawah dan diminum para pejabat sebagai sumpah kesetiaan.'],
-  ['Faktor geografis utama yang menjadikan Kerajaan Sriwijaya berkembang pesat menjadi pusat perdagangan dan maritim dunia adalah ...', 'Letaknya yang sangat strategis di Selat Malaka yang menjadi jalur sutra pelayaran internasional antara India dan Tiongkok', 'Memiliki gunung berapi paling banyak di Nusantara', 'Tanahnya yang selalu diselimuti salju tebal', 'Terletak di tengah-tengah Samudra Pasifik terpencil', 'Selat Malaka adalah urat nadi perdagangan rempah, sutra, keramik, dan wangi-wangian dunia.'],
-  ['Perpindahan pusat Kerajaan Mataram Kuno dari Jawa Tengah ke Jawa Timur pada abad ke-10 oleh Mpu Sindok disebabkan oleh faktor ...', 'Bencana letusan dahsyat Gunung Merapi yang merusak ibu kota serta ancaman serangan militer Sriwijaya', 'Adanya wabah penyakit cacar yang melanda seluruh istana', 'Pemberontakan para petani penggarap tebu', 'Keinginan raja untuk mendekati daratan Australia', 'Mpu Sindok mendirikan Dinasti Isyana di Jawa Timur dekat lembah Sungai Brantas yang subur.'],
-  ['Raja Airlangga membagi Kerajaan Kahuripan menjadi dua bagian yaitu Kerajaan Jenggala dan Kerajaan Panjalu (Kediri) dengan bantuan Mpu Bharada. Tujuan utama pembagian kerajaan ini adalah ...', 'Mencegah terjadinya perang saudara perebutan takhta antara kedua putranya', 'Menyerahkan separuh wilayah kepada bajak laut', 'Menjual tanah kerajaan kepada pedagang Portugis', 'Menghindari pungutan pajak dari kekaisaran Tiongkok', 'Mpu Bharada menuangkan air suci dari kendi terbang membatasi perbatasan kedua kerajaan.'],
-  ['Pemberontakan Ra Kuti pada masa pemerintahan Raja Jayanegara di Majapahit berhasil ditumpas berkat kepiawaian pasukan pengawal raja yang bernama ...', 'Pasukan Bhayangkara di bawah pimpinan Gajah Mada', 'Pasukan Wira Pati', 'Pasukan Tamtama', 'Laskar Jayakatwang', 'Gajah Mada mengungsikan Raja Jayanegara ke Desa Badander lalu menyusun strategi merebut kembali keraton.'],
-  ['Peristiwa Perang Bubat pada masa pemerintahan Raja Hayam Wuruk terjadi akibat kesalahpahaman politik antara Gajah Mada dengan rombongan pengantin dari Kerajaan Sunda karena ...', 'Gajah Mada menganggap kedatangan Putri Dyah Pitaloka Citraresmi sebagai tanda penyerahan takluk Sunda kepada Majapahit', 'Raja Hayam Wuruk menolak memberikan mas kawin berupa emas', 'Tentara Sunda membakar perahu pedagang di pelabuhan Majapahit', 'Putri Dyah Pitaloka menolak belajar menari tarian keraton', 'Gajah Mada menuntut pengantin putri dipersembahkan sebagai upeti takluk, memicu pertempuran heroik di lapangan Bubat.'],
-  ['Candi Penataran yang terletak di Blitar, Jawa Timur merupakan kompleks percandian peninggalan masa Kerajaan ...', 'Kediri dan Majapahit', 'Kutai dan Tarumanegara', 'Kalingga dan Pajajaran', 'Samudera Pasai dan Demak', 'Candi Penataran adalah candi pemujaan Dewa Siwa termegah di Jawa Timur dengan relief cerita Ramayana.'],
-  ['Kerajaan Kalingga (Holing) yang berpusat di pesisir utara Jawa Tengah sekitar abad ke-7 Masehi diperintah oleh seorang ratu yang sangat tegas dan adil bernama ...', 'Ratu Shima', 'Ratu Kalinyamat', 'Ratu Hemas', 'Ratu Ken Dedes', 'Ratu Shima menegakkan hukum tanpa pandang bulu; barang yang jatuh di jalan tidak ada yang berani mengambil.'],
-  ['Kitab Bharatayuddha yang sangat terkenal pada zaman Kerajaan Kediri digubah oleh dua orang pujangga sastra keraton yaitu ...', 'Mpu Sedah dan Mpu Panuluh', 'Mpu Prapanca dan Mpu Tantular', 'Mpu Kanwa dan Mpu Gandring', 'Mpu Sindok dan Mpu Walmiki', 'Kitab Bharatayuddha mengadaptasi epos Mahabharata ke dalam konteks perang saudara Jenggala-Kediri.'],
-  ['Kitab Arjuna Wiwaha yang ditulis pada masa pemerintahan Raja Airlangga digubah oleh pujangga keraton bernama ...', 'Mpu Kanwa', 'Mpu Prapanca', 'Mpu Tantular', 'Mpu Panuluh', 'Karya sastra kakawin Jawa Kuno pertama yang mengisahkan pertapaan Arjuna di Gunung Indrakila.'],
-  ['Struktur Candi Borobudur tersusun atas tiga tingkatan filosofis alam semesta menurut ajaran Buddha, yaitu dari bawah ke atas adalah ...', 'Kamadhatu, Rupadhatu, dan Arupadhatu', 'Bhur, Bhuwah, dan Swah', 'Sudra, Waisya, dan Ksatria', 'Nirwana, Samsara, dan Moksa', 'Kamadhatu (ranah nafsu duniawi), Rupadhatu (ranah wujud berbatas), Arupadhatu (ranah tanpa wujud spiritual murni).'],
-  ['Tiga candi utama pada Candi Prambanan didedikasikan untuk pemujaan Trimurti yaitu Dewa Brahma, Wisnu, dan Siwa. Peran Dewa Siwa dalam konsep Trimurti adalah sebagai dewa ...', 'Pelebur atau perusak alam semesta (Mahadewa)', 'Pencipta seluruh alam semesta', 'Pemelihara dan pelindung alam semesta', 'Penguasa samudra dan petir', 'Brahma adalah Sang Pencipta, Wisnu Sang Pemelihara, dan Siwa Sang Pelebur/Pengembali.'],
-  ['Masuknya kebudayaan Hindu-Buddha ke Nusantara melalui jalur perkawinan para pedagang India dengan wanita pribumi lokal dijelaskan oleh teori ...', 'Teori Waisya oleh N.J. Krom', 'Teori Ksatria oleh F.D.K. Bosch', 'Teori Brahmana oleh J.C. van Leur', 'Teori Arus Balik oleh George Coedes', 'Pedagang India (kasta Waisya) menetap menunggu angin muson dan menikah dengan penduduk setempat.'],
-  ['Teori Arus Balik yang dikemukakan oleh F.D.K. Bosch menyatakan bahwa penyebaran agama Hindu-Buddha di Nusantara didorong oleh ...', 'Inisiatif pemuda bumiputera yang berlayar belajar agama langsung ke India lalu pulang mengajarkannya di tanah air', 'Invasi militer besar-besaran tentara kaisar India', 'Pelarian kaum sudra yang melarikan diri dari sistem kasta di India', 'Kedatangan penjelajah bangsa Eropa menumpang kapal Portugis', 'Bukti pendirian asrama prasasti Nalanda membuktikan pelajar Nusantara aktif menuntut ilmu di India.'],
-  ['Pengaruh masuknya kebudayaan Hindu-Buddha pada sistem kepemimpinan tradisional di Nusantara adalah peralihan dari sistem ...', 'Primus inter pares (pemimpin adat suku) menjadi sistem monarki kerajaan dengan raja dianggap titisan dewa (dewa-raja)', 'Sistem demokrasi parlemen menjadi sistem republik presidensial', 'Sistem pemilihan umum menjadi sistem suku nomaden', 'Sistem kepala suku menjadi dewan musyawarah desa', 'Konsep dewa-raja memperkuat legitimasi kekuasaan mutlak raja sebagai wakil ilahi di muka bumi.'],
-  ['Candi peninggalan Kerajaan Singasari yang dibangun sebagai penghormatan terakhir bagi Raja Kertanegara yang mangkat akibat pemberontakan Jayakatwang adalah Candi ...', 'Singasari', 'Kidal', 'Jago', 'Tikus', 'Candi Singasari memperlihatkan perpaduan sinkretisme Hindu Siwa dan Buddha Tantrayana.'],
-  ['Relief Candi Sukuh dan Candi Cetho di lereng Gunung Lawu, Karanganyar, Jawa Tengah sangat unik karena arsitekturnya menyerupai ...', 'Piramida bertingkat suku Maya di Meksiko dengan patung-patung batu polos', 'Stupa lonceng raksasa di India selatan', 'Pagoda bertingkat delapan di Tiongkok', 'Kuil berkubah marmer di Yunani kuno', 'Masa akhir Majapahit mengalami re-indigenisasi arsitektur kembali ke bentuk punden berundak megalitikum lokal.'],
-  ['Peninggalan sejarah Kerajaan Tarumanegara yang ditemukan di Pandeglang Banten bertuliskan aksara Pallawa yang memuji keberanian Raja Purnawarman adalah Prasasti ...', 'Munjul (Cidanghiang)', 'Jambu', 'Kebon Kopi', 'Pasir Awi', 'Prasasti Cidanghiang terpahat pada batu besar di tepi Sungai Cidanghiang di Desa Lebak, Munjul.'],
-  ['Arca Joko Dolog yang berada di Surabaya merupakan arca perwujudan Raja Kertanegara dari Singasari dalam wujud Buddha ...', 'Aksobhya', 'Amitabha', 'Wairocana', 'Ratnasambhawa', 'Arca ini memuat prasasti Wurare yang menceritakan peristiwa pembagian tanah Jawa oleh Mpu Bharada.'],
-  ['Pelabuhan utama Kerajaan Majapahit di muara Sungai Brantas yang menjadi pintu gerbang perdagangan internasional adalah Pelabuhan ...', 'Hujung Galuh (Canggu)', 'Sunda Kelapa', 'Tuban', 'Barus', 'Canggu dan Hujung Galuh merupakan bandar transit perdagangan sungai pedalaman menuju laut lepas.'],
-  ['Bangunan candi di Jawa Timur pada umumnya berbeda dengan candi di Jawa Tengah. Ciri arsitektur candi Jawa Timur adalah ...', 'Terbuat dari batu bata merah, berbadan ramping ramping langsing, dan reliefnya berbentuk pipih mirip wayang kulit', 'Terbuat dari batu andesit kali yang sangat masif dan tambun', 'Selalu menghadap ke arah timur dengan puncak stupa bulat', 'Tidak memiliki relief maupun tangga masuk', 'Candi Jatim (seperti Candi Bajang Ratu, Tikus, Penataran) terbuat dari bata merah dengan figur relief simbolik.'],
-  ['Candi peninggalan Mataram Kuno di Jawa Tengah yang berwujud bangunan punden bertingkat batu andesit tertua di Indonesia adalah Candi ...', 'Candi Dieng di dataran tinggi Wonosobo/Banjarnegara', 'Candi Borobudur', 'Candi Prambanan', 'Candi Kalasan', 'Kompleks Dieng diperkirakan dibangun abad ke-7 hingga ke-8 Masehi dengan nama tokoh wayang (Arjuna, Bima, Gatotkaca).'],
-  ['Hubungan bilateral antara Kerajaan Majapahit dengan kerajaan-kerajaan di daratan Asia Tenggara (Siam, Champa, Kamboja) didasarkan pada konsep politik luar negeri ...', 'Mitreka Satata (sahabat sederajat yang saling menghormati)', 'Penjajahan koloni militer sepihak', 'Perang penaklukan upeti wajib', 'Penutupan pelabuhan secara isolasionis', 'Konsep Mitreka Satata memandang negara tetangga sebagai sahabat setara yang saling menguntungkan dalam perdagangan.'],
-  ['Upacara keagamaan Vratyastoma yang dilakukan oleh Raja Mulawarman dan pembesar Kerajaan Kutai bertujuan untuk ...', 'Penyucian diri bagi orang Nusantara asli agar masuk ke dalam sistem kasta agama Hindu', 'Memanggil hujan badai di musim kemarau', 'Merayakan panen padi di sepanjang Sungai Mahakam', 'Memilih permaisuri baru dari kalangan rakyat jelata', 'Vratyastoma adalah sakramen inisiasi purifikasi Hindu bagi individu non-Aryan agar diakui kasta ksatria.'],
-  ['Kerajaan Hindu di Jawa Barat yang didirikan oleh Prabu Siliwangi (Sri Baduga Maharaja) setelah runtuhnya Tarumanegara adalah Kerajaan ...', 'Pajajaran (Sunda)', 'Salakanagara', 'Galuh', 'Kalingga', 'Prasasti Batutulis Bogor mencatat kejayaan Sri Baduga Maharaja yang membangun parit kota Pakuan Pajajaran.'],
-  ['Kitab Pararaton (Kitab Raja-Raja) memuat legenda tentang pendiri Kerajaan Singasari yang bernama Ken Arok dan kutukan keris sakti buatan pandai besi ...', 'Mpu Gandring', 'Mpu Supo', 'Mpu Sedah', 'Mpu Bharada', 'Keris Mpu Gandring konon merenggut nyawa tujuh generasi keturunan penguasa Singasari.'],
-  ['Prasasti Canggal (732 M) di Gunung Wukir Magelang mencatat pendirian lingga pemujaan Siwa oleh raja pertama Dinasti Sanjaya yaitu Raja ...', 'Sanjaya', 'Sanna', 'Pikatan', 'Balitung', 'Prasasti Canggal merupakan tonggak awal catatan sejarah dinasti Sanjaya di Kerajaan Medang Mataram Kuno.'],
-  ['Prasasti Kalasan (778 M) mencatat pembangunan bangunan suci Candi Kalasan untuk memuja Dewi Tara yang didirikan atas prakarsa Raja ...', 'Panangkaran (Rakai Panangkaran)', 'Rakai Pikatan', 'Dyah Balitung', 'Samaratungga', 'Pemujaan Dewi Tara menunjukkan pengaruh kuat Dinasti Syailendra Buddha Mahayana di Jawa Tengah.'],
-  ['Sistem birokrasi pemerintahan Kerajaan Majapahit mengenal lembaga penasihat raja yang beranggotakan para kerabat sepuh keluarga raja yang disebut ...', 'Bhattara Saptaprabhu', 'Rakryan Mantri ri Pakira-kiran', 'Dharmadhyaksa ring Kasewan', 'Pasukan Bhayangkara', 'Saptaprabhu bertindak seperti dewan pertimbangan agung istana dalam memutuskan kebijakan strategis kerajaan.'],
-  ['Jabatan menteri keagamaan pada masa Majapahit yang mengurus urusan keagamaan Buddha Mahayana disebut ...', 'Dharmadhyaksa ring Kasogatan', 'Dharmadhyaksa ring Kasewan', 'Maha Patih Amangkubhumi', 'Tumenggung Wadana', 'Kasogatan membina umat Buddha, sedangkan Kasewan mengurus urusan agama Hindu Siwa.'],
-  ['Prasasti Dinoyo (760 M) yang ditemukan di Malang Jawa Timur mencatat keberadaan sebuah kerajaan Hindu tertua di Jawa Timur yaitu Kerajaan ...', 'Kanjuruhan dengan rajanya Gajayana', 'Kediri', 'Jenggala', 'Singasari', 'Prasasti Dinoyo memuat pendirian candi pemujaan Dewa Agastya yang dipahat pada batu bertulis Sanskerta.'],
-  ['Mata uang logam kuno peninggalan Kerajaan Majapahit yang terbuat dari perunggu dengan lubang kotak di tengahnya disebut ...', 'Uang Gobog (Kepeng)', 'Uang Dirham', 'Uang Dinar', 'Uang Gulden', 'Uang gobog digunakan sebagai alat transaksi perdagangan sehari-hari serta pelengkap sesaji ritual.'],
-  ['Pemberontakan Sadeng dan Keta pada tahun 1331 masehi di pesisir timur Jawa Timur berhasil dipadamkan oleh seorang perwira muda yang kemudian diangkat menjadi Patih Amangkubhumi, yaitu ...', 'Gajah Mada', 'Arya Damar', 'Nambi', 'Kebo Iwa', 'Keberhasilan menundukkan Sadeng membuktikan kecakapan kepemimpinan militer Gajah Mada di hadapan Ratu Tribhuwana.'],
-  ['Prasasti Kota Kapur yang ditemukan di Pulau Bangka bertarikh 686 Masehi membuktikan bahwa Kerajaan Sriwijaya telah menguasai jalur timur dengan ...', 'Melakukan ekspedisi militer menaklukkan wilayah pulau Bangka dan tanah Jawa', 'Menyerahkan pulau Bangka kepada perompak laut', 'Menjual rempah-rempah langsung ke Afrika', 'Membangun tambang timah tertua di dunia', 'Prasasti memuat doa kutukan bagi yang menolak kekuasaan Datu Sriwijaya saat menaklukkan Bhumi Jawa.'],
-  ['Arca Prajnaparamita peninggalan Kerajaan Singasari yang sangat indah dan halus melambangkan dewi kebijaksanaan transendental dipercaya sebagai arca perwujudan dari ...', 'Ken Dedes (Ibu pertiwi para raja Singasari dan Majapahit)', 'Putri Dyah Pitaloka', 'Ratu Shima', 'Tribhuwana Tunggadewi', 'Ken Dedes dijuluki wanita Nareswari yang menurunkan garis trah raja-raja besar di tanah Jawa.']
+  [
+    "Perbandingan antara jarak yang tertera pada peta dengan jarak sebenarnya di permukaan bumi disebut ...",
+    "Skala peta",
+    "Garis bujur",
+    "Garis lintang",
+    "Legenda peta",
+    "Contoh skala 1 : 100.000 artinya 1 cm pada peta mewakili 100.000 cm (1 km) pada jarak sesungguhnya."
+  ],
+  [
+    "Jika jarak Kota A ke Kota B pada peta adalah 4 cm dan skala peta adalah 1 : 250.000, maka jarak sesungguhnya antara kedua kota tersebut adalah ...",
+    "10 kilometer",
+    "4 kilometer",
+    "25 kilometer",
+    "100 kilometer",
+    "Jarak sebenarnya = 4 cm × 250.000 = 1.000.000 cm = 10 km."
+  ],
+  [
+    "Peta kecil tambahan yang diletakkan di sudut atau tepi peta utama untuk memperjelas letak wilayah yang dipetakan disebut ...",
+    "Inset peta",
+    "Indeks peta",
+    "Garis astronomis",
+    "Simbol peta",
+    "Inset membantu pembaca mengetahui posisi wilayah relatif terhadap pulau atau negara yang lebih luas."
+  ],
+  [
+    "Garis khayal melintang pada peta dan globe yang sejajar dengan garis khatulistiwa disebut garis ...",
+    "Lintang",
+    "Bujur",
+    "Meridian",
+    "Kontur",
+    "Garis lintang membagi bumi menjadi belahan bumi utara dan belahan bumi selatan."
+  ],
+  [
+    "Garis khayal membujur pada peta yang menghubungkan kutub utara dan kutub selatan bumi disebut garis ...",
+    "Bujur atau Meridian",
+    "Lintang",
+    "Ekuator",
+    "Khatulistiwa",
+    "Garis bujur digunakan untuk menentukan pembagian zona waktu di berbagai belahan dunia."
+  ],
+  [
+    "Kenampakan alam pegunungan vulkanik di Indonesia memiliki dampak positif bagi sektor pertanian di sekitarnya karena ...",
+    "Abu vulkanik hasil letusan gunung api menyuburkan tanah pertanian",
+    "Gunung berapi mencegah terjadinya hujan lebat",
+    "Lahar gunung berapi dapat membunuh semua hama tanaman seketika",
+    "Suhu di dekat kawah gunung membuat buah matang lebih cepat",
+    "Pelapukan abu dan batuan vulkanik menghasilkan tanah andosol yang sangat kaya unsur hara mineral."
+  ],
+  [
+    "Kawasan hutan bakau (mangrove) yang tumbuh di sepanjang garis pantai berlumpur memiliki fungsi alami penting yaitu ...",
+    "Mencegah abrasi atau pengikisan pantai oleh hantaman gelombang air laut",
+    "Mengubah air laut menjadi air tawar yang bisa langsung diminum",
+    "Menghilangkan badai angin di tengah samudra luas",
+    "Menjadi tempat berteduh bagi kapal pesiar besar",
+    "Akar tunjang mangrove menahan sedimen lumpur pantai dan meredam energi gelombang pasang."
+  ],
+  [
+    "Danau alami yang terbentuk akibat letusan gunung berapi dahsyat yang menyisakan kawah cekungan besar berisi air dinamakan danau ...",
+    "Vulkanik",
+    "Tektonik",
+    "Karst",
+    "Buatan",
+    "Contoh danau vulkanik adalah Danau Kalimutu di NTT dan Danau Maninjau di Sumatera Barat."
+  ],
+  [
+    "Danau alami yang terbentuk akibat pergeseran atau patahan lempeng kerak bumi dinamakan danau ...",
+    "Tektonik",
+    "Vulkanik",
+    "Gletser",
+    "Laguna",
+    "Contoh danau tektonik di Indonesia adalah Danau Poso, Danau Towuti, dan Danau Matano di Sulawesi."
+  ],
+  [
+    "Danau Toba di Sumatera Utara tergolong danau istimewa karena terbentuk dari kombinasi letusan gunung api dan pergeseran lempeng bumi yang disebut danau ...",
+    "Vulkano-tektonik",
+    "Karst kapur",
+    "Gletser es",
+    "Oxbow lake",
+    "Letusan supervolcano Toba puluhan ribu tahun lalu disertai amblasnya lantai kaldera membentuk danau raksasa."
+  ],
+  [
+    "Kenampakan bentang alam berupa lembah yang sangat dalam dan berdinding curam sempit peninggalan patahan geologi seperti Ngarai Sianok terdapat di provinsi ...",
+    "Sumatera Barat",
+    "Jawa Tengah",
+    "Kalimantan Barat",
+    "Sulawesi Utara",
+    "Ngarai Sianok di Bukittinggi menyajikan pemandangan tebing curam indah yang menjadi ikon wisata Sumbar."
+  ],
+  [
+    "Sungai-sungai di Pulau Kalimantan umumnya berukuran sangat panjang, lebar, dan berarus tenang di dataran rendah sehingga masyarakat memanfaatkannya sebagai ...",
+    "Jalur transportasi kapal antar-pedalaman dan pasar terapung",
+    "Tempat bermain ski air dan selancar ombak",
+    "Lokasi pembangkit listrik tenaga angin",
+    "Arena pacuan kuda tradisional",
+    "Sungai Kapuas, Barito, dan Mahakam sejak dahulu menjadi urat nadi perhubungan utama warga pedalaman Kalimantan."
+  ],
+  [
+    "Sungai-sungai di Pulau Jawa dan Sumatera yang memiliki jeram berarus deras di lereng pegunungan banyak dimanfaatkan pemerintah untuk ...",
+    "Pembangkit Listrik Tenaga Air (PLTA) dan irigasi persawahan",
+    "Peternakan ikan paus dan lumba-lumba laut",
+    "Penambangan minyak bumi lepas pantai",
+    "Jalur pelayaran kapal pesiar internasional",
+    "Arus deras sungai dibendung menjadi waduk (seperti Waduk Jatiluhur dan Cirata) untuk memutar turbin listrik."
+  ],
+  [
+    "Kenampakan alam pegunungan kapur yang memiliki banyak gua bawah tanah, sungai bawah tanah, dan batu stalaktit dinamakan kawasan ...",
+    "Karst",
+    "Aluvial",
+    "Gambut",
+    "Vulkanik",
+    "Contoh kawasan karst di Indonesia adalah Pegunungan Sewu di Gunungkidul Yogyakarta hingga Pacitan Jawa Timur."
+  ],
+  [
+    "Dataran Tinggi Dieng yang terletak di Provinsi Jawa Tengah terkenal memiliki kenampakan alam unik berupa ...",
+    "Kawah belerang panas, telaga warna, dan candi peninggalan sejarah",
+    "Gurun pasir putih terluas di Asia",
+    "Pantai berpasir hitam dengan ombak tsunami",
+    "Hutan cemara bersalju tebal sepanjang tahun",
+    "Dieng berada pada ketinggian 2.000 mdpl dengan udara dingin dan kawah vulkanik Sikidang yang mengeluarkan uap."
+  ],
+  [
+    "Penduduk yang bermukim di daerah pesisir pantai sebagian besar bekerja pada mata pencaharian ...",
+    "Nelayan, petani tambak garam, dan pemandu wisata pantai",
+    "Petani sayur kol dan pemetik daun teh",
+    "Penambang batu bara bawah tanah",
+    "Peternak sapi perah pegunungan",
+    "Kondisi geografis pantai menyediakan kekayaan sumber daya ikan laut, tambak garam, dan potensi wisata bahari."
+  ],
+  [
+    "Masyarakat yang tinggal di daerah dataran tinggi pedesaan umumnya mengandalkan mata pencaharian di sektor ...",
+    "Perkebunan sayuran, buah-buahan, tanaman teh, dan kopi",
+    "Pembuatan garam laut dan budidaya rumput laut",
+    "Industri galangan kapal pesiar",
+    "Penangkapan ikan cumi dan tongkol di laut",
+    "Suhu yang sejuk dan tanah vulkanik subur di dataran tinggi sangat cocok bagi budidaya hortikultura."
+  ],
+  [
+    "Masyarakat yang mendiami kawasan dataran rendah perkotaan cenderung bekerja pada mata pencaharian di bidang ...",
+    "Pekerja industri pabrik, pegawai perkantoran, dan perdagangan jasa",
+    "Petani teh dan kopi dataran tinggi",
+    "Penyelam mutiara laut dalam",
+    "Penebang pohon kayu jati tradisional",
+    "Dataran rendah memudahkan pembangunan infrastruktur jalan, perumahan, kawasan industri, dan perkantoran modern."
+  ],
+  [
+    "Danau buatan berukuran raksasa yang dibuat manusia dengan cara membendung aliran air sungai dinamakan ...",
+    "Waduk atau Bendungan",
+    "Rawa gambut",
+    "Muara sungai",
+    "Teluk pesisir",
+    "Contoh waduk di Indonesia antara lain Waduk Gajah Mungkur, Waduk Karangkates, dan Waduk Jatiluhur."
+  ],
+  [
+    "Manfaat ganda dari pembangunan waduk (bendungan) air bagi kehidupan masyarakat sekitar adalah ...",
+    "Menyediakan pasokan air irigasi sawah sepanjang musim, mencegah bahaya banjir, dan sumber energi PLTA",
+    "Menghilangkan semua air hujan di musim kemarau",
+    "Membuat semua ikan sungai pindah ke samudra",
+    "Mencegah terjadinya gempa bumi di daerah sekitar",
+    "Waduk menampung kelebihan debit air saat musim hujan dan melepaskannya secara teratur untuk sawah dan turbin listrik."
+  ],
+  [
+    "Hutan sabana berupa padang rumput luas yang diselingi sedikit pepohonan banyak dijumpai di kawasan kepulauan Indonesia bagian ...",
+    "Nusa Tenggara (NTT dan NTB)",
+    "Sumatera bagian barat",
+    "Kalimantan bagian utara",
+    "Bangka Belitung",
+    "Curah hujan yang relatif rendah di Nusa Tenggara membentuk bentang alam sabana yang cocok untuk peternakan kuda dan sapi."
+  ],
+  [
+    "Tanah gambut yang banyak ditemukan di kawasan rawa-rawa pesisir Sumatera dan Kalimantan terbentuk dari ...",
+    "Akumulasi sisa-sisa tumbuhan dan dedaunan yang membusuk lambat di genangan air asam",
+    "Abu letusan gunung berapi yang baru meletus",
+    "Hancuran cangkang kerang laut di tepi pantai",
+    "Lelehan batuan magma dari dalam inti bumi",
+    "Lahan gambut basah menyimpan cadangan karbon raksasa dan menyerap air hujan seperti spons alami."
+  ],
+  [
+    "Salah satu penyebab utama terjadinya bencana tanah longsor di kawasan perbukitan terjal adalah ...",
+    "Penebangan hutan lindung secara liar dan alih fungsi lereng menjadi bangunan tanpa terasering",
+    "Pemasangan tiang bendera di halaman rumah warga",
+    "Penanaman bibit pohon beringin di hutan lindung",
+    "Pemberian pupuk kompos pada tanaman bunga pekarangan",
+    "Akar pohon berfungsi mengikat butiran tanah; jika pohon ditebang, tanah lereng mudah jenuh air hujan lalu ambrol meluncur."
+  ],
+  [
+    "Upaya bijak yang dapat dilakukan siswa untuk menjaga kelestarian bentang alam sungai di sekitar lingkungan sekolah adalah ...",
+    "Tidak membuang sampah plastik dan limbah ke dalam saluran air sungai",
+    "Mengeringkan seluruh air sungai dengan pompa air besar",
+    "Menimbun aliran sungai dengan batu dan semen",
+    "Menangkap semua ikan di sungai dengan obat racun kimia",
+    "Menjaga kebersihan sungai mencegah pendangkalan, pencemaran air, dan luapan banjir saat hujan deras."
+  ],
+  [
+    "Rawa air tawar di pedalaman seringkali memiliki ciri khas berupa ...",
+    "Genangan air tenang yang dipenuhi vegetasi tumbuhan air seperti eceng gondok dan teratai",
+    "Airnya memiliki rasa asin pekat seperti air samudra",
+    "Dikelilingi oleh pohon kurma dan kaktus gurun",
+    "Dasarnya tersusun dari batuan marmer putih mengkilap",
+    "Rawa air tawar menjadi habitat penting bagi berbagai jenis burung air, ikan rawa, dan katak."
+  ],
+  [
+    "Pegunungan Jayawijaya di Provinsi Papua merupakan kenampakan alam yang sangat unik di wilayah ekuator tropis karena ...",
+    "Memiliki puncak tertinggi (Puncak Jaya) yang diselimuti tutupan salju es abadi",
+    "Memiliki kawah gunung berapi terpanas di dunia",
+    "Tidak pernah terkena sinar matahari siang hari",
+    "Seluruh batuannya terbuat dari batangan emas murni",
+    "Ketinggian Puncak Jaya mencapai 4.884 meter dpl di mana suhu udara sangat dingin memungkinkan terbentuknya gletser tropis."
+  ],
+  [
+    "Kenampakan alam buatan yang dibuat manusia untuk menghubungkan dua daratan yang terpisah oleh sungai atau selat adalah ...",
+    "Jembatan (seperti Jembatan Suramadu dan Jembatan Ampera)",
+    "Kanal irigasi sawah",
+    "Pelabuhan kontainer",
+    "Stasiun kereta api",
+    "Jembatan Suramadu menghubungkan Pulau Jawa dan Madura melintasi Selat Madura memperlancar roda transportasi."
+  ],
+  [
+    "Pelabuhan Tanjung Priok di Jakarta dan Pelabuhan Tanjung Perak di Surabaya merupakan contoh kenampakan buatan yang berfungsi sebagai ...",
+    "Pintu gerbang transportasi dan perdagangan kapal laut antarpulau dan mancanegara",
+    "Tempat latihan terjun payung militer",
+    "Pabrik perakitan pesawat terbang supersonik",
+    "Tempat pembibitan tanaman padi hibrida",
+    "Pelabuhan laut menyediakan dermaga kapal kargo, terminal peti kemas, dan layanan bongkar muat barang niaga."
+  ],
+  [
+    "Bandar udara internasional seperti Soekarno-Hatta di Banten dan I Gusti Ngurah Rai di Bali dibangun di dataran rendah yang luas dengan tujuan ...",
+    "Menyediakan landasan pacu pesawat yang datar, panjang, dan bebas dari rintangan bukit tinggi",
+    "Menghindari tiupan angin agar pesawat tidak terbang",
+    "Memudahkan pesawat mendarat di atas perairan danau",
+    "Mencegah suara pesawat terdengar oleh penumpang",
+    "Topografi dataran rendah memberikan ruang aman bagi manuver lepas landas dan pendaratan pesawat udara."
+  ],
+  [
+    "Garis kontur pada peta topografi pegunungan adalah garis khayal yang menghubungkan ...",
+    "Tempat-tempat yang memiliki ketinggian yang sama di atas permukaan laut",
+    "Kota-kota yang memiliki jumlah penduduk yang sama",
+    "Sungai-sungai yang memiliki kedalaman yang sama",
+    "Jalan raya yang dibangun pada tahun yang sama",
+    "Semakin rapat jarak antar-garis kontur, berarti lereng bentang alam tersebut semakin terjal curam."
+  ],
+  [
+    "Daerah Aliran Sungai (DAS) bagian hilir yang mendekati muara laut biasanya ditandai dengan ciri fisik ...",
+    "Arus air mengalir tenang dan berkelok-kelok (meander) membawa endapan lumpur halus",
+    "Arus air berbusa deras dengan batu-batu kali raksasa tajam",
+    "Banyak dijumpai air terjun bertingkat yang tinggi",
+    "Suhu air membeku menjadi es balok",
+    "Di daerah hilir, erosi menyamping mendominasi dan mengendapkan lumpur subur di dataran banjir pesisir."
+  ],
+  [
+    "Kenampakan alam air terjun (curug) yang banyak ditemukan di kawasan hulu sungai pegunungan terbentuk akibat ...",
+    "Patahan lapisan batuan sungai yang memiliki perbedaan kekerasan dan ketinggian terjal",
+    "Manusia memompa air sungai naik ke atas pohon",
+    "Air laut pasang yang meluap ke lereng bukit",
+    "Letusan gunung berapi yang memuntahkan air tawar",
+    "Air mengikis batuan lunak lebih cepat dibanding batuan keras membentuk tebing curam tempat air jatuh bebas."
+  ],
+  [
+    "Tujuan utama pemerintah menetapkan kawasan hutan tertentu sebagai \"Taman Nasional\" atau \"Hutan Lindung\" adalah ...",
+    "Melindungi keanekaragaman flora, fauna endemik, dan menjaga fungsi daerah resapan air bagi kehidupan",
+    "Menebang seluruh pohon kayu untuk dijual ke luar negeri",
+    "Membangun kawasan mal dan perumahan mewah di tengah hutan",
+    "Mengusir seluruh satwa liar keluar dari kawasan rimba",
+    "Taman nasional menjaga keseimbangan ekosistem alami dan mencegah ancaman kepunahan keanekaragaman hayati nusantara."
+  ],
+  [
+    "Fenomena embun es atau embun upas yang sering menyelimuti tanaman kentang di Dataran Tinggi Dieng pada musim kemarau terjadi karena ...",
+    "Suhu udara di permukaan tanah pada dini hari turun drastis mendekati atau di bawah 0 derajat Celsius",
+    "Ada truk pembawa es batu yang terguling di kebun warga",
+    "Angin badai salju bertiup dari benua Amerika",
+    "Matahari tidak terbit di Dieng selama satu minggu",
+    "Pelepasan radiasi panas bumi berlangsung cepat ke langit bersih tanpa awan di malam hari musim kemarau."
+  ],
+  [
+    "Jalan raya di kawasan lereng pegunungan terjal sengaja dibangun berkelok-kelok menyerupai huruf S (seperti Kelok 9 di Sumbar) dengan tujuan ...",
+    "Mengurangi kecuraman tanjakan lereng sehingga kendaraan bermotor lebih bertenaga dan aman mendaki",
+    "Membuat jarak perjalanan menjadi sepuluh kali lebih jauh",
+    "Menghalangi pemandangan indah jurang pegunungan",
+    "Menyediakan tempat berhenti bagi pedagang asongan di setiap tikungan",
+    "Jalan berkelok memanfaatkan prinsip bidang miring untuk memperkecil gaya kuasa yang dibutuhkan mesin kendaraan."
+  ],
+  [
+    "Salah satu upaya konservasi tanah pada lahan pertanian berlereng miring selain terasering adalah \"penanaman tanaman penutup tanah\" (cover crops) yang berfungsi ...",
+    "Menahan butiran tanah agar tidak mudah terlepas dan hanyut terbawa tetesan air hujan lebat",
+    "Membuat tanah menjadi keras seperti semen beton",
+    "Menghentikan proses fotosintesis rumput liar",
+    "Menarik kawanan ulat pemakan daun datang ke kebun",
+    "Daun dan akar tanaman penutup meredam energi kinetik air hujan dan memperbaiki porositas struktur tanah."
+  ],
+  [
+    "Selat Malaka yang memisahkan Pulau Sumatera dengan Semenanjung Malaysia memiliki kedudukan bentang alam perairan yang sangat strategis di dunia karena ...",
+    "Merupakan salah satu jalur pelayaran niaga kapal internasional tersibuk yang menghubungkan Samudra Hindia dan Pasifik",
+    "Merupakan selat terpanjang yang tidak memiliki air laut",
+    "Menjadi satu-satunya tempat hidup ikan paus biru di dunia",
+    "Tidak boleh dilewati oleh kapal dagang mancanegara",
+    "Posisi geostrategis Selat Malaka menjadikan kawasan maritim kepulauan Indonesia sebagai persimpangan lalu lintas niaga dunia."
+  ],
+  [
+    "Wilayah perairan laut dangkal di bagian barat Indonesia yang dahulunya pernah menyatu dengan benua Asia pada zaman es dinamakan ...",
+    "Paparan Sunda (Sunda Shelf)",
+    "Paparan Sahul",
+    "Palung Mariana",
+    "Zona Wallacea",
+    "Paparan Sunda mencakup Laut Jawa, Selat Malaka, dan Laut Natuna dengan kedalaman rata-rata kurang dari 200 meter."
+  ],
+  [
+    "Wilayah perairan laut dangkal di bagian timur Indonesia yang menyatukan Pulau Papua dengan benua Australia pada zaman es dinamakan ...",
+    "Paparan Sahul (Sahul Shelf)",
+    "Paparan Sunda",
+    "Palung Sunda",
+    "Selat Makassar",
+    "Paparan Sahul menyebabkan kesamaan jenis flora dan fauna di Papua dengan fauna benua Australia (fauna Australis)."
+  ],
+  [
+    "Lubang kepundan atau kawah gunung api yang sudah mati dan terisi oleh air hujan dalam jangka waktu puluhan tahun dinamakan danau ...",
+    "Kawah (Kaldera)",
+    "Laguna pantai",
+    "Waduk serbaguna",
+    "Empang ikan",
+    "Air danau kawah seringkali mengandung mineral belerang alami dan memiliki warna air yang indah kehijauan atau kebiruan."
+  ]
 ];
-
 const sulit = [
-  ['Prasasti Nalanda di India bertarikh 860 Masehi mencatat bahwa Raja Balaputradewa dari Suwarnadwipa (Sriwijaya) mendirikan sebuah biara asrama pelajar di Universitas Nalanda. Hal ini membuktikan bahwa ...', 'Sriwijaya menjalin hubungan diplomatik dan kebudayaan internasional tingkat tinggi serta mendanai pendidikan warganya di pusat studi agama Buddha dunia', 'Raja Balaputradewa menaklukkan seluruh daratan anak benua India dengan armada perang', 'Sriwijaya kekurangan guru agama sehingga harus membeli asrama di India', 'Universitas Nalanda tunduk di bawah kendali administrasi istana Palembang', 'Raja Dewapaladewa dari Dinasti Pala India membebaskan pajak 5 desa untuk membiayai operasional biara Sriwijaya.'],
-  ['Konsep kosmologi mandala pada arsitektur Candi Borobudur mencerminkan peta alam semesta spiritual. Jika dilihat dari atas dengan pandangan tegak lurus (bird-eye view), denah arsitektur Candi Borobudur membentuk pola ...', 'Bujur sangkar bertingkat dengan empat pintu gerbang di empat penjuru mata angin mengelilingi lingkaran stupa pusat (Bujur sangkar mandala)', 'Bentuk bintang segi delapan tanpa pintu masuk', 'Segitiga sama sisi yang memanjang ke arah barat', 'Spiral melingkar tanpa sudut siku', 'Denah mandala Tantrayana melambangkan integrasi makrokosmos alam semesta dengan mikrokosmos kesadaran manusia.'],
-  ['Salah satu penyebab utama kegagalan penaklukan Kerajaan Sunda Pajajaran oleh Majapahit meskipun wilayah Nusantara lainnya telah tunduk adalah hubungan genealogis di mana ...', 'Para penguasa Sunda dipandang sebagai kerabat leluhur satu darah oleh keluarga raja Majapahit (garis keturunan Raden Wijaya)', 'Pasukan Sunda memiliki senjata meriam api yang dibeli dari Inggris', 'Benteng Pajajaran dibangun dari baja anti peluru', 'Majapahit tidak memiliki perahu layar untuk menyeberangi Selat Sunda', 'Hubungan persaudaraan darah trah kakek buyut membuat Majapahit tidak menempuh jalur aneksasi militer ofensif.'],
-  ['Ketika Kaisar Kubilai Khan dari Dinasti Yuan Tiongkok mengirimkan utusan bernama Meng Qi ke Singasari pada 1289 menuntut upeti takluk, Raja Kertanegara merespons dengan tindakan berani yaitu ...', 'Melukai dan memotong telinga Meng Qi lalu mengusirnya pulang sebagai penolakan tegas terhadap hegemoni Mongol', 'Menyerahkan separuh emas di kas kerajaan Singasari', 'Memeluk agama Konghucu seketika di hadapan utusan', 'Menjadikan Meng Qi sebagai perdana menteri Singasari', 'Kertanegara menegaskan kedaulatan Nusantara setara dan menentang imperialisme Mongol di Asia Tenggara.'],
-  ['Raden Wijaya berhasil mendirikan Majapahit dengan memanfaatkan taktik adu domba cerdas terhadap pasukan ekspedisi tentara Tartar (Mongol) yang dikirim Kubilai Khan ke Jawa, yaitu dengan cara ...', 'Mengajak tentara Mongol menghancurkan Jayakatwang di Kediri, lalu berbalik menyerang dan mengusir tentara Mongol yang sedang lengah berpesta', 'Membayar tentara Mongol dengan rempah-rempah agar pulang', 'Menenggelamkan seluruh kapal Mongol di pelabuhan Tuban sebelum mendarat', 'Meminta bantuan tentara Portugis dari Malaka', 'Setelah musuh bersama (Kediri) hancur, Raden Wijaya melancarkan serangan gerilya mendadak mendesak sisa pasukan Mongol melarikan diri ke laut.'],
-  ['Prasasti Mantyasih (907 M) yang dikeluarkan oleh Raja Dyah Balitung dari Mataram Kuno sangat penting bagi penulisan historiografi sejarah Jawa karena memuat ...', 'Daftar silsilah urutan raja-raja Mataram Kuno pendahulu Dyah Balitung sejak zaman Rakai Mataram Sang Ratu Sanjaya', 'Undang-undang pidana hukuman pancung pencuri kerbau', 'Catatan pembelian rempah cengkih dari Maluku', 'Surat perjanjian perdamaian dengan dinasti Abbasiyah', 'Prasasti Mantyasih (Timbangan Emas) menjadi rujukan primer para sejarawan menyusun kronologi raja Medang.'],
-  ['Toleransi beragama yang sangat tinggi pada masa Mataram Kuno di Jawa Tengah terbukti secara nyata melalui pernikahan politik antara ...', 'Rakai Pikatan yang beragama Hindu Siwa dengan Pramodawardhani yang beragama Buddha Mahayana', 'Mpu Sindok dengan putri dari kerajaan Champa', 'Airlangga dengan putri dari Sriwijaya', 'Kertanegara dengan Ratu Shima', 'Pernikahan lintas agama ini melahirkan harmoni pembangunan Candi Plaosan (perpaduan Hindu-Buddha) dan penyelesaian Prambanan-Borobudur.'],
-  ['Sistem perpajakan pada zaman Majapahit mengenal istilah "Sima" (Tanah Perdikan). Yang dimaksud dengan tanah Sima adalah sebidang tanah atau desa yang ...', 'Diberikan status bebas pajak oleh raja karena penduduknya berjasa merawat bangunan suci keagamaan atau berjasa besar bagi negara', 'Seluruh hasil buminya disita 100% oleh permaisuri raja', 'Hanya boleh ditanami tanaman tembakau dan kopi', 'Dikelilingi oleh tembok benteng penjara militer', 'Prasasti batu penetapan sima memuat batas desa, hak istimewa pamor, dan kutukan bagi pejabat penarik pajak ilegal.'],
-  ['Pemberontakan Nambi (1316 M) pada masa pemerintahan Jayanegara di Majapahit dipicu oleh fitnah adu domba licik dari seorang pejabat keraton ambisius yang bernama ...', 'Mahapati (Dyah Halayudha)', 'Gajah Mada', 'Arya Wiraraja', 'Lembu Sora', 'Halayudha mengadu domba para ksatria pendiri Majapahit (Ranggalawe, Sora, Nambi) agar tersingkir demi jabatan patih.'],
-  ['Dalam struktur masyarakat maritim Sriwijaya, komunitas pelaut pengembara laut yang berperan vital menjaga keamanan armada perdagangan dari bajak laut dan mengawal kapal asing ke Palembang adalah ...', 'Orang Laut (Suku Laut / Orang Selat)', 'Pasukan Tartar', 'Kaum Brahmana Kamboja', 'Pedagang Gujerat', 'Loyalitas Orang Laut kepada Datu Sriwijaya menjadi pilar utama tegaknya supremasi hegemoni kelautan Selat Malaka.'],
-  ['Peninggalan berupa arca Trimurti di Candi Ciaruteun dan arca Dewa Wisnu berlengan empat di Jawa Barat membuktikan bahwa corak agama Hindu yang berkembang di Kerajaan Tarumanegara adalah aliran ...', 'Hindu Waisnawa (pemuja Dewa Wisnu)', 'Hindu Siwaistik Tantris', 'Hindu Brahma monoteis', 'Buddha Hinayana kuno', 'Purnawarman diidentifikasikan secara konsisten sebagai penjelmaan perlindungan Dewa Wisnu bagi rakyatnya.'],
-  ['Prasasti Siwagrha (856 M) yang ditemukan di dekat Prambanan mencatat peristiwa peresmian candi Siwa megah di tepi sungai Opak yang dialihkan alirannya, candi yang dimaksud para arkeolog adalah ...', 'Candi Prambanan (Loro Jonggrang)', 'Candi Sambisari', 'Candi Gebang', 'Candi Ijo', 'Prasasti Siwagrha mendeskripsikan gugusan candi agung Trimurti dengan patung Siwa Mahadewa setinggi 3 meter.'],
-  ['Mpu Bharada terbang di angkasa membagi tanah Jawa menjadi Jenggala dan Panjalu pada tahun 1042 Masehi menggunakan kendi air suci. Peristiwa ini direkam dalam kitab ...', 'Kitab Calon Arang dan Kakawin Desawarnana', 'Kitab Smaradahana', 'Kitab Hariwangsa', 'Kitab Gatotkacasraya', 'Cerita Calon Arang di masa Raja Airlangga memuat konflik spiritual pertarungan ilmu hitam dengan kesaktian Mpu Bharada.'],
-  ['Salah satu peninggalan Candi Majapahit yang berfungsi sebagai kolam pemandian para putri istana dan tempat penampungan air bersih di Trowulan adalah ...', 'Candi Tikus', 'Candi Bajang Ratu', 'Candi Brahu', 'Candi Wringin Lawang', 'Candi Tikus berada di bawah permukaan tanah berstruktur batu bata merah dengan miniatur Gunung Mahameru.'],
-  ['Gerbang masuk keraton Majapahit bertipe candi bentar (gerbang terbelah dua tanpa atap penghubung) yang masih berdiri kokoh di Trowulan adalah ...', 'Candi Wringin Lawang', 'Gapura Bajang Ratu', 'Candi Sukuh', 'Candi Dadi', 'Wringin Lawang (pintu beringin) adalah mahakarya seni bata merah Majapahit bertipe candi bentar penyambut tamu.'],
-  ['Kitab Pararaton menyebutkan bahwa Ken Arok memperistri Ken Dedes setelah membunuh penguasa Tumapel (akuwu) yang bernama ...', 'Tunggul Ametung', 'Kertajaya', 'Anusapati', 'Arya Wiraraja', 'Pembunuhan Tunggul Ametung menggunakan keris sakti buatan Mpu Gandring mengawali dinasti Rajasa Singasari.'],
-  ['Prasasti Muara Cianten di Bogor menampilkan pahatan unik yang belum dapat dibaca secara tuntas oleh epigraf karena ditulis dengan ...', 'Aksara ikal (huruf sangka) yang menyerupai sulur-suluran tumbuhan tanpa konsonan standar', 'Huruf kanji Tiongkok kuno dinasti Ming', 'Huruf Arab Melayu gundul pegon', 'Huruf hieroglif Mesir kuno', 'Aksara ikal kriptis merepresentasikan mantra suci simbolik perlindungan spiritual wilayah perbatasan Tarumanegara.'],
-  ['Pada masa kejayaan Majapahit, sistem peradilan dan hukum pidana perdata tertulis diatur secara ketat dalam kitab perundang-undangan kerajaan yang bernama ...', 'Kitab Kutaramanawa (Agama)', 'Kitab Negarakertagama', 'Kitab Pararaton', 'Kitab Sutasoma', 'Kutaramanawa disusun oleh Mahapatih Gajah Mada mengadaptasi prinsip hukum Hindu Manawadharmasastra ke hukum adat Jawa.'],
-  ['Upacara Asymaweda (pelepasan kuda suci) yang dilakukan oleh raja-raja Hindu kuno di Nusantara seperti di Kutai dan Tarumanegara bertujuan untuk ...', 'Menetapkan batas luas wilayah kekuasaan kerajaan sejauh kuda suci berlari bebas tanpa ada yang menghalangi', 'Mencari kuda terkuat untuk dijadikan makanan raja', 'Menghibur rakyat di pasar malam tahunan', 'Mengirimkan surat diplomatik ke kerajaan tetangga', 'Daerah yang dilintasi kuda suci selama setahun diklaim menjadi kedaulatan raja yang menyelenggarakan upacara.'],
-  ['Kemunduran peranan Kerajaan Sriwijaya pada abad ke-11 masehi diawali oleh serangan militer besar-besaran dari dinasti maritim India selatan yaitu serangan ...', 'Kerajaan Cola (Chola) di bawah pimpinan Raja Rajendra Chola I pada tahun 1025 Masehi', 'Kekaisaran Romawi Kuno', 'Pasukan Mongol Kubilai Khan', 'Kerajaan Safawiyah Persia', 'Serangan armada Colamandala memorak-porandakan bandar Sriwijaya dan menawan raja Sri Sanggrama Wijayatunggawarman.']
+  [
+    "Pada peta berskala 1 : 50.000, jarak lurus antara puncak Gunung Merbabu ke pos pengamatan adalah 6 cm. Berdasarkan perhitungan skala peta, jarak sebenarnya di alam adalah ...",
+    "3 kilometer",
+    "6 kilometer",
+    "30 kilometer",
+    "300 meter",
+    "Jarak sebenarnya = 6 cm × 50.000 = 300.000 cm = 3.000 m = 3 km."
+  ],
+  [
+    "Simbol garis ganda tebal berselang-seling hitam dan putih pada peta umum biasanya digunakan kartografer untuk menandai kenampakan ...",
+    "Jalur rel kereta api",
+    "Batas provinsi resmi",
+    "Sungai utama yang lebar",
+    "Pipa gas alam bawah tanah",
+    "Simbol rel kereta api distandarisasi berupa garis batang mirip bantalan rel hitam-putih."
+  ],
+  [
+    "Berdasarkan letak lintangnya, wilayah Indonesia dilalui oleh garis lintang 0 derajat yang melintasi Kota Pontianak Kalimantan Barat dan beberapa daerah lainnya yang dinamakan garis ...",
+    "Khatulistiwa atau Ekuator",
+    "Meridian Nol",
+    "Bujur Greenwich",
+    "Balik Utara",
+    "Garis khatulistiwa membagi bumi menjadi dua belahan sama besar dan memberikan iklim tropis basah bagi Indonesia."
+  ],
+  [
+    "Perbedaan karakteristik hidrologis antara sungai di wilayah Nusa Tenggara (sungai periodik/episodik) dengan sungai di Pulau Kalimantan (sungai permanen) adalah ...",
+    "Sungai di Nusa Tenggara debit airnya melimpah saat musim hujan namun mengering di musim kemarau, sedangkan sungai di Kalimantan berair besar sepanjang tahun",
+    "Sungai di Nusa Tenggara airnya berupa air mendidih, sedangkan di Kalimantan berupa es dingin",
+    "Sungai di Kalimantan tidak pernah bermuara ke lautan lepas",
+    "Sungai di Nusa Tenggara hanya mengalir pada malam hari",
+    "Iklim kering dengan musim kemarau panjang di Nusa Tenggara membuat aliran sungai episodik sangat bergantung pada presipitasi hujan."
+  ],
+  [
+    "Kenampakan bentang alam \"Terasering Padi Jatiluwih\" di Kabupaten Tabanan Bali telah diakui UNESCO sebagai Warisan Budaya Dunia karena memadukan ...",
+    "Keindahan lereng sawah bertingkat dengan kearifan lokal sistem tata kelola pembagian air irigasi adat Subak",
+    "Bangunan gedung pencakar langit dengan pantai pasir putih",
+    "Pabrik penggilingan padi modern bertenaga nuklir",
+    "Perlombaan balap mobil traktor di lereng gunung",
+    "Jatiluwih merupakan mahakarya lanskap agraris yang mencerminkan filosofi keselarasan Tri Hita Karana antara manusia, alam, dan Sang Pencipta."
+  ],
+  [
+    "Kawasan perairan Teluk Kiluan di Lampung dan Teluk Lovina di Buleleng Bali sangat diminati wisatawan karena menyajikan fenomena atraksi kenampakan alam berupa ...",
+    "Kawanan lumba-lumba liar yang muncul berenang dan melompat bebas di permukaan air laut saat pagi hari",
+    "Gunung es raksasa yang mengapung di dekat pantai",
+    "Air laut yang menyala terang benderang seperti lampu neon setiap malam",
+    "Air terjun air tawar yang jatuh dari langit langsung ke kapal nelayan",
+    "Kondisi perairan teluk yang tenang dan kaya ikan kecil menjadi habitat makan favorit lumba-lumba hidung botol dan lumba-lumba paruh panjang."
+  ],
+  [
+    "Perbedaan bentang alam utama antara pantai di pesisir utara Pulau Jawa (Pantura) dengan pantai di pesisir selatan Pulau Jawa adalah ...",
+    "Pantai utara umumnya landai berlumpur dengan ombak tenang Laut Jawa, sedangkan pantai selatan berbatasan langsung dengan Samudra Hindia berombak besar dan bertebing karang terjal",
+    "Pantai utara dipenuhi salju tebal, sedangkan pantai selatan berupa padang pasir gersang",
+    "Pantai utara tidak memiliki air laut sama sekali",
+    "Pantai selatan memiliki air laut berasa manis buah-buahan",
+    "Dinamika oseanografi perairan tertutup Laut Jawa menghasilkan morfologi pantai deposisional tenang, sedangkan gelombang swell terbuka Samudra Hindia membentuk tebing abrasi tebal."
+  ],
+  [
+    "Kenampakan alam pegunungan api aktif bawah laut yang terkenal di Selat Sunda dan pernah meletus dahsyat pada tahun 1883 adalah Gunung ...",
+    "Krakatau (Anak Krakatau)",
+    "Tambora",
+    "Gamalama",
+    "Kelimutu",
+    "Letusan dahsyat Krakatau tahun 1883 memicu gelombang tsunami raksasa dan abu vulkanik yang melingkari atmosfer bumi selama bertahun-tahun."
+  ],
+  [
+    "Kenampakan bentang alam \"Gili\" (seperti Gili Trawangan, Gili Meno, dan Gili Air) di wilayah Lombok Utara Nusa Tenggara Barat secara geografis merupakan ...",
+    "Pulau-pulau karang kecil nan indah berpasir putih yang bebas dari kendaraan bermotor bermesin",
+    "Gunung berapi tinggi yang selalu meletus setiap hari",
+    "Danau air asin di puncak bukit kapur tandus",
+    "Sungai buatan manusia untuk memelihara ikan lele",
+    "Kata \"Gili\" dalam bahasa suku Sasak berarti pulau kecil; kawasan ini mengandalkan kereta kuda cidomo dan sepeda untuk menjaga kemurnian udara."
+  ],
+  [
+    "Proses sedimentasi lumpur yang terus menumpuk di muara Sungai Solo (Bengawan Solo) di Ujung Pangkah Gresik Jawa Timur menghasilkan bentang alam baru berupa ...",
+    "Tanah delta aluvial yang semakin bertambah menjorok maju ke arah lautan setiap tahunnya",
+    "Pegunungan batu kapur yang menjulang menembus awan",
+    "Danau air panas yang tidak pernah mengalir ke laut",
+    "Palung laut terdalam di planet bumi",
+    "Delta Bengawan Solo terbentuk dari pengendapan jutaan ton lumpur erosi yang terbawa aliran sungai terpanjang di Pulau Jawa."
+  ],
+  [
+    "Kenampakan alam tebing batu kapur yang membentuk ngarai sempit dengan aliran sungai jernih kehijauan di Ciamis Jawa Barat dijuluki wisatawan sebagai ...",
+    "Green Canyon (Cukang Taneuh)",
+    "Grand Canyon Amerika",
+    "Ngarai Sianok",
+    "Lembah Anai",
+    "Cukang Taneuh berarti jembatan tanah; ngarai ini menyajikan stalaktit gua kapur yang meneteskan air ke aliran Sungai Cijulang."
+  ],
+  [
+    "Kawasan \"Danau Tiga Warna\" di puncak Gunung Kelimutu Flores NTT memiliki keunikan alam spektakuler yang diakui dunia karena ...",
+    "Warna air di ketiga danau kawah tersebut dapat berubah-ubah secara periodik dari merah, biru muda, hingga hijau tua pekat akibat reaksi mineral belerang dan gas vulkanik",
+    "Air danau tersebut dapat berubah menjadi es batu manis di siang hari",
+    "Danau dihuni oleh ikan paus terbang berkepala elang",
+    "Di dasar danau terdapat kota kuno yang masih dihuni manusia",
+    "Perubahan kadar kelarutan senyawa gas belerang hidrogen sulfida dan besi dalam air kawah memicu pergeseran spektrum warna air secara alami."
+  ],
+  [
+    "Fenomena \"Gua Jomblang\" di Kabupaten Gunungkidul Yogyakarta merupakan kenampakan alam karst unik berupa gua vertikal yang terbentuk akibat ...",
+    "Amblasnya tanah runtuh (sinkhole) ke dalam rongga bawah tanah membentuk sumur raksasa dengan hutan purba di dasarnya",
+    "Galian tambang emas ilegal peninggalan zaman VOC",
+    "Letusan bom perang dunia kedua",
+    "Meteor luar angkasa yang menabrak bukit",
+    "Runtuhnya atap gua karst (dolina runtuh) menciptakan poros cahaya \"Cahaya Surga\" alami saat sinar matahari menembus dasar gua pada siang hari."
+  ],
+  [
+    "Bentang alam \"Rawa Pening\" di Kabupaten Semarang Jawa Tengah memiliki fungsi ekologis dan ekonomis krusial bagi daerah sekitarnya, yaitu ...",
+    "Sebagai penampung air alami pengendali banjir, sumber perikanan tawar, dan sumber pembangkit listrik tenaga air PLTA Jelok",
+    "Sebagai pelabuhan kapal selam angkatan laut internasional",
+    "Sebagai lokasi penambangan bijih besi raksasa",
+    "Sebagai tempat pembuangan limbah kimia pabrik tekstil",
+    "Rawa Pening menampung air dari puluhan sungai lereng Gunung Merbabu dan mengalirkan air ke Sungai Tuntang untuk menggerakkan turbin PLTA."
+  ],
+  [
+    "Kenampakan alam bentang pasir luas yang membentang di kaki Gunung Bromo Jawa Timur dinamakan ...",
+    "Laut Pasir Berbisik (Segara Wedhi)",
+    "Gurun Pasir Sahara",
+    "Bukit Teletubbies",
+    "Lembah Kematian",
+    "Lautan pasir Bromo seluas sekitar 5.300 hektar terbentuk dari akumulasi semburan material piroklastik pasir halus letusan kaldera purba Tengger."
+  ],
+  [
+    "Gumuk Pasir Parangkusumo di pesisir Kabupaten Bantul Yogyakarta merupakan kenampakan bentang alam langka di Asia Tenggara karena ...",
+    "Merupakan fenomena bukit pasir pantai bertiup angin (coastal dunes) di wilayah iklim tropis basah",
+    "Merupakan gurun salju es yang sangat dingin",
+    "Pasirnya terbuat dari serpihan emas murni",
+    "Terbentuk dari gundukan semen pabrik",
+    "Pasir erupsi Gunung Merapi terbawa aliran Sungai Opak dan Progo ke laut, lalu terdorong ombak pantai selatan dan ditiup angin tenggara membentuk gundukan gumuk pasir."
+  ],
+  [
+    "Pembangunan terusan atau kanal buatan seperti Kanal Banjir Barat dan Kanal Banjir Timur (KBT) di Provinsi DKI Jakarta dirancang khusus untuk ...",
+    "Mengalirkan luapan air banjir dari hulu sungai langsung menuju ke Laut Jawa tanpa membanjiri pusat permukiman kota",
+    "Menjadi tempat balap perahu layar cepat internasional",
+    "Mengeringkan seluruh sumur air milik penduduk Jakarta",
+    "Menyediakan air asin untuk kolam renang warga",
+    "Kanal banjir memotong aliran sungai-sungai utama Jakarta agar beban debit air bah dapat dibuang cepat ke laut lepas."
+  ],
+  [
+    "Kenampakan alam \"Lembah Harau\" di Kabupaten Lima Puluh Kota Sumatera Barat sangat dikagumi karena diapit oleh ...",
+    "Tebing-tebing granit terjal tegak lurus berwarna-warni setinggi ratusan meter yang dilengkapi beberapa air terjun alami",
+    "Gedung-gedung kaca pencakar langit modern",
+    "Rawa gambut berlumpur hitam yang berbau belerang",
+    "Gundukan sampah industri yang membeku",
+    "Tebing granit Lembah Harau merupakan peninggalan endapan purba berusia jutaan tahun yang menjadi surga panjat tebing kelas dunia."
+  ],
+  [
+    "Dataran tinggi \"Alas Purwo\" di ujung timur Pulau Jawa yang memiliki bentang alam hutan tertua dan pantai berombak raksasa Plengkung (G-Land) sangat terkenal di dunia bagi olahraga ...",
+    "Selancar ombak air laut (surfing)",
+    "Ski es di salju kutub",
+    "Pacuan unta padang pasir",
+    "Perlombaan mobil balap jalanan",
+    "Ombak G-Land di Taman Nasional Alas Purwo Banyuwangi memiliki gulungan ombak tabung bertingkat tujuh yang masuk jajaran ombak terbaik dunia."
+  ],
+  [
+    "Penggunaan simbol peta berupa garis kontur berbentuk lingkaran kecil berurutan dengan angka ketinggian yang semakin membesar ke arah dalam menandakan bentuk muka bumi berupa ...",
+    "Puncak bukit atau gunung yang meninggi",
+    "Cekungan danau yang sangat dalam",
+    "Jalur lembah sungai yang datar",
+    "Hamparan garis pantai laut landai",
+    "Nilai angka ketinggian (misal 500 m, 600 m, 700 m) yang bertambah ke pusat lingkaran menunjukkan elevasi relief bukit yang mengerucut naik."
+  ]
 ];
-
 const hots = [
-  ['Seorang sejarawan mengemukakan hipotesis bahwa tanpa adanya angin muson barat dan angin muson timur yang bertiup secara periodik di Samudra Hindia dan Laut Cina Selatan, Kerajaan Sriwijaya kemungkinan besar tidak akan pernah tumbuh menjadi kerajaan maritim terkaya di Asia Tenggara pada abad ke-7 hingga ke-10 Masehi. Analisis kritis yang paling tepat mendukung hipotesis ini adalah ...', 'Para pedagang dari India, Arab, dan Tiongkok harus singgah berbulan-bulan di pelabuhan Sriwijaya menunggu perubahan arah angin muson, sehingga memicu terciptanya pasar transit raksasa, penarikan bea cukai pelabuhan, dan pertukaran budaya yang luar biasa', 'Angin muson mematikan semua ikan di laut sehingga pedagang terpaksa membeli sayur di daratan Sriwijaya', 'Angin muson merusak semua kompas kapal sehingga kapal tersesat ke sungai Musi', 'Kapal layar kuno hanya dapat bergerak jika ditiup angin topan berkekuatan badai', 'Pola sirkulasi angin muson memaksa kapal menunggu jendela pelayaran musiman, mengunci Selat Malaka sebagai entepot transit wajib.'],
-  ['Di kawasan situs Trowulan Mojokerto, para arkeolog menemukan ribuan pecahan wadah keramik Dinasti Song dan Yuan, uang kepeng tembaga Tiongkok dalam jumlah ton, serta sistem drainase kanal air batu bata merah yang tertata rapi melintasi kawasan pemukiman padat. Berdasarkan temuan arkeologis ini, kesimpulan komprehensif mengenai kehidupan perkotaan Majapahit abad ke-14 adalah ...', 'Majapahit merupakan sebuah megapolis kosmopolitan yang memiliki peradaban tata kota maju, sanitasi terencana, serta integrasi perdagangan moneter global yang sangat aktif', 'Rakyat Majapahit hanya berprofesi sebagai petani padi tradisional nomaden', 'Majapahit adalah kerajaan tertutup yang melarang orang asing menginjakkan kaki di Trowulan', 'Semua barang tembikar dan uang koin di Majapahit diproduksi oleh jin penunggu hutan', 'Kerapatan artefak keramik impor dan sistem hidrologi buatan menegaskan Trowulan sebagai kota metropolitan maritim-agraris dunia.'],
-  ['Kerajaan Majapahit menganut dua agama besar resmi yaitu Hindu Siwa dan Buddha Mahayana. Raja Hayam Wuruk beragama Hindu Siwa, sedangkan ibunya Ratu Tribhuwana dan Mahapatih Gajah Mada beragama Buddha. Fakta sejarah ini membuktikan bahwa faktor fundamental yang menjaga keutuhan imperium Majapahit selama masa keemasannya adalah ...', 'Penerapan toleransi beragama dan sinkretisme Siwa-Buddha yang dilembagakan secara adil dalam tata kelola hukum negara tanpa diskriminasi primordial', 'Rakyat yang berbeda agama dipaksa tinggal di pulau terpisah yang dijaga tentara', 'Raja melarang pembangunan tempat ibadah di seluruh wilayah Jawa', 'Semua penganut agama diwajibkan berganti agama setiap lima tahun sekali', 'Prinsip Bhinneka Tunggal Ika tan Hana Dharma Mangrwa bukan sekadar slogan puitis, melainkan arsitektur stabilitas sosial Majapahit.'],
-  ['Ketika para ahli membandingkan Prasasti Tugu dari Tarumanegara dengan Prasasti Yupa dari Kutai, mereka menemukan perbedaan mendasar dalam orientasi pembangunan peradaban kedua kerajaan tersebut: Purnawarman memusatkan tenaganya pada pembangunan saluran air raksasa 11 km untuk mitigasi banjir dan pengairan sawah, sedangkan Mulawarman memusatkan pada upacara selamatan kurban sapi dan kedermawanan pada kaum agamawan. Analisis komparatif yang tepat dari fenomena ini adalah ...', 'Tarumanegara lebih menekankan investasi infrastruktur hidrologis publik penunjang ketahanan pangan agraris, sedangkan Kutai lebih menonjolkan konsolidasi legitimasi spiritual kasta dan prestise feodal', 'Raja Mulawarman tidak mengetahui cara bertani sedangkan Purnawarman tidak mengenal agama Hindu', 'Kutai tidak memiliki tanah untuk bertani sehingga hanya memelihara sapi potong', 'Tarumanegara memiliki jutaan tentara sedangkan Kutai hanya memiliki satu pendeta', 'Purnawarman mengaktualisasikan peran dharmaning praja (pelindung fisik rakyat), Mulawarman mengokohkan prestise sakralisasi dinasti.'],
-  ['Pada relief Candi Borobudur Karmawibhangga di kaki candi yang tertutup batu tambahan (selasar penguat), dipahatkan adegan kehidupan manusia yang melakukan kejahatan (seperti membunuh, mencuri, berzina) beserta siksa neraka hukum karma yang diterimanya, namun relief ini kemudian ditutup rapat dengan undakan batu andesit baru. Alasan arkeologis dan fungsional penutupan relief Karmawibhangga tersebut adalah ...', 'Faktor struktural mekanika tanah: undakan kaki tambahan dibutuhkan untuk menahan dorongan gaya berat badan candi yang mulai melorot amblas ke samping, selain alasan etika spiritual ajaran Buddha', 'Para biksu malu relief tersebut dilihat oleh turis luar negeri', 'Batu relief tersebut dicuri oleh pasukan penyerbu dari Sriwijaya', 'Raja Samaratungga kehabisan cat untuk mewarnai relief', 'Penyelidikan teknis mengungkap pelebaran kaki stupa (encasement) primer didorong pencegahan keruntuhan geoteknik lereng bukit.'],
-  ['Pemberontakan Ra Kuti (1319) berhasil menduduki keraton Majapahit hingga raja melarikan diri, namun pemberontakan tersebut cepat runtuh dalam hitungan hari setelah Gajah Mada menyelidiki sikap rakyat ibu kota. Langkah taktis intelijen yang dilakukan Gajah Mada sebelum menyerbu balik keraton adalah ...', 'Menyebarkan kabar bohong bahwa Raja Jayanegara telah meninggal untuk menguji kesetiaan para pembesar dan rakyat terhadap raja yang sah', 'Meminta bantuan tentara bayaran dari kekaisaran Jepang', 'Menyerahkan takhta Majapahit secara sukarela kepada Ra Kuti', 'Membakar seluruh rumah penduduk ibu kota agar musuh kepanasan', 'Saat mendengar kabar raja wafat, rakyat menangis duka; mendapati legitimasi moral rakyat masih utuh, Gajah Mada langsung melibas komplotan Ra Kuti.'],
-  ['Mengapa setelah wafatnya Mahapatih Gajah Mada (1364) dan Raja Hayam Wuruk (1389), Kerajaan Majapahit mengalami kemunduran drastis yang tak terbendung hingga akhirnya runtuh, bukan bangkit kembali?', 'Karena struktur pemerintahan Majapahit terlalu bertumpu pada figur kepemimpinan sentralistik individu yang karismatik dan gagal membangun sistem suksesi takhta yang kebal perang saudara keluarga', 'Karena seluruh cadangan beras di pulau Jawa dimakan hama belalang', 'Karena rakyat Majapahit memilih meninggalkan pulau Jawa beramai-ramai', 'Karena candi-candi di Majapahit berubah menjadi debu pasir tertiup angin', 'Absennya kepemimpinan transformatif setara Gajah Mada membiarkan benih perebutan takhta (Perang Paregreg) merobek imperium dari dalam.'],
-  ['Di Selat Malaka pada abad ke-14, armada laut Majapahit melancarkan serangan terhadap armada Sriwijaya yang memberontak di Palembang. Mengapa penguasaan atas Selat Malaka selalu menjadi arena perebutan sengit dan penentu status "negara adidaya" bagi kerajaan-kerajaan kuno di Nusantara?', 'Selat Malaka adalah jalur monopoli lalu lintas komoditas rempah global dunia; siapa pun yang mengendalikannya menguasai pasokan logistik dan kekayaan fiskal perdagangan internasional antarbenua', 'Air di Selat Malaka mengandung serbuk emas murni yang dapat disaring', 'Selat Malaka merupakan satu-satunya tempat persembunyian kapal selam kuno', 'Dewa-dewa laut hanya memberkahi raja yang tinggal di tepi Selat Malaka', 'Titik sumbat (chokepoint) maritim paling bernilai di dunia purba; pengendalian bea selat menjamin supremasi militer dan kekayaan finansial tak terbatas.'],
-  ['Teori Brahmana yang menyatakan bahwa agama Hindu dibawa oleh kaum pendeta Brahmana sering dikritik oleh para sejarawan dengan alasan adanya pantangan agama Hindu kuno bahwa kaum Brahmana dilarang menyeberangi lautan karena akan kehilangan kastanya. Argumen pembelaan yang dapat merekonsiliasi teori ini adalah ...', 'Para penguasa lokal di Nusantara yang telah makmur mengundang secara khusus para pendeta Brahmana terkemuka dari India untuk melegitimasi kedudukan politik mereka melalui upacara Vratyastoma', 'Kaum Brahmana berjalan kaki menyeberangi lautan yang saat itu surut kering', 'Kaum Brahmana bersembunyi di dalam gentong air kapal dagang tanpa melihat laut', 'Kaum Brahmana telah membuang seluruh kitab suci Weda ke samudra', 'Inisiatif undur datang dari elite lokal nusantara yang membutuhkan legitimasi kosmis dewa-raja mengundang Brahmana melintasi laut.'],
-  ['Candi Sewu di Klaten adalah candi Buddha Mahayana yang berdiri megah hanya berjarak beberapa ratus meter dari kompleks Candi Prambanan yang merupakan candi Hindu Siwaistik. Bukti fisik kedekatan spasial dua kompleks percandian raksasa ini memberikan pesan sejarah tak ternilai bagi generasi bangsa Indonesia masa kini yaitu ...', 'Nenek moyang bangsa Indonesia telah mempraktikkan toleransi dan kerukunan hidup berdampingan antarumat beragama secara damai dalam harmoni kebhinekaan', 'Raja zaman dahulu suka menghabiskan anggaran kerajaan untuk pamer bangunan', 'Kedua kelompok agama saling melempar batu candi saat malam hari', 'Prambanan sengaja dibangun untuk merusak pemandangan Candi Sewu', 'Koorientasi ruang Prambanan dan Candi Sewu adalah monumen monumental peradaban pluralis yang matang di bumi Mataram kuno.'],
-  ['Pada masa Raja Jayabaya dari Kediri, sastra berkembang sangat pesat dengan adaptasi kisah Mahabharata ke dalam Kakawin Bharatayuddha. Analisis pesan politis tersembunyi di balik penulisan Kakawin Bharatayuddha oleh Mpu Sedah dan Panuluh pada masa itu adalah ...', 'Menggunakan alegori perang saudara Pandawa dan Kurawa untuk melegitimasi kemenangan Jayabaya dalam perang saudara menaklukkan Jenggala (Panjalu Jayati)', 'Menghibur prajurit Kediri yang sedang berlayar ke Maluku', 'Mengajarkan taktik bermain catur kepada anak-anak sekolah kerajaan', 'Mengkritik kegemaran raja memelihara gajah putih', 'Sastra keraton berfungsi sebagai instrumen hegemoni kultural melegitimasi penyatuan kembali tanah Jawa di bawah panji Kediri.'],
-  ['Ketika para ahli epigrafi menganalisis Prasasti Canggal (732 M) dan Prasasti Kalasan (778 M), mereka menemukan pergantian dinasti penguasa di Mataram Kuno antara Dinasti Sanjaya (Hindu) dan Dinasti Syailendra (Buddha). Namun tidak ditemukan bukti adanya pertumpahan darah antarkedua dinasti. Kesimpulan sosiologis politik yang paling valid adalah ...', 'Kedua dinasti hidup berdampingan secara damai dan saling bergantian memegang tampuk kekuasaan melalui kompromi politik dan perkawinan dinasti', 'Pasukan Dinasti Sanjaya melarikan diri ke benua Australia saat diserang', 'Rakyat Mataram Kuno tidak mempedulikan siapa yang menjadi raja', 'Kedua dinasti menggunakan undian koin emas untuk menentukan siapa yang memimpin istana', 'Model koeksistensi dual-dinasti Mataram mendemonstrasikan fleksibilitas aliansi politik klan feodal Jawa Kuno.'],
-  ['Mpu Prapanca menulis dalam Negarakertagama bahwa daerah kekuasaan Majapahit membentang dari Semenanjung Melayu, Sumatera, Kalimantan, Sulawesi, Maluku, hingga Papua Barat (Wanin). Namun konsep "kekuasaan" Majapahit berbeda dengan konsep kolonialisme modern Eropa. Perbedaan mendasar konsep kekuasaan mandala Majapahit tersebut adalah ...', 'Majapahit tidak menempatkan birokrasi pemerintahan militer langsung di daerah, melainkan pengakuan hegemoni politik, pembayaran upeti berkala, dan jaminan keamanan jalur dagang laut', 'Majapahit memusnahkan seluruh raja-raja lokal di luar Jawa', 'Majapahit mewajibkan seluruh rakyat di luar Jawa berbahasa Jawa kuno', 'Majapahit mengambil seluruh anak-anak raja lokal untuk dijadikan tawanan di Trowulan', 'Sistem mandala berupa konsentris pengaruh relasional (tributary system), bukan aneksasi teritorial administratif modern.'],
-  ['Jika seorang arkeolog menemukan struktur bangunan candi baru berbahan batu andesit di daerah lereng gunung di Jawa Tengah dengan tangga masuk menghadap ke arah timur dan tidak memiliki stupa melainkan kemuncak lingga ratna, maka arkeolog tersebut dapat menyimpulkan bahwa candi tersebut adalah ...', 'Candi pemujaan agama Hindu yang dibangun pada era Kerajaan Mataram Kuno (Dinasti Sanjaya)', 'Candi Buddha peninggalan Kerajaan Sriwijaya', 'Masjid peninggalan Kesultanan Demak', 'Benteng pertahanan tentara Mongol', 'Material andesit, orientasi timur menyongsong matahari terbit, dan kemuncak ratna/lingga adalah kanon arsitektur percandian Hindu Jawa Tengah.'],
-  ['Keberhasilan Sriwijaya bertahan sebagai kerajaan maritim adidaya selama lebih dari empat abad (abad ke-7 hingga ke-11) tanpa memiliki basis agraris persawahan yang luas di pedalaman seperti Majapahit bertumpu pada keunggulan strategi ...', 'Pengendalian mutlak armada laut atas pos-pos strategis Selat Malaka, integrasi jaringan suku laut, dan monopoli pasar transit komoditas internasional', 'Membakar seluruh kapal asing yang menolak menjual beras ke Palembang', 'Menghilangkan mata uang dan menggantinya dengan sistem barter kerang', 'Menutup diri dari pergaulan bangsa-bangsa luar negeri', 'Sriwijaya adalah thalassocracy murni: kekuatan proyeksi angkatan laut dan persekutuan klan maritim mengompensasi ketiadaan surplus agrikultur pedalaman.'],
-  ['Raja Airlangga mengeluarkan Prasasti Kamalagyan (1037 M) yang mencatat pembangunan bendungan Waringin Sapta di Sungai Brantas. Analisis mengenai korelasi antara pembangunan infrastruktur bendungan ini dengan kemakmuran Kerajaan Kahuripan adalah ...', 'Bendungan menghentikan banjir tahunan yang merusak sawah rakyat dan sekaligus membuka rute navigasi kapal dagang pedalaman menuju pelabuhan Hujung Galuh', 'Bendungan dibangun untuk menjebak ikan paus raksasa dari samudra', 'Raja Airlangga ingin membuat kolam renang pribadi di tengah hutan', 'Bendungan berfungsi mematikan aliran air ke kerajaan musuh', 'Penyelesaian tanggul Brantas melipatgandakan panen padi ganda dan memperlancar angkutan kapal logistik ke bandar ekspor laut.'],
-  ['Kitab Sutasoma memuat ajaran kearifan lokal luhur tentang kerukunan hidup: "Rwaneka dhatu winuwus Buddha Wiswa, Bhineki rakwa ring apan kena parwanosen, Mangka ng Jinatwa kalawan Siwatatwa tunggal, Bhinneka Tunggal Ika tan hana Dharma mangrwa". Makna filosofis terdalam dari bait suci ini adalah ...', 'Meskipun ajaran Buddha dan Hindu Siwa secara lahiriah tampak berlainan, namun pada hakikat kebenaran tertingginya adalah satu jua, tidak ada kebenaran yang mendua', 'Dewa Wisnu dan Buddha saling berperang memperebutkan takhta surga', 'Rakyat Majapahit harus memilih salah satu agama dan membuang agama lainnya', 'Semua manusia di dunia harus menyembah patung yang sama', 'Toleransi epistemologis tingkat tinggi: pluralitas bentuk lahiriah menyatu dalam kesatuan esensi tauhid kebenaran transendental.'],
-  ['Ketika para peneliti membaca Prasasti Yupa di Muara Kaman, mereka mendapati bahwa nama pendiri kerajaan adalah Kudungga (nama asli Indonesia), sedangkan anaknya bernama Aswawarman dan cucunya Mulawarman (nama bernuansa Sanskerta India). Kesimpulan historis mengenai proses akulturasi kebudayaan yang berlangsung di Kutai adalah ...', 'Proses Hinduisasi dan adopsi kebudayaan India baru dimulai pada masa generasi Aswawarman melalui perkawinan atau inisiasi agama dengan tetap mempertahankan trah penguasa lokal', 'Kudungga dibunuh oleh tentara bayaran dari India yang kemudian mengangkat anaknya', 'Aswawarman adalah orang India asli yang tidak memiliki hubungan darah dengan Kudungga', 'Keluarga Kudungga melarikan diri ke pedalaman hutan rimba Kalimantan', 'Nama berakhiran -warman menandakan adopsi gelar ksatria wangsa Hindu pada generasi kedua seiring kontak dagang internasional.'],
-  ['Dalam prasasti peninggalan Raja Balitung (Prasasti Telang, 904 M), disebutkan adanya pembebasan pajak bagi desa Telang karena warganya bertugas memelihara perahu penyeberangan (pemberi jasa ferry crossing) di Bengawan Solo. Kebijakan ekonomi kerajaan ini membuktikan bahwa ...', 'Pemerintah kerajaan kuno sangat peduli pada kelancaran konektivitas jaringan transportasi niaga antarwilayah demi efisiensi perputaran ekonomi rakyat', 'Raja Balitung takut naik kuda sehingga memilih naik perahu tambang', 'Warga desa Telang menolak membayar pajak dengan senjata tajam', 'Bengawan Solo saat itu dihuni oleh siluman buaya putih', 'Pemberian status sima untuk layanan infrastruktur publik menjamin pemeliharaan fasilitas vital tanpa membebani kas langsung keraton.'],
-  ['Mengapa Candi Borobudur yang begitu kolosal dan megah sempat "hilang" tertutup abu vulkanik dan hutan rimba lebat selama berabad-abad hingga ditemukan kembali oleh Raffles pada tahun 1814?', 'Perpindahan pusat politik dan peradaban Mataram Kuno ke Jawa Timur akibat letusan dahsyat Merapi dan gempa bumi menyebabkan kompleks candi ditinggalkan dan terlupakan seiring perubahan jalur sejarah', 'Candi Borobudur sengaja dikubur oleh para biksu dengan tanah agar tidak dicuri bangsa Eropa', 'Candi Borobudur terbang di udara dan baru jatuh kembali ke tanah pada tahun 1814', 'Rakyat Jawa Tengah memusnahkan Candi Borobudur saat masuknya agama baru', 'Erupsi masif Merapi dan pergeseran episentrum kekuasaan ke Brantas menghentikan peradaban pendukung di Kedu membiarkan alam menelan monumen batu.']
+  [
+    "Sebuah desa di lereng perbukitan terjal sering mengalami musibah longsor kecil saat musim hujan lebat. Sebagian warga desa memiliki kebiasaan menebangi pepohonan di lereng bukit untuk membuka kebun jagung tanpa membuat sengkedan (terasering). Solusi paling tepat dan berkelanjutan yang dapat diterapkan warga desa untuk mencegah bencana longsor sekaligus tetap bisa bertani adalah ...",
+    "Membuat terasering bertingkat di lereng kebun, menanami bibit pohon berakar dalam (seperti pohon aren atau bambu) di batas lereng sebagai penahan tanah, serta mengalirkan air hujan melalui parit teratur agar tanah tidak jenuh air",
+    "Menebangi seluruh sisa pohon yang ada agar tanah lereng menjadi bersih dan terang",
+    "Menutup seluruh permukaan bukit dengan terpal plastik warna-warni",
+    "Mengungsi selamanya dan melarang siapa pun mengunjungi lereng bukit",
+    "Konservasi tanah mekanik (terasering) dan vegetatif (tanaman pengikat) memperkuat kestabilan agregat tanah lereng dan mencegah longsor."
+  ],
+  [
+    "Di sebuah wilayah pesisir pantai nelayan, pohon-pohon bakau (mangrove) di garis pantai banyak yang ditebang untuk dijadikan tambak ikan secara besar-besaran. Beberapa tahun kemudian, warga mendapati air sumur di desa mereka berubah menjadi payau (asin) dan garis pantai terkikis mundur puluhan meter mendekati rumah warga. Analisis hubungan sebab-akibat dari peristiwa tersebut adalah ...",
+    "Hilangnya hutan mangrove menyebabkan hilangnya benteng penahan ombak alami sehingga terjadi abrasi pantai, serta memicu masuknya air laut ke dalam lapisan air tanah tawar (intrusi air laut)",
+    "Penebangan bakau membuat ikan paus di laut meminum seluruh air sumur warga",
+    "Air sumur menjadi asin karena garam dapur tumpah di jalan desa",
+    "Abrasi pantai terjadi karena nelayan membuat perahu terlalu banyak",
+    "Akar mangrove berfungsi sebagai sabuk hijau (coastal green belt) penahan abrasi dan penyaring intrusi air laut ke akuifer tawar pesisir."
+  ],
+  [
+    "Dua kelompok petani memiliki lahan sawah: Kelompok Tani Subur mengolah sawah di kawasan dataran rendah dekat muara sungai, sedangkan Kelompok Tani Makmur mengolah sawah di lereng dataran tinggi pegunungan. Keunggulan dan tantangan yang dihadapi oleh Kelompok Tani Makmur di lereng pegunungan dibanding petani dataran rendah adalah ...",
+    "Keunggulannya memiliki sumber mata air alami yang jernih dan udara sejuk yang cocok untuk sayur-mayur bernilai tinggi; namun tantangannya lereng tanah miring rawan erosi sehingga wajib membuat terasering dan sulit menggunakan mesin traktor besar",
+    "Keunggulannya tanahnya terbuat dari pasir pantai, tantangannya tidak ada sinar matahari",
+    "Keunggulannya padi bisa panen setiap hari tanpa perlu ditanam",
+    "Kelompok Tani Makmur tidak pernah membutuhkan air untuk tanaman padinya",
+    "Faktor topografi kemiringan lereng menentukan teknologi mekanisasi pertanian dan strategi manajemen risiko limpasan air."
+  ],
+  [
+    "Sungai Citarum di Jawa Barat melintasi kawasan pegunungan di hulu hingga kawasan permukiman dan pabrik di hilir. Saat musim hujan tiba, kawasan hilir seringkali dilanda banjir luapan sungai yang parah. Berdasarkan analisis geografis, mengapa upaya pengerukan lumpur di hilir sungai saja tidak akan mampu menuntaskan masalah banjir jika kawasan hutan di hulu pegunungan terus gundul?",
+    "Karena kawasan hulu hutan adalah daerah resapan air hujan; jika hutan hulu rusak, air hujan tidak terserap ke dalam tanah melainkan langsung meluncur deras ke sungai membawa lumpur erosi sehingga debit air di hilir tetap akan meluap melampaui kapasitas sungai",
+    "Karena air sungai selalu mengalir dari hilir menuju ke puncak gunung",
+    "Karena pengerukan lumpur membuat air sungai menguap menjadi awan hitam",
+    "Karena hujan lebat hanya terjadi di kawasan pabrik perkotaan saja",
+    "Konsep Pengelolaan Daerah Aliran Sungai (DAS) Terpadu: pelestarian tutupan vegetasi di daerah tangkapan hulu menentukan beban hidrologis di hilir."
+  ],
+  [
+    "Ketika membaca peta rute evakuasi bencana tsunami di sekolah pantai, Budi melihat tanda panah hijau menuju ke arah kenampakan alam berketinggian di atas 20 meter yang berjarak 500 meter dari pantai. Mengapa dalam mitigasi bencana tsunami masyarakat diarahkan untuk segera berlari menjauhi pantai menuju ke bentang alam dataran tinggi atau bukit terdekat?",
+    "Karena gelombang tsunami adalah gelombang laut berenergi raksasa yang menyapu dataran rendah pesisir; menuju ke tempat yang lebih tinggi menghindarkan manusia dari jangkauan terjangan air bah tsunami",
+    "Karena di atas bukit banyak terdapat kapal penyelamat yang menunggu",
+    "Karena air tsunami takut pada pohon-pohon yang tumbuh di atas bukit",
+    "Karena di bukit udaranya sangat dingin sehingga air tsunami langsung membeku",
+    "Prinsip mitigasi evakuasi mandiri bencana tsunami: \"Jauhi pantai, lari ke tempat tinggi (run to high ground)\" sebelum gelombang pertama tiba."
+  ],
+  [
+    "Sebuah kota metropolitan di dataran rendah pesisir sering mengalami banjir rob (luapan air laut saat pasang). Selain karena pasang air laut, para ahli tata kota menemukan faktor lain yaitu terjadinya penurunan muka tanah (land subsidence) di kota tersebut. Faktor kegiatan manusia yang paling memicu terjadinya penurunan tanah di dataran rendah perkotaan adalah ...",
+    "Pengambilan air tanah dalam secara berlebihan menggunakan sumur bor pompa oleh gedung-gedung dan warga akibat belum meratanya jaringan pipa air bersih PAM",
+    "Banyaknya warga yang berolahraga lari pagi di jalan raya",
+    "Pemasangan paving block di halaman rumah warga kota",
+    "Penggunaan kompor gas untuk memasak makanan sehari-hari",
+    "Penyedotan akuifer air tanah dalam mengosongkan pori-pori tanah sehingga lapisan lempung tertekan dan memicu pemadatan tanah secara bertahap."
+  ],
+  [
+    "Masyarakat suku Tengger yang bermukim di lereng terjal Gunung Bromo memiliki kearifan tradisional dalam mengolah lahan kebun sayur mereka. Mereka menanam rumput penahan dan deretan pohon cemara gunung di batas-batas petak ladang miring mereka. Manfaat ekologis dari kearifan lokal penanaman pepohonan di batas ladang terjal tersebut adalah ...",
+    "Akar pohon cemara dan rumput mengikat partikel tanah vulkanik gembur agar tidak longsor tergerus angin kencang dan air hujan, serta menjadi pemecah angin (windbreak) perusak tanaman kentang",
+    "Membuat tanaman kentang berubah menjadi buah apel",
+    "Mengusir semua burung agar tidak terbang di atas kebun",
+    "Menghilangkan kabut asap letusan kawah Bromo seketika",
+    "Sistem agroforestri tradisional menciptakan sabuk pelindung alami (shelterbelt) menjaga kesuburan lapisan topsoil dari erosi angin dan air."
+  ],
+  [
+    "Danau Singkarak di Sumatera Barat airnya dimanfaatkan untuk menggerakkan turbin Pembangkit Listrik Tenaga Air (PLTA) Singkarak yang disalurkan melalui terowongan menembus Bukit Barisan menuju Samudra Hindia. Analisis pentingnya menjaga kelestarian hutan di sekitar tangkapan air Danau Singkarak bagi keberlangsungan listrik masyarakat adalah ...",
+    "Jika hutan di sekeliling danau gundul, debit air danau akan menyusut drastis di musim kemarau dan sedimentasi lumpur akan mendangkalkan danau sehingga turbin PLTA kekurangan air pemutar generator listrik",
+    "Hutan lindung berfungsi menyalakan lampu listrik secara langsung",
+    "Pohon-pohon di hutan mengeluarkan kabel listrik bawah tanah",
+    "Air danau akan berubah menjadi minyak goreng jika pohon ditebang",
+    "Keseimbangan hidrologis danau penyangga PLTA bertumpu pada hutan lindung sebagai penyimpan air hujan alami yang menjaga kestabilan debit air tahunan."
+  ],
+  [
+    "Dalam suatu peta tematik potensi pertanian, terlihat wilayah Kabupaten Brebes di pesisir dataran rendah pantai utara Jawa Tengah diberi warna khusus penghasil bawang merah, sedangkan wilayah Kabupaten Temanggung di dataran tinggi pegunungan diberi warna penghasil tembakau dan kopi. Mengapa jenis tanaman pertanian yang dibudidayakan masyarakat sangat bergantung pada kondisi bentang alam daerahnya?",
+    "Karena setiap jenis tanaman memerlukan suhu udara, kelembapan, ketersediaan air, dan ketinggian tempat (elevasi) tertentu yang sesuai agar dapat tumbuh subur dan berproduksi optimal",
+    "Karena tanaman di dataran tinggi tidak membutuhkan pupuk dan air",
+    "Karena petani di dataran rendah dilarang membeli benih kopi oleh pemerintah",
+    "Karena tanah di dataran rendah tidak dapat ditanami tanaman apa pun selain padi",
+    "Zonasi iklim dan ketinggian tempat (Junghuhn) menentukan kecocokan agroklimatologi jenis tanaman budidaya pangan dan perkebunan."
+  ],
+  [
+    "Pembangunan jalan tol lintas pulau seperti Jalan Tol Trans-Sumatera melewati berbagai variasi bentang alam: rawa gambut datar di Riau, perbukitan terjal di Lampung, dan tanah lempung lunak di Palembang. Mengapa para insinyur konstruksi harus menggunakan teknik fondasi paku bumi dan jembatan layang (viaduk) saat melintasi rawa gambut dan lembah sungai?",
+    "Karena tanah rawa gambut sangat labil, berair, dan mudah amblas jika dibebani jalan biasa; fondasi paku bumi dan tiang pancang mencapai lapisan tanah keras di dasar rawa agar jalan tol kokoh dan tidak runtuh",
+    "Agar jalan tol bisa melayang terbang di atas awan",
+    "Karena rawa gambut dihuni oleh dinosaurus raksasa",
+    "Untuk menghemat semen dan batu kerikil konstruksi",
+    "Prinsip rekayasa geoteknik: tanah lunak dan gambut berdaya dukung rendah memerlukan perkuatan cerucuk matras atau jembatan pilar tiang pancang."
+  ],
+  [
+    "Kawasan bentang alam perairan Selat Bali yang sempit memisahkan Pulau Jawa (Ketapang) dan Pulau Bali (Gilimanuk). Karena tingginya arus penumpang dan barang, sering muncul wacana pembangunan jembatan Selat Bali, namun masyarakat adat Bali lebih memilih mempertahankan kapal feri penyeberangan. Salah satu pertimbangan sosio-kultural dan kearifan lokal penolakan pembangunan jembatan darat tersebut adalah ...",
+    "Menjaga kesucian spiritual Pulau Dewata berdasarkan ajaran leluhur agar daratan Pulau Bali tidak tersambung langsung secara fisik bebas dengan daratan luar sehingga kemurnian adat dan keamanan pulau tetap terfilter",
+    "Karena di Selat Bali tidak ada air laut yang bisa dilompati jembatan",
+    "Karena kapal feri di Selat Bali terbuat dari emas murni",
+    "Karena masyarakat Bali tidak suka dengan keberadaan kendaraan mobil",
+    "Kearifan lokal memandang batas laut selat sebagai batas sakral penyaring pengaruh negatif dan menjaga keseimbangan kosmologis pulau."
+  ],
+  [
+    "Di kawasan perkotaan yang padat bangunan beton di dataran rendah, lahan terbuka hijau resapan air semakin sempit. Saat hujan deras turun selama dua jam saja, jalanan kota langsung tergenang banjir setinggi lutut (banjir cileuncang). Solusi ramah lingkungan berbasis partisipasi warga yang dapat dibuat di halaman rumah sempit untuk membantu meresapkan air hujan ke dalam tanah adalah ...",
+    "Membuat lubang biopori dan sumur resapan air hujan di pekarangan rumah",
+    "Mengecor seluruh halaman rumah dengan semen beton tebal",
+    "Membuang air hujan dari talang atap langsung ke jalan raya",
+    "Menyiram pekarangan dengan minyak tanah agar licin",
+    "Lubang resapan biopori mempercepat peresapan air ke tanah dengan bantuan aktivitas cacing tanah dan menambah cadangan air sumur dangkal."
+  ],
+  [
+    "Masyarakat di kawasan pesisir pantai pulau kecil yang terisolasi seringkali menghadapi kendala ketersediaan air tawar untuk minum karena air tanah mereka terasa payau. Pemanfaatan teknologi sederhana berwawasan bentang alam pesisir yang dapat diterapkan masyarakat untuk memperoleh air tawar bersih adalah ...",
+    "Membuat instalasi penampung air hujan (PAH) higienis serta alat desalinasi penyulingan air laut bertenaga panas matahari sederhana",
+    "Meminum air laut langsung dari pantai tanpa dimasak",
+    "Membeli es batu dari luar angkasa dengan roket",
+    "Menggali lubang sumur sedalam pusat bumi",
+    "Pemanenan air hujan (rainwater harvesting) dan destilasi surya memanfaatkan kelimpahan sinar matahari pesisir tropis untuk mengubah air laut menjadi air tawar murni."
+  ],
+  [
+    "Kawasan Dataran Tinggi Gayo di Aceh berada pada ketinggian 1.200 meter dpl dan terkenal sebagai penghasil Kopi Arabika Gayo terbaik di dunia. Berdasarkan ilmu geografi bentang alam, faktor alam apa yang membuat Kopi Arabika tumbuh sangat harum dan manis di Dataran Tinggi Gayo?",
+    "Kombinasi tanah vulkanik yang kaya hara, udara pegunungan yang sejuk stabil, dan curah hujan cukup memperlambat pematangan buah kopi sehingga biji kopi menghasilkan aroma dan cita rasa kompleks",
+    "Kopi disiram dengan air gula tebu setiap pagi hari",
+    "Pohon kopi Gayo ditanam di dalam ruangan berpendingin AC",
+    "Kopi Gayo dipanen menggunakan pesawat helikopter",
+    "Ketinggian di atas 1.000 mdpl merangsang akumulasi senyawa gula dan asam organik alami pada biji kopi arabika berkualitas tinggi."
+  ],
+  [
+    "Di pesisir Pantai Parangtritis dan Samudra Hindia selatan Jawa sering terjadi fenomena berbahaya bagi wisatawan yang berenang yaitu \"Arus Rip\" (Rip Current / arus seret balik). Pemahaman bentang alam pesisir mengenai tanda-tanda arus rip yang mematikan tersebut adalah ...",
+    "Permukaan air laut yang tampak tenang tanpa pecahan ombak di antara deretan ombak besar sebenarnya merupakan arus air sangat kuat yang bergerak cepat menyedot ke arah tengah laut lepas",
+    "Air laut di pantai tiba-tiba berubah menjadi es beku seketika",
+    "Ada monster laut yang menarik kaki perenang ke dasar pasir",
+    "Air laut menyembur setinggi ratusan meter seperti geiser",
+    "Arus seret balik terbentuk dari akumulasi air ombak yang mencari jalan kembali ke laut melalui celah sempit dasar pantai dengan kecepatan hingga 8 km/jam."
+  ],
+  [
+    "Kawasan \"Lembah Baliem\" di Pegunungan Jayawijaya Papua dikelilingi oleh bentang alam pegunungan terjal dan dahulu sangat terisolasi dari dunia luar. Mengapa sebelum adanya jalur penerbangan pesawat perintis dan jalan Trans-Papua, perdagangan masyarakat suku Dani di pedalaman Lembah Baliem mengandalkan sistem barter jalan setapak?",
+    "Karena kondisi bentang alam pegunungan terjal yang ekstrem membatasi akses jalur transportasi darat roda empat, sehingga barang-barang garam dan kapak batu harus dipikul berjalan kaki melintasi punggung gunung berhari-hari",
+    "Karena masyarakat Dani dilarang oleh dewa mengendarai mobil",
+    "Karena di Lembah Baliem tidak ada daratan tanah untuk berjalan",
+    "Karena semua orang di Papua bisa terbang di udara",
+    "Isolasi geografis fisik pegunungan memicu adaptasi ekonomi barter lokal dan menuntut moda transportasi udara perintis untuk membuka keterisolasian daerah 3T."
+  ],
+  [
+    "Penebangan liar pohon di kawasan hulu bentang alam Daerah Aliran Sungai (DAS) dapat menimbulkan bencana berantai bagi masyarakat pesisir di hilir muara sungai, berupa ...",
+    "Erosi tanah hulu memicu sedimentasi lumpur tebal yang mendangkalkan alur sungai hilir sehingga perahu nelayan kandas, terumbu karang tertutup lumpur mati, dan muara mudah meluap memicu banjir bandang",
+    "Ikan di laut berubah menjadi burung camar yang terbang",
+    "Air laut di pantai berubah menjadi batu granit keras",
+    "Air sungai di hilir berhenti mengalir dan berubah arah naik ke gunung",
+    "Degradasi lanskap hulu berdampak hilir (upstream-downstream linkages): beban suspended solids merusak estuari, mematikan karang, dan memperparah sedimentasi pelabuhan."
+  ],
+  [
+    "Waduk Jatiluhur di Kabupaten Purwakarta Jawa Barat membendung aliran Sungai Citarum dan membentuk genangan air seluas 8.300 hektar. Jika terjadi musim kemarau ekstrem yang sangat panjang di pulau Jawa, dampak berantai terhadap sektor energi dan pangan yang dialami ibu kota Jakarta dan sekitarnya adalah ...",
+    "Produksi listrik PLTA berkurang karena penurunan elevasi muka air waduk, dan debit pasokan air baku air bersih PDAM serta air irigasi persawahan padi di Karawang dan Bekasi ikut terancam merosot",
+    "Matahari di Jawa Barat akan padam total",
+    "Seluruh ikan di waduk berubah menjadi hewan darat",
+    "Jakarta akan dilanda badai salju kutub",
+    "Interkoneksi bendungan serbaguna: penurunan volume tampung waduk (water storage deficit) menekan keandalan pembangkit listrik hidro dan ketahanan pangan agraris."
+  ],
+  [
+    "Pemerintah membangun \"Kanal Banjir Barat\" dan memodifikasi aliran Sungai Ciliwung dengan membuat sodetan (terowongan bawah tanah) Ciliwung menuju Kanal Banjir Timur (KBT). Mengapa pembuatan sodetan sungai bawah tanah ini sangat efektif mengurangi ancaman banjir di pusat kota Jakarta?",
+    "Sodetan membagi dan mengalihkan sebagian debit air bah sungai saat puncak banjir di hulu langsung ke kanal pembuangan timur sehingga volume air yang melintasi sungai tengah kota tidak meluap melampaui tanggul",
+    "Sodetan menyedot seluruh air laut masuk ke dalam tanah kota",
+    "Terowongan sodetan digunakan warga sebagai jalan tol sepeda motor saat banjir",
+    "Sodetan membuat hujan di Jakarta berhenti turun",
+    "Diversi hidrolika debit puncak (peak flow diversion) mereduksi beban debit banjir kala ulang di saluran utama perkotaan secara signifikan."
+  ],
+  [
+    "Mengapa letak geografis kepulauan Indonesia yang diapit oleh Benua Asia dan Benua Australia serta Samudra Hindia dan Samudra Pasifik (posisi silang dunia) disebut sebagai \"anugerah bentang alam yang luar biasa sekaligus tantangan besar bagi bangsa Indonesia\"?",
+    "Anugerahnya adalah tanah yang subur, kekayaan hayati melimpah, dan menjadi pusat jalur perdagangan dunia; namun tantangannya berada di cincin api rawan bencana alam serta rentan terhadap ancaman penyelundupan dan pencurian sumber daya maritim lintas batas",
+    "Karena Indonesia memiliki emas batangan yang terapung di atas air laut",
+    "Karena kepulauan Indonesia bisa berpindah tempat ke kutub utara setiap sepuluh tahun",
+    "Karena semua negara lain di dunia dilarang melintasi wilayah laut Indonesia",
+    "Posisi silang nusantara membawa dividen geoekonomi perdagangan maritim global sekaligus beban kerentanan geologis seismik dan pengamanan kedaulatan kepulauan."
+  ]
 ];
 
 module.exports = {
-  name: 'Kerajaan Hindu-Buddha di Indonesia',
+  name: 'Peta, Kenampakan Alam & Bentang Alam Indonesia',
   mudah,
   sedang,
   sulit,

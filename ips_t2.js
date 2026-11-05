@@ -1,120 +1,817 @@
-// ips_t2.js - Topik 2: Kerajaan Islam di Indonesia (100 Soal)
-// 20 Mudah, 40 Sedang, 20 Sulit, 20 HOTS
+// Topik 2: Perkembangan Teknologi, Transportasi & Komunikasi dari Masa ke Masa
+// Format: [pertanyaan, pilihanBenar, salah1, salah2, salah3, penjelasan]
 
 const mudah = [
-  ['Kerajaan bercorak Islam pertama di Indonesia yang berdiri pada abad ke-13 di pesisir utara Aceh adalah Kerajaan ...', 'Samudera Pasai', 'Demak', 'Aceh Darussalam', 'Banten', 'Samudera Pasai didirikan oleh Meurah Silu yang kemudian bergelar Sultan Malik al-Saleh.'],
-  ['Raja pendiri sekaligus sultan pertama dari Kesultanan Samudera Pasai adalah Sultan ...', 'Malik al-Saleh (Meurah Silu)', 'Malik az-Zahir', 'Iskandar Muda', 'Ali Mughayat Syah', 'Batu nisan makam Sultan Malik al-Saleh bertarikh 1297 Masehi berukir kaligrafi Arab indah.'],
-  ['Kerajaan bercorak Islam pertama di Pulau Jawa yang berdiri sekitar akhir abad ke-15 adalah Kesultanan ...', 'Demak', 'Mataram Islam', 'Banten', 'Cirebon', 'Kesultanan Demak didirikan oleh Raden Patah dengan bantuan dari para Wali Songo.'],
-  ['Raja pertama pendiri Kesultanan Demak di Jawa Tengah adalah ...', 'Raden Patah', 'Pati Unus', 'Sultan Trenggana', 'Sunan Kalijaga', 'Raden Patah memimpin Demak menjadi pusat penyebaran agama Islam di Pulau Jawa.'],
-  ['Panglima perang Demak yang dijuluki "Pangeran Sabrang Lor" karena keberaniannya memimpin armada laut menyerang Portugis di Malaka adalah ...', 'Pati Unus (Adipati Unus)', 'Raden Patah', 'Sultan Trenggana', 'Fatahillah', 'Pati Unus menyeberangi Laut Jawa ke utara (sabrang lor) menyerbu benteng Portugis di Malaka pada 1513.'],
-  ['Masjid kuno peninggalan Kesultanan Demak yang terkenal memiliki salah satu tiang utama (soko guru) terbuat dari serpihan kayu (tatal) adalah Masjid ...', 'Agung Demak', 'Baiturrahman Aceh', 'Menara Kudus', 'Agung Cirebon', 'Soko tatal Masjid Agung Demak dibuat oleh Sunan Kalijaga dari serpihan kayu yang diikat kuat.'],
-  ['Kesultanan Aceh mencapai puncak kejayaannya pada masa pemerintahan sultan yang arif dan perkasa bernama Sultan ...', 'Iskandar Muda', 'Ali Mughayat Syah', 'Alauddin Riayat Syah', 'Iskandar Thani', 'Di bawah Sultan Iskandar Muda (1607-1636), Aceh menguasai jalur perdagangan rempah di Selat Malaka.'],
-  ['Tokoh ulama dan panglima perang yang berhasil merebut pelabuhan Sunda Kelapa dari Portugis pada 22 Juni 1527 dan mengubah namanya menjadi Jayakarta adalah ...', 'Fatahillah (Faletehan)', 'Sunan Kalijaga', 'Raden Patah', 'Sultan Hasanuddin', 'Nama Jayakarta berarti "Kemenangan yang Sempurna", kini diperingati sebagai hari lahir Kota Jakarta.'],
-  ['Kerajaan Islam di Banten didirikan dan dimakmurkan oleh seorang sultan penentang keras monopoli VOC Belanda yaitu Sultan ...', 'Ageng Tirtayasa', 'Haji', 'Hasanuddin', 'Trenggana', 'Sultan Ageng Tirtayasa gigih mempertahankan kedaulatan maritim dan pelabuhan bebas Banten dari VOC.'],
-  ['Kesultanan Mataram Islam mencapai puncak kejayaannya pada masa pemerintahan raja besar bernama Sultan ...', 'Agung Hanyokrokusumo', 'Panembahan Senopati', 'Amangkurat I', 'Hamengkubuwono I', 'Sultan Agung memimpin Mataram menyerang markas VOC di Batavia pada tahun 1628 dan 1629.'],
-  ['Sultan dari Kesultanan Gowa-Tallo di Makassar yang dijuluki oleh Belanda sebagai "Ayam Jantan dari Benua Timur" (de Haantjes van het Oosten) adalah Sultan ...', 'Hasanuddin', 'Alauddin', 'Baabullah', 'Nuku', 'Julukan ini diberikan karena keberanian dan keteguhan Sultan Hasanuddin melawan monopoli dagang VOC.'],
-  ['Perjanjian damai yang terpaksa ditandatangani oleh Sultan Hasanuddin dengan VOC Belanda pada tahun 1667 di Makassar adalah Perjanjian ...', 'Bongaya', 'Giyanti', 'Salatiga', 'Saragosa', 'Perjanjian Bongaya sangat merugikan Kesultanan Gowa karena membatasi kedaulatan pelayaran dan perdagangan.'],
-  ['Dua kerajaan Islam kembar yang terkenal sebagai penghasil rempah-rempah cengkih dan pala terbesar di Maluku Utara adalah Kesultanan ...', 'Ternate dan Tidore', 'Gowa dan Tallo', 'Samudera dan Pasai', 'Demak dan Pajang', 'Ternate dan Tidore menjadi magnet kedatangan bangsa-bangsa pedagang dari Eropa dan Asia.'],
-  ['Sultan dari Kesultanan Ternate yang berhasil mengusir penjajah Portugis dari benteng Gamlamo Maluku pada tahun 1575 adalah Sultan ...', 'Baabullah', 'Hairun', 'Nuku', 'Hasanuddin', 'Sultan Baabullah dijuluki Penguasa 72 Pulau karena pengaruh kekuasaannya membentang luas di Kepulauan Maluku.'],
-  ['Kelompok sembilan tokoh ulama penyebar agama Islam yang sangat dihormati di Pulau Jawa dikenal dengan sebutan ...', 'Wali Songo', 'Wali Pitu', 'Santri Songo', 'Ulama Sembilan', 'Wali Songo menyebarkan agama Islam dengan pendekatan budaya yang santun, damai, dan bijaksana.'],
-  ['Anggota Wali Songo yang terkenal menyebarkan agama Islam menggunakan sarana wayang kulit, gamelan, dan tembang gending Ilir-Ilir adalah Sunan ...', 'Kalijaga (Raden Mas Said)', 'Ampel', 'Bonang', 'Giri', 'Sunan Kalijaga memadukan ajaran Islam dengan nilai-nilai kearifan budaya Jawa secara harmonis.'],
-  ['Anggota tertua dari Wali Songo yang berdakwah di Gresik, Jawa Timur dan wafat pada tahun 1419 Masehi adalah Sunan ...', 'Gresik (Maulana Malik Ibrahim)', 'Ampel', 'Kudus', 'Muria', 'Batu nisan Maulana Malik Ibrahim di Gresik berukir ayat kursi dan syair bahasa Arab indah.'],
-  ['Masjid peninggalan Sunan Kudus yang sangat unik karena menara masjidnya berbentuk menyerupai candi Hindu adalah Masjid ...', 'Menara Kudus', 'Agung Demak', 'Banten Lama', 'Sunan Ampel', 'Menara Kudus merupakan wujud nyata akulturasi budaya Islam dengan kebudayaan Hindu di Jawa.'],
-  ['Perjanjian Giyanti pada tahun 1755 membagi wilayah kekuasaan Kerajaan Mataram Islam menjadi dua bagian yaitu ...', 'Kasunanan Surakarta dan Kasultanan Yogyakarta', 'Kesultanan Demak dan Pajang', 'Kesultanan Cirebon dan Banten', 'Kerajaan Kediri dan Jenggala', 'Kasunanan Surakarta dipimpin Pakubuwono III, Kasultanan Yogyakarta dipimpin Pangeran Mangkubumi (Hamengkubuwono I).'],
-  ['Mata uang logam emas murni yang digunakan sebagai alat transaksi resmi pada masa Kesultanan Samudera Pasai dan Aceh adalah ...', 'Dirham emas', 'Gobog tembaga', 'Dinar perak', 'Gulden perunggu', 'Dirham Samudera Pasai memuat nama sultan yang berkuasa dengan kaligrafi Arab yang sangat rapi.']
+  [
+    "Alat transportasi tradisional darat yang ditarik oleh seekor atau sepasang kuda dan dikemudikan oleh seorang kusir disebut ...",
+    "Delman atau Dokar",
+    "Becak dayung",
+    "Sepeda ontel",
+    "Pedati sapi",
+    "Delman, dokar, atau andong merupakan kendaraan tradisional roda dua atau empat bertenaga kuda."
+  ],
+  [
+    "Alat bajak sawah tradisional yang memanfaatkan tenaga hewan ternak sebelum adanya mesin traktor menggunakan tenaga ...",
+    "Kerbau atau sapi",
+    "Kuda pacu",
+    "Kambing",
+    "Gajah",
+    "Membajak sawah dengan kerbau membalik tanah sawah secara tradisional dan ramah lingkungan."
+  ],
+  [
+    "Alat komunikasi tradisional dari batang bambu atau kayu berongga yang dipukul untuk memberi tanda bahaya atau ronda malam disebut ...",
+    "Kentongan",
+    "Bedug",
+    "Gong",
+    "Lonceng",
+    "Ketukan suara kentongan memiliki kode irama tertentu untuk tanda kebakaran, pencurian, atau banjir."
+  ],
+  [
+    "Alat transportasi air paling sederhana yang terbuat dari susunan batang-batang bambu yang diikat berjajar dan didayung adalah ...",
+    "Rakit bambu (getek)",
+    "Kapal selam",
+    "Perahu motor tempel",
+    "Kapal feri penyeberangan",
+    "Rakit bambu banyak digunakan masyarakat di pedesaan untuk menyeberangi sungai tenang."
+  ],
+  [
+    "Kendaraan bermotor roda dua yang digerakkan oleh mesin bensin atau baterai listrik dan menjadi sarana transportasi harian utama di Indonesia adalah ...",
+    "Sepeda motor",
+    "Delman",
+    "Becak",
+    "Sepeda roda tiga",
+    "Sepeda motor memudahkan mobilitas warga melintasi jalan sempit dan gang perkotaan."
+  ],
+  [
+    "Alat transportasi darat modern berdaya angkut penumpang sangat banyak yang melaju di atas lintasan rel baja khusus dinamakan ...",
+    "Kereta api",
+    "Bus antar-kota",
+    "Truk kontainer",
+    "Mobil angkot",
+    "Kereta api digerakkan oleh lokomotif diesel atau listrik dan bebas dari kemacetan lalu lintas jalan raya."
+  ],
+  [
+    "Alat transportasi udara modern yang memiliki sayap dan digerakkan oleh mesin jet untuk menempuh perjalanan antarpulau dan antarnegara adalah ...",
+    "Pesawat terbang",
+    "Balon udara",
+    "Helikopter",
+    "Paralayang",
+    "Pesawat komersial memungkinkan perjalanan dari Jakarta ke Surabaya hanya dalam waktu sekitar 1,5 jam."
+  ],
+  [
+    "Alat transportasi udara yang menggunakan baling-baling putar besar di bagian atas sehingga dapat mendarat dan lepas landas secara tegak lurus (vertikal) adalah ...",
+    "Helikopter",
+    "Pesawat jet",
+    "Pesawat layang",
+    "Roket",
+    "Helikopter sangat berguna untuk misi penyelamatan bencana di daerah terpencil yang tidak memiliki landasan pacu."
+  ],
+  [
+    "Alat komunikasi jarak jauh modern yang dapat digenggam tangan dan memiliki layar sentuh untuk mengirim pesan teks, suara, dan video adalah ...",
+    "Ponsel pintar (Smartphone)",
+    "Telegraf kabel",
+    "Mesin tik kuno",
+    "Surat kabar harian",
+    "Smartphone memadukan fungsi telepon, kamera, kalkulator, dan akses internet dalam satu genggaman."
+  ],
+  [
+    "Surat elektronik yang dikirim melalui jaringan internet antar-komputer atau ponsel secara cepat dalam hitungan detik disebut ...",
+    "Email (Surel)",
+    "Telegram kawat",
+    "Surat kilat pos",
+    "Faksimile",
+    "Email (electronic mail) menggantikan pengiriman surat kertas pos yang membutuhkan waktu berhari-hari."
+  ],
+  [
+    "Alat pertanian modern yang menggunakan mesin bertenaga solar untuk membajak dan menggemburkan tanah sawah dengan cepat dinamakan ...",
+    "Traktor",
+    "Ani-ani",
+    "Sabit gerigi",
+    "Cangkul kayu",
+    "Satu mesin traktor mampu membajak sawah seluas satu hektar dalam waktu beberapa jam saja."
+  ],
+  [
+    "Mesin penggiling gabah padi modern yang memisahkan kulit sekam dari butiran beras putih dinamakan ...",
+    "Rice Mill (Mesin Penggiling Beras)",
+    "Mesin traktor",
+    "Mesin pemotong rumput",
+    "Mesin blender",
+    "Penggilingan beras modern menggantikan lesung tumbuk padi tradisional yang menguras tenaga manusia."
+  ],
+  [
+    "Alat komunikasi tradisional masyarakat Islam berupa tabung kayu besar berlapis kulit sapi yang dipukul di masjid menjelang adzan dinamakan ...",
+    "Bedug",
+    "Rebana",
+    "Kentongan",
+    "Gamelan",
+    "Tabuhan bedug dengan ritme bertalu-talu menandakan waktu shalat fardhu telah tiba."
+  ],
+  [
+    "Lembaga resmi milik negara di Indonesia yang bertugas melayani jasa pengiriman surat, perangko, dan paket pos sejak masa lampau adalah ...",
+    "PT Pos Indonesia",
+    "PT Kereta Api Indonesia",
+    "PT PLN",
+    "PT Telkom",
+    "Pos Indonesia memiliki kantor pos di seluruh kecamatan di Indonesia untuk melayani kurir surat dan logistik."
+  ],
+  [
+    "Kertas berperekat dengan gambar tertentu yang ditempelkan pada amplop surat sebagai tanda bukti pembayaran bea pengiriman pos disebut ...",
+    "Perangko",
+    "Materai",
+    "Kwitansi",
+    "Kupon belanja",
+    "Hobi mengumpulkan dan mengoleksi berbagai jenis perangko antik disebut filateli."
+  ],
+  [
+    "Kapal laut berukuran besar yang bertugas mengangkut ratusan mobil, bus, truk muatan, dan ribuan penumpang menyeberangi selat dinamakan ...",
+    "Kapal Feri (Ro-Ro)",
+    "Perahu jukung",
+    "Kapal sekunar",
+    "Kapal tunda",
+    "Kapal feri penyeberangan menghubungkan Merak-Bakauheni di Selat Sunda dan Ketapang-Gilimanuk di Selat Bali."
+  ],
+  [
+    "Alat penenun kain tradisional tanpa mesin yang digerakkan langsung oleh tangan dan kaki pengrajin kain tenun disebut ...",
+    "ATBM (Alat Tenun Bukan Mesin)",
+    "Mesin bordir otomatis",
+    "Mesin jahit listrik",
+    "Mesin obras digital",
+    "ATBM digunakan para perajin untuk menenun kain lurik, tenun ikat, dan songket dengan ketelitian tinggi."
+  ],
+  [
+    "Manfaat utama penggunaan internet dalam kehidupan sehari-hari siswa sekolah dasar adalah ...",
+    "Mempermudah mencari informasi ilmu pengetahuan dan belajar materi pelajaran sekolah",
+    "Menghabiskan waktu bermain game daring sepanjang malam",
+    "Menyebarkan kabar bohong kepada teman sekolah",
+    "Membeli barang belanjaan tanpa izin orang tua",
+    "Internet membuka akses jendela perpustakaan digital dunia bagi kegiatan belajar siswa."
+  ],
+  [
+    "Sikap bijak yang harus ditunjukkan oleh seorang anak saat menggunakan gawai telepon pintar (gadget) di rumah adalah ...",
+    "Membatasi waktu penggunaan gawai dan memprioritaskan waktu belajar serta istirahat",
+    "Memainkan gawai sambil mengisi daya baterai di atas tempat tidur",
+    "Menolak berbicara dengan orang tua karena asyik bermain game",
+    "Menonton video hingga larut malam sampai terlambat masuk sekolah",
+    "Manajemen waktu penggunaan layar (screen time) menjaga kesehatan mata dan konsentrasi belajar anak."
+  ],
+  [
+    "Dampak positif dari kemajuan teknologi transportasi modern bagi perekonomian masyarakat adalah ...",
+    "Barang kebutuhan pokok hasil bumi dari pelosok desa dapat didistribusikan ke kota dengan cepat dan murah",
+    "Semua jalan raya di perkotaan menjadi sepi tanpa kendaraan",
+    "Harga tiket kendaraan menjadi lebih mahal daripada harga emas",
+    "Masyarakat tidak perlu lagi makan nasi sehari-hari",
+    "Konektivitas jalan tol, kereta api, dan kapal laut mempercepat mobilitas logistik dan menekan harga pangan antardaerah."
+  ]
 ];
-
 const sedang = [
-  ['Teori Gujarat menyatakan bahwa agama Islam masuk ke Nusantara pada abad ke-13 dibawa oleh para pedagang muslim dari Gujarat, India. Bukti utama yang diajukan oleh tokoh teori ini (Snouck Hurgronje) adalah ...', 'Batu nisan makam Sultan Malik al-Saleh di Samudera Pasai dan makam Fatimah binti Maimun di Leran berukir corak nisan khas Gujarat', 'Ditemukannya mushaf Al-Quran tertua di pelabuhan Banten', 'Banyaknya masjid beratap kubah bawang di Maluku', 'Surat diplomasi dari khalifah Turki Utsmani kepada raja Mataram', 'Batu nisan marmer putih bermotif sulur dan kaligrafi memiliki kemiripan artistik dengan nisan di Cambay, Gujarat.'],
-  ['Teori Mekkah (Arab) yang didukung oleh Buya Hamka menyatakan bahwa Islam masuk ke Nusantara langsung dari Timur Tengah sejak abad ke-7 Masehi. Argumen pendukung teori ini adalah ...', 'Catatan Dinasti Tang dari Tiongkok tentang adanya perkampungan saudagar muslim bangsa Arab (Po-sse) di pesisir barat Sumatera (Barus) pada 674 Masehi', 'Adanya tradisi perayaan Tabot di Pariaman Sumatera Barat', 'Kedatangan bangsa Portugis yang membawa penerjemah Arab', 'Raja-raja di Jawa yang memakai gelar Sri Baginda Maharaja', 'Komunitas pedagang muslim Arab telah mendirikan perkampungan dagang di Barus untuk mencari kapur barus dan rempah.'],
-  ['Teori Persia didukung oleh Hoesein Djajadiningrat dengan menunjuk adanya kesamaan tradisi kebudayaan antara masyarakat Islam Nusantara dengan bangsa Persia, contohnya adalah ...', 'Tradisi peringatan 10 Muharram (perayaan Hari Asyura dan upacara Tabot di Bengkulu serta Pariaman)', 'Penggunaan huruf kanji pada nisan para wali', 'Adanya kesamaan arsitektur masjid dengan kuil Shinto di Jepang', 'Makanan pokok yang sama-sama menggunakan gandum impor', 'Ritual Tabut mengarak usungan keranda mengenang syahidnya cucu Nabi Muhammad, Sayyidina Husain di Karbala.'],
-  ['Kitab Bustanussalatin (Taman Para Raja) yang ditulis pada masa Kesultanan Aceh Darussalam digubah oleh seorang ulama besar dari Gujarat yang bernama ...', 'Nuruddin ar-Raniri', 'Hamzah Fansuri', 'Syamsuddin al-Sumatrani', 'Abdurrauf as-Singkili', 'Bustanussalatin memuat sejarah nabi-nabi, hukum tata kelola kerajaan Islam, dan silsilah para raja Aceh.'],
-  ['Ulama sufi terkemuka dari Barus pada masa Kesultanan Aceh yang terkenal dengan karya syair perahu dan tembang tasawuf falsafi adalah ...', 'Hamzah Fansuri', 'Nuruddin ar-Raniri', 'Sunan Bonang', 'Syekh Siti Jenar', 'Hamzah Fansuri adalah perintis sastra Melayu modern beraliran wihdatul wujud (mistisisme sufistik).'],
-  ['Tujuan utama penyerangan Sultan Agung dari Mataram ke markas VOC di Batavia pada tahun 1628 dan 1629 adalah ...', 'Mengusir VOC dari tanah Jawa karena monopoli perdagangan dan kehadiran benteng VOC mengancam kedaulatan Mataram', 'Merebut kapal perang VOC untuk dijual ke Tiongkok', 'Mengajak VOC bekerja sama membangun pabrik mobil', 'Meminta kompensasi atas perbaikan jalan di Batavia', 'Sultan Agung memiliki visi persatuan tanah Jawa dan menolak keras monopoli komersial dan militer kompeni Belanda.'],
-  ['Faktor penyebab utama kegagalan penyerangan pasukan Mataram Islam ke Batavia pada tahun 1629 di bawah pimpinan Tumenggung Baurekso adalah ...', 'Lumbung-lumbung perbekalan beras pasukan Mataram di Tegal dan Cirebon dibakar habis oleh mata-mata VOC sehingga prajurit kelaparan dan terserang wabah kolera', 'Pasukan Mataram kehabisan senjata panah dan pedang', 'Gubernur Jenderal VOC Jan Pieterszoon Coen melarikan diri ke Belanda', 'Sungai Ciliwung membeku menjadi es batu padat', 'Strategi bumi hangus lumbung logistik oleh VOC memicu krisis pangan akut dan desentri di kalangan prajurit Mataram.'],
-  ['Karya besar Sultan Agung di bidang kebudayaan dan penanggalan yang masih lestari digunakan masyarakat hingga kini adalah ...', 'Menciptakan Kalender Jawa Islam yang memadukan tahun Saka Hindu dengan tahun Hijriah Islam', 'Menciptakan tulisan braille untuk rakyat difabel', 'Menyusun kitab perundang-undangan berbahasa Belanda', 'Menemukan mesin cetak Al-Quran pertama di Asia', 'Tahun Jawa (dimulai 1 Sura 1555 Jawa bertepatan 1 Muharram 1043 H) mengadopsi peredaran bulan komariah.'],
-  ['Perang saudara di Kesultanan Banten yang menyebabkan kehancuran dan keruntuhan kedaulatan kerajaan tersebut dipicu oleh campur tangan VOC dalam pertikaian antara ...', 'Sultan Ageng Tirtayasa yang gigih anti-VOC melawan putranya sendiri Sultan Haji yang bersekutu dengan VOC', 'Pangeran Purbaya dengan Sunan Gunung Jati', 'Fatahillah dengan Adipati Unus', 'Ratu Kalinyamat dengan Raden Patah', 'VOC menerapkan siasat adu domba (devide et impera) membela Sultan Haji dan memenjarakan Sultan Ageng Tirtayasa.'],
-  ['Dalam menyebarkan agama Islam di lingkungan masyarakat Jawa, Sunan Kalijaga menggunakan pendekatan akulturasi budaya yang sangat cerdas, salah satunya adalah perayaan ...', 'Sekaten (Grebeg Maulud) di alun-alun keraton untuk menarik rakyat mendengar Syahadatain', 'Penyembelihan sapi kurban di depan candi Dieng', 'Pembakaran perahu nelayan di laut kidul', 'Lomba mendayung sampan menyeberangi Selat Sunda', 'Kata Sekaten berasal dari Syahadatain; gamelan Kanjeng Kyai Gunturmadu dibunyikan menarik warga berkumpul ke masjid.'],
-  ['Sunan Bonang (Raden Makhdum Ibrahim) menyebarkan agama Islam di daerah Tuban, Jawa Timur dengan menggunakan sarana media seni yaitu ...', 'Alat musik gamelan bonang dan gubahan tembang suluk mistik seperti Suluk Wijil', 'Pertunjukan tari balet Eropa', 'Pertunjukan kembang api malam hari', 'Lukisan dinding di gua-gua kapur', 'Gamelan bonang yang berlaras pelog menghasilkan alunan merdu yang menggugah batin rakyat pedalaman.'],
-  ['Sunan Giri (Raden Paku) mendirikan pesantren di bukit Giri, Gresik yang santrinya datang dari berbagai pulau di Nusantara hingga Maluku. Pengaruh dakwah Sunan Giri sangat besar sehingga para rajanya ...', 'Meminta restu dan legitimasi kekuasaan spiritual kepada Giri Kedaton sebelum dinobatkan menjadi raja', 'Wajib mengirimkan seluruh anak laki-lakinya menjadi tentara Giri', 'Harus membayar upeti pajak emas setiap bulan ke Gresik', 'Dilarang berdagang dengan pedagang asing selain santri Giri', 'Giri Kedaton diakui sebagai pusat fatwa dan otoritas keagamaan tertinggi di dunia Islam Jawa dan kawasan timur.'],
-  ['Sunan Kudus (Ja\'far Shadiq) menunjukkan toleransi dan penghormatan yang sangat tinggi terhadap pemeluk agama Hindu di wilayah Kudus dengan cara ...', 'Melarang warganya menyembelih hewan sapi dan menggantinya dengan kerbau saat hari raya kurban', 'Mewajibkan warga beribadah di puncak gunung Lawu', 'Membangun dinding benteng yang memisahkan kampung muslim dan hindu', 'Menghilangkan adzan sholat Jumat di masjid', 'Sapi dianggap hewan suci bagi umat Hindu; larangan menyembelih sapi merebut simpati mendalam warga Hindu Kudus.'],
-  ['Sunan Drajat (Raden Qasim) memusatkan perhatian dakwah Islam di Paciran, Lamongan pada bidang sosial kemanusiaan dengan mengajarkan falsafah luhur Catur Piwulang, salah satu ajarannya berbunyi ...', 'Wenehana mangan marang wong kang luwe, wenehana sandhang marang wong kang kawudan (berilah makan orang lapar, berilah pakaian orang telanjang)', 'Sapa sira sapa ingsun aja lali marang keraton', 'Sing sapa kepingin sugih kudu melu perang', 'Aja seneng ngombe wedang yen durung adus', 'Sunan Drajat menolong anak yatim, fakir miskin, dan kaum lemah melalui pemberdayaan kesejahteraan nyata.'],
-  ['Sultan Nuku dari Kesultanan Tidore dijuluki sebagai "Pangeran Pemberontak yang Tak Pernah Kalah" karena keberhasilannya ...', 'Mengalahkan dan mengusir VOC Belanda serta bangsa Inggris dari perairan Maluku melalui aliansi gerilya laut lintas pulau', 'Membakar seluruh pohon pala di pulau Tidore', 'Menjual rempah-rempah kepada bajak laut Karibia', 'Membangun benteng pertahanan di dasar kawah gunung berapi', 'Sultan Nuku menggalang kekuatan armada kora-kora rakyat Papua dan Maluku merebut kembali kedaulatan Tidore 1797.'],
-  ['Kerajaan Pajang yang berdiri di pedalaman Jawa Tengah setelah runtuhnya Kesultanan Demak didirikan oleh seorang menantu Sultan Trenggana yaitu ...', 'Jaka Tingkir (Sultan Hadiwijaya)', 'Arya Penangsang', 'Sutawijaya', 'Ki Ageng Pemanahan', 'Jaka Tingkir mengalahkan Arya Penangsang dari Jipang dalam duel di tepi Bengawan Solo.'],
-  ['Konflik berdarah antara Sultan Trenggana, Sunan Prawoto, dan Arya Penangsang dari Jipang Panolan memperebutkan takhta Demak dipicu oleh dendam atas terbunuhnya ...', 'Pangeran Sekar Seda ing Lepen (ayah dari Arya Penangsang)', 'Raden Patah', 'Pati Unus', 'Sunan Kalijaga', 'Pangeran Sekar dibunuh oleh utusan Sunan Prawoto di tepi sungai saat pulang dari sholat Jumat.'],
-  ['Tradisi Grebeg yang diadakan secara rutin di Kasultanan Yogyakarta dan Kasunanan Surakarta pada perayaan hari besar Islam ditandai dengan arak-arakan ...', 'Gunungan yang berisi aneka hasil bumi, sayuran, dan makanan tradisional yang kemudian diperebutkan oleh rakyat', 'Peti emas dan perak dari dalam keraton', 'Kuda perang yang mengenakan baju besi', 'Patung-patung raksasa dari tanah liat', 'Gunungan melambangkan sedekah raja kepada rakyat dan wujud syukur atas berkah kemakmuran bumi.'],
-  ['Upacara Tabot di Bengkulu dan Tabuik di Pariaman Sumatera Barat yang digelar setiap tanggal 1 hingga 10 Muharram merupakan upacara tradisi untuk mengenang ...', 'Wafatnya cucu Nabi Muhammad SAW yaitu Husein bin Ali di padang Karbala', 'Kemenangan armada Demak mengusir Portugis di Malaka', 'Mangkatnya Sultan Malik al-Saleh di Samudera Pasai', 'Kelahiran Sunan Gunung Jati di Cirebon', 'Tabuik berupa menara bambu megah berhias kain warna-warni yang diarak lalu dilarung ke samudra lepas.'],
-  ['Kitab sastra Tasawuf bercorak Islam di Jawa yang memuat wejangan keagamaan dan ajaran mistik para wali sering digubah dalam bentuk tembang tembang macapat yang disebut ...', 'Suluk (seperti Suluk Sukarsa, Suluk Malang Sumirang)', 'Babad keraton', 'Hikayat melayu', 'Kakawin sanskerta', 'Suluk menguraikan perjalanan spiritual jiwa manusia menuju ma\'rifatullah dalam terminologi mistisisme sufistik.'],
-  ['Makam seorang wanita muslimah bertarikh 1082 Masehi yang ditemukan di Desa Leran, Manyar, Gresik dan menjadi bukti kehadiran Islam abad ke-11 di pesisir Jawa adalah makam ...', 'Fatimah binti Maimun', 'Nyai Roro Kidul', 'Ratu Kalinyamat', 'Cut Meutia', 'Prasasti nisan Leran ditulis dengan huruf Arab kufik kuno dari abad ke-11 Masehi.'],
-  ['Salah satu karya sastra sejarah Islam di tanah Melayu yang menceritakan asal-usul, silsilah raja-raja, dan kejayaan Kesultanan Samudera Pasai adalah ...', 'Hikayat Raja-Raja Pasai', 'Babad Tanah Jawi', 'Bustanussalatin', 'Sejarah Melayu (Sulalatus Salatin)', 'Hikayat Raja-Raja Pasai memuat kisah Meurah Silu bermimpi bertemu Nabi Muhammad SAW sebelum memeluk Islam.'],
-  ['Sultan Iskandar Muda dari Kesultanan Aceh Darussalam mengeluarkan undang-undang tatanan hukum tata negara dan adat istiadat kerajaan yang terkenal dengan nama ...', 'Adat Makuta Alam', 'Hukum Tawan Karang', 'Piagam Jakarta', 'Undang-Undang Laut Melaka', 'Adat Makuta Alam menyeimbangkan integrasi hukum syariat Islam dengan hukum adat Aceh (Hukom ngon adat lagee zat ngon sifeut).'],
-  ['Hubungan diplomatik militer internasional yang sangat erat dijalin oleh Kesultanan Aceh pada abad ke-16 untuk menahan gempuran armada Portugis adalah hubungan dengan ...', 'Kekaisaran Turki Utsmani (Ottoman)', 'Kekaisaran Jepang Zaman Edo', 'Kerajaan Inggris Raya', 'Kekaisaran Spanyol Katolik', 'Sultan Selim II mengirimkan kapal perang, teknisi meriam, dan amunisi membantu persenjataan armada Kesultanan Aceh.'],
-  ['Pemberontakan Trunajaya (1677) dari Madura berhasil merebut keraton Mataram di Plered dan memaksa raja Mataram melarikan diri ke Tegalwangi hingga wafat di sana. Raja Mataram yang dimaksud adalah ...', 'Amangkurat I', 'Sultan Agung', 'Pakubuwono I', 'Panembahan Senopati', 'Pemerintahan tirani Amangkurat I yang bermitra dengan VOC memicu pemberontakan rakyat di bawah Pangeran Trunajaya.'],
-  ['Bentuk nisan makam kuno para raja Islam di Nusantara seperti di Aceh, Jawa, dan Sulawesi seringkali memadukan kaligrafi huruf Arab dengan ornamen hiasan ...', 'Sulur-suluran tumbuhan, daun teratai (lotus), dan kurva geometris tanpa gambar makhluk hidup bernyawa', 'Lukisan wajah para raja dan ratu', 'Patung dewa-dewa berkepala gajah', 'Simbol burung elang bersayap api', 'Larangan anikonisme dalam seni Islam diakulturasi secara estetis ke dalam ragam hias flora lokal nusantara.'],
-  ['Kesultanan Cirebon didirikan oleh salah seorang anggota Wali Songo yang bergelar Syarif Hidayatullah yaitu ...', 'Sunan Gunung Jati', 'Sunan Kudus', 'Sunan Giri', 'Sunan Kalijaga', 'Sunan Gunung Jati mengembangkan Cirebon menjadi pelabuhan niaga strategis dan pusat dakwah di Jawa Barat.'],
-  ['Raja wanita yang terkenal perkasa dari Kesultanan Jepara yang mengirimkan ratusan kapal perang dan ribuan prajurit menyerang Portugis di Malaka pada 1551 dan 1574 adalah ...', 'Ratu Kalinyamat (Retna Kencana)', 'Ratu Shima', 'Cut Nyak Dien', 'Dewi Sartika', 'Portugis mencatat Ratu Kalinyamat sebagai "Rainha de Japara, senhora poderosa e rica" (Ratu Jepara, wanita perkasa dan kaya).'],
-  ['Sistem perdagangan bebas (open door policy) yang diterapkan di pelabuhan Kesultanan Banten dan Gowa-Tallo sangat disukai pedagang mancanegara karena ...', 'Mengizinkan semua pedagang dari berbagai bangsa berniaga secara adil tanpa adanya monopoli sepihak dari satu bangsa kompeni', 'Tidak memungut biaya sepeser pun kepada kapal yang bersandar', 'Membagikan rempah-rempah gratis setiap hari Jumat', 'Melarang bangsa Asia memasuki wilayah perairan pelabuhan', 'Prinsip mare liberum maritim nusantara menolak kartel monopoli sepihak yang dipaksakan VOC.'],
-  ['Alat transportasi perang air khas Kesultanan Ternate dan Tidore di Maluku yang berupa perahu bercadik panjang berkecepatan tinggi didayung puluhan prajurit disebut ...', 'Perahu Kora-Kora', 'Kapal Jung Majapahit', 'Kapal Pinisi Bugis', 'Perahu Mayang', 'Armada kora-kora digunakan dalam pelayaran patroli perang laut dan perlawanan terhadap kapal galeon Eropa.'],
-  ['Perjanjian Salatiga yang ditandatangani pada tahun 1757 membagi kembali wilayah Kasunanan Surakarta dengan membentuk kadipaten otonom baru yaitu ...', 'Kadipaten Mangkunegaran (dipimpin Pangeran Sambernyawa / Raden Mas Said)', 'Kadipaten Pakualaman', 'Kasultanan Banten Kidul', 'Kadipaten Banyumas', 'Raden Mas Said bergelar K.G.P.A.A. Mangkunegara I setelah membuktikan keuletan perang gerilya melawan VOC.'],
-  ['Pembagian wilayah Kesultanan Yogyakarta pada tahun 1813 di masa pemerintahan Raffles (Inggris) menghasilkan daerah otonom baru yang dipimpin Pangeran Notokusumo yaitu ...', 'Puro Pakualaman (Pakualam I)', 'Mangkunegaran', 'Kasepuhan Cirebon', 'Kanoman Cirebon', 'Pakualaman dibentuk sebagai penghargaan militer Inggris atas bantuan Pangeran Notokusumo.'],
-  ['Tradisi Sekaten di Surakarta dan Yogyakarta diakhiri pada tanggal 12 Rabiul Awal dengan diselenggarakannya upacara ...', 'Grebeg Maulud', 'Grebeg Syawal', 'Grebeg Besar', 'Kirab Pusaka Malam Satu Sura', 'Grebeg Maulud memperingati hari kelahiran Nabi Muhammad SAW dengan sedekah gunungan agung dari kraton.'],
-  ['Falsafah Moh Limo (menolak lima perbuatan maksiat: madat, madon, minum, main, dan maling) diajarkan oleh salah seorang Wali Songo yang berdakwah di Surabaya yaitu ...', 'Sunan Ampel (Raden Rahmat)', 'Sunan Kalijaga', 'Sunan Giri', 'Sunan Gresik', 'Sunan Ampel mendidik para santri di Pesantren Ampeldenta yang menjadi kawah candradimuka para wali muda.'],
-  ['Buku naskah undang-undang perkapalan dan navigasi kelautan yang sangat tersohor dari suku Bugis-Makassar pada zaman kejayaan Kesultanan Gowa adalah ...', 'Hukum Amanna Gappa', 'Adat Makuta Alam', 'Kutaramanawa', 'Kitab Pararaton', 'Amanna Gappa mengatur etika maritim, sewa kapal, pembagian laba pelayaran, dan keselamatan nakhoda.'],
-  ['Kapal layar tradisional bertiang dua yang menjadi kebanggaan para pelaut ulung suku Bugis dan Makassar dalam menjelajahi samudra dunia adalah ...', 'Perahu Pinisi (Phinisi)', 'Kora-kora', 'Jukung Banjar', 'Lancang Kuning', 'Perahu Pinisi telah diakui oleh UNESCO sebagai Warisan Budaya Takbenda Dunia (Intangible Cultural Heritage).'],
-  ['Prasasti nisan kuno peninggalan Islam di Troloyo, Mojokerto bertarikh abad ke-14 Masehi membuktikan fakta sejarah penting bahwa ...', 'Telah ada komunitas masyarakat muslim, termasuk para kerabat keluarga istana, yang hidup rukun di pusat ibu kota Majapahit sebelum kerajaan tersebut runtuh', 'Majapahit dihancurkan oleh armada perang Turki Utsmani', 'Seluruh candi di Jawa Timur langsung ditinggalkan pada abad ke-14', 'Para wali songo pernah menjadi raja di Trowulan Mojokerto', 'Kompleks Troloyo membuktikan Islamisasi awal berlangsung damai di lingkar dalam aristokrasi Majapahit.'],
-  ['Masjid Menara Kudus memiliki keunikan pintu gerbang masuk yang berbentuk candi bentar terbelah dua mirip pura di Bali. Hal ini membuktikan adanya ...', 'Akulturasi arsitektur yang harmonis antara tradisi Hindu Jawa dengan fungsi peribadatan agama Islam', 'Kekurangan bahan kayu sehingga terpaksa memakai batu candi sisa', 'Tanda bahwa masjid tersebut tidak pernah digunakan untuk sholat', 'Perintah langsung dari penguasa penjajah Belanda', 'Kearifan lokal Sunan Kudus merangkul estetika sakral masyarakat lokal mempermudah penerimaan ajaran Islam.'],
-  ['Gelar "Khalifatullah" yang disandang oleh sultan-sultan Kerajaan Mataram Islam (seperti Ngabdurrahman Sayidin Panatagama Khalifatullah) mengandung makna politis dan religius yaitu ...', 'Pemimpin pemerintahan duniawi sekaligus pengatur ketertiban urusan agama Islam bagi seluruh rakyatnya', 'Panglima perang yang hanya tunduk pada kompeni VOC', 'Raja yang hidup mengasingkan diri di dalam hutan belantara', 'Dewa Wisnu yang turun kembali ke bumi tanah Jawa', 'Gelar ini mentransformasikan konsep dewa-raja masa Hindu menjadi mandataris khalifah penegak syariat keadilan di bumi.'],
-  ['Peristiwa penaklukan Malaka oleh bangsa Portugis di bawah pimpinan Afonso de Albuquerque pada tahun 1511 Masehi berdampak positif bagi pertumbuhan kota-kota pelabuhan Islam di Nusantara karena ...', 'Para pedagang muslim memboikot Malaka dan mengalihkan rute pelayarannya ke pelabuhan Aceh, Banten, Cirebon, dan Makassar', 'Pedagang muslim berhenti berniaga dan beralih menjadi petani', 'Semua kapal pedagang Eropa tenggelam di Selat Malaka', 'Rempah-rempah Maluku tidak laku lagi di pasar dunia', 'Kejatuhan Malaka mendesentralisasi rute niaga menciptakan kemakmuran pesisir barat Sumatera, Selat Sunda, dan Jawa.']
+  [
+    "Sebelum ditemukan mesin uap dan kendaraan bermotor, masyarakat tradisional mengangkut hasil panen bumi yang berat menggunakan ...",
+    "Gerobak pedati yang ditarik oleh sepasang sapi atau kerbau",
+    "Kereta rel listrik bertenaga baterai",
+    "Mobil pikap bak terbuka",
+    "Pesawat helikopter angkut barang",
+    "Pedati kayu bertenaga sapi menjadi sarana pengangkutan hasil pertanian andalan pada abad ke-19."
+  ],
+  [
+    "Penemuan mesin uap oleh James Watt pada abad ke-18 membawa revolusi besar di bidang transportasi dunia karena memicu lahirnya ...",
+    "Kereta api uap dan kapal laut bertenaga uap",
+    "Mobil listrik tenaga surya",
+    "Pesawat jet supersonik",
+    "Satelit komunikasi luar angkasa",
+    "Tenaga uap menggantikan tenaga angin pada kapal layar dan tenaga kuda pada kereta jalan rel."
+  ],
+  [
+    "Kereta rel listrik modern bawah tanah dan melayang yang beroperasi di Daerah Khusus Ibukota Jakarta untuk mengurai kemacetan parah dinamakan ...",
+    "MRT (Mass Rapid Transit) dan LRT (Light Rail Transit)",
+    "Kereta api lokomotif uap kuno",
+    "Bus antarkota antarprovinsi",
+    "Mobil angkot karoseri",
+    "MRT Jakarta melaju di jalur layang dan bawah tanah dengan ketepatan waktu tinggi dan ramah lingkungan."
+  ],
+  [
+    "Kereta Cepat pertama di Indonesia dan Asia Tenggara yang menghubungkan rute Jakarta hingga Bandung dalam waktu sekitar 45 menit dinamakan ...",
+    "Kereta Cepat Whoosh (KCJB)",
+    "Kereta Api Argo Parahyangan",
+    "Kereta Api Prameks",
+    "Kereta Api Jayabaya",
+    "Whoosh melaju dengan kecepatan operasional hingga 350 km/jam bertenaga listrik modern."
+  ],
+  [
+    "Dua orang bersaudara penemu asal Amerika Serikat yang berhasil merancang dan menerbangkan pesawat terbang bermesin pertama kali di dunia pada tahun 1903 adalah ...",
+    "Wright Bersaudara (Orville dan Wilbur Wright)",
+    "Thomas Alva Edison",
+    "Alexander Graham Bell",
+    "Guglielmo Marconi",
+    "Pesawat layang bermesin Flyer buatan Wright bersaudara berhasil terbang di bukit pasir Kitty Hawk."
+  ],
+  [
+    "Tokoh ilmuwan dan dirgantara kebanggaan bangsa Indonesia yang berhasil merancang pesawat terbang buatan anak bangsa N-250 Gatotkaca adalah ...",
+    "Prof. Dr. Ing. B.J. Habibie",
+    "Ir. Soekarno",
+    "Ki Hajar Dewantara",
+    "Prof. Dr. Soepomo",
+    "Presiden ke-3 RI B.J. Habibie memimpin IPTN (kini PT Dirgantara Indonesia) merakit pesawat turboprop modern."
+  ],
+  [
+    "Alat komunikasi jarak jauh masa lalu yang mengirimkan pesan kode morse menggunakan sinyal pulsa listrik melalui kawat tembaga dinamakan ...",
+    "Telegraf",
+    "Telepon genggam",
+    "Faksimile digital",
+    "Radio satelit",
+    "Pesan tertulis yang diterima dari telegraf dicetak di atas secarik kertas pita yang disebut telegram."
+  ],
+  [
+    "Sistem komunikasi sandi berupa rangkaian titik (.) dan garis datar (-) yang digunakan dalam pengiriman telegraf dan komunikasi pramuka dinamakan ...",
+    "Sandi Morse",
+    "Sandi Kotak",
+    "Sandi Angka",
+    "Sandi Ular",
+    "Sandi Morse diciptakan oleh Samuel Morse untuk mentransmisikan huruf alfabet melalui kawat listrik."
+  ],
+  [
+    "Tokoh penemu yang berhasil menciptakan pesawat telepon pertama di dunia yang mampu mengirimkan suara manusia melalui gelombang kabel kawat pada tahun 1876 adalah ...",
+    "Alexander Graham Bell",
+    "Guglielmo Marconi",
+    "Michael Faraday",
+    "Nikola Tesla",
+    "Penemuan telepon oleh Graham Bell merevolusi cara manusia berbicara secara langsung dari jarak jauh."
+  ],
+  [
+    "Tokoh yang berjasa besar menemukan sistem transmisi radio tanpa kabel (nirkabel) yang menjadi cikal bakal siaran radio dan gelombang nirkabel adalah ...",
+    "Guglielmo Marconi",
+    "James Watt",
+    "Isaac Newton",
+    "Albert Einstein",
+    "Marconi membuktikan sinyal gelombang elektromagnetik radio dapat melintasi samudra tanpa kawat penghubung."
+  ],
+  [
+    "Alat penerima siaran suara nirkabel yang sangat populer di Indonesia sejak masa perjuangan kemerdekaan untuk mendengarkan pidato Bung Tomo dan siaran RRI adalah ...",
+    "Radio",
+    "Televisi berwarna",
+    "Komputer tablet",
+    "Layar proyektor",
+    "Siaran Radio Republik Indonesia (RRI) menjadi sarana menyebarkan informasi kedaulatan RI ke pelosok negeri."
+  ],
+  [
+    "Alat komunikasi visual yang menampilkan gambar bergerak sekaligus suara dan pertama kali mengudara secara resmi di Indonesia saat meliput Asian Games IV Jakarta tahun 1962 adalah ...",
+    "Televisi Republik Indonesia (TVRI)",
+    "Bioskop layar tancap",
+    "Surat kabar harian De Express",
+    "Papan reklame jalan",
+    "TVRI menjadi stasiun televisi tertua di Indonesia yang menyiarkan program edukasi, berita, dan kebudayaan."
+  ],
+  [
+    "Satelit komunikasi domestik pertama milik Indonesia yang diluncurkan ke luar angkasa dari Cape Canaveral Amerika Serikat pada tahun 1976 dinamakan Satelit ...",
+    "Palapa (SKSD Palapa A1)",
+    "Garuda Satu",
+    "Bhinneka",
+    "Nusantara Dua",
+    "Satelit Palapa A1 mempersatukan jaringan telepon, televisi, dan komunikasi di seluruh kepulauan nusantara."
+  ],
+  [
+    "Alat komunikasi cetak bersejarah berupa lembaran kertas berita yang terbit berkala setiap hari dan memuat informasi peristiwa hangat dinamakan ...",
+    "Surat Kabar (Koran)",
+    "Majalah dinding sekolah",
+    "Buku ensiklopedia",
+    "Brosur promosi toko",
+    "Koran menjadi sarana utama para tokoh pergerakan nasional menyuarakan aspirasi kemerdekaan sebelum era televisi."
+  ],
+  [
+    "Teknologi alat panen padi modern yang menggabungkan tiga fungsi sekaligus yaitu memotong batang padi, merontokkan gabah, dan membersihkan butiran gabah secara otomatis di sawah adalah ...",
+    "Combine Harvester (Mesin Pemanen Kombinasi)",
+    "Traktor bajak rotari",
+    "Pompa air irigasi diesel",
+    "Alat pemotong rumput dorong",
+    "Combine harvester menghemat waktu panen dari berhari-hari menjadi hitungan jam serta mengurangi gabah yang tercecer."
+  ],
+  [
+    "Alat mesin pemintal benang otomatis yang menggantikan alat pintal kayu tradisional bertenaga kaki dalam industri garmen pakaian dinamakan ...",
+    "Mesin pintal mekanik bertenaga motor listrik",
+    "Alat tenun gedogan",
+    "Canting cap batik",
+    "Jarum sulam tangan",
+    "Pabrik tekstil modern memintal serat kapas menjadi ribuan gulungan benang per menit dengan kualitas benang seragam."
+  ],
+  [
+    "Penggunaan teknologi pengawetan makanan modern seperti pengeringan beku (freeze drying), sterilisasi vakum, dan pengalengan kedap udara bertujuan untuk ...",
+    "Membuat bahan pangan tahan lama disimpan berbulan-bulan tanpa membusuk dan aman didistribusikan ke daerah terpencil",
+    "Mengubah rasa makanan menjadi asin seperti garam",
+    "Membuat makanan mengeluarkan racun berbahaya",
+    "Menghilangkan seluruh kandungan gizi makanan",
+    "Sterilisasi membunuh bakteri pembusuk sehingga hasil panen ikan, daging, dan buah dapat diekspor ke mancanegara."
+  ],
+  [
+    "Dampak negatif dari semakin banyaknya kendaraan bermotor pribadi (mobil dan motor berbahan bakar minyak) di jalan raya kota besar adalah ...",
+    "Meningkatnya polusi udara beracun (karbon monoksida) dan memicu kemacetan lalu lintas jalan raya yang parah",
+    "Menurunnya suhu udara perkotaan menjadi sedingin es",
+    "Membuat harga minyak dunia menjadi gratis",
+    "Semua pohon di pinggir jalan tumbuh menjadi dua kali lebih cepat",
+    "Emisi gas buang knalpot mencemari paru-paru warga kota dan meningkatkan efek gas rumah kaca pemanasan global."
+  ],
+  [
+    "Upaya ramah lingkungan yang dapat dilakukan masyarakat perkotaan untuk mengurangi kemacetan dan pencemaran udara akibat kendaraan pribadi adalah ...",
+    "Beralih menggunakan angkutan umum massal (seperti Transjakarta, KRL, MRT) atau bersepeda dan berjalan kaki untuk jarak dekat",
+    "Membeli lima unit mobil pribadi untuk setiap anggota keluarga",
+    "Membakar ban bekas di pinggir jalan raya",
+    "Menebang semua pohon peneduh di tepi trotoar",
+    "Menggunakan transportasi publik mengurangi konsumsi bahan bakar fosil dan menurunkan beban volume kendaraan di jalan raya."
+  ],
+  [
+    "Alat transportasi kapal bertenaga nuklir di dunia umumnya digunakan untuk keperluan khusus kapal pemecah es dan kapal selam karena ...",
+    "Mampu berlayar terus-menerus selama bertahun-tahun di samudra luas tanpa perlu mengisi ulang bahan bakar minyak",
+    "Membutuhkan solar dalam jumlah ribuan drum setiap hari",
+    "Hanya bisa bergerak mundur di atas air laut",
+    "Mengeluarkan asap hitam pekat yang membakar awan",
+    "Reaktor nuklir menghasilkan energi panas luar biasa besar dari sedikit bahan bakar uranium yang sangat efisien."
+  ],
+  [
+    "Dampak positif dari kemunculan aplikasi belanja daring (e-commerce) bagi para pengrajin makanan tradisional di desa pelosok adalah ...",
+    "Memperluas jangkauan pasar penjualan produk ke seluruh pelosok Indonesia tanpa harus membuka toko fisik mahal di kota",
+    "Memaksa pedagang desa menutup usahanya selamanya",
+    "Membuat pengrajin desa dilarang membuat makanan lezat",
+    "Mengharuskan pembeli datang berjalan kaki ke desa pengrajin",
+    "Platform digital marketplace memotong rantai perantara sehingga UMKM desa dapat terhubung langsung dengan jutaan konsumen nasional."
+  ],
+  [
+    "Kemudahan bertransaksi pembayaran non-tunai di era digital saat ini dipermudah dengan penggunaan kode batang persegi hitam-putih terstandar nasional yang disebut ...",
+    "QRIS (Quick Response Code Indonesian Standard)",
+    "Kartu tanda penduduk (KTP)",
+    "Kupon undian belanja",
+    "Perangko pos kilat",
+    "QRIS diluncurkan Bank Indonesia memungkinkan pembayaran menggunakan berbagai aplikasi dompet digital cukup dengan memindai satu kode QR."
+  ],
+  [
+    "Salah satu bahaya penyalahgunaan teknologi informasi di media sosial yang harus diwaspadai oleh anak-anak sekolah adalah maraknya \"Hoaks\", yang artinya ...",
+    "Pemberitaan palsu atau informasi bohong yang sengaja disebarkan untuk menyesatkan dan meresahkan masyarakat",
+    "Koleksi foto pemandangan alam pegunungan yang indah",
+    "Kumpulan soal latihan ujian matematika di sekolah",
+    "Peraturan resmi yang diterbitkan oleh kementerian pendidikan",
+    "Penyebaran hoaks dapat memicu pertengkaran, fitnah, dan kepanikan warga; anak harus terbiasa menyaring kebenaran berita."
+  ],
+  [
+    "Tindakan perundungan atau ejekan menyakitkan yang dilakukan seseorang terhadap temannya melalui pesan media sosial di dunia maya dikenal dengan istilah ...",
+    "Cyberbullying (Perundungan Siber)",
+    "Cybercrime pencurian data",
+    "Digital marketing periklanan",
+    "Software aplikasi komputer",
+    "Perundungan siber dapat melukai perasaan korban; siswa harus selalu bertutur kata sopan dan santun di dunia maya."
+  ],
+  [
+    "Teknologi kecerdasan buatan (Artificial Intelligence / AI) yang berkembang pesat saat ini dirancang untuk ...",
+    "Membantu manusia menyelesaikan pekerjaan komputasi rumit, pengolahan bahasa, dan otomasi tugas secara efisien",
+    "Menggantikan seluruh manusia agar manusia tidak perlu berpikir sama sekali",
+    "Mematikan seluruh jaringan listrik di muka bumi",
+    "Membuat robot yang bertugas menghancurkan gedung sekolah",
+    "AI berfungsi sebagai alat bantu kognitif pintar yang meningkatkan produktivitas belajar, riset ilmiah, dan industri kreatif."
+  ],
+  [
+    "Dalam bidang kesehatan, penemuan alat kedokteran modern rontgen (Sinar-X) dan USG (Ultrasonografi) sangat membantu para dokter untuk ...",
+    "Melihat kondisi organ dalam tubuh, tulang patah, dan perkembangan janin di dalam rahim tanpa perlu melakukan pembedahan",
+    "Mencetak obat tablet secara langsung di apotek",
+    "Mengganti seluruh darah manusia dengan air mineral",
+    "Membuat pasien tidak pernah merasa lapar lagi",
+    "Pencitraan diagnostik medis non-invasif memudahkan penanganan dini penyakit secara tepat dan cepat."
+  ],
+  [
+    "Penggunaan pesawat tanpa awak yang dikendalikan dari jarak jauh menggunakan remote kontrol (Drone) di sektor pertanian modern bermanfaat untuk ...",
+    "Memetakan kondisi kesehatan tanaman, memantau kelembapan lahan, dan menyemprotkan pupuk cair secara presisi dari udara",
+    "Mengangkut puluhan ton beras dari sawah ke pelabuhan",
+    "Membajak tanah sawah di bawah genangan lumpur",
+    "Menggantikan fungsi petani dalam memanen buah kelapa",
+    "Drone pertanian (precision agriculture) menghemat pemakaian pestisida dan mempercepat pemantauan ratusan hektar sawah."
+  ],
+  [
+    "Kendaraan ramah lingkungan masa kini yang menggunakan motor penggerak bertenaga baterai isi ulang tanpa mengeluarkan asap knalpot beracun adalah ...",
+    "Kendaraan Listrik (Electric Vehicle / EV)",
+    "Kereta api berbahan bakar batu bara",
+    "Sepeda motor bermesin dua tak berasap pekat",
+    "Mobil pikap bermesin diesel kuno",
+    "Kendaraan listrik mengurangi emisi gas rumah kaca dan ketergantungan terhadap bahan bakar minyak fosil."
+  ],
+  [
+    "Dampak positif dari perkembangan teknologi aplikasi transportasi daring (ojek dan taksi online) bagi masyarakat pengguna adalah ...",
+    "Memudahkan memesan jasa antar-jemput penumpang dan barang langsung dari rumah dengan kepastian tarif ongkos yang transparan",
+    "Membuat tarif perjalanan naik menjadi sepuluh kali lipat tanpa kepastian",
+    "Mewajibkan penumpang mendorong sepeda motor pengemudi",
+    "Menghilangkan seluruh sepeda motor dari jalan raya",
+    "Integrasi GPS navigasi dan sistem pembayaran digital memudahkan mobilitas warga dan membuka jutaan lapangan kerja baru."
+  ],
+  [
+    "Teknologi pengolahan air laut menjadi air tawar yang dapat diminum dengan cara menyaring molekul garam menggunakan membran berpori sangat kecil dinamakan ...",
+    "Desalinasi Reverse Osmosis (Osmosis Terbalik)",
+    "Fermentasi air tebu",
+    "Pasteurisasi susu sapi",
+    "Kondensasi uap belerang",
+    "Teknologi desalinasi banyak dibangun di pulau-pulau kecil dan kapal laut untuk mengatasi krisis kelangkaan air tawar."
+  ],
+  [
+    "Pada masa penjajahan Belanda di Indonesia, jalur komunikasi jarak jauh yang dibangun menghubungkan kota-kota penting di Pulau Jawa memanfaatkan jaringan kawat ...",
+    "Telegraf darat dan kabel laut antarpulau",
+    "Satelit komunikasi luar angkasa",
+    "Pipa serat optik internet berkecepatan tinggi",
+    "Menara seluler pemancar 5G",
+    "Jaringan telegraf pos dibangun kolonial untuk mempercepat pengiriman instruksi militer dan laporan ekonomi perkebunan."
+  ],
+  [
+    "Penemuan lampu pijar listrik oleh Thomas Alva Edison pada akhir abad ke-19 membawa perubahan sosial budaya yang sangat besar bagi kehidupan manusia, yaitu ...",
+    "Aktivitas belajar, bekerja di pabrik, dan penerangan jalan dapat berlangsung aman dan nyaman di malam hari tanpa lentera minyak",
+    "Manusia tidak lagi membutuhkan waktu tidur di malam hari",
+    "Matahari berhenti menyinari bumi di siang hari",
+    "Semua lilin dan minyak kelapa dilarang dijual di pasar",
+    "Lampu listrik memperpanjang jam produktivitas manusia dan menggantikan lentera api minyak tanah yang berasap dan rawan kebakaran."
+  ],
+  [
+    "Teknologi pendingin ruangan (Air Conditioner / AC) dan lemari pendingin (kulkas) modern wajib menggunakan bahan gas pendingin (refrigerant) yang ramah lingkungan karena ...",
+    "Gas pendingin jenis freon lama (CFC) dapat merusak lapisan ozon bumi yang melindungi makhluk hidup dari radiasi ultraviolet",
+    "Freon lama membuat air es di kulkas terasa pahit",
+    "Gas pendingin baru terbuat dari air kelapa murni",
+    "Bahan freon lama membuat mesin kulkas menjadi sangat berat",
+    "Protokol Montreal mewajibkan penghapusan zat perusak ozon dan beralih ke hidrofluorokarbon (HFC) ramah lapisan ozon."
+  ],
+  [
+    "Pemanfaatan sistem navigasi satelit GPS (Global Positioning System) pada ponsel pintar pengemudi kendaraan bermanfaat untuk ...",
+    "Menunjukkan rute jalan tercepat, memperkirakan waktu tempuh, dan memantau kepadatan titik kemacetan lalu lintas secara langsung",
+    "Mengisi bahan bakar bensin kendaraan secara otomatis dari udara",
+    "Membuat mobil bisa melompat melewati jurang",
+    "Menghilangkan mobil-mobil lain di jalan raya",
+    "GPS menerima sinyal dari satelit navigasi global untuk menentukan titik koordinat posisi kendaraan secara akurat."
+  ],
+  [
+    "Salah satu dampak buruk kemajuan teknologi permainan daring (game online) pada anak yang tidak terkontrol adalah ...",
+    "Anak menjadi malas belajar, kesehatan mata terganggu akibat paparan radiasi layar, dan kurang berolahraga fisik",
+    "Anak menjadi bertambah pintar dalam semua mata pelajaran sekolah secara instan",
+    "Anak memiliki tubuh yang sangat kekar dan berotot",
+    "Anak tidak perlu lagi makan nasi dan minum air",
+    "Kecanduan game daring (gaming disorder) memicu penurunan prestasi belajar dan menurunkan keterampilan sosialisasi anak."
+  ],
+  [
+    "Ciri utama teknologi ramah lingkungan (green technology) yang kini dikembangkan di berbagai belahan dunia adalah ...",
+    "Menghasilkan emisi limbah minimal, hemat energi, dan memanfaatkan sumber daya alam terbarukan tanpa merusak kelestarian lingkungan",
+    "Menggunakan bahan bakar minyak bumi sebanyak-banyaknya",
+    "Membuang limbah kimia langsung ke sungai umum",
+    "Menghasilkan suara bising yang sangat memekakkan telinga",
+    "Teknologi hijau berorientasi pada keberlanjutan bumi untuk generasi masa depan dengan prinsip Reduce, Reuse, Recycle."
+  ],
+  [
+    "Pemanfaatan panel surya (sel fotovoltaik) di atap gedung sekolah atau rumah merupakan contoh pemanfaatan teknologi energi terbarukan yang mengubah ...",
+    "Energi cahaya matahari langsung menjadi energi listrik",
+    "Energi tiupan angin menjadi energi bunyi",
+    "Energi air terjun menjadi energi minyak tanah",
+    "Energi panas bumi menjadi gas elpiji",
+    "Sel surya terbuat dari silikon semikonduktor yang melepaskan elektron saat terpapar foton cahaya matahari menghasilkan arus listrik DC."
+  ],
+  [
+    "Teknologi kincir angin pembangkit listrik (PLTB) seperti yang beroperasi di Sidrap dan Jeneponto Sulawesi Selatan memanfaatkan bentang alam daerah yang ...",
+    "Memiliki tiupan angin kencang dan stabil sepanjang tahun untuk memutar bilah turbin raksasa penghasil listrik",
+    "Berupa lautan es yang tidak pernah mencair",
+    "Berupa dasar jurang yang tidak ada angin berhembus",
+    "Selalu dilanda banjir bandang air keruh",
+    "PLTB memanfaatkan energi kinetik angin ramah lingkungan tanpa emisi polusi karbon dan tanpa bahan bakar fosil."
+  ],
+  [
+    "Kelebihan utama dari penggunaan media surat elektronik (email) dan pesan instan daring dibanding surat pos kertas di era modern adalah ...",
+    "Pesan terkirim seketika dalam hitungan detik, hemat biaya kertas dan tinta, serta dapat melampirkan berkas dokumen digital dan foto",
+    "Surat pos kertas dapat tiba dalam waktu satu detik ke luar negeri",
+    "Email hanya boleh dikirim pada hari Minggu pagi",
+    "Pesan instan wajib ditulis menggunakan pena bulu burung",
+    "Digitalisasi korespondensi memotong biaya ongkos kirim dan mempercepat koordinasi komunikasi lintas benua secara instan."
+  ],
+  [
+    "Sikap etika digital yang benar yang harus dimiliki setiap orang saat menggunakan ruang media sosial dan internet adalah ...",
+    "Menjaga sopan santun berbahasa, menghargai privasi orang lain, dan tidak menyebarkan ujaran kebencian serta berita bohong",
+    "Membagikan kata sandi (password) akun kepada semua orang asing",
+    "Menghina dan mengejek teman yang berbeda suku di kolom komentar",
+    "Menyalin karya tulisan orang lain tanpa mencantumkan sumber pembuatnya",
+    "Literasi etika digital (netiket) menjaga ruang siber tetap sehat, beradab, aman, dan mempererat persaudaraan antarsesama."
+  ]
 ];
-
 const sulit = [
-  ['Konsep tasawuf martabat tujuh (Wahdatul Wujud) yang diajarkan oleh Syamsuddin al-Sumatrani di Aceh sempat memicu perdebatan teologis sengit dengan Nuruddin ar-Raniri. Ar-Raniri menuduh ajaran tersebut menyimpang (pantheistik) dan mengambil tindakan radikal yaitu ...', 'Membakar buku-buku karangan Hamzah Fansuri dan Syamsuddin di depan Masjid Raya Baiturrahman pada masa Sultan Iskandar Thani', 'Mengusir seluruh pedagang bangsa Arab keluar dari Aceh', 'Membongkar makam raja-raja Samudera Pasai', 'Melarang pembacaan kitab suci Al-Quran di surau', 'Perdebatan kalam ini diselesaikan ar-Raniri dengan dekrit pembakaran naskah wujudiyah demi menegakkan ortodoksi sunni syafiiyah.'],
-  ['Dalam naskah Babad Demak disebutkan adanya pengadilan para wali terhadap Syekh Siti Jenar (San Ali). Landasan hukum penjatuhan vonis terhadap Syekh Siti Jenar oleh majelis Wali Songo adalah ...', 'Penyebaran ajaran "Manunggaling Kawula Gusti" secara terbuka kepada rakyat awam yang dikhawatirkan dapat melunturkan syariat ibadah lahiriah dan mengguncang stabilitas sosial politik negara', 'Penolakan Syekh Siti Jenar untuk membayar pajak tanah di Cirebon', 'Keinginan Syekh Siti Jenar mengangkat dirinya menjadi gubernur VOC', 'Penggunaan bahasa Melayu dalam ceramah keagamaan', 'Secara esoterik ajarannya diakui, namun ekoterisasi mistik radikal dinilai berbahaya bagi kepatuhan hukum syariat massa awam.'],
-  ['Strategi benteng stelsel yang diterapkan VOC untuk mengepung dan mempersempit ruang gerak pasukan Mataram di bawah Sultan Agung di Batavia diperkuat oleh pembangunan pertahanan di sepanjang ...', 'Kanal-kanal pertahanan di sekitar benteng Kasteel Batavia dan penenggelaman kapal di muara Sungai Ciliwung', 'Puncak Gunung Salak dan Gunung Gede', 'Sepanjang pantai pulau Madura', 'Pelabuhan Tanjung Perak Surabaya', 'Kombinasi meriam benteng Kasteel Batavia dan blokade sungai melumpuhkan armada perahu dan infanteri Mataram.'],
-  ['Pada peristiwa penyerangan Mataram ke Batavia tahun 1629, prajurit Mataram sempat berhasil mencemari aliran air Sungai Ciliwung yang mengalir ke dalam benteng Kasteel Batavia dengan cara ...', 'Menghanyutkan bangkai-bangkai binatang dan kotoran ke hulu sungai sehingga memicu wabah kolera mematikan di dalam benteng VOC', 'Menuangkan minyak kelapa mendidih ke seluruh dasar sungai', 'Membendung total air sungai hingga Batavia kekeringan pasir', 'Menyiram sungai dengan air garam laut beracun', 'Pencemaran biologis air minum Ciliwung berhasil menewaskan banyak perwira tinggi kompeni termasuk Jan Pieterszoon Coen.'],
-  ['Salah satu isi pasal dalam Perjanjian Bongaya (1667) yang paling meruntuhkan kedaulatan ekonomi Kesultanan Gowa-Tallo adalah ...', 'Gowa harus menutup pelabuhannya bagi semua pedagang asing dari bangsa Eropa selain VOC dan mengakui monopoli dagang VOC atas ekspor rempah', 'Sultan Hasanuddin diwajibkan menyerahkan seluruh istana Somba Opu kepada kaisar Tiongkok', 'Rakyat Makassar dilarang makan nasi jagung', 'Semua perahu pinisi harus dibakar di tengah laut', 'Klausul monopoli dan pembongkaran benteng pertahanan mengamputasi jaringan perdagangan bebas maritim Makassar.'],
-  ['Pemberontakan Raden Mas Said (Pangeran Sambernyawa) melawan pasukan gabungan VOC, Surakarta, dan Yogyakarta selama 16 tahun (1741-1757) tidak pernah terkalahkan karena ia menerapkan doktrin perang gerilya dan falsafah kepemimpinan ...', 'Tri Darma: Mulat sarira hangrasa wani, rumangsa melu handarbeni, wajib melu hangrungkebi (berani introspeksi, merasa ikut memiliki, wajib membela)', 'Rawe-rawe rantas malang-malang putung tanpa strategi', 'Menyerang musuh hanya saat bulan purnama terang', 'Menyerahkan senjata pusaka kepada komandan VOC', 'Doktrin Tri Darma mengikat soliditas moral prajurit Sambernyawa dengan rakyat melahirkan ketangguhan gerilya legendaris.'],
-  ['Koin emas Dirham Kesultanan Samudera Pasai bertuliskan nama sultan pada sisi depan dan pada sisi belakang berukir kalimat doa keagamaan yaitu ...', '"As-Sultan al-Adil" (Sultan yang Adil) dan gelar "Al-Malik az-Zahir"', '"Deus Meumque Jus" lambang kerajaan Eropa', '"Kemakmuran tanah Jawa sepanjang masa"', '"Pangeran sabrang lor penguasa lautan"', 'Standardisasi mutu emas dan kaligrafi Dirham Pasai membuktikan integrasi moneter internasional dengan dinar dinasti Abbasiyah.'],
-  ['Peran politik Laksamana Malahayati (Keumalahayati) di Kesultanan Aceh pada akhir abad ke-16 sangat disegani dunia internasional karena ia memimpin ...', 'Pasukan armada "Inong Balee" (pasukan janda-janda pahlawan yang gugur) dan berhasil menewaskan penjelajah Belanda Cornelis de Houtman dalam duel satu lawan satu di atas geladak kapal pada 1599', 'Pasukan kavaleri berkuda menembus pegunungan Himalaya', 'Kelompok juru runding perdamaian dengan bangsa Spanyol di Manila', 'Pabrik percetakan buku di istana Darud Donya', 'Laksamana Malahayati adalah laksamana laut wanita modern pertama di dunia yang memimpin armada perang berbenteng laut.'],
-  ['Ketika Sunan Ampel menugaskan para santrinya berdakwah, Sunan Giri diutus menyebarkan Islam ke wilayah Maluku (Hitu dan Tidore). Dampak jangka panjang dari dakwah santri Giri di Kepulauan Rempah adalah ...', 'Terbentuknya aliansi spiritual dan intelektual pesantren di Maluku yang mengokohkan identitas Islam para sultan dalam membendung kristenisasi kolonial Portugis', 'Maluku berhenti menghasilkan cengkih dan beralih menanam padi', 'Seluruh penduduk Maluku diwajibkan pindah ke pulau Jawa', 'Pulau Tidore tenggelam akibat gempa bumi', 'Institusi pesantren cabang Giri di Hitu dan Ternate mendidik para pangeran Maluku memadukan ketauhidan dan perlawanan antikolonial.'],
-  ['Karakteristik arsitektur atap tumpang bertingkat gasal (tiga atau lima tingkat) pada masjid-masjid kuno di Jawa (seperti Masjid Demak dan Banten) mengandung filosofi sufistik bertingkat yaitu melambangkan tahapan ...', 'Iman, Islam, dan Ihsan (atau Syariat, Tarekat, Hakikat, dan Makrifat)', 'Bhur, Bhuwah, dan Swah masa Hindu kuno', 'Tiga musim alam semesta di khatulistiwa', 'Tiga anak laki-laki pendiri kerajaan', 'Peralihan bentuk meru Hindu ditransformasikan maknanya menjadi pendakian spiritual mistik mendekatkan diri kepada Allah SWT.'],
-  ['Sultan Ageng Tirtayasa dari Banten membangun saluran irigasi raksasa Sungai Tirtayasa sepanjang puluhan kilometer yang menghubungkan Sungai Ciujung dan Cisadane. Tujuan multidimensi dari proyek hidrologis ini adalah ...', 'Meningkatkan ketahanan pangan persawahan rakyat, membuka rute transportasi logistik pedalaman, dan menjadi benteng parit pertahanan menghadang invasi darat VOC', 'Membuat bendungan air asin untuk memelihara ikan hiu', 'Mengeringkan seluruh sumur di Batavia Belanda', 'Menenggelamkan kapal-kapal nelayan Banten sendiri', 'Infrastruktur Tirtayasa melipatgandakan panen padi ganda dan menjadi barrier militer efektif melawan kompeni Batavia.'],
-  ['Di Minangkabau, proses integrasi hukum Islam dengan hukum adat matrilineal lokal dirumuskan secara bijaksana dalam kesepakatan konsensus adat yang berbunyi ...', '"Adat basandi syarak, syarak basandi Kitabullah" (Adat bersendikan syariat, syariat bersendikan Al-Quran)', '"Hukum rimba berlaku bagi yang kuat"', '"Adat lama dibuang jauh ke samudra"', '"Syariat hanya berlaku untuk kaum bangsawan"', 'Plakat Puncak Pato di Bukit Marapalam merekonsiliasi kaum Adat dan kaum Padri menyatukan falsafah Minang dengan tauhid Islam.'],
-  ['Perbedaan mendasar antara proses Islamisasi di kawasan pesisir (kota pelabuhan) dengan Islamisasi di kawasan pedalaman agraris di Jawa adalah ...', 'Islamisasi pesisir berlangsung cepat melalui jalur perdagangan terbuka dan perkawinan kosmopolitan, sedangkan di pedalaman berlangsung lambat melalui akulturasi mistik dan asimilasi tradisi keraton', 'Masyarakat pedalaman menolak masuk Islam selamanya', 'Masyarakat pesisir tidak memiliki masjid', 'Islamisasi di pedalaman dipimpin oleh pedagang bangsa Belanda', 'Karakter maritim urban mengutamakan fleksibilitas hukum perniagaan, sedangkan kultur agraris menuntut kontinuitas ritual kosmis magis.'],
-  ['Keberadaan tradisi "Upacara Sekaten" di Kasultanan Yogyakarta menggunakan dua perangkat gamelan pusaka yang diletakkan di bangsal Pagongan Masjid Gedhe Kauman. Nama kedua gamelan pusaka tersebut adalah ...', 'Kyai Gunturmadu dan Kyai Nagawilaga', 'Kyai Plered dan Kyai Garuda Mas', 'Kyai Slamet dan Kyai Condong Campur', 'Kyai Sabrang dan Kyai Rontek', 'Gamelan dibunyikan bergantian selama sepekan memikat ribuan massa datang memadati halaman masjid mendengarkan syahadatain.'],
-  ['Pada masa Kesultanan Demak, Sunan Kudus mendirikan menara masjid yang dilengkapi dengan bedug kayu di puncaknya. Inovasi bedug sebagai penanda waktu sholat merupakan adaptasi kultural cerdas dari ...', 'Fungsi kentongan kayu tradisional desa di Nusantara yang dipadukan dengan kumandang adzan panggilan sholat Islam', 'Bunyi lonceng gereja di Eropa', 'Dentuman meriam kapal perang Portugis', 'Suara petir di puncak gunung Merapi', 'Komunikasi akustik lokal (kentongan/bedug) ditransformasikan menjadi syiar panggilan ibadah yang akrab di telinga masyarakat nusantara.'],
-  ['Dalam struktur pemerintahan Kesultanan Aceh Darussalam, wilayah persekutuan adat yang dipimpin oleh seorang bangsawan bergelar Teuku disebut ...', 'Ulèëbalang (Uleebalang)', 'Mukim', 'Gampong', 'Keuchik', 'Uleebalang memegang kekuasaan teritorial peradilan adat, sementara kaum ulama (Tengku) memegang otoritas hukum syariat Islam.'],
-  ['Pemberontakan Untung Suropati (1686) melawan VOC berujung pada gugurnya perwira tinggi kompeni Kapten Tack di depan Keraton Kartasura. Taktik perlawanan Untung Suropati berhasil karena ...', 'Memanfaatkan kemarahan terpendam prajurit Jawa terhadap kesewenang-wenangan kompeni dan berpura-pura terjadi kerusuhan massa di alun-alun', 'Menggunakan gas beracun yang ditiupkan angin malam', 'Membayar seluruh pasukan kompeni dengan emas palsu', 'Membangun terowongan bawah tanah menuju Amsterdam', 'Untung Suropati mengepung Kapten Tack di jalanan sempit Kartasura membinasakan seluruh detasemen elit berkuda VOC.'],
-  ['Karya sastra "Babad Tanah Jawi" yang ditulis pada masa Mataram Islam mengaitkan silsilah para sultan Jawa ke atas tidak hanya kepada Nabi Adam, tetapi juga kepada tokoh-tokoh pewayangan dan dewa Hindu. Analisis tujuan politis penulisan genealogis ini adalah ...', 'Menjaga kesinambungan legitimasi sakral kekuasaan raja di mata rakyat yang masih memegang tradisi kepercayaan leluhur pra-Islam', 'Membingungkan para penjajah bangsa Eropa yang membaca babad', 'Membuktikan bahwa wayang adalah orang Arab asli', 'Menghilangkan catatan sejarah tentang kerajaan Majapahit', 'Rekayasa genealogis keraton (mythmaking) mensinkronisasikan kontinuitas magis dharmaning ratu dari era kawi hingga era santri.'],
-  ['Pada masa perlawanan terhadap Portugis di Maluku, Sultan Hairun dari Ternate dijebak secara licik oleh gubernur Portugis Lopez de Mesquita dengan cara ...', 'Diundang masuk sendirian ke dalam Benteng Santo Paulo tanpa senjata untuk perundingan damai lalu dibunuh secara keji di dalam benteng pada 1570', 'Diracuni saat memakan buah kelapa di tepi pantai', 'Kapal perangnya ditembak meriam di tengah laut', 'Diculik saat sedang memancing ikan di danau', 'Pengkhianatan keji de Mesquita menyulut amarah revolusi semesta rakyat Maluku di bawah Sultan Baabullah menumpas tuntas kekuasaan Portugis.'],
-  ['Mengapa sistem feodalisme kepemilikan tanah di Kesultanan Mataram Islam (tanah lungguh / apanase) membedakan antara tanah Narawita (tanah milik pribadi raja) dan tanah Lungguh untuk para bangsawan patih?', 'Tanah Narawita membiayai seluruh operasional istana, sedangkan tanah Lungguh menjadi hak penarikan pajak bagi pejabat sebagai pengganti gaji dinas selama memangku jabatan', 'Tanah Lungguh hanya boleh ditanami rumput pakan kuda', 'Tanah Narawita disewakan kepada pedagang Inggris', 'Tanah Lungguh diberikan secara abadi dan tidak boleh ditarik kembali', 'Sistem apanase memberikan konsesi fiskal temporer kepada abdi dalem; jika dipecat tanah lungguh otomatis kembali ke kedaulatan keraton.']
+  [
+    "Perbedaan mendasar antara prinsip kerja mesin lokomotif uap kuno pada abad ke-19 dengan lokomotif diesel-elektrik modern saat ini adalah ...",
+    "Lokomotif uap membakar batu bara atau kayu untuk merebus air menghasilkan tekanan uap penggerak piston roda, sedangkan lokomotif diesel-elektrik menggunakan mesin diesel untuk memutar generator penghasil listrik penggerak motor traksi roda",
+    "Lokomotif uap menggunakan tenaga baterai aki basah",
+    "Lokomotif diesel-elektrik ditarik oleh puluhan ekor kuda dari dalam kabin",
+    "Kedua jenis lokomotif menggunakan bahan bakar bensin pertalite yang sama",
+    "Transformasi termodinamika mesin uap ke mesin diesel-elektrik meningkatkan efisiensi energi, daya tarik tonase kargo, dan kecepatan jelajah kereta api."
+  ],
+  [
+    "Dalam sejarah penerbangan nasional, peristiwa membanggakan pada tanggal 10 Agustus 1995 saat pesawat N-250 Gatotkaca berhasil terbang perdana di langit Kota Bandung kini diperingati oleh bangsa Indonesia sebagai ...",
+    "Hari Kebangkitan Teknologi Nasional (Hakteknas)",
+    "Hari Penerbangan Internasional",
+    "Hari Perhubungan Nasional",
+    "Hari Bakti Dirgantara",
+    "Penerbangan N-250 membuktikan bahwa putra-putri Indonesia mampu merancang pesawat berteknologi fly-by-wire canggih secara mandiri."
+  ],
+  [
+    "Konsep \"Revolusi Industri 4.0\" yang saat ini sedang berlangsung di berbagai sektor industri di dunia ditandai dengan integrasi antara ...",
+    "Sistem siber-fisik, Internet of Things (IoT), kecerdasan buatan (AI), dan analisis data raksasa (Big Data) dalam otomasi industri",
+    "Tenaga kerja manusia yang membajak sawah menggunakan cangkul kayu",
+    "Penggunaan mesin uap batu bara di seluruh bengkel sepeda",
+    "Penghapusan seluruh komputer dan ponsel pintar dari muka bumi",
+    "Revolusi 4.0 menyambungkan mesin-mesin pabrik dengan sensor cerdas dan internet sehingga proses manufaktur berjalan otonom dan efisien."
+  ],
+  [
+    "Teknologi kabel serat optik (fiber optic) yang ditanam di dasar samudra kepulauan Indonesia (Palapa Ring) mampu mengirimkan data internet berkecepatan sangat tinggi karena data ditransmisikan dalam bentuk ...",
+    "Gelombang pulsa cahaya inframerah yang dipantulkan di dalam serat kaca murni berkecepatan mendekati kecepatan cahaya",
+    "Arus air laut yang mengalir di dalam pipa paralon",
+    "Uap belerang panas yang ditekan dari stasiun pompa",
+    "Serbuk tembaga halus yang didorong angin kompresor",
+    "Total internal reflection pada serat optik memungkinkan transfer terabit data internet per detik melintasi ribuan kilometer tanpa interferensi elektromagnetik."
+  ],
+  [
+    "Proyek infrastruktur jaringan tulang punggung telekomunikasi serat optik nasional yang dibangun pemerintah Indonesia untuk menghubungkan seluruh kabupaten/kota dari Sabang sampai Merauke dinamakan Proyek ...",
+    "Palapa Ring (Palapa Ring Barat, Tengah, dan Timur)",
+    "Trans-Sumatera Highway",
+    "Tol Laut Logistik Nusantara",
+    "Satelit Garuda Perkasa",
+    "Palapa Ring menghapus jurang kesenjangan digital (digital divide) antara wilayah barat dengan daerah terluar, tertinggal, dan terdepan (3T) di wilayah timur."
+  ],
+  [
+    "Dalam sistem navigasi kapal laut modern, teknologi radar (Radio Detection and Ranging) dan sonar (Sound Navigation and Ranging) bekerja dengan prinsip ...",
+    "Memancarkan gelombang radio (radar di udara) atau gelombang suara (sonar di air) lalu menangkap pantulan gema gelombang saat menabrak rintangan karang/kapal lain",
+    "Mengirimkan penyelam ke dasar laut untuk meraba batu karang dengan tangan",
+    "Menerbangkan merpati pos di depan moncong kapal penunjuk arah",
+    "Menggunakan kaca pembesar raksasa untuk melihat dalam kegelapan malam",
+    "Ekolokasi elektromagnetik dan akustik mendeteksi posisi, jarak, dan kecepatan rintangan navigasi laut dalam kondisi badai dan kabut pekat."
+  ],
+  [
+    "Perbedaan utama antara jenis satelit komunikasi buatan \"Geostasioner\" (GEO) seperti Satelit Satria-1 dengan satelit orbit rendah (LEO) adalah ...",
+    "Satelit geostasioner mengorbit di ketinggian sekitar 36.000 km dengan kecepatan putar menyamai rotasi bumi sehingga posisinya tampak diam tetap di atas wilayah nusantara",
+    "Satelit geostasioner terbang di dalam atmosfer pohon kelapa",
+    "Satelit LEO tidak bisa mengirimkan sinyal ke bumi",
+    "Satelit geostasioner hanya beroperasi pada waktu siang hari",
+    "Orbit geostasioner (Clarke Orbit) sangat ideal untuk antena parabola darat karena arah parabola tidak perlu bergerak mengikuti satelit."
+  ],
+  [
+    "Dalam industri manufaktur modern, teknologi mesin cetak tiga dimensi (3D Printer) merevolusi metode pembuatan barang purwarupa (prototipe) karena mampu ...",
+    "Mencetak benda padat tiga dimensi lapis demi lapis (additive manufacturing) langsung dari rancangan gambar digital di komputer",
+    "Mencetak buku koran berjuta-juta lembar dalam hitungan detik",
+    "Menggandakan uang kertas rupiah tanpa izin bank sentral",
+    "Menghancurkan besi baja menjadi serbuk debu",
+    "3D printing memungkinkan pembuatan suku cadang mesin berpresisi tinggi dengan material filamen plastik, damar, atau logam tanpa cetakan cetak konvensional."
+  ],
+  [
+    "Pemanfaatan sistem \"Barcode\" dan chip \"RFID\" (Radio Frequency Identification) pada logistik gudang barang modern memberikan keunggulan berupa ...",
+    "Identifikasi dan pelacakan data keluar-masuk barang secara otomatis dan cepat tanpa perlu pencatatan manual di buku kasir",
+    "Membuat ukuran barang di gudang mengecil sendiri",
+    "Menghilangkan beban pajak penghasilan perusahaan",
+    "Mencegah debu menempel pada kardus barang",
+    "Gelombang frekuensi radio RFID membaca ratusan tag barang sekaligus dalam jarak beberapa meter mempercepat manajemen rantai pasok logistik."
+  ],
+  [
+    "Teknologi penyimpanan data di era komputasi modern yang memungkinkan pengguna menyimpan dokumen, foto, dan program di peladen (server) internet tanpa membebani memori lokal perangkat dinamakan ...",
+    "Komputasi Awan (Cloud Computing)",
+    "Disket magnetik lentur (Floppy Disk)",
+    "Kaset pita magnetik radio",
+    "Kartu pos berlubang",
+    "Layanan cloud (seperti Google Drive, Dropbox, iCloud) memungkinkan data diakses kapan saja dan di mana saja melalui jaringan internet."
+  ],
+  [
+    "Teknologi panel surya terapung (Floating Solar PV) yang dibangun di waduk-waduk raksasa Indonesia (seperti di Waduk Cirata Jawa Barat) memiliki keunggulan teknis dibanding panel surya di daratan yaitu ...",
+    "Suhu air waduk memberikan efek pendingin alami yang meningkatkan efisiensi kinerja panel surya serta tidak memakan lahan pertanian yang berharga di daratan",
+    "Air waduk membuat panel surya menyerap sinar bulan di malam hari",
+    "Panel surya terapung dapat bergerak sendiri seperti perahu motor",
+    "Biaya pemasangan panel surya terapung lebih murah daripada membeli lilin",
+    "Penutupan permukaan air oleh panel surya juga mengurangi laju penguapan air waduk dan menekan pertumbuhan alga gulma air."
+  ],
+  [
+    "Salah satu tantangan etika dan privasi terbesar dari pesatnya perkembangan media digital saat ini adalah maraknya kejahatan \"Phishing\" (Pengelabuan Siber), yaitu ...",
+    "Upaya penipuan rekayasa sosial untuk mencuri informasi sensitif seperti kata sandi, PIN perbankan, dan data pribadi dengan menyamar sebagai pihak resmi melalui tautan pesan palsu",
+    "Hobi memancing ikan di kolam pemancingan umum",
+    "Aktivitas mengedit video menggunakan efek suara musik",
+    "Pemasangan antena radio amatir di atas atap rumah",
+    "Pengguna internet harus waspada dan tidak boleh mengklik tautan mencurigakan atau memberikan kode OTP rahasia kepada siapa pun."
+  ],
+  [
+    "Dampak sosiologis dari perubahan alat bajak sawah bertenaga hewan kerbau menjadi mesin traktor mekanik di perdesaan Indonesia adalah ...",
+    "Mempercepat pengolahan lahan dan mengatasi keterbatasan tenaga kerja pemuda desa, namun mengurangi tradisi gotong royong sambatan antar-petani di sawah",
+    "Menghilangkan semua sawah di Indonesia dan menggantinya dengan kolam renang",
+    "Membuat para petani di desa menjadi presiden negara",
+    "Mewajibkan semua kerbau peliharaan dipindahkan ke kebun binatang",
+    "Mekanisasi agraris menggeser relasi sosial komunal tradisional menuju efisiensi rasional individualistis dalam sistem perekonomian pedesaan."
+  ],
+  [
+    "Dalam sistem transportasi perkotaan modern, konsep \"Integrasi Antarmoda Transportasi\" (seperti JakLingko di Jakarta) bertujuan untuk ...",
+    "Menghubungkan berbagai rute dan moda angkutan umum (mikrotrans, bus Transjakarta, LRT, MRT) dalam satu sistem tiket dan tarif pembayaran terpadu yang praktis",
+    "Melarang warga menggunakan sepeda motor di gang perumahan",
+    "Mewajibkan semua penumpang memakai seragam warna merah",
+    "Menghapuskan stasiun kereta api di seluruh penjuru kota",
+    "Konektivitas fisik halte terintegrasi dan tiket kartu elektronik memudahkan perpindahan penumpang dan mendorong masyarakat beralih dari mobil pribadi."
+  ],
+  [
+    "Teknologi penyaringan udara modern berventilasi HEPA (High-Efficiency Particulate Air) pada kabin pesawat terbang dan ruang operasi rumah sakit dirancang untuk ...",
+    "Menyaring dan menangkap 99,97% partikel mikroskopis debu, serbuk sari, bakteri, dan droplet virus sehingga udara kabin tetap steril dan sehat",
+    "Menyemprotkan gas wangi parfum secara kontinu setiap menit",
+    "Menurunkan kadar oksigen agar penumpang mengantuk dan tidur lelap",
+    "Mengubah udara dingin menjadi asap panas membara",
+    "Sirkulasi udara kabin pesawat berganti setiap 2-3 menit melewati filter HEPA menjaga kebersihan udara dari patogen menular."
+  ],
+  [
+    "Alat transportasi darat bersejarah di Jakarta yang pernah beroperasi pada akhir abad ke-19 hingga awal abad ke-20 yang melaju di atas rel jalan raya bertenaga tarikan kuda lalu diganti uap dan listrik adalah ...",
+    "Trem (Trem Kuda, Trem Uap, dan Trem Listrik Batavia)",
+    "Becak dayung bertenaga manusia",
+    "Kereta kuda kencana keraton",
+    "Sepeda ontel hias",
+    "Trem kota menjadi angkutan massal utama kota Batavia sebelum akhirnya digantikan oleh bus kota dan dihapus pada era 1960-an."
+  ],
+  [
+    "Teknologi \"Kecerdasan Buatan Generatif\" (Generative AI) yang kini marak digunakan memiliki kemampuan unik yaitu ...",
+    "Mampu menciptakan konten baru seperti teks esai, gambar visual, baris kode program, dan komposisi musik berdasarkan instruksi petunjuk (prompt) dari pengguna",
+    "Mampu mengubah batu kali menjadi kue cokelat lezat",
+    "Menyembuhkan patah tulang tanpa bantuan dokter bedah",
+    "Menghapus ingatan manusia secara otomatis di malam hari",
+    "AI generatif dilatih menggunakan miliaran data pengetahuan untuk menghasilkan sintesis karya kreatif digital baru secara instan."
+  ],
+  [
+    "Teknologi baterai isi ulang berbasis \"Lithium-Ion\" (Li-Ion) dan baterai \"Nikel\" yang menjadi jantung revolusi mobil listrik dan telepon pintar memiliki keunggulan utama yaitu ...",
+    "Kerapatan energi tinggi dalam bobot yang ringan, tidak memiliki efek memori penurunan kapasitas drastis, dan dapat diisi ulang ribuan siklus",
+    "Dapat menyala terang benderang seperti kembang api saat diisi daya",
+    "Terbuat dari bahan kayu pohon jati yang sangat keras",
+    "Dapat menghasilkan beras dan sayuran di dalam baterai",
+    "Kerapatan energi elektrokimia litium-nikel memungkinkan penyimpanan daya besar dalam kemasan baterai kompak dan efisien."
+  ],
+  [
+    "Dalam dunia penerbangan modern, sistem navigasi autopilot pada kokpit pesawat terbang komersial dikendalikan oleh sistem komputer penerbangan (FMC) yang berfungsi ...",
+    "Menjaga arah terbang, ketinggian jelajah, dan kecepatan pesawat secara otomatis mengikuti rencana rute navigasi yang telah diprogram pilot",
+    "Memasak makanan hangat untuk seluruh penumpang di kabin",
+    "Membuka pintu darurat pesawat saat melayang di angkasa",
+    "Menggantikan peran pilot secara mutlak sehingga pilot tidak perlu berada di kokpit",
+    "Autopilot meringankan beban kerja konsentrasi pilot pada fase terbang jelajah (cruise) panjang dan meningkatkan keselamatan navigasi udara."
+  ],
+  [
+    "Pemanfaatan teknologi satelit penginderaan jauh (Remote Sensing) oleh Badan Informasi Geospasial (BIG) dan BMKG di Indonesia digunakan secara strategis untuk ...",
+    "Memantau titik panas kebakaran hutan (hotspot), memprediksi pergerakan badai siklon tropis, dan memetakan perubahan tutupan lahan hutan nusantara dari luar angkasa",
+    "Mengatur lampu lalu lintas di jalan raya perkotaan secara manual",
+    "Mendengarkan percakapan telepon warga di dalam rumah",
+    "Mengambil ikan di laut secara langsung menggunakan lengan robot luar angkasa",
+    "Citra satelit spektral multisensor memotret kondisi bumi secara kontinu untuk mitigasi bencana alam hidrometeorologi dan tata ruang wilayah."
+  ]
 ];
-
 const hots = [
-  ['Seorang sejarawan membandingkan arsitektur Masjid Menara Kudus (yang mempertahankan menara mirip candi Hindu dan gerbang candi bentar) dengan arsitektur Masjid Agung Demak (yang memodifikasi pendopo atap meru susun tiga). Dari perbandingan arkeologis ini, kesimpulan paling komprehensif mengenai strategi budaya dakwah Wali Songo di tanah Jawa adalah ...', 'Para Wali Songo menerapkan strategi dakwah berbasis kontinuitas kultural: merangkul simbol-simbol estetika dan memori visual sakral masyarakat lokal yang telah mapan, lalu mengisinya dengan substansi dan tauhid nilai-nilai Islam baru tanpa menimbulkan kejutan budaya (cultural shock)', 'Para wali tidak memiliki keahlian membuat bangunan sehingga meniru bangunan lama apa adanya', 'Para wali diwajibkan oleh raja Hindu untuk tidak mengubah bentuk candi', 'Masyarakat Jawa menolak sholat di masjid yang tidak memiliki patung dewa', 'Akulturasi arsitektural bukan kompromi teologis, melainkan jembatan pedagogis kultural yang mempermudah transisi psikososial umat.'],
-  ['Ketika Fatahillah berhasil merebut Sunda Kelapa pada 22 Juni 1527 dari cengkeraman aliansi Portugis-Pajajaran, ia langsung mengganti nama pelabuhan tersebut menjadi "Jayakarta" (Kemenangan yang Sempurna) yang merujuk pada surah Al-Fath ayat 1 dalam Al-Quran (Inna fatahna laka fathan mubina). Analisis signifikansi geopolitik dari perubahan nama dan penaklukan ini adalah ...', 'Menggagalkan rencana strategis Portugis mendirikan benteng militer permanen di Selat Sunda, memutus jalur logistik rempah Eropa, dan mengamankan kedaulatan pantai utara Jawa di bawah hegemoni Islam', 'Menghilangkan perdagangan beras di muara sungai Ciliwung', 'Menjadikan seluruh penduduk Sunda Kelapa sebagai budak belian', 'Memindahkan pusat pemerintahan Demak ke pesisir Banten', 'Penaklukan Jayakarta memblokir pintu masuk selatan armada galeon Portugis menyelamatkan hegemoni ekonomi pesisir Nusantara.'],
-  ['Pada tahun 1628 dan 1629, Sultan Agung mengerahkan puluhan ribu prajurit dan ratusan perahu dari pedalaman Jawa melintasi ratusan kilometer daratan dan lautan untuk menyerbu benteng Kasteel Batavia. Mengapa Sultan Agung memandang kehadiran benteng VOC di Batavia sebagai "duri dalam daging" yang mengancam eksistensi peradaban Mataram Islam, padahal Batavia terletak jauh di ujung barat pulau Jawa?', 'Sultan Agung menyadari bahwa VOC bukan sekadar kongsi dagang biasa, melainkan entitas imperialis bersenjata yang berambisi memonopoli perniagaan beras dan pelayaran Jawa serta merongrong cita-cita kedaulatan politik penyatuan tanah Jawa', 'Batavia memiliki cadangan rempah cengkih yang melimpah ruah', 'Sultan Agung ingin memindahkan keraton Kartasura ke pinggir pantai Batavia', 'VOC melarang orang Jawa memakan buah kelapa di Batavia', 'Keberadaan Kasteel Batavia dengan artileri meriam modern memotong akses pelayaran ekspor Mataram dan menjadi ancaman eksistensial imperialisme asing.'],
-  ['Di Kesultanan Banten pada abad ke-17, Sultan Ageng Tirtayasa membuka pelabuhan Banten seluas-luasnya bagi kapal dagang dari Inggris (EIC), Perancis, Denmark, Tiongkok, Arab, dan Persia untuk bersaing bebas melawan VOC Belanda. Kebijakan ekonomi maritim Sultan Ageng Tirtayasa ini mencerminkan pemikiran perdagangan modern berupa ...', 'Strategi perimbangan kekuatan (balance of power) dan ekonomi pasar terbuka untuk mematahkan hegemoni kartel monopoli sepihak kompeni Belanda', 'Keinginan Sultan Ageng untuk menjual seluruh pulau Jawa kepada bangsa Eropa', 'Rasa takut Sultan Ageng terhadap armada bajak laut laut selatan', 'Larangan bagi rakyat pribumi Banten untuk berniaga di pelabuhan', 'Dengan mengundang kongsi dagang Eropa saingan, Banten mengamankan pasar komoditas lada dan memperoleh akses persenjataan senjata api mutakhir.'],
-  ['Mengapa Perjanjian Giyanti (1755) dan Perjanjian Salatiga (1757) yang memecah Mataram Islam menjadi empat entitas (Surakarta, Yogyakarta, Mangkunegaran, dan Pakualaman) dianggap sebagai puncak keberhasilan mahakarya siasat "Devide et Impera" (adu domba) politik kolonial VOC Belanda?', 'Perjanjian tersebut melenyapkan hegemoni imperium adidaya Mataram yang bersatu dan mengubahnya menjadi kerajaan-kerajaan kecil yang sibuk berebut gengsi seremonial internal dan saling mengawasi di bawah kendali kontrol politik residen Belanda', 'VOC menyerahkan seluruh tanah Jawa kepada para pangeran Mataram', 'Semua prajurit Mataram bergabung menjadi tentara kompeni Belanda', 'Kerajaan-kerajaan tersebut bersatu kembali menaklukkan benua Eropa', 'Fragmentasi teritorial dan pembatasan kekuatan militer melumpuhkan potensi perlawanan bersenjata terpadu rakyat Jawa terhadap kolonialisme.'],
-  ['Ketika Sultan Baabullah mengepung benteng Portugis Santo Paulo di Ternate selama lima tahun (1570-1575), ia tidak membantai para serdadu Portugis yang kelaparan di dalam benteng, melainkan membiarkan mereka menyerah secara terhormat dan memberi kapal untuk berlayar pergi ke Malaka atau Ambon. Analisis sikap humanis dan ksatria Sultan Baabullah ini ditinjau dari etika kepemimpinan Islam nusantara adalah ...', 'Baabullah memegang teguh hukum perang Islam yang melarang pembunuhan musuh yang telah menyerah tak berdaya, sekaligus menegaskan bahwa perlawanan Maluku adalah perlawanan menentang kezaliman imperialisme, bukan perang kebencian rasial', 'Baabullah takut Portugis akan memanggil bantuan monster laut gurita', 'Portugis membayar uang tebusan berupa kapal selam emas', 'Rakyat Ternate membutuhkan serdadu Portugis untuk menjadi guru bahasa', 'Kemenangan bermartabat tanpa pembantaian memancarkan legitimasi moral adiluhung Sultan Baabullah di hadapan penguasa kepulauan Maluku.'],
-  ['Di Sumatera Barat, Perang Padri (1821-1837) yang awalnya merupakan perang saudara antara Kaum Padri (ulama puritan pembaru Islam) melawan Kaum Adat akhirnya bertransformasi menjadi perang persatuan rakyat Minangkabau melawan penjajah Belanda. Faktor krusial yang menyadarkan Kaum Adat untuk berbalik bersatu padu dengan Kaum Padri adalah ...', 'Kaum Adat menyadari bahwa bantuan militer Belanda yang awalnya mereka minta justru berujung pada penindasan, pemerasan pajak, dan perampasan kedaulatan tanah ulayat adat Minangkabau oleh penjajah kolonial', 'Belanda melarang kaum adat memakan rendang daging sapi', 'Kaum Padri memberikan seluruh harta rampasan perang kepada kaum adat', 'Tuanku Imam Bonjol diangkat menjadi gubernur jenderal Hindia Belanda', 'Kesadaran antikolonial melahirkan Sumpah Sati Bukik Marapalam: persatuan tauhid dan adat melawan musuh bersama imperialis asing.'],
-  ['Dalam penyebaran Islam di pedalaman Jawa Barat, Prabu Siliwangi dari Kerajaan Sunda Pajajaran memilih untuk tidak memeluk Islam dan konon melakukan "moksa/ngahyang", namun ia mengizinkan putranya Kian Santang dan cucunya Syarif Hidayatullah menyebarkan ajaran Islam secara damai. Pelajaran resolusi konflik kearifan lokal dari transisi kultural tanah Pasundan ini adalah ...', 'Peralihan keyakinan dan peradaban berlangsung melalui jalur konsensus kekeluargaan tanpa penghancuran fisik membumihanguskan peninggalan leluhur', 'Kian Santang mengerahkan ratusan meriam membakar keraton ayahnya', 'Seluruh rakyat Pasundan melarikan diri ke puncak Gunung Tangkuban Parahu', 'Bangsa Portugis melarang rakyat Sunda memeluk agama apa pun', 'Kearifan lokal Sunda mempertahankan rasa hormat genealogis kepada leluhur primordial meskipun keyakinan teologis telah berganti.'],
-  ['Mengapa sistem mata uang Dirham perak dan emas pada masa kesultanan Islam di Nusantara (seperti di Samudera Pasai, Aceh, dan Gowa) memiliki daya tahan stabilitas ekonomi yang jauh lebih tinggi terhadap inflasi dibandingkan dengan uang kertas fiat kolonial?', 'Karena nilai nominal Dirham melekat langsung (intrinsik) pada berat dan kadar kemurnian logam mulia emas/perak di dalamnya, sehingga tidak dapat dimanipulasi atau didevaluasi sepihak', 'Karena uang dirham tidak dapat dicuri oleh perompak laut', 'Karena uang kertas Belanda mudah terbakar oleh terik matahari', 'Karena dirham didoakan oleh para sultan agar bertambah banyak sendiri di malam hari', 'Nilai intrinsik logam mulia menjamin perlindungan daya beli riil masyarakat dan integritas nilai tukar dalam perniagaan samudra.'],
-  ['Ketika para orientalis Barat berteori bahwa Islamisasi di Nusantara terjadi melalui penaklukan militer berdarah pedang, para sejarawan Indonesia membantah keras narasi tersebut dengan mengajukan bukti empiris sejarah berupa ...', 'Tidak adanya catatan destruksi massal candi-candi kuno, berlanjutnya tradisi sastra dan sistem hukum adat, serta keberadaan makam-makam muslim kuno di tengah pemukiman keraton Hindu Majapahit', 'Semua prajurit kerajaan Islam tidak pernah membawa senjata tajam', 'Batu-batu candi di Jawa terbuat dari kayu yang tidak bisa dihancurkan', 'Rakyat Nusantara dipaksa masuk Islam melalui surat pos dari Arab', 'Islamisasi Nusantara adalah salah satu proses konversi peradaban paling damai di muka bumi melalui penetrasi pasif lewat dagang, perkawinan, sufi, dan seni.'],
-  ['Sunan Giri mendirikan Giri Kedaton di atas bukit yang dirancang dengan tata ruang bertingkat mirip mandhala asrama pra-Islam. Mengapa pemilihan lokasi di atas bukit dan penataan bertingkat ini sangat efektif dalam menarik simpati para bangsawan dan pertapa tradisional Jawa?', 'Mengakomodasi kosmologi tradisi Jawa kuno yang memandang gunung dan tempat tinggi sebagai tempat suci persemayaman energi spiritual untuk mendekatkan diri kepada Sang Pencipta', 'Mencegah air laut pasang membasahi sajadah masjid', 'Menghindari bau asap pembakaran jerami sawah di lembah', 'Memudahkan para santri meluncur turun menggunakan papan luncur', 'Prinsip kearifan lokal meminjam sakralitas topografi tradisional mentransformasikan pertapaan kawi menjadi zawiyah sufistik madrasah.'],
-  ['Salah satu karya monumental sastra tasawuf Sunan Bonang adalah tembang "Tombo Ati" (Obat Hati) yang memuat lima amalan spiritual. Analisis sosiologis psikologis keberhasilan lagu ini dalam meredam konflik sosial masyarakat pasca keruntuhan Majapahit adalah ...', 'Mengalihkan kecemasan dan keputusasaan psikologis rakyat akibat instabilitas perang transisi politik menuju perbaikan moral diri, ketenangan batiniah, dan zikir spiritual', 'Menjanjikan uang tunai bagi rakyat yang menyanyikan lagu tersebut', 'Menakut-nakuti musuh perang dengan lirik kutukan mantra', 'Membuat pendengar tertidur lelap sehingga melupakan rasa lapar', 'Pendekatan psikospiritual sufistik menenangkan disorientasi eksistensial masyarakat di era transisi keruntuhan tatanan lama.'],
-  ['Di pelabuhan Tuban dan Gresik pada abad ke-15, terbentuk pemukiman khusus para pedagang asing dari Arab, Gujarat, dan Persia yang dikenal sebagai "Kampung Pekojan". Dampak tata ruang perkotaan ini terhadap integrasi multikultural kota bandar Islam di pesisir utara Jawa adalah ...', 'Memfasilitasi interaksi niaga multietnis yang harmonis, transfer teknologi perkapalan, serta penyerapan kosakata bahasa Arab dan Persia ke dalam bahasa Jawa dan Melayu', 'Menutup akses penduduk pribumi masuk ke kawasan pantai', 'Mencegah perkawinan campur antar bangsa di luar kampung', 'Mewajibkan semua penduduk kampung mengenakan seragam perang', 'Enklaf kosmopolitan pekojan menjadi melting pot transfer ilmu astronomi bahari, matematika dagang, dan asimilasi leksikal.'],
-  ['Kitab Kuntara Raja Niti dari Kesultanan Cirebon dan Lampung memuat perpaduan unik antara ajaran hukum Islam dengan norma hukum adat lokal. Manfaat praktis dari kodifikasi hukum campuran ini bagi penegakan keadilan sosial pada masa itu adalah ...', 'Mencegah terjadinya perpecahan adat dan mempermudah eksekusi hukum perdata/pidana yang dapat diterima secara sukarela oleh segenap lapisan masyarakat adat maupun santri', 'Menghapuskan seluruh hukuman penjara bagi keluarga bangsawan', 'Membuat hakim pengadilan tidak perlu mempelajari Al-Quran', 'Mengizinkan bajak laut menyelesaikan sengketa dengan adu pedang di laut', 'Kodifikasi terpadu menjembatani kesenjangan yurisprudensi antara syariat ortodoks dan kearifan norma lokal (urf).'],
-  ['Ketika Jan Pieterszoon Coen merebut Jayakarta pada Mei 1619, ia membakar hangus kota tersebut dan mendirikan benteng kota baru bernama "Batavia". Mengapa para sultan di tanah Jawa (Banten dan Mataram) memandang pendirian Batavia sebagai ancaman kedaulatan yang jauh lebih berbahaya dibandingkan kehadiran bandar dagang Portugis di Malaka sebelumnya?', 'Portugis hanya menguasai bandar niaga transit di seberang selat tanpa menduduki tanah pedalaman Jawa, sedangkan VOC bercokol langsung di jantung pulau Jawa dan mulai mencampuri suksesi politik keraton', 'Batavia memiliki tanah yang mengandung banyak racun belerang', 'VOC memiliki kapal udara yang dapat menjatuhkan batu dari langit', 'Orang Belanda melarang orang Jawa berlayar ke pulau Bali', 'Kedekatan geografis benteng Batavia di pesisir utara Jawa memicu ancaman aneksasi teritorial langsung dan interferensi dinasti keraton.'],
-  ['Dalam tradisi maritim Kesultanan Ternate dan Tidore, kepemilikan dan pengerahan perahu perang Kora-Kora diatur melalui ikatan persekutuan adat klan yang disebut "Uli Siwa" (Persekutuan Sembilan di Tidore) dan "Uli Lima" (Persekutuan Lima di Ternate). Mengapa polarisasi persekutuan Uli Lima dan Uli Siwa ini sering dimanfaatkan oleh bangsa penjajah Eropa (Portugis dan Spanyol)?', 'Penjajah Eropa memanfaatkan rivalitas hegemoni antarkedua persekutuan tersebut untuk menerapkan strategi adu domba: Portugis bersekutu dengan Ternate dan Spanyol bersekutu dengan Tidore demi memperebutkan monopoli rempah', 'Kedua persekutuan selalu menolak menjual rempah kepada orang Eropa', 'Kedua persekutuan tidak memiliki senjata perahu untuk berperang', 'Penjajah Eropa ingin menyatukan kedua persekutuan menjadi satu negara republik', 'Rivalitas geopolitik regional dieksploitasi kekuatan asing mengikat konsesi monopoli dagang militer eksklusif.'],
-  ['Mengapa sistem pendidikan Pesantren yang dirintis oleh Maulana Malik Ibrahim dan Sunan Ampel di Jawa terbukti menjadi benteng pertahanan kultural paling kokoh yang tidak pernah berhasil ditundukkan oleh sistem pendidikan kolonial Belanda?', 'Pesantren berakar mandiri di tengah masyarakat perdesaan, menanamkan kemandirian hidup, keimanan tauhid yang anti-penjajahan, dan tidak bergantung pada subsidi dana pemerintah kolonial', 'Pesantren memiliki senjata meriam modern di bawah tanah surau', 'Gubernur jenderal Belanda tidak mengetahui keberadaan pondok pesantren di desa', 'Santri pesantren tidak diperbolehkan berbicara bahasa Melayu', 'Kemandirian finansial wakaf, jejaring kultural kiai-santri, dan militansi ideologis tauhid menjauhkan pesantren dari hegemoni hegemoni etis kolonial.'],
-  ['Ketika Sultan Hasanuddin dipaksa menandatangani Perjanjian Bongaya pada 1667, ribuan pelaut dan ksatria Bugis-Makassar di bawah pimpinan Karaeng Galesong menolak tunduk kepada VOC dan memilih berlayar ke barat membantu perlawanan rakyat di tanah Jawa (membantu Trunajaya di Madura dan Mataram). Fenomena diaspora maritim heroisme ini membuktikan bahwa ...', 'Rasa solidaritas perjuangan menentang kezaliman penjajah VOC telah melintasi sekat-sekat etnis dan geografis kesukuan di bumi Nusantara', 'Para pelaut Makassar ingin mencari pulau emas baru di samudra Hindia', 'Karaeng Galesong ingin menjadi raja Mataram menggantikan Amangkurat I', 'Pasukan VOC melarang pelaut Makassar pulang ke kampung halamannya', 'Trans-insular resistance: diaspora perlawanan Bugis-Makassar di pesisir Jawa menyatukan jejaring perjuangan antikolonial lintas samudra.'],
-  ['Peninggalan berupa Keraton Kasepuhan dan Keraton Kanoman di Cirebon memiliki hiasan piring-piring porselen keramik Tiongkok kuno dinasti Ming yang ditempelkan di dinding bata merah keraton. Keterkaitan historis antara seni arsitektur ini dengan dakwah Islam Sunan Gunung Jati adalah ...', 'Pernikahan Sunan Gunung Jati dengan Putri Ong Tien Nio dari Tiongkok mempererat hubungan kebudayaan dan memadukan estetika seni Tiongkok dengan kebudayaan Islam Jawa', 'Piring porselen tersebut dibeli dari pedagang bajak laut Karibia', 'Para tukang batu Cirebon tidak memiliki semen sehingga menggunakan piring makan', 'Piring porselen berfungsi sebagai cermin untuk menakuti penjahat di malam hari', 'Diplomasi pernikahan lintas bangsa mengukir akulturasi visual harmonis porselen Ming pada dinding keraton santri Cirebon.'],
-  ['Dalam pandangan sosiologi sejarah, masuknya Islam ke Nusantara tidak menghapuskan seluruh struktur kebudayaan Hindu-Buddha dan animisme pra-Islam yang ada sebelumnya, melainkan mengalami proses "Indigenisasi Islam". Makna ilmiah dari proses indigenisasi Islam di Nusantara ini adalah ...', 'Nilai-nilai universal ajaran Islam diserap dan diekspresikan melalui medium kebudayaan, bahasa, dan adat istiadat nusantara yang telah ada tanpa mengorbankan prinsip-prinsip pokok akidah tauhid', 'Masyarakat Nusantara mengubah seluruh isi kitab suci Al-Quran ke dalam bahasa Sansekerta', 'Agama Islam hanya dipeluk oleh orang asing yang tinggal di pelabuhan', 'Para wali melarang rakyat beribadah di dalam masjid berkubah', 'Akulturasi dinamis: substansi wahyu transendental dibumikan dalam wadah partikularitas sosio-kultural lokal yang toleran dan damai.']
+  [
+    "Di era digital saat ini, seorang siswa kelas 5 SD sering mengunggah foto kegiatan sehari-harinya, alamat lengkap rumah, nomor telepon orang tua, dan nama sekolahnya ke media sosial publik tanpa privasi. Ditinjau dari aspek keamanan digital (cyber security) dan perlindungan anak, bahaya terbesar dari tindakan siswa tersebut dan sikap bijak yang seharusnya diambil adalah ...",
+    "Bahayanya data pribadi tersebut dapat disalahgunakan oleh pihak jahat untuk kejahatan penculikan, penipuan, atau perundungan; sikap bijak adalah mengunci akun privasi media sosial, tidak membagikan data identitas rahasia ke publik, dan selalu meminta bimbingan orang tua",
+    "Bahayanya ponsel pintar siswa akan langsung meledak mengeluarkan api",
+    "Bahayanya teman-teman sekelas tidak bisa melihat foto liburan siswa",
+    "Tindakan tersebut sangat aman dan harus ditiru oleh semua anak di Indonesia",
+    "Edukasi jejak digital (digital footprint) dan perlindungan data privat anak di ruang siber krusial mencegah eksploitasi dan tindak kriminal rekayasa sosial."
+  ],
+  [
+    "Sebuah desa terpencil di pedalaman pulau belum terjangkau jaringan listrik kabel PLN. Warga desa memiliki aliran sungai kecil berarus deras yang mengalir sepanjang tahun di dekat perkampungan. Penerapan teknologi energi ramah lingkungan tepat guna yang paling cocok dan murah untuk menerangi rumah warga desa tersebut adalah ...",
+    "Membangun Pembangkit Listrik Tenaga Mikrohidro (PLTMH) sederhana dengan kincir air turbin kecil yang memanfaatkan aliran arus sungai untuk memutar generator listrik desa",
+    "Membeli pembangkit listrik tenaga nuklir raksasa dari luar negeri",
+    "Menyalakan ribuan batang lilin setiap malam di lapangan desa",
+    "Menarik kabel colokan listrik dari kota terdekat sejauh 500 kilometer",
+    "PLTMH memanfaatkan potensi energi kinetik air sungai pedesaan berdaya 5–100 kW secara mandiri, murah, dan berkelanjutan."
+  ],
+  [
+    "Kemajuan teknologi mesin pendingin ruangan (AC) dan kulkas di masa lalu menggunakan senyawa gas CFC (Freon). Para ilmuwan menemukan bahwa pelepasan gas CFC ke udara menyebabkan penipisan lapisan ozon bumi di stratosfer. Hubungan antara penipisan lapisan ozon akibat gas pendingin lama dengan kesehatan manusia di bumi adalah ...",
+    "Lapisan ozon berfungsi menyerap radiasi sinar ultraviolet B (UV-B) berbahaya dari matahari; jika lapisan ozon menipis, intensitas radiasi UV-B yang lolos ke bumi meningkat memicu kanker kulit dan katarak mata pada manusia",
+    "Lapisan ozon yang menipis membuat air hujan di bumi berubah menjadi air panas mendidih",
+    "Penipisan ozon membuat bumi menjadi gelap gulita tanpa sinar matahari",
+    "Gas CFC membuat manusia kehilangan kemampuan berbicara",
+    "Kimia atmosfer: radikal klorin dari fotolisis CFC mengkatalisis penguraian molekul ozon (O3) memicu lonjakan fluks radiasi UV mutagenik ke biosfer."
+  ],
+  [
+    "Di sebuah kawasan pertanian pedesaan, para petani beralih secara serentak dari menggunakan cangkul dan kerbau menjadi menggunakan traktor mesin dan mesin perontok padi (combine harvester). Evaluasi dampak sosial dan ekonomi ganda dari mekanisasi pertanian modern tersebut bagi kehidupan masyarakat desa adalah ...",
+    "Di satu sisi waktu pengerjaan sawah menjadi jauh lebih cepat, biaya produksi hemat, dan hasil panen melimpah; namun di sisi lain mengurangi kesempatan kerja bagi para buruh tani penggarap tradisional yang tidak memiliki traktor",
+    "Mekanisasi membuat tanah sawah berubah menjadi batu karang keras",
+    "Semua petani di desa langsung kehilangan seluruh padinya",
+    "Traktor membuat beras berubah warna menjadi hitam pekat",
+    "Dilema transformasi teknologi agraris: lonjakan efisiensi produktivitas berhadapan dengan disrupsi serapan tenaga kerja buruh tani subsisten perdesaan."
+  ],
+  [
+    "Banyak anak usia sekolah dasar yang saat ini menghabiskan waktu lebih dari 6 jam setiap hari di depan layar telepon pintar untuk bermain game daring dan media sosial. Jika kebiasaan ini dibiarkan terus-menerus tanpa pembatasan dari orang tua, analisis dampak negatif terhadap perkembangan fisik dan mental anak adalah ...",
+    "Mata mudah lelah dan berisiko minus (rabun jauh), postur tubuh bungkuk akibat kurang bergerak fisik, serta emosi menjadi mudah marah (temperamental) saat gawai diambil",
+    "Anak akan bertambah tinggi sepuluh sentimeter setiap hari",
+    "Anak tidak akan pernah merasa lapar atau haus selamanya",
+    "Kecanduan gawai membuat gigi anak menjadi rontok seketika",
+    "Sedentary lifestyle akibat screen time berlebih mengganggu ritme sirkadian tidur, memicu obesitas anak, dan menurunkan regulasi kontrol emosi."
+  ],
+  [
+    "Sebelum adanya sistem navigasi satelit (GPS) dan peta digital pada ponsel pintar, seorang pengemudi kendaraan antarkota harus mengandalkan peta kertas atlas dan sering berhenti bertanya kepada warga di tepi jalan. Analisis keunggulan peta digital berbasis GPS modern dibanding peta kertas konvensional adalah ...",
+    "Peta digital berbasis GPS memberikan pembaruan informasi titik kemacetan secara langsung (real-time), memandu rute belokan bersuara otomatis, dan dapat menghitung estimasi waktu tiba secara akurat",
+    "Peta kertas atlas bisa berbicara mengeluarkan suara pengemudi",
+    "Peta digital GPS tidak memerlukan daya baterai ponsel pintar sama sekali",
+    "Peta kertas atlas selalu menunjukkan rute yang salah secara sengaja",
+    "Sistem Informasi Geografis (SIG) bergerak dan triangulasi konstelasi satelit menghadirkan data navigasi dinamis adaptif terhadap dinamika lalu lintas."
+  ],
+  [
+    "Dalam suatu musibah bencana gempa bumi dahsyat di daerah terisolasi yang memutus jalur jalan darat dan menumbangkan tiang kabel telepon, bagaimana perpaduan teknologi helikopter, pesawat nirawak (drone), dan telepon satelit menjadi penentu keberhasilan penyelamatan korban bencana?",
+    "Drone memetakan lokasi korban dan kerusakan dari udara dengan cepat; telepon satelit menghubungkan komunikasi tim penyelamat tanpa sinyal seluler; dan helikopter mendistribusikan logistik medis darurat langsung ke lokasi terisolasi",
+    "Helikopter bertugas menyedot air banjir dari atas langit",
+    "Telepon satelit digunakan untuk menonton video hiburan kartun",
+    "Pesawat drone bertugas mengangkut ribuan mobil warga yang tertimpa reruntuhan",
+    "Tripartit teknologi SAR darurat mengatasi kendala aksesibilitas fisik dan kelumpuhan infrastruktur komunikasi terestrial pada masa tanggap darurat."
+  ],
+  [
+    "Munculnya teknologi transaksi keuangan digital (dompet digital, pembayaran paylater, dan belanja daring satu klik) memudahkan masyarakat membeli barang kapan saja. Namun di kalangan remaja dan generasi muda, kemudahan ini seringkali memicu gaya hidup konsumtif yang boros. Tindakan pengendalian diri yang cerdas secara literasi finansial dalam menggunakan uang digital adalah ...",
+    "Membuat daftar skala prioritas antara kebutuhan primer dan keinginan sekunder, menyisihkan uang tabungan di awal sebelum berbelanja, dan tidak berutang untuk barang konsumtif yang tidak penting",
+    "Menghabiskan seluruh saldo dompet digital setiap hari agar tidak dicuri orang",
+    "Membeli semua barang diskon di toko online meskipun tidak dibutuhkan di rumah",
+    "Meminjam uang di aplikasi pinjaman online sebanyak-banyaknya untuk pamer",
+    "Literasi keuangan digital menuntut disiplin anggaran (budgeting constraint) agar kemudahan bertransaksi tidak menjebak individu ke dalam perilaku impulsif."
+  ],
+  [
+    "Di bidang pendidikan, saat terjadi pandemi global, teknologi pembelajaran jarak jauh (PJJ) menggunakan aplikasi konferensi video (Zoom/Google Meet) dan ruang kelas daring (Google Classroom) menjadi penyelamat proses belajar mengajar. Analisis hikmah dan transformasi pendidikan dari pengalaman belajar daring tersebut bagi sekolah modern adalah ...",
+    "Guru dan siswa menjadi terbiasa memanfaatkan teknologi digital untuk mencari sumber belajar interaktif global, materi pelajaran dapat diakses fleksibel kapan saja, dan kolaborasi pembelajaran menjadi tanpa batas ruang",
+    "PJJ membuktikan bahwa sekolah fisik dan guru manusia tidak diperlukan lagi di dunia",
+    "Belajar daring membuat semua siswa mendapatkan nilai 100 tanpa perlu belajar",
+    "Aplikasi konferensi video membuat anak-anak dilarang membaca buku pelajaran kertas",
+    "Model pembelajaran bauran (blended learning) memperkaya pedagogi sekolah dengan menggabungkan kehangatan interaksi tatap muka dan kekayaan sumber daya digital."
+  ],
+  [
+    "Banyak berita bohong (hoaks) di media sosial yang sengaja dibuat menggunakan judul berita yang sangat heboh dan memancing kemarahan (clickbait) serta menggunakan foto editan manipulasi. Langkah berpikir kritis dan bijak (literasi digital) yang harus dilakukan siswa sebelum mempercayai dan membagikan suatu berita di grup obrolan adalah ...",
+    "Memeriksa keaslian sumber berita dari situs media massa resmi terpercaya, membaca isi berita secara utuh (tidak hanya membaca judul), dan membandingkan dengan sumber informasi terpercaya lainnya",
+    "Langsung membagikan berita tersebut ke semua grup percakapan agar menjadi orang pertama yang menyebarkan",
+    "Menghapus aplikasi percakapan dari ponsel pintar seketika",
+    "Mempercayai seluruh berita yang memuat kata \"sebarkan demi kebaikan\"",
+    "Verifikasi fakta (fact-checking) dan evaluasi kredibilitas domain berita menghentikan rantai disinformasi (fake news) di masyarakat digital."
+  ],
+  [
+    "Pembangunan jalan tol layang (seperti Jalan Tol Layang MBZ di atas Tol Jakarta-Cikampek) dan jalur kereta layang (LRT) di atas koridor jalan yang sudah padat merupakan solusi teknologi rekayasa sipil transportasi untuk ...",
+    "Menambah kapasitas volume jalur lalu lintas kendaraan tanpa perlu menggusur ribuan perumahan padat penduduk di bawahnya yang memerlukan biaya pembebasan lahan sangat mahal",
+    "Membuat mobil bisa terbang melintasi awan mendung",
+    "Menghalangi sinar matahari agar jalan di bawah menjadi gelap gulita",
+    "Menyediakan arena bermain sepatu roda bagi anak-anak di atas jalan tol",
+    "Optimalisasi ruang spasial vertikal (elevated infrastructure) mengatasi kelangkaan lahan perkotaan dan mereduksi friksi hambatan samping jalan arteri."
+  ],
+  [
+    "Teknologi kendaraan bermotor berbahan bakar minyak menghasilkan gas buang berbahaya seperti Karbon Monoksida (CO) dan Timbal. Beberapa kota besar di dunia mulai menerapkan kebijakan zona emisi rendah (Low Emission Zone) yang melarang kendaraan bermesin bensin/diesel kuno masuk ke pusat kota. Dampak positif jangka panjang dari kebijakan zonasi emisi ini bagi kesehatan warga perkotaan adalah ...",
+    "Kualitas udara kota menjadi jauh lebih bersih dan segar, serta menurunkan angka penyakit infeksi saluran pernapasan akut (ISPA) dan asma pada anak-anak dan lansia",
+    "Warga kota dilarang keluar rumah selamanya",
+    "Suhu udara kota berubah menjadi sangat panas membara",
+    "Semua apotek di kota menjadi bangkrut dan tutup",
+    "Reduksi partikulat debu polutan PM2.5 dan gas buang beracun knalpot secara langsung memulihkan indeks standar pencemar udara (ISPU) sehat bagi paru-paru publik."
+  ],
+  [
+    "Penggunaan teknologi robot pembersih otomatis (vacuum cleaner robot) dan peralatan rumah tangga pintar (smart home) yang terhubung internet di rumah perkotaan dirancang untuk ...",
+    "Membantu meringankan beban pekerjaan membersihkan rumah secara efisien dan terjadwal sehingga pemilik rumah memiliki lebih banyak waktu berkualitas bersama keluarga",
+    "Menggantikan peran orang tua dalam mengasuh dan mendidik anak di rumah",
+    "Membuat anak-anak menjadi malas dan tidak mau merapikan mainan sendiri",
+    "Mematikan seluruh lampu rumah secara tiba-tiba di malam hari",
+    "Otomasi domestik pintar mereduksi beban tenaga kerja rumah tangga rutin melalui integrasi sensor cerdas dan penjadwalan via smartphone."
+  ],
+  [
+    "Teknologi desalinasi air laut bertenaga surya di pulau-pulau kecil Indonesia seringkali mengalami kendala biaya perawatan membran penyaring yang mahal jika tersumbat lumut dan lumpur. Tindakan pengelolaan lingkungan yang harus dijaga masyarakat pesisir di sekitar instalasi desalinasi air laut agar mesin penyaring awet adalah ...",
+    "Menjaga kebersihan perairan pantai dari sampah plastik dan limbah rumah tangga serta melindungi terumbu karang di sekitar pipa hisap air laut agar air yang masuk tetap jernih",
+    "Membuang minyak goreng bekas ke dekat pipa hisap desalinasi",
+    "Menebang pohon bakau di sekitar pantai penyulingan air",
+    "Menaburi air laut dengan pasir bangunan agar kotor",
+    "Kualitas air baku (intake water quality) yang jernih mereduksi beban bio-fouling pada membran semipermeabel dan memperpanjang umur operasional membran."
+  ],
+  [
+    "Perkembangan teknologi kamera ponsel cerdas saat ini sudah sangat canggih dengan resolusi puluhan megapixel dan fitur perekam video berdefinisi tinggi. Namun seringkali orang menyalahgunakannya dengan merekam orang lain secara diam-diam tanpa izin lalu mengunggahnya ke media sosial demi konten viral. Pelanggaran norma etika dan hukum dari perilaku tersebut adalah ...",
+    "Melanggar hak privasi dan kehormatan orang lain, serta berpotensi dijerat sanksi hukum Undang-Undang Informasi dan Transaksi Elektronik (UU ITE)",
+    "Mendapatkan penghargaan medali emas dari kementerian sosial",
+    "Membuat ponsel pintar kehabisan daya baterai secara permanen",
+    "Tidak ada pelanggaran sama sekali karena di dunia maya semua orang bebas merekam apa pun",
+    "Etika rekam digital dan kepatuhan hukum privasi personal: setiap individu berhak atas perlindungan citra diri (right to privacy) dari eksploitasi visual tanpa persetujuan."
+  ],
+  [
+    "Ketika para petani garam tradisional di Madura masih mengandalkan penguapan air laut bertenaga sinar matahari di lahan terbuka, produksi garam seringkali anjlok saat musim penghujan tiba. Inovasi teknologi ramah lingkungan berupa \"Rumah Garam Prisma Tertutup\" (Geomembran Plastik UV) berhasil memecahkan masalah tersebut karena ...",
+    "Plastik transparan UV menahan air hujan agar tidak mencairkan garam namun tetap meloloskan panas matahari untuk menguapkan air laut sehingga petani tetap bisa memproduksi garam sepanjang tahun",
+    "Rumah prisma membuat air laut berubah menjadi emas batangan",
+    "Petani tidak perlu lagi menggunakan air laut untuk membuat garam",
+    "Rumah prisma menghasilkan garam dingin seperti es krim",
+    "Teknologi rumah garam geomembran menerapkan efek rumah kaca mikro mempercepat evaporasi kristalisasi garam tanpa terganggu guyuran presipitasi air hujan."
+  ],
+  [
+    "Dalam industri perikanan modern, kapal penangkap ikan nelayan dilengkapi dengan alat \"Fish Finder\" yang memancarkan gelombang sonar ke bawah laut. Hubungan antara teknologi fish finder dengan efisiensi operasional melaut nelayan adalah ...",
+    "Fish finder mendeteksi keberadaan dan kedalaman kawanan gerombolan ikan secara akurat di bawah kapal sehingga nelayan tidak perlu membuang bahan bakar solar berlayar tanpa arah mencari ikan",
+    "Fish finder bertugas menarik ikan langsung melompat masuk ke dalam kuali masak",
+    "Alat tersebut membuat air laut di sekeliling kapal mengering seketika",
+    "Fish finder membuat semua ikan di laut tertidur pulas",
+    "Akurasi deteksi biomassa ikan pelagis berbasis sonar mereduksi fishing effort (waktu jelajah dan konsumsi BBM) dan meningkatkan produktivitas tangkapan per trip nelayan."
+  ],
+  [
+    "Di era modern saat ini, buku cetak kertas konvensional mulai banyak berdampingan dengan buku elektronik digital (E-Book) yang dapat dibaca di layar tablet atau komputer. Analisis perbandingan dampak lingkungan hidup dan kenyamanan membaca antara buku kertas dan buku elektronik adalah ...",
+    "Buku elektronik menghemat penggunaan kayu pohon hutan dan kertas serta mudah dibawa ribuan judul dalam satu gawai; namun buku kertas tidak memancarkan radiasi cahaya layar biru sehingga lebih nyaman bagi kesehatan mata saat membaca lama",
+    "Buku elektronik tidak membutuhkan listrik sama sekali",
+    "Buku kertas terbuat dari lelehan plastik daur ulang berbahaya",
+    "Kedua jenis buku dilarang dibaca oleh siswa di perpustakaan sekolah",
+    "Simbiosis literasi media: efisiensi ekologis reduksi pulp kertas pada e-book berimbang dengan ergonomi kenyamanan visual non-emissive pada kertas buku fisik."
+  ],
+  [
+    "Teknologi telekonferensi video dan tanda tangan elektronik tersertifikasi di era modern memungkinkan pejabat negara dan pimpinan perusahaan mengadakan rapat penting dan menandatangani perjanjian kerjasama resmi antarpulau tanpa harus hadir fisik di satu ruangan. Keuntungan strategis nasional dari pemanfaatan teknologi birokrasi digital ini adalah ...",
+    "Menghemat anggaran belanja negara untuk perjalanan dinas dan tiket pesawat, mempercepat pengambilan keputusan penting bagi rakyat, serta mengurangi jejak emisi karbon transportasi",
+    "Mewajibkan semua kantor kementerian pemerintahan ditutup selamanya",
+    "Membuat para pejabat tidak perlu bekerja sama sekali di kantor",
+    "Menghilangkan fungsi tanda tangan dalam perjanjian resmi",
+    "Digitalisasi tata kelola pemerintahan (E-Government / SPBE) mendorong efisiensi belanja fiskal dan mempercepat respon kebijakan publik secara transparan."
+  ],
+  [
+    "Mengapa semboyan \"Teknologi adalah pelayan yang sangat baik, tetapi tuan yang sangat buruk\" (Technology is a useful servant but a dangerous master) menjadi pedoman hidup yang sangat penting bagi generasi muda Indonesia di era serba digital abad ke-21?",
+    "Karena teknologi seharusnya kita kendalikan sebagai alat bantu yang mencerdaskan, mempermudah hidup, dan memajukan peradaban; bukan sebaliknya kita yang diperbudak oleh kecanduan gawai, kelalaian waktu, dan degradasi moral akibat teknologi",
+    "Karena semua komputer dan robot di dunia memiliki niat jahat untuk menyerang manusia",
+    "Karena teknologi membuat manusia dilarang belajar matematika dan sains",
+    "Karena manusia wajib menyembah mesin traktor dan ponsel pintar di rumah",
+    "Apropriasi humanistik teknologi: manusia sebagai subjek moral pemegang kendali etika harus memposisikan inovasi teknologi demi kemaslahatan martabat kemanusiaan."
+  ]
 ];
 
 module.exports = {
-  name: 'Kerajaan Islam di Indonesia',
+  name: 'Perkembangan Teknologi, Transportasi & Komunikasi dari Masa ke Masa',
   mudah,
   sedang,
   sulit,

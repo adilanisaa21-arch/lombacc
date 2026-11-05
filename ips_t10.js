@@ -697,7 +697,7 @@ const hots = [
     "ASEAN harus mengirimkan pasukan nuklir untuk menghancurkan negara anggota yang bermasalah",
     "ASEAN diwajibkan bubar secara resmi jika ada satu warga yang melanggar hukum",
     "Negara anggota ASEAN dipaksa tunduk pada perintah militer negara barat",
-    "Dilema kepatuhan kedaulatan Westphalian versus norma pertanggungjawaban perlindungan kemanusiaan (Responsibility to Protect) di kawasan."
+    "Dilema antara prinsip menghormati kedaulatan dalam negeri negara tetangga dengan kepedulian terhadap perlindungan nilai-nilai kemanusiaan."
   ],
   [
     "Posisi geografis Indonesia yang sangat strategis di persimpangan dua samudra (Hindia dan Pasifik) dan dua benua (Asia dan Australia) menempatkannya sebagai poros maritim dunia. Peran kepemimpinan diplomasi Indonesia dalam menjaga perdamaian di kawasan Indo-Pasifik diwujudkan melalui inisiatif ...",
@@ -769,7 +769,7 @@ const hots = [
     "Batu bara adalah satu-satunya sumber energi yang ada di muka bumi",
     "Matahari dan tiupan angin dilarang digunakan untuk menghasilkan listrik",
     "Kabel listrik transmisi di Indonesia tidak bisa dialiri arus energi terbarukan",
-    "Asset stranding risk dan beban kewajiban finansial kontinjen menuntut skema pendanaan transisi adil (Just Energy Transition Partnership / JETP)."
+    "Biaya ganti rugi pemutusan kontrak operasional dan kebutuhan investasi pembangkit baru memerlukan skema pendanaan transisi energi yang terencana."
   ],
   [
     "Peran diplomasi kebudayaan Indonesia di forum ASEAN melalui pertunjukan festival seni, pameran warisan budaya, dan pertukaran seniman muda nusantara berfungsi strategis untuk ...",
