@@ -625,42 +625,104 @@ ipsTopics.forEach((tObj, tIdx) => {
 console.log(`✓ Selesai Bank IPS: ${ipsList.length} soal (Target: 1.300).`);
 
 // =============================================================================
-// D. INTEGRASI & PERAKITAN 4.000 SOAL DENGAN INTERLEAVING BLOK 10 (2-4-2-2)
+// D. INTEGRASI & PERAKITAN 4.000 SOAL DENGAN STRATIFIED MULTI-TOPIC ROUND-ROBIN
 // =============================================================================
-function interleaveSubject(easyArr, medArr, hardArr, hotsArr, numBlocks) {
-  const result = [];
-  const easy = [...easyArr];
-  const med = [...medArr];
-  const hard = [...hardArr];
-  const hots = [...hotsArr];
+// Setiap Bagian (30 soal) dijamin memuat SELURUH MATERI / TOPIK kurikulum secara seimbang,
+// dengan rasio kesulitan presisi 6 Mudah (20%), 12 Sedang (40%), 6 Sulit (20%), 6 HOTS (20%),
+// dan ZERO pengulangan soal antarbagian (100% disjoint).
+function assembleStratifiedSubject(subjectQuestions, numFullParts) {
+  // Kelompokkan per Topik
+  const topicMap = new Map();
+  subjectQuestions.forEach(q => {
+    if (!topicMap.has(q.TOPIK)) topicMap.set(q.TOPIK, []);
+    topicMap.get(q.TOPIK).push(q);
+  });
 
-  for (let b = 0; b < numBlocks; b++) {
-    result.push(...easy.splice(0, 2));
-    result.push(...med.splice(0, 4));
-    result.push(...hard.splice(0, 2));
-    result.push(...hots.splice(0, 2));
+  const topics = Array.from(topicMap.keys());
+  const numTopics = topics.length;
+
+  const pools = topics.map(topik => {
+    const list = topicMap.get(topik);
+    return {
+      topik,
+      MUDAH: list.filter(q => q.LEVEL === 'MUDAH'),
+      SEDANG: list.filter(q => q.LEVEL === 'SEDANG'),
+      SULIT: list.filter(q => q.LEVEL === 'SULIT'),
+      HOTS: list.filter(q => q.LEVEL === 'HOTS')
+    };
+  });
+
+  const parts = [];
+
+  for (let p = 0; p < numFullParts; p++) {
+    function pickTopicsForLevel(level, count, offset) {
+      const sorted = [...Array(numTopics).keys()]
+        .sort((a, b) => {
+          const diff = pools[b][level].length - pools[a][level].length;
+          if (diff !== 0) return diff;
+          return ((a + offset) % numTopics) - ((b + offset) % numTopics);
+        });
+      return sorted.slice(0, count);
+    }
+
+    // Alokasi 12 topik untuk Sedang (mencakup mayoritas topik kurikulum)
+    const sedangTopics = pickTopicsForLevel('SEDANG', 12, p * 4);
+    const missedBySedang = [...Array(numTopics).keys()].filter(t => !sedangTopics.includes(t));
+
+    // Alokasi 6 topik untuk Mudah (prioritas topik yang belum terambil di Sedang)
+    const mudahTopics = [];
+    missedBySedang.forEach(t => { if (pools[t].MUDAH.length > 0 && mudahTopics.length < 6) mudahTopics.push(t); });
+    const otherMudah = pickTopicsForLevel('MUDAH', numTopics, p * 2).filter(t => !mudahTopics.includes(t));
+    while (mudahTopics.length < 6 && otherMudah.length > 0) mudahTopics.push(otherMudah.shift());
+
+    // Alokasi 6 topik untuk Sulit (prioritas topik yang belum terambil di Sedang)
+    const sulitTopics = [];
+    missedBySedang.forEach(t => { if (pools[t].SULIT.length > 0 && sulitTopics.length < 6) sulitTopics.push(t); });
+    const otherSulit = pickTopicsForLevel('SULIT', numTopics, p * 2 + 1).filter(t => !sulitTopics.includes(t));
+    while (sulitTopics.length < 6 && otherSulit.length > 0) sulitTopics.push(otherSulit.shift());
+
+    // Alokasi 6 topik untuk HOTS
+    const hotsTopics = [];
+    missedBySedang.forEach(t => { if (pools[t].HOTS.length > 0 && hotsTopics.length < 6) hotsTopics.push(t); });
+    const otherHots = pickTopicsForLevel('HOTS', numTopics, p * 2 + 3).filter(t => !hotsTopics.includes(t));
+    while (hotsTopics.length < 6 && otherHots.length > 0) hotsTopics.push(otherHots.shift());
+
+    const mList = mudahTopics.map(t => pools[t].MUDAH.shift());
+    const sList = sedangTopics.map(t => pools[t].SEDANG.shift());
+    const uList = sulitTopics.map(t => pools[t].SULIT.shift());
+    const hList = hotsTopics.map(t => pools[t].HOTS.shift());
+
+    // Susun menjadi 3 sub-blok unit 10 (masing-masing: 2 Mudah, 4 Sedang, 2 Sulit, 2 HOTS)
+    const subBlocks = [];
+    for (let b = 0; b < 3; b++) {
+      const e2 = [mList[b * 2], mList[b * 2 + 1]];
+      const m4 = [sList[b * 4], sList[b * 4 + 1], sList[b * 4 + 2], sList[b * 4 + 3]];
+      const u2 = [uList[b * 2], uList[b * 2 + 1]];
+      const h2 = [hList[b * 2], hList[b * 2 + 1]];
+
+      // Irama soal dinamis: Sedang, Mudah, Sedang, Sulit, Sedang, HOTS, Mudah, Sedang, Sulit, HOTS
+      const block = [
+        m4[0], e2[0], m4[1], u2[0], m4[2], h2[0], e2[1], m4[3], u2[1], h2[1]
+      ];
+      subBlocks.push(block);
+    }
+
+    parts.push(...subBlocks.flat());
   }
-  return result;
+
+  // Sisipkan sisa soal untuk bagian pamungkas
+  const remaining = [];
+  pools.forEach(p => {
+    remaining.push(...p.MUDAH, ...p.SEDANG, ...p.SULIT, ...p.HOTS);
+  });
+  parts.push(...remaining);
+
+  return parts;
 }
 
-const mtkEasy = mtkList.filter(q => q.LEVEL === 'MUDAH');
-const mtkMed = mtkList.filter(q => q.LEVEL === 'SEDANG');
-const mtkHard = mtkList.filter(q => q.LEVEL === 'SULIT');
-const mtkHots = mtkList.filter(q => q.LEVEL === 'HOTS');
-
-const ipaEasy = ipaList.filter(q => q.LEVEL === 'MUDAH');
-const ipaMed = ipaList.filter(q => q.LEVEL === 'SEDANG');
-const ipaHard = ipaList.filter(q => q.LEVEL === 'SULIT');
-const ipaHots = ipaList.filter(q => q.LEVEL === 'HOTS');
-
-const ipsEasy = ipsList.filter(q => q.LEVEL === 'MUDAH');
-const ipsMed = ipsList.filter(q => q.LEVEL === 'SEDANG');
-const ipsHard = ipsList.filter(q => q.LEVEL === 'SULIT');
-const ipsHots = ipsList.filter(q => q.LEVEL === 'HOTS');
-
-const interleavedMTK = interleaveSubject(mtkEasy, mtkMed, mtkHard, mtkHots, 140);
-const interleavedIPA = interleaveSubject(ipaEasy, ipaMed, ipaHard, ipaHots, 130);
-const interleavedIPS = interleaveSubject(ipsEasy, ipsMed, ipsHard, ipsHots, 130);
+const interleavedMTK = assembleStratifiedSubject(mtkList, 46);
+const interleavedIPA = assembleStratifiedSubject(ipaList, 43);
+const interleavedIPS = assembleStratifiedSubject(ipsList, 43);
 
 const all4000 = [...interleavedMTK, ...interleavedIPA, ...interleavedIPS];
 all4000.forEach((q, idx) => {
