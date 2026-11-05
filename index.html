@@ -869,10 +869,12 @@
             const poolIPA = all.filter(q => q.MAPEL === 'IPA' && q.TIPE === 'PG');
             const poolIPS = all.filter(q => q.MAPEL === 'IPS' && q.TIPE === 'PG');
             
-            const startIdx = (part - 1) * 10;
-            const mtkSlice = poolMTK.slice(startIdx, startIdx + 10);
-            const ipaSlice = poolIPA.slice(startIdx, startIdx + 10);
-            const ipsSlice = poolIPS.slice(startIdx, startIdx + 10);
+            const startMtk = ((part - 1) * 10) % (poolMTK.length || 1);
+            const startIpa = ((part - 1) * 10) % (poolIPA.length || 1);
+            const startIps = ((part - 1) * 10) % (poolIPS.length || 1);
+            const mtkSlice = poolMTK.slice(startMtk, startMtk + 10);
+            const ipaSlice = poolIPA.slice(startIpa, startIpa + 10);
+            const ipsSlice = poolIPS.slice(startIps, startIps + 10);
             
             selected = [...mtkSlice, ...ipaSlice, ...ipsSlice];
             if (selected.length < 30) {
@@ -1757,8 +1759,9 @@
         totalCatQuestions = countIPS;
         numParts = Math.max(1, Math.ceil(countIPS / 30));
       } else {
-        totalCatQuestions = all.length;
-        numParts = Math.max(1, Math.ceil(all.length / 30));
+        const minBalanced = Math.min(countMTK, countIPA, countIPS);
+        numParts = Math.max(1, Math.floor(minBalanced / 10));
+        totalCatQuestions = numParts * 30;
       }
 
       const parts = [];
@@ -1766,7 +1769,7 @@
         const startNum = (i - 1) * 30 + 1;
         let endNum = i * 30;
         if (cat !== 'CAMPURAN' && endNum > totalCatQuestions) endNum = totalCatQuestions;
-        if (cat === 'CAMPURAN' && endNum > all.length) endNum = all.length;
+        if (cat === 'CAMPURAN' && endNum > totalCatQuestions) endNum = totalCatQuestions;
         const qCount = Math.max(1, endNum - startNum + 1);
         parts.push({
           part: i,
