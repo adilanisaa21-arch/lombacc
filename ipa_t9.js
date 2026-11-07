@@ -591,12 +591,12 @@ const sulit = [
     "Rongga udara yang masif di dalam lambung kapal memperbesar volume air laut yang dipindahkan sehingga menghasilkan gaya apung ke atas yang sangat besar."
   ],
   [
-    "Sebuah pesawat terbang dapat terangkat ke angkasa karena sayap pesawat dirancang dengan profil aerofoil khusus (sayap bagian atas lebih melengkung dibanding bagian bawah). Berdasarkan Asas Bernoulli, gaya angkat sayap pesawat terbang terjadi karena ...",
-    "Kecepatan aliran udara di atas sayap lebih cepat sehingga tekanannya lebih rendah dari tekanan udara di bawah sayap",
+    "Sebuah pesawat terbang yang berbobot puluhan ton dapat terangkat ke angkasa karena bentuk sayapnya melengkung di bagian atas. Gaya angkat pada sayap pesawat terbang tersebut timbul karena ...",
+    "Aliran udara di atas sayap bergerak lebih cepat sehingga tekanannya lebih kecil dibanding tekanan udara di bawah sayap",
     "Udara di bawah sayap berputar menjadi angin puting beliung",
     "Tekanan udara di atas sayap menjadi dua kali lipat lebih besar",
     "Mesin pesawat mendorong sayap ke dalam bumi",
-    "Hukum Bernoulli: kelajuan fluida tinggi berkorelasi dengan tekanan rendah; selisih tekanan bawah dan atas menghasilkan net lift force."
+    "Perbedaan kelajuan udara menciptakan perbedaan tekanan: tekanan udara di bawah sayap lebih besar daripada di atas sayap sehingga menghasilkan gaya angkat ke atas."
   ],
   [
     "Mengapa air sumur terasa hangat di pagi hari yang dingin dan terasa sejuk di siang hari yang terik, padahal suhu air sumur di dalam tanah sebenarnya relatif konstan?",

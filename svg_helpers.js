@@ -131,9 +131,20 @@ function renderLingkaran(r, bentuk = 'penuh', unit = 'cm') {
 }
 
 // 8. Jam Analog (Sudut Jam)
-function renderJamSudut(jam, menit) {
-  const angleHour = (jam % 12) * 30 + (menit / 60) * 30;
-  const angleMin = (menit / 60) * 360;
+function renderJamSudut(jam, menit = 0) {
+  let h = 0, m = 0;
+  if (typeof jam === 'string' && (jam.includes('.') || jam.includes(':'))) {
+    const parts = jam.split(/[.:]/);
+    h = parseInt(parts[0], 10) || 0;
+    m = parseInt(parts[1], 10) || 0;
+  } else {
+    h = parseInt(jam, 10) || 0;
+    m = parseInt(menit, 10) || 0;
+  }
+  const angleHour = ((h % 12) + m / 60) * 30;
+  const angleMin = (m / 60) * 360;
+  const jamLabel = String(h).padStart(2, '0') + '.' + String(m).padStart(2, '0');
+
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 200" width="100%" height="180" style="max-width:220px;margin:10px auto;display:block">
     <circle cx="110" cy="100" r="80" fill="#f8fafc" stroke="#334155" stroke-width="4"/>
     <circle cx="110" cy="100" r="4.5" fill="#0f172a"/>
@@ -143,13 +154,15 @@ function renderJamSudut(jam, menit) {
       const y = 104 + 64 * Math.sin(a);
       return `<text x="${x}" y="${y}" font-size="12" font-weight="bold" fill="#475569" text-anchor="middle">${n}</text>`;
     }).join('')}
+    <!-- Jarum Pendek (Jam) - Biru -->
     <g transform="rotate(${angleHour} 110 100)">
       <line x1="110" y1="100" x2="110" y2="55" stroke="#0284c7" stroke-width="4" stroke-linecap="round"/>
     </g>
+    <!-- Jarum Panjang (Menit) - Merah -->
     <g transform="rotate(${angleMin} 110 100)">
       <line x1="110" y1="100" x2="110" y2="35" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round"/>
     </g>
-    <text x="110" y="195" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Pukul ${String(jam).padStart(2, '0')}.${String(menit).padStart(2, '0')}</text>
+    <text x="110" y="195" font-size="13" font-weight="bold" fill="#0f172a" text-anchor="middle">Pukul ${jamLabel}</text>
   </svg>`;
 }
 
@@ -233,22 +246,29 @@ function renderLimas(sAlas, tLimas, unit = 'cm') {
 
 // 11. Diagram Lingkaran (Persen & Derajat)
 function renderDiagramLingkaran(slices, title = 'Diagram Lingkaran Data Siswa') {
-  const colors = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6'];
+  const colors = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4', '#ec4899'];
   let currentAngle = 0;
   const paths = [];
   const legend = [];
 
-  const total = slices.reduce((acc, s) => acc + s.value, 0);
+  const normalizedSlices = (slices || []).map(s => {
+    const rawVal = (s.value !== undefined && s.value !== null) ? Number(s.value) : (s.pct !== undefined ? Number(s.pct) : 1);
+    const val = isNaN(rawVal) || rawVal <= 0 ? 1 : rawVal;
+    const labelVal = s.labelVal || (s.pct !== undefined ? `${s.pct}%` : `${val}`);
+    return { label: s.label || 'Data', value: val, displayVal: labelVal };
+  });
 
-  slices.forEach((s, idx) => {
+  const total = normalizedSlices.reduce((acc, s) => acc + s.value, 0) || 100;
+
+  normalizedSlices.forEach((s, idx) => {
     const sliceAngle = (s.value / total) * 360;
     const startRad = (currentAngle - 90) * (Math.PI / 180);
     const endRad = (currentAngle + sliceAngle - 90) * (Math.PI / 180);
 
-    const x1 = 100 + 70 * Math.cos(startRad);
-    const y1 = 95 + 70 * Math.sin(startRad);
-    const x2 = 100 + 70 * Math.cos(endRad);
-    const y2 = 95 + 70 * Math.sin(endRad);
+    const x1 = (100 + 70 * Math.cos(startRad)).toFixed(2);
+    const y1 = (95 + 70 * Math.sin(startRad)).toFixed(2);
+    const x2 = (100 + 70 * Math.cos(endRad)).toFixed(2);
+    const y2 = (95 + 70 * Math.sin(endRad)).toFixed(2);
 
     const largeArc = sliceAngle > 180 ? 1 : 0;
     const d = `M 100,95 L ${x1},${y1} A 70,70 0 ${largeArc},1 ${x2},${y2} Z`;
@@ -257,7 +277,7 @@ function renderDiagramLingkaran(slices, title = 'Diagram Lingkaran Data Siswa') 
     paths.push(`<path d="${d}" fill="${c}" stroke="#fff" stroke-width="1.5"/>`);
     legend.push(`<div style="display:flex;align-items:center;gap:6px;font-size:11px;margin:2px 0">
       <span style="width:10px;height:10px;border-radius:2px;background:${c};display:inline-block"></span>
-      <span>${s.label}: <b>${s.labelVal || s.value}</b></span>
+      <span>${s.label}: <b>${s.displayVal}</b></span>
     </div>`);
 
     currentAngle += sliceAngle;

@@ -703,10 +703,11 @@ Luas rumput = ${luasBesar} - ${luasKecil} = ${luasArsir} m².`;
     diag = 'Hitung selisih posisi jarum jam dan jarum menit dikalikan 30 derajat per jam serta pergeseran jarum pendek.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
+    const clockSvg = renderJamSudut(item.time);
     addQ({
       MAPEL: 'MATEMATIKA', KELAS: 6, TOPIK: T4, BABAK: 'FINAL', LEVEL: 'HOTS', TIPE: 'PG',
       PERTANYAAN: qTxt, OPSI_A: op.A, OPSI_B: op.B, OPSI_C: op.C, OPSI_D: op.D, KUNCI: op.kunci,
-      PEMBAHASAN: exp, DIAGNOSA: diag, STATUS: 'AKTIF', STIMULUS_GAMBAR: null
+      PEMBAHASAN: exp, DIAGNOSA: diag, STATUS: 'AKTIF', STIMULUS_GAMBAR: clockSvg
     });
   }
 
@@ -1332,10 +1333,17 @@ Selisih keduanya = ${count1} - ${targetCount} = ${selisih} siswa.`;
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
+    const pieSlices = [
+      { label: s.cats[0], pct: s.pcts[0] },
+      { label: s.cats[1], pct: s.pcts[1] },
+      { label: s.cats[2], pct: s.pcts[2] },
+      { label: targetCat, labelVal: '? %', pct: sisaPct }
+    ];
+    const svg = renderDiagramLingkaran(pieSlices, `Diagram Data ${s.title}`);
     addQ({
       MAPEL: 'MATEMATIKA', KELAS: 6, TOPIK: T8, BABAK: 'PENYISIHAN', LEVEL: 'SULIT', TIPE: 'PG',
       PERTANYAAN: qTxt, OPSI_A: op.A, OPSI_B: op.B, OPSI_C: op.C, OPSI_D: op.D, KUNCI: op.kunci,
-      PEMBAHASAN: exp, DIAGNOSA: diag, STATUS: 'AKTIF', STIMULUS_GAMBAR: null
+      PEMBAHASAN: exp, DIAGNOSA: diag, STATUS: 'AKTIF', STIMULUS_GAMBAR: svg
     });
   }
 
@@ -1356,10 +1364,17 @@ Perolehan kandidat B = ${pctB}% × ${totalSiswa} = ${countB} siswa.`;
     diag = 'Cari total pemilih terlebih dahulu melalui persentase dan suara kandidat A, lalu hitung perolehan kandidat B.';
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
+    const sisaLain = 100 - (pctA + pctB);
+    const pieSlices = [
+      { label: 'Kandidat A', pct: pctA },
+      { label: 'Kandidat B', pct: pctB },
+      { label: 'Lainnya', pct: sisaLain }
+    ];
+    const svg = renderDiagramLingkaran(pieSlices, `Pemilihan ${orgs[i - 1]}`);
     addQ({
       MAPEL: 'MATEMATIKA', KELAS: 6, TOPIK: T8, BABAK: 'FINAL', LEVEL: 'HOTS', TIPE: 'PG',
       PERTANYAAN: qTxt, OPSI_A: op.A, OPSI_B: op.B, OPSI_C: op.C, OPSI_D: op.D, KUNCI: op.kunci,
-      PEMBAHASAN: exp, DIAGNOSA: diag, STATUS: 'AKTIF', STIMULUS_GAMBAR: null
+      PEMBAHASAN: exp, DIAGNOSA: diag, STATUS: 'AKTIF', STIMULUS_GAMBAR: svg
     });
   }
 

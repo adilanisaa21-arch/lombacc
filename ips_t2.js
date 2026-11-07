@@ -665,12 +665,12 @@ const hots = [
     "PLTMH memanfaatkan potensi energi kinetik air sungai pedesaan berdaya 5–100 kW secara mandiri, murah, dan berkelanjutan."
   ],
   [
-    "Kemajuan teknologi mesin pendingin ruangan (AC) dan kulkas di masa lalu menggunakan senyawa gas CFC (Freon). Para ilmuwan menemukan bahwa pelepasan gas CFC ke udara menyebabkan penipisan lapisan ozon bumi di stratosfer. Hubungan antara penipisan lapisan ozon akibat gas pendingin lama dengan kesehatan manusia di bumi adalah ...",
-    "Lapisan ozon berfungsi menyerap radiasi sinar ultraviolet B (UV-B) berbahaya dari matahari; jika lapisan ozon menipis, intensitas radiasi UV-B yang lolos ke bumi meningkat memicu kanker kulit dan katarak mata pada manusia",
+    "Kemajuan teknologi mesin pendingin ruangan (AC) dan kulkas di masa lalu menggunakan senyawa gas CFC (Freon). Para ilmuwan menemukan bahwa pelepasan gas CFC ke udara menyebabkan penipisan lapisan ozon bumi di atmosfer. Hubungan antara penipisan lapisan ozon akibat gas pendingin lama dengan kesehatan manusia di bumi adalah ...",
+    "Lapisan ozon berfungsi menyaring radiasi sinar ultraviolet berbahaya dari matahari; jika lapisan ozon menipis, radiasi ultraviolet yang mencapai bumi meningkat dan membahayakan kesehatan kulit serta mata manusia",
     "Lapisan ozon yang menipis membuat air hujan di bumi berubah menjadi air panas mendidih",
     "Penipisan ozon membuat bumi menjadi gelap gulita tanpa sinar matahari",
     "Gas CFC membuat manusia kehilangan kemampuan berbicara",
-    "Kimia atmosfer: radikal klorin dari fotolisis CFC mengkatalisis penguraian molekul ozon (O3) memicu lonjakan fluks radiasi UV mutagenik ke biosfer."
+    "Lapisan ozon di atmosfer berfungsi sebagai perisai alami yang menyerap sebagian besar radiasi ultraviolet matahari berbahaya; rusaknya lapisan ozon membahayakan kesehatan manusia dan lingkungan hidup."
   ],
   [
     "Di sebuah kawasan pertanian pedesaan, para petani beralih secara serentak dari menggunakan cangkul dan kerbau menjadi menggunakan traktor mesin dan mesin perontok padi (combine harvester). Evaluasi dampak sosial dan ekonomi ganda dari mekanisasi pertanian modern tersebut bagi kehidupan masyarakat desa adalah ...",
