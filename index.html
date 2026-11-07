@@ -320,7 +320,41 @@
       .mobile-nav button.active{color:#60a5fa}
       .mobile-nav span{display:block;font-size:20px;margin-bottom:2px}
       .summary-grid{grid-template-columns:1fr}
+      .gallery-grid{grid-template-columns:1fr}
+      .gallery-zoom-viewport{max-height:40vh}
     }
+
+    /* Galeri Media & Gambar Pembelajaran */
+    .gallery-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+    .gallery-card{background:#fff;border:1.5px solid #e2e8f0;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:transform .18s,box-shadow .18s,border-color .18s}
+    .gallery-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -6px rgba(15,23,42,.12);border-color:#93c5fd}
+    .gallery-img-box{width:100%;aspect-ratio:16/10;background:#f8fafc;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;border-bottom:1px solid #e2e8f0;cursor:pointer}
+    .gallery-img-box img{width:100%;height:100%;object-fit:cover;transition:transform .2s}
+    .gallery-img-box:hover img{transform:scale(1.03)}
+    .gallery-svg-wrap{width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:8px}
+    .gallery-svg-wrap svg{width:100%;height:100%;max-height:100%;display:block}
+    .gallery-card-body{padding:16px;flex:1;display:flex;flex-direction:column}
+    .gallery-meta-tags{display:flex;gap:6px;align-items:center;margin-bottom:8px;flex-wrap:wrap}
+    .gallery-card-title{font-size:15px;font-weight:800;color:var(--ink);line-height:1.4;margin:0 0 6px}
+    .gallery-card-topic{font-size:12px;color:var(--muted);margin-bottom:8px;font-weight:600}
+    .gallery-card-desc{font-size:12.5px;color:#475569;line-height:1.5;margin-bottom:14px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;flex:1}
+    .gallery-card-foot{display:flex;align-items:center;justify-content:space-between;padding-top:10px;border-top:1px solid #f1f5f9;gap:8px}
+    
+    /* Lightbox Modal & Zoom Overlay */
+    .gallery-modal-overlay{position:fixed;inset:0;background:rgba(15,23,42,.75);z-index:1000;display:flex;align-items:center;justify-content:center;padding:16px;backdrop-filter:blur(4px);animation:fadeIn .15s ease}
+    .gallery-modal-dialog{background:#fff;border-radius:20px;max-width:850px;width:100%;max-height:92vh;display:flex;flex-direction:column;box-shadow:0 25px 50px -12px rgba(0,0,0,.35);overflow:hidden}
+    .gallery-modal-header{padding:16px 20px;border-bottom:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center;background:#f8fafc}
+    .gallery-modal-body{padding:20px;overflow-y:auto;flex:1}
+    .gallery-modal-footer{padding:14px 20px;border-top:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center;background:#f8fafc;flex-wrap:wrap;gap:10px}
+    .gallery-zoom-viewport{background:#0f172a;border-radius:12px;min-height:280px;max-height:55vh;overflow:auto;display:flex;align-items:center;justify-content:center;position:relative;padding:16px}
+    .gallery-zoom-target{transition:transform .15s ease;transform-origin:center center;max-width:100%;display:flex;justify-content:center}
+    .gallery-zoom-target img{max-width:100%;max-height:50vh;object-fit:contain;border-radius:6px}
+    .gallery-zoom-target svg{max-width:100%;max-height:50vh;display:block}
+    .gallery-zoom-ctrls{position:absolute;bottom:12px;right:12px;display:flex;gap:6px;background:rgba(15,23,42,.85);padding:4px 8px;border-radius:99px;border:1px solid rgba(255,255,255,.15)}
+    .gallery-zoom-btn{background:transparent;border:0;color:#fff;font-size:14px;padding:4px 8px;cursor:pointer;border-radius:6px;font-weight:700}
+    .gallery-zoom-btn:hover{background:rgba(255,255,255,.2)}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
     @media print{
       body{background:#fff}
       .shell{display:block}
@@ -337,6 +371,8 @@
   <script src="data_questions.js"></script>
   <!-- Data Rangkuman Materi Lengkap Matematika, IPA, & IPS Kelas 4 - 6 -->
   <script src="data_rangkuman.js"></script>
+  <!-- Data Pustaka Gambar & Media Pembelajaran Visual -->
+  <script src="data_gallery.js"></script>
 </head>
 <body>
   <div id="app">
@@ -395,6 +431,12 @@
       // Halaman Rangkuman
       summaryFilter: { mapel: '', kelas: '', search: '' },
       summaryOpenAnswers: {},
+
+      // Galeri Media & Gambar Pembelajaran
+      gallery: null,
+      galleryFilter: { mapel: '', kelas: '', search: '' },
+      galleryModal: null,
+      galleryZoom: 1,
 
       // Latihan Mandiri Bagian & Sortir
       studentName: localStorage.getItem('cc_student_name') || '',
@@ -670,6 +712,138 @@
       const updated = { ...current, ...pairs };
       localStorage.setItem('cc_settings_data', JSON.stringify(updated));
       return updated;
+    }
+
+    // =========================================================================
+    // DATABASE: GALERI GAMBAR & MEDIA PEMBELAJARAN
+    // =========================================================================
+    async function dbGetGallery() {
+      if (S.gallery && Array.isArray(S.gallery)) return S.gallery;
+
+      const defaults = (typeof DEFAULT_GALLERY_ITEMS !== 'undefined' && Array.isArray(DEFAULT_GALLERY_ITEMS))
+        ? DEFAULT_GALLERY_ITEMS
+        : [];
+
+      let localData = null;
+      try {
+        const raw = localStorage.getItem('cc_gallery_data');
+        if (raw) localData = JSON.parse(raw);
+      } catch (e) {}
+
+      // Jika Supabase terhubung, sinkronkan / ambil dari cc_gallery
+      if (S.supabaseConnected && S.supabase) {
+        try {
+          const { data, error } = await S.supabase.from('cc_gallery').select('*').order('created_at', { ascending: false });
+          if (!error && Array.isArray(data) && data.length > 0) {
+            const cloudItems = data.map(r => ({
+              id: r.id,
+              judul: r.judul,
+              mapel: r.mapel || 'UMUM',
+              kelas: r.kelas || 'SEMUA',
+              topik: r.topik || '',
+              tipe: r.tipe || 'upload',
+              src: r.src,
+              keterangan: r.keterangan || '',
+              pembuat: r.pembuat || 'Guru',
+              status: r.status || 'AKTIF',
+              created_at: r.created_at
+            }));
+            S.gallery = cloudItems;
+            try { localStorage.setItem('cc_gallery_data', JSON.stringify(cloudItems)); } catch (e) {}
+            return S.gallery;
+          }
+        } catch (e) {}
+      }
+
+      if (Array.isArray(localData) && localData.length > 0) {
+        S.gallery = localData;
+        return S.gallery;
+      }
+
+      // Inisialisasi awal dengan data bawaan
+      S.gallery = defaults;
+      try { localStorage.setItem('cc_gallery_data', JSON.stringify(defaults)); } catch (e) {}
+      return S.gallery;
+    }
+
+    async function dbSaveGalleryItem(item) {
+      const list = await dbGetGallery();
+      const existingIdx = list.findIndex(x => x.id === item.id);
+      if (existingIdx >= 0) {
+        list[existingIdx] = { ...list[existingIdx], ...item, updated_at: new Date().toISOString() };
+      } else {
+        list.unshift(item);
+      }
+      S.gallery = list;
+      try { localStorage.setItem('cc_gallery_data', JSON.stringify(list)); } catch (e) {}
+
+      if (S.supabaseConnected && S.supabase) {
+        try {
+          await S.supabase.from('cc_gallery').upsert({
+            id: item.id,
+            judul: item.judul,
+            mapel: item.mapel || 'UMUM',
+            kelas: item.kelas || 'SEMUA',
+            topik: item.topik || '',
+            tipe: item.tipe || 'upload',
+            src: item.src,
+            keterangan: item.keterangan || '',
+            pembuat: item.pembuat || 'Guru',
+            status: item.status || 'AKTIF',
+            updated_at: new Date().toISOString()
+          });
+        } catch (e) {
+          console.warn('Gagal menyimpan gambar ke Supabase:', e);
+        }
+      }
+      return item;
+    }
+
+    async function dbDeleteGalleryItem(id) {
+      const list = await dbGetGallery();
+      const target = list.find(x => x.id === id);
+      if (!target) return false;
+
+      let updated;
+      if (String(id).startsWith('img_custom_')) {
+        updated = list.filter(x => x.id !== id);
+      } else {
+        target.status = 'NONAKTIF';
+        updated = [...list];
+      }
+      S.gallery = updated;
+      try { localStorage.setItem('cc_gallery_data', JSON.stringify(updated)); } catch (e) {}
+
+      if (S.supabaseConnected && S.supabase) {
+        try {
+          if (String(id).startsWith('img_custom_')) {
+            await S.supabase.from('cc_gallery').delete().eq('id', id);
+          } else {
+            await S.supabase.from('cc_gallery').update({ status: 'NONAKTIF' }).eq('id', id);
+          }
+        } catch (e) {}
+      }
+      return true;
+    }
+
+    async function dbRestoreDefaultGallery() {
+      const defaults = (typeof DEFAULT_GALLERY_ITEMS !== 'undefined' && Array.isArray(DEFAULT_GALLERY_ITEMS))
+        ? DEFAULT_GALLERY_ITEMS
+        : [];
+      const list = await dbGetGallery();
+      const customItems = list.filter(x => String(x.id).startsWith('img_custom_'));
+      const restored = [...defaults.map(d => ({ ...d, status: 'AKTIF' })), ...customItems];
+      S.gallery = restored;
+      try { localStorage.setItem('cc_gallery_data', JSON.stringify(restored)); } catch (e) {}
+
+      if (S.supabaseConnected && S.supabase) {
+        try {
+          for (const d of defaults) {
+            await S.supabase.from('cc_gallery').update({ status: 'AKTIF' }).eq('id', d.id);
+          }
+        } catch (e) {}
+      }
+      return restored;
     }
 
     // Simpan sesi pengerjaan ke database Supabase dan lokal
@@ -1401,6 +1575,7 @@
     // =========================================================================
     const menu = [
       ['dashboard', '🏠', 'Dashboard'],
+      ['gallery', '🖼️', 'Galeri Gambar'],
       ['summary', '📖', 'Rangkuman Materi'],
       ['practice', '🧠', 'Latihan Mandiri'],
       ['reviews', '📋', 'Review Hasil Belajar'],
@@ -1467,6 +1642,7 @@
         <nav class="mobile-nav">
           ${[
             ['dashboard', '🏠', 'Beranda'],
+            ['gallery', '🖼️', 'Galeri'],
             ['summary', '📖', 'Materi'],
             ['practice', '🧠', 'Latihan'],
             ['reviews', '📋', 'Review'],
@@ -1548,7 +1724,8 @@
         </div>
 
         ${heading('Pilih Arena Pembelajaran', 'Bersiap menghadapi latihan mandiri, olimpiade beregu, hingga babak final ber-buzzer.')}
-        <div class="grid cols-4">
+        <div class="grid cols-3" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px">
+          ${modeCard('🖼️', 'Galeri Gambar Materi', 'Pustaka visual edukatif: diagram sains, bangun ruang, dan peta IPS interaktif.', 'gallery')}
           ${modeCard('📖', 'Rangkuman Materi', 'Kumpulan materi Matematika, IPA, & IPS lengkap Kelas 4–6 dengan rumus cepat dan konsep penting.', 'summary')}
           ${modeCard('🧠', 'Latihan Mandiri', 'Latihan per bagian (30 soal, 45 menit, 90 dtk/soal) untuk MTK, IPA, IPS & Campuran.', 'practice')}
           ${modeCard('📋', 'Review Hasil Belajar', 'Lihat penjelasan soal yang salah, diagnosa konsep, dan latih ulang soal salah.', 'reviews')}
@@ -1572,6 +1749,323 @@
           <button class="btn secondary sm" data-action="navigate" data-page="${page}">Buka Modul →</button>
         </div>
       `;
+    }
+
+    // =========================================================================
+    // VIEW: GALERI MEDIA & GAMBAR PEMBELAJARAN
+    // =========================================================================
+    function galleryView() {
+      const list = S.gallery || (typeof DEFAULT_GALLERY_ITEMS !== 'undefined' ? DEFAULT_GALLERY_ITEMS : []);
+      const filter = S.galleryFilter;
+      const isGuru = !!S.token;
+
+      // Filter status aktif
+      let activeItems = list.filter(item => (item.status || 'AKTIF') === 'AKTIF');
+      const inactiveCount = list.filter(item => item.status === 'NONAKTIF').length;
+
+      // Filter Mapel
+      if (filter.mapel) {
+        activeItems = activeItems.filter(item => (item.mapel || '').toUpperCase() === filter.mapel.toUpperCase());
+      }
+      // Filter Kelas
+      if (filter.kelas) {
+        activeItems = activeItems.filter(item => String(item.kelas) === String(filter.kelas) || item.kelas === 'SEMUA');
+      }
+      // Filter Search
+      if (filter.search) {
+        const s = filter.search.toLowerCase();
+        activeItems = activeItems.filter(item => 
+          (item.judul || '').toLowerCase().includes(s) ||
+          (item.topik || '').toLowerCase().includes(s) ||
+          (item.keterangan || '').toLowerCase().includes(s) ||
+          (item.mapel || '').toLowerCase().includes(s)
+        );
+      }
+
+      return `
+        ${heading('Galeri Media & Gambar Pembelajaran', 'Koleksi ilustrasi konsep sains, visualisasi matematika, dan peta IPS untuk mempermudah pemahaman murid.')}
+
+        <div class="card" style="margin-bottom:24px">
+          <div class="summary-filter-bar">
+            <div class="filter-pills">
+              <span class="subtle" style="display:flex;align-items:center;margin-right:4px"><b>Mapel:</b></span>
+              <a href="#/galeri" class="filter-btn ${!filter.mapel ? 'active' : ''}" data-action="setGalleryMapel" data-val="" style="text-decoration:none">Semua Mapel</a>
+              <a href="#/galeri/matematika" class="filter-btn ${filter.mapel === 'MATEMATIKA' ? 'active' : ''}" data-action="setGalleryMapel" data-val="MATEMATIKA" style="text-decoration:none">🔢 Matematika</a>
+              <a href="#/galeri/ipa" class="filter-btn ${filter.mapel === 'IPA' ? 'active' : ''}" data-action="setGalleryMapel" data-val="IPA" style="text-decoration:none">🔬 IPA (Sains)</a>
+              <a href="#/galeri/ips" class="filter-btn ${filter.mapel === 'IPS' ? 'active' : ''}" data-action="setGalleryMapel" data-val="IPS" style="text-decoration:none">🌏 IPS (Sosial)</a>
+            </div>
+            <div class="filter-pills">
+              <span class="subtle" style="display:flex;align-items:center;margin-right:4px"><b>Tingkat:</b></span>
+              <button class="filter-btn ${!filter.kelas ? 'active' : ''}" data-action="setGalleryKelas" data-val="">Semua Kelas</button>
+              <button class="filter-btn ${filter.kelas === '4' ? 'active' : ''}" data-action="setGalleryKelas" data-val="4">Kelas IV</button>
+              <button class="filter-btn ${filter.kelas === '5' ? 'active' : ''}" data-action="setGalleryKelas" data-val="5">Kelas V</button>
+              <button class="filter-btn ${filter.kelas === '6' ? 'active' : ''}" data-action="setGalleryKelas" data-val="6">Kelas VI</button>
+            </div>
+            <div class="search-box">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="gallerySearch" placeholder="Cari judul gambar, topik, atau konsep..." value="${esc(filter.search)}">
+            </div>
+          </div>
+
+          <div class="btn-row" style="justify-content:space-between;flex-wrap:wrap;gap:10px">
+            <span class="subtle">Menampilkan <b>${activeItems.length}</b> media visual edukasi ${filter.mapel ? `(${esc(filter.mapel)})` : ''}</span>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              ${isGuru ? `
+                <button class="btn good sm" data-action="openAddGalleryModal" style="display:inline-flex;align-items:center;gap:6px">
+                  <span>➕</span> Tambah Gambar Baru
+                </button>
+                ${inactiveCount > 0 ? `
+                  <button class="btn secondary sm" data-action="restoreDefaultGallery" title="Pulihkan ${inactiveCount} gambar bawaan yang dinonaktifkan">
+                    🔄 Pulihkan Gambar Bawaan (${inactiveCount})
+                  </button>
+                ` : ''}
+              ` : `
+                <button class="btn ghost sm" data-action="navigate" data-page="bank" title="Masuk Mode Guru untuk menambah atau menghapus gambar">
+                  🔒 Masuk Mode Guru untuk Kelola Gambar
+                </button>
+              `}
+            </div>
+          </div>
+        </div>
+
+        ${activeItems.length === 0 ? `
+          <div class="card empty">
+            <div style="font-size:44px">🖼️</div>
+            <strong>Belum Ada Gambar yang Sesuai</strong>
+            <p>Tidak ditemukan gambar dengan kata kunci "<b>${esc(filter.search)}</b>" atau filter yang dipilih.</p>
+            <div class="btn-row" style="justify-content:center;gap:8px">
+              <button class="btn secondary sm" data-action="clearGalleryFilter">Reset Filter Pencarian</button>
+              ${isGuru ? `<button class="btn good sm" data-action="openAddGalleryModal">➕ Tambah Gambar Sekarang</button>` : ''}
+            </div>
+          </div>
+        ` : `
+          <div class="gallery-grid">
+            ${activeItems.map(item => galleryCardHtml(item, isGuru)).join('')}
+          </div>
+        `}
+
+        ${renderGalleryModals(isGuru)}
+      `;
+    }
+
+    function galleryCardHtml(item, isGuru) {
+      const isMtk = (item.mapel || '').toUpperCase() === 'MATEMATIKA';
+      const isIpa = (item.mapel || '').toUpperCase() === 'IPA';
+      const isIps = (item.mapel || '').toUpperCase() === 'IPS';
+      const badgeClass = isMtk ? 'blue' : (isIpa ? 'green' : 'gold');
+      const mapelIcon = isMtk ? '🔢 MTK' : (isIpa ? '🔬 IPA' : (isIps ? '🌏 IPS' : '📚 UMUM'));
+      const kelasText = item.kelas === 'SEMUA' || !item.kelas ? 'Semua Kelas' : `Kelas ${item.kelas}`;
+
+      let imgContent = '';
+      if (item.src && item.src.trim().startsWith('<svg')) {
+        imgContent = `<div class="gallery-svg-wrap">${item.src}</div>`;
+      } else if (item.src) {
+        imgContent = `<img src="${esc(item.src)}" alt="${esc(item.judul)}" loading="lazy">`;
+      } else {
+        imgContent = `<div style="font-size:36px;color:#94a3b8">🖼️</div>`;
+      }
+
+      return `
+        <article class="gallery-card">
+          <div class="gallery-img-box" data-action="viewGalleryItem" data-id="${item.id}" title="Klik untuk memperbesar gambar">
+            ${imgContent}
+          </div>
+          <div class="gallery-card-body">
+            <div class="gallery-meta-tags">
+              <span class="badge ${badgeClass}" style="font-size:10.5px">${mapelIcon}</span>
+              <span class="badge" style="font-size:10.5px;background:#f1f5f9;color:#475569">${kelasText}</span>
+              ${item.pembuat ? `<span class="subtle" style="font-size:10.5px;margin-left:auto">${esc(item.pembuat)}</span>` : ''}
+            </div>
+            <h3 class="gallery-card-title">${esc(item.judul)}</h3>
+            ${item.topik ? `<div class="gallery-card-topic">📁 ${esc(item.topik)}</div>` : ''}
+            <div class="gallery-card-desc">${esc(item.keterangan || 'Klik untuk melihat gambar dan penjelasan konsep materi secara lengkap.')}</div>
+            
+            <div class="gallery-card-foot">
+              <button class="btn secondary sm" data-action="viewGalleryItem" data-id="${item.id}" style="padding:6px 12px;font-size:12px;display:inline-flex;align-items:center;gap:4px">
+                <span>👁️</span> Perbesar
+              </button>
+              ${isGuru ? `
+                <button class="btn danger sm" data-action="confirmDeleteGalleryItem" data-id="${item.id}" style="padding:6px 10px;font-size:12px;display:inline-flex;align-items:center;gap:4px" title="Hapus gambar ini dari galeri">
+                  <span>🗑️</span> Hapus
+                </button>
+              ` : ''}
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderGalleryModals(isGuru) {
+      if (!S.galleryModal) return '';
+
+      // 1. MODAL LIHAT DETAIL & ZOOM (LIGHTBOX)
+      if (S.galleryModal.mode === 'view') {
+        const item = S.galleryModal.item;
+        if (!item) return '';
+
+        const zoomScale = S.galleryZoom || 1;
+        let viewImg = '';
+        if (item.src && item.src.trim().startsWith('<svg')) {
+          viewImg = `<div style="width:100%;max-width:550px">${item.src}</div>`;
+        } else if (item.src) {
+          viewImg = `<img src="${esc(item.src)}" alt="${esc(item.judul)}">`;
+        }
+
+        return `
+          <div class="gallery-modal-overlay" data-action="closeGalleryModal">
+            <div class="gallery-modal-dialog" onclick="event.stopPropagation()">
+              <div class="gallery-modal-header">
+                <div>
+                  <h3 style="margin:0;font-size:16px;color:var(--navy)">${esc(item.judul)}</h3>
+                  <small style="color:var(--muted)">${esc(item.mapel)} · Kelas ${esc(item.kelas)} · ${esc(item.topik || 'Materi Umum')}</small>
+                </div>
+                <button class="btn ghost sm" data-action="closeGalleryModal" style="padding:4px 10px;font-size:18px">✕</button>
+              </div>
+
+              <div class="gallery-modal-body">
+                <div class="gallery-zoom-viewport">
+                  <div class="gallery-zoom-target" style="transform:scale(${zoomScale})">
+                    ${viewImg}
+                  </div>
+                  <div class="gallery-zoom-ctrls">
+                    <button class="gallery-zoom-btn" data-action="zoomGalleryOut" title="Perkecil">➖</button>
+                    <span style="color:#cbd5e1;font-size:12px;display:flex;align-items:center;padding:0 4px">${Math.round(zoomScale * 100)}%</span>
+                    <button class="gallery-zoom-btn" data-action="zoomGalleryIn" title="Perbesar">➕</button>
+                    <button class="gallery-zoom-btn" data-action="zoomGalleryReset" title="Reset Zoom">🔄</button>
+                  </div>
+                </div>
+
+                <div style="margin-top:16px;background:#f8fafc;border:1.5px solid #e2e8f0;border-left:4px solid #2563eb;border-radius:12px;padding:14px 16px">
+                  <div style="font-weight:800;font-size:13.5px;color:#1e3a8a;margin-bottom:6px">💡 Ringkasan &amp; Konsep Materi:</div>
+                  <div style="font-size:13px;color:#334155;line-height:1.6">${esc(item.keterangan || 'Tidak ada catatan tambahan.').replace(/\\n/g, '<br>')}</div>
+                </div>
+              </div>
+
+              <div class="gallery-modal-footer">
+                <div style="font-size:11.5px;color:var(--muted)">
+                  Unggahan: <b>${esc(item.pembuat || 'Guru')}</b> · ${esc(item.created_at || 'Terbaru')}
+                </div>
+                <div style="display:flex;gap:8px">
+                  ${isGuru ? `
+                    <button class="btn danger sm" data-action="confirmDeleteGalleryItem" data-id="${item.id}" style="display:inline-flex;align-items:center;gap:4px">
+                      <span>🗑️</span> Hapus Gambar Ini
+                    </button>
+                  ` : ''}
+                  <button class="btn secondary sm" data-action="closeGalleryModal">Tutup</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      // 2. MODAL FORM TAMBAH GAMBAR (KHUSUS GURU)
+      if (S.galleryModal.mode === 'add') {
+        const preview = S.galleryModal.previewSrc;
+
+        return `
+          <div class="gallery-modal-overlay" data-action="closeGalleryModal">
+            <div class="gallery-modal-dialog" style="max-width:580px" onclick="event.stopPropagation()">
+              <div class="gallery-modal-header">
+                <div>
+                  <h3 style="margin:0;font-size:16px;color:var(--navy)">➕ Tambah Gambar Materi Baru</h3>
+                  <small style="color:var(--muted)">Unggah gambar atau diagram materi pembelajaran untuk murid.</small>
+                </div>
+                <button class="btn ghost sm" data-action="closeGalleryModal" style="padding:4px 10px;font-size:18px">✕</button>
+              </div>
+
+              <div class="gallery-modal-body">
+                <div class="field" style="margin-bottom:14px">
+                  <label for="galleryFileInput"><b>Pilih Berkas Gambar dari Perangkat (JPG, PNG, WebP, SVG):</b></label>
+                  <input type="file" id="galleryFileInput" accept="image/*" style="padding:8px">
+                  <div id="galleryUploadPreview" style="margin-top:10px;text-align:center">
+                    ${preview ? `<img src="${preview}" style="max-height:180px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.1)">` : '<small class="subtle">Preview gambar akan muncul di sini setelah dipilih.</small>'}
+                  </div>
+                </div>
+
+                <div class="field" style="margin-bottom:14px">
+                  <label for="galleryUrlInput">Atau Tautan URL Gambar Online (Opsional jika tidak upload berkas):</label>
+                  <input type="text" id="galleryUrlInput" placeholder="https://example.com/gambar-materi.png">
+                </div>
+
+                <div class="field" style="margin-bottom:14px">
+                  <label for="galleryTitleInput">Judul Gambar / Media <span style="color:red">*</span></label>
+                  <input type="text" id="galleryTitleInput" placeholder="Contoh: Metamorfosis Katak &amp; Berudu">
+                </div>
+
+                <div class="grid" style="grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px">
+                  <div class="field">
+                    <label for="galleryMapelInput">Mata Pelajaran</label>
+                    <select id="galleryMapelInput">
+                      <option value="MATEMATIKA">Matematika (MTK)</option>
+                      <option value="IPA" selected>IPA (Sains)</option>
+                      <option value="IPS">IPS (Sosial)</option>
+                      <option value="UMUM">Umum / Semua</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="galleryKelasInput">Tingkat Kelas</label>
+                    <select id="galleryKelasInput">
+                      <option value="SEMUA">Semua Kelas (4-6)</option>
+                      <option value="4">Kelas IV (Empat)</option>
+                      <option value="5">Kelas V (Lima)</option>
+                      <option value="6">Kelas VI (Enam)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field" style="margin-bottom:14px">
+                  <label for="galleryTopicInput">Topik / Bab Materi Pembelajaran</label>
+                  <input type="text" id="galleryTopicInput" placeholder="Contoh: Daur Hidup Hewan &amp; Ekosistem">
+                </div>
+
+                <div class="field" style="margin-bottom:14px">
+                  <label for="galleryCaptionInput">Keterangan / Penjelasan Materi Guru (Dibaca Murid)</label>
+                  <textarea id="galleryCaptionInput" rows="3" placeholder="Tuliskan poin penting materi, cara membaca diagram, atau rumus cepat terkait gambar ini..."></textarea>
+                </div>
+              </div>
+
+              <div class="gallery-modal-footer">
+                <button class="btn secondary sm" data-action="closeGalleryModal">Batal</button>
+                <button class="btn good" data-action="saveNewGalleryImage">💾 Simpan Gambar ke Galeri</button>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      // 3. MODAL KONFIRMASI HAPUS GAMBAR (KHUSUS GURU)
+      if (S.galleryModal.mode === 'deleteConfirm') {
+        const item = S.galleryModal.item;
+        if (!item) return '';
+
+        return `
+          <div class="gallery-modal-overlay" data-action="closeGalleryModal">
+            <div class="gallery-modal-dialog" style="max-width:440px" onclick="event.stopPropagation()">
+              <div class="gallery-modal-body" style="text-align:center;padding:28px 20px 20px">
+                <div style="font-size:48px;margin-bottom:12px">⚠️</div>
+                <h3 style="margin:0 0 8px;color:#dc2626">Konfirmasi Hapus Gambar</h3>
+                <p style="font-size:13.5px;color:#475569;line-height:1.6">
+                  Apakah Anda yakin ingin menghapus gambar:<br>
+                  <strong style="color:#0f172a;font-size:14px">"${esc(item.judul)}"</strong>?
+                </p>
+                <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:10px;padding:10px 14px;font-size:12px;color:#991b1b;margin-top:14px">
+                  📌 Gambar ini tidak akan dapat diakses lagi oleh murid di galeri.
+                </div>
+              </div>
+
+              <div class="gallery-modal-footer" style="justify-content:center;gap:12px">
+                <button class="btn secondary" data-action="closeGalleryModal">Batal</button>
+                <button class="btn danger" data-action="executeDeleteGalleryItem" data-id="${item.id}">
+                  🗑️ Ya, Hapus Gambar
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      return '';
     }
 
     // =========================================================================
@@ -2685,6 +3179,7 @@
     // =========================================================================
     const PAGE_TO_ROUTE = {
       dashboard: 'dasbord',
+      gallery: 'galeri',
       summary: 'rangkuman',
       practice: 'latihan',
       reviews: 'reviewjawaban',
@@ -2701,6 +3196,10 @@
       dasbord: 'dashboard',
       dashboard: 'dashboard',
       beranda: 'dashboard',
+      galeri: 'gallery',
+      gallery: 'gallery',
+      gambar: 'gallery',
+      pustaka: 'gallery',
       rangkuman: 'summary',
       materi: 'summary',
       summary: 'summary',
@@ -2754,6 +3253,8 @@
         targetHash += '/' + S.practiceCategory.toLowerCase();
       } else if (S.page === 'summary' && S.summaryFilter?.mapel) {
         targetHash += '/' + S.summaryFilter.mapel.toLowerCase();
+      } else if (S.page === 'gallery' && S.galleryFilter?.mapel) {
+        targetHash += '/' + S.galleryFilter.mapel.toLowerCase();
       }
       if (window.location.hash !== targetHash) {
         try {
@@ -2785,10 +3286,18 @@
         else if (sub === 'ipa') S.summaryFilter.mapel = 'IPA';
         else if (sub === 'ips') S.summaryFilter.mapel = 'IPS';
         else if (sub === 'semua' || !sub) S.summaryFilter.mapel = '';
+      } else if (page === 'gallery') {
+        if (sub === 'matematika') S.galleryFilter.mapel = 'MATEMATIKA';
+        else if (sub === 'ipa') S.galleryFilter.mapel = 'IPA';
+        else if (sub === 'ips') S.galleryFilter.mapel = 'IPS';
+        else if (sub === 'semua' || !sub) S.galleryFilter.mapel = '';
       }
 
       render();
 
+      if (page === 'gallery') {
+        try { await dbGetGallery(); render(); } catch (e) {}
+      }
       if (page === 'bank' && S.token) {
         try { await reloadBank(); } catch (e) {}
       }
@@ -2805,6 +3314,7 @@
     function render() {
       let html = '';
       if (S.page === 'dashboard') html = dashboardView();
+      else if (S.page === 'gallery') html = galleryView();
       else if (S.page === 'summary') html = summaryView();
       else if (S.page === 'practice') html = practiceView();
       else if (S.page === 'reviews') html = reviewsView();
@@ -3007,6 +3517,147 @@
           S.summaryFilter = { mapel: '', kelas: '', search: '' };
           render();
           break;
+
+        case 'setGalleryMapel':
+          S.galleryFilter.mapel = el.dataset.val;
+          syncUrl();
+          render();
+          break;
+
+        case 'setGalleryKelas':
+          S.galleryFilter.kelas = el.dataset.val;
+          render();
+          break;
+
+        case 'clearGalleryFilter':
+          S.galleryFilter = { mapel: '', kelas: '', search: '' };
+          syncUrl();
+          render();
+          break;
+
+        case 'viewGalleryItem': {
+          const id = el.dataset.id;
+          const list = await dbGetGallery();
+          const item = list.find(x => x.id === id);
+          if (item) {
+            S.galleryModal = { mode: 'view', item };
+            S.galleryZoom = 1;
+            render();
+          }
+          break;
+        }
+
+        case 'closeGalleryModal':
+          S.galleryModal = null;
+          S.galleryZoom = 1;
+          render();
+          break;
+
+        case 'zoomGalleryIn':
+          S.galleryZoom = Math.min(3, Math.round(((S.galleryZoom || 1) + 0.25) * 100) / 100);
+          render();
+          break;
+
+        case 'zoomGalleryOut':
+          S.galleryZoom = Math.max(0.5, Math.round(((S.galleryZoom || 1) - 0.25) * 100) / 100);
+          render();
+          break;
+
+        case 'zoomGalleryReset':
+          S.galleryZoom = 1;
+          render();
+          break;
+
+        case 'openAddGalleryModal':
+          if (!S.token) {
+            toast('Sesi guru diperlukan untuk menambah gambar.', true);
+            return;
+          }
+          S.galleryModal = { mode: 'add', item: null, previewSrc: '' };
+          render();
+          break;
+
+        case 'saveNewGalleryImage': {
+          if (!S.token) {
+            toast('Sesi guru diperlukan.', true);
+            return;
+          }
+          const judul = value('galleryTitleInput').trim();
+          const mapel = value('galleryMapelInput');
+          const kelas = value('galleryKelasInput');
+          const topik = value('galleryTopicInput').trim();
+          const keterangan = value('galleryCaptionInput').trim();
+          const urlInput = value('galleryUrlInput').trim();
+          const src = S.galleryModal?.previewSrc || urlInput;
+
+          if (!judul) {
+            toast('Harap masukkan judul gambar.', true);
+            return;
+          }
+          if (!src) {
+            toast('Harap unggah berkas gambar atau masukkan tautan URL gambar.', true);
+            return;
+          }
+
+          const newItem = {
+            id: 'img_custom_' + Date.now(),
+            judul,
+            mapel: mapel || 'UMUM',
+            kelas: kelas || 'SEMUA',
+            topik: topik || '',
+            tipe: S.galleryModal?.previewSrc ? 'upload' : 'url',
+            src,
+            keterangan: keterangan || '',
+            pembuat: S.boot?.settings?.NAMA_PEMBINA || 'Guru',
+            status: 'AKTIF',
+            created_at: new Date().toLocaleDateString('id-ID', { day: '2-digit', month: 'short', year: 'numeric' })
+          };
+
+          await run(() => dbSaveGalleryItem(newItem));
+          S.galleryModal = null;
+          toast('Gambar berhasil ditambahkan ke galeri!');
+          render();
+          break;
+        }
+
+        case 'confirmDeleteGalleryItem': {
+          if (!S.token) {
+            toast('Sesi guru diperlukan untuk menghapus gambar.', true);
+            return;
+          }
+          const id = el.dataset.id;
+          const list = await dbGetGallery();
+          const item = list.find(x => x.id === id);
+          if (item) {
+            S.galleryModal = { mode: 'deleteConfirm', item };
+            render();
+          }
+          break;
+        }
+
+        case 'executeDeleteGalleryItem': {
+          if (!S.token) {
+            toast('Sesi guru diperlukan.', true);
+            return;
+          }
+          const id = el.dataset.id;
+          await run(() => dbDeleteGalleryItem(id));
+          S.galleryModal = null;
+          toast('Gambar berhasil dihapus dari galeri.');
+          render();
+          break;
+        }
+
+        case 'restoreDefaultGallery': {
+          if (!S.token) {
+            toast('Sesi guru diperlukan.', true);
+            return;
+          }
+          await run(() => dbRestoreDefaultGallery());
+          toast('Gambar materi bawaan berhasil dipulihkan.');
+          render();
+          break;
+        }
 
         case 'toggleSummaryAnswer': {
           const id = el.dataset.id;
@@ -3739,14 +4390,37 @@
           clearTimeout(window._searchTimer);
           window._searchTimer = setTimeout(render, 150);
         }
+      } else if (ev.target.id === 'gallerySearch') {
+        S.galleryFilter.search = ev.target.value;
+        if (S.page === 'gallery') {
+          clearTimeout(window._gallerySearchTimer);
+          window._gallerySearchTimer = setTimeout(render, 150);
+        }
       }
     });
 
-    // Event Listener Berkas CSV
+    // Event Listener Berkas CSV & Gambar Galeri
     document.addEventListener('change', ev => {
       if (ev.target.id === 'csvFile' && ev.target.files?.[0]) {
         handleCsvUpload(ev.target.files[0]).catch(e => toast(e.message, true));
         ev.target.value = '';
+      } else if (ev.target.id === 'galleryFileInput' && ev.target.files?.[0]) {
+        const file = ev.target.files[0];
+        if (!file.type.startsWith('image/')) {
+          toast('Harap pilih berkas gambar yang valid (JPG, PNG, WebP, SVG).', true);
+          return;
+        }
+        const reader = new FileReader();
+        reader.onload = e => {
+          if (S.galleryModal) {
+            S.galleryModal.previewSrc = e.target.result;
+            const previewEl = document.getElementById('galleryUploadPreview');
+            if (previewEl) {
+              previewEl.innerHTML = `<img src="${e.target.result}" style="max-height:180px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15)">`;
+            }
+          }
+        };
+        reader.readAsDataURL(file);
       }
     });
 
@@ -3756,6 +4430,7 @@
         if (S.supabaseUrl && S.supabaseKey) {
           await initSupabase(S.supabaseUrl, S.supabaseKey);
         }
+        await dbGetGallery();
         S.boot = await api.getBootstrap();
         window.addEventListener('hashchange', handleRoute);
         window.addEventListener('popstate', handleRoute);

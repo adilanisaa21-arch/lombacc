@@ -119,3 +119,26 @@ CREATE POLICY "Public can access final matches" ON cc_final_matches
 DROP POLICY IF EXISTS "Public can access settings" ON cc_settings;
 CREATE POLICY "Public can access settings" ON cc_settings
     FOR ALL USING (true) WITH CHECK (true);
+
+-- ====================================================================
+-- 6. TABEL cc_gallery (Pustaka Gambar & Media Pembelajaran)
+-- ====================================================================
+CREATE TABLE IF NOT EXISTS cc_gallery (
+    id TEXT PRIMARY KEY,
+    judul TEXT NOT NULL,
+    mapel TEXT NOT NULL DEFAULT 'UMUM',
+    kelas TEXT DEFAULT 'SEMUA',
+    topik TEXT,
+    tipe TEXT DEFAULT 'upload',
+    src TEXT NOT NULL,
+    keterangan TEXT,
+    pembuat TEXT DEFAULT 'Guru',
+    status TEXT DEFAULT 'AKTIF',
+    created_at TIMESTAMPTZ DEFAULT NOW(),
+    updated_at TIMESTAMPTZ DEFAULT NOW()
+);
+
+ALTER TABLE cc_gallery ENABLE ROW LEVEL SECURITY;
+DROP POLICY IF EXISTS "Public can access gallery" ON cc_gallery;
+CREATE POLICY "Public can access gallery" ON cc_gallery
+    FOR ALL USING (true) WITH CHECK (true);
