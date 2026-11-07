@@ -730,8 +730,9 @@
         if (raw) localData = JSON.parse(raw);
       } catch (e) {}
 
-      // Jika Supabase terhubung, sinkronkan / ambil dari cc_gallery
+      // Jika Supabase terhubung, coba baca dari cc_gallery atau cc_settings (cc_gallery_custom)
       if (S.supabaseConnected && S.supabase) {
+        // 1. Coba baca dari tabel cc_gallery jika sudah ada
         try {
           const { data, error } = await S.supabase.from('cc_gallery').select('*').order('created_at', { ascending: false });
           if (!error && Array.isArray(data) && data.length > 0) {
@@ -751,6 +752,20 @@
             S.gallery = cloudItems;
             try { localStorage.setItem('cc_gallery_data', JSON.stringify(cloudItems)); } catch (e) {}
             return S.gallery;
+          }
+        } catch (e) {}
+
+        // 2. Fallback: Baca dari cc_settings (key: cc_gallery_custom)
+        try {
+          const { data, error } = await S.supabase.from('cc_settings').select('value').eq('key', 'cc_gallery_custom').maybeSingle();
+          if (!error && data?.value) {
+            const customFromCloud = JSON.parse(data.value);
+            if (Array.isArray(customFromCloud)) {
+              const merged = [...customFromCloud, ...defaults.filter(d => !customFromCloud.some(c => c.id === d.id))];
+              S.gallery = merged;
+              try { localStorage.setItem('cc_gallery_data', JSON.stringify(merged)); } catch (e) {}
+              return S.gallery;
+            }
           }
         } catch (e) {}
       }
@@ -778,8 +793,10 @@
       try { localStorage.setItem('cc_gallery_data', JSON.stringify(list)); } catch (e) {}
 
       if (S.supabaseConnected && S.supabase) {
+        // 1. Coba simpan ke cc_gallery
+        let savedToTable = false;
         try {
-          await S.supabase.from('cc_gallery').upsert({
+          const { error } = await S.supabase.from('cc_gallery').upsert({
             id: item.id,
             judul: item.judul,
             mapel: item.mapel || 'UMUM',
@@ -792,8 +809,17 @@
             status: item.status || 'AKTIF',
             updated_at: new Date().toISOString()
           });
-        } catch (e) {
-          console.warn('Gagal menyimpan gambar ke Supabase:', e);
+          if (!error) savedToTable = true;
+        } catch (e) {}
+
+        // 2. Selalu simpan juga ke cc_settings (key: cc_gallery_custom) sebagai cadangan andal
+        try {
+          const customItems = list.filter(x => String(x.id).startsWith('img_custom_'));
+          await S.supabase.from('cc_settings').upsert([
+            { key: 'cc_gallery_custom', value: JSON.stringify(customItems), updated_at: new Date().toISOString() }
+          ]);
+        } catch (err2) {
+          console.warn('Gagal sinkron galeri ke cc_settings:', err2);
         }
       }
       return item;
@@ -822,6 +848,14 @@
             await S.supabase.from('cc_gallery').update({ status: 'NONAKTIF' }).eq('id', id);
           }
         } catch (e) {}
+
+        // Selalu update cadangan cc_settings
+        try {
+          const customItems = updated.filter(x => String(x.id).startsWith('img_custom_'));
+          await S.supabase.from('cc_settings').upsert([
+            { key: 'cc_gallery_custom', value: JSON.stringify(customItems), updated_at: new Date().toISOString() }
+          ]);
+        } catch (e) {}
       }
       return true;
     }
@@ -841,6 +875,12 @@
           for (const d of defaults) {
             await S.supabase.from('cc_gallery').update({ status: 'AKTIF' }).eq('id', d.id);
           }
+        } catch (e) {}
+
+        try {
+          await S.supabase.from('cc_settings').upsert([
+            { key: 'cc_gallery_custom', value: JSON.stringify(customItems), updated_at: new Date().toISOString() }
+          ]);
         } catch (e) {}
       }
       return restored;
@@ -1912,14 +1952,14 @@
         }
 
         return `
-          <div class="gallery-modal-overlay" data-action="closeGalleryModal">
-            <div class="gallery-modal-dialog" onclick="event.stopPropagation()">
+          <div class="gallery-modal-overlay" id="galleryOverlay">
+            <div class="gallery-modal-dialog">
               <div class="gallery-modal-header">
                 <div>
                   <h3 style="margin:0;font-size:16px;color:var(--navy)">${esc(item.judul)}</h3>
                   <small style="color:var(--muted)">${esc(item.mapel)} · Kelas ${esc(item.kelas)} · ${esc(item.topik || 'Materi Umum')}</small>
                 </div>
-                <button class="btn ghost sm" data-action="closeGalleryModal" style="padding:4px 10px;font-size:18px">✕</button>
+                <button type="button" class="btn ghost sm" data-action="closeGalleryModal" style="padding:4px 10px;font-size:18px;cursor:pointer">✕</button>
               </div>
 
               <div class="gallery-modal-body">
@@ -1928,10 +1968,10 @@
                     ${viewImg}
                   </div>
                   <div class="gallery-zoom-ctrls">
-                    <button class="gallery-zoom-btn" data-action="zoomGalleryOut" title="Perkecil">➖</button>
+                    <button type="button" class="gallery-zoom-btn" data-action="zoomGalleryOut" title="Perkecil">➖</button>
                     <span style="color:#cbd5e1;font-size:12px;display:flex;align-items:center;padding:0 4px">${Math.round(zoomScale * 100)}%</span>
-                    <button class="gallery-zoom-btn" data-action="zoomGalleryIn" title="Perbesar">➕</button>
-                    <button class="gallery-zoom-btn" data-action="zoomGalleryReset" title="Reset Zoom">🔄</button>
+                    <button type="button" class="gallery-zoom-btn" data-action="zoomGalleryIn" title="Perbesar">➕</button>
+                    <button type="button" class="gallery-zoom-btn" data-action="zoomGalleryReset" title="Reset Zoom">🔄</button>
                   </div>
                 </div>
 
@@ -1947,11 +1987,11 @@
                 </div>
                 <div style="display:flex;gap:8px">
                   ${isGuru ? `
-                    <button class="btn danger sm" data-action="confirmDeleteGalleryItem" data-id="${item.id}" style="display:inline-flex;align-items:center;gap:4px">
+                    <button type="button" class="btn danger sm" data-action="confirmDeleteGalleryItem" data-id="${item.id}" style="display:inline-flex;align-items:center;gap:4px">
                       <span>🗑️</span> Hapus Gambar Ini
                     </button>
                   ` : ''}
-                  <button class="btn secondary sm" data-action="closeGalleryModal">Tutup</button>
+                  <button type="button" class="btn secondary sm" data-action="closeGalleryModal">Tutup</button>
                 </div>
               </div>
             </div>
@@ -1964,14 +2004,14 @@
         const preview = S.galleryModal.previewSrc;
 
         return `
-          <div class="gallery-modal-overlay" data-action="closeGalleryModal">
-            <div class="gallery-modal-dialog" style="max-width:580px" onclick="event.stopPropagation()">
+          <div class="gallery-modal-overlay" id="galleryOverlay">
+            <div class="gallery-modal-dialog" style="max-width:580px">
               <div class="gallery-modal-header">
                 <div>
                   <h3 style="margin:0;font-size:16px;color:var(--navy)">➕ Tambah Gambar Materi Baru</h3>
                   <small style="color:var(--muted)">Unggah gambar atau diagram materi pembelajaran untuk murid.</small>
                 </div>
-                <button class="btn ghost sm" data-action="closeGalleryModal" style="padding:4px 10px;font-size:18px">✕</button>
+                <button type="button" class="btn ghost sm" data-action="closeGalleryModal" style="padding:4px 10px;font-size:18px;cursor:pointer">✕</button>
               </div>
 
               <div class="gallery-modal-body">
@@ -2026,8 +2066,8 @@
               </div>
 
               <div class="gallery-modal-footer">
-                <button class="btn secondary sm" data-action="closeGalleryModal">Batal</button>
-                <button class="btn good" data-action="saveNewGalleryImage">💾 Simpan Gambar ke Galeri</button>
+                <button type="button" class="btn secondary sm" data-action="closeGalleryModal">Batal</button>
+                <button type="button" class="btn good" data-action="saveNewGalleryImage">💾 Simpan Gambar ke Galeri</button>
               </div>
             </div>
           </div>
@@ -2040,8 +2080,8 @@
         if (!item) return '';
 
         return `
-          <div class="gallery-modal-overlay" data-action="closeGalleryModal">
-            <div class="gallery-modal-dialog" style="max-width:440px" onclick="event.stopPropagation()">
+          <div class="gallery-modal-overlay" id="galleryOverlay">
+            <div class="gallery-modal-dialog" style="max-width:440px">
               <div class="gallery-modal-body" style="text-align:center;padding:28px 20px 20px">
                 <div style="font-size:48px;margin-bottom:12px">⚠️</div>
                 <h3 style="margin:0 0 8px;color:#dc2626">Konfirmasi Hapus Gambar</h3>
@@ -2055,8 +2095,8 @@
               </div>
 
               <div class="gallery-modal-footer" style="justify-content:center;gap:12px">
-                <button class="btn secondary" data-action="closeGalleryModal">Batal</button>
-                <button class="btn danger" data-action="executeDeleteGalleryItem" data-id="${item.id}">
+                <button type="button" class="btn secondary" data-action="closeGalleryModal">Batal</button>
+                <button type="button" class="btn danger" data-action="executeDeleteGalleryItem" data-id="${item.id}">
                   🗑️ Ya, Hapus Gambar
                 </button>
               </div>
@@ -4361,10 +4401,17 @@
 
     // Event Listener Klik
     document.addEventListener('click', ev => {
+      // Tutup modal galeri jika pengguna mengklik area backdrop hitam di luar dialog
+      if (ev.target && ev.target.id === 'galleryOverlay') {
+        S.galleryModal = null;
+        S.galleryZoom = 1;
+        render();
+        return;
+      }
       const el = ev.target.closest('[data-action]');
       if (!el || el.disabled || el.dataset.action === 'buzz') return;
       ev.preventDefault();
-      handleAction(el.dataset.action, el).catch(err => toast(err.message || String(err), true));
+      handleAction(el.dataset.action, el, ev).catch(err => toast(err.message || String(err), true));
     });
 
     // Event Listener Buzzer (Touch & Click cepat)
@@ -4410,15 +4457,48 @@
           toast('Harap pilih berkas gambar yang valid (JPG, PNG, WebP, SVG).', true);
           return;
         }
+
+        const previewEl = document.getElementById('galleryUploadPreview');
+        if (previewEl) {
+          previewEl.innerHTML = '<span class="subtle">⏳ Memproses &amp; mengoptimalkan gambar...</span>';
+        }
+
+        if (file.type === 'image/svg+xml') {
+          const reader = new FileReader();
+          reader.onload = e => {
+            if (S.galleryModal) {
+              S.galleryModal.previewSrc = e.target.result;
+              if (previewEl) previewEl.innerHTML = `<img src="${e.target.result}" style="max-height:180px;border-radius:8px">`;
+            }
+          };
+          reader.readAsDataURL(file);
+          return;
+        }
+
         const reader = new FileReader();
         reader.onload = e => {
-          if (S.galleryModal) {
-            S.galleryModal.previewSrc = e.target.result;
-            const previewEl = document.getElementById('galleryUploadPreview');
-            if (previewEl) {
-              previewEl.innerHTML = `<img src="${e.target.result}" style="max-height:180px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15)">`;
+          const img = new Image();
+          img.onload = () => {
+            const maxDim = 1200;
+            let w = img.width, h = img.height;
+            if (w > maxDim || h > maxDim) {
+              if (w > h) { h = Math.round((h * maxDim) / w); w = maxDim; }
+              else { w = Math.round((w * maxDim) / h); h = maxDim; }
             }
-          }
+            const canvas = document.createElement('canvas');
+            canvas.width = w;
+            canvas.height = h;
+            const ctx = canvas.getContext('2d');
+            ctx.drawImage(img, 0, 0, w, h);
+            const optimized = canvas.toDataURL('image/jpeg', 0.82);
+            if (S.galleryModal) {
+              S.galleryModal.previewSrc = optimized;
+              if (previewEl) {
+                previewEl.innerHTML = `<img src="${optimized}" style="max-height:180px;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.15)">`;
+              }
+            }
+          };
+          img.src = e.target.result;
         };
         reader.readAsDataURL(file);
       }
