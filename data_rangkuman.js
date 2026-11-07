@@ -853,32 +853,32 @@ const RANGKUMAN_DATA = [
     "icon": "🌿",
     "ringkasan": "Tumbuhan adalah koki terhebat di bumi! Melalui proses fotosintesis di daun, tumbuhan memasak makanan sendiri bermodalkan air dari akar, gas karbon dioksida dari udara, dan sinar matahari, menghasilkan makanan manis serta gas oksigen untuk kita bernapas!",
     "poinPenting": [
-      "Bagian Tubuh Tumbuhan: Akar (menyerap air & mineral), Batang (menopang & mengalirkan cairan), Daun (tempat fotosintesis), Bunga (alat perkembangbiakan), Buah & Biji.",
-      "Jaringan Pengangkut: Xilem mengangkut air dan mineral dari akar ke daun. Floem mengedarkan hasil fotosintesis dari daun ke seluruh tubuh tumbuhan.",
-      "Resep Fotosintesis: Air (H₂O) + Karbon Dioksida (CO₂) + Cahaya Matahari (diserap Klorofil) → Karbohidrat/Glukosa + Oksigen (O₂).",
+      "Bagian Tubuh Tumbuhan: Akar (menyerap air & mineral dari tanah), Batang (menopang dan mengalirkan air ke daun), Daun (tempat fotosintesis/membuat makanan), Bunga (alat perkembangbiakan), Buah & Biji.",
+      "Pengangkutan pada Tumbuhan: Air dan mineral tanah diserap oleh akar lalu dialirkan lewat batang menuju daun. Makanan hasil fotosintesis di daun diedarkan ke seluruh tubuh tumbuhan.",
+      "Resep Fotosintesis: Air (dari akar) + Karbon Dioksida (dari udara) + Bantuan Cahaya Matahari & Zat Hijau Daun (Klorofil) → Makanan/Glukosa + Oksigen Segar.",
       "Perkembangbiakan Generatif Bunga: Penyerbukan terjadi ketika serbuk sari (sel jantan) jatuh ke kepala putik (sel betina)."
     ],
     "rumus": [
-      "Persamaan Fotosintesis: 6CO₂ + 6H₂O + Cahaya → C₆H₁₂O₆ + 6O₂",
-      "Fungsi Klorofil: Zat hijau daun penyerap energi foton cahaya matahari",
-      "Alat Pernapasan Daun: Stomata (mulut daun yang membuka dan menutup)"
+      "Resep Fotosintesis: Air + Karbon Dioksida + Cahaya Matahari → Karbohidrat (Glukosa) + Oksigen",
+      "Fungsi Klorofil: Zat hijau daun yang bertugas menangkap sinar matahari",
+      "Pernapasan Tumbuhan: Daun menyerap karbon dioksida dan melepaskan oksigen segar"
     ],
     "perhatikan": [
-      "Jangan tertukar pipa pengangkut! Xilem = dari akar ke daun (bawah ke atas). Floem = dari daun ke seluruh tubuh (mengedarkan makanan).",
+      "Akar berfungsi menyerap air dan mineral dari tanah, sedangkan daun memasak makanan lewat fotosintesis!",
       "Fotosintesis menghasilkan gas OKSIGEN, bukan karbon dioksida!"
     ],
     "contohSoal": {
       "tanya": "Gas apa yang diserap oleh daun untuk proses fotosintesis dan gas apa yang dilepaskan ke udara?",
       "kunci": "Menyerap Karbon Dioksida (CO₂) dan melepaskan Oksigen (O₂)",
-      "bahas": "Tumbuhan menyerap karbon dioksida dari udara melalui stomata, lalu melepaskan oksigen segar yang bermanfaat bagi manusia dan hewan."
+      "bahas": "Tumbuhan menyerap gas karbon dioksida dari udara bebas, lalu menghasilkan gas oksigen segar yang sangat dibutuhkan manusia dan hewan untuk bernapas."
     },
     "tags": [
       "fotosintesis",
       "bagian tumbuhan",
-      "xilem",
-      "floem",
+      "daun",
+      "akar",
       "klorofil",
-      "stomata"
+      "batang"
     ],
     "svgIllustration": "<svg viewBox=\"0 0 420 170\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:170px\">\n    <rect width=\"420\" height=\"170\" rx=\"12\" fill=\"#f0fdf4\" stroke=\"#bbf7d0\" stroke-width=\"2\"/>\n    <text x=\"210\" y=\"20\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#166534\">🌿 DAPUR FOTOSINTESIS TUMBUHAN HIJAU</text>\n    <g transform=\"translate(30, 38)\">\n      <!-- Bahan Masuk -->\n      <rect x=\"0\" y=\"15\" width=\"105\" height=\"65\" rx=\"8\" fill=\"#dbeafe\" stroke=\"#2563eb\" stroke-width=\"1.5\"/>\n      <text x=\"52\" y=\"34\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#1e3a8a\">BAHAN:</text>\n      <text x=\"52\" y=\"50\" text-anchor=\"middle\" font-size=\"9\" fill=\"#1d4ed8\">• Air (H₂O) dari akar</text>\n      <text x=\"52\" y=\"64\" text-anchor=\"middle\" font-size=\"9\" fill=\"#1d4ed8\">• Gas CO₂ dari udara</text>\n\n      <text x=\"125\" y=\"52\" text-anchor=\"middle\" font-size=\"16\" font-weight=\"bold\" fill=\"#16a34a\">+</text>\n\n      <!-- Klorofil & Matahari -->\n      <circle cx=\"175\" cy=\"48\" r=\"32\" fill=\"#fef08a\" stroke=\"#ca8a04\" stroke-width=\"1.5\"/>\n      <text x=\"175\" y=\"42\" text-anchor=\"middle\" font-size=\"14\">☀️</text>\n      <text x=\"175\" y=\"58\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#713f12\">Klorofil Daun</text>\n\n      <text x=\"225\" y=\"52\" text-anchor=\"middle\" font-size=\"18\" font-weight=\"bold\" fill=\"#16a34a\">→</text>\n\n      <!-- Hasil Keluar -->\n      <rect x=\"245\" y=\"15\" width=\"120\" height=\"65\" rx=\"8\" fill=\"#dcfce7\" stroke=\"#16a34a\" stroke-width=\"1.5\"/>\n      <text x=\"305\" y=\"34\" text-anchor=\"middle\" font-size=\"10.5\" font-weight=\"bold\" fill=\"#14532d\">HASIL MASAKAN:</text>\n      <text x=\"305\" y=\"50\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#15803d\">🍯 Glukosa (Energi)</text>\n      <text x=\"305\" y=\"66\" text-anchor=\"middle\" font-size=\"9.5\" font-weight=\"bold\" fill=\"#15803d\">💨 Oksigen (O₂) Segar</text>\n    </g>\n    <text x=\"210\" y=\"145\" text-anchor=\"middle\" font-size=\"10.5\" fill=\"#475569\">Persamaan: Air + Karbon Dioksida + Cahaya Matahari → Karbohidrat/Glukosa + Oksigen</text>\n  </svg>",
     "captionGambar": "Proses Fotosintesis: Daun memasak air dan karbon dioksida dengan bantuan sinar matahari menghasilkan glukosa dan oksigen."
@@ -1093,32 +1093,32 @@ const RANGKUMAN_DATA = [
     "icon": "🫁",
     "ringkasan": "Tubuhmu adalah mesin paling canggih di semesta! Paru-paru menukar oksigen segar, lambung dan usus mencerna makanan menjadi sari nutrisi, dan jantung memompa darah merah bersih ke seluruh tubuh tanpa henti setiap detik!",
     "poinPenting": [
-      "Sistem Pernapasan: Rongga hidung (bulu hidung menyaring debu, selaput lendir menyesuaikan suhu) → Faring/Laring → Trakea (batang tenggorokan dengan silia penyaring) → Bronkus → Bronkiolus → Alveolus (kantong udara tempat pertukaran gas O₂ dan CO₂ secara difusi).",
-      "Sistem Pencernaan: Mulut (pencernaan mekanik oleh gigi & kimiawi oleh enzim ptialin/amilase) → Kerongkongan (gerak peristaltik meremas makanan) → Lambung (asam lambung HCl membunuh kuman, enzim pepsin & renin) → Usus Halus (penyerapan sari-sari makanan ke pembuluh darah) → Usus Besar (penyerapan air & pembentukan feses) → Anus.",
-      "Sistem Peredaran Darah: Jantung memiliki 4 ruang: Serambi Kanan (menerima darah kotor kaya CO₂ dari seluruh tubuh), Bilik Kanan (memompa darah kotor ke paru-paru), Serambi Kiri (menerima darah bersih kaya O₂ dari paru-paru), Bilik Kiri (memompa darah bersih kaya O₂ ke seluruh tubuh).",
-      "Pembuluh Darah: Arteri/Nadi (membawa darah KELUAR dari jantung, berdinding tebal dan elastis) vs Vena/Balik (membawa darah KEMBALI MENUJU jantung, berdinding tipis)."
+      "Sistem Pernapasan: Rongga hidung (bulu hidung menyaring kotoran, selaput lendir menyesuaikan suhu) → Batang tenggorokan → Paru-paru (tempat bertukarnya gas oksigen dengan gas sisa karbon dioksida).",
+      "Sistem Pencernaan: Mulut (pencernaan mekanik oleh gigi & kimiawi oleh air ludah) → Kerongkongan (gerak meremas makanan) → Lambung (mencerna makanan dan membunuh kuman) → Usus Halus (penyerapan sari-sari makanan ke dalam darah) → Usus Besar (penyerapan air) → Anus.",
+      "Sistem Peredaran Darah: Jantung memompa darah ke seluruh tubuh tanpa henti melalui pembuluh darah. Darah membawa oksigen dan sari-sari makanan yang dibutuhkan tubuh.",
+      "Pembuluh Darah: Pembuluh nadi (arteri) membawa darah keluar dari jantung, sedangkan pembuluh balik (vena) membawa darah kembali menuju jantung."
     ],
     "rumus": [
-      "Peredaran Darah Kecil: Jantung (Bilik Kanan) → Paru-paru → Jantung (Serambi Kiri)",
-      "Peredaran Darah Besar: Jantung (Bilik Kiri) → Seluruh Tubuh → Jantung (Serambi Kanan)",
-      "Enzim Lambung (Jurus Pe-Re-As): Pepsin (protein → pepton), Renin (mengendapkan susu), Asam Lambung HCl"
+      "Fungsi Jantung: Organ pemompa darah ke seluruh tubuh",
+      "Fungsi Paru-paru: Organ pertukaran gas pernapasan (oksigen dan karbon dioksida)",
+      "Enzim Pencernaan Lambung: Asam lambung membantu membunuh kuman pada makanan yang masuk"
     ],
     "perhatikan": [
-      "Pertukaran oksigen dan karbon dioksida di paru-paru terjadi tepat di ALVEOLUS, bukan di bronkus!",
-      "Bilik kiri jantung memiliki dinding otot paling TEBAL karena bertugas memompa darah ke seluruh tubuh!"
+      "Organ utama yang memompa darah ke seluruh tubuh adalah JANTUNG!",
+      "Tempat penyerapan sari-sari makanan adalah di USUS HALUS, sedangkan penyerapan air sisa di USUS BESAR!"
     ],
     "contohSoal": {
-      "tanya": "Urutan peredaran darah kecil pada manusia yang benar adalah ...",
-      "kunci": "Bilik Kanan → Arteri Pulmonalis → Paru-paru → Vena Pulmonalis → Serambi Kiri",
-      "bahas": "Peredaran darah kecil bertugas membersihkan darah kotor dari bilik kanan menuju paru-paru untuk mengambil oksigen, lalu kembali ke serambi kiri jantung."
+      "tanya": "Organ tubuh manusia yang berfungsi memompa darah ke seluruh tubuh melalui pembuluh darah adalah ...",
+      "kunci": "Jantung",
+      "bahas": "Jantung adalah organ berotot yang bekerja terus menerus memompa darah agar seluruh bagian tubuh mendapatkan pasokan oksigen dan zat makanan."
     },
     "tags": [
       "sistem pernapasan",
-      "alveolus",
+      "paru-paru",
       "sistem pencernaan",
       "jantung",
-      "peredaran darah besar",
-      "peredaran darah kecil"
+      "pembuluh darah",
+      "darah"
     ],
     "svgIllustration": "<svg viewBox=\"0 0 420 160\" xmlns=\"http://www.w3.org/2000/svg\" style=\"max-height:160px\">\n    <rect width=\"420\" height=\"160\" rx=\"12\" fill=\"#fff7ed\" stroke=\"#fed7aa\" stroke-width=\"2\"/>\n    <text x=\"210\" y=\"20\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#c2410c\">🫁 URUTAN SALURAN PENCERNAAN MAKANAN MANUSIA</text>\n    <g transform=\"translate(10, 36)\">\n      <rect x=\"0\" y=\"0\" width=\"60\" height=\"70\" rx=\"6\" fill=\"#fef3c7\" stroke=\"#d97706\"/>\n      <text x=\"30\" y=\"22\" text-anchor=\"middle\" font-size=\"14\">👄</text>\n      <text x=\"30\" y=\"38\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#92400e\">1. MULUT</text>\n      <text x=\"30\" y=\"52\" text-anchor=\"middle\" font-size=\"7.5\" fill=\"#78350f\">Mekanik (gigi)</text>\n      <text x=\"30\" y=\"62\" text-anchor=\"middle\" font-size=\"7.5\" fill=\"#78350f\">Kimiawi (ptialin)</text>\n      <text x=\"65\" y=\"38\" font-size=\"12\" font-weight=\"bold\" fill=\"#ea580c\">→</text>\n\n      <rect x=\"73\" y=\"0\" width=\"64\" height=\"70\" rx=\"6\" fill=\"#ffedd5\" stroke=\"#ea580c\"/>\n      <text x=\"105\" y=\"22\" text-anchor=\"middle\" font-size=\"14\">🥖</text>\n      <text x=\"105\" y=\"38\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#9a3412\">2. ESOPHAGUS</text>\n      <text x=\"105\" y=\"52\" text-anchor=\"middle\" font-size=\"7.5\" fill=\"#7c2d12\">Kerongkongan</text>\n      <text x=\"105\" y=\"62\" text-anchor=\"middle\" font-size=\"7.5\" font-weight=\"bold\" fill=\"#c2410c\">Gerak peristaltik</text>\n      <text x=\"142\" y=\"38\" font-size=\"12\" font-weight=\"bold\" fill=\"#ea580c\">→</text>\n\n      <rect x=\"150\" y=\"0\" width=\"60\" height=\"70\" rx=\"6\" fill=\"#fee2e2\" stroke=\"#dc2626\"/>\n      <text x=\"180\" y=\"22\" text-anchor=\"middle\" font-size=\"14\">🥣</text>\n      <text x=\"180\" y=\"38\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#991b1b\">3. LAMBUNG</text>\n      <text x=\"180\" y=\"52\" text-anchor=\"middle\" font-size=\"7.5\" fill=\"#7f1d1d\">Asam HCl (kuman)</text>\n      <text x=\"180\" y=\"62\" text-anchor=\"middle\" font-size=\"7.5\" fill=\"#7f1d1d\">Pepsin &amp; Renin</text>\n      <text x=\"215\" y=\"38\" font-size=\"12\" font-weight=\"bold\" fill=\"#ea580c\">→</text>\n\n      <rect x=\"223\" y=\"0\" width=\"60\" height=\"70\" rx=\"6\" fill=\"#ecfdf5\" stroke=\"#059669\"/>\n      <text x=\"253\" y=\"22\" text-anchor=\"middle\" font-size=\"14\">🧬</text>\n      <text x=\"253\" y=\"38\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#065f46\">4. USUS HALUS</text>\n      <text x=\"253\" y=\"52\" text-anchor=\"middle\" font-size=\"7.5\" fill=\"#047857\">Penyerapan sari</text>\n      <text x=\"253\" y=\"62\" text-anchor=\"middle\" font-size=\"7.5\" fill=\"#047857\">Amilase/Lipase</text>\n      <text x=\"288\" y=\"38\" font-size=\"12\" font-weight=\"bold\" fill=\"#ea580c\">→</text>\n\n      <rect x=\"296\" y=\"0\" width=\"56\" height=\"70\" rx=\"6\" fill=\"#f0fdf4\" stroke=\"#16a34a\"/>\n      <text x=\"324\" y=\"22\" text-anchor=\"middle\" font-size=\"14\">🧻</text>\n      <text x=\"324\" y=\"38\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#166534\">5. USUS BESAR</text>\n      <text x=\"324\" y=\"52\" text-anchor=\"middle\" font-size=\"7.5\" fill=\"#15803d\">Serap air sisa</text>\n      <text x=\"324\" y=\"62\" text-anchor=\"middle\" font-size=\"7.5\" fill=\"#15803d\">Bakteri E. coli</text>\n      <text x=\"357\" y=\"38\" font-size=\"12\" font-weight=\"bold\" fill=\"#ea580c\">→</text>\n\n      <rect x=\"365\" y=\"0\" width=\"38\" height=\"70\" rx=\"6\" fill=\"#f1f5f9\" stroke=\"#64748b\"/>\n      <text x=\"384\" y=\"22\" text-anchor=\"middle\" font-size=\"14\">🚪</text>\n      <text x=\"384\" y=\"42\" text-anchor=\"middle\" font-size=\"8.5\" font-weight=\"bold\" fill=\"#334155\">6. ANUS</text>\n      <text x=\"384\" y=\"58\" text-anchor=\"middle\" font-size=\"7\" fill=\"#475569\">Pembuangan</text>\n    </g>\n    <text x=\"210\" y=\"142\" text-anchor=\"middle\" font-size=\"9\" fill=\"#475569\">Sari makanan diserap di Usus Halus, air diserap di Usus Besar, lalu dibuang lewat Anus.</text>\n  </svg>",
     "captionGambar": "Urutan 6 Saluran Utama Pencernaan Manusia dan Enzim Pencernaan Penting."

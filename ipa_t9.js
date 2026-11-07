@@ -406,7 +406,7 @@ const sedang = [
   ],
   [
     "Ketika seekor burung mengepakkan sayapnya ke bawah mendorong udara, tubuh burung terangkat ke atas melayang di udara. Interaksi gaya ini merupakan penerapan dari ...",
-    "Hukum III Newton tentang gaya aksi dan reaksi (gaya dorong sayap ke bawah dibalas gaya angkat udara ke atas)",
+    "Gaya dorong kepakan sayap burung ke udara menghasilkan gerakan dorong ke depan dan melayang di udara.",
     "Hukum Pemantulan kalor konveksi",
     "Hukum Kekekalan massa Lavoisier",
     "Hukum Termodinamika nol",
@@ -524,7 +524,7 @@ const sulit = [
     "Gaya gesek antara ban mobil dengan lantai tempat pencucian mobil",
     "Gaya magnet raksasa yang dipasang di bawah lantai tempat cuci mobil",
     "Tekanan udara terbuka yang menekan bodi mobil dari arah atas",
-    "Pompa hidrolik memanfaatkan sifat zat cair di mana tekanan pada ruang tertutup diteruskan sama besar ke segala arah, sehingga gaya dorong kecil mampu menghasilkan gaya angkat raksasa."
+    "Pompa hidrolik memanfaatkan sifat zat cair di mana tekanan pada ruang tertutup diteruskan sama besar ke segala arah, sehingga gaya dorong kecil mampu menghasilkan gaya dorong ke atas yang sangat besar."
   ],
   [
     "Ketika seorang tukang kayu ingin mencabut paku yang tertancap kuat pada balok kayu menggunakan linggis atau martil pencabut paku, alat tersebut bekerja memanfaatkan prinsip pesawat sederhana jenis ...",
@@ -575,7 +575,7 @@ const sulit = [
     "Hukum Archimedes pada benda terapung: ρ_benda = (V_tercelup / V_total) * ρ_cair = (3/4) * 1.000 = 750 kg/m³."
   ],
   [
-    "Gaya angkat ke atas (gaya apung / buoyant force) yang dialami oleh suatu benda yang dicelupkan ke dalam zat cair besarnya sama dengan ...",
+    "Gaya apung ke atas yang dialami oleh suatu benda yang dicelupkan ke dalam zat cair besarnya sama dengan ...",
     "Berat zat cair yang dipindahkan (didesak) oleh volume bagian benda yang tercelup tersebut",
     "Berat total seluruh zat cair di dalam wadah bejana",
     "Massa jenis benda dikalikan tinggi permukaan air",
@@ -591,12 +591,12 @@ const sulit = [
     "Rongga udara yang masif di dalam lambung kapal memperbesar volume air laut yang dipindahkan sehingga menghasilkan gaya apung ke atas yang sangat besar."
   ],
   [
-    "Sebuah pesawat terbang yang berbobot puluhan ton dapat terangkat ke angkasa karena bentuk sayapnya melengkung di bagian atas. Gaya angkat pada sayap pesawat terbang tersebut timbul karena ...",
-    "Aliran udara di atas sayap bergerak lebih cepat sehingga tekanannya lebih kecil dibanding tekanan udara di bawah sayap",
-    "Udara di bawah sayap berputar menjadi angin puting beliung",
-    "Tekanan udara di atas sayap menjadi dua kali lipat lebih besar",
-    "Mesin pesawat mendorong sayap ke dalam bumi",
-    "Perbedaan kelajuan udara menciptakan perbedaan tekanan: tekanan udara di bawah sayap lebih besar daripada di atas sayap sehingga menghasilkan gaya angkat ke atas."
+    "Ketika kita menarik karet ketapel lalu melepaskannya untuk melontarkan kerikil, jenis gaya yang bekerja mendorong kerikil melesat maju adalah ...",
+    "Gaya pegas dari kelenturan karet ketapel",
+    "Gaya gesek antara batu dengan udara",
+    "Gaya magnet dari tarikan tanah",
+    "Gaya gravitasi yang mendorong ke depan",
+    "Gaya pegas timbul karena sifat lentur atau elastis dari benda seperti karet dan per yang dapat kembali ke bentuk semula."
   ],
   [
     "Mengapa air sumur terasa hangat di pagi hari yang dingin dan terasa sejuk di siang hari yang terik, padahal suhu air sumur di dalam tanah sebenarnya relatif konstan?",
@@ -654,7 +654,7 @@ const hots = [
     "Melemparkan karung gabah dari bawah ke jendela lantai dua",
     "Membakar sebagian gabah agar bobot karung menjadi lebih ringan",
     "Menunggu banjir bandang agar karung gabah mengapung naik ke atas",
-    "Katrol pada balok atap mengubah arah gaya angkat menjadi tarikan ke bawah yang dibantu berat badan pekerja, menghemat tenaga dan meningkatkan keselamatan kerja."
+    "Katrol pada balok atap mengubah arah gaya tarik menjadi ke bawah yang dibantu berat badan pekerja, mempermudah pekerjaan mengangkat beban."
   ],
   [
     "Di daerah pegunungan yang sangat tinggi seperti di Puncak Jaya Papua (ketinggian > 4.000 meter di atas permukaan laut), air mendidih pada suhu sekitar 86°C dan bukan 100°C. Para pendaki mendapati bahwa merebus telur ayam dan menanak nasi hingga matang sempurna membutuhkan waktu yang jauh lebih lama. Penjelasan ilmiah terintegrasi yang menerangkan fenomena termal ini adalah ...",
@@ -742,7 +742,7 @@ const hots = [
     "Mengurangi berat beban semen menjadi tinggal setengah dari berat aslinya",
     "Menghilangkan kebutuhan tenaga manusia sepenuhnya secara otomatis",
     "Menggandakan kecepatan gerak semen tanpa perlu menarik tali sama sekali",
-    "Katrol tetap memiliki keuntungan mekanis 1, fungsinya bukan memperkecil gaya angkat, melainkan mempermudah arah gaya (menarik ke bawah dibantu oleh gaya berat tubuh kita)."
+    "Katrol tetap memiliki keuntungan mekanis 1, fungsinya bukan memperkecil gaya yang dibutuhkan, melainkan mempermudah arah gaya (menarik ke bawah dibantu oleh berat badan kita)."
   ],
   [
     "Mengapa bola bowling yang menggelinding lambat di lintasan licin memiliki daya hancur pin bowling yang jauh lebih dahsyat dibandingkan bola tenis yang dilempar dengan kecepatan yang sama?",
