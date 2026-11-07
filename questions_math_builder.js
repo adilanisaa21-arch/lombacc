@@ -1499,32 +1499,104 @@ Nilai ulangan ke-5 = ${targetMean * 5} - ${sumAwal} = ${butuhNilai}.`;
   // ===========================================================================
   const T10 = 'Aritmetika Sosial, Pecahan, Skala, KPK/FPB, Debit';
 
-  // Mudah (20) - FPB (10) & KPK (10)
+  // ---------------------------------------------------------------------------
+  // LEVEL MUDAH (20 Soal):
+  // 1-5: FPB dasar (5)
+  // 6-10: KPK dasar (5)
+  // 11-15: Operasi Hitung Bentuk Pecahan Biasa Langsung (5)
+  // 16-20: Soal Cerita Pecahan Biasa Sehari-hari (5)
+  // ---------------------------------------------------------------------------
   for (let i = 1; i <= 20; i++) {
     const seed = i * 179;
     let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    if (i <= 10) {
+    if (i <= 5) {
       const pairs = [
-        [12, 18, 6], [14, 21, 7], [16, 24, 8], [20, 30, 10], [15, 25, 5],
-        [18, 27, 9], [24, 36, 12], [28, 42, 14], [30, 45, 15], [32, 48, 16]
+        [12, 18, 6], [16, 24, 8], [20, 30, 10], [18, 27, 9], [24, 36, 12]
       ][i - 1];
       const a = pairs[0], b = pairs[1], fpb = pairs[2];
       qTxt = `Faktor persekutuan terbesar (FPB) dari pasangan bilangan ${a} dan ${b} adalah ...`;
       ans = `${fpb}`; w1 = `${fpb * 2}`; w2 = `${fpb - 1}`; w3 = `${a * b}`;
       exp = `Faktorisasi prima dari ${a} dan ${b} menghasilkan FPB = ${fpb}.`;
       diag = 'FPB diperoleh dari perkalian faktor prima sekutu berpangkat terkecil.';
-    } else {
-      const idx = i - 10;
+    } else if (i <= 10) {
+      const idx = i - 5;
       const pairs = [
-        [4, 6, 12], [6, 8, 24], [6, 9, 18], [8, 12, 24], [9, 12, 36],
-        [10, 15, 30], [12, 16, 48], [12, 18, 36], [15, 20, 60], [14, 21, 42]
+        [4, 6, 12], [6, 8, 24], [8, 12, 24], [9, 12, 36], [10, 15, 30]
       ][idx - 1];
       const a = pairs[0], b = pairs[1], kpk = pairs[2];
       qTxt = `Kelipatan persekutuan terkecil (KPK) dari pasangan bilangan ${a} dan ${b} adalah ...`;
       ans = `${kpk}`; w1 = `${kpk / 2}`; w2 = `${kpk + a}`; w3 = `${a * b}`;
       exp = `Faktorisasi prima dari ${a} dan ${b} menghasilkan KPK = ${kpk}.`;
       diag = 'KPK diperoleh dari perkalian semua faktor prima berpangkat terbesar.';
+    } else if (i <= 15) {
+      const fracOps = [
+        {
+          q: 'Hasil penjumlahan dari pecahan 2/7 + 3/7 dalam bentuk pecahan paling sederhana adalah ...',
+          a: '5/7', w1: '5/14', w2: '6/7', w3: '1/7',
+          e: 'Karena penyebutnya sudah sama (7), cukup jumlahkan pembilangnya: 2/7 + 3/7 = (2+3)/7 = 5/7.',
+          d: 'Pada pecahan berpenyebut sama, jumlahkan pembilang dan biarkan penyebut tetap.'
+        },
+        {
+          q: 'Hasil penjumlahan dari pecahan 1/2 + 1/4 dalam bentuk pecahan paling sederhana adalah ...',
+          a: '3/4', w1: '2/6', w2: '1/4', w3: '2/4',
+          e: 'Samakan penyebut ke KPK yaitu 4: 1/2 = 2/4. Maka 2/4 + 1/4 = 3/4.',
+          d: 'Samakan penyebut kedua pecahan sebelum menjumlahkannya.'
+        },
+        {
+          q: 'Hasil pengurangan dari pecahan 5/6 - 1/3 dalam bentuk pecahan paling sederhana adalah ...',
+          a: '1/2', w1: '4/3', w2: '2/3', w3: '4/6',
+          e: 'Samakan penyebut ke 6: 1/3 = 2/6. Maka 5/6 - 2/6 = 3/6 = 1/2.',
+          d: 'Kurangkan setelah menyamakan penyebut, lalu sederhanakan hasilnya.'
+        },
+        {
+          q: 'Hasil perkalian dari pecahan 2/3 × 3/5 dalam bentuk pecahan paling sederhana adalah ...',
+          a: '2/5', w1: '5/8', w2: '6/15', w3: '1/5',
+          e: 'Kalikan pembilang dengan pembilang dan penyebut dengan penyebut: (2×3)/(3×5) = 6/15 = 2/5.',
+          d: 'Pada perkalian pecahan, kalikan langsung pembilang dan penyebutnya.'
+        },
+        {
+          q: 'Bentuk pecahan campuran dari pecahan biasa 11/4 adalah ...',
+          a: '2 3/4', w1: '2 1/4', w2: '3 1/4', w3: '2 2/4',
+          e: 'Bagi 11 dengan 4: dapat 2 dengan sisa 3. Maka bentuk campurannya adalah 2 3/4.',
+          d: 'Pecahan campuran terdiri atas hasil bagi bilangan bulat dan sisa pembagian per penyebut.'
+        }
+      ][i - 11];
+      qTxt = fracOps.q; ans = fracOps.a; w1 = fracOps.w1; w2 = fracOps.w2; w3 = fracOps.w3; exp = fracOps.e; diag = fracOps.d;
+    } else {
+      const storyOps = [
+        {
+          q: 'Ibu membeli gula pasir seberat 3/4 kg dan tepung terigu seberat 1/4 kg di warung. Total berat seluruh belanjaan ibu adalah ...',
+          a: '1 kg', w1: '4/8 kg', w2: '1/2 kg', w3: '2 kg',
+          e: 'Total berat = 3/4 kg + 1/4 kg = 4/4 kg = 1 kg.',
+          d: 'Jumlahkan kedua pecahan berpenyebut sama, 4/4 bernilai 1.'
+        },
+        {
+          q: 'Adik memiliki pita kain sepanjang 7/8 meter. Adik memotong pita tersebut sepanjang 3/8 meter untuk menghias tempat pensil. Sisa panjang pita adik adalah ...',
+          a: '1/2 meter', w1: '4/8 meter', w2: '3/8 meter', w3: '1 meter',
+          e: 'Sisa pita = 7/8 - 3/8 = 4/8 meter = 1/2 meter.',
+          d: 'Kurangkan kedua pecahan lalu sederhanakan 4/8 menjadi 1/2.'
+        },
+        {
+          q: 'Sebuah kue bolu dipotong menjadi 8 bagian sama besar. Roni memakan 3 bagian dan adiknya memakan 2 bagian. Bagian kue bolu yang telah dimakan seluruhnya adalah ...',
+          a: '5/8 bagian', w1: '3/8 bagian', w2: '6/8 bagian', w3: '1/2 bagian',
+          e: 'Total bagian yang dimakan = 3/8 + 2/8 = 5/8 bagian.',
+          d: 'Setiap potongan bernilai 1/8, jumlah potongan dimakan adalah 3 + 2 = 5 bagian.'
+        },
+        {
+          q: 'Pak Tani mencangkul 2/5 bagian sawahnya di pagi hari dan 1/5 bagian sawah di sore hari. Bagian sawah yang telah dicangkul oleh Pak Tani seluruhnya adalah ...',
+          a: '3/5 bagian', w1: '2/5 bagian', w2: '4/5 bagian', w3: '3/10 bagian',
+          e: 'Total sawah dicangkul = 2/5 + 1/5 = 3/5 bagian.',
+          d: 'Jumlahkan bagian pagi dan sore pada penyebut yang sama.'
+        },
+        {
+          q: 'Di dalam botol terdapat jus jeruk sebanyak 5/6 liter. Siti meminum jus tersebut sebanyak 2/6 liter. Sisa jus jeruk di dalam botol adalah ...',
+          a: '1/2 liter', w1: '3/6 liter', w2: '1/3 liter', w3: '2/3 liter',
+          e: 'Sisa jus = 5/6 - 2/6 = 3/6 liter = 1/2 liter.',
+          d: 'Kurangkan pembilang pada pecahan berpenyebut sama lalu sederhanakan.'
+        }
+      ][i - 16];
+      qTxt = storyOps.q; ans = storyOps.a; w1 = storyOps.w1; w2 = storyOps.w2; w3 = storyOps.w3; exp = storyOps.e; diag = storyOps.d;
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -1535,12 +1607,18 @@ Nilai ulangan ke-5 = ${targetMean * 5} - ${sumAwal} = ${butuhNilai}.`;
     });
   }
 
-  // Sedang (40) - Skala Peta (15), Debit (15), Pecahan (10)
+  // ---------------------------------------------------------------------------
+  // LEVEL SEDANG (40 Soal):
+  // 1-10: Skala Peta (10)
+  // 11-20: Debit Wadah (10)
+  // 21-30: Operasi Pecahan Campuran & Biasa Langsung (10)
+  // 31-40: Soal Cerita Pecahan Campuran Sehari-hari (10)
+  // ---------------------------------------------------------------------------
   for (let i = 1; i <= 40; i++) {
     const seed = i * 181;
     let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    if (i <= 15) {
+    if (i <= 10) {
       const cityPairs = [
         ['Jakarta', 'Bogor', 6, 1000000],
         ['Bandung', 'Cirebon', 8, 1500000],
@@ -1551,12 +1629,7 @@ Nilai ulangan ke-5 = ${targetMean * 5} - ${sumAwal} = ${butuhNilai}.`;
         ['Padang', 'Bukittinggi', 8, 1200000],
         ['Makassar', 'Maros', 5, 800000],
         ['Denpasar', 'Singaraja', 6, 1400000],
-        ['Palembang', 'Prabumulih', 7, 1500000],
-        ['Pontianak', 'Mempawah', 6, 1200000],
-        ['Banjarmasin', 'Banjarbaru', 5, 700000],
-        ['Balikpapan', 'Samarinda', 8, 1500000],
-        ['Manado', 'Bitung', 6, 800000],
-        ['Mataram', 'Praya', 5, 600000]
+        ['Palembang', 'Prabumulih', 7, 1500000]
       ][i - 1];
       const c1 = cityPairs[0], c2 = cityPairs[1], cm = cityPairs[2], scaleVal = cityPairs[3];
       const jarakKm = (cm * scaleVal) / 100000;
@@ -1564,32 +1637,145 @@ Nilai ulangan ke-5 = ${targetMean * 5} - ${sumAwal} = ${butuhNilai}.`;
       ans = `${jarakKm} km`; w1 = `${jarakKm + 15} km`; w2 = `${jarakKm - 10} km`; w3 = `${jarakKm * 10} km`;
       exp = `Jarak sebenarnya = Jarak peta × skala = ${cm} × ${scaleVal} cm = ${cm * scaleVal} cm = ${jarakKm} km.`;
       diag = 'Kalikan jarak pada peta dengan faktor skala peta lalu ubah cm ke km (dibagi 100.000).';
-    } else if (i <= 30) {
-      const idx = i - 15;
+    } else if (i <= 20) {
+      const idx = i - 10;
       const vol = 600 + idx * 120; // liter
       const debit = 20 + (idx % 4) * 5; // liter/menit
       const waktuMenit = Math.round(vol / debit);
-      const objects = ['tandon air mushola', 'kolam ikan koi', 'bak penampungan air sekolah', 'tangki air kebun', 'kolam pemandian anak', 'bak cuci pakaian asrama', 'tandon air rumah sakit', 'kolam hidroponik melon', 'tangki siram taman', 'bak penampungan air hujan', 'drum cadangan air bersih', 'kolam benih gurami', 'tangki pengabut tanaman', 'bak penampungan air kantin', 'kolam terpal lele'];
+      const objects = ['tandon air mushola', 'kolam ikan koi', 'bak penampungan air sekolah', 'tangki air kebun', 'kolam pemandian anak', 'bak cuci pakaian asrama', 'tandon air rumah sakit', 'kolam hidroponik melon', 'tangki siram taman', 'bak penampungan air hujan'];
 
       qTxt = `Sebuah ${objects[idx - 1]} bervolume ${vol} liter dalam keadaan kosong diisi air melalui pipa dengan debit ${debit} liter/menit. Waktu yang diperlukan hingga terisi penuh adalah ...`;
       ans = `${waktuMenit} menit`; w1 = `${waktuMenit + 10} menit`; w2 = `${waktuMenit - 8} menit`; w3 = `${Math.round(waktuMenit / 2)} menit`;
       exp = `Waktu = Volume : Debit = ${vol} : ${debit} = ${waktuMenit} menit.`;
       diag = 'Bagi volume total wadah dengan debit aliran air.';
+    } else if (i <= 30) {
+      const mixedOps = [
+        {
+          q: 'Hasil penjumlahan pecahan campuran 2 1/2 + 1 1/4 dalam bentuk paling sederhana adalah ...',
+          a: '3 3/4', w1: '3 2/6', w2: '4 1/4', w3: '3 1/2',
+          e: 'Jumlahkan bilangan bulat: 2 + 1 = 3. Samakan penyebut: 1/2 = 2/4. Maka 2/4 + 1/4 = 3/4. Hasil akhir = 3 3/4.',
+          d: 'Jumlahkan bagian bulat terlebih dahulu, lalu samakan penyebut pecahan.'
+        },
+        {
+          q: 'Hasil penjumlahan pecahan campuran 3 1/3 + 2 1/2 dalam bentuk paling sederhana adalah ...',
+          a: '5 5/6', w1: '5 2/5', w2: '6 1/6', w3: '5 1/6',
+          e: 'Bulat: 3 + 2 = 5. Pecahan: 1/3 + 1/2 = 2/6 + 3/6 = 5/6. Hasil = 5 5/6.',
+          d: 'Samakan penyebut 3 dan 2 menjadi 6.'
+        },
+        {
+          q: 'Hasil pengurangan pecahan campuran 4 3/4 - 1 1/2 dalam bentuk paling sederhana adalah ...',
+          a: '3 1/4', w1: '3 2/2', w2: '3 1/2', w3: '2 3/4',
+          e: 'Bulat: 4 - 1 = 3. Pecahan: 3/4 - 1/2 = 3/4 - 2/4 = 1/4. Hasil = 3 1/4.',
+          d: 'Kurangkan bilangan bulat dan kurangkan pecahan setelah menyamakan penyebut.'
+        },
+        {
+          q: 'Hasil pengurangan pecahan campuran 5 1/2 - 2 3/4 dalam bentuk paling sederhana adalah ...',
+          a: '2 3/4', w1: '3 1/4', w2: '2 1/2', w3: '3 3/4',
+          e: 'Ubah ke pecahan biasa: 5 1/2 = 11/2 = 22/4. Pecahan kedua = 11/4. Maka 22/4 - 11/4 = 11/4 = 2 3/4.',
+          d: 'Jika pecahan pertama lebih kecil dari pengurang, ubah kedua pecahan ke pecahan biasa terlebih dahulu.'
+        },
+        {
+          q: 'Hasil perkalian pecahan campuran 2 1/2 × 2/5 dalam bentuk paling sederhana adalah ...',
+          a: '1', w1: '1 1/5', w2: '4/5', w3: '2',
+          e: 'Ubah ke pecahan biasa: 2 1/2 = 5/2. Kalikan: (5/2) × (2/5) = 10/10 = 1.',
+          d: 'Ubah pecahan campuran menjadi pecahan biasa sebelum dikalikan.'
+        },
+        {
+          q: 'Hasil perkalian pecahan campuran 1 3/4 × 2 2/3 dalam bentuk pecahan campuran paling sederhana adalah ...',
+          a: '4 2/3', w1: '4 1/3', w2: '3 2/3', w3: '5 1/3',
+          e: '1 3/4 = 7/4 dan 2 2/3 = 8/3. Maka (7/4) × (8/3) = 56/12 = 14/3 = 4 2/3.',
+          d: 'Ubah kedua pecahan campuran ke pecahan biasa, kalikan, lalu sederhanakan.'
+        },
+        {
+          q: 'Hasil pembagian pecahan 3/4 ÷ 1/2 dalam bentuk pecahan campuran paling sederhana adalah ...',
+          a: '1 1/2', w1: '3/8', w2: '2 1/2', w3: '1 1/4',
+          e: 'Ubah bagi menjadi kali dengan membalik pecahan kedua: (3/4) × (2/1) = 6/4 = 3/2 = 1 1/2.',
+          d: 'Pembagian pecahan dilakukan dengan mengalikan pecahan pertama dengan kebalikan pecahan kedua.'
+        },
+        {
+          q: 'Hasil pembagian pecahan campuran 3 1/2 ÷ 1/4 adalah ...',
+          a: '14', w1: '12', w2: '16', w3: '7',
+          e: '3 1/2 = 7/2. Maka (7/2) ÷ (1/4) = (7/2) × (4/1) = 28/2 = 14.',
+          d: 'Ubah pecahan campuran ke biasa lalu kalikan dengan kebalikan pecahan kedua.'
+        },
+        {
+          q: 'Hasil pembagian pecahan campuran 2 2/3 ÷ 1 1/3 adalah ...',
+          a: '2', w1: '3', w2: '1 1/2', w3: '2 1/3',
+          e: '2 2/3 = 8/3 dan 1 1/3 = 4/3. Maka (8/3) ÷ (4/3) = (8/3) × (3/4) = 8/4 = 2.',
+          d: 'Ubah kedua pecahan ke biasa lalu kalikan dengan membalik pecahan kedua.'
+        },
+        {
+          q: 'Hasil operasi campuran pecahan 1 1/2 + 2 1/4 - 1 3/4 dalam bentuk pecahan paling sederhana adalah ...',
+          a: '2', w1: '2 1/4', w2: '1 3/4', w3: '2 1/2',
+          e: 'Samakan penyebut ke 4: 1 2/4 + 2 1/4 = 3 3/4. Kemudian 3 3/4 - 1 3/4 = 2.',
+          d: 'Kerjakan berurutan dari penjumlahan lalu pengurangan setelah menyamakan penyebut.'
+        }
+      ][i - 21];
+      qTxt = mixedOps.q; ans = mixedOps.a; w1 = mixedOps.w1; w2 = mixedOps.w2; w3 = mixedOps.w3; exp = mixedOps.e; diag = mixedOps.d;
     } else {
-      const idx = i - 30;
-      const a = 1 + idx, b = 2 + idx;
-      // Operasi pecahan
-      qTxt = `Hasil perhitungan operasi pecahan 2 1/${a} + 1 1/${b} dalam bentuk pecahan paling sederhana adalah ...`;
-      const num = 2 * a * b + b + a * b + a;
-      const den = a * b;
-      const bulat = Math.floor(num / den);
-      const sisaNum = num % den;
-      ans = `${bulat} ${sisaNum}/${den}`;
-      w1 = `${bulat + 1} 1/${den}`;
-      w2 = `${bulat} ${sisaNum + 1}/${den}`;
-      w3 = `${bulat - 1} ${sisaNum}/${den}`;
-      exp = `Ubah ke pecahan biasa lalu samakan penyebutnya: (2 + 1) + (1/${a} + 1/${b}) = 3 + (${a + b}/${den}) = ${bulat} ${sisaNum}/${den}.`;
-      diag = 'Samakan penyebut kedua pecahan sebelum menjumlahkan pembilangnya.';
+      const storyMixed = [
+        {
+          q: 'Ibu memiliki persediaan tepung terigu 4 1/2 kg di dapur. Ibu membeli lagi 2 1/4 kg di warung. Total persediaan tepung terigu ibu sekarang adalah ...',
+          a: '6 3/4 kg', w1: '6 2/6 kg', w2: '7 1/4 kg', w3: '6 1/2 kg',
+          e: 'Total persediaan = 4 1/2 kg + 2 1/4 kg = 4 2/4 + 2 1/4 = 6 3/4 kg.',
+          d: 'Jumlahkan bilangan bulat dan pecahan setelah menyamakan penyebut ke 4.'
+        },
+        {
+          q: 'Bibi membeli kain katun sepanjang 5 1/2 meter. Kain tersebut digunakan untuk membuat baju seragam sepanjang 2 1/4 meter. Sisa panjang kain bibi adalah ...',
+          a: '3 1/4 meter', w1: '3 1/2 meter', w2: '2 3/4 meter', w3: '3 meter',
+          e: 'Sisa kain = 5 1/2 meter - 2 1/4 meter = 5 2/4 - 2 1/4 = 3 1/4 meter.',
+          d: 'Kurangkan bilangan bulat 5 - 2 = 3 dan kurangkan pecahan 2/4 - 1/4 = 1/4.'
+        },
+        {
+          q: 'Paman memanen buah jeruk dalam dua keranjang. Keranjang pertama seberat 7 1/2 kg dan keranjang kedua seberat 5 3/4 kg. Berat seluruh jeruk hasil panen paman adalah ...',
+          a: '13 1/4 kg', w1: '12 3/4 kg', w2: '13 1/2 kg', w3: '12 1/4 kg',
+          e: 'Total berat = 7 1/2 + 5 3/4 = 7 2/4 + 5 3/4 = 12 5/4 = 13 1/4 kg.',
+          d: 'Jika pecahan menghasilkan pembilang lebih besar dari penyebut (5/4), ubah menjadi 1 1/4 lalu tambahkan ke bilangan bulat.'
+        },
+        {
+          q: 'Sebuah tali tambang yang panjangnya 9 meter dipotong-potong menjadi beberapa utas tali pendek yang masing-masing panjangnya 3/4 meter. Banyak potongan tali pendek yang diperoleh adalah ...',
+          a: '12 utas', w1: '10 utas', w2: '14 utas', w3: '8 utas',
+          e: 'Banyak potongan = 9 ÷ 3/4 = 9 × 4/3 = 36/3 = 12 utas tali.',
+          d: 'Bagi panjang total tali dengan panjang tiap potongan menggunakan perkalian pecahan terbalik.'
+        },
+        {
+          q: 'Ibu memiliki minyak goreng sebanyak 3 1/2 liter. Minyak goreng tersebut akan dituang ke dalam botol-botol kecil berukuran 1/4 liter sampai habis. Banyak botol kecil yang dibutuhkan ibu adalah ...',
+          a: '14 botol', w1: '12 botol', w2: '16 botol', w3: '10 botol',
+          e: 'Banyak botol = 3 1/2 ÷ 1/4 = 7/2 ÷ 1/4 = 7/2 × 4/1 = 28/2 = 14 botol.',
+          d: 'Ubah 3 1/2 menjadi 7/2 lalu kalikan dengan 4/1.'
+        },
+        {
+          q: 'Pak Harun memiliki sebidang tanah seluas 5 1/2 hektar. Seluas 2 1/4 hektar ditanami jagung dan 1 1/2 hektar ditanami kedelai. Sisa luas tanah Pak Harun yang belum ditanami adalah ...',
+          a: '1 3/4 hektar', w1: '1 1/2 hektar', w2: '2 hektar', w3: '1 1/4 hektar',
+          e: 'Luas ditanami = 2 1/4 + 1 1/2 = 2 1/4 + 1 2/4 = 3 3/4 hektar. Sisa tanah = 5 1/2 - 3 3/4 = 5 2/4 - 3 3/4 = 4 6/4 - 3 3/4 = 1 3/4 hektar.',
+          d: 'Jumlahkan lahan yang sudah ditanami lalu kurangkan dari luas tanah total.'
+        },
+        {
+          q: 'Di dalam kulkas terdapat susu segar sebanyak 2 3/4 liter. Diminum oleh adik 1/2 liter dan kakak 1/4 liter. Sisa susu segar di dalam kulkas adalah ...',
+          a: '2 liter', w1: '2 1/4 liter', w2: '1 3/4 liter', w3: '1 1/2 liter',
+          e: 'Susu diminum = 1/2 + 1/4 = 2/4 + 1/4 = 3/4 liter. Sisa susu = 2 3/4 - 3/4 = 2 liter.',
+          d: 'Jumlahkan susu yang diminum lalu kurangkan dari persediaan awal.'
+        },
+        {
+          q: 'Untuk membuat satu loyang kue bolu pandan yang lezat diperlukan 1 1/2 kg tepung terigu. Jika ibu ingin membuat 4 loyang kue bolu pandan, banyak tepung terigu yang diperlukan adalah ...',
+          a: '6 kg', w1: '5 kg', w2: '7 kg', w3: '4 1/2 kg',
+          e: 'Total terigu = 4 × 1 1/2 kg = 4 × 3/2 kg = 12/2 kg = 6 kg.',
+          d: 'Kalikan jumlah loyang dengan kebutuhan tepung per loyang.'
+        },
+        {
+          q: 'Dayu memiliki pita sepanjang 4 1/2 meter dan Siti memiliki pita sepanjang 2 3/4 meter. Selisih panjang pita Dayu dan Siti adalah ...',
+          a: '1 3/4 meter', w1: '1 1/2 meter', w2: '2 meter', w3: '1 1/4 meter',
+          e: 'Selisih pita = 4 1/2 - 2 3/4 = 4 2/4 - 2 3/4 = 3 6/4 - 2 3/4 = 1 3/4 meter.',
+          d: 'Kurangkan panjang pita Dayu dengan panjang pita Siti setelah menyamakan penyebut.'
+        },
+        {
+          q: 'Sebuah mobil memerlukan 2 1/2 liter bensin untuk menempuh jarak sejauh 25 km. Banyak liter bensin yang diperlukan mobil tersebut untuk menempuh jarak 75 km adalah ...',
+          a: '7 1/2 liter', w1: '6 liter', w2: '8 liter', w3: '5 1/2 liter',
+          e: 'Jarak 75 km adalah 3 kali dari 25 km (75 : 25 = 3). Maka bensin yang dibutuhkan = 3 × 2 1/2 liter = 3 × 5/2 = 15/2 = 7 1/2 liter.',
+          d: 'Gunakan perbandingan senilai untuk menghitung kebutuhan bensin.'
+        }
+      ][i - 31];
+      qTxt = storyMixed.q; ans = storyMixed.a; w1 = storyMixed.w1; w2 = storyMixed.w2; w3 = storyMixed.w3; exp = storyMixed.e; diag = storyMixed.d;
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -1600,33 +1786,101 @@ Nilai ulangan ke-5 = ${targetMean * 5} - ${sumAwal} = ${butuhNilai}.`;
     });
   }
 
-  // Sulit (20) - Soal Cerita KPK & FPB Nyata
+  // ---------------------------------------------------------------------------
+  // LEVEL SULIT (20 Soal):
+  // 1-5: Lampu menyala KPK (5)
+  // 6-10: Bagi bingkisan FPB (5)
+  // 11-20: Soal Cerita Pecahan Campuran & Multi-Langkah (10)
+  // ---------------------------------------------------------------------------
   for (let i = 1; i <= 20; i++) {
     const seed = i * 191;
     let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    if (i <= 10) {
+    if (i <= 5) {
       const t1 = 3 + i, t2 = 4 + (i % 3);
-      // find KPK of t1 and t2
       function gcd(x, y) { return y === 0 ? x : gcd(y, x % y); }
       const kpkSec = (t1 * t2) / gcd(t1, t2);
-      const colors = ['Lampu merah dan lampu biru', 'Lampu hias kuning dan hijau', 'Lampu mercusuar dan menara', 'Lampu strobo ambulans dan damkar', 'Lampu reklame neon merah dan ungu', 'Lampu taman bundar dan tiang', 'Lampu indikator mesin A dan mesin B', 'Lampu penerangan jalan timur dan barat', 'Lampu panggung biru dan jingga', 'Lampu hazard truk dan mobil'];
+      const colors = ['Lampu merah dan lampu biru', 'Lampu hias kuning dan hijau', 'Lampu mercusuar dan menara', 'Lampu strobo ambulans dan damkar', 'Lampu reklame neon merah dan ungu'];
 
       qTxt = `${colors[i - 1]} diatur menyala berkala. Lampu pertama menyala setiap ${t1} detik sekali dan lampu kedua menyala setiap ${t2} detik sekali. Jika keduanya menyala bersama pada detik ke-0, kedua lampu akan menyala bersamaan kembali pada detik ke-...`;
       ans = `${kpkSec} detik`; w1 = `${kpkSec * 2} detik`; w2 = `${t1 * t2} detik`; w3 = `${kpkSec + t1} detik`;
       exp = `Cari KPK dari ${t1} dan ${t2} = ${kpkSec} detik.`;
       diag = 'Gunakan kelipatan persekutuan terkecil (KPK) untuk menentukan waktu berulang bersamaan.';
-    } else {
-      const idx = i - 10;
+    } else if (i <= 10) {
+      const idx = i - 5;
       const n1 = 24 + idx * 4, n2 = 36 + idx * 6;
       function gcd(x, y) { return y === 0 ? x : gcd(y, x % y); }
       const fpbVal = gcd(n1, n2);
-      const goods = ['buku tulis dan pensil warna', 'kue bolu dan donat cokelat', 'apel malang dan jeruk manis', 'bungkus mie dan kaleng sarden', 'biskuit gandum dan permen susu', 'kotak pensil dan penghapus karet', 'seragam kaos dan topi pramuka', 'sabun mandi dan pasta gigi', 'botol kecap dan saus tomat', 'minyak goreng dan gula pasir'];
+      const goods = ['buku tulis dan pensil warna', 'kue bolu dan donat cokelat', 'apel malang dan jeruk manis', 'bungkus mie dan kaleng sarden', 'biskuit gandum dan permen susu'];
 
       qTxt = `Ibu guru ingin membagikan ${n1} buah dan ${n2} buah ${goods[idx - 1]} kepada sebanyak mungkin murid secara merata tanpa bersisa. Jumlah murid terbanyak yang dapat menerima paket bingkisan tersebut adalah ...`;
       ans = `${fpbVal} orang`; w1 = `${fpbVal / 2} orang`; w2 = `${fpbVal * 2} orang`; w3 = `${fpbVal + 4} orang`;
       exp = `Cari FPB dari ${n1} dan ${n2} = ${fpbVal} orang.`;
       diag = 'Gunakan faktor persekutuan terbesar (FPB) untuk pembagian bingkisan merata terbanyak.';
+    } else {
+      const hardStory = [
+        {
+          q: 'Koperasi sekolah memiliki persediaan beras 15 1/2 karung. Hari ini terjual sebanyak 6 3/4 karung, lalu sore harinya datang kiriman baru sebanyak 4 1/4 karung. Persediaan beras di koperasi sekolah sekarang adalah ...',
+          a: '13 karung', w1: '12 1/2 karung', w2: '13 1/2 karung', w3: '14 karung',
+          e: 'Sisa setelah terjual = 15 1/2 - 6 3/4 = 15 2/4 - 6 3/4 = 14 6/4 - 6 3/4 = 8 3/4 karung. Ditambah kiriman baru: 8 3/4 + 4 1/4 = 12 4/4 = 13 karung.',
+          d: 'Hitung pengurangan penjualan terlebih dahulu lalu jumlahkan dengan kiriman baru.'
+        },
+        {
+          q: 'Seorang pedagang buah memiliki persediaan apel seberat 18 1/2 kg. Pada pagi hari terjual 7 3/4 kg dan pada sore hari terjual 5 1/2 kg. Sisa buah apel yang belum terjual adalah ...',
+          a: '5 1/4 kg', w1: '5 1/2 kg', w2: '6 1/4 kg', w3: '4 3/4 kg',
+          e: 'Total apel terjual = 7 3/4 + 5 1/2 = 7 3/4 + 5 2/4 = 12 5/4 = 13 1/4 kg. Sisa apel = 18 1/2 - 13 1/4 = 18 2/4 - 13 1/4 = 5 1/4 kg.',
+          d: 'Jumlahkan total apel yang terjual lalu kurangkan dari persediaan awal.'
+        },
+        {
+          q: 'Pak RT membagikan bantuan gula pasir sebanyak 28 1/2 kg kepada warga kurang mampu. Jika setiap kepala keluarga mendapat jatah bantuan seberat 1 1/2 kg, banyak kepala keluarga yang menerima bantuan tersebut adalah ...',
+          a: '19 kepala keluarga', w1: '18 kepala keluarga', w2: '20 kepala keluarga', w3: '17 kepala keluarga',
+          e: 'Banyak kepala keluarga = 28 1/2 ÷ 1 1/2 = 57/2 ÷ 3/2 = 57/2 × 2/3 = 57/3 = 19 kepala keluarga.',
+          d: 'Bagi total gula pasir dengan jatah per kepala keluarga menggunakan pecahan biasa.'
+        },
+        {
+          q: 'Sebuah mobil tangki mula-mula membawa 9 1/2 drum minyak tanah. Di pangkalan A minyak diturunkan sebanyak 3 1/4 drum dan di pangkalan B diturunkan 2 3/4 drum. Sisa minyak tanah yang masih ada di dalam mobil tangki adalah ...',
+          a: '3 1/2 drum', w1: '4 drum', w2: '3 1/4 drum', w3: '4 1/2 drum',
+          e: 'Total minyak diturunkan = 3 1/4 + 2 3/4 = 5 4/4 = 6 drum. Sisa minyak = 9 1/2 - 6 = 3 1/2 drum.',
+          d: 'Jumlahkan minyak yang diturunkan di pangkalan A dan B lalu kurangkan dari muatan awal.'
+        },
+        {
+          q: 'Bu Anita membuat sirup manis sebanyak 6 liter. Sirup tersebut dikemas ke dalam botol-botol kecil yang masing-masing berkapasitas 3/8 liter. Banyak botol kecil yang dibutuhkan Bu Anita adalah ...',
+          a: '16 botol', w1: '14 botol', w2: '18 botol', w3: '12 botol',
+          e: 'Banyak botol = 6 ÷ 3/8 = 6 × 8/3 = 48/3 = 16 botol.',
+          d: 'Bagi volume sirup total dengan kapasitas tiap botol.'
+        },
+        {
+          q: 'Sebuah kolam ikan telah terisi air sebanyak 3/5 bagian. Jika untuk mengisi penuh kolam tersebut masih diperlukan tambahan 80 liter air lagi, kapasitas volume total kolam ikan tersebut adalah ...',
+          a: '200 liter', w1: '180 liter', w2: '240 liter', w3: '160 liter',
+          e: 'Bagian kolam yang kosong = 1 - 3/5 = 2/5 bagian. Bagian 2/5 setara dengan 80 liter, maka volume total = 80 × 5/2 = 200 liter.',
+          d: 'Cari bagian yang belum terisi (1 - 3/5 = 2/5), lalu kalikan dengan kebalikan pecahannya.'
+        },
+        {
+          q: 'Pak Danu memiliki sebidang tanah seluas 12 1/2 petak. Sebanyak 1/5 bagian tanah diwakafkan untuk taman bacaan warga, dan sisanya dibagikan sama rata kepada 2 orang anaknya. Luas tanah yang diperoleh masing-masing anak adalah ...',
+          a: '5 petak', w1: '6 petak', w2: '4 1/2 petak', w3: '5 1/2 petak',
+          e: 'Tanah wakaf = 1/5 × 12 1/2 = 1/5 × 25/2 = 5/2 = 2 1/2 petak. Sisa tanah = 12 1/2 - 2 1/2 = 10 petak. Tiap anak mendapat = 10 ÷ 2 = 5 petak.',
+          d: 'Hitung luas tanah wakaf, cari sisa tanah, lalu bagi rata kepada 2 anak.'
+        },
+        {
+          q: 'Ratna memiliki seutas pita sepanjang 6 meter. Sebanyak 2/3 bagian dari pita digunakan untuk menghias kado dan 1/6 bagian diberikan kepada adiknya. Sisa panjang pita Ratna sekarang adalah ...',
+          a: '1 meter', w1: '1 1/2 meter', w2: '1/2 meter', w3: '2 meter',
+          e: 'Pita untuk kado = 2/3 × 6 = 4 meter. Pita untuk adik = 1/6 × 6 = 1 meter. Total terpakai = 4 + 1 = 5 meter. Sisa pita = 6 - 5 = 1 meter.',
+          d: 'Hitung panjang pita untuk kado dan adik dalam meter, lalu kurangkan dari panjang awal.'
+        },
+        {
+          q: 'Ibu membeli beras seberat 10 kg. Sebanyak 2/5 bagian dimasak untuk acara syukuran dan 3 1/2 kg disimpan di dapur. Sisa beras ibu yang belum digunakan adalah ...',
+          a: '2 1/2 kg', w1: '3 kg', w2: '2 kg', w3: '3 1/2 kg',
+          e: 'Beras dimasak = 2/5 × 10 = 4 kg. Total beras terpakai = 4 kg + 3 1/2 kg = 7 1/2 kg. Sisa beras = 10 - 7 1/2 = 2 1/2 kg.',
+          d: 'Hitung beras yang dimasak, jumlahkan dengan beras di dapur, lalu kurangkan dari 10 kg.'
+        },
+        {
+          q: 'Ahmad rajin berolahraga lari. Pada hari Senin ia berlari menempuh 3 1/2 km, hari Rabu menempuh 2 1/4 km, dan hari Jumat menempuh 1 3/4 km. Total jarak lari yang ditempuh Ahmad selama tiga hari tersebut adalah ...',
+          a: '7 1/2 km', w1: '7 km', w2: '8 km', w3: '6 3/4 km',
+          e: 'Total jarak = 3 1/2 + 2 1/4 + 1 3/4 = 3 2/4 + 2 1/4 + 1 3/4 = 6 6/4 = 7 2/4 = 7 1/2 km.',
+          d: 'Samakan penyebut ke 4 dan jumlahkan seluruh bilangan bulat dan pecahan.'
+        }
+      ][i - 11];
+      qTxt = hardStory.q; ans = hardStory.a; w1 = hardStory.w1; w2 = hardStory.w2; w3 = hardStory.w3; exp = hardStory.e; diag = hardStory.d;
     }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
@@ -1637,23 +1891,94 @@ Nilai ulangan ke-5 = ${targetMean * 5} - ${sumAwal} = ${butuhNilai}.`;
     });
   }
 
-  // HOTS (20) - Aritmetika Sosial: Diskon, Untung, Rugi
+  // ---------------------------------------------------------------------------
+  // LEVEL HOTS (20 Soal):
+  // 1-10: Diskon & Aritmetika Sosial (10)
+  // 11-20: HOTS Pecahan Campuran & Masalah Kontekstual Nyata (10)
+  // ---------------------------------------------------------------------------
   for (let i = 1; i <= 20; i++) {
     const seed = i * 197;
-    const hargaAwal = 100000 + i * 25000;
-    const diskonPct = 10 + (i % 4) * 5; // 10%, 15%, 20%, 25%
-    const potongan = (diskonPct / 100) * hargaAwal;
-    const hargaBayar = hargaAwal - potongan;
-    const items = ['sepasang sepatu lari', 'jaket parasut musim dingin', 'tas ransel laptop', 'kemeja batik lengan panjang', 'helm keselamatan bersepeda', 'celana jeans denim', 'jam tangan petualang', 'raket bulutangkis karbon', 'kompor gas portabel', 'kamera saku digital', 'koper pakaian roda empat', 'headphone peredam bising', 'speaker nirkabel bluetooth', 'tenda kemah kapasitas 4', 'sleeping bag hangat', 'sepatu sepak bola rumput', 'gitar akustik pemula', 'papan luncur skateboard', 'jaket kulit berkendara', 'alat pemanggang listrik'];
+    let qTxt = '', ans = '', w1 = '', w2 = '', w3 = '', exp = '', diag = '';
 
-    const qTxt = `Sebuah toko perlengkapan memberikan potongan harga (diskon) sebesar ${diskonPct}% untuk pembelian ${items[i - 1]} yang memiliki label harga Rp ${hargaAwal.toLocaleString('id-ID')}. Uang yang harus dibayarkan pembeli di kasir adalah ...`;
-    ans = `Rp ${hargaBayar.toLocaleString('id-ID')}`;
-    w1 = `Rp ${(hargaBayar + 15000).toLocaleString('id-ID')}`;
-    w2 = `Rp ${potongan.toLocaleString('id-ID')}`;
-    w3 = `Rp ${(hargaAwal - 10000).toLocaleString('id-ID')}`;
-    exp = `Potongan harga = ${diskonPct}% × Rp ${hargaAwal.toLocaleString('id-ID')} = Rp ${potongan.toLocaleString('id-ID')}.
-Uang yang harus dibayar = Rp ${hargaAwal.toLocaleString('id-ID')} - Rp ${potongan.toLocaleString('id-ID')} = Rp ${hargaBayar.toLocaleString('id-ID')}.`;
-    diag = 'Hitung nominal diskon dari persentase dikalikan harga awal, lalu kurangkan harga awal dengan nilai diskon.';
+    if (i <= 10) {
+      const hargaAwal = 100000 + i * 25000;
+      const diskonPct = 10 + (i % 4) * 5; // 10%, 15%, 20%, 25%
+      const potongan = (diskonPct / 100) * hargaAwal;
+      const hargaBayar = hargaAwal - potongan;
+      const items = ['sepasang sepatu lari', 'jaket parasut musim dingin', 'tas ransel laptop', 'kemeja batik lengan panjang', 'helm keselamatan bersepeda', 'celana jeans denim', 'jam tangan petualang', 'raket bulutangkis karbon', 'kompor gas portabel', 'kamera saku digital'];
+
+      qTxt = `Sebuah toko perlengkapan memberikan potongan harga (diskon) sebesar ${diskonPct}% untuk pembelian ${items[i - 1]} yang memiliki label harga Rp ${hargaAwal.toLocaleString('id-ID')}. Uang yang harus dibayarkan pembeli di kasir adalah ...`;
+      ans = `Rp ${hargaBayar.toLocaleString('id-ID')}`;
+      w1 = `Rp ${(hargaBayar + 15000).toLocaleString('id-ID')}`;
+      w2 = `Rp ${potongan.toLocaleString('id-ID')}`;
+      w3 = `Rp ${(hargaAwal - 10000).toLocaleString('id-ID')}`;
+      exp = `Potongan harga = ${diskonPct}% × Rp ${hargaAwal.toLocaleString('id-ID')} = Rp ${potongan.toLocaleString('id-ID')}.\nUang yang harus dibayar = Rp ${hargaAwal.toLocaleString('id-ID')} - Rp ${potongan.toLocaleString('id-ID')} = Rp ${hargaBayar.toLocaleString('id-ID')}.`;
+      diag = 'Hitung nominal diskon dari persentase dikalikan harga awal, lalu kurangkan harga awal dengan nilai diskon.';
+    } else {
+      const hotsStory = [
+        {
+          q: 'Pak Ridwan memanen padi seberat 3 1/2 ton. Sebanyak 1/5 bagian disimpan untuk cadangan keluarga, 1/2 bagian dijual ke koperasi lumbung desa, dan sisanya dibagikan kepada kerabat dan tetangga. Berat padi yang dibagikan kepada kerabat dan tetangga adalah ...',
+          a: '1 1/20 ton', w1: '1 1/10 ton', w2: '1 1/4 ton', w3: '4/5 ton',
+          e: 'Padi disimpan = 1/5 × 7/2 = 7/10 ton. Padi dijual = 1/2 × 7/2 = 7/4 ton. Total disimpan & dijual = 7/10 + 7/4 = 14/20 + 35/20 = 49/20 ton. Bagian dibagikan = 7/2 - 49/20 = 70/20 - 49/20 = 21/20 = 1 1/20 ton.',
+          d: 'Hitung porsi yang disimpan dan dijual, lalu kurangkan dari total panen 3 1/2 ton.'
+        },
+        {
+          q: 'Bu Fatimah memiliki persediaan tepung terigu seberat 7 1/2 kg untuk membuat kue bolu. Setiap adonan kue bolu memerlukan 3/4 kg tepung terigu. Jika setiap adonan kue berhasil dijual dengan harga Rp 45.000, total uang hasil penjualan seluruh kue bolu Bu Fatimah adalah ...',
+          a: 'Rp 450.000', w1: 'Rp 405.000', w2: 'Rp 495.000', w3: 'Rp 360.000',
+          e: 'Banyak adonan = 7 1/2 ÷ 3/4 = 15/2 ÷ 3/4 = 15/2 × 4/3 = 60/6 = 10 adonan. Total uang penjualan = 10 × Rp 45.000 = Rp 450.000.',
+          d: 'Bagi stok terigu dengan kebutuhan per adonan, lalu kalikan jumlah adonan dengan harga jual.'
+        },
+        {
+          q: 'Seorang tukang mengecat dinding gedung sekolah. Pada hari pertama ia menyelesaikan 1/4 bagian dinding, dan hari kedua menyelesaikan 2/5 bagian dinding. Jika sisa dinding yang belum dicat masih seluas 21 m², luas total seluruh dinding gedung sekolah tersebut adalah ...',
+          a: '60 m²', w1: '56 m²', w2: '70 m²', w3: '65 m²',
+          e: 'Dinding telah dicat = 1/4 + 2/5 = 5/20 + 8/20 = 13/20 bagian. Sisa belum dicat = 1 - 13/20 = 7/20 bagian. Bagian 7/20 setara dengan 21 m², maka luas total = 21 × 20/7 = 60 m².',
+          d: 'Cari bagian yang belum dicat (7/20), lalu kalikan luas sisa dengan kebalikan pecahan tersebut.'
+        },
+        {
+          q: 'Sebuah wadah berisi madu lebah murni seberat 4 1/2 kg. Pedagang mengemas madu tersebut ke dalam toples-toples kecil berkapasitas 1/4 kg. Setiap toples madu dijual seharga Rp 30.000. Jika modal awal pengemasan seluruhnya adalah Rp 380.000, keuntungan bersih yang diperoleh pedagang adalah ...',
+          a: 'Rp 160.000', w1: 'Rp 140.000', w2: 'Rp 180.000', w3: 'Rp 150.000',
+          e: 'Banyak toples = 4 1/2 ÷ 1/4 = 9/2 × 4/1 = 18 toples. Pendapatan kotor = 18 × Rp 30.000 = Rp 540.000. Keuntungan bersih = Rp 540.000 - Rp 380.000 = Rp 160.000.',
+          d: 'Hitung banyak toples madu, cari pendapatan kotor, lalu kurangkan dengan modal pengemasan.'
+        },
+        {
+          q: 'Ibu berbelanja ke pasar membeli beras sebanyak 8 1/2 kg dengan harga Rp 14.000 per kg dan minyak goreng kemasan sebanyak 2 1/2 liter dengan harga Rp 16.000 per liter. Jika Ibu membayar menggunakan dua lembar uang seratus ribuan (Rp 200.000), uang kembalian yang diterima Ibu adalah ...',
+          a: 'Rp 41.000', w1: 'Rp 39.000', w2: 'Rp 45.000', w3: 'Rp 35.000',
+          e: 'Biaya beras = 8 1/2 × 14.000 = 17/2 × 14.000 = Rp 119.000. Biaya minyak = 2 1/2 × 16.000 = 5/2 × 16.000 = Rp 40.000. Total belanja = 119.000 + 40.000 = Rp 159.000. Kembalian = 200.000 - 159.000 = Rp 41.000.',
+          d: 'Kalikan berat belanjaan dengan harga satuan, jumlahkan seluruhnya, lalu kurangkan dari total uang.'
+        },
+        {
+          q: 'Di sebuah Sekolah Dasar berprestasi, 3/5 dari seluruh jumlah siswa adalah perempuan. Jika siswa laki-laki di sekolah tersebut berjumlah 140 orang, jumlah seluruh siswa di sekolah dasar tersebut adalah ...',
+          a: '350 siswa', w1: '320 siswa', w2: '380 siswa', w3: '300 siswa',
+          e: 'Porsi siswa laki-laki = 1 - 3/5 = 2/5 bagian. Sebanyak 2/5 bagian setara 140 siswa. Total siswa = 140 × 5/2 = 350 siswa.',
+          d: 'Cari fraksi siswa laki-laki (2/5) lalu kalikan dengan kebalikan pecahan tersebut.'
+        },
+        {
+          q: 'Ibu membagikan uang saku mingguan kepada ketiga anaknya. Anak pertama mendapat 3/8 bagian, anak kedua mendapat 1/4 bagian, dan anak ketiga mendapat sisanya sebesar Rp 60.000. Total uang saku mingguan yang dibagikan Ibu seluruhnya adalah ...',
+          a: 'Rp 160.000', w1: 'Rp 140.000', w2: 'Rp 180.000', w3: 'Rp 150.000',
+          e: 'Bagian anak 1 & 2 = 3/8 + 1/4 = 3/8 + 2/8 = 5/8 bagian. Bagian anak ketiga = 1 - 5/8 = 3/8 bagian. Sebanyak 3/8 setara Rp 60.000, maka total uang saku = 60.000 × 8/3 = Rp 160.000.',
+          d: 'Cari sisa fraksi anak ketiga (3/8), lalu kalikan nominalnya dengan 8/3.'
+        },
+        {
+          q: 'Suatu proyek pengaspalan jalan desa direncanakan selesai dalam tiga tahap. Tahap pertama diselesaikan 3/10 bagian, tahap kedua diselesaikan 1/2 bagian, dan tahap ketiga menyelesaikan sisa jalan sepanjang 500 meter. Total panjang jalan desa yang diaspal adalah ...',
+          a: '2.500 meter', w1: '2.000 meter', w2: '3.000 meter', w3: '2.200 meter',
+          e: 'Tahap 1 & 2 = 3/10 + 1/2 = 3/10 + 5/10 = 8/10 bagian. Sisa tahap 3 = 1 - 8/10 = 2/10 = 1/5 bagian. Bagian 1/5 setara 500 meter, maka total panjang jalan = 500 × 5 = 2.500 meter.',
+          d: 'Jumlahkan porsi tahap 1 dan 2, cari sisa tahap 3 (1/5), lalu kalikan dengan 5.'
+        },
+        {
+          q: 'Sebuah botol sirup manis berisi 1 1/2 liter sirup pekat. Untuk menyajikan satu gelas minuman es sirup yang segar dibutuhkan 1/20 liter sirup pekat. Banyak gelas es sirup yang dapat dibuat dari 3 botol sirup pekat tersebut adalah ...',
+          a: '90 gelas', w1: '80 gelas', w2: '100 gelas', w3: '75 gelas',
+          e: 'Total sirup dari 3 botol = 3 × 1 1/2 liter = 3 × 3/2 = 9/2 liter. Banyak gelas = (9/2) ÷ (1/20) = (9/2) × 20 = 9 × 10 = 90 gelas.',
+          d: 'Hitung total volume sirup lalu bagi dengan takaran sirup per gelas.'
+        },
+        {
+          q: 'Sebuah bak penampungan air mula-mula terisi air sebanyak 1/3 bagian. Setelah dialirkan tambahan air sebanyak 120 liter ke dalam bak, kini bak tersebut terisi 5/6 bagian. Kapasitas volume total bak penampungan air tersebut adalah ...',
+          a: '240 liter', w1: '200 liter', w2: '280 liter', w3: '220 liter',
+          e: 'Selisih penambahan air = 5/6 - 1/3 = 5/6 - 2/6 = 3/6 = 1/2 bagian. Setengah (1/2) bagian bak setara dengan 120 liter, maka kapasitas total bak = 120 × 2 = 240 liter.',
+          d: 'Hitung selisih pecahan (5/6 - 1/3 = 1/2), maka volume penuh adalah dua kali volume tambahan.'
+        }
+      ][i - 11];
+      qTxt = hotsStory.q; ans = hotsStory.a; w1 = hotsStory.w1; w2 = hotsStory.w2; w3 = hotsStory.w3; exp = hotsStory.e; diag = hotsStory.d;
+    }
 
     const op = createSafeOptions(ans, w1, w2, w3, seed);
     addQ({
