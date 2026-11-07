@@ -1093,15 +1093,16 @@ const RANGKUMAN_DATA = [
     "icon": "🫁",
     "ringkasan": "Tubuhmu adalah mesin paling canggih di semesta! Paru-paru menukar oksigen segar, lambung dan usus mencerna makanan menjadi sari nutrisi, dan jantung memompa darah merah bersih ke seluruh tubuh tanpa henti setiap detik!",
     "poinPenting": [
-      "Sistem Pernapasan: Rongga hidung (bulu hidung menyaring kotoran, selaput lendir menyesuaikan suhu) → Batang tenggorokan → Paru-paru (tempat bertukarnya gas oksigen dengan gas sisa karbon dioksida).",
+      "Sistem Pernapasan: Rongga hidung (rambut hidung menyaring debu, selaput lendir menyesuaikan suhu dan kelembapan) → Batang tenggorokan (trakea) → Bronkus (cabang tenggorokan menuju paru-paru kanan dan kiri) → Bronkiolus (cabang-cabang kecil dari bronkus) → Alveolus (gelembung paru-paru tempat bertukarnya oksigen dengan karbon dioksida).",
       "Sistem Pencernaan: Mulut (pencernaan mekanik oleh gigi & kimiawi oleh air ludah) → Kerongkongan (gerak meremas makanan) → Lambung (mencerna makanan dan membunuh kuman) → Usus Halus (penyerapan sari-sari makanan ke dalam darah) → Usus Besar (penyerapan air) → Anus.",
       "Sistem Peredaran Darah: Jantung memompa darah ke seluruh tubuh tanpa henti melalui pembuluh darah. Darah membawa oksigen dan sari-sari makanan yang dibutuhkan tubuh.",
       "Pembuluh Darah: Pembuluh nadi (arteri) membawa darah keluar dari jantung, sedangkan pembuluh balik (vena) membawa darah kembali menuju jantung."
     ],
     "rumus": [
+      "Saluran Pernapasan: Hidung → Trakea → Bronkus → Bronkiolus → Alveolus (Paru-paru)",
+      "Fungsi Alveolus: Tempat pertukaran gas oksigen (O₂) dan gas karbon dioksida (CO₂)",
       "Fungsi Jantung: Organ pemompa darah ke seluruh tubuh",
-      "Fungsi Paru-paru: Organ pertukaran gas pernapasan (oksigen dan karbon dioksida)",
-      "Enzim Pencernaan Lambung: Asam lambung membantu membunuh kuman pada makanan yang masuk"
+      "Enzim Pencernaan Lambung: Asam lambung (HCl) membantu membunuh kuman pada makanan yang masuk"
     ],
     "perhatikan": [
       "Organ utama yang memompa darah ke seluruh tubuh adalah JANTUNG!",
@@ -1115,6 +1116,9 @@ const RANGKUMAN_DATA = [
     "tags": [
       "sistem pernapasan",
       "paru-paru",
+      "alveolus",
+      "bronkus",
+      "bronkiolus",
       "sistem pencernaan",
       "jantung",
       "pembuluh darah",
